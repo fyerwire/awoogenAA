@@ -984,11 +984,6 @@ class Pelt():
                     else:
                         self.tortiepattern = random.choices([self.tortiebase, 'semisolid', 'solid'], weights=[45, 30, 25], k=1)[0]
 
-                    if self.colour == "WHITE":
-                        possible_colors = Pelt.white_colours.copy()
-                        possible_colors.remove("WHITE")
-                        self.colour = choice(possible_colors)
-
                     # Ginger is often duplicated to increase its chances
                     if (self.colour in Pelt.black_colors):
                         self.tortiecolour = choice((Pelt.yellow_colors * 2) + Pelt.gray_colors + Pelt.red_colors)

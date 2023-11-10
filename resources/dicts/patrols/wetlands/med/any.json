@@ -1510,7 +1510,7 @@
                 "text": "Not only is the lungwort intact and still fresh, but there's also a nice patch of plantain nearby. p_l loads up their mostly-obliging escort and carries the extensive harvest home, tail waving jovially with their good mood.",
                 "exp": 20,
                 "weight": 5,
-                "herbs": ["many_herbs". "lungwort", "plantain"],
+                "herbs": ["many_herbs", "lungwort", "plantain"],
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
