@@ -9,6 +9,7 @@ import pygame_gui
 from scripts.game_structure.windows import SaveCheck, EventLoading
 from scripts.game_structure.propagating_thread import PropagatingThread
 from threading import current_thread
+from scripts.themescript import themegrabber
 
 class Screens():
     game_screen = screen
@@ -17,6 +18,7 @@ class Screens():
     last_screen = ''
 
     # menu buttons are used very often, so they are generated here.
+    resourcepath = themegrabber()
     menu_buttons = {
         "events_screen": UIImageButton(
             scale(pygame.Rect((492, 120), (164, 60))),
@@ -64,7 +66,7 @@ class Screens():
             scale(pygame.Rect((610, 50), (380, 70))),
             pygame.transform.scale(
                 image_cache.load_image(
-                    "resources/images/clan_name_bg.png").convert_alpha(),
+                    resourcepath + "images/clan_name_bg.png").convert_alpha(),
                 (380, 70)),
             visible=False,
             manager=MANAGER),

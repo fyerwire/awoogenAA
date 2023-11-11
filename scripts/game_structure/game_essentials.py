@@ -9,6 +9,7 @@ from shutil import move as shutil_move
 from ast import literal_eval
 import traceback
 from scripts.event_class import Single_Event
+from scripts.themescript import themegrabber
 
 pygame.init()
 
@@ -187,7 +188,8 @@ class Game():
         self.keyspressed = []
         self.switch_screens = False
 
-        with open(f"resources/game_config.json", 'r') as read_file:
+        resourcepath = themegrabber()
+        with open(resourcepath + f"game_config.json", 'r') as read_file:
             self.config = ujson.loads(read_file.read())
 
         if self.config['fun']['april_fools']:
@@ -588,8 +590,9 @@ else:
 
 def load_manager(res: tuple):
     # initialize pygame_gui manager, and load themes
+    resourcepath = themegrabber()
     manager = pygame_gui.ui_manager.UIManager(
-        res, 'resources/theme/defaults.json', enable_live_theme_updates=False)
+        res, resourcepath + 'theme/defaults.json', enable_live_theme_updates=False)
     manager.add_font_paths(
         font_name='notosans',
         regular_path='resources/fonts/NotoSans-Medium.ttf',
@@ -597,16 +600,16 @@ def load_manager(res: tuple):
         italic_path='resources/fonts/NotoSans-MediumItalic.ttf',
         bold_italic_path='resources/fonts/NotoSans-ExtraBoldItalic.ttf'
     )
-    
 
     if res[0] > 800:
-        manager.get_theme().load_theme('resources/theme/defaults.json')
-        manager.get_theme().load_theme('resources/theme/buttons.json')
-        manager.get_theme().load_theme('resources/theme/text_boxes.json')
-        manager.get_theme().load_theme('resources/theme/text_boxes_dark.json')
-        manager.get_theme().load_theme('resources/theme/vertical_scroll_bar.json')
-        manager.get_theme().load_theme('resources/theme/window_base.json')
-        manager.get_theme().load_theme('resources/theme/tool_tips.json')
+        manager.get_theme().load_theme(resourcepath + 'theme/defaults.json')
+        manager.get_theme().load_theme(resourcepath + 'theme/buttons.json')
+        manager.get_theme().load_theme(resourcepath + 'theme/text_boxes.json')
+        manager.get_theme().load_theme(resourcepath + 'theme/text_boxes_dark.json')
+        manager.get_theme().load_theme(resourcepath + 'theme/vertical_scroll_bar.json')
+        manager.get_theme().load_theme(resourcepath + 'theme/window_base.json')
+        manager.get_theme().load_theme(resourcepath + 'theme/tool_tips.json')
+                
 
         manager.preload_fonts([
             {'name': 'notosans', 'point_size': 30, 'style': 'italic'},
@@ -617,13 +620,13 @@ def load_manager(res: tuple):
         ])
 
     else:
-        manager.get_theme().load_theme('resources/theme/defaults_small.json')
-        manager.get_theme().load_theme('resources/theme/buttons_small.json')
-        manager.get_theme().load_theme('resources/theme/text_boxes_small.json')
-        manager.get_theme().load_theme('resources/theme/text_boxes_dark_small.json')
-        manager.get_theme().load_theme('resources/theme/vertical_scroll_bar.json')
-        manager.get_theme().load_theme('resources/theme/window_base_small.json')
-        manager.get_theme().load_theme('resources/theme/tool_tips_small.json')
+        manager.get_theme().load_theme(resourcepath + 'theme/defaults_small.json')
+        manager.get_theme().load_theme(resourcepath + 'theme/buttons_small.json')
+        manager.get_theme().load_theme(resourcepath + 'theme/text_boxes_small.json')
+        manager.get_theme().load_theme(resourcepath + 'theme/text_boxes_dark_small.json')
+        manager.get_theme().load_theme(resourcepath + 'theme/vertical_scroll_bar.json')
+        manager.get_theme().load_theme(resourcepath + 'theme/window_base_small.json')
+        manager.get_theme().load_theme(resourcepath + 'theme/tool_tips_small.json')
 
         manager.preload_fonts([
             {'name': 'notosans', 'point_size': 11, 'style': 'bold'},
@@ -632,9 +635,9 @@ def load_manager(res: tuple):
             {'name': 'notosans', 'point_size': 13, 'style': 'italic'},
             {'name': 'notosans', 'point_size': 15, 'style': 'italic'}
         ])
-        
-    manager.get_theme().load_theme('resources/theme/windows.json')
-    manager.get_theme().load_theme('resources/theme/image_buttons.json')
+
+    manager.get_theme().load_theme(resourcepath + 'theme/windows.json')
+    manager.get_theme().load_theme(resourcepath + 'theme/image_buttons.json')
 
     return manager
 

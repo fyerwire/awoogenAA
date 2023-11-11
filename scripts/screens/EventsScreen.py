@@ -11,7 +11,7 @@ from ..game_structure import image_cache
 from scripts.event_class import Single_Event
 from scripts.game_structure.windows import GameOver
 
-
+resourcepath = Screens.resourcepath
 class EventsScreen(Screens):
     event_display_type = "all events"
     all_events = ""
@@ -256,7 +256,7 @@ class EventsScreen(Screens):
                                                       manager=MANAGER)
         self.events_frame = pygame_gui.elements.UIImage(scale(pygame.Rect((412, 532), (1068, 740))),
                                                         image_cache.load_image(
-                                                            "resources/images/event_page_frame.png").convert_alpha()
+                                                            resourcepath + "images/event_page_frame.png").convert_alpha()
                                                         , manager=MANAGER)
         self.events_frame.disable()
         # Set text for Pack age
@@ -426,7 +426,7 @@ class EventsScreen(Screens):
             self.ceremony_alert = pygame_gui.elements.UIImage(scale(pygame.Rect((110, 680), (8, 44))),
                                                                 pygame.transform.scale(
                                                                 image_cache.load_image(
-                                                                    "resources/images/alert_mark.png"
+                                                                    resourcepath + "images/alert_mark.png"
                                                                 ), (8, 44)), manager=MANAGER)
 
         if self.birth_death_alert:
@@ -437,7 +437,7 @@ class EventsScreen(Screens):
             self.birth_death_alert = pygame_gui.elements.UIImage(scale(pygame.Rect((110, 780), (8, 44))),
                                                                     pygame.transform.scale(
                                                                     image_cache.load_image(
-                                                                        "resources/images/alert_mark.png"
+                                                                        resourcepath + "images/alert_mark.png"
                                                                     ), (8, 44)), manager=MANAGER)
 
         if self.relation_alert:
@@ -448,7 +448,7 @@ class EventsScreen(Screens):
             self.relation_alert = pygame_gui.elements.UIImage(scale(pygame.Rect((110, 880), (8, 44))),
                                                                 pygame.transform.scale(
                                                                 image_cache.load_image(
-                                                                    "resources/images/alert_mark.png"
+                                                                    resourcepath + "images/alert_mark.png"
                                                                 ), (8, 44)), manager=MANAGER)
 
         if self.health_alert:
@@ -459,7 +459,7 @@ class EventsScreen(Screens):
             self.health_alert = pygame_gui.elements.UIImage(scale(pygame.Rect((110, 980), (8, 44))),
                                                             pygame.transform.scale(
                                                             image_cache.load_image(
-                                                                "resources/images/alert_mark.png"
+                                                                resourcepath + "images/alert_mark.png"
                                                             ), (8, 44)), manager=MANAGER)
 
         if self.other_clans_alert:
@@ -470,7 +470,7 @@ class EventsScreen(Screens):
             self.other_clans_alert = pygame_gui.elements.UIImage(scale(pygame.Rect((110, 1080), (8, 44))),
                                                                     pygame.transform.scale(
                                                                     image_cache.load_image(
-                                                                        "resources/images/alert_mark.png"
+                                                                        resourcepath + "images/alert_mark.png"
                                                                     ), (8, 44)), manager=MANAGER)
 
         if self.misc_alert:
@@ -481,7 +481,7 @@ class EventsScreen(Screens):
             self.misc_alert = pygame_gui.elements.UIImage(scale(pygame.Rect((110, 1180), (8, 44))),
                                                             pygame.transform.scale(
                                                             image_cache.load_image(
-                                                                "resources/images/alert_mark.png"
+                                                                resourcepath + "images/alert_mark.png"
                                                             ), (8, 44)), manager=MANAGER)
 
         if self.event_display_type == "all events":
@@ -572,14 +572,14 @@ class EventsScreen(Screens):
                     if game.settings["dark mode"]:
                         self.display_events_elements["shading" + str(i)] = pygame_gui.elements.UIImage(
                             pygame.Rect((0, y), (box_length + 100, self.display_events_elements["event" + str(i)].get_relative_rect()[3] + padding)),
-                            image_cache.load_image("resources/images/shading_dark.png"), container=self.event_container,
+                            image_cache.load_image(resourcepath + "images/shading_dark.png"), container=self.event_container,
                             manager=MANAGER)
                     else:
                         self.display_events_elements["shading" + str(i)] = pygame_gui.elements.UIImage(
                             pygame.Rect((0, y),
                                         (box_length + 100,
                                          self.display_events_elements["event" + str(i)].get_relative_rect()[3] + padding)),
-                            image_cache.load_image("resources/images/shading.png"), container=self.event_container
+                            image_cache.load_image(resourcepath + "images/shading.png"), container=self.event_container
                             , manager=MANAGER)
 
                     self.display_events_elements["shading" + str(i)].disable()

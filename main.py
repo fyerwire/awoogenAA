@@ -231,9 +231,19 @@ def loading_animation():
         clock.tick(8) # Loading screen is 8FPS
 
         if game.settings["dark mode"]:
-            screen.fill(game.config["theme"]["dark_mode_background"])
+            if game.settings["Moonlight"]:
+                screen.fill(game.config["themes"]["Moonlight_Darkbg"])
+            elif game.settings["ClassicClangen"]:
+                screen.fill(game.config["themes"]["ClassicClangen_Darkbg"])
+            else:
+                screen.fill(game.config["themes"]["Moonlight_Darkbg"])
         else:
-            screen.fill(game.config["theme"]["light_mode_background"])
+            if game.settings["Moonlight"]:
+                screen.fill(game.config["themes"]["Moonlight_Lightbg"])
+            elif game.settings["ClassicClangen"]:
+                screen.fill(game.config["themes"]["ClassicClangen_Lightbg"])
+            else:
+                screen.fill(game.config["themes"]["Moonlight_Lightbg"])
         
         screen.blit(images[i], (x - images[i].get_width() / 2 , y - images[i].get_height() / 2))
         
@@ -287,8 +297,12 @@ if get_version_info().is_source_build or get_version_info().is_dev():
         object_id="#dev_watermark"
     )
 
-
-cursor_img = pygame.image.load('resources/images/cursor.png').convert_alpha()
+if game.settings["Moonlight"]:
+    cursor_img = pygame.image.load('resources/moonlight/images/cursor.png').convert_alpha()
+elif game.settings["ClassicClangen"]:
+    cursor_img = pygame.image.load('resources/clangenclassic/images/cursor.png').convert_alpha()
+else:
+    cursor_img = pygame.image.load('resources/moonlight/images/cursor.png').convert_alpha()
 cursor = pygame.cursors.Cursor((9,0), cursor_img)
 disabled_cursor = pygame.cursors.Cursor(pygame.SYSTEM_CURSOR_ARROW)
 
@@ -299,10 +313,20 @@ disabled_cursor = pygame.cursors.Cursor(pygame.SYSTEM_CURSOR_ARROW)
 while True:
     time_delta = clock.tick(game.switches['fps']) / 1000.0
     if game.switches['cur_screen'] not in ['start screen']:
-        if game.settings['dark mode']:
-            screen.fill(game.config["theme"]["dark_mode_background"])
+        if game.settings["dark mode"]:
+            if game.settings["Moonlight"]:
+                screen.fill(game.config["themes"]["Moonlight_Darkbg"])
+            elif game.settings["ClassicClangen"]:
+                screen.fill(game.config["themes"]["ClassicClangen_Darkbg"])
+            else:
+                screen.fill(game.config["themes"]["Moonlight_Darkbg"])
         else:
-            screen.fill(game.config["theme"]["light_mode_background"])
+            if game.settings["Moonlight"]:
+                screen.fill(game.config["themes"]["Moonlight_Lightbg"])
+            elif game.settings["ClassicClangen"]:
+                screen.fill(game.config["themes"]["ClassicClangen_Lightbg"])
+            else:
+                screen.fill(game.config["themes"]["Moonlight_Lightbg"])
 
     if game.settings['custom cursor']:
         if pygame.mouse.get_cursor() == disabled_cursor:

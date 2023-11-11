@@ -13,7 +13,7 @@ from scripts.game_structure import image_cache
 from scripts.game_structure.game_essentials import game, screen, screen_x, screen_y
 from scripts.game_structure.windows import SaveError
 
-
+resourcepath = Screens.resourcepath
 class ClanScreen(Screens):
     max_sprites_displayed = 400  # we don't want 100,000 sprites rendering at once. 400 is enough.
     cat_buttons = []
@@ -135,12 +135,12 @@ class ClanScreen(Screens):
         self.warrior_den_label = pygame_gui.elements.UIImage(
             scale(pygame.Rect(self.layout["warrior den"], (242, 56))),
             pygame.transform.scale(
-                image_cache.load_image('resources/images/warrior_den.png'),
+                image_cache.load_image(resourcepath + 'images/warrior_den.png'),
                 (242, 56)))
         self.leader_den_label = pygame_gui.elements.UIImage(
             scale(pygame.Rect(self.layout["leader den"], (224, 56))),
             pygame.transform.scale(
-                image_cache.load_image('resources/images/leader_den.png'),
+                image_cache.load_image(resourcepath + 'images/leader_den.png'),
                 (224, 56)))
         self.med_den_label = UIImageButton(scale(pygame.Rect(
             self.layout["medicine den"], (302, 56))),
@@ -151,29 +151,29 @@ class ClanScreen(Screens):
         self.elder_den_label = pygame_gui.elements.UIImage(
             scale(pygame.Rect(self.layout["elder den"], (206, 56))),
             pygame.transform.scale(
-                image_cache.load_image('resources/images/elder_den.png'),
+                image_cache.load_image(resourcepath + 'images/elder_den.png'),
                 (206, 56)),
             )
         self.nursery_label = pygame_gui.elements.UIImage(scale(pygame.Rect(self.layout['nursery'], (160, 56))),
                                                          pygame.transform.scale(
-                                                             image_cache.load_image('resources/images/nursery_den.png'),
+                                                             image_cache.load_image(resourcepath + 'images/nursery_den.png'),
                                                              (160, 56)))
         self.clearing_label = pygame_gui.elements.UIImage(
             scale(pygame.Rect(self.layout['clearing'], (162, 56))),
             pygame.transform.scale(
-                image_cache.load_image('resources/images/clearing.png'),
+                image_cache.load_image(resourcepath + 'images/clearing.png'),
                 (162, 56)))
         self.app_den_label = pygame_gui.elements.UIImage(
             scale(pygame.Rect(self.layout['apprentice den'], (294, 56))),
             pygame.transform.scale(
-                image_cache.load_image('resources/images/app_den.png'),
+                image_cache.load_image(resourcepath + 'images/app_den.png'),
                 (294, 56)))
 
         # Draw the toggle and text
         self.show_den_labels = pygame_gui.elements.UIImage(scale(pygame.Rect((50, 1282), (334, 68))),
                                                            pygame.transform.scale(
                                                                image_cache.load_image(
-                                                                   'resources/images/show_den_labels.png'),
+                                                                   resourcepath + 'images/show_den_labels.png'),
                                                                (334, 68)))
         self.show_den_labels.disable()
         self.label_toggle = UIImageButton(scale(pygame.Rect((50, 1282), (64, 64))), "", object_id="#checked_checkbox")
@@ -183,13 +183,13 @@ class ClanScreen(Screens):
         self.save_button_saved_state = pygame_gui.elements.UIImage(
             scale(pygame.Rect((686, 1286), (228, 60))),
             pygame.transform.scale(
-                image_cache.load_image('resources/images/save_clan_saved.png'),
+                image_cache.load_image(resourcepath + 'images/save_clan_saved.png'),
                 (228, 60)))
         self.save_button_saved_state.hide()
         self.save_button_saving_state = pygame_gui.elements.UIImage(
             scale(pygame.Rect((686, 1286), (228, 60))),
             pygame.transform.scale(
-                image_cache.load_image('resources/images/save_clan_saving.png'),
+                image_cache.load_image(resourcepath + 'images/save_clan_saving.png'),
                 (228, 60)))
         self.save_button_saving_state.hide()
 

@@ -12,12 +12,14 @@ from scripts.game_structure.game_essentials import game, screen, screen_x, scree
 
 
 class StarClanScreen(Screens):
+    resourcepath = Screens.resourcepath
     list_page = 1
     display_cats = []
     cat_names = []
     previous_search_text = ""
 
     def __init__(self, name=None):
+        resourcepath = Screens.resourcepath
         super().__init__(name)
         self.filter_id = None
         self.page_number = None
@@ -36,10 +38,10 @@ class StarClanScreen(Screens):
         self.starclan_bg = pygame.transform.scale(
             pygame.image.load("resources/images/starclanbg.png").convert(),
             (screen_x, screen_y))
-        self.search_bar_image = pygame.transform.scale(pygame.image.load("resources/images/search_bar.png").convert_alpha(),
+        self.search_bar_image = pygame.transform.scale(pygame.image.load(resourcepath + "images/search_bar.png").convert_alpha(),
                                         (456 / 1600 * screen_x, 68 / 1400 * screen_y))
         self.clan_name_bg = pygame.transform.scale(
-            image_cache.load_image("resources/images/clan_name_bg.png").convert_alpha(), (380, 70))
+            image_cache.load_image(resourcepath + "images/clan_name_bg.png").convert_alpha(), (380, 70))
 
     def handle_event(self, event):
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
@@ -328,7 +330,7 @@ class StarClanScreen(Screens):
                     
                     _temp = pygame.transform.scale(
                             pygame.image.load(
-                                f"resources/images/fav_marker.png").convert_alpha(),
+                                resourcepath + "images/fav_marker.png").convert_alpha(),
                             (100, 100))
                     
                     _temp.set_alpha(150)

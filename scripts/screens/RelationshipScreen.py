@@ -13,7 +13,16 @@ from scripts.game_structure.game_essentials import game, screen, screen_x, scree
 from scripts.game_structure.windows import RelationshipLog
 from scripts.game_structure.propagating_thread import PropagatingThread
 
+from scripts.themescript import themegrabber
 
+resourcepath = themegrabber()
+imagebigheart = resourcepath + "images/heart_big.png"
+imagefemalebig = resourcepath + "images/female_big.png"
+imagemalebig = resourcepath + "images/male_big.png"
+imagetfemalebig = resourcepath + "images/transfem_big.png"
+imagetmalebig = resourcepath + "images/transmasc_big.png"
+imagenbbig = resourcepath + "images/nonbi_big.png"
+imagedotbig = resourcepath + "images/dot_big.png"
 class RelationshipScreen(Screens):
     checkboxes = {}  # To hold the checkboxes.
     focus_cat_elements = {}
@@ -25,22 +34,23 @@ class RelationshipScreen(Screens):
     current_page = 1
 
     inspect_cat = None
-
+    
+    resourcepath = Screens.resourcepath
     search_bar = pygame.transform.scale(
-        image_cache.load_image("resources/images/relationship_search.png").convert_alpha(),
+        image_cache.load_image(resourcepath + "images/relationship_search.png").convert_alpha(),
         (456 / 1600 * screen_x, 78 / 1400 * screen_y)
     )
     details_frame = pygame.transform.scale(
-        image_cache.load_image("resources/images/relationship_details_frame.png").convert_alpha(),
+        image_cache.load_image(resourcepath + "images/relationship_details_frame.png").convert_alpha(),
         (508 / 1600 * screen_x,
          688 / 1400 * screen_y)
     )
     toggle_frame = pygame.transform.scale(
-        image_cache.load_image("resources/images/relationship_toggle_frame.png").convert_alpha(),
+        image_cache.load_image(resourcepath + "images/relationship_toggle_frame.png").convert_alpha(),
         (502 / 1600 * screen_x, 240 / 1400 * screen_y)
     )
     list_frame = pygame.transform.scale(
-        image_cache.load_image("resources/images/relationship_list_frame.png").convert_alpha(),
+        image_cache.load_image(resourcepath + "images/relationship_list_frame.png").convert_alpha(),
         (1004 / 1600 * screen_x, 1000 / 1400 * screen_y)
     )
 
@@ -311,6 +321,7 @@ class RelationshipScreen(Screens):
         self.update_cat_page()
 
     def update_inspected_relation(self):
+        resourcepath = Screens.resourcepath
         for ele in self.inspect_cat_elements:
             self.inspect_cat_elements[ele].kill()
         self.inspect_cat_elements = {}
@@ -345,7 +356,7 @@ class RelationshipScreen(Screens):
                 self.inspect_cat_elements["mate"] = pygame_gui.elements.UIImage(scale(pygame.Rect((90, 300), (44, 40))),
                                                                                 pygame.transform.scale(
                                                                                     image_cache.load_image(
-                                                                                        "resources/images/heart_big.png").convert_alpha(),
+                                                                                        imagebigheart).convert_alpha(),
                                                                                     (44, 40)))
             else:
                 # Family Dot
@@ -355,21 +366,21 @@ class RelationshipScreen(Screens):
                         scale(pygame.Rect((90, 300), (36, 36))),
                         pygame.transform.scale(
                             image_cache.load_image(
-                                "resources/images/dot_big.png").convert_alpha(),
+                                resourcepath + "images/dot_big.png").convert_alpha(),
                             (36, 36)))
 
             # Gender
             if self.inspect_cat.genderalign == 'female':
-                gender_icon = image_cache.load_image("resources/images/female_big.png").convert_alpha()
+                gender_icon = image_cache.load_image(imagefemalebig).convert_alpha()
             elif self.inspect_cat.genderalign == 'male':
-                gender_icon = image_cache.load_image("resources/images/male_big.png").convert_alpha()
+                gender_icon = image_cache.load_image(imagemalebig).convert_alpha()
             elif self.inspect_cat.genderalign == 'trans female':
-                gender_icon = image_cache.load_image("resources/images/transfem_big.png").convert_alpha()
+                gender_icon = image_cache.load_image(imagetfemalebig).convert_alpha()
             elif self.inspect_cat.genderalign == 'trans male':
-                gender_icon = image_cache.load_image("resources/images/transmasc_big.png").convert_alpha()
+                gender_icon = image_cache.load_image(imagetmalebig).convert_alpha()
             else:
                 # Everyone else gets the nonbinary icon
-                gender_icon = image_cache.load_image("resources/images/nonbi_big.png").convert_alpha()
+                gender_icon = image_cache.load_image(imagenbbig).convert_alpha()
 
             self.inspect_cat_elements["gender"] = pygame_gui.elements.UIImage(scale(pygame.Rect((470, 290), (68, 68))),
                                                                               pygame.transform.scale(gender_icon,
@@ -525,6 +536,7 @@ class RelationshipScreen(Screens):
             self.next_page_button.enable()
 
     def generate_relation_block(self, pos, the_relationship, i):
+        resourcepath = Screens.resourcepath
         # Generates a relation_block starting at postion, from the relationship object "the_relation"
         # "position" should refer to the top left corner of the *main* relation box, not including the name.
         pos_x = pos[0]
@@ -545,16 +557,16 @@ class RelationshipScreen(Screens):
 
         # Gender alignment
         if the_relationship.cat_to.genderalign == 'female':
-            gender_icon = image_cache.load_image("resources/images/female_big.png").convert_alpha()
+            gender_icon = image_cache.load_image(imagefemalebig).convert_alpha()
         elif the_relationship.cat_to.genderalign == 'male':
-            gender_icon = image_cache.load_image("resources/images/male_big.png").convert_alpha()
+            gender_icon = image_cache.load_image(imagemalebig).convert_alpha()
         elif the_relationship.cat_to.genderalign == 'trans female':
-            gender_icon = image_cache.load_image("resources/images/transfem_big.png").convert_alpha()
+            gender_icon = image_cache.load_image(imagetfemalebig).convert_alpha()
         elif the_relationship.cat_to.genderalign == 'trans male':
-            gender_icon = image_cache.load_image("resources/images/transmasc_big.png").convert_alpha()
+            gender_icon = image_cache.load_image(imagetmalebig).convert_alpha()
         else:
             # Everyone else gets the nonbinary icon
-            gender_icon = image_cache.load_image("resources/images/nonbi_big.png").convert_alpha()
+            gender_icon = image_cache.load_image(imagenbbig).convert_alpha()
 
         self.relation_list_elements["gender" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((pos_x + 160,
                                                                                                         pos_y + 10),
@@ -570,7 +582,7 @@ class RelationshipScreen(Screens):
                 scale(pygame.Rect((pos_x + 10, pos_y + 10),
                                   (22, 20))),
                 image_cache.load_image(
-                    "resources/images/heart_big.png").convert_alpha())
+                    imagebigheart).convert_alpha())
         else:
             # FAMILY DOT
             # Only show family dot on cousins if first cousin mates are disabled.
@@ -592,7 +604,7 @@ class RelationshipScreen(Screens):
                                        pos_y + 10),
                                       (18, 18))),
                     image_cache.load_image(
-                        "resources/images/dot_big.png").convert_alpha())
+                        imagedotbig).convert_alpha())
 
         # ------------------------------------------------------------------------------------------------------------ #
         # RELATION BARS

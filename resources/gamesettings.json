@@ -16,6 +16,16 @@
         }
     ],
     "general": {
+        "Moonlight": [
+            "Moonlight Theme",
+            "A blue-purple theme - default",
+            true
+        ],
+        "ClassicClangen": [
+            "Classic Theme",
+            "Clangen's theme for Awoogen",
+            false
+        ],
         "dark mode": [
             "Dark mode",
             "Camp backgrounds will match with the mode: nighttime for dark mode and daytime for light mode.",
@@ -80,8 +90,8 @@
             "2"
         ],
         "fullscreen": [
-            false,
-            true
+            true,
+            false
         ]
     }
 }

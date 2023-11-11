@@ -11,12 +11,14 @@ from ..utility import scale, shorten_text_to_fit
 
 
 class UnknownResScreen(Screens):
+    resourcepath = Screens.resourcepath
     list_page = 1
     display_cats = []
     cat_names = []
     previous_search_text = ""
     
     def __init__(self, name=None):
+        resourcepath = Screens.resourcepath
         super().__init__(name)
         self.filter_id = None
         self.page_number = None
@@ -34,10 +36,11 @@ class UnknownResScreen(Screens):
         self.load_images()
 
     def load_images(self):
+        resourcepath = Screens.resourcepath
         self.search_bar_image = pygame.transform.scale(pygame.image.load(
-            "resources/images/search_bar.png").convert_alpha(), (456 / 1600 * screen_x, 68 / 1400 * screen_y))
+            resourcepath + "images/search_bar.png").convert_alpha(), (456 / 1600 * screen_x, 68 / 1400 * screen_y))
         self.clan_name_bg = pygame.transform.scale(
-            image_cache.load_image("resources/images/clan_name_bg.png").convert_alpha(), (380, 70))
+            image_cache.load_image(resourcepath + "images/clan_name_bg.png").convert_alpha(), (380, 70))
         self.ur_bg = pygame.transform.scale(
             pygame.image.load("resources/images/urbg.png").convert(),
             (screen_x, screen_y))
@@ -330,7 +333,7 @@ class UnknownResScreen(Screens):
                     
                     _temp = pygame.transform.scale(
                             pygame.image.load(
-                                f"resources/images/fav_marker.png").convert_alpha(),
+                                resourcepath + "images/fav_marker.png").convert_alpha(),
                             (100, 100))
                     
                     _temp.set_alpha(150)

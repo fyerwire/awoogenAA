@@ -10,6 +10,7 @@ from ..utility import get_text_box_theme, scale, shorten_text_to_fit
 
 
 class OutsideClanScreen(Screens):
+    resourcepath = Screens.resourcepath
 
     list_page = 1  # Holds the current page
     display_cats = []  # Holds the cat sprite objects
@@ -18,10 +19,12 @@ class OutsideClanScreen(Screens):
     previous_search_text = ""
 
     def load_images(self):
+        resourcepath = Screens.resourcepath
         self.search_bar_image = pygame.transform.scale(pygame.image.load(
-            "resources/images/search_bar.png").convert_alpha(), (456 / 1600 * screen_x, 68 / 1400 * screen_y))
+            resourcepath + "images/search_bar.png").convert_alpha(), (456 / 1600 * screen_x, 68 / 1400 * screen_y))
 
     def __init__(self, name=None):
+        resourcepath = Screens.resourcepath
         super().__init__(name)
         self.filter_age = None
         self.filter_id = None
@@ -293,7 +296,7 @@ class OutsideClanScreen(Screens):
                     
                     _temp = pygame.transform.scale(
                             pygame.image.load(
-                                f"resources/images/fav_marker.png").convert_alpha(),
+                                resourcepath + f"images/fav_marker.png").convert_alpha(),
                             (100, 100))
                     
                     _temp.set_alpha(150)

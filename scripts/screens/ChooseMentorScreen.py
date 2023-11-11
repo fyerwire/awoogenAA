@@ -9,11 +9,11 @@ from scripts.game_structure import image_cache
 from scripts.game_structure.image_button import UIImageButton, UISpriteButton
 from scripts.game_structure.game_essentials import game, screen, screen_x, screen_y, MANAGER
 
-
+resourcepath = Screens.resourcepath
 class ChooseMentorScreen(Screens):
     selected_mentor = None
     current_page = 1
-    list_frame = pygame.transform.scale(image_cache.load_image("resources/images/choosing_frame.png").convert_alpha(),
+    list_frame = pygame.transform.scale(image_cache.load_image(resourcepath + "images/choosing_frame.png").convert_alpha(),
                                         (1300 / 1600 * screen_x, 452 / 1400 * screen_y))
     apprentice_details = {}
     selected_details = {}
@@ -117,18 +117,18 @@ class ChooseMentorScreen(Screens):
         self.mentor_frame = pygame_gui.elements.UIImage(scale(pygame.Rect((80, 226), (562, 394))),
                                                         pygame.transform.scale(
                                                             image_cache.load_image(
-                                                                "resources/images/choosing_cat1_frame_ment.png").convert_alpha(),
+                                                                resourcepath + "images/choosing_cat1_frame_ment.png").convert_alpha(),
                                                             (562, 394)), manager=MANAGER)
         self.app_frame = pygame_gui.elements.UIImage(scale(pygame.Rect((960, 226), (562, 394))),
                                                      pygame.transform.scale(
                                                          image_cache.load_image(
-                                                             "resources/images/choosing_cat2_frame_ment.png").convert_alpha(),
+                                                             resourcepath + "images/choosing_cat2_frame_ment.png").convert_alpha(),
                                                          (562, 394)), manager=MANAGER)
 
         self.mentor_icon = pygame_gui.elements.UIImage(scale(pygame.Rect((630, 320), (343, 228))),
                                                        pygame.transform.scale(
                                                            image_cache.load_image(
-                                                               "resources/images/mentor.png").convert_alpha(),
+                                                               resourcepath + "images/mentor.png").convert_alpha(),
                                                            (343, 228)), manager=MANAGER)
 
         self.previous_cat_button = UIImageButton(scale(pygame.Rect((50, 50), (306, 60))), "",

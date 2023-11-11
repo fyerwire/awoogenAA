@@ -9,7 +9,7 @@ from scripts.game_structure import image_cache
 from scripts.game_structure.image_button import UIImageButton, UISpriteButton
 from scripts.game_structure.game_essentials import game, MANAGER
 
-
+resourcepath = Screens.resourcepath
 class FamilyTreeScreen(Screens):
     # Page numbers for siblings and offspring
 
@@ -193,7 +193,7 @@ class FamilyTreeScreen(Screens):
         self.relation_backdrop = pygame_gui.elements.UIImage(scale(pygame.Rect((628, 950), (841, 342))),
                                                              pygame.transform.scale(
                                                                  image_cache.load_image(
-                                                                     "resources/images/familytree_relationbackdrop.png").convert_alpha(),
+                                                                     resourcepath + "images/familytree_relationbackdrop.png").convert_alpha(),
                                                                  (841, 342)), manager=MANAGER)
         self.relation_backdrop.disable()
 
@@ -202,7 +202,7 @@ class FamilyTreeScreen(Screens):
         self.root_cat_frame = pygame_gui.elements.UIImage(scale(pygame.Rect((129, 950), (452, 340))),
                                                           pygame.transform.scale(
                                                               image_cache.load_image(
-                                                                  "resources/images/familytree_bigcatbox.png").convert_alpha(),
+                                                                  resourcepath + "images/familytree_bigcatbox.png").convert_alpha(),
                                                               (452, 340)), manager=MANAGER)
         self.cat_elements["root_cat_image"] = UISpriteButton(scale(pygame.Rect((462, 1151), (100, 100))),
                                                              game.switches['root_cat'].sprite,
@@ -215,7 +215,7 @@ class FamilyTreeScreen(Screens):
         self.center_cat_frame = pygame_gui.elements.UIImage(scale(pygame.Rect((0, 0), (160, 180))),
                                                             pygame.transform.scale(
                                                                 image_cache.load_image(
-                                                                    "resources/images/familytree_smallcatbox.png").convert_alpha(),
+                                                                    resourcepath + "images/familytree_smallcatbox.png").convert_alpha(),
                                                                 (160, 180)),
                                                             manager=MANAGER,
                                                             container=self.family_tree)
@@ -326,7 +326,7 @@ class FamilyTreeScreen(Screens):
         self.center_cat_frame = pygame_gui.elements.UIImage(scale(pygame.Rect((x_pos, y_pos), (160, 180))),
                                                             pygame.transform.scale(
                                                                 image_cache.load_image(
-                                                                    "resources/images/familytree_smallcatbox.png").convert_alpha(),
+                                                                    resourcepath + "images/familytree_smallcatbox.png").convert_alpha(),
                                                                 (160, 180)),
                                                             manager=MANAGER,
                                                             container=self.family_tree)
@@ -497,77 +497,77 @@ class FamilyTreeScreen(Screens):
             self.tabs['grandparents_tab'] = pygame_gui.elements.UIImage(scale(pygame.Rect((1164, 890), (256, 60))),
                                                                         pygame.transform.scale(
                                                                             image_cache.load_image(
-                                                                                "resources/images/grandparents_tab.png").convert_alpha(),
+                                                                                resourcepath + "images/grandparents_tab.png").convert_alpha(),
                                                                             (256, 60)),
                                                                         manager=MANAGER)
         elif self.current_group_name == "parents":
             self.tabs['parents_tab'] = pygame_gui.elements.UIImage(scale(pygame.Rect((1246, 890), (174, 60))),
                                                                    pygame.transform.scale(
                                                                        image_cache.load_image(
-                                                                           "resources/images/parents_tab.png").convert_alpha(),
+                                                                           resourcepath + "images/parents_tab.png").convert_alpha(),
                                                                        (174, 60)),
                                                                    manager=MANAGER)
         elif self.current_group_name == "parents_siblings":
             self.tabs['parents_siblings_tab'] = pygame_gui.elements.UIImage(scale(pygame.Rect((1123, 890), (296, 60))),
                                                                             pygame.transform.scale(
                                                                                 image_cache.load_image(
-                                                                                    "resources/images/parentsibling_tab.png").convert_alpha(),
+                                                                                    resourcepath + "images/parentsibling_tab.png").convert_alpha(),
                                                                                 (296, 60)),
                                                                             manager=MANAGER)
         elif self.current_group_name == "cousins":
             self.tabs['cousins_tab'] = pygame_gui.elements.UIImage(scale(pygame.Rect((1254, 890), (166, 60))),
                                                                    pygame.transform.scale(
                                                                        image_cache.load_image(
-                                                                           "resources/images/cousins_tab.png").convert_alpha(),
+                                                                           resourcepath + "images/cousins_tab.png").convert_alpha(),
                                                                        (166, 60)),
                                                                    manager=MANAGER)
         elif self.current_group_name == "siblings":
             self.tabs['siblings_tab'] = pygame_gui.elements.UIImage(scale(pygame.Rect((1256, 890), (164, 60))),
                                                                     pygame.transform.scale(
                                                                         image_cache.load_image(
-                                                                            "resources/images/siblings_tab.png").convert_alpha(),
+                                                                            resourcepath + "images/siblings_tab.png").convert_alpha(),
                                                                         (164, 60)),
                                                                     manager=MANAGER)
         elif self.current_group_name == "siblings_mates":
             self.tabs['siblings_mates_tab'] = pygame_gui.elements.UIImage(scale(pygame.Rect((1146, 890), (274, 60))),
                                                                           pygame.transform.scale(
                                                                               image_cache.load_image(
-                                                                                  "resources/images/siblingsmate_tab.png").convert_alpha(),
+                                                                                  resourcepath + "images/siblingsmate_tab.png").convert_alpha(),
                                                                               (274, 60)),
                                                                           manager=MANAGER)
         elif self.current_group_name == "siblings_kits":
             self.tabs['siblings_kits_tab'] = pygame_gui.elements.UIImage(scale(pygame.Rect((1170, 890), (250, 60))),
                                                                          pygame.transform.scale(
                                                                              image_cache.load_image(
-                                                                                 "resources/images/siblingkits_tab.png").convert_alpha(),
+                                                                                 resourcepath + "images/siblingkits_tab.png").convert_alpha(),
                                                                              (250, 60)),
                                                                          manager=MANAGER)
         elif self.current_group_name == "mates":
             self.tabs['mates_tab'] = pygame_gui.elements.UIImage(scale(pygame.Rect((1270, 890), (150, 60))),
                                                                  pygame.transform.scale(
                                                                      image_cache.load_image(
-                                                                         "resources/images/mates_tab.png").convert_alpha(),
+                                                                         resourcepath + "images/mates_tab.png").convert_alpha(),
                                                                      (150, 60)),
                                                                  manager=MANAGER)
         elif self.current_group_name == "kits":
             self.tabs['kits_tab'] = pygame_gui.elements.UIImage(scale(pygame.Rect((1306, 890), (114, 60))),
                                                                 pygame.transform.scale(
                                                                     image_cache.load_image(
-                                                                        "resources/images/kits_tab.png").convert_alpha(),
+                                                                        resourcepath + "images/kits_tab.png").convert_alpha(),
                                                                     (114, 60)),
                                                                 manager=MANAGER)
         elif self.current_group_name == "kits_mates":
             self.tabs['kits_mates_tab'] = pygame_gui.elements.UIImage(scale(pygame.Rect((1196, 890), (224, 60))),
                                                                       pygame.transform.scale(
                                                                           image_cache.load_image(
-                                                                              "resources/images/kitsmate_tab.png").convert_alpha(),
+                                                                              resourcepath + "images/kitsmate_tab.png").convert_alpha(),
                                                                           (224, 60)),
                                                                       manager=MANAGER)
         elif self.current_group_name == "grandkits":
             self.tabs['grandkits_tab'] = pygame_gui.elements.UIImage(scale(pygame.Rect((1220, 890), (200, 60))),
                                                                      pygame.transform.scale(
                                                                          image_cache.load_image(
-                                                                             "resources/images/grandkits_tab.png").convert_alpha(),
+                                                                             resourcepath + "images/grandkits_tab.png").convert_alpha(),
                                                                          (200, 60)),
                                                                      manager=MANAGER)
 

@@ -22,6 +22,7 @@ from ..housekeeping.version import get_version_info
 logger = logging.getLogger(__name__)
 
 class SwitchClanScreen(Screens):
+    resourcepath = Screens.resourcepath
     """
     TODO: DOCS
     """
@@ -101,7 +102,7 @@ class SwitchClanScreen(Screens):
         """
         self.screen = pygame.transform.scale(
             pygame.image.load(
-                "resources/images/clan_saves_frame.png").convert_alpha(),
+                resourcepath + "images/clan_saves_frame.png").convert_alpha(),
             (440 / 1600 * screen_x, 750 / 1400 * screen_y))
         self.main_menu = UIImageButton(scale(pygame.Rect((50, 50), (306, 60))),
                                        "",

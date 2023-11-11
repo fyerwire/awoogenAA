@@ -16,21 +16,22 @@ from scripts.patrol.patrol import Patrol
 
 
 class MakeClanScreen(Screens):
+    resourcepath = Screens.resourcepath
     # UI images
     clan_frame_img = pygame.transform.scale(pygame.image.load(
-        'resources/images/pick_clan_screen/clan_name_frame.png').convert_alpha(), (432, 100))
+        resourcepath + 'images/pick_clan_screen/clan_name_frame.png').convert_alpha(), (432, 100))
     name_clan_img = pygame.transform.scale(pygame.image.load(
-        'resources/images/pick_clan_screen/name_clan_light.png').convert_alpha(), (1600, 1400))
+        resourcepath + 'images/pick_clan_screen/name_clan_light.png').convert_alpha(), (1600, 1400))
     leader_img = pygame.transform.scale(pygame.image.load(
-        'resources/images/pick_clan_screen/leader_light.png').convert_alpha(), (1600, 1400))
+        resourcepath + 'images/pick_clan_screen/leader_light.png').convert_alpha(), (1600, 1400))
     deputy_img = pygame.transform.scale(pygame.image.load(
-        'resources/images/pick_clan_screen/deputy_light.png').convert_alpha(), (1600, 1400))
+        resourcepath + 'images/pick_clan_screen/deputy_light.png').convert_alpha(), (1600, 1400))
     medic_img = pygame.transform.scale(pygame.image.load(
-        'resources/images/pick_clan_screen/med_light.png').convert_alpha(), (1600, 1400))
+        resourcepath + 'images/pick_clan_screen/med_light.png').convert_alpha(), (1600, 1400))
     clan_img = pygame.transform.scale(pygame.image.load(
-        'resources/images/pick_clan_screen/clan_light.png').convert_alpha(), (1600, 1400))
+        resourcepath + 'images/pick_clan_screen/clan_light.png').convert_alpha(), (1600, 1400))
     bg_preview_border = pygame.transform.scale(
-        pygame.image.load("resources/images/bg_preview_border.png").convert_alpha(), (466, 416))
+        pygame.image.load(resourcepath + "images/bg_preview_border.png").convert_alpha(), (466, 416))
 
     classic_mode_text = "This mode is Pack Generator at it's most basic. " \
                         "The player will not be expected to manage the minutia of Pack life. <br><br>" \
@@ -475,6 +476,7 @@ class MakeClanScreen(Screens):
         self.elements = {}
 
     def refresh_text_and_buttons(self):
+        resourcepath = Screens.resourcepath
         """Refreshes the button states and text boxes"""
         if self.sub_screen == "game mode":
             # Set the mode explanation text
@@ -531,31 +533,31 @@ class MakeClanScreen(Screens):
             if len(self.members) == 0:
                 self.elements["background"].set_image(
                     pygame.transform.scale(
-                        pygame.image.load("resources/images/pick_clan_screen/clan_none_light.png").convert_alpha(),
+                        pygame.image.load(resourcepath + "images/pick_clan_screen/clan_none_light.png").convert_alpha(),
                         (1600, 1400)))
                 self.elements['next_step'].disable()
             elif len(self.members) == 1:
                 self.elements["background"].set_image(
                     pygame.transform.scale(
-                        pygame.image.load("resources/images/pick_clan_screen/clan_one_light.png").convert_alpha(),
+                        pygame.image.load(resourcepath + "images/pick_clan_screen/clan_one_light.png").convert_alpha(),
                         (1600, 1400)))
                 self.elements['next_step'].disable()
             elif len(self.members) == 2:
                 self.elements["background"].set_image(
                     pygame.transform.scale(
-                        pygame.image.load("resources/images/pick_clan_screen/clan_two_light.png").convert_alpha(),
+                        pygame.image.load(resourcepath + "images/pick_clan_screen/clan_two_light.png").convert_alpha(),
                         (1600, 1400)))
                 self.elements['next_step'].disable()
             elif len(self.members) == 3:
                 self.elements["background"].set_image(
                     pygame.transform.scale(
-                        pygame.image.load("resources/images/pick_clan_screen/clan_three_light.png").convert_alpha(),
+                        pygame.image.load(resourcepath + "images/pick_clan_screen/clan_three_light.png").convert_alpha(),
                         (1600, 1400)))
                 self.elements['next_step'].disable()
             elif 4 <= len(self.members) <= 6:
                 self.elements["background"].set_image(
                     pygame.transform.scale(
-                        pygame.image.load("resources/images/pick_clan_screen/clan_four_light.png").convert_alpha(),
+                        pygame.image.load(resourcepath + "images/pick_clan_screen/clan_four_light.png").convert_alpha(),
                         (1600, 1400)))
                 self.elements['next_step'].enable()
                 # In order for the "previous step" to work properly, we must enable this button, just in case it
@@ -564,7 +566,7 @@ class MakeClanScreen(Screens):
             elif len(self.members) == 7:
                 self.elements["background"].set_image(
                     pygame.transform.scale(
-                        pygame.image.load("resources/images/pick_clan_screen/clan_full_light.png").convert_alpha(),
+                        pygame.image.load(resourcepath + "images/pick_clan_screen/clan_full_light.png").convert_alpha(),
                         (1600, 1400)))
                 self.elements["select_cat"].disable()
                 self.elements['next_step'].enable()
@@ -626,6 +628,7 @@ class MakeClanScreen(Screens):
             self.refresh_selected_camp()
 
     def refresh_selected_camp(self):
+        resourcepath = Screens.resourcepath
         """Updates selected camp image and tabs"""
         self.tabs["tab1"].kill()
         self.tabs["tab2"].kill()
@@ -702,7 +705,7 @@ class MakeClanScreen(Screens):
             self.elements['art_frame'] = pygame_gui.elements.UIImage(scale(pygame.Rect(((334, 324), (932, 832)))),
                                                                      pygame.transform.scale(
                                                                          pygame.image.load(
-                                                                             "resources/images/bg_preview_border.png").convert_alpha(),
+                                                                             resourcepath + "images/bg_preview_border.png").convert_alpha(),
                                                                          (932, 832)), manager=MANAGER)
 
     def refresh_selected_cat_info(self, selected=None):
@@ -784,12 +787,13 @@ class MakeClanScreen(Screens):
         return f"<b>{cat.name}</b><br>{cat.gender}<br>{cat.age}<br>{cat.personality.trait}"
 
     def open_game_mode(self):
+        resourcepath = Screens.resourcepath
         # Clear previous screen
         self.clear_all_page()
         self.sub_screen = 'game mode'
 
         text_box = image_cache.load_image(
-            'resources/images/game_mode_text_box.png').convert_alpha()
+            resourcepath + 'images/game_mode_text_box.png').convert_alpha()
 
         self.elements['game_mode_background'] = pygame_gui.elements.UIImage(scale(pygame.Rect((650, 260), (798, 922))),
                                                                             pygame.transform.scale(text_box, (798, 922))
@@ -1032,7 +1036,7 @@ class MakeClanScreen(Screens):
                                                     manager=MANAGER)
         # Error message, to appear if you can't choose that cat.
         self.elements['error_message'] = pygame_gui.elements.UITextBox(
-            "Too young to become a medicine cat",
+            "Too young to become a medicine wolf",
             scale(pygame.Rect((300, 706), (1000, 110))),
             object_id=get_text_box_theme("#text_box_30_horizcenter_red"),
             visible=False,
@@ -1049,13 +1053,14 @@ class MakeClanScreen(Screens):
         self.refresh_cat_images_and_info()
 
     def open_choose_members(self):
+        resourcepath = Screens.resourcepath
         self.clear_all_page()
         self.sub_screen = 'choose members'
 
         self.elements['background'] = pygame_gui.elements.UIImage(scale(pygame.Rect((0, 828), (1600, 572))),
                                                                   pygame.transform.scale(
                                                                       pygame.image.load(
-                                                                          "resources/images/pick_clan_screen/clan_none_light.png").convert_alpha(),
+                                                                          resourcepath + "images/pick_clan_screen/clan_none_light.png").convert_alpha(),
                                                                       (1600, 1400)), manager=MANAGER)
         self.elements['background'].disable()
         self.clan_name_header()
@@ -1095,6 +1100,7 @@ class MakeClanScreen(Screens):
         self.refresh_text_and_buttons()
 
     def open_choose_background(self):
+        resourcepath = Screens.resourcepath
         # clear screen
         self.clear_all_page()
         self.sub_screen = 'choose camp'
@@ -1157,7 +1163,7 @@ class MakeClanScreen(Screens):
         self.elements['art_frame'] = pygame_gui.elements.UIImage(scale(pygame.Rect(((334, 324), (932, 832)))),
                                                                  pygame.transform.scale(
                                                                      pygame.image.load(
-                                                                         "resources/images/bg_preview_border.png").convert_alpha(),
+                                                                         resourcepath + "images/bg_preview_border.png").convert_alpha(),
                                                                      (932, 832)), manager=MANAGER)
 
         # camp art self.elements["camp_art"] = pygame_gui.elements.UIImage(scale(pygame.Rect((175,170),(450, 400))),
