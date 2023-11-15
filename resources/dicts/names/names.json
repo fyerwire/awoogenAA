@@ -227,7 +227,33 @@
 	"Lavender", "Light", "Lilac", "Milk", "Pale", "Plume", "Sky", "Swan", "Violet", "Azalea", "Berry", "Crocus", 
 	"Foxglove", "Fuchsia", "Gossamer", "Hollyhock", "Jasmine", "Larkspur", "Oleander", "Orchid", "Phlox", 
 	"Primrose", "Verbena", "Vervain"
-	
+    ],
+    "COCOA": [
+    "Bark", "Bat", "Branch", "Brown", "Burn", "Burnt", "Char", "Charred", "Cinnamon", "Dark", "Evening", 
+	"Fig", "Hazel", "Log", "Mouse", "Mud", "Murk", "Oak", "Otter", "Owl", "Pepper", "Plum", "Rat", 
+	"Red", "Robin", "Root", "Rose", "Russet", "Scarlet", "Scorch", "Stag", "Stoat", "Thrush", "Tree", 
+	"Twig", "Twilight", "Warm", "Auburn", "Berry", "Chanterelle", "Hawthorn", "Hickory", "Mistle", "Morel", 
+	"Rowan", "Saffron", "Spindle", "Thrasher", "Velvet", "Warbler"
+    ],
+    "SPRUCE": [
+    "Ash", "Ashen", "Blue", "Char", "Charred", "Cinder", "Dark", "Dust", "Dusty", "Evening", "Faded", 
+	"Fog", "Gray",  "Moon", "Pebble", "Rain", "Rat", "Rock", "Shade", "Shaded", "Smoke", "Smokey", "Smoky", 
+	"Stone", "Storm", "Trout", "Twilight", "Scale"
+    ],
+    "ISABELLA": [
+    "Ash", "Ashen", "Cinder", "Cloud", "Cloudy", "Dust", "Dusty", "Faded", "Fog", "Gray", "Mouse", "Pebble", 
+	"Pigeon", "Rat", "River", "Rock", "Silver", "Smoke", "Smokey", "Smoky", "Storm", "Swan"
+    ],
+    "SUNNY": [
+    "Amber", "Bright", "Buttercup", "Canary", "Cloud", "Day", "Flare", "Glint", "Gold", "Golden", "Honey", "Light", 
+	"Lightning", "Lion", "Sand", "Sandy", "Sun", "Sunny", "Thunder", "Warm", "Yellow", "Chick", "Daffodil", 
+	"Dandelion", "Hollyhock", "Loach", "Primrose", "Rue", "Snapdragon"
+    ],
+    "LUNA": [
+    "Ash", "Ashen", "Bat", "Black", "Blue", "Char", "Charred", "Coal", "Crow", "Dark", "Ebony", "Ink", 
+	"Inky", "Midnight", "Moon", "Night", "Pepper", "Plum", "Puma", "Raven", "Shade", "Shaded", "Shadow", "Storm", 
+	"Twilight", "Umber", "Violet", "Grackle", "Holly", "Ibis", "Magpie", "Mistle", "Mulberry", "Pitch", 
+	"Velvet"
     ]
   },
 
@@ -345,7 +371,15 @@
 	"BUBBLEGUM": ["Pink", "Sakura", "Blossom", "Hibiscus", "Hollyhock", "Tulip"],
 	"PINK": ["Pink", "Rose", "Lotus", "Orchid", "Peony", "Cosmos", "Sweet"],
 	"ROUGE": ["Red", "Rouge", "Orange", "Poppy", "Cosmos", "Robin"],
-	"SCARLET": ["Red", "Scarlet", "Rose", "Cardinal", "Poppy", "Cherry", "Azalea"]
+	"SCARLET": ["Red", "Scarlet", "Rose", "Cardinal", "Poppy", "Cherry", "Azalea"],
+    "HARVEST": ["Orange", "Pumpkin", "Fire", "Flame", "Blaze", "Ember", "Marigold", "Maple", "Poppy"],
+    "VIOLET": ["Purple", "Amethyst", "Lavender", "Orchid", "Aster", "Dawn", "Violet", "Petunia", "Iris"],
+    "RUBY": ["Red", "Scarlet", "Rose", "Ruby", "Cardinal", "Poppy", "Cherry", "Azalea"],
+    "DAWN": ["Purple", "Lilac", "Lavender", "Dawn", "Dawn", "Verbena", "Aster", "Phlox", "Pale"],
+    "DAYLIGHT": ["Blue", "Ice", "Frost", "Sky", "Hail", "Jay", "Yellow", "Sun", "Bright", "Light", "Lightning", "Spark", "Dahlia", "Zinnia"],
+    "TWILIGHT": ["Orange", "Pumpkin", "Fire", "Flame", "Blaze", "Ember", "Marigold", "Maple", "Twilight", "Dusk", "Shade"],
+    "DUSK": ["Black", "Night", "Shadow", "Midnight", "Dark", "Dusk", "Twilight", "Flame", "Ember"],
+    "MIDNIGHT": ["Black", "Night", "Shadow", "Midnight", "Dark", "Dusk"] 
   },
 
   "loner_names": [

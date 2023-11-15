@@ -2707,7 +2707,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "Hissing to {PRONOUN/p_l/self}, p_l turns and stalks off to continue the patrol, deliberately ignoring the whines. It must be a trick of the wind, {PRONOUN/p_l/subject} {VERB/p_l/inform/informs} {PRONOUN/p_l/poss} companions, and no wolf dares to argue.",
+                "text": "Growling to {PRONOUN/p_l/self}, p_l turns and stalks off to continue the patrol, deliberately ignoring the whines. It must be a trick of the wind, {PRONOUN/p_l/subject} {VERB/p_l/inform/informs} {PRONOUN/p_l/poss} companions, and no wolf dares to argue.",
                 "exp": 15,
                 "weight": 20,
                 "outsider_rep": -2

@@ -9,9 +9,8 @@ from scripts.cat.cats import Cat
 from scripts.game_structure import image_cache
 from ..utility import scale, shorten_text_to_fit
 
-
+resourcepath = Screens.resourcepath
 class UnknownResScreen(Screens):
-    resourcepath = Screens.resourcepath
     list_page = 1
     display_cats = []
     cat_names = []

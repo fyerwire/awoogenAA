@@ -246,7 +246,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "r_c leaps for the rabbit! And promptly trips over a rock. The rabbit hops away and r_c sheepishly picks {PRONOUN/r_c/self} up before noticing the o_c_n wolf watching {PRONOUN/r_c/object} from the other side of the border. The other wolf knows exactly what r_c was intending to do and hisses crossly before turning away, presumably to report the incident to their own leader.",
+                "text": "r_c leaps for the rabbit! And promptly trips over a rock. The rabbit hops away and r_c sheepishly picks {PRONOUN/r_c/self} up before noticing the o_c_n wolf watching {PRONOUN/r_c/object} from the other side of the border. The other wolf knows exactly what r_c was intending to do and growls crossly before turning away, presumably to report the incident to their own leader.",
                 "exp": 0,
                 "weight": 20,
                 "other_clan_rep": -1
@@ -1510,7 +1510,7 @@
                 "other_clan_rep": -1
             },
             {
-                "text": "s_c is marking along the territory line when they encounter a patrol from o_c_n, out on a similar mission. They stare at the other Pack's patrol challengingly, following their every move until the shared border ends, and the patrol is marred by muttered insults and hissed threats from both sides.",
+                "text": "s_c is marking along the territory line when they encounter a patrol from o_c_n, out on a similar mission. They stare at the other Pack's patrol challengingly, following their every move until the shared border ends, and the patrol is marred by muttered insults and barked threats from both sides.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [

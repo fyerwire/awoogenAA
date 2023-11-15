@@ -75,12 +75,12 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "r_c wanders past an old badger sett dug into the rocky hillside, only to freeze. There's new scent here, acrid and sour.",
+        "intro_text": "r_c wanders past an old wolverine den dug into the rocky hillside, only to freeze. There's new scent here, acrid and sour.",
         "decline_text": "Surely it must be nothing... uneasily, r_c continues on.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "Feeling ever so alone on their solo patrol, r_c carefully sniffs around the mouth of the burrow, but the scent change is unmistakable - a new badger occupant has moved in. Creeping forward, belly flat in the dirt, they manage just enough of a glimpse to confirm the badger's presence. Heart pounding, r_c sprints back to camp to warn everyone.",
+                "text": "Feeling ever so alone on their solo patrol, r_c carefully sniffs around the mouth of the burrow, but the scent change is unmistakable - a new wolverine occupant has moved in. Creeping forward, belly flat in the dirt, they manage just enough of a glimpse to confirm the wolverine's presence. Heart pounding, r_c sprints back to camp to warn everyone.",
                 "exp": 30,
                 "weight": 20,
                 "relationships": [
@@ -94,7 +94,7 @@
                 ]
             },
             {
-                "text": "Feeling ever so alone on their solo patrol, r_c carefully sniffs around the mouth of the burrow, but after a few moments, realizes that the scent is relatively weak. A badger was here, no doubt about it, but it doesn't seem to have taken up residence. This will be important information to report back at camp.",
+                "text": "Feeling ever so alone on their solo patrol, r_c carefully sniffs around the mouth of the burrow, but after a few moments, realizes that the scent is relatively weak. A wolverine was here, no doubt about it, but it doesn't seem to have taken up residence. This will be important information to report back at camp.",
                 "exp": 30,
                 "weight": 5,
                 "relationships": [
@@ -108,7 +108,7 @@
                 ]
             },
             {
-                "text": "s_c decides there has to be a smarter way of figuring out if a badger has moved in, one that doesn't involve sticking their head in front of a predator. They search the slope around the sett thoroughly until they come upon some fresh badger scat - stinky, horrible, and perfect proof of the new occupant of the sett.",
+                "text": "s_c decides there has to be a smarter way of figuring out if a wolverine has moved in, one that doesn't involve sticking their head in front of a predator. They search the slope around the sett thoroughly until they come upon some fresh wolverine scat - stinky, horrible, and perfect proof of the new occupant of the den.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1"],
@@ -123,7 +123,7 @@
                 ]
             },
             {
-                "text": "Carefully considering their options, r_c decides on a stakeout, and watches from a safe distance on the slopes above. When the badger pokes its head above ground at dusk, they're prepared, and dart off back to camp to warn everyone before the predator has blinked the sleep out of its eyes.",
+                "text": "Carefully considering their options, r_c decides on a stakeout, and watches from a safe distance on the slopes above. When the wolverine pokes its head above ground at dusk, they're prepared, and dart off back to camp to warn everyone before the predator has blinked the sleep out of its eyes.",
                 "exp": 30,
                 "weight": 20,
                 "stat_trait": [
@@ -150,7 +150,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "Well, the only way to know is to check! s_c scrambles into the den for a look and comes nose to nose with its occupant. It's only by the grace of StarPack that they're able to redirect that speed to twist around just as fast, shedding fur in clumps as the badger's furious snarling and fizzing follows them up the burrow tunnel.",
+                "text": "Well, the only way to know is to check! s_c scrambles into the den for a look and comes nose to nose with its occupant. It's only by the grace of StarPack that they're able to redirect that speed to twist around just as fast, shedding fur in clumps as the wolverine's furious snarling and fizzing follows them up the burrow tunnel.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -178,14 +178,14 @@
                 ]
             },
             {
-                "text": "r_c carefully approaches the burrow, trying to figure out if there's anything new inside. It's so dark, and it all smells the same... They try to creep just a little closer - but the ground drops away steeply beneath their paws and they lose their footing, skidding right into the disturbed badger's lethal jaws.",
+                "text": "r_c carefully approaches the burrow, trying to figure out if there's anything new inside. It's so dark, and it all smells the same... They try to creep just a little closer - but the ground drops away steeply beneath their paws and they lose their footing, skidding right into the disturbed wolverine's lethal jaws.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
                 "history_text": {
-                    "scar": "m_c was scarred by a badger.",
-                    "reg_death": "m_c lost their life to a badger.",
-                    "lead_death": "died to a badger"
+                    "scar": "m_c was scarred by a wolverine.",
+                    "reg_death": "m_c lost their life to a wolverine.",
+                    "lead_death": "died to a wolverine"
                 },
                 "relationships": [
                     {
@@ -198,7 +198,7 @@
                 ]
             },
             {
-                "text": "While r_c is carefully sniffing at the burrow entrance, there's a clatter of rocks behind them. It's difficult to say who's more surprised - r_c or the badger. It charges for the sett and r_c leaps out of the way, but its claws catch their pelt, and it's a bloodied wolf that limps back into camp to report the whole sorry adventure.",
+                "text": "While r_c is carefully sniffing at the burrow entrance, there's a clatter of rocks behind them. It's difficult to say who's more surprised - r_c or the wolverine. It charges for the wolf and r_c leaps out of the way, but its claws catch their pelt, and it's a bloodied wolf that limps back into camp to report the whole sorry adventure.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -209,9 +209,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c was scarred by a badger.",
-                    "reg_death": "m_c lost their life to a badger.",
-                    "lead_death": "died to a badger"
+                    "scar": "m_c was scarred by a wolverine.",
+                    "reg_death": "m_c lost their life to a wolverine.",
+                    "lead_death": "died to a wolverine"
                 },
                 "relationships": [
                     {
@@ -236,12 +236,12 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "p_l wanders past an old badger sett dug into the rocky hillside, only to freeze. There's new scent here, acrid and sour.",
+        "intro_text": "p_l wanders past an old wolverine den dug into the rocky hillside, only to freeze. There's new scent here, acrid and sour.",
         "decline_text": "Surely it must be nothing... uneasily, the patrol continues on.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "Calling the rest of the patrol over, the wolves discuss their next move. If a badger has moved in, they need to confirm it. Eventually p_l comes up with a plan - pushing loose rocks in front of the sett's mouth. The wolves will be able to come back tomorrow to see if anything has shoved them out of the way.",
+                "text": "Calling the rest of the patrol over, the wolves discuss their next move. If a wolverine has moved in, they need to confirm it. Eventually p_l comes up with a plan - pushing loose rocks in front of the den's mouth. The wolves will be able to come back tomorrow to see if anything has shoved them out of the way.",
                 "exp": 30,
                 "weight": 20,
                 "relationships": [
@@ -255,7 +255,7 @@
                 ]
             },
             {
-                "text": "The patrol brainstorms ideas, and the solution they hit upon is almost a game - batting pebbles into the sett with as much force as each wolf can muster. p_l wins the grand prize, thwacking a pebble down into the sett that causes an explosion of outraged fizzing as the badger inside is rudely awakened. Smartly, the patrol retreats back to camp.",
+                "text": "The patrol brainstorms ideas, and the solution they hit upon is almost a game - batting pebbles into the den with as much force as each wolf can muster. p_l wins the grand prize, thwacking a pebble down into the sett that causes an explosion of outraged fizzing as the wolverine inside is rudely awakened. Smartly, the patrol retreats back to camp.",
                 "exp": 30,
                 "weight": 5,
                 "relationships": [
@@ -269,7 +269,7 @@
                 ]
             },
             {
-                "text": "s_c decides there has to be a smarter way of figuring out if a badger has moved in, one that doesn't involve sticking their head in front of a predator. They lead the patrol on a search of the slope around the sett until they come upon some fresh badger scat - stinky, horrible, and perfect proof of the new occupant of the sett.",
+                "text": "s_c decides there has to be a smarter way of figuring out if a wolverine has moved in, one that doesn't involve sticking their head in front of a predator. They lead the patrol on a search of the slope around the sett until they come upon some fresh wolverine scat - stinky, horrible, and perfect proof of the new occupant of the sett.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1"],
@@ -284,7 +284,7 @@
                 ]
             },
             {
-                "text": "Carefully considering their options, s_c decides to set up a stakeout with the patrol. When the badger pokes its head above the ground at dusk, they're prepared, and in unison everyone turns for home. The wolves fade into the grass before the predator has even blinked the sleep out of its eyes.",
+                "text": "Carefully considering their options, s_c decides to set up a stakeout with the patrol. When the wolverine pokes its head above the ground at dusk, they're prepared, and in unison everyone turns for home. The wolves fade into the grass before the predator has even blinked the sleep out of its eyes.",
                 "exp": 30,
                 "weight": 20,
                 "stat_trait": [
@@ -311,7 +311,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The wolves try to find enough rubble to barricade the opening to the sett, but the area is pretty bare. Before they know it they're tired, thirsty, and returning home with nothing to show for it.",
+                "text": "The wolves try to find enough rubble to barricade the opening to the den, but the area is pretty bare. Before they know it they're tired, thirsty, and returning home with nothing to show for it.",
                 "exp": 0,
                 "weight": 20
             },
@@ -335,7 +335,7 @@
                 ]
             },
             {
-                "text": "As the patrol is sniffing around the burrow entrance there's a clatter of rocks. It's difficult to say who's more surprised - wolves or badger. There's a confused rush of paws and flying fur as the patrol scatters and the beast charges for the sett. r_c is battered in the process but everyone gets home safe in the end... including the badger.",
+                "text": "As the patrol is sniffing around the burrow entrance there's a clatter of rocks. It's difficult to say who's more surprised - wolves or wolverine. There's a confused rush of paws and flying fur as the patrol scatters and the beast charges for the den. r_c is battered in the process but everyone gets home safe in the end... including the wolverine.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -345,7 +345,7 @@
                         "scars": ["SIDE"]
                     }
                 ],
-                "history_text": { "scar": "This wolf was scarred by a badger." }
+                "history_text": { "scar": "This wolf was scarred by a wolverine." }
             }
         ]
     },
@@ -365,7 +365,7 @@
         "chance_of_success": 20,
         "success_outcomes": [
             {
-                "text": "Their Packmates come running at their yowls, and r_c is soon freed, shaken but unharmed. The patrol settles down as everyone comforts each other.",
+                "text": "Their Packmates come running at their yelps, and r_c is soon freed, shaken but unharmed. The patrol settles down as everyone comforts each other.",
                 "exp": 20,
                 "weight": 20,
                 "relationships": [
@@ -408,7 +408,7 @@
                 ]
             },
             {
-                "text": "Creeping in as close as possible, s_c purrs to r_c, keeping them calm as the patrol carefully digs down to them. r_c blinks up at them, holding on to their presence in the scary situation.",
+                "text": "Creeping in as close as possible, s_c talks softly to r_c, keeping them calm as the patrol carefully digs down to them. r_c blinks up at them, holding on to their presence in the scary situation.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -602,7 +602,7 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "p_l comes running at their yowls, and r_c is soon freed, shaken but unharmed. The wolves settle down as they comfort each other.",
+                "text": "p_l comes running at their yelps, and r_c is soon freed, shaken but unharmed. The wolves settle down as they comfort each other.",
                 "exp": 20,
                 "weight": 20,
                 "relationships": [
@@ -645,7 +645,7 @@
                 ]
             },
             {
-                "text": "Creeping in as close as possible, s_c purrs to r_c, keeping them calm as they carefully dig down to them. r_c blinks up at them, holding on to their presence in the scary situation.",
+                "text": "Creeping in as close as possible, s_c talks softly to r_c, keeping them calm as they carefully dig down to them. r_c blinks up at them, holding on to their presence in the scary situation.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -775,7 +775,7 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "p_l comes running at their yowls, and r_c is soon freed, shaken but unharmed. r_c has never noticed how strong p_l is before.",
+                "text": "p_l comes running at their yelps, and r_c is soon freed, shaken but unharmed. r_c has never noticed how strong p_l is before.",
                 "exp": 20,
                 "weight": 20,
                 "relationships": [
@@ -818,7 +818,7 @@
                 ]
             },
             {
-                "text": "Creeping in as close as possible, s_c purrs to r_c, keeping them calm as they carefully dig down to them. r_c blinks up at them, holding on to their presence in the scary situation.",
+                "text": "Creeping in as close as possible, s_c talks softly to r_c, keeping them calm as they carefully dig down to them. r_c blinks up at them, holding on to their presence in the scary situation.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -961,7 +961,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "Pinned under the rocks, r_c yowls until their voice is hoarse and their throat is sore, and thankfully, a patrol passes by after a few hours and frees their hapless Packmate.",
+                "text": "Pinned under the rocks, r_c howls until their voice is hoarse and their throat is sore, and thankfully, a patrol passes by after a few hours and frees their hapless Packmate.",
                 "exp": 0,
                 "weight": 20
             },
@@ -1095,7 +1095,7 @@
                 "weight": 5
             },
             {
-                "text": "s_c rounds a corner and stumbles across a  tiny, perfect, sheltered gully, thick with bushes and prey scent. Further investigation shows it will be sheltered from almost all wind directions, and s_c purrs. This reliable prey source will be important during leaf-bare.",
+                "text": "s_c rounds a corner and stumbles across a  tiny, perfect, sheltered gully, thick with bushes and prey scent. Further investigation shows it will be sheltered from almost all wind directions, and s_c wiggles. This reliable prey source will be important during leaf-bare.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1"]
@@ -1153,12 +1153,12 @@
                 "weight": 20
             },
             {
-                "text": "r_c rounds a corner and stumbles across a tiny, perfect, sheltered gully, thick with bushes and prey scent. Purring, they take the opportunity for a small moment of peace, stretching out in the shade to relax.",
+                "text": "r_c rounds a corner and stumbles across a tiny, perfect, sheltered gully, thick with bushes and prey scent. Sighing contentedly, they take the opportunity for a small moment of peace, stretching out in the shade to relax.",
                 "exp": 20,
                 "weight": 5
             },
             {
-                "text": "s_c rounds a corner and stumbles across a tiny, perfect, sheltered gully, thick with bushes and prey scent. Further investigation shows it will be sheltered from almost all wind directions, and s_c purrs. This reliable prey source will be important during leaf-bare, and its discovery helps to ease one of the many worries on the deputy's mind.",
+                "text": "s_c rounds a corner and stumbles across a tiny, perfect, sheltered gully, thick with bushes and prey scent. Further investigation shows it will be sheltered from almost all wind directions, and s_c wiggles. This reliable prey source will be important during leaf-bare, and its discovery helps to ease one of the many worries on the deputy's mind.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1"]
@@ -1216,12 +1216,12 @@
                 "weight": 20
             },
             {
-                "text": "r_c rounds a corner and stumbles across a tiny, perfect, sheltered gully, thick with bushes and prey scent. Purring, they take the opportunity for a small moment of peace, stretching out in the shade to relax.",
+                "text": "r_c rounds a corner and stumbles across a tiny, perfect, sheltered gully, thick with bushes and prey scent. Sighing contentedly, they take the opportunity for a small moment of peace, stretching out in the shade to relax.",
                 "exp": 20,
                 "weight": 5
             },
             {
-                "text": "s_c rounds a corner and stumbles across a tiny, perfect, sheltered gully, thick with bushes and prey scent. Further investigation shows it will be sheltered from almost all wind directions, and s_c purrs. This reliable prey source will be important during leaf-bare, and its discovery helps to ease one of the many worries on the leader's mind.",
+                "text": "s_c rounds a corner and stumbles across a tiny, perfect, sheltered gully, thick with bushes and prey scent. Further investigation shows it will be sheltered from almost all wind directions, and s_c wiggles. This reliable prey source will be important during leaf-bare, and its discovery helps to ease one of the many worries on the leader's mind.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1"]
@@ -1275,7 +1275,7 @@
         "chance_of_success": 70,
         "success_outcomes": [
             {
-                "text": "app1 bursts out from cover, pouncing on app2 with claws sheathed and giggling. app2 rolls with the gentle blow and bats app1 off, bounding after them with promises of getting them back! On and on the chase goes, neither interested in winning it as they play under the light of the full moon.",
+                "text": "app1 bursts out from cover, pouncing on app2 with a wide smile and giggling. app2 rolls with the gentle blow and bats app1 off, bounding after them with promises of getting them back! On and on the chase goes, neither interested in winning it as they play under the light of the full moon.",
                 "exp": 10,
                 "weight": 20,
                 "relationships": [
@@ -1289,7 +1289,7 @@
                 ]
             },
             {
-                "text": "app2 emerges from the dark, trotting up to app1 and asking why they wanted to meet there. app1 looks away with a purr, making up some nonsense about fight training that makes no sense. Instead both apprentices hang out under the stars, awkward and thrilled.",
+                "text": "app2 emerges from the dark, trotting up to app1 and asking why they wanted to meet there. app1 looks away with a embarrassed grin, making up some nonsense about fight training that makes no sense. Instead both apprentices hang out under the stars, awkward and thrilled.",
                 "exp": 10,
                 "weight": 5,
                 "relationships": [
@@ -1303,7 +1303,7 @@
                 ]
             },
             {
-                "text": "app2 emerges from the thick dark of the night, the stars reflected in their eyes. Seeing s_c, they trot up, asking why s_c wanted to meet there. Stuttering but determined, s_c explains that they wondered if, possibly, maybe, app2 would like to go on a... date? app2 looks away with a purr and murmurs a soft yes to the ground, suddenly unable to make eye contact.",
+                "text": "app2 emerges from the thick dark of the night, the stars reflected in their eyes. Seeing s_c, they trot up, asking why s_c wanted to meet there. Stuttering but determined, s_c explains that they wondered if, possibly, maybe, app2 would like to go on a... date? app2 looks away with a smile and murmurs a soft yes to the ground, suddenly unable to make eye contact.",
                 "exp": 10,
                 "weight": 20,
                 "stat_trait": [
@@ -1330,7 +1330,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "app1 bursts out from cover, pouncing on app2 with claws sheathed and giggling. app2 rolls with the blow and kicks app1 off, but they scramble to their feet looking hurt and alarmed - a rocky outlook is no place for games that knock you off balance.",
+                "text": "app1 bursts out from cover, pouncing on app2 with a wide grin and giggling. app2 rolls with the blow and kicks app1 off, but they scramble to their feet looking hurt and alarmed - a rocky outlook is no place for games that knock you off balance.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -1492,12 +1492,12 @@
             "normal adult": [1, 6]
         },
         "weight": 20,
-        "intro_text": "Touring through the territory, p_l spots a thrush, and begins to quiz app1 on what the best strategy is for catching it.",
+        "intro_text": "Touring through the territory, p_l spots a ptarmigan, and begins to quiz app1 on what the best strategy is for catching it.",
         "decline_text": "Thinking better of it, the wolves try to hunt instead.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "app1 tests the wind. They correctly identify that because of the wind they'd need to approach the thrush from the side. p_l purrs, complimenting them on how much they've learned.",
+                "text": "app1 tests the wind. They correctly identify that because of the wind they'd need to approach the thrush from the side. p_l wags, complimenting them on how much they've learned.",
                 "exp": 15,
                 "weight": 20,
                 "relationships": [
@@ -1518,7 +1518,7 @@
                 ]
             },
             {
-                "text": "There's a wooded valley just below where the thrush is foraging - app1 would approach from there!",
+                "text": "There's a wooded valley just below where the ptarmigan is foraging - app1 would approach from there!",
                 "exp": 15,
                 "weight": 5,
                 "relationships": [
@@ -1539,7 +1539,7 @@
                 ]
             },
             {
-                "text": "s_c stops, suddenly reminded of an old tale. The thrush below is breaking a snail open on a rock. There was a prophecy about that once, although s_c can't quite remember how the story goes...",
+                "text": "s_c stops, suddenly reminded of an old tale. The ptarmigan below is breaking a snail open on a rock. There was a prophecy about that once, although s_c can't quite remember how the story goes...",
                 "exp": 15,
                 "weight": 20,
                 "stat_skill": ["SPEAKER,1"],
@@ -1600,12 +1600,12 @@
             "normal adult": [1, 6]
         },
         "weight": 20,
-        "intro_text": "Touring through the territory, p_l spots a thrush, and begins to quiz app1 on what the best strategy is for catching it.",
+        "intro_text": "Touring through the territory, p_l spots a ptarmigan, and begins to quiz app1 on what the best strategy is for catching it.",
         "decline_text": "Thinking better of it, the wolves try to hunt instead.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "app1 tests the wind. They correctly identify that because of the wind they'd need to approach the thrush from the side. p_l purrs, complimenting them on how much they've learned.",
+                "text": "app1 tests the wind. They correctly identify that because of the wind they'd need to approach the ptarmigan from the side. p_l wags, complimenting them on how much they've learned.",
                 "exp": 15,
                 "weight": 20,
                 "relationships": [
@@ -1626,7 +1626,7 @@
                 ]
             },
             {
-                "text": "There's a wooded valley just below where the thrush is foraging - app1 would approach from there!",
+                "text": "There's a wooded valley just below where the ptarmigan is foraging - app1 would approach from there!",
                 "exp": 15,
                 "weight": 5,
                 "relationships": [
@@ -1709,12 +1709,12 @@
             "normal adult": [1, 6]
         },
         "weight": 20,
-        "intro_text": "Touring through the territory, p_l spots a thrush, and begins to quiz the apprentices on what the best strategy is for catching it.",
+        "intro_text": "Touring through the territory, p_l spots a ptarmigan, and begins to quiz the apprentices on what the best strategy is for catching it.",
         "decline_text": "Thinking better of it, the wolves try to hunt instead.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "app1 tests the wind. They correctly identify that because of the wind they'd need to approach the thrush from the side, but app2 counters by pointing out a great vantage point to pounce from, if the wind wasn't against them. p_l purrs, complimenting them both on how much they've learned.",
+                "text": "app1 tests the wind. They correctly identify that because of the wind they'd need to approach the ptarmigan from the side, but app2 counters by pointing out a great vantage point to strike from, if the wind wasn't against them. p_l wags, complimenting them both on how much they've learned.",
                 "exp": 20,
                 "weight": 20,
                 "relationships": [
@@ -1735,7 +1735,7 @@
                 ]
             },
             {
-                "text": "There's a wooded valley just below where the thrush is foraging - app1 would approach from there! app2 argues for approaching from above and pouncing from on high instead. p_l praises them both for solid plans of attack.",
+                "text": "There's a wooded valley just below where the ptarmigan is foraging - app1 would approach from there! app2 argues for approaching from above and striking from on high instead. p_l praises them both for solid plans of attack.",
                 "exp": 20,
                 "weight": 5,
                 "relationships": [
@@ -1756,7 +1756,7 @@
                 ]
             },
             {
-                "text": "s_c stops, suddenly reminded of an old tale. The thrush below is breaking a snail open on a rock. There was a prophecy about that once, although p_l can't quite remember how the story goes...",
+                "text": "s_c stops, suddenly reminded of an old tale. The ptarmigan below is breaking a snail open on a rock. There was a prophecy about that once, although p_l can't quite remember how the story goes...",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["SPEAKER,1"],
@@ -1818,12 +1818,12 @@
             "normal adult": [1, 6]
         },
         "weight": 20,
-        "intro_text": "Touring through the territory, p_l spots a thrush, and begins to quiz the apprentices on what the best strategy is for catching it.",
+        "intro_text": "Touring through the territory, p_l spots a ptarmigan, and begins to quiz the apprentices on what the best strategy is for catching it.",
         "decline_text": "Thinking better of it, the wolves try to hunt instead.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "app1 tests the wind. They correctly identify that because of the wind they'd need to approach the thrush from the side, but app2 counters by pointing out a great vantage point to pounce from, if the wind wasn't against them. p_l purrs, complimenting them both on how much they've learned.",
+                "text": "app1 tests the wind. They correctly identify that because of the wind they'd need to approach the ptarmigan from the side, but app2 counters by pointing out a great vantage point to strike from, if the wind wasn't against them. p_l wags, complimenting them both on how much they've learned.",
                 "exp": 15,
                 "weight": 20,
                 "relationships": [
@@ -1844,7 +1844,7 @@
                 ]
             },
             {
-                "text": "There's a wooded valley just below where the thrush is foraging - app1 would approach from there! app2 argues for approaching from above and pouncing from on high instead. p_l praises them both for solid plans of attack.",
+                "text": "There's a wooded valley just below where the ptarmigan is foraging - app1 would approach from there! app2 argues for approaching from above and striking from on high instead. p_l praises them both for solid plans of attack.",
                 "exp": 15,
                 "weight": 5,
                 "relationships": [

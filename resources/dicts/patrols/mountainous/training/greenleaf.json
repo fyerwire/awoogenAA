@@ -536,7 +536,7 @@
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "app1 sticks their nose down into the soft dew-covered meadowgrass, searching for prey scent, but p_l's tail flicks under their chin, prompting their head up. They gasp. Above them, a male hummingbird hovers, his full breeding plumage flashing brilliantly in the sun.",
+                "text": "app1 sticks their nose down into the soft dew-covered meadowgrass, searching for prey scent, but p_l's nose taps their chin, prompting their head up. They gasp. Above them, a male hummingbird hovers, his full breeding plumage flashing brilliantly in the sun.",
                 "exp": 15,
                 "weight": 20,
                 "relationships": [
@@ -644,7 +644,7 @@
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "app1 sticks their nose down into the soft dew-covered meadowgrass, searching for prey scent, but p_l's tail flicks under their chin, prompting their head up. They gasp. Above them, a male hummingbird hovers, his full breeding plumage flashing brilliantly in the sun.",
+                "text": "app1 sticks their nose down into the soft dew-covered meadowgrass, searching for prey scent, but p_l's nose taps their chin, prompting their head up. They gasp. Above them, a male hummingbird hovers, his full breeding plumage flashing brilliantly in the sun.",
                 "exp": 15,
                 "weight": 20,
                 "relationships": [
@@ -686,7 +686,7 @@
                 ]
             },
             {
-                "text": "app1 leaps into the meadows, running around maniacally as hummingbirds flit away before them. s_c watches them indulgently, and when they slow down s_c explains about how c_n uses hunting the agile birds as the ultimate test - it's considered the mark of a truly fantastic hunter to catch one without using your claws and pluck a single shining feather.",
+                "text": "app1 leaps into the meadows, running around maniacally as hummingbirds flit away before them. s_c watches them indulgently, and when they slow down s_c explains about how c_n uses hunting the agile birds as the ultimate test - it's considered the mark of a truly fantastic hunter to catch one without using your teeth and pluck a single shining feather.",
                 "exp": 15,
                 "weight": 20,
                 "stat_skill": ["TEACHER,1"],
@@ -753,7 +753,7 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "The apprentices stick their noses down into the soft dew-covered meadowgrass, searching for prey scent, but p_l's tail flicks under app1's chin, prompting their head up. They gasp. Above them, a male hummingbird hovers, his full breeding plumage flashing brilliantly in the sun.",
+                "text": "The apprentices stick their noses down into the soft dew-covered meadowgrass, searching for prey scent, but p_l's nose taps app1's chin, prompting their head up. They gasp. Above them, a male hummingbird hovers, his full breeding plumage flashing brilliantly in the sun.",
                 "exp": 20,
                 "weight": 20,
                 "relationships": [
@@ -862,7 +862,7 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "The apprentices stick their noses down into the soft dew-covered meadowgrass, searching for prey scent, but p_l's tail flicks under app1's chin, prompting their head up. They gasp. Above them, a male hummingbird hovers, his full breeding plumage flashing brilliantly in the sun.",
+                "text": "The apprentices stick their noses down into the soft dew-covered meadowgrass, searching for prey scent, but p_l's nose taps app1's chin, prompting their head up. They gasp. Above them, a male hummingbird hovers, his full breeding plumage flashing brilliantly in the sun.",
                 "exp": 15,
                 "weight": 20,
                 "relationships": [
@@ -904,7 +904,7 @@
                 ]
             },
             {
-                "text": "The apprentices leap into the meadows, running around maniacally as hummingbirds flit away before them. p_l watches them indulgently, and when they slow down s_c explains about how c_n uses hunting the agile birds as the ultimate test - it's considered the mark of a truly fantastic hunter to catch one without using your claws and pluck a single shining feather.",
+                "text": "The apprentices leap into the meadows, running around maniacally as hummingbirds flit away before them. p_l watches them indulgently, and when they slow down s_c explains about how c_n uses hunting the agile birds as the ultimate test - it's considered the mark of a truly fantastic hunter to catch one without using your teeth and pluck a single shining feather.",
                 "exp": 15,
                 "weight": 20,
                 "stat_skill": ["TEACHER,1"],

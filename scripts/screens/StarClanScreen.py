@@ -10,9 +10,8 @@ from scripts.utility import scale, shorten_text_to_fit
 from scripts.game_structure import image_cache
 from scripts.game_structure.game_essentials import game, screen, screen_x, screen_y, MANAGER
 
-
+resourcepath = Screens.resourcepath
 class StarClanScreen(Screens):
-    resourcepath = Screens.resourcepath
     list_page = 1
     display_cats = []
     cat_names = []

@@ -1263,10 +1263,11 @@ class EventLoading(UIWindow):
 
     @staticmethod
     def load_images():
+        resourcepath = themegrabber()
         frames = []
         for i in range(0, 16):
             frames.append(pygame.image.load(
-                f"resources/images/loading_animate/timeskip/{i}.png"))
+                resourcepath + f"images/loading_animate/timeskip/{i}.png"))
 
         return frames
 

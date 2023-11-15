@@ -633,7 +633,7 @@
         ],
         "antag_fail_outcomes": [
             {
-                "text": "The patrol says that they can't take on another wolf right now and tries to direct the loner somewhere else, but the loner hisses and says that they can find their own way.",
+                "text": "The patrol says that they can't take on another wolf right now and tries to direct the loner somewhere else, but the loner growls and says that they can find their own way.",
                 "exp": 0,
                 "weight": 20,
                 "outsider_rep": -1
@@ -712,7 +712,7 @@
         ],
         "antag_fail_outcomes": [
             {
-                "text": "p_l says that c_n can't take on another wolf right now and tries to direct the loner somewhere else, but the loner hisses and says that they can find their own way.",
+                "text": "p_l says that c_n can't take on another wolf right now and tries to direct the loner somewhere else, but the loner growls and says that they can find their own way.",
                 "exp": 0,
                 "weight": 20,
                 "outsider_rep": -1
@@ -929,7 +929,7 @@
         ],
         "antag_fail_outcomes": [
             {
-                "text": "A loner and their pups emerge from the bush, but p_l shakes {PRONOUN/p_l/poss} head, and {VERB/p_l/tell/tells} the loner {PRONOUN/p_l/subject} meant it when {PRONOUN/p_l/subject} said {PRONOUN/p_l/subject} didn't want to see them again. The loner hisses and scratches at p_l. Rumors start at camp over what p_l said to the loner.",
+                "text": "A loner and their pups emerge from the bush, but p_l shakes {PRONOUN/p_l/poss} head, and {VERB/p_l/tell/tells} the loner {PRONOUN/p_l/subject} meant it when {PRONOUN/p_l/subject} said {PRONOUN/p_l/subject} didn't want to see them again. The loner growls and snaps at p_l. Rumors start at camp over what p_l said to the loner.",
                 "exp": 0,
                 "weight": 20,
                 "outsider_rep": -1
@@ -1018,7 +1018,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "p_l hisses at StarPack for the sign, refusing to follow it to its source, and what might have been.",
+                "text": "p_l growls at StarPack for the sign, refusing to follow it to its source, and what might have been.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2
@@ -1099,7 +1099,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "p_l hisses at StarPack for the sign, refusing to follow it to its source, and what might have been.",
+                "text": "p_l growls at StarPack for the sign, refusing to follow it to its source, and what might have been.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2
@@ -1182,7 +1182,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "p_l hisses at StarPack for the sign, refusing to follow it to its source, and what might have been.",
+                "text": "p_l growls at StarPack for the sign, refusing to follow it to its source, and what might have been.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2
@@ -1265,7 +1265,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "p_l hisses at StarPack for the sign, refusing to follow it to its source, and what might have been.",
+                "text": "p_l growls at StarPack for the sign, refusing to follow it to its source, and what might have been.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2
@@ -1354,7 +1354,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "p_l hisses at StarPack for the sign, refusing to follow it to its source, and what might have been.",
+                "text": "p_l growls at StarPack for the sign, refusing to follow it to its source, and what might have been.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2
@@ -1443,7 +1443,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "p_l hisses at StarPack for the sign, refusing to follow it to its source, and what might have been.",
+                "text": "p_l growls at StarPack for the sign, refusing to follow it to its source, and what might have been.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2
@@ -1597,7 +1597,7 @@
                 "outsider_rep": 1
             },
             {
-                "text": "The patrol follows the noise and comes upon a pet that's sniffing around. The pet turns and bristles, hissing at the patrol. s_c calls out a greeting to them and engages them in conversation, which seems to calm them down. They even agree when s_c asks if they'd like to join the Pack!",
+                "text": "The patrol follows the noise and comes upon a pet that's sniffing around. The pet turns and bristles, growling at the patrol. s_c calls out a greeting to them and engages them in conversation, which seems to calm them down. They even agree when s_c asks if they'd like to join the Pack!",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["SPEAKER,1"],
@@ -1681,12 +1681,12 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "The patrol is checking along the border lines when they hear a startling sound - a hiss of pain? They quickly follow the sound to the source. It's a loner, and they appear to be injured.",
+        "intro_text": "The patrol is checking along the border lines when they hear a startling sound - a whine of pain? They quickly follow the sound to the source. It's a loner, and they appear to be injured.",
         "decline_text": "It's probably nothing. The patrol leaves the noise alone and continues on their way.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "The patrol approaches cautiously. The loner draws themself up, but doing so causes them to let out another hiss. p_l offers to bring them to camp. Though they seem hesitant, the loner agrees.",
+                "text": "The patrol approaches cautiously. The loner draws themself up, but doing so causes them to let out another whine. p_l offers to bring them to camp. Though they seem hesitant, the loner agrees.",
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
@@ -1734,7 +1734,7 @@
                 ]
             },
             {
-                "text": "The loner hisses defensively as the patrol comes closer. s_c speaks soothingly to the loner, assuring them that they mean no harm and simply want to help. The loner seems distrustful, but allows p_l to help them back to camp.",
+                "text": "The loner growls defensively as the patrol comes closer. s_c speaks soothingly to the loner, assuring them that they mean no harm and simply want to help. The loner seems distrustful, but allows p_l to help them back to camp.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["SPEAKER,1"],
@@ -1795,12 +1795,12 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "p_l is checking along the border lines when {PRONOUN/p_l/subject} {VERB/p_l/hear/hears} a startling sound - a hiss of pain? {PRONOUN/p_l/subject/CAP} quickly {VERB/p_l/follow/follows} the sound to the source. It's a loner, and they appear to be injured.",
+        "intro_text": "p_l is checking along the border lines when {PRONOUN/p_l/subject} {VERB/p_l/hear/hears} a startling sound - a whine of pain? {PRONOUN/p_l/subject/CAP} quickly {VERB/p_l/follow/follows} the sound to the source. It's a loner, and they appear to be injured.",
         "decline_text": "It's probably nothing. p_l leaves the noise alone and continues on {PRONOUN/p_l/poss} way.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "p_l approaches cautiously. The loner draws themself up, but doing so causes them to let out another hiss. p_l offers to bring them to camp. Though they seem hesitant, the loner agrees.",
+                "text": "p_l approaches cautiously. The loner draws themself up, but doing so causes them to let out another whine. p_l offers to bring them to camp. Though they seem hesitant, the loner agrees.",
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
@@ -1848,7 +1848,7 @@
                 ]
             },
             {
-                "text": "The loner hisses defensively as s_c comes closer. {PRONOUN/s_c/subject/CAP} {VERB/s_c/speak/speaks} soothingly to the loner, assuring them that {PRONOUN/s_c/subject} {VERB/s_c/mean/means} no harm and simply {VERB/s_c/want/wants} to help. The loner seems distrustful, but allows p_l to help them back to camp.",
+                "text": "The loner growls defensively as s_c comes closer. {PRONOUN/s_c/subject/CAP} {VERB/s_c/speak/speaks} soothingly to the loner, assuring them that {PRONOUN/s_c/subject} {VERB/s_c/mean/means} no harm and simply {VERB/s_c/want/wants} to help. The loner seems distrustful, but allows p_l to help them back to camp.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["SPEAKER,1"],

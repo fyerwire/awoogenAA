@@ -1231,6 +1231,96 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
         else:
             cat_sprite = str(cat.pelt.cat_sprites[age])
 
+    # Fixing poses for scars. skips ahead if there aren't any scars, the wrong scars, or is baby
+    # don't look too closely at this i did it while half asleep ty
+    scarchange = []
+    posescars = ['BURNTAIL', 'FROSTTAIL', 'HALFTAIL', 'LEFTEAR', 'NOEAR', 'NOLEFTEAR', 'NORIGHTEAR', 'NOTAIL', 'RIGHTEAR']
+    if len(cat.pelt.scars) != 0:
+        for scar in cat.pelt.scars:
+            if scar in posescars:
+                scarchange.append(scar)
+        if len(scarchange) != 0 and age != 'newborn' and not cat.pelt.paralyzed:
+            print('pose changer is running')
+            changetail = False
+            changenoear = False
+            changeleft = False
+            changeright = False
+            if 'BURNTAIL' in scarchange or 'FROSTTAIL' in scarchange or 'HALFTAIL' in scarchange or 'NOTAIL' in scarchange:
+                changetail = True
+            if 'NOEAR' in scarchange:
+                changenoear = True
+            if 'NORIGHTEAR' in scarchange or 'RIGHTEAR' in scarchange:
+                changeright = True
+            if 'NOLEFTEAR' in scarchange or 'LEFTEAR' in scarchange:
+                changeleft = True
+            if changetail:
+                if changenoear or changeright or changeleft:
+                    if age in ['kitten']:
+                        cat_sprite = str(2)
+                    elif age in ['adolescent']:
+                        cat_sprite = str(5)
+                    elif age in ['senior']:
+                        cat_sprite = str(14)
+                    else:
+                        cat_sprite = str(8)
+                else:
+                    if age in ['kitten']:
+                        pass
+                    elif age in ['adolescent']:
+                        cat_sprite = str(5)
+                    elif age in ['senior']:
+                        if cat_sprite == 13:
+                            cat_sprite = str(12)
+                    else:
+                        if cat_sprite == 8 or cat_sprite == 9 or cat_sprite == 10:
+                            pass
+                        else:
+                            cat_sprite = str(9)
+            elif changenoear:
+                if age in ['kitten']:
+                    if cat_sprite == 0:
+                        cat_sprite = str(2)
+                elif age in ['adolescent']:
+                    if cat_sprite == 3:
+                        cat_sprite = str(5)
+                elif age in ['senior']:
+                    cat_sprite = str(14)
+                else:
+                    if cat_sprite == 6 or cat_sprite == 8 or cat_sprite == 9 or cat_sprite == 10:
+                        pass
+                    else:
+                        cat_sprite = str(8)
+            elif changeright:
+                if age in ['kitten']:
+                    if cat_sprite == 0:
+                        cat_sprite = str(2)
+                elif age in ['adolescent']:
+                    if cat_sprite == 3:
+                        cat_sprite = str(5)
+                elif age in ['senior']:
+                    if cat_sprite == 13:
+                        cat_sprite = str(14)
+                else:
+                    if cat_sprite == 6 or cat_sprite == 8 or cat_sprite == 9 or cat_sprite == 11:
+                        pass
+                    else:
+                        cat_sprite = str(8)
+            elif changeleft:
+                if age in ['kitten']:
+                    pass
+                elif age in ['adolescent']:
+                    pass
+                elif age in ['senior']:
+                    if cat_sprite == 12:
+                        cat_sprite = str(14)
+                else:
+                    if cat_sprite == 6 or cat_sprite == 7 or cat_sprite == 9 or cat_sprite == 10:
+                        pass
+                    else:
+                        cat_sprite = str(10)
+            else:
+                print('scar changer got confused')
+
     new_sprite = pygame.Surface((sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
 
     # generating the sprite
@@ -1320,14 +1410,14 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
                 if scar in cat.pelt.scars3:
                     new_sprite.blit(sprites.sprites['scars' + scar + cat_sprite], (0, 0))
         
-        if not scars_hidden:
+        if not scars_hidden and not dead or cat.df and not scars_hidden:
             for scar in cat.pelt.scars:
                 if scar in cat.pelt.scars2:
                     new_sprite.blit(sprites.sprites['scarsmissing' + scar + cat_sprite], (0, 0), special_flags=blendmode)
                     new_sprite.blit(sprites.sprites['scars' + scar + cat_sprite], (0, 0))
 
         # draw accessories
-        if not acc_hidden:        
+        if not acc_hidden and not dead or cat.df and not scars_hidden:        
             if cat.pelt.accessory in cat.pelt.plant_accessories:
                 new_sprite.blit(sprites.sprites['natural' + cat.pelt.accessory + cat_sprite], (0, 0))
             elif cat.pelt.accessory in cat.pelt.wild_accessories:
@@ -1343,6 +1433,7 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
 
         # kori's fun glitter friends
         glitter = {
+            'DAYLIGHT': (120, 215, 216),
             'ICE': (233, 255, 255),
             'NAVY': (47, 63, 114),
             'RAIN': (87, 145, 178),
@@ -1368,14 +1459,21 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
             'LEAF': (113, 168, 86),
             'LIME': (203, 232, 103), 
             'MINT': (229, 250, 196),
+            'HARVEST': (255, 157, 20),
             'PEACH': (237, 184, 137),
             'PUMPKIN': (239, 137, 27),
             'TANGELO': (206, 103, 17),
+            'TWILIGHT': (222, 122, 10),
             'AMETHYST': (170, 114, 199),
+            'DAWN': (255, 251, 205),
+            'DUSK': (168, 79, 94),
             'LILAC': (218, 199, 228),
+            'MIDNIGHT': (90, 60, 99),
+            'VIOLET': (141, 77, 157),
             'BUBBLEGUM': (255, 210, 210), 
 	'PINK': (235, 183, 189),
             'ROUGE': (245, 133, 94),
+            'RUBY': (174, 0, 0),
             'SCARLET': (225, 77, 73),
             'AMBER': (244, 220, 55),
             'LEMON': (247, 240, 127),
@@ -1386,6 +1484,24 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
             }
         if dead and not cat.df:
             new_sprite.blit(sprites.sprites['lines' + cat_sprite], (0, 0))
+            if not scars_hidden:
+                for scar in cat.pelt.scars:
+                    if scar in cat.pelt.scars2:
+                        new_sprite.blit(sprites.sprites['scarsmissing' + scar + cat_sprite], (0, 0), special_flags=blendmode)
+                        new_sprite.blit(sprites.sprites['scars' + scar + cat_sprite], (0, 0))
+            if not acc_hidden:        
+                if cat.pelt.accessory in cat.pelt.plant_accessories:
+                    new_sprite.blit(sprites.sprites['natural' + cat.pelt.accessory + cat_sprite], (0, 0))
+                elif cat.pelt.accessory in cat.pelt.wild_accessories:
+                    new_sprite.blit(sprites.sprites['natural' + cat.pelt.accessory + cat_sprite], (0, 0))
+                elif cat.pelt.accessory in cat.pelt.collars:
+                    new_sprite.blit(sprites.sprites['collars' + cat.pelt.accessory + cat_sprite], (0, 0))
+                elif cat.pelt.accessory in cat.pelt.radiocollars:
+                    new_sprite.blit(sprites.sprites['collars' + cat.pelt.accessory + cat_sprite], (0, 0))
+                elif cat.pelt.accessory in cat.pelt.harnesses:
+                    new_sprite.blit(sprites.sprites['collars' + cat.pelt.accessory + cat_sprite], (0, 0))
+                elif cat.pelt.accessory in cat.pelt.bandanas:
+                    new_sprite.blit(sprites.sprites['collars' + cat.pelt.accessory + cat_sprite], (0, 0))
             deadglitter = sprites.sprites['lineartdead' + cat_sprite].copy()
             deadcolor = glitter[str(cat.pelt.eye_colour)]
             deadtint = pygame.Surface((sprites.size, sprites.size)).convert_alpha()
@@ -1413,8 +1529,12 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
                 new_sprite = temp
             else:
                 temp = sprites.sprites['fadestarclan' + stage + cat_sprite].copy()
-                temp.blit(new_sprite, (0, 0))
-                new_sprite = temp
+                #temp.blit(new_sprite, (0, 0))
+                #new_sprite = temp
+                deadtint = pygame.Surface((sprites.size, sprites.size)).convert_alpha()
+                deadtint.fill(deadcolor)
+                temp.blit(deadtint, (0, 0), special_flags=pygame.BLEND_RGB_MULT)
+                new_sprite.blit(temp, (0, 0))
 
         # reverse, if assigned so
         if cat.pelt.reverse:

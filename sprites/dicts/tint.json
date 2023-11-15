@@ -20,7 +20,12 @@
 	"SILVER": "cool",
 	"ONYX": "cool",
 	"SUNSTONE": "warm",
-	"MOONSTONE": "cool"
+	"MOONSTONE": "cool",
+    "COCOA": "brown",
+    "SPRUCE": "cool",
+    "ISABELLA": "warm",
+    "SUNNY": "warm",
+    "LUNA": "cool"
   },
   "possible_tints": {
     "basic": ["pink", "gray", "red", "orange", "none", "none"],

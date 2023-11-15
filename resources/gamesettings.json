@@ -90,8 +90,8 @@
             "2"
         ],
         "fullscreen": [
-            true,
-            false
+            false,
+            true
         ]
     }
 }
