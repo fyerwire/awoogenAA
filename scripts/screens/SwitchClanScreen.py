@@ -22,7 +22,6 @@ from ..housekeeping.version import get_version_info
 logger = logging.getLogger(__name__)
 
 class SwitchClanScreen(Screens):
-    resourcepath = Screens.resourcepath
     """
     TODO: DOCS
     """
@@ -97,6 +96,7 @@ class SwitchClanScreen(Screens):
         self.clan_name = [[]]
 
     def screen_switches(self):
+        resourcepath = Screens.resourcepath
         """
         TODO: DOCS
         """
