@@ -5,6 +5,7 @@ from pygame_gui.core.text.text_box_layout import TextBoxLayout
 from pygame_gui.core.utility import translate
 from scripts.game_structure import image_cache
 import html
+from scripts.themescript import themegrabber
 
 
 class UIImageButton(pygame_gui.elements.UIButton):
@@ -279,7 +280,6 @@ class UIImageTextBox():
 
 class UIRelationStatusBar():
     """ Wraps together a status bar """
-
     def __init__(self,
                  relative_rect,
                  percent_full=0,
@@ -287,7 +287,7 @@ class UIRelationStatusBar():
                  dark_mode=False,
                  manager=None,
                  style="bars"):
-
+        resourcepath = themegrabber()
         # Change the color of the bar depending on the value and if it's a negative or positive trait
         if percent_full > 49:
             if positive_trait:
@@ -305,7 +305,8 @@ class UIRelationStatusBar():
         self.status_bar.percent_full = percent_full / 100
 
         # Now to make the overlay
-        overlay_path = "resources/images/"
+        
+        overlay_path = str(resourcepath + "images/")
         if style == "bars":
             if dark_mode:
                 overlay_path += "relations_border_bars_dark.png"

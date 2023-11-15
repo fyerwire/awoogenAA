@@ -10,12 +10,13 @@ from scripts.game_structure.game_essentials import game, screen, screen_x, scree
 
 
 class ListScreen(Screens):
+    resourcepath = Screens.resourcepath
     # the amount of cats a page can hold is 20, so the amount of pages is cats/20
     list_page = 1
     display_cats = []
     cat_names = []
 
-    search_bar = pygame.transform.scale(pygame.image.load("resources/images/search_bar.png").convert_alpha(),
+    search_bar = pygame.transform.scale(pygame.image.load(resourcepath + "images/search_bar.png").convert_alpha(),
                                         (456 / 1600 * screen_x, 68 / 1400 * screen_y))
     previous_search_text = ""
 
@@ -276,6 +277,7 @@ class ListScreen(Screens):
         self.update_page()
 
     def update_page(self):
+        resourcepath = Screens.resourcepath
         """Run this function when page changes."""
         # If the number of pages becomes smaller than the number of our current page, set
         #   the current page to the last page
@@ -318,7 +320,7 @@ class ListScreen(Screens):
                     
                     _temp = pygame.transform.scale(
                             pygame.image.load(
-                                f"resources/images/fav_marker.png").convert_alpha(),
+                                resourcepath + "images/fav_marker.png").convert_alpha(),
                             (100, 100))
                     
                     if game.settings["dark mode"]:

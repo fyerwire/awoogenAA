@@ -123,7 +123,7 @@ class NewCatEvents:
         if new_cat_event.litter:
             # If we have a litter joining, assign them a blood parent for
             # relation-tracking purposes
-            thought = "Is happy their kits are safe"
+            thought = "Is happy their pups are safe"
             blood_parent = create_new_cat(Cat, Relationship,
                                           status=random.choice(["loner", "pet"]),
                                           alive=False,

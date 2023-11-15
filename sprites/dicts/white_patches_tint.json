@@ -20,12 +20,18 @@
 	"SILVER": "basic",
 	"ONYX": "blackblue",
 	"SUNSTONE": "yellow",
-	"MOONSTONE": "gray"
+	"MOONSTONE": "gray",
+    "COCOA": "chocolate",
+    "SPRUCE": "blue",
+    "ISABELLA": "lilac",
+    "SUNNY": "yellow",
+    "LUNA": "blackbright"
   },
   "possible_tints": {
     "basic": ["none", "yellowwhite", "none", "redwhite", "bluewhite"],
     "black": ["deepred", "deepyellow", "darkred", "darkyellow"],
 	"blackblue": ["deepblue", "darkblue"],
+    "blackbright": ["bluewhite", "midblue"],
     "gray": ["bluewhite", "midblue", "darkblue"],
     "yellow": ["midyellow", "silveryellow", "yellowwhite"],
     "red": ["midred", "silverred", "redwhite", "darkred"],

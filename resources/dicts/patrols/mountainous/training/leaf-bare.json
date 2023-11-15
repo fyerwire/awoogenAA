@@ -111,7 +111,7 @@
             "normal adult": [1, 6]
         },
         "weight": 20,
-        "intro_text": "As they trudge through the snow, p_l spots a wolf pack round a kill in the distant valley below and calls app1 over.",
+        "intro_text": "As they trudge through the snow, p_l spots a mother bear and her nearly adult cubs round a kill in the distant valley below and calls app1 over.",
         "decline_text": "Thinking better of it, the wolves try to hunt instead.",
         "chance_of_success": 60,
         "success_outcomes": [
@@ -130,7 +130,7 @@
                 ]
             },
             {
-                "text": "The wolves seem sleepy and full of what used to be an adult elk, massive and spread out in bits across the valley. A coyote approaches and steals a bite. When the wolves notice and run the scavenger down, wagging their tails as they tear it apart, the patrol watches silently, a grim reminder of what wolf packs are capable of.",
+                "text": "The bears seem sleepy and full of what used to be an adult elk, massive and spread out in bits across the valley. A coyote approaches and steals a bite. When the bears notice and run the scavenger down, snarling viciously as they tear it apart, the patrol watches silently, a grim reminder of what bears are capable of.",
                 "exp": 15,
                 "weight": 5,
                 "relationships": [
@@ -144,7 +144,7 @@
                 ]
             },
             {
-                "text": "s_c wants to point out not the wolves, but the ravens around them. Wolves mostly tolerate ravens at their kills because it helps them find prey. Long ago, that bargain was offered to the wolves of the world, but they foolishly betrayed the ravens and took the birds for food instead, and since then only the dogs have benefited from allies in the sky.",
+                "text": "s_c wants to point out not the bears, but the ravens around the kill. Wolves mostly tolerate ravens at their kills because it helps them find prey. Long ago, that bargain was offered to the rogue wolves of the world, but they foolishly betrayed the ravens and took the birds for food instead, and since then only the Pack wolves have benefited from allies in the sky.",
                 "exp": 15,
                 "weight": 20,
                 "stat_skill": ["SPEAKER,1"],
@@ -162,7 +162,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "One of the wolves peels off from the sleepy pack and starts ambling in the general direction of the wolves, and p_l decides caution is wise. The patrol returns to camp without seeing anything more.",
+                "text": "One of the bear cubs peels off from the sleepy group and starts ambling in the general direction of the wolves, and p_l decides caution is wise. The patrol returns to camp without seeing anything more.",
                 "exp": 0,
                 "weight": 20
             }
@@ -182,7 +182,7 @@
             "normal adult": [1, 6]
         },
         "weight": 20,
-        "intro_text": "As they trudge through the snow, p_l spots a wolf pack round a kill in the distant valley below and calls app1 over.",
+        "intro_text": "As they trudge through the snow, p_l spots a mother bear and her nearly adult cubs round a kill in the distant valley below and calls app1 over.",
         "decline_text": "Thinking better of it, the wolves try to hunt instead.",
         "chance_of_success": 60,
         "success_outcomes": [
@@ -201,7 +201,7 @@
                 ]
             },
             {
-                "text": "The wolves seem sleepy and full of what used to be an adult elk, massive and spread out in bits across the valley. A coyote approaches and steals a bite. When the wolves notice and run the scavenger down, wagging their tails as they tear it apart, the patrol watches silently, a grim reminder of what wolf packs are capable of.",
+                "text": "The bears seem sleepy and full of what used to be an adult elk, massive and spread out in bits across the valley. A coyote approaches and steals a bite. When the bears notice and run the scavenger down, snarling viciously as they tear it apart, the patrol watches silently, a grim reminder of what bears are capable of.",
                 "exp": 15,
                 "weight": 5,
                 "relationships": [
@@ -215,7 +215,7 @@
                 ]
             },
             {
-                "text": "s_c shows app1 that, even from this distance, they can judge how the wolves killed their prey, nipping it to exhaustion and then wrestling it down. It's not c_n's usual way, but it's important to remember that whatever works, works, and to keep it in mind for app1 if they're ever part of a hunting patrol targeting large prey.",
+                "text": "s_c shows app1 that, even from this distance, they can judge how the bears killed their prey, using their brute strength and then wrestling it down. It's not c_n's usual way, but it's important to remember that whatever works, works, and to keep it in mind for app1 if they're ever part of a hunting patrol targeting large prey.",
                 "exp": 15,
                 "weight": 20,
                 "stat_skill": ["TEACHER,1"],
@@ -233,7 +233,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "One of the wolves peels off from the sleepy pack and starts ambling in the general direction of the wolves, and p_l decides caution is wise. The patrol returns to camp without seeing anything more.",
+                "text": "One of the bear cubs peels off from the sleepy group and starts ambling in the general direction of the wolves, and p_l decides caution is wise. The patrol returns to camp without seeing anything more.",
                 "exp": 0,
                 "weight": 20
             }
@@ -254,7 +254,7 @@
             "normal adult": [1, 6]
         },
         "weight": 20,
-        "intro_text": "As they trudge through the snow, p_l spots a wolf pack round a kill in the distant valley below and calls the apprentices over.",
+        "intro_text": "As they trudge through the snow, p_l spots a mother bear and her nearly adult cubs round a kill in the distant valley below and calls the apprentices over.",
         "decline_text": "Thinking better of it, the wolves try to hunt instead.",
         "chance_of_success": 40,
         "success_outcomes": [
@@ -273,7 +273,7 @@
                 ]
             },
             {
-                "text": "The wolves seem sleepy and full of what used to be an adult elk, massive and spread out in bits across the valley. A coyote approaches and steals a bite. When the wolves notice and run the scavenger down, wagging their tails as they tear it apart, the patrol watches silently, a grim reminder of what wolf packs are capable of.",
+                "text": "The bears seem sleepy and full of what used to be an adult elk, massive and spread out in bits across the valley. A coyote approaches and steals a bite. When the bears notice and run the scavenger down, snarling viciously as they tear it apart, the patrol watches silently, a grim reminder of what bears are capable of.",
                 "exp": 20,
                 "weight": 5,
                 "relationships": [
@@ -287,7 +287,7 @@
                 ]
             },
             {
-                "text": "s_c wants to point out not the wolves, but the ravens around them. Wolves mostly tolerate ravens at their kills because it helps them find prey. Long ago, that bargain was offered to the wolves of the world, but they foolishly betrayed the ravens and took the birds for food instead, and since then only the dogs have benefited from allies in the sky.",
+                "text": "s_c wants to point out not the bears, but the ravens around the kill. Wolves mostly tolerate ravens at their kills because it helps them find prey. Long ago, that bargain was offered to the rogue wolves of the world, but they foolishly betrayed the ravens and took the birds for food instead, and since then only the Pack wolves have benefited from allies in the sky.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["SPEAKER,1"],
@@ -305,7 +305,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "One of the wolves peels off from the sleepy pack and starts ambling in the general direction of the wolves, and p_l decides caution is wise. The patrol returns to camp without seeing anything more.",
+                "text": "One of the bear cubs peels off from the sleepy group and starts ambling in the general direction of the wolves, and p_l decides caution is wise. The patrol returns to camp without seeing anything more.",
                 "exp": 0,
                 "weight": 20
             }
@@ -326,7 +326,7 @@
             "normal adult": [1, 6]
         },
         "weight": 20,
-        "intro_text": "As they trudge through the snow, p_l spots a wolf pack round a kill in the distant valley below and calls the apprentices over.",
+        "intro_text": "As they trudge through the snow, p_l spots a mother bear and her nearly adult cubs round a kill in the distant valley below and calls the apprentices over.",
         "decline_text": "Thinking better of it, the wolves try to hunt instead.",
         "chance_of_success": 40,
         "success_outcomes": [
@@ -345,7 +345,7 @@
                 ]
             },
             {
-                "text": "The wolves seem sleepy and full of what used to be an adult elk, massive and spread out in bits across the valley. A coyote approaches and steals a bite. When the wolves notice and run the scavenger down, wagging their tails as they tear it apart, the patrol watches silently, a grim reminder of what wolf packs are capable of.",
+                "text": "The bears seem sleepy and full of what used to be an adult elk, massive and spread out in bits across the valley. A coyote approaches and steals a bite. When the bears notice and run the scavenger down, snarling viciously as they tear it apart, the patrol watches silently, a grim reminder of what bears are capable of.",
                 "exp": 15,
                 "weight": 5,
                 "relationships": [
@@ -359,7 +359,7 @@
                 ]
             },
             {
-                "text": "s_c shows the apprentices that, even from this distance, they can judge how the wolves killed their prey, nipping it to exhaustion and then wrestling it down. It's not c_n's usual way, but it's important to remember that whatever works, works, and to keep it in mind for app1 and app2 if they're ever part of a hunting patrol targeting large prey.",
+                "text": "s_c shows the apprentices that, even from this distance, they can judge how the bears killed their prey, using their brute strength and then wrestling it down. It's not c_n's usual way, but it's important to remember that whatever works, works, and to keep it in mind for app1 and app2 if they're ever part of a hunting patrol targeting large prey.",
                 "exp": 15,
                 "weight": 20,
                 "stat_skill": ["TEACHER,1"],
@@ -377,7 +377,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "One of the wolves peels off from the sleepy pack and starts ambling in the general direction of the wolves, and p_l decides caution is wise. The patrol returns to camp without seeing anything more.",
+                "text": "One of the bear cubs peels off from the sleepy group and starts ambling in the general direction of the wolves, and p_l decides caution is wise. The patrol returns to camp without seeing anything more.",
                 "exp": 0,
                 "weight": 20
             }

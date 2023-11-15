@@ -36,7 +36,7 @@
   },
 
   "default_life": {
-          "text": "r_c approaches, dipping {PRONOUN/r_c/poss} head in greeting. \"I give you a life for [virtue].\" {PRONOUN/r_c/subject/CAP} {VERB/r_c/meow/meows}, before slipping back into the crowd.",
+          "text": "r_c approaches, dipping {PRONOUN/r_c/poss} head in greeting. \"I give you a life for [virtue].\" {PRONOUN/r_c/subject/CAP} {VERB/r_c/say/says}, before slipping back into the crowd.",
           "virtue": ["energy", "strength", "wisdom"]
         },
 
@@ -552,7 +552,7 @@
       "rank": ["warrior", "deputy"],
       "life_giving": [
         {
-          "text": "r_c approaches, dipping {PRONOUN/r_c/poss} head in greeting to m_c. {PRONOUN/r_c/subject/CAP} {VERB/r_c/meow/meows} something about not being afraid to look beyond traditions before touching {PRONOUN/r_c/poss} muzzle to m_c's head and a cool energy begins to fizz through {PRONOUN/m_c/poss} body. This life is for [virtue], the starry wolf tells {PRONOUN/m_c/object}.",
+          "text": "r_c approaches, dipping {PRONOUN/r_c/poss} head in greeting to m_c. {PRONOUN/r_c/subject/CAP} {VERB/r_c/say/says} something about not being afraid to look beyond traditions before touching {PRONOUN/r_c/poss} muzzle to m_c's head and a cool energy begins to fizz through {PRONOUN/m_c/poss} body. This life is for [virtue], the starry wolf tells {PRONOUN/m_c/object}.",
           "virtue": ["curiosity"]
         },
         {

@@ -160,14 +160,20 @@ class Sprites():
                 ['ROUGE', 'SCARLET', 'AMBER', 'LEMON', 'PALE', 'SUNBEAM', 'SUNLIGHT', 'WHEAT']):
             self.make_group('eyes', (a, 4), f'eyes{i}')
             self.make_group('eyes2', (a, 4), f'eyes2{i}')
+        for a, i in enumerate(
+                ['HARVEST', 'VIOLET', 'RUBY', 'DAWN', 'DAYLIGHT', 'TWILIGHT', 'DUSK', 'MIDNIGHT']):
+            self.make_group('eyes', (a, 5), f'eyes{i}')
+            self.make_group('eyes2', (a, 5), f'eyes2{i}')
 
         # white patches
         for a, i in enumerate(['FLASH', 'HIGHLIGHTS', 'JACKAL', 'LOCKET', 'SNOWFLAKE', 'SOCKS', 'SPLIT', 'STRIPE', 'TOES', 'TRIM']):
             self.make_group('whitepatches', (a, 0), f'white{i}')
         for a, i in enumerate(['WOLFTICKING', 'BLAZE', 'BLOTCH', 'HALF', 'HEART', 'IRISH', 'MOONRISE', 'MUNSTERLANDER', 'SPITZ', 'STAR']):
             self.make_group('whitepatches', (a, 1), f'white{i}')
-        for a, i in enumerate(['SUMMERFOX', 'TICKING', 'URAJIRO', 'BLUETICK', 'EXTREMEPIEBALD', 'LIGHTDALMATIAN', 'PIEBALD', 'TAIL', 'WHITE']):
+        for a, i in enumerate(['SUMMERFOX', 'TICKING', 'URAJIRO', 'BLUETICK', 'EXTREMEPIEBALD', 'LIGHTDALMATIAN', 'PIEBALD', 'TAIL', 'WHITE', 'HEAVYDALMATIAN']):
             self.make_group('whitepatches', (a, 2), f'white{i}')
+        for a, i in enumerate(['BACKLEG', 'BEE', 'DAPPLES', 'POINTED', 'SPECKLES', 'DIAMOND', 'HOUND', 'KING', 'HEELER']):
+            self.make_group('whitepatches', (a, 3), f'white{i}')
 
         # arctic
         for a, i in enumerate(['SPICE', 'GINGER', 'HONEY', 'FLAXEN', 'CREAM']):
@@ -178,6 +184,8 @@ class Sprites():
             self.make_group('arctic', (a, 2), f'arctic{i}')
         for a, i in enumerate(['BRASS', 'SILVER', 'ONYX', 'SUNSTONE', 'MOONSTONE']):
             self.make_group('arctic', (a, 3), f'arctic{i}')
+        for a, i in enumerate(['COCOA', 'SPRUCE', 'ISABELLA', 'SUNNY', 'LUNA']):
+            self.make_group('arctic', (a, 4), f'arctic{i}')
 		# colorpoint
         for a, i in enumerate(['SPICE', 'GINGER', 'HONEY', 'FLAXEN', 'CREAM']):
             self.make_group('colorpoint', (a, 0), f'colorpoint{i}')
@@ -187,6 +195,8 @@ class Sprites():
             self.make_group('colorpoint', (a, 2), f'colorpoint{i}')
         for a, i in enumerate(['BRASS', 'SILVER', 'ONYX', 'SUNSTONE', 'MOONSTONE']):
             self.make_group('colorpoint', (a, 3), f'colorpoint{i}')
+        for a, i in enumerate(['COCOA', 'SPRUCE', 'ISABELLA', 'SUNNY', 'LUNA']):
+            self.make_group('colorpoint', (a, 4), f'colorpoint{i}')
         # graywolf
         for a, i in enumerate(['SPICE', 'GINGER', 'HONEY', 'FLAXEN', 'CREAM']):
             self.make_group('graywolf', (a, 0), f'graywolf{i}')
@@ -196,6 +206,8 @@ class Sprites():
             self.make_group('graywolf', (a, 2), f'graywolf{i}')
         for a, i in enumerate(['BRASS', 'SILVER', 'ONYX', 'SUNSTONE', 'MOONSTONE']):
             self.make_group('graywolf', (a, 3), f'graywolf{i}')
+        for a, i in enumerate(['COCOA', 'SPRUCE', 'ISABELLA', 'SUNNY', 'LUNA']):
+            self.make_group('graywolf', (a, 4), f'graywolf{i}')
 		# mexican
         for a, i in enumerate(['SPICE', 'GINGER', 'HONEY', 'FLAXEN', 'CREAM']):
             self.make_group('mexican', (a, 0), f'mexican{i}')
@@ -205,6 +217,8 @@ class Sprites():
             self.make_group('mexican', (a, 2), f'mexican{i}')
         for a, i in enumerate(['BRASS', 'SILVER', 'ONYX', 'SUNSTONE', 'MOONSTONE']):
             self.make_group('mexican', (a, 3), f'mexican{i}')
+        for a, i in enumerate(['COCOA', 'SPRUCE', 'ISABELLA', 'SUNNY', 'LUNA']):
+            self.make_group('mexican', (a, 4), f'mexican{i}')
 		# ophelia
         for a, i in enumerate(['SPICE', 'GINGER', 'HONEY', 'FLAXEN', 'CREAM']):
             self.make_group('ophelia', (a, 0), f'ophelia{i}')
@@ -214,6 +228,8 @@ class Sprites():
             self.make_group('ophelia', (a, 2), f'ophelia{i}')
         for a, i in enumerate(['BRASS', 'SILVER', 'ONYX', 'SUNSTONE', 'MOONSTONE']):
             self.make_group('ophelia', (a, 3), f'ophelia{i}')
+        for a, i in enumerate(['COCOA', 'SPRUCE', 'ISABELLA', 'SUNNY', 'LUNA']):
+            self.make_group('ophelia', (a, 4), f'ophelia{i}')
 		# runic
         for a, i in enumerate(['SPICE', 'GINGER', 'HONEY', 'FLAXEN', 'CREAM']):
             self.make_group('runic', (a, 0), f'runic{i}')
@@ -223,6 +239,8 @@ class Sprites():
             self.make_group('runic', (a, 2), f'runic{i}')
         for a, i in enumerate(['BRASS', 'SILVER', 'ONYX', 'SUNSTONE', 'MOONSTONE']):
             self.make_group('runic', (a, 3), f'runic{i}')
+        for a, i in enumerate(['COCOA', 'SPRUCE', 'ISABELLA', 'SUNNY', 'LUNA']):
+            self.make_group('runic', (a, 4), f'runic{i}')
 		# semisolid
         for a, i in enumerate(['SPICE', 'GINGER', 'HONEY', 'FLAXEN', 'CREAM']):
             self.make_group('semisolid', (a, 0), f'semisolid{i}')
@@ -232,6 +250,8 @@ class Sprites():
             self.make_group('semisolid', (a, 2), f'semisolid{i}')
         for a, i in enumerate(['BRASS', 'SILVER', 'ONYX', 'SUNSTONE', 'MOONSTONE']):
             self.make_group('semisolid', (a, 3), f'semisolid{i}')
+        for a, i in enumerate(['COCOA', 'SPRUCE', 'ISABELLA', 'SUNNY', 'LUNA']):
+            self.make_group('semisolid', (a, 4), f'semisolid{i}')
 		# smokey
         for a, i in enumerate(['SPICE', 'GINGER', 'HONEY', 'FLAXEN', 'CREAM']):
             self.make_group('smokey', (a, 0), f'smokey{i}')
@@ -241,6 +261,8 @@ class Sprites():
             self.make_group('smokey', (a, 2), f'smokey{i}')
         for a, i in enumerate(['BRASS', 'SILVER', 'ONYX', 'SUNSTONE', 'MOONSTONE']):
             self.make_group('smokey', (a, 3), f'smokey{i}')
+        for a, i in enumerate(['COCOA', 'SPRUCE', 'ISABELLA', 'SUNNY', 'LUNA']):
+            self.make_group('smokey', (a, 4), f'smokey{i}')
 		# stormy
         for a, i in enumerate(['SPICE', 'GINGER', 'HONEY', 'FLAXEN', 'CREAM']):
             self.make_group('stormy', (a, 0), f'stormy{i}')
@@ -250,6 +272,8 @@ class Sprites():
             self.make_group('stormy', (a, 2), f'stormy{i}')
         for a, i in enumerate(['BRASS', 'SILVER', 'ONYX', 'SUNSTONE', 'MOONSTONE']):
             self.make_group('stormy', (a, 3), f'stormy{i}')
+        for a, i in enumerate(['COCOA', 'SPRUCE', 'ISABELLA', 'SUNNY', 'LUNA']):
+            self.make_group('stormy', (a, 4), f'stormy{i}')
 		# timber
         for a, i in enumerate(['SPICE', 'GINGER', 'HONEY', 'FLAXEN', 'CREAM']):
             self.make_group('timber', (a, 0), f'timber{i}')
@@ -259,6 +283,8 @@ class Sprites():
             self.make_group('timber', (a, 2), f'timber{i}')
         for a, i in enumerate(['BRASS', 'SILVER', 'ONYX', 'SUNSTONE', 'MOONSTONE']):
             self.make_group('timber', (a, 3), f'timber{i}')
+        for a, i in enumerate(['COCOA', 'SPRUCE', 'ISABELLA', 'SUNNY', 'LUNA']):
+            self.make_group('timber', (a, 4), f'timber{i}')
 		# vibrant
         for a, i in enumerate(['SPICE', 'GINGER', 'HONEY', 'FLAXEN', 'CREAM']):
             self.make_group('vibrant', (a, 0), f'vibrant{i}')
@@ -268,6 +294,8 @@ class Sprites():
             self.make_group('vibrant', (a, 2), f'vibrant{i}')
         for a, i in enumerate(['BRASS', 'SILVER', 'ONYX', 'SUNSTONE', 'MOONSTONE']):
             self.make_group('vibrant', (a, 3), f'vibrant{i}')
+        for a, i in enumerate(['COCOA', 'SPRUCE', 'ISABELLA', 'SUNNY', 'LUNA']):
+            self.make_group('vibrant', (a, 4), f'vibrant{i}')
 		# winter
         for a, i in enumerate(['SPICE', 'GINGER', 'HONEY', 'FLAXEN', 'CREAM']):
             self.make_group('winter', (a, 0), f'winter{i}')
@@ -277,6 +305,8 @@ class Sprites():
             self.make_group('winter', (a, 2), f'winter{i}')
         for a, i in enumerate(['BRASS', 'SILVER', 'ONYX', 'SUNSTONE', 'MOONSTONE']):
             self.make_group('winter', (a, 3), f'winter{i}')
+        for a, i in enumerate(['COCOA', 'SPRUCE', 'ISABELLA', 'SUNNY', 'LUNA']):
+            self.make_group('winter', (a, 4), f'winter{i}')
 		# brindle
         for a, i in enumerate(['SPICE', 'GINGER', 'HONEY', 'FLAXEN', 'CREAM']):
             self.make_group('brindle', (a, 0), f'brindle{i}')
@@ -286,6 +316,8 @@ class Sprites():
             self.make_group('brindle', (a, 2), f'brindle{i}')
         for a, i in enumerate(['BRASS', 'SILVER', 'ONYX', 'SUNSTONE', 'MOONSTONE']):
             self.make_group('brindle', (a, 3), f'brindle{i}')
+        for a, i in enumerate(['COCOA', 'SPRUCE', 'ISABELLA', 'SUNNY', 'LUNA']):
+            self.make_group('brindle', (a, 4), f'brindle{i}')
 		# husky
         for a, i in enumerate(['SPICE', 'GINGER', 'HONEY', 'FLAXEN', 'CREAM']):
             self.make_group('husky', (a, 0), f'husky{i}')
@@ -295,6 +327,8 @@ class Sprites():
             self.make_group('husky', (a, 2), f'husky{i}')
         for a, i in enumerate(['BRASS', 'SILVER', 'ONYX', 'SUNSTONE', 'MOONSTONE']):
             self.make_group('husky', (a, 3), f'husky{i}')
+        for a, i in enumerate(['COCOA', 'SPRUCE', 'ISABELLA', 'SUNNY', 'LUNA']):
+            self.make_group('husky', (a, 4), f'husky{i}')
 		# points
         for a, i in enumerate(['SPICE', 'GINGER', 'HONEY', 'FLAXEN', 'CREAM']):
             self.make_group('points', (a, 0), f'points{i}')
@@ -304,6 +338,8 @@ class Sprites():
             self.make_group('points', (a, 2), f'points{i}')
         for a, i in enumerate(['BRASS', 'SILVER', 'ONYX', 'SUNSTONE', 'MOONSTONE']):
             self.make_group('points', (a, 3), f'points{i}')
+        for a, i in enumerate(['COCOA', 'SPRUCE', 'ISABELLA', 'SUNNY', 'LUNA']):
+            self.make_group('points', (a, 4), f'points{i}')
 		# sable
         for a, i in enumerate(['SPICE', 'GINGER', 'HONEY', 'FLAXEN', 'CREAM']):
             self.make_group('sable', (a, 0), f'sable{i}')
@@ -313,6 +349,8 @@ class Sprites():
             self.make_group('sable', (a, 2), f'sable{i}')
         for a, i in enumerate(['BRASS', 'SILVER', 'ONYX', 'SUNSTONE', 'MOONSTONE']):
             self.make_group('sable', (a, 3), f'sable{i}')
+        for a, i in enumerate(['COCOA', 'SPRUCE', 'ISABELLA', 'SUNNY', 'LUNA']):
+            self.make_group('sable', (a, 4), f'sable{i}')
 		# shepherd
         for a, i in enumerate(['SPICE', 'GINGER', 'HONEY', 'FLAXEN', 'CREAM']):
             self.make_group('shepherd', (a, 0), f'shepherd{i}')
@@ -322,6 +360,8 @@ class Sprites():
             self.make_group('shepherd', (a, 2), f'shepherd{i}')
         for a, i in enumerate(['BRASS', 'SILVER', 'ONYX', 'SUNSTONE', 'MOONSTONE']):
             self.make_group('shepherd', (a, 3), f'shepherd{i}')
+        for a, i in enumerate(['COCOA', 'SPRUCE', 'ISABELLA', 'SUNNY', 'LUNA']):
+            self.make_group('shepherd', (a, 4), f'shepherd{i}')
 		# solid
         for a, i in enumerate(['SPICE', 'GINGER', 'HONEY', 'FLAXEN', 'CREAM']):
             self.make_group('solid', (a, 0), f'solid{i}')
@@ -331,6 +371,8 @@ class Sprites():
             self.make_group('solid', (a, 2), f'solid{i}')
         for a, i in enumerate(['BRASS', 'SILVER', 'ONYX', 'SUNSTONE', 'MOONSTONE']):
             self.make_group('solid', (a, 3), f'solid{i}')
+        for a, i in enumerate(['COCOA', 'SPRUCE', 'ISABELLA', 'SUNNY', 'LUNA']):
+            self.make_group('solid', (a, 4), f'solid{i}')
             
         # new new torties
         for a, i in enumerate(['CAPE', 'DIPPED', 'HEARTBREAKER', 'INKSPILL', 'MINIMAL', 'PHANTOM']):

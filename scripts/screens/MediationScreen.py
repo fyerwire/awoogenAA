@@ -10,7 +10,7 @@ from scripts.game_structure import image_cache
 from scripts.game_structure.image_button import UIImageButton, UISpriteButton, UIRelationStatusBar
 from scripts.game_structure.game_essentials import game, MANAGER
 
-
+resourcepath = Screens.resourcepath
 class MediationScreen(Screens):
     def __init__(self, name=None):
         super().__init__(name)
@@ -113,14 +113,14 @@ class MediationScreen(Screens):
         self.selected_frame_1 = pygame_gui.elements.UIImage(scale(pygame.Rect((100, 160), (400, 700))),
                                                             pygame.transform.scale(
                                                                 image_cache.load_image(
-                                                                    "resources/images/mediator_selected_frame.png"),
+                                                                    resourcepath + "images/mediator_selected_frame.png"),
                                                                 (400, 700))
                                                             )
         self.selected_frame_1.disable()
         self.selected_frame_2 = pygame_gui.elements.UIImage(scale(pygame.Rect((1100, 160), (400, 700))),
                                                             pygame.transform.scale(
                                                                 image_cache.load_image(
-                                                                    "resources/images/mediator_selected_frame.png"),
+                                                                    resourcepath + "images/mediator_selected_frame.png"),
                                                                 (400, 700))
                                                             )
         self.selected_frame_2.disable()
@@ -129,7 +129,7 @@ class MediationScreen(Screens):
                                                         ((100, 940), (1400, 300))),
                                                   pygame.transform.scale(
                                                       pygame.image.load(
-                                                          "resources/images/mediation_selection_bg.png").convert_alpha(),
+                                                          resourcepath + "images/mediation_selection_bg.png").convert_alpha(),
                                                       (1400, 300))
                                                   )
         self.cat_bg.disable()
@@ -283,7 +283,7 @@ class MediationScreen(Screens):
             if game.clan.clan_settings["show fav"] and cat.favourite:
                 _temp = pygame.transform.scale(
                             pygame.image.load(
-                                f"resources/images/fav_marker.png").convert_alpha(),
+                                resourcepath + "images/fav_marker.png").convert_alpha(),
                             (100, 100))
                     
                 self.cat_buttons.append(
@@ -339,16 +339,16 @@ class MediationScreen(Screens):
 
         # Gender
         if cat.genderalign == 'female':
-            gender_icon = image_cache.load_image("resources/images/female_big.png").convert_alpha()
+            gender_icon = image_cache.load_image(resourcepath + "images/female_big.png").convert_alpha()
         elif cat.genderalign == 'male':
-            gender_icon = image_cache.load_image("resources/images/male_big.png").convert_alpha()
+            gender_icon = image_cache.load_image(resourcepath + "images/male_big.png").convert_alpha()
         elif cat.genderalign == 'trans female':
-            gender_icon = image_cache.load_image("resources/images/transfem_big.png").convert_alpha()
+            gender_icon = image_cache.load_image(resourcepath + "images/transfem_big.png").convert_alpha()
         elif cat.genderalign == 'trans male':
-            gender_icon = image_cache.load_image("resources/images/transmasc_big.png").convert_alpha()
+            gender_icon = image_cache.load_image(resourcepath + "images/transmasc_big.png").convert_alpha()
         else:
             # Everyone else gets the nonbinary icon
-            gender_icon = image_cache.load_image("resources/images/nonbi_big.png").convert_alpha()
+            gender_icon = image_cache.load_image(resourcepath + "images/nonbi_big.png").convert_alpha()
 
         self.selected_cat_elements["gender" + tag] = pygame_gui.elements.UIImage(
             scale(pygame.Rect((x + 320, y + 24), (50, 50))),
@@ -363,7 +363,7 @@ class MediationScreen(Screens):
                                   (44, 40))),
                 pygame.transform.scale(
                     image_cache.load_image(
-                        "resources/images/heart_big.png").convert_alpha(),
+                        resourcepath + "images/heart_big.png").convert_alpha(),
                     (44, 40)))
         elif other_cat:
             # FAMILY DOT
@@ -386,7 +386,7 @@ class MediationScreen(Screens):
                                       (36, 36))),
                     pygame.transform.scale(
                         image_cache.load_image(
-                            "resources/images/dot_big.png").convert_alpha(),
+                            resourcepath + "images/dot_big.png").convert_alpha(),
                         (36, 36)))
 
         col1 = str(cat.moons)

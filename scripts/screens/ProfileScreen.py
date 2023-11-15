@@ -93,10 +93,11 @@ def backstory_text(cat):
 #                               Profile Screen                                 #
 # ---------------------------------------------------------------------------- #
 class ProfileScreen(Screens):
+    resourcepath = Screens.resourcepath
     # UI Images
-    backstory_tab = image_cache.load_image("resources/images/backstory_bg.png").convert_alpha()
-    conditions_tab = image_cache.load_image("resources/images/conditions_tab_backdrop.png").convert_alpha()
-    condition_details_box = image_cache.load_image("resources/images/condition_details_box.png").convert_alpha()
+    backstory_tab = image_cache.load_image(resourcepath + "images/backstory_bg.png").convert_alpha()
+    conditions_tab = image_cache.load_image(resourcepath + "images/conditions_tab_backdrop.png").convert_alpha()
+    condition_details_box = image_cache.load_image(resourcepath + "images/condition_details_box.png").convert_alpha()
 
     # Keep track of current tabs open. Can be used to keep tabs open when pages are switched, and
     # helps with exiting the screen

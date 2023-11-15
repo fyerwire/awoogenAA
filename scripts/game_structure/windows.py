@@ -28,10 +28,12 @@ from scripts.housekeeping.update import self_update, UpdateChannel, get_latest_v
 from scripts.utility import scale, quit, update_sprite, scale_dimentions, logger, process_text
 from scripts.game_structure.game_essentials import game, MANAGER
 from scripts.housekeeping.version import get_version_info
+from scripts.themescript import themegrabber
 
 
 class SaveCheck(UIWindow):
     def __init__(self, last_screen, isMainMenu, mm_btn):
+        resourcepath = themegrabber()
         game.switches['window_open'] = True
         if game.is_close_menu_open:
             return
@@ -86,7 +88,7 @@ class SaveCheck(UIWindow):
         self.save_button_saved_state = pygame_gui.elements.UIImage(
             scale(pygame.Rect((186, 230), (228, 60))),
             pygame.transform.scale(
-                image_cache.load_image('resources/images/save_clan_saved.png'),
+                image_cache.load_image(resourcepath + 'images/save_clan_saved.png'),
                 (228, 60)),
             container=self)
         self.save_button_saved_state.hide()
@@ -94,7 +96,7 @@ class SaveCheck(UIWindow):
             scale(pygame.Rect((186, 230), (228, 60))),
             pygame.transform.scale(
                 image_cache.load_image(
-                    'resources/images/save_clan_saving.png'),
+                    resourcepath + 'images/save_clan_saving.png'),
                 (228, 60)),
             container=self)
         self.save_button_saving_state.hide()
@@ -1261,10 +1263,11 @@ class EventLoading(UIWindow):
 
     @staticmethod
     def load_images():
+        resourcepath = themegrabber()
         frames = []
         for i in range(0, 16):
             frames.append(pygame.image.load(
-                f"resources/images/loading_animate/timeskip/{i}.png"))
+                resourcepath + f"images/loading_animate/timeskip/{i}.png"))
 
         return frames
 

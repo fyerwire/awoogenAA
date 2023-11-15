@@ -14,7 +14,7 @@ import pygame_gui
 from scripts.game_structure.image_button import UIImageButton, UITextBoxTweaked
 from scripts.game_structure.game_essentials import game, screen_x, screen_y, MANAGER
 
-
+resourcepath = Screens.resourcepath
 class RoleScreen(Screens):
     the_cat = None
     selected_cat_elements = {}
@@ -96,7 +96,7 @@ class RoleScreen(Screens):
         # Create the buttons
         self.bar = pygame_gui.elements.UIImage(scale(pygame.Rect((96, 700), (1408, 20))),
                                                pygame.transform.scale(
-                                                   image_cache.load_image("resources/images/bar.png"),
+                                                   image_cache.load_image(resourcepath + "images/bar.png"),
                                                    (1408 / 1600 * screen_x, 20 / 1400 * screen_y)
                                                ), manager=MANAGER)
 
@@ -104,7 +104,7 @@ class RoleScreen(Screens):
                                                                   ((100, 390), (1400, 300))),
                                                             pygame.transform.scale(
                                                                 pygame.image.load(
-                                                                    "resources/images/mediation_selection_bg.png").convert_alpha(),
+                                                                    resourcepath + "images/mediation_selection_bg.png").convert_alpha(),
                                                                 (1400, 300))
                                                             )
 
@@ -202,7 +202,7 @@ class RoleScreen(Screens):
                                                                                  object_id="#text_box_26_horizcenter_vertcenter_spacing_95",
                                                                                  manager=MANAGER)
 
-        main_dir = "resources/images/"
+        main_dir = resourcepath + "images/"
         paths = {
             "leader": "leader_icon.png",
             "deputy": "deputy_icon.png",

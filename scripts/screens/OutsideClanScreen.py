@@ -18,10 +18,12 @@ class OutsideClanScreen(Screens):
     previous_search_text = ""
 
     def load_images(self):
+        resourcepath = Screens.resourcepath
         self.search_bar_image = pygame.transform.scale(pygame.image.load(
-            "resources/images/search_bar.png").convert_alpha(), (456 / 1600 * screen_x, 68 / 1400 * screen_y))
+            resourcepath + "images/search_bar.png").convert_alpha(), (456 / 1600 * screen_x, 68 / 1400 * screen_y))
 
     def __init__(self, name=None):
+        resourcepath = Screens.resourcepath
         super().__init__(name)
         self.filter_age = None
         self.filter_id = None
@@ -251,6 +253,7 @@ class OutsideClanScreen(Screens):
         self.update_page()
 
     def update_page(self):
+        resourcepath = Screens.resourcepath
         """Run this function when page changes."""
         # If the number of pages becomes smaller than the number of our current page, set
         #   the current page to the last page
@@ -293,7 +296,7 @@ class OutsideClanScreen(Screens):
                     
                     _temp = pygame.transform.scale(
                             pygame.image.load(
-                                f"resources/images/fav_marker.png").convert_alpha(),
+                                resourcepath + f"images/fav_marker.png").convert_alpha(),
                             (100, 100))
                     
                     _temp.set_alpha(150)

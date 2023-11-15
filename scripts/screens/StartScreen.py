@@ -38,14 +38,16 @@ has_checked_for_update = False
 update_available = False
 
 class StartScreen(Screens):
+    resourcepath = Screens.resourcepath
     """
     TODO: DOCS
     """
 
     def __init__(self, name=None):
+        resourcepath = Screens.resourcepath
         super().__init__(name)
         self.warning_label = None
-        self.bg = pygame.image.load("resources/images/menu.png").convert()
+        self.bg = pygame.image.load(resourcepath + "images/menu.png").convert()
         self.bg = pygame.transform.scale(self.bg, (screen_x, screen_y))
         self.social_buttons = {}
 
@@ -146,6 +148,7 @@ class StartScreen(Screens):
             self.social_buttons[btn].kill()
 
     def screen_switches(self):
+        resourcepath = Screens.resourcepath
         """
         TODO: DOCS
         """
@@ -195,7 +198,7 @@ class StartScreen(Screens):
                                                               manager=MANAGER,
                                                               tool_tip_text='Join our Discord!')
         errorimg = image_cache.load_image(
-            'resources/images/errormsg.png').convert_alpha()
+            resourcepath + 'images/errormsg.png').convert_alpha()
 
         self.error_box = pygame_gui.elements.UIImage(
             scale(pygame.Rect((259, 300), (1180, 802))),
