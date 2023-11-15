@@ -10,7 +10,6 @@ from ..utility import get_text_box_theme, scale, shorten_text_to_fit
 
 
 class OutsideClanScreen(Screens):
-    resourcepath = Screens.resourcepath
 
     list_page = 1  # Holds the current page
     display_cats = []  # Holds the cat sprite objects
@@ -254,6 +253,7 @@ class OutsideClanScreen(Screens):
         self.update_page()
 
     def update_page(self):
+        resourcepath = Screens.resourcepath
         """Run this function when page changes."""
         # If the number of pages becomes smaller than the number of our current page, set
         #   the current page to the last page
