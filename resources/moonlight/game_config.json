@@ -377,7 +377,7 @@
 		"light_mode_background": [232, 230, 238]
 	},
     "themes": {
-        "Moonlight_Lightbg": [232, 230, 238],
+        "Moonlight_Lightbg": [210, 207, 222],
         "Moonlight_Darkbg": [61, 56, 74],
         "ClassicClangen_Lightbg": [206, 194, 168],
         "ClassicClangen_Darkbg": [57, 50, 36]
