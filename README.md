@@ -1,26 +1,30 @@
 # Awoogen
 This mod adds in canines to your regular clangen experience!
-This is a standalone mod and it does not have a lite or sprite pack version. This means it is not compatible with most other clangen mods, except UI mods to an extent. Not compatible with lifegen.
+This is a standalone mod and it does not have a lite or sprite pack version. This means it is not compatible with most other clangen mods, unless those mods state otherwise. Not compatible with lifegen.
 
 
 The aim is to keep up to date with clangen dev version while adding new features. For this reason, some updates may take a while!
 
 ## Requirements
-At least 4GB of RAM for Windows users - for others, Awoogen currently uses approx 2.7GB and is planned to use more in the future.
+More than 4GB of RAM for Windows users - for others, Awoogen currently uses approx 3.1GB and is planned to use more in the future.
 
+For running from source code:
 Python, pygame-ce, and pygame_gui, along with several other requirements. It is best to use requirements.txt to install.
 
 
 ## Downloads
-Working on these, it will be a while before they are ready as compiling is new to me.
-You must run Awoogen using source code for now - similar to installing the full version of Moss Mod. I will update the Discord thread and here when they're ready.
+We are currently on Moonlight (1.1)
+[Moonlight Download](https://github.com/Koriiy/awoogen/releases/tag/v1.1-moonlight)
+Grab the version for your operating system and run like regular clangen!
 
 ## Themes
 Currently there are two themes:
 
 Moonlight - default Awoogen theme. It's a blue-purple theme
 
-Classic - Awoogen with Clangen's classic brown theme. Still deciding where I'm putting this but it is ready!
+Classic - Awoogen with Clangen's classic brown theme.
+
+Themes can be accessed by those running source code. Once the feature is out of Beta, theme selecter can be used by anyone.
 
 
 ## Running from Source Code
@@ -42,14 +46,16 @@ go to tools (top left) > manage packages > click 'here' (under install requireme
 
 5. If everything worked, run using main.py from now on
 
+Note that I don't provide support for running from source now that builds are available!
+
 ## Crashes and Bugs
 Reminder that Awoogen comes with all of the bugs of Clangen dev, along with many of my own creation. If you care about your saves, back them up occasionally!
 
-First time running Awoogen and encounter a crash? Please do not report this. Check Thonny for information on why it crashed. If it says out of memory, you do not meet the minimum RAM requirements to run, try closing other programs and running again. If it says anything else, there is likely something wrong with how requirements.txt was installed, or a bug with how Windows handles things at times.
+First time running Awoogen from source and encounter a crash? Please do not report this. Check Thonny for information on why it crashed. If it says out of memory, you do not meet the minimum RAM requirements to run, try closing other programs and running again. If it says anything else, there is likely something wrong with how requirements.txt was installed, or a bug with how Windows handles things at times.
 
 Have you run Awoogen successfully at least once? Report the crash to me on Discord! Remember to include the full error so I can figure out what's happening. You can either DM me or ping me in the thread on Discord. Or you can try reporting on Github but I am new to the platform haha. Either way, thanks in advance!
 
-Other bugs? Please report them as well. Only thoughts, ceremonies, events, and the entirety of the plains camps are intended to be scrubbed of cat-like words, so if you're playing on a different camp don't report those words for now thanks
+Other bugs? Please report them as well. Only thoughts, ceremonies, events, and the entirety of the plains/mountains camps are intended to be scrubbed of cat-like words, so if you're playing on a different camp don't report those words for now thanks
 
 ## clangen
 
