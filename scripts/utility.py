@@ -1429,7 +1429,7 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
                 if cat.pelt.harlequin: # if it is also harlequin
                     tortiepatches = sprites.sprites[cat.pelt.tortiepattern + cat.pelt.tortiecolour + cat_sprite].copy().convert_alpha()
                     tortiepatches.blit(sprites.sprites["tortiemask" + cat.pelt.pattern + cat_sprite], (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
-                    tortiepatches.blit(sprites.sprites['merle' + merle[0] + cat_sprite], (0, 0), special_flags=pygame.BLEND_RGB_MULT)
+                    tortiepatches.blit(sprites.sprites["merle" + merle_list[0] + cat_sprite], (0, 0), special_flags=pygame.BLEND_RGB_MULT)
                 else: # merle but not harlequin
                     tortiepatches = sprites.sprites['darkmerleSOLID' + cat_sprite].copy().convert_alpha()
                     tortiepatches.blit(dark_tint, (0, 0), special_flags=pygame.BLEND_RGB_MULT)
