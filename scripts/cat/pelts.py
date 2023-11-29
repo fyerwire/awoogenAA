@@ -1576,7 +1576,7 @@ class Pelt():
             elif str(cat.pelt.colour).lower() == "black" or str(cat.pelt.colour).lower() == "luna":
                 temp_color_name = "black"
             elif str(cat.pelt.colour).lower() == "chocolate" or str(cat.pelt.colour).lower() == "blue" or str(cat.pelt.colour).lower() == "lilac":
-                temp_color_name = str(renamed_colors[color_name]) + " and cream"
+                temp_color_name = str(renamed_colors[temp_color_name]) + " and cream"
             elif str(cat.pelt.colour).lower() == "spruce":
                 temp_color_name = "blue and gray"
             elif str(cat.pelt.colour).lower() == "isabella":
