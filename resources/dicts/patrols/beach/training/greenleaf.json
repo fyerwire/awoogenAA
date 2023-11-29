@@ -48,7 +48,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "r_c dips one paw in the water and hisses, proclaiming that it's much too cold and urging p_l to come back to camp with {PRONOUN/r_c/object} instead.",
+                "text": "r_c dips one paw in the water and growls, proclaiming that it's much too cold and urging p_l to come back to camp with {PRONOUN/r_c/object} instead.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [

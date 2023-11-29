@@ -188,8 +188,7 @@ class Game():
         self.keyspressed = []
         self.switch_screens = False
 
-        resourcepath = themegrabber()
-        with open(resourcepath + f"game_config.json", 'r') as read_file:
+        with open("resources/" + f"game_config.json", 'r') as read_file:
             self.config = ujson.loads(read_file.read())
 
         if self.config['fun']['april_fools']:

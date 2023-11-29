@@ -195,7 +195,7 @@ class History:
                     "be cold towards others", "refrain from socializing", "bicker with others"
                 ],
                 "aggression_raise": [
-                    "be ready for a fight", "start a fight", "defend their beliefs", "use teeth and claws over words", 
+                    "be ready for a fight", "start a fight", "defend their beliefs", "use snarls and fangs over words", 
                     "resort to violence"
                 ],
                 "aggression_lower": [
@@ -243,7 +243,7 @@ class History:
                 SkillPath.CLEVER: [ "solving problems" ],
                 SkillPath.INSIGHTFUL: [ "providing insight" ],
                 SkillPath.SENSE: [ "noticing small details" ],
-                SkillPath.KIT: [ "caring for kittens" ],
+                SkillPath.KIT: [ "caring for puppies" ],
                 SkillPath.STORY: [ "storytelling" ],
                 SkillPath.LORE: [ "remembering lore" ],
                 SkillPath.CAMP: [ "caring for camp" ],

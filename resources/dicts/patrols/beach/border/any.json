@@ -106,7 +106,7 @@
         "chance_of_success": 10,
         "success_outcomes": [
             {
-                "text": "Stunned for a moment, r_c is nearly caught in the teeth of the first rogue, but {PRONOUN/r_c/subject} {VERB/r_c/manage/manages} to dodge and weave through the onslaught of attacks, eventually escaping the fray and pelting towards camp with yowls of warning bursting from {PRONOUN/r_c/poss} lungs.",
+                "text": "Stunned for a moment, r_c is nearly caught in the teeth of the first rogue, but {PRONOUN/r_c/subject} {VERB/r_c/manage/manages} to dodge and weave through the onslaught of attacks, eventually escaping the fray and pelting towards camp with howls of warning bursting from {PRONOUN/r_c/poss} lungs.",
                 "exp": 30,
                 "weight": 20,
                 "relationships": [
@@ -472,7 +472,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "There is a downpour and a sudden flood from the overflowing river sweeps all of the wolves in the patrol away. p_l yowls out a warning, and most of the patrol is able to react quickly, striking out strongly for passing pieces of driftwood, but r_c doesn't make it, sinking beneath the water.",
+                "text": "There is a downpour and a sudden flood from the overflowing river sweeps all of the wolves in the patrol away. p_l barks a warning, and most of the patrol is able to react quickly, striking out strongly for passing pieces of driftwood, but r_c doesn't make it, sinking beneath the water.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
@@ -534,7 +534,7 @@
                 }
             },
             {
-                "text": "There is a downpour, and a sudden flood from the overflowing river sweeps r_c away. Injured, gasping for air and paddling desperately, r_c is able to remember enough of {PRONOUN/r_c/poss} training to keep an eye out for driftwood, and sinks {PRONOUN/r_c/poss} claws into the first piece that's swept past {PRONOUN/r_c/object}. It saves {PRONOUN/r_c/poss} life.",
+                "text": "There is a downpour, and a sudden flood from the overflowing river sweeps r_c away. Injured, gasping for air and paddling desperately, r_c is able to remember enough of {PRONOUN/r_c/poss} training to keep an eye out for driftwood, and curls {PRONOUN/r_c/poss} claws into the first piece that's swept past {PRONOUN/r_c/object}. It saves {PRONOUN/r_c/poss} life.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -650,7 +650,7 @@
                 ]
             },
             {
-                "text": "The pawprints lead to a trespassing rogue. s_c throws {PRONOUN/s_c/self} at the rogue, hissing furiously, and drives {PRONOUN/r_c/object} off c_n territory.",
+                "text": "The pawprints lead to a trespassing rogue. s_c throws {PRONOUN/s_c/self} at the rogue, snarling furiously, and drives {PRONOUN/r_c/object} off c_n territory.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,1"],
@@ -748,7 +748,7 @@
                 ]
             },
             {
-                "text": "Nose to the ground following the trail, r_c doesn't see the blow coming. {PRONOUN/r_c/subject/CAP} {VERB/r_c/haul/hauls} {PRONOUN/r_c/self} to {PRONOUN/r_c/poss} feet, spitting with outrage, but the rogue that did it has already turned and run.",
+                "text": "Nose to the ground following the trail, r_c doesn't see the blow coming. {PRONOUN/r_c/subject/CAP} {VERB/r_c/haul/hauls} {PRONOUN/r_c/self} to {PRONOUN/r_c/poss} feet, snarling with outrage, but the rogue that did it has already turned and run.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -882,7 +882,7 @@
                 ]
             },
             {
-                "text": "The pawprints lead to a trespassing rogue. s_c throws {PRONOUN/s_c/self} at the rogue, hissing furiously, but this is one battle hardened trespasser, and s_c isn't as good of a fighter as {PRONOUN/s_c/subject}'d like to think. The rogue manages to escape {PRONOUN/s_c/poss} grasp and run off further into c_n territory.",
+                "text": "The pawprints lead to a trespassing rogue. s_c throws {PRONOUN/s_c/self} at the rogue, snarling furiously, but this is one battle hardened trespasser, and s_c isn't as good of a fighter as {PRONOUN/s_c/subject}'d like to think. The rogue manages to escape {PRONOUN/s_c/poss} grasp and run off further into c_n territory.",
                 "exp": 0,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,1"],
@@ -917,7 +917,7 @@
                 ]
             },
             {
-                "text": "Nose to the ground following the trail, r_c doesn't see the blow coming. {PRONOUN/s_c/subject/CAP} {VERB/s_c/haul/hauls} {PRONOUN/s_c/self} to {PRONOUN/s_c/poss} feet, spitting with outrage, but the rogue that did it has already turned and run.",
+                "text": "Nose to the ground following the trail, r_c doesn't see the blow coming. {PRONOUN/s_c/subject/CAP} {VERB/s_c/haul/hauls} {PRONOUN/s_c/self} to {PRONOUN/s_c/poss} feet, snarling with outrage, but the rogue that did it has already turned and run.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -1014,7 +1014,7 @@
                 }
             },
             {
-                "text": "Nose to the ground following the trail, app1 doesn't see the blow coming. {PRONOUN/app1/subject/CAP} {VERB/app1/haul/hauls} {PRONOUN/app1/self} to {PRONOUN/app1/poss} feet, squealing with pain, and run for home.",
+                "text": "Nose to the ground following the trail, app1 doesn't see the blow coming. {PRONOUN/app1/subject/CAP} {VERB/app1/haul/hauls} {PRONOUN/app1/self} to {PRONOUN/app1/poss} feet, yipping with pain, and run for home.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -1076,7 +1076,7 @@
                 ]
             },
             {
-                "text": "The pawprints lead to a trespassing rogue. s_c throws {PRONOUN/s_c/self} at the rogue, hissing furiously, and together with r_c drives them off c_n territory.",
+                "text": "The pawprints lead to a trespassing rogue. s_c throws {PRONOUN/s_c/self} at the rogue, snarling furiously, and together with r_c drives them off c_n territory.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,1"],
@@ -1154,7 +1154,7 @@
                 ]
             },
             {
-                "text": "Nose to the ground following the trail, r_c doesn't see the blow coming. {PRONOUN/r_c/subject/CAP} {VERB/r_c/haul/hauls} {PRONOUN/r_c/self} to {PRONOUN/r_c/poss} feet, spitting with outrage, but the rogue that did it has already turned and run from the patrol.",
+                "text": "Nose to the ground following the trail, r_c doesn't see the blow coming. {PRONOUN/r_c/subject/CAP} {VERB/r_c/haul/hauls} {PRONOUN/r_c/self} to {PRONOUN/r_c/poss} feet, snarling with outrage, but the rogue that did it has already turned and run from the patrol.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -1284,7 +1284,7 @@
                 ]
             },
             {
-                "text": "The pawprints lead to a trespassing rogue. s_c throws {PRONOUN/s_c/self} at the rogue, hissing furiously, but this is one battle hardened trespasser, and s_c isn't as good of a fighter as {PRONOUN/s_c/subject}'d like to think. The rogue manages to escape {PRONOUN/s_c/poss} grasp and run off further into c_n territory.",
+                "text": "The pawprints lead to a trespassing rogue. s_c throws {PRONOUN/s_c/self} at the rogue, snarling furiously, but this is one battle hardened trespasser, and s_c isn't as good of a fighter as {PRONOUN/s_c/subject}'d like to think. The rogue manages to escape {PRONOUN/s_c/poss} grasp and run off further into c_n territory.",
                 "exp": 0,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,1"],
@@ -1299,7 +1299,7 @@
                 ]
             },
             {
-                "text": "Nose to the ground following the trail, r_c doesn't see the blow coming. {PRONOUN/r_c/subject/CAP} {VERB/r_c/haul/hauls} {PRONOUN/r_c/self} to {PRONOUN/r_c/poss} feet, spitting with outrage, but the rogue that did it has already turned and run.",
+                "text": "Nose to the ground following the trail, r_c doesn't see the blow coming. {PRONOUN/r_c/subject/CAP} {VERB/r_c/haul/hauls} {PRONOUN/r_c/self} to {PRONOUN/r_c/poss} feet, snarling with outrage, but the rogue that did it has already turned and run.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -1439,7 +1439,7 @@
                 ]
             },
             {
-                "text": "The pawprints lead to a trespassing rogue. s_c throws themselves at the rogue, hissing furiously, and together with r_c drives them off c_n territory.",
+                "text": "The pawprints lead to a trespassing rogue. s_c throws themselves at the rogue, snarling furiously, and together with r_c drives them off c_n territory.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,1"],
@@ -1625,7 +1625,7 @@
                 ]
             },
             {
-                "text": "The pawprints lead to a trespassing rogue. s_c throws themselves at the rogue, hissing furiously, but this is one battle hardened trespasser, and s_c isn't as good of a fighter as {PRONOUN/s_c/subject}'d like to think. The rogue manages to escape their grasp and run off further into c_n territory.",
+                "text": "The pawprints lead to a trespassing rogue. s_c throws themselves at the rogue, snarling furiously, but this is one battle hardened trespasser, and s_c isn't as good of a fighter as {PRONOUN/s_c/subject}'d like to think. The rogue manages to escape their grasp and run off further into c_n territory.",
                 "exp": 0,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,1"],
@@ -1717,7 +1717,7 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "It's Nessie! The patrol trots up, exchanging a nice mouse for a nice deep water fish, both creatures trading the respective delicacies that're hard for the other to obtain.",
+                "text": "It's Nessie! The patrol trots up, exchanging a nice rabbit for a nice deep water fish, both creatures trading the respective delicacies that're hard for the other to obtain.",
                 "exp": 0,
                 "weight": 20,
                 "prey": ["small"]

@@ -725,7 +725,7 @@
         "chance_of_success": 70,
         "success_outcomes": [
             {
-                "text": "Luck is on p_l's side today - the burdock is both plentiful and easy to find. Laying the fat roots out in a towering but neat pile in the herb stores makes p_l's entire body thrum with a contented purr.",
+                "text": "Luck is on p_l's side today - the burdock is both plentiful and easy to find. Laying the fat roots out in a towering but neat pile in the herb stores makes p_l's entire body curl with a furiously wagging tail.",
                 "exp": 10,
                 "weight": 20,
                 "herbs": ["burdock"]
@@ -796,7 +796,7 @@
                 ]
             },
             {
-                "text": "Luck is on p_l's side today - the burdock is both plentiful and easy to find. Laying the fat roots out in a towering but neat pile in the herb stores makes p_l's entire body thrum with a contented purr, as does seeing how hard app1 is working to learn herbcraft.",
+                "text": "Luck is on p_l's side today - the burdock is both plentiful and easy to find. Laying the fat roots out in a towering but neat pile in the herb stores makes p_l's entire body curl with a furiously wagging tail, as does seeing how hard app1 is working to learn herbcraft.",
                 "exp": 20,
                 "weight": 5,
                 "herbs": ["many_herbs", "burdock"],
@@ -908,7 +908,7 @@
                 ]
             },
             {
-                "text": "Luck is on p_l's side today - the burdock is both plentiful and easy to find. Laying the fat roots out in a towering but neat pile in the herb stores makes p_l's entire body thrum with a contented purr, and {PRONOUN/p_l/poss} Packmates smile, obligingly helping out their hard-working medicine wolf.",
+                "text": "Luck is on p_l's side today - the burdock is both plentiful and easy to find. Laying the fat roots out in a towering but neat pile in the herb stores makes p_l's entire body curl with a furiously wagging tail, and {PRONOUN/p_l/poss} Packmates smile, obligingly helping out their hard-working medicine wolf.",
                 "exp": 10,
                 "weight": 5,
                 "herbs": ["many_herbs", "burdock"],
@@ -1356,7 +1356,7 @@
                 ]
             },
             {
-                "text": "Daisies aren't hard to find in the warmer seasons, and s_c collects enough that {PRONOUN/s_c/subject} {VERB/s_c/have/haves} trouble not dropping any on the way back to camp. At least with app1 here with {PRONOUN/s_c/object} the load is shared, and {PRONOUN/s_c/subject} purr in appreciation of the apprentice.",
+                "text": "Daisies aren't hard to find in the warmer seasons, and s_c collects enough that {PRONOUN/s_c/subject} {VERB/s_c/have/haves} trouble not dropping any on the way back to camp. At least with app1 here with {PRONOUN/s_c/object} the load is shared, and {PRONOUN/s_c/subject} yip in appreciation of the apprentice.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["SENSE,2"],
@@ -2312,7 +2312,7 @@
         "chance_of_success": 70,
         "success_outcomes": [
             {
-                "text": "The many stems of goldenrod surround p_l as {PRONOUN/p_l/subject} {VERB/p_l/work/works}, snipping off stems and clumps of tiny yellow flowers to bring back to c_n's herb stores. app1 and p_l occasionally exchange quiet meows as {PRONOUN/p_l/subject} {VERB/p_l/work/works}, contact calls reassuring each other that {PRONOUN/p_l/subject}{VERB/p_l/'re/'s} both still there amidst the towering goldenrod.",
+                "text": "The many stems of goldenrod surround p_l as {PRONOUN/p_l/subject} {VERB/p_l/work/works}, snipping off stems and clumps of tiny yellow flowers to bring back to c_n's herb stores. app1 and p_l occasionally exchange quiet words as {PRONOUN/p_l/subject} {VERB/p_l/work/works}, contact calls reassuring each other that {PRONOUN/p_l/subject}{VERB/p_l/'re/'s} both still there amidst the towering goldenrod.",
                 "exp": 20,
                 "weight": 20,
                 "herbs": ["goldenrod"],
@@ -2334,7 +2334,7 @@
                 ]
             },
             {
-                "text": "It always amazes p_l how quickly the goldenrod bushes sprout back up after leaf-bare, and the wolves collect more goldenrod than {PRONOUN/p_l/subject} {VERB/p_l/were/was} anticipating. app1 nearly disappears underneath {PRONOUN/app1/poss} light, but chaotically bushy, bundle, which has p_l stifling purrs of amusement.",
+                "text": "It always amazes p_l how quickly the goldenrod bushes sprout back up after leaf-bare, and the wolves collect more goldenrod than {PRONOUN/p_l/subject} {VERB/p_l/were/was} anticipating. app1 nearly disappears underneath {PRONOUN/app1/poss} light, but chaotically bushy, bundle, which has p_l stifling giggles.",
                 "exp": 20,
                 "weight": 5,
                 "herbs": ["many_herbs", "goldenrod"],
@@ -5274,7 +5274,7 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "The sharp scent of tansy calls p_l in to harvest its newleaf shoots. There's enough of the common herb to let the warriors gather sprigs of it to freshen the dens, making the rest of the patrol purr with satisfaction.",
+                "text": "The sharp scent of tansy calls p_l in to harvest its newleaf shoots. There's enough of the common herb to let the warriors gather sprigs of it to freshen the dens, making the rest of the patrol smile with satisfaction.",
                 "exp": 10,
                 "weight": 20,
                 "herbs": ["tansy"],
