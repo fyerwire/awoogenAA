@@ -150,7 +150,7 @@ class OutsideClanScreen(Screens):
         self.outside_clan_button.disable()
         self.to_dead_button = UIImageButton(scale(pygame.Rect((560, 270), (134, 68))), "",
                                                  object_id="#to_dead_button", manager=MANAGER,
-                                                tool_tip_text='view cats in the afterlife')
+                                                tool_tip_text='view wolves in the afterlife')
         self.next_page_button = UIImageButton(scale(pygame.Rect((912, 1190), (68, 68))), "", object_id="#arrow_right_button")
         self.previous_page_button = UIImageButton(scale(pygame.Rect((620, 1190), (68, 68))), "",
                                                   object_id="#arrow_left_button", manager=MANAGER)

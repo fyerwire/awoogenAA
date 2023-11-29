@@ -155,7 +155,7 @@ class ListScreen(Screens):
                                                  object_id="#outside_clan_button", manager=MANAGER)
         self.to_dead_button = UIImageButton(scale(pygame.Rect((560, 270), (134, 68))), "",
                                                  object_id="#to_dead_button", manager=MANAGER,
-                                                tool_tip_text='view cats in the afterlife')
+                                                tool_tip_text='view wolves in the afterlife')
 
         self.filter_fav = UIImageButton(scale(pygame.Rect((366, 275), (56, 56))), "",
                                         object_id="#fav_cat",

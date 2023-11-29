@@ -81,7 +81,7 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "{PRONOUN/r_c/poss/CAP} Packmates come running at {PRONOUN/r_c/poss} yowls, and r_c is soon freed, shaken but unharmed. The patrol settles down as everyone comforts each other.",
+                "text": "{PRONOUN/r_c/poss/CAP} Packmates come running at {PRONOUN/r_c/poss} yips, and r_c is soon freed, shaken but unharmed. The patrol settles down as everyone comforts each other.",
                 "exp": 20,
                 "weight": 20,
                 "relationships": [
@@ -124,7 +124,7 @@
                 ]
             },
             {
-                "text": "Creeping in as close as possible, s_c purrs to {PRONOUN/s_c/poss} Packmate, keeping {PRONOUN/r_c/object} calm as the patrol carefully digs down to {PRONOUN/r_c/object}.",
+                "text": "Creeping in as close as possible, s_c talks softly to {PRONOUN/s_c/poss} Packmate, keeping {PRONOUN/r_c/object} calm as the patrol carefully digs down to {PRONOUN/r_c/object}.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -308,7 +308,7 @@
                 ]
             },
             {
-                "text": "Creeping in as close as possible, s_c purrs to r_c, keeping {PRONOUN/r_c/object} calm as {PRONOUN/s_c/subject} carefully dig down to {PRONOUN/r_c/object}. r_c blinks up at {PRONOUN/s_c/object}, holding on to {PRONOUN/s_c/poss} presence in the scary situation.",
+                "text": "Creeping in as close as possible, s_c talks softly to r_c, keeping {PRONOUN/r_c/object} calm as {PRONOUN/s_c/subject} carefully dig down to {PRONOUN/r_c/object}. r_c blinks up at {PRONOUN/s_c/object}, holding on to {PRONOUN/s_c/poss} presence in the scary situation.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -482,7 +482,7 @@
                 ]
             },
             {
-                "text": "Creeping in as close as possible, s_c purrs to r_c, keeping {PRONOUN/r_c/object} calm as {PRONOUN/s_c/subject} carefully dig down to {PRONOUN/r_c/object}. r_c blinks up at {PRONOUN/s_c/object}, holding on to {PRONOUN/s_c/poss} presence in the scary situation.",
+                "text": "Creeping in as close as possible, s_c talks softly to r_c, keeping {PRONOUN/r_c/object} calm as {PRONOUN/s_c/subject} carefully dig down to {PRONOUN/r_c/object}. r_c blinks up at {PRONOUN/s_c/object}, holding on to {PRONOUN/s_c/poss} presence in the scary situation.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -882,7 +882,7 @@
                 "weight": 20
             },
             {
-                "text": "r_c rounds a corner and stumbles across a tiny, perfect waterfall! Purring, {PRONOUN/r_c/subject} {VERB/r_c/take/takes} the opportunity for a small moment of peace, relaxing and enjoying the view.",
+                "text": "r_c rounds a corner and stumbles across a tiny, perfect waterfall! Smiling, {PRONOUN/r_c/subject} {VERB/r_c/take/takes} the opportunity for a small moment of peace, relaxing and enjoying the view.",
                 "exp": 20,
                 "weight": 5
             },
@@ -941,7 +941,7 @@
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "app1 watches the massive creature the tides have washed in with wide eyes, tail twitching with excitement. p_l tries to point out the hooked beak, as the octopus lazily waves a tentacle ever so temptingly just under the surface of the water.",
+                "text": "app1 watches the massive creature the tides have washed in with wide eyes, tail wagging with excitement. p_l tries to point out the hooked beak, as the octopus lazily waves a tentacle ever so temptingly just under the surface of the water.",
                 "exp": 15,
                 "weight": 20,
                 "relationships": [
@@ -1049,7 +1049,7 @@
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "app1 watches the massive creature the tides have washed in with wide eyes, tail twitching with excitement. p_l tries to point out the hooked beak, as the octopus lazily waves a tentacle ever so temptingly just under the surface of the water.",
+                "text": "app1 watches the massive creature the tides have washed in with wide eyes, tail wagging with excitement. p_l tries to point out the hooked beak, as the octopus lazily waves a tentacle ever so temptingly just under the surface of the water.",
                 "exp": 15,
                 "weight": 20,
                 "relationships": [
@@ -1158,7 +1158,7 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "app1 and app2 watch the massive creature the tides have washed in with wide eyes, tails twitching with excitement. p_l tries to point out the hooked beak, as the octopus lazily waves a tentacle ever so temptingly just under the surface of the water.",
+                "text": "app1 and app2 watch the massive creature the tides have washed in with wide eyes, tails wagging with excitement. p_l tries to point out the hooked beak, as the octopus lazily waves a tentacle ever so temptingly just under the surface of the water.",
                 "exp": 20,
                 "weight": 20,
                 "relationships": [
@@ -1267,7 +1267,7 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "app1 and app2 watch the massive creature the tides have washed in with wide eyes, tails twitching with excitement. p_l tries to point out the hooked beak, as the octopus lazily waves a tentacle ever so temptingly just under the surface of the water.",
+                "text": "app1 and app2 watch the massive creature the tides have washed in with wide eyes, tails wagging with excitement. p_l tries to point out the hooked beak, as the octopus lazily waves a tentacle ever so temptingly just under the surface of the water.",
                 "exp": 15,
                 "weight": 20,
                 "relationships": [
@@ -1403,7 +1403,7 @@
                 ]
             },
             {
-                "text": "app2 rounds the top of the cliff and sees s_c, asking why s_c wanted to meet there. Stuttering but determined, s_c explains that {PRONOUN/s_c/subject} wondered if, possibly, maybe, app2 would like to go on a... date? app2 looks away with a purr and murmurs a soft yes to the ground, suddenly unable to make eye contact. They watch the storm together, quietly thrilled.",
+                "text": "app2 rounds the top of the cliff and sees s_c, asking why s_c wanted to meet there. Stuttering but determined, s_c explains that {PRONOUN/s_c/subject} wondered if, possibly, maybe, app2 would like to go on a... date? app2 looks away with a smile and murmurs a soft yes to the ground, suddenly unable to make eye contact. They watch the storm together, quietly thrilled.",
                 "exp": 10,
                 "weight": 20,
                 "stat_trait": [
@@ -1492,7 +1492,7 @@
                 ]
             },
             {
-                "text": "app2 rounds the top of the cliff and sees s_c, asking why s_c wanted to meet there. Stuttering but determined, s_c explains that {PRONOUN/s_c/subject} wondered if, possibly, maybe, app2 would like to go on a... date? app2 looks away with a purr and murmurs a soft yes to the ground, suddenly unable to make eye contact. They watch the storm together, quietly thrilled.",
+                "text": "app2 rounds the top of the cliff and sees s_c, asking why s_c wanted to meet there. Stuttering but determined, s_c explains that {PRONOUN/s_c/subject} wondered if, possibly, maybe, app2 would like to go on a... date? app2 looks away with a smile and murmurs a soft yes to the ground, suddenly unable to make eye contact. They watch the storm together, quietly thrilled.",
                 "exp": 10,
                 "weight": 20,
                 "stat_trait": [
@@ -1987,7 +1987,7 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "It's Nessie! The patrol trots up, exchanging a nice mouse for a nice deep water fish, both creatures trading the respective delicacies that're hard for the other to obtain.",
+                "text": "It's Nessie! The patrol trots up, exchanging a nice rabbit for a nice deep water fish, both creatures trading the respective delicacies that're hard for the other to obtain.",
                 "exp": 0,
                 "weight": 20,
                 "prey": ["small"]

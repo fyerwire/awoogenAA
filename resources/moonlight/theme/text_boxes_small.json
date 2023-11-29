@@ -1,11 +1,11 @@
 {
     "text_entry_line": {
         "colours": {
-            "dark_bg": "#FFFFFF",
-            "selected_bg": "#6E6759",
-            "normal_text": "#000000",
+            "dark_bg": "#EBE7F5",
+            "selected_bg": "#665E7C",
+            "normal_text": "#1A1230",
             "selected_text": "#DCDCDC",
-            "text_cursor": "#000000"
+            "text_cursor": "#1A1230"
         },
         "misc": {
             "shape": "rounded_rectangle",
@@ -22,9 +22,9 @@
         "colours": {
             "dark_bg": "#00000000",
             "normal_text": "#EBE7F588",
-            "link_text": "#2E8B57",
-            "link_hover": "#556B2F",
-            "link_selected": "#556B2F"
+            "link_text": "#8271B1",
+            "link_hover": "#EBE7F5",
+            "link_selected": "#3A91A6"
         },
         "font": {
             "name": "notosans",
@@ -59,12 +59,12 @@
     "#text_box": {
         "colours": {
             "dark_bg": "#FFFF0000",
-            "normal_text": "#000000",
-            "selected_bg": "#776045",
-            "selected_text": "#AC9D72",
-            "link_text": "#2E8B57",
-            "link_hover": "#556B2F",
-            "link_selected": "#556B2F"
+            "normal_text": "#1A1230",
+            "selected_bg": "#201836",
+            "selected_text": "#EBE7F5",
+            "link_text": "#8271B1",
+            "link_hover": "#EBE7F5",
+            "link_selected": "#3A91A6"
         },
         "font": {
             "name": "notosans",
@@ -188,7 +188,7 @@
     "#text_box_current_version": {
         "prototype": "#text_box",
         "colours": {
-            "normal_text": "#222222"
+            "normal_text": "#EBE7F5"
         },
         "font": {
             "name": "notosans",
@@ -215,7 +215,7 @@
             "text_horiz_alignment": "center"
         },
         "colours": {
-            "normal_text": "#222222"
+            "normal_text": "#EBE7F5"
         },
         "font": {
             "name": "notosans",

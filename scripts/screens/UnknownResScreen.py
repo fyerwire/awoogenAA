@@ -202,7 +202,7 @@ class UnknownResScreen(Screens):
                                                 object_id="#dark_forest_button", manager=MANAGER)
         self.to_living_button = UIImageButton(scale(pygame.Rect((560, 270), (134, 68))), "",
                                                 object_id="#to_living_button", manager=MANAGER,
-                                                tool_tip_text='view living cats')
+                                                tool_tip_text='view living wolves')
         self.next_page_button = UIImageButton(scale(pygame.Rect((912, 1190), (68, 68))), "", object_id="#arrow_right_button")
         self.previous_page_button = UIImageButton(scale(pygame.Rect((620, 1190), (68, 68))), "",
                                                   object_id="#arrow_left_button")

@@ -19,7 +19,7 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "As the wolves watch, the silence is broken as one of the massive boulders rears up and snorts. The apprentices jolt with fear, app1's fur standing on end while app2 looks seconds away from fleeing, but p_l yips {PRONOUN/p_l/poss} tail encouragingly. These are nosy-seals, {PRONOUN/p_l/subject} {VERB/p_l/explain/explains}, as the beach full of 'boulders' suddenly seems far more intimidating.",
+                "text": "As the wolves watch, the silence is broken as one of the massive boulders rears up and snorts. The apprentices jolt with fear, app1's fur standing on end while app2 looks seconds away from fleeing, but p_l wags {PRONOUN/p_l/poss} tail encouragingly. These are nosy-seals, {PRONOUN/p_l/subject} {VERB/p_l/explain/explains}, as the beach full of 'boulders' suddenly seems far more intimidating.",
                 "exp": 20,
                 "weight": 20,
                 "relationships": [
@@ -146,7 +146,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "r_c dips one paw in the water and hisses, proclaiming that it's much too cold and urging p_l to come back to camp with {PRONOUN/r_c/object} instead.",
+                "text": "r_c dips one paw in the water and growls, proclaiming that it's much too cold and urging p_l to come back to camp with {PRONOUN/r_c/object} instead.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [

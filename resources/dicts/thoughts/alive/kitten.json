@@ -115,7 +115,7 @@
             "Wants r_c to see how far {PRONOUN/m_c/subject} can jump",
             "Wants to race with r_c",
             "Doesn't like naps",
-            "Claims {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} the fastest cat ever",
+            "Claims {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} the fastest wolf ever",
             "Thinks {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} faster than a rabbit",
             "Is begging r_c to play with {PRONOUN/m_c/object}"
         ],
@@ -315,7 +315,7 @@
             "Twitches {PRONOUN/m_c/poss} tail tip",
             "Is checking on other wolves",
             "Wants r_c to be happy",
-            "Purrs all day long",
+            "Wiggles all day long",
             "Has soft paws",
             "Wouldn't hurt a fly",
             "Wonders how r_c is feeling today",

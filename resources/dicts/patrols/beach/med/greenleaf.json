@@ -211,7 +211,7 @@
                 "herbs": ["mullein"]
             },
             {
-                "text": "Not only is the mullein intact and growing nicely, but there's also a nice patch of plantain growing just nearby. p_l purrs in satisfaction - seems like {PRONOUN/p_l/subject}{VERB/p_l/'ve/'s} caught two prey in one blow on this trip. {PRONOUN/p_l/subject/CAP}'ll remember that plantain for later.",
+                "text": "Not only is the mullein intact and growing nicely, but there's also a nice patch of plantain growing just nearby. p_l smiles in satisfaction - seems like {PRONOUN/p_l/subject}{VERB/p_l/'ve/'s} caught two prey in one blow on this trip. {PRONOUN/p_l/subject/CAP}'ll remember that plantain for later.",
                 "exp": 10,
                 "weight": 5,
                 "herbs": ["mullein"]
@@ -219,7 +219,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "p_l reaches the mullein plant that the Pack has used for many seasons, only to find out it's being torn to shreds by bugs. {PRONOUN/p_l/subject/CAP} {VERB/p_l/hiss/hisses} in exasperation, batting some of the leaf bugs off the plant. Maybe it'll grow back next newleaf.",
+                "text": "p_l reaches the mullein plant that the Pack has used for many seasons, only to find out it's being torn to shreds by bugs. {PRONOUN/p_l/subject/CAP} {VERB/p_l/growl/growls} in exasperation, batting some of the leaf bugs off the plant. Maybe it'll grow back next newleaf.",
                 "exp": 0,
                 "weight": 20
             }
@@ -291,7 +291,7 @@
                 ]
             },
             {
-                "text": "By the time they reach the burdock plants, p_l is about ready to claw s_c's ears off. Great StarPack! <i>How</i> can a wolf be so annoying? p_l hisses in exasperation, just as {PRONOUN/p_l/subject} {VERB/p_l/notice/notices} that the burdock is all shriveled and dead - the roots won't be any good. It's just one thing after another today.",
+                "text": "By the time they reach the burdock plants, p_l is about ready to bite s_c's ears off. Great StarPack! <i>How</i> can a wolf be so annoying? p_l growl-barks in exasperation, just as {PRONOUN/p_l/subject} {VERB/p_l/notice/notices} that the burdock is all shriveled and dead - the roots won't be any good. It's just one thing after another today.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": ["troublesome", "childish"],
@@ -606,7 +606,7 @@
                 "herbs": ["blackberry"]
             },
             {
-                "text": "Perfect - there's a good crop of blackberry leaves just waiting for {PRONOUN/p_l/object}, and the bramble seems to be sending out new exploratory branches too, promising more growth in the future. As {PRONOUN/p_l/subject} {VERB/p_l/set/sets} out the leaves out to dry before they're put away in the herb stores, p_l lets out a purr at the sight of {PRONOUN/p_l/poss} harvest.",
+                "text": "Perfect - there's a good crop of blackberry leaves just waiting for {PRONOUN/p_l/object}, and the bramble seems to be sending out new exploratory branches too, promising more growth in the future. As {PRONOUN/p_l/subject} {VERB/p_l/set/sets} out the leaves out to dry before they're put away in the herb stores, p_l smiles at the sight of {PRONOUN/p_l/poss} harvest.",
                 "exp": 10,
                 "weight": 5,
                 "herbs": ["many_herbs", "blackberry"]
@@ -871,7 +871,7 @@
         "chance_of_success": 70,
         "success_outcomes": [
             {
-                "text": "Luck is on p_l's side today - the burdock is both plentiful and easy to find. Laying the fat roots out in a towering but neat pile in the herb stores makes p_l's entire body thrum with a contented purr.",
+                "text": "Luck is on p_l's side today - the burdock is both plentiful and easy to find. Laying the fat roots out in a towering but neat pile in the herb stores makes p_l's entire body curl with a furiously wagging tail.",
                 "exp": 10,
                 "weight": 20,
                 "herbs": ["burdock"]
@@ -936,7 +936,7 @@
                 ]
             },
             {
-                "text": "Luck is on p_l's side today - the burdock is both plentiful and easy to find. Laying the fat roots out in a towering but neat pile in the herb stores makes p_l's entire body thrum with a contented purr, as does seeing how hard app1 is working to learn herbcraft.",
+                "text": "Luck is on p_l's side today - the burdock is both plentiful and easy to find. Laying the fat roots out in a towering but neat pile in the herb stores makes p_l's entire body curl with a furiously wagging tail, as does seeing how hard app1 is working to learn herbcraft.",
                 "exp": 20,
                 "weight": 5,
                 "herbs": ["many_herbs", "burdock"],
@@ -1048,7 +1048,7 @@
                 ]
             },
             {
-                "text": "Luck is on p_l's side today - the burdock is both plentiful and easy to find. Laying the fat roots out in a towering but neat pile in the herb stores makes p_l's entire body thrum with a contented purr, and {PRONOUN/p_l/poss} Packmates smile, obligingly helping out their hard-working medicine wolf.",
+                "text": "Luck is on p_l's side today - the burdock is both plentiful and easy to find. Laying the fat roots out in a towering but neat pile in the herb stores makes p_l's entire body curl with a furiously wagging tail, and {PRONOUN/p_l/poss} Packmates smile, obligingly helping out their hard-working medicine wolf.",
                 "exp": 10,
                 "weight": 5,
                 "herbs": ["many_herbs", "burdock"],
@@ -1491,7 +1491,7 @@
                 ]
             },
             {
-                "text": "Daisies aren't hard to find in the warmer seasons, and s_c collects enough that {PRONOUN/s_c/subject} {VERB/s_c/have/haves} trouble not dropping any on the way back to camp. At least with app1 here with {PRONOUN/s_c/object} the load is shared, and {PRONOUN/s_c/subject} purr in appreciation of the apprentice.",
+                "text": "Daisies aren't hard to find in the warmer seasons, and s_c collects enough that {PRONOUN/s_c/subject} {VERB/s_c/have/haves} trouble not dropping any on the way back to camp. At least with app1 here with {PRONOUN/s_c/object} the load is shared, and {PRONOUN/s_c/subject} smile in appreciation of the apprentice.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["SENSE,2"],
@@ -2268,7 +2268,7 @@
         "chance_of_success": 70,
         "success_outcomes": [
             {
-                "text": "The many stems of goldenrod surround p_l as {PRONOUN/p_l/subject} {VERB/p_l/work/works}, snipping off stems and clumps of tiny yellow flowers to bring back to c_n's herb stores. app1 and p_l occasionally exchange quiet meows as they work, contact calls reassuring each other that they're both still there amidst the towering goldenrod.",
+                "text": "The many stems of goldenrod surround p_l as {PRONOUN/p_l/subject} {VERB/p_l/work/works}, snipping off stems and clumps of tiny yellow flowers to bring back to c_n's herb stores. app1 and p_l occasionally exchange quiet words as they work, contact calls reassuring each other that they're both still there amidst the towering goldenrod.",
                 "exp": 20,
                 "weight": 20,
                 "herbs": ["goldenrod"],

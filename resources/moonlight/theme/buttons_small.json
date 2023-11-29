@@ -55,20 +55,20 @@
     },
     "#saved_clan": {
         "colours": {
-            "normal_bg": "#ac9d72",
-            "hovered_bg": "#644d39",
-            "selected_bg": "#644d39",
-            "active_bg": "#644d39",
-            "normal_text": "#000000",
-            "hovered_text": "#FFFFFF",
-            "selected_text": "#FFFFFF",
-            "disabled_text": "#FFFFFF",
+            "normal_bg": "#565371",
+            "hovered_bg": "#201836",
+            "selected_bg": "#201836",
+            "active_bg": "#201836",
+            "normal_text": "#EBE7F5",
+            "hovered_text": "#EBE7F5",
+            "selected_text": "#EBE7F5",
+            "disabled_text": "#EBE7F5",
             "text_shadow": "#00000000",
-            "normal_border": "#887b56",
-            "hovered_border": "#503825",
-            "disabled_border": "#503825",
-            "selected_border": "#503825",
-            "active_border": "#665E7C"
+            "normal_border": "#1A1230",
+            "hovered_border": "#1A1230",
+            "disabled_border": "#666272",
+            "selected_border": "#1A1230",
+            "active_border": "#1A1230"
         },
         "font": {
             "name": "notosans",
@@ -81,9 +81,9 @@
     },
     "#relation_bar": {
         "colours": {
-            "normal_border": "#CEC2A8",
-            "filled_bar": "#796045",
-            "unfilled_bar": "#CEC2A8"
+            "normal_border": "#EBE7F5",
+            "filled_bar": "#565371",
+            "unfilled_bar": "#EBE7F5"
         },
         "misc": {
             "shape": "rounded_rectangle",
@@ -107,8 +107,8 @@
     "#relation_bar_dark": {
         "prototype": "#relation_bar",
         "colours": {
-            "normal_border": "#2F2918",
-            "unfilled_bar": "#2F2918"
+            "normal_border": "#201836",
+            "unfilled_bar": "#201836"
         }
     },
     "#relation_bar_neg_dark": {
@@ -128,7 +128,7 @@
             "normal_bg": "#565371",
             "hovered_bg": "#1A1230",
             "selected_bg": "#1A1230",
-            "normal_text": "#EEE4CD",
+            "normal_text": "#EBE7F5",
             "hovered_text": "#EBE7F5",
             "text_shadow": "#00000000"
         },

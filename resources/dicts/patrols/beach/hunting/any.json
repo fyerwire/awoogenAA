@@ -52,7 +52,7 @@
                 "prey": ["medium"]
             },
             {
-                "text": "The patrol finds some astonishingly fat chickens running around the Twoleg nest, and helps themselves to one.",
+                "text": "The patrol finds some astonishingly fat chickens running around the Twoleg nest, and helps themselves to a few.",
                 "exp": 20,
                 "weight": 5,
                 "prey": ["large"]
@@ -383,7 +383,7 @@
                 "text": "r_c heads off to one of {PRONOUN/r_c/poss} favorite spots on the beach, a rocky shore with high highs and low lows, providing excellent ambush chances. And what do you know, {PRONOUN/r_c/subject} {VERB/r_c/are/is} bush! Or {PRONOUN/r_c/subject} {VERB/r_c/were/was}, as far as that big crab thought.",
                 "exp": 20,
                 "weight": 20,
-                "prey": ["large"]
+                "prey": ["medium"]
             },
             {
                 "text": "r_c finds a trapped fish flopping in a tidal pool, and {PRONOUN/r_c/subject} can barely drag the thing back to camp, but by the stars it's juicy when {PRONOUN/r_c/subject} {VERB/r_c/sit/sits} down to eat it with {PRONOUN/r_c/poss} Packmates.",
@@ -392,11 +392,11 @@
                 "prey": ["large"]
             },
             {
-                "text": "s_c gets the chance to try out an idea {PRONOUN/s_c/subject}{VERB/s_c/'ve/'s} been sitting on for a while. There's a rabbit warren in the sand dunes that {PRONOUN/s_c/subject}{VERB/s_c/'ve/'s} spotted that's particularly badly built, and {PRONOUN/s_c/subject} {VERB/s_c/manage/manages} to dig down into one of the dens, fishing baby rabbits out by the pawful.",
+                "text": "s_c gets the chance to try out an idea {PRONOUN/s_c/subject}{VERB/s_c/'ve/'s} been sitting on for a while. There's a rabbit warren in the sand dunes that {PRONOUN/s_c/subject}{VERB/s_c/'ve/'s} spotted that's particularly badly built, and {PRONOUN/s_c/subject} {VERB/s_c/manage/manages} to dig down into one of the dens, fishing baby rabbits out by the mouthful.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1"],
-                "prey": ["large"]
+                "prey": ["medium"]
             },
             {
                 "text": "The prey is running terribly today. But s_c has patience, and wisely waits for the perfect opportunity instead of getting frustrated. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp with a good contribution to the Pack's stores, having had a relaxing day sitting with {PRONOUN/s_c/poss} thoughts while waiting for the prey to come to {PRONOUN/s_c/object}.",
@@ -459,10 +459,10 @@
                 "text": "r_c heads off to one of {PRONOUN/r_c/poss} favorite spots on the beach, a rocky shore with high highs and low lows, providing excellent ambush chances. And what do you know, {PRONOUN/r_c/subject} {VERB/r_c/are/is} bush! Or {PRONOUN/r_c/subject} {VERB/r_c/were/was}, as far as that big crab thought. {PRONOUN/r_c/subject/CAP} {VERB/r_c/snicker/snickers} to {PRONOUN/r_c/self} as {PRONOUN/r_c/subject} {VERB/r_c/pad/pads} back to camp.",
                 "exp": 20,
                 "weight": 20,
-                "prey": ["large"]
+                "prey": ["medium"]
             },
             {
-                "text": "r_c finds a trapped fish flopping in a tidal pool, and {PRONOUN/r_c/subject} can barely drag the thing back to camp, but by the stars it's juicy when {PRONOUN/r_c/subject} {VERB/r_c/sit/sits} down to eat it with {PRONOUN/r_c/poss} Packmates. Purring, {PRONOUN/r_c/subject} {VERB/r_c/take/takes} the opportunity for a small moment of peace, relaxing with {PRONOUN/r_c/poss} friends.",
+                "text": "r_c finds a trapped fish flopping in a tidal pool, and {PRONOUN/r_c/subject} can barely drag the thing back to camp, but by the stars it's juicy when {PRONOUN/r_c/subject} {VERB/r_c/sit/sits} down to eat it with {PRONOUN/r_c/poss} Packmates. Wagging contentedly, {PRONOUN/r_c/subject} {VERB/r_c/take/takes} the opportunity for a small moment of peace, relaxing with {PRONOUN/r_c/poss} friends.",
                 "exp": 20,
                 "weight": 5,
                 "prey": ["large"]
@@ -472,7 +472,7 @@
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1"],
-                "prey": ["large"]
+                "prey": ["small"]
             },
             {
                 "text": "The prey is running terribly today. But s_c has patience, and wisely waits for the perfect opportunity instead of getting frustrated. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp with a good contribution to the Pack's stores, having had a relaxing day sitting with {PRONOUN/s_c/poss} thoughts while waiting for the prey to come to {PRONOUN/s_c/object}.",
@@ -535,10 +535,10 @@
                 "text": "r_c heads off to one of {PRONOUN/r_c/poss} favorite spots on the beach, a rocky shore with high highs and low lows, providing excellent ambush chances. And what do you know, {PRONOUN/r_c/subject} {VERB/r_c/are/is} bush! Or {PRONOUN/r_c/subject} {VERB/r_c/were/was}, as far as that big crab thought. {PRONOUN/r_c/subject/CAP} {VERB/r_c/snicker/snickers} to {PRONOUN/r_c/self} as {PRONOUN/r_c/subject} {VERB/r_c/pad/pads} back to camp.",
                 "exp": 20,
                 "weight": 20,
-                "prey": ["large"]
+                "prey": ["medium"]
             },
             {
-                "text": "r_c finds a trapped fish flopping in a tidal pool, and {PRONOUN/r_c/subject} can barely drag the thing back to camp, but by the stars it's juicy when {PRONOUN/r_c/subject} {VERB/r_c/sit/sits} down to eat it with {PRONOUN/r_c/poss} Packmates. Purring, {PRONOUN/r_c/subject} {VERB/r_c/take/takes} the opportunity for a small moment of peace, relaxing with {PRONOUN/r_c/poss} friends.",
+                "text": "r_c finds a trapped fish flopping in a tidal pool, and {PRONOUN/r_c/subject} can barely drag the thing back to camp, but by the stars it's juicy when {PRONOUN/r_c/subject} {VERB/r_c/sit/sits} down to eat it with {PRONOUN/r_c/poss} Packmates. Wagging contentedly, {PRONOUN/r_c/subject} {VERB/r_c/take/takes} the opportunity for a small moment of peace, relaxing with {PRONOUN/r_c/poss} friends.",
                 "exp": 20,
                 "weight": 5,
                 "prey": ["large"]
@@ -548,7 +548,7 @@
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1"],
-                "prey": ["large"]
+                "prey": ["small"]
             },
             {
                 "text": "The prey is running terribly today. But s_c has patience, and wisely waits for the perfect opportunity instead of getting frustrated. {PRONOUN/s_c/subject/CAP} {VERB/s_c/come/comes} back to camp with a good contribution to the Pack's stores, having had a relaxing day sitting with {PRONOUN/s_c/poss} thoughts while waiting for the prey to come to {PRONOUN/s_c/object}.",
@@ -606,7 +606,7 @@
         "chance_of_success": 20,
         "success_outcomes": [
             {
-                "text": "r_c drops down into a hunting crouch, certain that a mouse must be the source of the noise. {PRONOUN/r_c/subject/CAP} {VERB/r_c/find/finds} {PRONOUN/r_c/self} to be correct when {PRONOUN/r_c/subject} {VERB/r_c/pounce/pounces} into the grass and {VERB/r_c/return/returns} to the patrol with the tasty morsel dangling from {PRONOUN/r_c/poss} mouth.",
+                "text": "r_c begins stalking, certain that a rabbit must be the source of the noise. {PRONOUN/r_c/subject/CAP} {VERB/r_c/find/finds} {PRONOUN/r_c/self} to be correct when {PRONOUN/r_c/subject} {VERB/r_c/pounce/pounces} into the grass and {VERB/r_c/return/returns} to the patrol with the tasty morsel dangling from {PRONOUN/r_c/poss} mouth.",
                 "exp": 10,
                 "weight": 20,
                 "prey": ["small"]
@@ -642,7 +642,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "r_c takes the lead in checking the source of the noise and comes face to face with an angry fox! Though {PRONOUN/r_c/subject} {VERB/r_c/backpedal/backpedals} rapidly, the fox still manages to take a bite out of {PRONOUN/r_c/object} before the rest of the patrol can back {PRONOUN/r_c/object} up.",
+                "text": "r_c takes the lead in checking the source of the noise and comes face to face with an angry bear! Though {PRONOUN/r_c/subject} {VERB/r_c/backpedal/backpedals} rapidly, the bear still manages to take a bite out of {PRONOUN/r_c/object} before the rest of the patrol can back {PRONOUN/r_c/object} up.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -653,9 +653,9 @@
                     }
                 ],
                 "history_text": { 
-                    "scar": "m_c gained a scar from a fox.",
-                    "reg_death": "m_c died from a fox bite.",
-                    "lead_death": "died from a fox bite"
+                    "scar": "m_c gained a scar from a bear.",
+                    "reg_death": "m_c died from a bear bite.",
+                    "lead_death": "died from a bear bite"
                 },
                 "prey": ["very_small"]
             }
@@ -677,7 +677,7 @@
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "r_c drops down into a hunting crouch, certain that a mouse must be the source of the noise. {PRONOUN/r_c/subject/CAP} {VERB/r_c/find/finds} {PRONOUN/r_c/self} to be correct when {PRONOUN/r_c/subject} {VERB/r_c/pounce/pounces} into the grass and {VERB/r_c/return/returns} to the patrol with the tasty morsel dangling from {PRONOUN/r_c/poss} mouth.",
+                "text": "r_c begins stalking, certain that a rabbit must be the source of the noise. {PRONOUN/r_c/subject/CAP} {VERB/r_c/find/finds} {PRONOUN/r_c/self} to be correct when {PRONOUN/r_c/subject} {VERB/r_c/pounce/pounces} into the grass and {VERB/r_c/return/returns} to the patrol with the tasty morsel dangling from {PRONOUN/r_c/poss} mouth.",
                 "exp": 10,
                 "weight": 20,
                 "prey": ["small"]
@@ -711,17 +711,17 @@
                 ]
             },
             {
-                "text": "r_c takes the lead in checking the source of the noise and comes face to face with a huge, snarling dog! r_c yowls for {PRONOUN/r_c/poss} patrol, but the other wolves aren't quick enough to stop the creature from snapping r_c up in its deadly jaws.",
+                "text": "r_c takes the lead in checking the source of the noise and comes face to face with a cougar! r_c yips for {PRONOUN/r_c/poss} patrol, but the other wolves aren't quick enough to stop the creature from snapping r_c up in its deadly jaws.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
                 "history_text": {
-                    "reg_death": "m_c was killed by a dog.",
-                    "lead_death": "{VERB/m_c/were/was} killed by a dog"
+                    "reg_death": "m_c was killed by a cougar.",
+                    "lead_death": "{VERB/m_c/were/was} killed by a cougar"
                 }
             },
             {
-                "text": "r_c takes the lead in checking the source of the noise and comes face to face with an angry fox! Though {PRONOUN/r_c/subject} {VERB/r_c/backpedal/backpedals} rapidly, the fox still manages to take a bite out of {PRONOUN/r_c/object} before the rest of the patrol can back {PRONOUN/r_c/object} up.",
+                "text": "r_c takes the lead in checking the source of the noise and comes face to face with an angry bear! Though {PRONOUN/r_c/subject} {VERB/r_c/backpedal/backpedals} rapidly, the bear still manages to take a bite out of {PRONOUN/r_c/object} before the rest of the patrol can back {PRONOUN/r_c/object} up.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -732,9 +732,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c gained a scar from a fox.",
-                    "reg_death": "m_c died from a fox bite.",
-                    "lead_death": "died from a fox bite"
+                    "scar": "m_c gained a scar from a bear.",
+                    "reg_death": "m_c died from a bear bite.",
+                    "lead_death": "died from a bear bite"
                 }
             }
         ]
@@ -755,7 +755,7 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "r_c drops down into a hunting crouch, certain that a mouse must be the source of the noise. {PRONOUN/r_c/subject/CAP} {VERB/r_c/find/finds} {PRONOUN/r_c/self} to be correct when {PRONOUN/r_c/subject} {VERB/r_c/pounce/pounces} into the grass and {VERB/r_c/return/returns} to camp with the tasty morsel dangling from {PRONOUN/r_c/poss} mouth.",
+                "text": "r_c begins stalking, certain that a rabbit must be the source of the noise. {PRONOUN/r_c/subject/CAP} {VERB/r_c/find/finds} {PRONOUN/r_c/self} to be correct when {PRONOUN/r_c/subject} {VERB/r_c/pounce/pounces} into the grass and {VERB/r_c/return/returns} to camp with the tasty morsel dangling from {PRONOUN/r_c/poss} mouth.",
                 "exp": 10,
                 "weight": 20,
                 "prey": ["small"]
@@ -765,7 +765,7 @@
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1"],
-                "prey": ["small"]
+                "prey": ["medium"]
             }
         ],
         "fail_outcomes": [
@@ -789,17 +789,17 @@
                 ]
             },
             {
-                "text": "r_c doesn't hesitate in checking the source of the noise and comes face to face with a huge, snarling dog! r_c yowls for help, but {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} alone on this patrol, and {PRONOUN/r_c/subject} {VERB/r_c/have/has} the sudden realization that no one can help {PRONOUN/r_c/object} now. The dog kills the lone wolf with little trouble.",
+                "text": "r_c doesn't hesitate in checking the source of the noise and comes face to face with a cougar! r_c yowls for help, but {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} alone on this patrol, and {PRONOUN/r_c/subject} {VERB/r_c/have/has} the sudden realization that no one can help {PRONOUN/r_c/object} now. The cougar kills the lone wolf with little trouble.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
                 "history_text": {
-                    "reg_death": "m_c was killed by a dog while patrolling alone.",
-                    "lead_death": "{VERB/m_c/were/was} killed by a dog while patrolling alone"
+                    "reg_death": "m_c was killed by a cougar while patrolling alone.",
+                    "lead_death": "{VERB/m_c/were/was} killed by a cougar while patrolling alone"
                 }
             },
             {
-                "text": "r_c heads toward the source of the noise and comes face to face with an angry fox! Though {PRONOUN/r_c/subject} {VERB/r_c/backpedal/backpedals} rapidly, the fox still manages to take a bite out of {PRONOUN/r_c/object} before {PRONOUN/r_c/subject} can sprint away.",
+                "text": "r_c heads toward the source of the noise and comes face to face with an angry bear! Though {PRONOUN/r_c/subject} {VERB/r_c/backpedal/backpedals} rapidly, the bear still manages to take a bite out of {PRONOUN/r_c/object} before {PRONOUN/r_c/subject} can sprint away.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -810,9 +810,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c gained a scar from a fox.",
-                    "reg_death": "m_c died from a fox bite.",
-                    "lead_death": "died from a fox bite"
+                    "scar": "m_c gained a scar from a bear.",
+                    "reg_death": "m_c died from a bear bite.",
+                    "lead_death": "died from a bear bite"
                 }
             }
         ]
@@ -851,7 +851,7 @@
                 "stat_skill": ["CLEVER,3"]
             },
             {
-                "text": "A Twoleg spots s_c and crouches down, clicking softly. s_c hisses and flees.",
+                "text": "A Twoleg spots s_c and crouches down, clicking softly. s_c growls and flees.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -875,7 +875,7 @@
                 "lost_cats": ["r_c"]
             },
             {
-                "text": "A Twoleg spots s_c and crouches down, clicking softly. s_c pauses - are they hurt? Do they want to make friends? Before {PRONOUN/s_c/subject} can decide whether to step closer, there's a swoosh, and a net falls around {PRONOUN/s_c/object}. s_c fights desperately, but the Twolegs take {PRONOUN/r_c/object} away in the monster.",
+                "text": "A Twoleg spots s_c and crouches down, clicking softly. s_c pauses - are they hurt? Do they want to make friends? Before {PRONOUN/s_c/subject} can decide whether to step closer, there's a swoosh, and a catchpole tightens around {PRONOUN/s_c/object}. s_c fights desperately, but the Twolegs take {PRONOUN/r_c/object} away in the monster.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -926,7 +926,7 @@
                 "stat_skill": ["CLEVER,3"]
             },
             {
-                "text": "A Twoleg spots s_c and crouches down, clicking softly. s_c hisses and flees.",
+                "text": "A Twoleg spots s_c and crouches down, clicking softly. s_c growls and flees.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -950,7 +950,7 @@
                 "lost_cats": ["r_c"]
             },
             {
-                "text": "A Twoleg spots s_c and crouches down, clicking softly. s_c pauses - are they hurt? Do they want to make friends? Before {PRONOUN/s_c/subject} can decide whether to step closer, there's a swoosh, and a net falls around {PRONOUN/s_c/object}. s_c fights desperately, but the Twolegs take {PRONOUN/s_c/object} away in the monster.",
+                "text": "A Twoleg spots s_c and crouches down, clicking softly. s_c pauses - are they hurt? Do they want to make friends? Before {PRONOUN/s_c/subject} can decide whether to step closer, there's a swoosh, and a catchpole tightens around {PRONOUN/s_c/object}. s_c fights desperately, but the Twolegs take {PRONOUN/s_c/object} away in the monster.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -1001,7 +1001,7 @@
                 "stat_skill": ["CLEVER,3"]
             },
             {
-                "text": "A Twoleg spots s_c and crouches down, clicking softly. s_c hisses and flees.",
+                "text": "A Twoleg spots s_c and crouches down, clicking softly. s_c growls and flees.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -1025,7 +1025,7 @@
                 "lost_cats": ["multi"]
             },
             {
-                "text": "A Twoleg spots s_c and crouches down, clicking softly. s_c pauses - are they hurt? Do they want to make friends? {PRONOUN/s_c/subject/CAP} {VERB/s_c/wander/wanders} closer, drawing more of the patrol in with {PRONOUN/s_c/object}. Before they can decide whether to step away, there's a swoosh, and a net falls around the wolves. They fight desperately, but the Twolegs take them away in the monster.",
+                "text": "A Twoleg spots s_c and crouches down, clicking softly. s_c pauses - are they hurt? Do they want to make friends? {PRONOUN/s_c/subject/CAP} {VERB/s_c/wander/wanders} closer, drawing more of the patrol in with {PRONOUN/s_c/object}. Before they can decide whether to step away, there's a noise, and each wolf is darted. They fight desperately, but the Twolegs take them away in the monster.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -1066,7 +1066,7 @@
                 "prey": ["medium"]
             },
             {
-                "text": "A friendly Twoleg makes a psspsspss noise and pours pet food on the ground for r_c. {PRONOUN/r_c/subject/CAP}{VERB/r_c/'ve/'s} always wondered what it might taste like... dry, is the answer. Very odd.",
+                "text": "A friendly Twoleg makes a whistle noise and pours pet food on the ground for r_c. {PRONOUN/r_c/subject/CAP}{VERB/r_c/'ve/'s} always wondered what it might taste like... dry, is the answer. Very odd.",
                 "exp": 20,
                 "weight": 5
             },
@@ -1077,7 +1077,7 @@
                 "stat_skill": ["CLEVER,1"]
             },
             {
-                "text": "Calmly, s_c weaves around the Twoleg dens, picking out the mice from the tunnels and the birds off the strange metal hanging fruit. A successful, sneaky hunt.",
+                "text": "Calmly, s_c weaves around the Twoleg dens, picking out the rabbits from the tunnels and the birds off the strange metal hanging fruit. A successful, sneaky hunt.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -1154,7 +1154,7 @@
                 "prey": ["small"]
             },
             {
-                "text": "A friendly Twoleg makes a psspsspss noise and pours pet food on the ground for app1. {PRONOUN/app1/subject/CAP}{VERB/app1/'ve/'s} always wondered what it might taste like... dry, is the answer. It's strangely appealing.",
+                "text": "A friendly Twoleg makes a whistle noise and pours pet food on the ground for app1. {PRONOUN/app1/subject/CAP}{VERB/app1/'ve/'s} always wondered what it might taste like... dry, is the answer. It's strangely appealing.",
                 "exp": 20,
                 "weight": 5
             },
@@ -1193,7 +1193,7 @@
                 "lost_cats": ["app1"]
             },
             {
-                "text": "Carelessly, app1 is seen by Twolegs, and is taken hissing and spitting to be locked in a monster's den. Overnight, {PRONOUN/app1/subject} {VERB/app1/discover/discovers} that a broken window is just wide enough to push {PRONOUN/app1/self} out to safety through, but the glass leaves {PRONOUN/app1/object} bleeding as {PRONOUN/app1/subject} {VERB/app1/run/runs} back to c_n.",
+                "text": "Carelessly, app1 is seen by Twolegs, and is taken snarling and snapping to be locked in a monster's den. Overnight, {PRONOUN/app1/subject} {VERB/app1/discover/discovers} that a broken window is just wide enough to push {PRONOUN/app1/self} out to safety through, but the glass leaves {PRONOUN/app1/object} bleeding as {PRONOUN/app1/subject} {VERB/app1/run/runs} back to c_n.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -1242,7 +1242,7 @@
                 ]
             },
             {
-                "text": "A friendly Twoleg makes a psspsspss noise and pours pet food on the ground for r_c. {PRONOUN/r_c/subject/CAP} {VERB/r_c/fetch/fetches} p_l, and both wolves investigate the food, loudly proclaiming how much better fresh-kill is, but both a little thrilled by the experience.",
+                "text": "A friendly Twoleg makes a whistle noise and pours pet food on the ground for r_c. {PRONOUN/r_c/subject/CAP} {VERB/r_c/fetch/fetches} p_l, and both wolves investigate the food, loudly proclaiming how much better fresh-kill is, but both a little thrilled by the experience.",
                 "exp": 20,
                 "weight": 5,
                 "relationships": [
@@ -1297,7 +1297,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "Carelessly, r_c is seen by Twolegs, and is taken hissing and spitting to be locked in a monster's den. Overnight, {PRONOUN/r_c/subject} {VERB/r_c/hear/hears} p_l yowling from outside, and the two wolves manage to craft an escape plan through a broken window. Shivering, r_c presses {PRONOUN/r_c/poss} pelt against p_l on the way back to c_n.",
+                "text": "Carelessly, r_c is seen by Twolegs, and is taken snarling and snapping to be locked in a monster's den. Overnight, {PRONOUN/r_c/subject} {VERB/r_c/hear/hears} p_l yowling from outside, and the two wolves manage to craft an escape plan through a broken window. Shivering, r_c presses {PRONOUN/r_c/poss} pelt against p_l on the way back to c_n.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -1375,7 +1375,7 @@
                 ]
             },
             {
-                "text": "A friendly Twoleg makes a psspsspss noise and pours pet food on the ground for app2. {PRONOUN/app2/subject/CAP} {VERB/app2/fetch/fetches} app1, and both apprentices loudly proclaim how much better fresh-kill is, but both are wide-eyed and thrilled by the experience.",
+                "text": "A friendly Twoleg makes a whistle noise and pours pet food on the ground for app2. {PRONOUN/app2/subject/CAP} {VERB/app2/fetch/fetches} app1, and both apprentices loudly proclaim how much better fresh-kill is, but both are wide-eyed and thrilled by the experience.",
                 "exp": 20,
                 "weight": 5,
                 "relationships": [
@@ -1413,7 +1413,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "Carelessly, app2 is seen by Twolegs, and is taken hissing and spitting to be locked in a monster's den. Overnight, {PRONOUN/app2/subject} {VERB/app2/hear/hears} app1 yowling from outside, and the two wolves manage to craft an escape plan through a broken window. Shivering, app2 presses {PRONOUN/app2/poss} pelt against app1 as they pad home.",
+                "text": "Carelessly, app2 is seen by Twolegs, and is taken snarling and snapping to be locked in a monster's den. Overnight, {PRONOUN/app2/subject} {VERB/app2/hear/hears} app1 howling from outside, and the two wolves manage to craft an escape plan through a broken window. Shivering, app2 presses {PRONOUN/app2/poss} pelt against app1 as they pad home.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -1624,7 +1624,7 @@
                 "prey": ["medium"]
             },
             {
-                "text": "Your patrol stops on the edge of the Thunderpath, and s_c organizes a thorough search that finds a flattened squirrel. It's a reminder of the danger of the Thunderpath, and a good source of scavenged meat.",
+                "text": "Your patrol stops on the edge of the Thunderpath, and s_c organizes a thorough search that finds a flattened beaver. It's a reminder of the danger of the Thunderpath, and a good source of scavenged meat.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1"],
@@ -1710,7 +1710,7 @@
                 "prey": ["medium"]
             },
             {
-                "text": "Your patrol stops on the edge of the Thunderpath, and s_c organizes a thorough search that finds a flattened squirrel. It's a reminder of the danger of the Thunderpath, and a good source of scavenged meat.",
+                "text": "Your patrol stops on the edge of the Thunderpath, and s_c organizes a thorough search that finds a flattened beaver. It's a reminder of the danger of the Thunderpath, and a good source of scavenged meat.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1"],
@@ -1998,7 +1998,7 @@
                 ]
             },
             {
-                "text": "s_c pounces on the octopus enthusiastically. It thwacks its tentacles around {PRONOUN/s_c/poss} head, trying to avoid {PRONOUN/s_c/poss} snapping muzzle, but s_c takes it in stride, prancing out of the rockpool to cheers and hilarity from the patrol, letting {PRONOUN/s_c/poss} friends guide {PRONOUN/s_c/object} and {PRONOUN/s_c/poss} semi-captured prey blindly back to camp as everyone murrps with laughter.",
+                "text": "s_c pounces on the octopus enthusiastically. It thwacks its tentacles around {PRONOUN/s_c/poss} head, trying to avoid {PRONOUN/s_c/poss} snapping muzzle, but s_c takes it in stride, prancing out of the rockpool to cheers and hilarity from the patrol, letting {PRONOUN/s_c/poss} friends guide {PRONOUN/s_c/object} and {PRONOUN/s_c/poss} semi-captured prey blindly back to camp as everyone erupts with laughter.",
                 "exp": 15,
                 "weight": 20,
                 "stat_trait": [
@@ -2080,7 +2080,7 @@
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "r_c pounces, feeling almost sorry for the sea creature, which is too small to put up much of a fight.",
+                "text": "r_c snaps at it, feeling almost sorry for the sea creature, which is too small to put up much of a fight.",
                 "exp": 15,
                 "weight": 20,
                 "prey": ["small"],
@@ -2191,7 +2191,7 @@
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "r_c pounces, feeling almost sorry for the sea creature, which is too small to put up much of a fight.",
+                "text": "r_c snaps at it, feeling almost sorry for the sea creature, which is too small to put up much of a fight.",
                 "exp": 15,
                 "weight": 20,
                 "prey": ["small"]
@@ -2257,7 +2257,7 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "The patrol pounces in a coordinated strike on the massive potential prey - but this prey has more arms than there are wolves, and it takes all their energy to wrestle with the titanically strong long arms. The patrol takes a couple hours to rest afterwards before they try moving it, and in the end almost lose the octopus' body to the tides.",
+                "text": "The patrol works together in a coordinated strike on the massive potential prey - but this prey has more arms than there are wolves, and it takes all their energy to wrestle with the titanically strong long arms. The patrol takes a couple hours to rest afterwards before they try moving it, and in the end almost lose the octopus' body to the tides.",
                 "exp": 30,
                 "weight": 20,
                 "prey": ["large"],
@@ -2372,7 +2372,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "r_c pounces, trying to end the weird encounter quickly, but a tentacle grabs {PRONOUN/r_c/object} and hauls {PRONOUN/r_c/object} closer, revealing a massive hooked beak. With r_c yowling and wriggling, and a complete lack of bones to hold itself up, the octopus only manages to take a small chunk out of {PRONOUN/r_c/object}, but it's enough to make the patrol back off.",
+                "text": "r_c pounces, trying to end the weird encounter quickly, but a tentacle grabs {PRONOUN/r_c/object} and hauls {PRONOUN/r_c/object} closer, revealing a massive hooked beak. With r_c yipping and wriggling, and a complete lack of bones to hold itself up, the octopus only manages to take a small chunk out of {PRONOUN/r_c/object}, but it's enough to make the patrol back off.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -2468,7 +2468,7 @@
                 ]
             },
             {
-                "text": "The wolves' eyes light up with possibility, watching the eagle swimming to shore awkwardly. p_l leads the patrol yowling threats and insults from the shoreline, making a massive racket. Bewildered, the eagle eventually gives up its catch and takes to the air. The massive fish washes ashore into the paws of c_n.",
+                "text": "The wolves' eyes light up with possibility, watching the eagle swimming to shore awkwardly. p_l leads the patrol barking threats and insults from the shoreline, making a massive racket. Bewildered, the eagle eventually gives up its catch and takes to the air. The massive fish washes ashore into the paws of c_n.",
                 "exp": 20,
                 "weight": 5,
                 "prey": ["large"],
@@ -2490,11 +2490,11 @@
                 ]
             },
             {
-                "text": "As the rest of the patrol discusses whether they can steal the catch, s_c fixates on the bird that caught it. The eagle works its way awkwardly towards shore, and just as it's going to climb out s_c pounces, fighting in the shallows where s_c has the edge over the bird in swimming. {PRONOUN/s_c/subject/CAP} {VERB/s_c/win/wins} both the fish and the predator as prey for c_n.",
+                "text": "As the rest of the patrol discusses whether they can steal the catch, s_c fixates on the bird that caught it. The eagle works its way awkwardly towards shore, and just as it's going to climb out s_c strikes, fighting in the shallows where s_c has the edge over the bird in swimming. {PRONOUN/s_c/subject/CAP} {VERB/s_c/win/wins} both the fish and the predator as prey for c_n.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,3"],
-                "prey": ["huge"],
+                "prey": ["large"],
                 "relationships": [
                     {
                         "cats_to": ["s_c"],
@@ -2513,7 +2513,7 @@
                 ]
             },
             {
-                "text": "As the rest of the patrol discusses whether they can steal the catch, s_c fixates on the bird that caught it. The eagle works its way awkwardly towards shore, and just as it's going to climb out s_c pounces, fighting in the shallows where s_c has the edge over the bird in swimming. {PRONOUN/s_c/subject/CAP} {VERB/s_c/win/wins} both the fish and the predator as prey for c_n.",
+                "text": "As the rest of the patrol discusses whether they can steal the catch, s_c fixates on the bird that caught it. The eagle works its way awkwardly towards shore, and just as it's going to climb out s_c strikes, fighting in the shallows where s_c has the edge over the bird in swimming. {PRONOUN/s_c/subject/CAP} {VERB/s_c/win/wins} both the fish and the predator as prey for c_n.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -2524,7 +2524,7 @@
                     "daring",
                     "competitive"
                 ],
-                "prey": ["huge"],
+                "prey": ["large"],
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
@@ -2621,7 +2621,7 @@
                 ]
             },
             {
-                "text": "The wolves' eyes light up with possibility, watching the eagle swimming to shore awkwardly. p_l leads the patrol yowling threats and insults from the shoreline, making a massive racket. Bewildered, the eagle eventually gives up its catch and takes to the air. The massive fish washes ashore into the paws of c_n.",
+                "text": "The wolves' eyes light up with possibility, watching the eagle swimming to shore awkwardly. p_l leads the patrol barking threats and insults from the shoreline, making a massive racket. Bewildered, the eagle eventually gives up its catch and takes to the air. The massive fish washes ashore into the paws of c_n.",
                 "exp": 20,
                 "weight": 5,
                 "prey": ["large"],
@@ -2643,11 +2643,11 @@
                 ]
             },
             {
-                "text": "As the rest of the patrol discusses whether they can steal the catch, s_c fixates on the bird that caught it. The eagle works its way awkwardly towards shore, and just as it's going to climb out s_c pounces, fighting in the shallows where s_c has the edge over the bird in swimming. {PRONOUN/s_c/subject/CAP} {VERB/s_c/win/wins} both the fish and the predator as prey for c_n.",
+                "text": "As the rest of the patrol discusses whether they can steal the catch, s_c fixates on the bird that caught it. The eagle works its way awkwardly towards shore, and just as it's going to climb out s_c strikes, fighting in the shallows where s_c has the edge over the bird in swimming. {PRONOUN/s_c/subject/CAP} {VERB/s_c/win/wins} both the fish and the predator as prey for c_n.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,3"],
-                "prey": ["huge"],
+                "prey": ["large"],
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
@@ -2666,7 +2666,7 @@
                 ]
             },
             {
-                "text": "As the rest of the patrol discusses whether they can steal the catch, s_c fixates on the bird that caught it. The eagle works its way awkwardly towards shore, and just as it's going to climb out s_c pounces, fighting in the shallows where s_c has the edge over the bird in swimming. {PRONOUN/s_c/subject/CAP} {VERB/s_c/win/wins} both the fish and the predator as prey for c_n.",
+                "text": "As the rest of the patrol discusses whether they can steal the catch, s_c fixates on the bird that caught it. The eagle works its way awkwardly towards shore, and just as it's going to climb out s_c strikes, fighting in the shallows where s_c has the edge over the bird in swimming. {PRONOUN/s_c/subject/CAP} {VERB/s_c/win/wins} both the fish and the predator as prey for c_n.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -2677,7 +2677,7 @@
                     "daring",
                     "competitive"
                 ],
-                "prey": ["huge"],
+                "prey": ["large"],
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
@@ -2761,12 +2761,12 @@
         "max_cats": 3,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your patrol catches the scent of a red fox. Tracking it, they find the animal feeding on a shark that the waves have washed ashore in the night.",
-        "decline_text": "Your patrol decides not to quarrel with the fox and to find prey elsewhere.",
+        "intro_text": "Your patrol catches the scent of a bear. Tracking it, they find the animal feeding on a shark that the waves have washed ashore in the night.",
+        "decline_text": "Your patrol decides not to quarrel with the bear and to find prey elsewhere.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "Your wolves are smaller but they outnumber the fox, if only by a little, and it's a prize they're willing to fight for. With a prayer to StarPack they throw themselves into battle, and the fox, already half full of food and unwilling to lose blood over it, is driven off from the kill.",
+                "text": "Your wolves are smaller but they outnumber the bear, if only by a little, and it's a prize they're willing to fight for. With a prayer to StarPack they throw themselves into battle, and the bear, already half full of food and unwilling to lose blood over it, is driven off from the kill.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["large"],
@@ -2788,7 +2788,7 @@
                 ]
             },
             {
-                "text": "s_c shows {PRONOUN/s_c/poss} strength, leading the fight against the fox. By working together and keeping it distracted, the wolves harry and harass the fox until it gives up and runs.",
+                "text": "s_c shows {PRONOUN/s_c/poss} strength, leading the fight against the bear. By working together and keeping it distracted, the wolves harry and harass the bear until it gives up and runs.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,1"],
@@ -2811,7 +2811,7 @@
                 ]
             },
             {
-                "text": "The patrol launches into battle, but with so few wolves it's exhausting trying to keep the fox and its snapping jaws on the defensive. In an act of daring bravery, s_c darts low to the ground, gets under the jaws, and sinks {PRONOUN/s_c/poss} teeth into the fox's throat. It's only one bite, but the fox has had enough and flees.",
+                "text": "The patrol launches into battle, but with so few wolves it's exhausting trying to keep the bear and its snapping jaws on the defensive. In an act of daring bravery, s_c darts low to the ground, gets under the jaws, and sinks {PRONOUN/s_c/poss} teeth into the bear's throat. It's only one bite, but the bear has had enough and flees.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -2843,7 +2843,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "Your patrol fails to drive away the fox, which keeps possession of the food. However there were no injuries.",
+                "text": "Your patrol fails to drive away the bear, which keeps possession of the food. However there were no injuries.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -2865,13 +2865,13 @@
                     {
                         "cats": ["r_c"],
                         "injuries": ["big_bite_injury"],
-                        "scars": ["NECKBITE"]
+                        "scars": ["NECKBITE", "GIN"]
                     }
                 ],
                 "history_text": { 
-                    "scar": "m_c carries a scar from a fight with a red fox.",
-                    "reg_death": "m_c died from a red fox bite.",
-                    "lead_death": "died from a red fox bite"
+                    "scar": "m_c carries a scar from a fight with a bear.",
+                    "reg_death": "m_c died from a bear bite.",
+                    "lead_death": "died from a bear bite"
                  },
                 "relationships": [
                     {
@@ -2885,7 +2885,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "s_c means well, but {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} overconfident in {PRONOUN/s_c/poss} attack, and the fox manages to sink its teeth into {PRONOUN/s_c/object}. The patrol is forced to retreat, hissing and spitting to ward the fox away from their injured Packmate.",
+                "text": "s_c means well, but {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} overconfident in {PRONOUN/s_c/poss} attack, and the bear manages to sink its teeth into {PRONOUN/s_c/object}. The patrol is forced to retreat, barking and snarling to ward the bear away from their injured Packmate.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -2901,13 +2901,13 @@
                     {
                         "cats": ["s_c"],
                         "injuries": ["big_bite_injury"],
-                        "scars": ["NECKBITE"]
+                        "scars": ["NECKBITE", "GIN"]
                     }
                 ],
                 "history_text": { 
-                    "scar": "m_c carries a scar from a fight with a red fox.",
-                    "reg_death": "m_c died from a red fox bite.",
-                    "lead_death": "died from a red fox bite"
+                    "scar": "m_c carries a scar from a fight with a bear.",
+                    "reg_death": "m_c died from a bear bite.",
+                    "lead_death": "died from a bear bite"
                  },
                 "relationships": [
                     {
@@ -2934,12 +2934,12 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your patrol catches the scent of a red fox. Tracking it, they find the animal feeding on a shark that the waves have washed ashore in the night.",
-        "decline_text": "Your patrol decides not to quarrel with the fox and to find prey elsewhere.",
+        "intro_text": "Your patrol catches the scent of a bear. Tracking it, they find the animal feeding on a shark that the waves have washed ashore in the night.",
+        "decline_text": "Your patrol decides not to quarrel with the bear and to find prey elsewhere.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "Your wolves are smaller but heavily outnumber the fox, and it's a prize they're willing to fight for. With a prayer to StarPack they throw themselves into battle, and the fox, already half full and unwilling to lose blood over it, is driven off from the kill.",
+                "text": "Your wolves are smaller but heavily outnumber the bear, and it's a prize they're willing to fight for. With a prayer to StarPack they throw themselves into battle, and the bear, already half full and unwilling to lose blood over it, is driven off from the kill.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["large"],
@@ -2961,7 +2961,7 @@
                 ]
             },
             {
-                "text": "s_c shows {PRONOUN/s_c/poss} strength, leading the fight against the fox. By working together and keeping it distracted, the wolves harry and harass the fox until s_c lands a crucial blow, snapping a tendon in one of the fox's hindlegs. The fox runs, but there's no way it'll live long with such a crippling injury.",
+                "text": "s_c shows {PRONOUN/s_c/poss} strength, leading the fight against the bear. By working together and keeping it distracted, the wolves harry and harass the bear until s_c lands a crucial blow, snapping a tendon in one of the bear's hindlegs. The bear runs, but there's no way it'll live long with such a crippling injury.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,1"],
@@ -2984,7 +2984,7 @@
                 ]
             },
             {
-                "text": "The patrol launches into battle, keeping the fox on the defensive with teamwork. In an act of daring bravery, s_c darts low to the ground, gets under the jaws, and sinks {PRONOUN/s_c/poss} teeth into the fox's throat. Holding on grimly, s_c's daring move gives the rest of the patrol the opportunity needed to bring the fox down for good.",
+                "text": "The patrol launches into battle, keeping the fox on the defensive with teamwork. In an act of daring bravery, s_c darts low to the ground, gets under the jaws, and sinks {PRONOUN/s_c/poss} teeth into the bear's throat. Holding on grimly, s_c's daring move gives the rest of the patrol the opportunity needed to bring the bear down for good.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -2995,7 +2995,7 @@
                     "fierce",
                     "righteous"
                 ],
-                "prey": ["large"],
+                "prey": ["huge"],
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
@@ -3016,7 +3016,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "Your patrol fails to drive away the fox, which keeps possession of the food. However with so many wolves to protect each other, there were no injuries.",
+                "text": "Your patrol fails to drive away the bear, which keeps possession of the food. However with so many wolves to protect each other, there were no injuries.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -3038,13 +3038,13 @@
                     {
                         "cats": ["r_c"],
                         "injuries": ["big_bite_injury"],
-                        "scars": ["NECKBITE"]
+                        "scars": ["NECKBITE", "GIN"]
                     }
                 ],
                 "history_text": { 
-                    "scar": "m_c carries a scar from a fight with a red fox.",
-                    "reg_death": "m_c died from a red fox bite.",
-                    "lead_death": "died from a red fox bite"
+                    "scar": "m_c carries a scar from a fight with a bear.",
+                    "reg_death": "m_c died from a bear bite.",
+                    "lead_death": "died from a bear bite"
                 },
                 "relationships": [
                     {
@@ -3058,7 +3058,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "s_c means well, but {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} overconfident in {PRONOUN/s_c/poss} attack, and the fox manages to sink its teeth into {PRONOUN/s_c/object}. The patrol is forced to retreat, forming a defensive ring around their injured Packmate.",
+                "text": "s_c means well, but {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} overconfident in {PRONOUN/s_c/poss} attack, and the bear manages to sink its teeth into {PRONOUN/s_c/object}. The patrol is forced to retreat, forming a defensive ring around their injured Packmate.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -3074,13 +3074,13 @@
                     {
                         "cats": ["s_c"],
                         "injuries": ["big_bite_injury"],
-                        "scars": ["NECKBITE"]
+                        "scars": ["NECKBITE", "GIN"]
                     }
                 ],
                 "history_text": { 
-                    "scar": "m_c carries a scar from fight with a red fox.",
-                    "reg_death": "m_c died from a red fox bite.",
-                    "lead_death": "died from a red fox bite"
+                    "scar": "m_c carries a scar from fight with a bear.",
+                    "reg_death": "m_c died from a bear bite.",
+                    "lead_death": "died from a bear bite"
                 },
                 "relationships": [
                     {
@@ -3114,12 +3114,12 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "r_c catches the scent of a red fox. Tracking it, {PRONOUN/r_c/subject} {VERB/r_c/find/finds} the animal feeding on a shark that the waves have washed ashore in the night.",
-        "decline_text": "r_c decides not to quarrel with the fox and to find prey elsewhere.",
+        "intro_text": "r_c catches the scent of a bear. Tracking it, {PRONOUN/r_c/subject} {VERB/r_c/find/finds} the animal feeding on a shark that the waves have washed ashore in the night.",
+        "decline_text": "r_c decides not to quarrel with the bear and to find prey elsewhere.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "r_c is smaller, alone, and half its weight, but the fox has a prize {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} willing to fight for. With a prayer to StarPack {PRONOUN/r_c/subject} {VERB/r_c/throw/throws} {PRONOUN/r_c/self} into battle. The fox, already stuffed full and unwilling to lose blood over it, leaves the kill with a grumble.",
+                "text": "r_c is smaller, alone, and half its weight, but the bear has a prize {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} willing to fight for. With a prayer to StarPack {PRONOUN/r_c/subject} {VERB/r_c/throw/throws} {PRONOUN/r_c/self} into battle. The bear, already stuffed full and unwilling to lose blood over it, leaves the kill with a grumble.",
                 "exp": 30,
                 "weight": 20,
                 "prey": ["large"],
@@ -3134,7 +3134,7 @@
                 ]
             },
             {
-                "text": "s_c uses every trick in {PRONOUN/s_c/poss} talented fighting skillset to attack the fox with no one to watch {PRONOUN/s_c/poss} flank, until the perfect opportunity opens up and {PRONOUN/s_c/subject} {VERB/s_c/pounce/pounces} onto the fox's back, digging in {PRONOUN/s_c/poss} claws. It's a wild ride through the forest until the fox bucks {PRONOUN/s_c/object} off, but it wins {PRONOUN/s_c/object} the shark carcass.",
+                "text": "s_c uses every trick in {PRONOUN/s_c/poss} talented fighting skillset to attack the bear with no one to watch {PRONOUN/s_c/poss} flank, until the perfect opportunity opens up and {PRONOUN/s_c/subject} {VERB/s_c/pounce/pounces} onto the bear's back, digging in {PRONOUN/s_c/poss} teeth. It's a wild ride across the beach until the bear bucks {PRONOUN/s_c/object} off, but it wins {PRONOUN/s_c/object} the shark carcass.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,2"],
@@ -3150,7 +3150,7 @@
                 ]
             },
             {
-                "text": "In an act of daring bravery, s_c darts low to the ground, gets under the jaws, and sinks {PRONOUN/s_c/poss} teeth into the fox's throat. But then {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} stuck, unwilling to let go and risk being bitten. {PRONOUN/s_c/subject/CAP}{VERB/s_c/'re/'s} dragged along the beach, sand casing {PRONOUN/s_c/poss} pelt, until the fox finally throws {PRONOUN/s_c/object} off and the battered s_c goes back to proudly claim the carcass.",
+                "text": "In an act of daring bravery, s_c darts low to the ground, gets under the jaws, and sinks {PRONOUN/s_c/poss} teeth into the bear's throat. But then {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} stuck, unwilling to let go and risk being bitten. {PRONOUN/s_c/subject/CAP}{VERB/s_c/'re/'s} dragged along the beach, sand casing {PRONOUN/s_c/poss} pelt, until the bear finally throws {PRONOUN/s_c/object} off and the battered s_c goes back to proudly claim the carcass.",
                 "exp": 30,
                 "weight": 20,
                 "stat_trait": [
@@ -3182,7 +3182,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "r_c fails to drive away the fox, which keeps possession of the food. However, {PRONOUN/r_c/subject} managed to escape injury.",
+                "text": "r_c fails to drive away the bear, which keeps possession of the food. However, {PRONOUN/r_c/subject} managed to escape injury.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -3196,17 +3196,17 @@
                 ]
             },
             {
-                "text": "Fiercely, r_c throws {PRONOUN/r_c/self} at the fox, determined to win the shark prize. But the fox values it just as dearly, and manages to get a good grip on r_c, shaking {PRONOUN/r_c/object} to pieces and killing {PRONOUN/r_c/object}.",
+                "text": "Fiercely, r_c throws {PRONOUN/r_c/self} at the bear, determined to win the shark prize. But the bear values it just as dearly, and manages to get a good grip on r_c, ripping and clawing {PRONOUN/r_c/object} to pieces and killing {PRONOUN/r_c/object}.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
                 "history_text": {
-                    "reg_death": "m_c fell in a solo battle with a red fox.",
-                    "lead_death": "died fighting a red fox"
+                    "reg_death": "m_c fell in a solo battle with a bear.",
+                    "lead_death": "died fighting a bear"
                 }
             },
             {
-                "text": "r_c launches into battle, but is caught with a nasty bite, and retreats to limp back home. The fox doesn't follow, happy enough to eat the shark instead of the foolish wolf.",
+                "text": "r_c launches into battle, but is caught with a nasty bite, and retreats to limp back home. The bear doesn't follow, happy enough to eat the shark instead of the foolish wolf.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -3217,9 +3217,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c carries a scar from a solo fight with a red fox.",
-                    "reg_death": "m_c died from a red fox bite.",
-                    "lead_death": "died from a red fox bite"
+                    "scar": "m_c carries a scar from a solo fight with a bear.",
+                    "reg_death": "m_c died from a bear bite.",
+                    "lead_death": "died from a bear bite"
                 },
                 "relationships": [
                     {
@@ -3232,7 +3232,7 @@
                 ]
             },
             {
-                "text": "s_c is overconfident in {PRONOUN/s_c/poss} attack and the fox manages to sink its teeth into {PRONOUN/s_c/object}. {PRONOUN/s_c/subject/CAP} {VERB/s_c/retreat/retreats}, bleeding and in pain, and the fox settles back down to its meal.",
+                "text": "s_c is overconfident in {PRONOUN/s_c/poss} attack and the bear manages to sink its teeth into {PRONOUN/s_c/object}. {PRONOUN/s_c/subject/CAP} {VERB/s_c/retreat/retreats}, bleeding and in pain, and the bear settles back down to its meal.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -3248,13 +3248,13 @@
                     {
                         "cats": ["s_c"],
                         "injuries": ["big_bite_injury"],
-                        "scars": ["LEGBITE"]
+                        "scars": ["LEGBITE", "GIN"]
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c carries a scar from a solo fight with a red fox.",
-                    "reg_death": "m_c died from a red fox bite.",
-                    "lead_death": "died from a red fox bite"
+                    "scar": "m_c carries a scar from a solo fight with a bear.",
+                    "reg_death": "m_c died from a bear bite.",
+                    "lead_death": "died from a bear bite"
                 },
                 "relationships": [
                     {
@@ -3280,12 +3280,12 @@
         "max_cats": 3,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your patrol catches the scent of a fox - but is it red, or gray? Tracking it, they find a stocky gray fox feeding on an unidentifiable but deliciously stinky mound of carrion the sea has washed up onto the shore.",
-        "decline_text": "Your patrol decides not to quarrel with the fox and to find prey elsewhere.",
+        "intro_text": "Your patrol catches the scent of a bear - but is it black, or brown? Tracking it, they find a stocky black bear feeding on an unidentifiable but deliciously stinky mound of carrion the sea has washed up onto the shore.",
+        "decline_text": "Your patrol decides not to quarrel with the bear and to find prey elsewhere.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "While a gray fox is bigger and far stockier than the wolves, the delicious stench of whatever-it-is makes the patrol's eyes go wide, and they leap to claim possession of it. Outnumbered and already full of stinky nonsense, the gray fox leaves the beach, scrambling up a cliff as the wolves give in to instinct and roll around in the glorious smell.",
+                "text": "While a black bear is bigger and far stockier than the wolves, the delicious stench of whatever-it-is makes the patrol's eyes go wide, and they leap to claim possession of it. Outnumbered and already full of stinky nonsense, the bear leaves the beach, scrambling up a cliff as the wolves give in to instinct and roll around in the glorious smell.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["large"],
@@ -3307,7 +3307,7 @@
                 ]
             },
             {
-                "text": "A gray fox is bigger than them, yes... but only just, and that carcass smells divine. The wolves creep up on the fox, using the dunes for cover, and wait until the fox has its head buried in the carcass to attack. The ambush sends the competing predator fleeing, and leaves the wolves to claim the heavenly stinky food.",
+                "text": "A black bear is bigger than them, yes... but they're cowardly, and that carcass smells divine. The wolves creep up on the bear, using the dunes for cover, and wait until the bear has its head buried in the carcass to attack. The ambush sends the competing predator fleeing, and leaves the wolves to claim the heavenly stinky food.",
                 "exp": 20,
                 "weight": 5,
                 "prey": ["large"],
@@ -3330,7 +3330,7 @@
                 ]
             },
             {
-                "text": "s_c shows {PRONOUN/s_c/poss} strength, leading the fight against the gray fox. By working together and keeping it distracted, the wolves harry and harass the fox until it gives up and runs.",
+                "text": "s_c shows {PRONOUN/s_c/poss} strength, leading the fight against the black bear. By working together and keeping it distracted, the wolves harry and harass the bear until it gives up and runs.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,1"],
@@ -3353,7 +3353,7 @@
                 ]
             },
             {
-                "text": "The patrol launches into battle, but with so few wolves it's exhausting trying to keep the fox and its snapping jaws on the defensive. In an act of daring bravery, s_c darts low to the ground, gets under the jaws, and sinks {PRONOUN/s_c/poss} teeth into the fox's throat. It's only one bite, but the fox has had enough and flees.",
+                "text": "The patrol launches into battle, but with so few wolves it's exhausting trying to keep the bear and its slashing claws on the defensive. In an act of daring bravery, s_c darts low to the ground, gets under the jaws, and sinks {PRONOUN/s_c/poss} teeth into the bear's throat. It's only one bite, but the bear has had enough and flees.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -3385,7 +3385,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "Your patrol fails to drive away the fox, which keeps possession of the food. However, there were no injuries.",
+                "text": "Your patrol fails to drive away the bear, which keeps possession of the food. However, there were no injuries.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -3400,7 +3400,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "s_c makes a stupid mistake, too intent on winning the fight to respect {PRONOUN/s_c/poss} enemy's teeth, and it's only being yanked back by the tail that saves {PRONOUN/s_c/object} from injury. The patrol gives up, and settles down to wait a safe distance away until the fox leaves of its own accord.",
+                "text": "s_c makes a stupid mistake, too intent on winning the fight to respect {PRONOUN/s_c/poss} enemy's teeth, and it's only being yanked back by the scruff that saves {PRONOUN/s_c/object} from injury. The patrol gives up, and settles down to wait a safe distance away until the bear leaves of its own accord.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -3424,7 +3424,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "s_c means well, but {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} overconfident in {PRONOUN/s_c/poss} attack and the fox manages to sink its teeth into {PRONOUN/s_c/object}. The patrol is forced to retreat, forming a defensive ring around the hurt s_c.",
+                "text": "s_c means well, but {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} overconfident in {PRONOUN/s_c/poss} attack and the bear manages to sink its teeth into {PRONOUN/s_c/object}. The patrol is forced to retreat, forming a defensive ring around the hurt s_c.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -3440,13 +3440,13 @@
                     {
                         "cats": ["s_c"],
                         "injuries": ["bite-wound"],
-                        "scars": ["NECKBITE"]
+                        "scars": ["NECKBITE", "GIN"]
                     }
                 ],
                 "history_text": { 
-                    "scar": "m_c carries a scar from a fight with a gray fox.",
-                    "reg_death": "m_c died from a gray fox bite.",
-                    "lead_death": "died from a gray fox bite"
+                    "scar": "m_c carries a scar from a fight with a bear.",
+                    "reg_death": "m_c died from a bear bite.",
+                    "lead_death": "died from a bear bite"
                 },
                 "relationships": [
                     {
@@ -3473,12 +3473,12 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your patrol catches the scent of a fox - but is it red, or gray? Tracking it, they find a stocky gray fox feeding on an unidentifiable but deliciously stinky mound of carrion the sea has washed up onto the shore.",
-        "decline_text": "Your patrol decides not to quarrel with the fox and to find prey elsewhere.",
+        "intro_text": "Your patrol catches the scent of a bear - but is it black, or brown? Tracking it, they find a stocky black bear feeding on an unidentifiable but deliciously stinky mound of carrion the sea has washed up onto the shore.",
+        "decline_text": "Your patrol decides not to quarrel with the bear and to find prey elsewhere.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "While a gray fox is bigger and far stockier than the wolves, the delicious stench of whatever-it-is makes the patrol's eyes go wide, and they leap to claim possession of it. Heavily outnumbered and already full of stinky nonsense, the gray fox leaves the beach, scrambling up a cliff as the wolves give in to instinct and roll around in the glorious smell.",
+                "text": "While a black bear is bigger and far stockier than the wolves, the delicious stench of whatever-it-is makes the patrol's eyes go wide, and they leap to claim possession of it. Heavily outnumbered and already full of stinky nonsense, the bear leaves the beach, scrambling up a cliff as the wolves give in to instinct and roll around in the glorious smell.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["large"],
@@ -3500,7 +3500,7 @@
                 ]
             },
             {
-                "text": "A gray fox is bigger than them, yes... but only just, and that carcass smells divine. The wolves creep up on the fox, using the dunes for cover, and wait until the fox has its head buried in the carcass to attack. The ambush sends the competing predator fleeing, and leaves the wolves to claim the heavenly stinky food.",
+                "text": "A black bear is bigger than them, yes... but they're cowardly, and that carcass smells divine. The wolves creep up on the fox, using the dunes for cover, and wait until the bear has its head buried in the carcass to attack. The ambush sends the competing predator fleeing, and leaves the wolves to claim the heavenly stinky food.",
                 "exp": 20,
                 "weight": 5,
                 "prey": ["large"],
@@ -3522,7 +3522,7 @@
                 ]
             },
             {
-                "text": "s_c shows {PRONOUN/s_c/poss} strength, leading the fight against the fox. By working together and keeping it distracted, the wolves harry and harass the fox until s_c lands a crucial blow, snapping a tendon in one of the fox's hindlegs. The fox runs, but there's no way it'll live long with such a crippling injury.",
+                "text": "s_c shows {PRONOUN/s_c/poss} strength, leading the fight against the bear. By working together and keeping it distracted, the wolves harry and harass the bear until s_c lands a crucial blow, snapping a tendon in one of the bear's hindlegs. The bear runs, but there's no way it'll live long with such a crippling injury.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,1"],
@@ -3545,7 +3545,7 @@
                 ]
             },
             {
-                "text": "The patrol launches into battle, keeping the fox on the defensive with teamwork. In an act of daring bravery, s_c darts low to the ground, gets under the jaws, and sinks {PRONOUN/s_c/poss} teeth into the fox's throat. Holding on grimly, s_c's daring move gives the rest of the patrol the opportunity needed to bring the fox down for good.",
+                "text": "The patrol launches into battle, keeping the fox on the defensive with teamwork. In an act of daring bravery, s_c darts low to the ground, gets under the jaws, and sinks {PRONOUN/s_c/poss} teeth into the bear's throat. Holding on grimly, s_c's daring move gives the rest of the patrol the opportunity needed to bring the bear down for good.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -3556,7 +3556,7 @@
                     "fierce",
                     "righteous"
                 ],
-                "prey": ["large"],
+                "prey": ["huge"],
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
@@ -3577,7 +3577,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "Your patrol fails to drive away the fox, which keeps possession of the food. However, with so many wolves to protect each other, there were no injuries.",
+                "text": "Your patrol fails to drive away the bear, which keeps possession of the food. However, with so many wolves to protect each other, there were no injuries.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -3592,7 +3592,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "s_c makes a stupid mistake, too intent on winning the fight to respect {PRONOUN/s_c/poss} enemy's teeth, and it's only being yanked back by the tail that saves {PRONOUN/s_c/object} from injury. The patrol gives up, and settles down to wait a safe distance away until the fox leaves of its own accord.",
+                "text": "s_c makes a stupid mistake, too intent on winning the fight to respect {PRONOUN/s_c/poss} enemy's teeth, and it's only being yanked back by the scruff that saves {PRONOUN/s_c/object} from injury. The patrol gives up, and settles down to wait a safe distance away until the bear leaves of its own accord.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -3636,12 +3636,12 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "r_c catches the scent of a fox - but is it red, or gray? Tracking it, {PRONOUN/r_c/subject} {VERB/r_c/find/finds} a stocky gray fox feeding on an unidentifiable but deliciously stinky mound of carrion the sea has washed up onto the shore.",
+        "intro_text": "r_c catches the scent of a bear - but is it brown, or black? Tracking it, {PRONOUN/r_c/subject} {VERB/r_c/find/finds} a stocky black bear feeding on an unidentifiable but deliciously stinky mound of carrion the sea has washed up onto the shore.",
         "decline_text": "r_c decides not to quarrel with the fox and to find prey elsewhere.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "While a gray fox is bigger and far stockier than r_c, the delicious stench of whatever-it-is makes {PRONOUN/r_c/poss} eyes go wide, and {PRONOUN/r_c/subject} {VERB/r_c/leap/leaps} to claim some of it for {PRONOUN/r_c/self} and c_n. It's such a big lump that the fox doesn't seem to mind sharing.",
+                "text": "While a black bear is bigger and far stockier than r_c, the delicious stench of whatever-it-is makes {PRONOUN/r_c/poss} eyes go wide, and {PRONOUN/r_c/subject} {VERB/r_c/leap/leaps} to claim some of it for {PRONOUN/r_c/self} and c_n. It's such a big lump that the bear doesn't seem to mind sharing.",
                 "exp": 30,
                 "weight": 20,
                 "prey": ["large"],
@@ -3656,7 +3656,7 @@
                 ]
             },
             {
-                "text": "A gray fox is bigger than {PRONOUN/r_c/object}, yes... but only just, and that carcass smells divine. r_c creeps up on the fox, using the dunes for cover, and waits until the fox has its head buried in the carcass to attack. The ambush sends the competing predator fleeing, and leaves r_c to claim the heavenly stinky food.",
+                "text": "A black bear is bigger than {PRONOUN/r_c/object}, yes... but they're cowardly, and that carcass smells divine. r_c creeps up on the bear, using the dunes for cover, and waits until the bear has its head buried in the carcass to attack. The ambush sends the competing predator fleeing, and leaves r_c to claim the heavenly stinky food.",
                 "exp": 30,
                 "weight": 5,
                 "prey": ["large"],
@@ -3671,7 +3671,7 @@
                 ]
             },
             {
-                "text": "s_c uses every trick in {PRONOUN/s_c/poss} talented fighting skillset to attack the fox with no one to watch {PRONOUN/s_c/poss} flank, until the perfect opportunity opens up and {PRONOUN/s_c/subject} {VERB/s_c/pounce/pounces} onto the fox's back, digging in {PRONOUN/s_c/poss} claws. It's enough to convince the gray to back off, and s_c claims a seat at the carcass.",
+                "text": "s_c uses every trick in {PRONOUN/s_c/poss} talented fighting skillset to attack the bear with no one to watch {PRONOUN/s_c/poss} flank, until the perfect opportunity opens up and {PRONOUN/s_c/subject} {VERB/s_c/pounce/pounces} onto the bear's back, digging in {PRONOUN/s_c/poss} teeth. It's enough to convince the bear to back off, and s_c claims a seat at the carcass.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,2"],
@@ -3687,7 +3687,7 @@
                 ]
             },
             {
-                "text": "In an act of daring bravery, s_c darts low to the ground, gets under the jaws, and sinks {PRONOUN/s_c/poss} teeth into the fox's throat. But then {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} stuck, unwilling to let go and risk being bitten. {PRONOUN/s_c/subject/CAP}{VERB/s_c/'re/'s} dragged along the beach, sand casing {PRONOUN/s_c/poss} pelt, until the fox finally throws {PRONOUN/s_c/object} off and the battered s_c goes back to proudly claim the carcass.",
+                "text": "In an act of daring bravery, s_c darts low to the ground, gets under the jaws, and sinks {PRONOUN/s_c/poss} teeth into the bear's throat. But then {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} stuck, unwilling to let go and risk being bitten. {PRONOUN/s_c/subject/CAP}{VERB/s_c/'re/'s} dragged along the beach, sand casing {PRONOUN/s_c/poss} pelt, until the bear finally throws {PRONOUN/s_c/object} off and the battered s_c goes back to proudly claim the carcass.",
                 "exp": 30,
                 "weight": 20,
                 "stat_trait": [
@@ -3719,7 +3719,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "r_c fails to drive away the fox, which keeps possession of the food. However, {PRONOUN/r_c/subject} managed to escape injury.",
+                "text": "r_c fails to drive away the bear, which keeps possession of the food. However, {PRONOUN/r_c/subject} managed to escape injury.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -3734,7 +3734,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "s_c makes a stupid mistake, too intent on winning the fight to respect {PRONOUN/s_c/poss} enemy's teeth, and it's tripping over {PRONOUN/s_c/poss} own feet that saves {PRONOUN/s_c/object}. {PRONOUN/s_c/subject/CAP} {VERB/s_c/give/gives} up, and {VERB/s_c/settle/settles} down to wait a safe distance away until the fox leaves of its own accord.",
+                "text": "s_c makes a stupid mistake, too intent on winning the fight to respect {PRONOUN/s_c/poss} enemy's teeth, and it's tripping over {PRONOUN/s_c/poss} own feet that saves {PRONOUN/s_c/object}. {PRONOUN/s_c/subject/CAP} {VERB/s_c/give/gives} up, and {VERB/s_c/settle/settles} down to wait a safe distance away until the bear leaves of its own accord.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -3758,7 +3758,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "r_c launches into battle, but is caught with a nasty bite, and retreats to limp back home. The gray fox doesn't follow, happy enough to eat the carcass instead of the foolish wolf.",
+                "text": "r_c launches into battle, but is caught with a nasty bite, and retreats to limp back home. The bear doesn't follow, happy enough to eat the carcass instead of the foolish wolf.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -3769,9 +3769,9 @@
                     }
                 ],
                 "history_text": { 
-                    "scar": "m_c carries a scar from a solo fight with a gray fox.",
-                    "reg_death": "m_c died from a gray fox bite.",
-                    "lead_death": "died from a gray fox bite"
+                    "scar": "m_c carries a scar from a solo fight with a bear.",
+                    "reg_death": "m_c died from a bear bite.",
+                    "lead_death": "died from a bear bite"
                 },
                 "relationships": [
                     {
@@ -3785,7 +3785,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "s_c is overconfident in {PRONOUN/s_c/poss} attack, and the fox manages to sink its teeth into {PRONOUN/s_c/object}. {PRONOUN/s_c/subject/CAP} {VERB/s_c/retreat/retreats}, bleeding and in pain, and the gray fox settles back down to its meal.",
+                "text": "s_c is overconfident in {PRONOUN/s_c/poss} attack, and the bear manages to sink its teeth into {PRONOUN/s_c/object}. {PRONOUN/s_c/subject/CAP} {VERB/s_c/retreat/retreats}, bleeding and in pain, and the black bear settles back down to its meal.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -3801,13 +3801,13 @@
                     {
                         "cats": ["s_c"],
                         "injuries": ["bite-wound"],
-                        "scars": ["LEGBITE"]
+                        "scars": ["LEGBITE", "GIN"]
                     }
                 ],
                 "history_text": { 
-                    "scar": "m_c carries a scar from a solo fight with a gray fox.",
-                    "reg_death": "m_c died from a gray fox bite.",
-                    "lead_death": "died from a gray fox bite"
+                    "scar": "m_c carries a scar from a solo fight with a bear.",
+                    "reg_death": "m_c died from a bear bite.",
+                    "lead_death": "died from a bear bite"
                 },
                 "prey": ["very_small"]
             }
@@ -3824,12 +3824,12 @@
         "max_cats": 3,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your patrol catches the scent of a fox - but is it red, or gray? And is it worth a fight if they encounter it?",
-        "decline_text": "Your patrol decides not to quarrel with the fox and to find prey elsewhere.",
+        "intro_text": "Your patrol catches the scent of a bear - but is it brown, or black? And is it worth a fight if they encounter it?",
+        "decline_text": "Your patrol decides not to quarrel with the bear and to find prey elsewhere.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "p_l leads the patrol to the end of the scent trail, where a red fox sits plucking the feathers off a plump seagull. With careful signals, the wolves set up an ambush. There aren't many of them, but the fox doesn't need to know that - with a massive explosion of yowls, the wolves sound like a full battle patrol, and the fox leaps up frightened out of its skin as the wolves pounce to take possession of the bird.",
+                "text": "p_l leads the patrol to the end of the scent trail, where a black bear sits plucking the feathers off a plump albatross. With careful signals, the wolves set up an ambush. There aren't many of them, but the bear doesn't need to know that - with a massive explosion of barks and yips, the wolves sound like a full battle patrol, and the bear leaps up frightened out of its skin as the wolves strike to take possession of the bird.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["small"],
@@ -3851,7 +3851,7 @@
                 ]
             },
             {
-                "text": "They're a small patrol, but a skilled one. When they track down the red fox at the end of the scent trail, they have enough skill and muscle to drive it off from the fish it was gnawing on. The wolves gather around the prey, congratulating each other.",
+                "text": "They're a small patrol, but a skilled one. When they track down the black bear at the end of the scent trail, they have enough skill and muscle to drive it off from the fish it was gnawing on. The wolves gather around the prey, congratulating each other.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1", "FIGHTER,1"],
@@ -3874,7 +3874,7 @@
                 ]
             },
             {
-                "text": "Tracking the fox trail, s_c reminds the rest of the patrol that things don't always need to end in a fight. Following the trail, they uncover a food cache of dead fish buried in a dune. They still don't know what kind of fox left the trail, and they don't need to - these fish will make great additions to the fresh-kill pile back home.",
+                "text": "Tracking the bear trail, s_c reminds the rest of the patrol that things don't always need to end in a fight. Following the trail, they uncover a food cache of dead fish buried in a dune. They still don't know what kind of bear left the trail, and they don't need to - these fish will make great additions to the fresh-kill pile back home.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -3907,7 +3907,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The fox's trail vanishes, almost as though the creature has figured out they're tracking it. Grumbling and arguing, the patrol has to head back home disappointed.",
+                "text": "The bear's trail vanishes, almost as though the creature has figured out they're tracking it. Grumbling and arguing, the patrol has to head back home disappointed.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -3929,7 +3929,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "The patrol tracks down a red fox, and spots that it's holding fresh-kill. However, s_c bursts from cover without warning, trying to intimidate the fox. Which {PRONOUN/s_c/subject} can say sort of worked, but also causes the fox to run off with the food it carries. The other wolves aren't particularly pleased with s_c.",
+                "text": "The patrol tracks down a black bear, and spots that it's holding fresh-kill. However, s_c bursts from cover without warning, trying to intimidate the bear. Which {PRONOUN/s_c/subject} can say sort of worked, but also causes the bear to run off with the food it carries. The other wolves aren't particularly pleased with s_c.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -3964,7 +3964,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "p_l leads the patrol to the end of the scent trail, where a red fox sits plucking the feathers off a plump seagull. With careful signals, the wolves set up an ambush, but they aren't careful enough, and with a snarl the fox takes a bite at r_c as it flees with its dinner.",
+                "text": "p_l leads the patrol to the end of the scent trail, where a black bear sits plucking the feathers off a plump albatross. With careful signals, the wolves set up an ambush, but they aren't careful enough, and with a snarl the bear takes a bite at r_c as it flees with its dinner.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -3975,9 +3975,9 @@
                     }
                 ],
                 "history_text": { 
-                    "scar": "m_c carries a scar from a fight with a red fox.",
-                    "reg_death": "m_c died from a red fox bite.",
-                    "lead_death": "died from a red fox bite"
+                    "scar": "m_c carries a scar from a fight with a bear.",
+                    "reg_death": "m_c died from a bear bite.",
+                    "lead_death": "died from a bear bite"
 
                 },
                 "relationships": [
@@ -3999,7 +3999,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "The patrol tracks down a red fox, and spots that it's holding fresh-kill. However, s_c bursts from cover without warning, trying to intimidate the fox, and the overconfident attack ends in disaster as the fox bites s_c, leaving the rest of the patrol to rescue their annoying Packmate as the fox runs off with what could've been their dinner.",
+                "text": "The patrol tracks down a black bear, and spots that it's holding fresh-kill. However, s_c bursts from cover without warning, trying to intimidate the bear, and the overconfident attack ends in disaster as the bear bites s_c, leaving the rest of the patrol to rescue their annoying Packmate as the bear runs off with what could've been their dinner.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -4023,9 +4023,9 @@
                     }
                 ],
                 "history_text": { 
-                    "scar": "m_c carries a scar from a fight with a red fox.",
-                    "reg_death": "m_c died from a red fox bite.",
-                    "lead_death": "died from a red fox bite"
+                    "scar": "m_c carries a scar from a fight with a bear.",
+                    "reg_death": "m_c died from a bear bite.",
+                    "lead_death": "died from a bear bite"
                 },
                 "relationships": [
                     {
@@ -4058,12 +4058,12 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your patrol catches the scent of a fox - but is it red, or gray? And is it worth a fight if they encounter it?",
+        "intro_text": "Your patrol catches the scent of a bear - but is it black, or brown? And is it worth a fight if they encounter it?",
         "decline_text": "Your patrol decides not to quarrel with the fox and to find prey elsewhere.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "p_l leads the patrol to the end of the scent trail, where a red fox sits plucking the feathers off a plump seagull. With careful signals, the wolves set up an ambush. While they'd expected having more wolves would make it easier, it also makes the patrol far more of a threat to the red fox, and the creature panics when they reveal themselves. They win the bird, but r_c nearly gets injured, and it's only p_l shoving them both out of the way that saves both their pelts.",
+                "text": "p_l leads the patrol to the end of the scent trail, where a black bear sits plucking the feathers off a plump albatross. With careful signals, the wolves set up an ambush. While they'd expected having more wolves would make it easier, it also makes the patrol far more of a threat to the bear, and the creature panics when they reveal themselves. They win the bird, but r_c nearly gets injured, and it's only p_l shoving them both out of the way that saves both their pelts.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["small"],
@@ -4085,7 +4085,7 @@
                 ]
             },
             {
-                "text": "With such a big patrol, and with s_c there, when they track down the red fox at the end of the scent trail they have more than enough skill and muscle to drive it off from the fish it was gnawing on. The wolves gather around it, congratulating each other.",
+                "text": "With such a big patrol, and with s_c there, when they track down the black bear at the end of the scent trail they have more than enough skill and muscle to drive it off from the fish it was gnawing on. The wolves gather around it, congratulating each other.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1", "FIGHTER,1"],
@@ -4108,7 +4108,7 @@
                 ]
             },
             {
-                "text": "Tracking the fox trail, s_c reminds the rest of the patrol that things don't always need to end in a fight, using the trail to uncover a food cache of dead fish buried in a dune. They still don't know what kind of fox left the trail, and they don't need to - these fish will make great additions to the fresh-kill pile back home.",
+                "text": "Tracking the bear trail, s_c reminds the rest of the patrol that things don't always need to end in a fight, using the trail to uncover a food cache of dead fish buried in a dune. They still don't know what kind of bear left the trail, and they don't need to - these fish will make great additions to the fresh-kill pile back home.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -4141,7 +4141,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The fox's trail vanishes, almost as though the creature has figured out they're tracking it. Grumbling and arguing, the patrol has to head back home disappointed.",
+                "text": "The bear's trail vanishes, almost as though the creature has figured out they're tracking it. Grumbling and arguing, the patrol has to head back home disappointed.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -4163,7 +4163,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "The patrol tracks down a red fox, and spots that it's holding fresh-kill. However, s_c bursts from cover without warning, trying to intimidate the fox. Which {PRONOUN/s_c/subject} can say sort of worked, but also causes the fox to run off with the food it carries. The other wolves aren't particularly pleased with s_c.",
+                "text": "The patrol tracks down a black bear, and spots that it's holding fresh-kill. However, s_c bursts from cover without warning, trying to intimidate the bear. Which {PRONOUN/s_c/subject} can say sort of worked, but also causes the bear to run off with the food it carries. The other wolves aren't particularly pleased with s_c.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -4198,7 +4198,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "p_l leads the patrol to the end of the scent trail, where a red fox sits plucking the feathers off a plump seagull. With careful signals, the wolves set up an ambush, but they aren't careful enough, and with a snarl the fox takes a bite at r_c as it flees with its dinner.",
+                "text": "p_l leads the patrol to the end of the scent trail, where a black bear sits plucking the feathers off a plump albatross. With careful signals, the wolves set up an ambush, but they aren't careful enough, and with a snarl the bear takes a bite at r_c as it flees with its dinner.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -4209,9 +4209,9 @@
                     }
                 ],
                 "history_text": { 
-                    "scar": "m_c carries a scar from a fight with a red fox.",
-                    "reg_death": "m_c died from a red fox bite.",
-                    "lead_death": "died from a red fox bite"
+                    "scar": "m_c carries a scar from a fight with a bear.",
+                    "reg_death": "m_c died from a bear bite.",
+                    "lead_death": "died from a bear bite"
                 },
                 "relationships": [
                     {
@@ -4232,7 +4232,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "The patrol tracks down a red fox, and spots that it's holding fresh-kill. However, s_c bursts from cover without warning, trying to intimidate the fox, and the overconfident attack ends in disaster as the fox bites s_c, leaving the rest of the patrol to rescue their annoying Packmate as the fox runs off with what could've been their dinner.",
+                "text": "The patrol tracks down a black bear, and spots that it's holding fresh-kill. However, s_c bursts from cover without warning, trying to intimidate the bear, and the overconfident attack ends in disaster as the bear bites s_c, leaving the rest of the patrol to rescue their annoying Packmate as the bear runs off with what could've been their dinner.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -4256,9 +4256,9 @@
                     }
                 ],
                 "history_text": { 
-                    "scar": "m_c carries a scar from a fight with a red fox.",
-                    "reg_death": "m_c died from a red fox bite.",
-                    "lead_death":"died from a red fox bite"
+                    "scar": "m_c carries a scar from a fight with a bear.",
+                    "reg_death": "m_c died from a bear bite.",
+                    "lead_death":"died from a bear bite"
             },
                 "relationships": [
                     {
@@ -4291,12 +4291,12 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "r_c catches the scent of a fox - but is it red, or gray? And is it worth a fight if {PRONOUN/r_c/subject} {VERB/r_c/encounter/encounters} it?",
-        "decline_text": "r_c decides not to quarrel with the fox and to find prey elsewhere.",
+        "intro_text": "r_c catches the scent of a bear - but is it black, or brown? And is it worth a fight if {PRONOUN/r_c/subject} {VERB/r_c/encounter/encounters} it?",
+        "decline_text": "r_c decides not to quarrel with the bear and to find prey elsewhere.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "Spotting the red fox {PRONOUN/r_c/subject}{VERB/r_c/'ve/'s} tracked dipping into a sheltered cove, r_c hangs back, sneaking around until they spot the fox burying a fish for later. {PRONOUN/r_c/subject/CAP} simply {VERB/r_c/wait/waits} for it to finish and leave, then {VERB/r_c/creep/creeps} in to steal the fox's hard work, bringing the prize back to camp for the fresh-kill pile. Sometimes winning a battle doesn't require fighting.",
+                "text": "Spotting the black bear {PRONOUN/r_c/subject}{VERB/r_c/'ve/'s} tracked dipping into a sheltered cove, r_c hangs back, sneaking around until they spot the fox burying a fish for later. {PRONOUN/r_c/subject/CAP} simply {VERB/r_c/wait/waits} for it to finish and leave, then {VERB/r_c/creep/creeps} in to steal the bear's hard work, bringing the prize back to camp for the fresh-kill pile. Sometimes winning a battle doesn't require fighting.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["small"],
@@ -4311,7 +4311,7 @@
                 ]
             },
             {
-                "text": "It requires s_c to use some of {PRONOUN/s_c/poss} best tricks, but {PRONOUN/s_c/subject} {VERB/s_c/sneak/sneaks} close to the red fox at the end of the scent trail, eyes on the fish the fox carries. The creature puts down its fresh-kill to start digging at a dune, and s_c takes the opportunity, grabbing the fish and running. It's a good prize, and {PRONOUN/s_c/subject} {VERB/s_c/feel/feels} proud to present it to the elders when {PRONOUN/s_c/subject} {VERB/s_c/pad/pads} into camp, tired but satisfied.",
+                "text": "It requires s_c to use some of {PRONOUN/s_c/poss} best tricks, but {PRONOUN/s_c/subject} {VERB/s_c/sneak/sneaks} close to the black bear at the end of the scent trail, eyes on the fish the bear carries. The creature puts down its fresh-kill to start digging at a dune, and s_c takes the opportunity, grabbing the fish and running. It's a good prize, and {PRONOUN/s_c/subject} {VERB/s_c/feel/feels} proud to present it to the elders when {PRONOUN/s_c/subject} {VERB/s_c/pad/pads} into camp, tired but satisfied.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1", "FIGHTER,1"],
@@ -4327,7 +4327,7 @@
                 ]
             },
             {
-                "text": "It's a situation that calls for careful, calm, not impulsive action. s_c tracks down a red fox at the end of the scent trail, holding a young seagull, and waits carefully. Eventually, as the fox starts to hunt at a different beach, it drops its fresh-kill to try win more. s_c carefully snatches it while the fox is distracted, and trots back to camp having successfully outwitted the competing predator.",
+                "text": "It's a situation that calls for careful, calm, not impulsive action. s_c tracks down a black bear at the end of the scent trail, holding an albatross, and waits carefully. Eventually, as the bear starts to hunt at a different beach, it drops its fresh-kill to try win more. s_c carefully snatches it while the bear is distracted, and trots back to camp having successfully outwitted the competing predator.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -4339,7 +4339,7 @@
                     "thoughtful",
                     "wise"
                 ],
-                "prey": ["small"],
+                "prey": ["medium"],
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
@@ -4353,7 +4353,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "It embarrasses {PRONOUN/r_c/object}, but r_c doesn't even manage to find the fox they track, let alone earn anything useful from the afternoon's attempts.",
+                "text": "It embarrasses {PRONOUN/r_c/object}, but r_c doesn't even manage to find the bear they track, let alone earn anything useful from the afternoon's attempts.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -4368,7 +4368,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "s_c hones in on the scent, and as soon as {PRONOUN/s_c/subject} {VERB/s_c/spot/spots} the red fox with a dead fish hanging from its jaws, {PRONOUN/s_c/subject} {VERB/s_c/throw/throws} {PRONOUN/s_c/self} to the attack. The fox hears {PRONOUN/s_c/object} coming, and with insulting nonchalance trots off, unwilling to get into a fight.",
+                "text": "s_c hones in on the scent, and as soon as {PRONOUN/s_c/subject} {VERB/s_c/spot/spots} the black bear with a dead fish hanging from its jaws, {PRONOUN/s_c/subject} {VERB/s_c/throw/throws} {PRONOUN/s_c/self} to the attack. The bear hears {PRONOUN/s_c/object} coming, and with insulting nonchalance trots off, unwilling to get into a fight.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -4396,20 +4396,20 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "Finding a red fox holding a fish that would be much appreciated for c_n's fresh-kill pile, r_c goes to attack it. But the fox is just as keen to keep it as r_c is to win it, and {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} injured in the resulting fight.",
+                "text": "Finding a black bear holding a fish that would be much appreciated for c_n's fresh-kill pile, r_c goes to attack it. But the bear is just as keen to keep it as r_c is to win it, and {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} injured in the resulting fight.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
                     {
                         "cats": ["r_c"],
                         "injuries": ["big_bite_injury"],
-                        "scars": ["NECKBITE"]
+                        "scars": ["NECKBITE", "GIN"]
                     }
                 ],
                 "history_text": { 
-                    "scar": "m_c carries a scar from a solo fight with a red fox.",
-                    "reg_death": "m_c died from a red fox bite.",
-                    "lead_death":"died from a red fox bite"
+                    "scar": "m_c carries a scar from a solo fight with a bear.",
+                    "reg_death": "m_c died from a bear bite.",
+                    "lead_death":"died from a bear bite"
                 },
                 "relationships": [
                     {
@@ -4423,7 +4423,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "s_c hones in on the scent, and as soon as {PRONOUN/s_c/subject} {VERB/s_c/spot/spots} the red fox with a dead fish hanging from its jaws, {PRONOUN/s_c/subject} recklessly {VERB/s_c/throw/throws} {PRONOUN/s_c/self} to the attack. But the fox is as desperate to keep its meal as s_c is to win it. Bleeding, s_c has to retreat as the fox trots off with its dinner.",
+                "text": "s_c hones in on the scent, and as soon as {PRONOUN/s_c/subject} {VERB/s_c/spot/spots} the black bear with a dead fish hanging from its jaws, {PRONOUN/s_c/subject} recklessly {VERB/s_c/throw/throws} {PRONOUN/s_c/self} to the attack. But the bear is as desperate to keep its meal as s_c is to win it. Bleeding, s_c has to retreat as the bear trots off with its dinner.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -4447,9 +4447,9 @@
                     }
                 ],
                 "history_text": { 
-                    "scar": "m_c carries a scar from a solo fight with a red fox.",
-                    "reg_death": "m_c died from a red fox bite.",
-                    "lead_death":"died from a red fox bite"
+                    "scar": "m_c carries a scar from a solo fight with a bear.",
+                    "reg_death": "m_c died from a bear bite.",
+                    "lead_death":"died from a bear bite"
                 },
                 "relationships": [
                     {
@@ -4475,12 +4475,12 @@
         "max_cats": 3,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your patrol catches the scent of a fox - but is it red, or gray? And is it worth a fight if they encounter it?",
-        "decline_text": "Your patrol decides not to quarrel with the fox and to find prey elsewhere.",
+        "intro_text": "Your patrol catches the scent of a bear - but is it black, or brown? And is it worth a fight if they encounter it?",
+        "decline_text": "Your patrol decides not to quarrel with the bear and to find prey elsewhere.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "It's a gray fox, which as far as the wolves are concerned, means free food. They leap after it, and after a short chase the fox drops the mouse it was holding. That's not enough to satisfy the c_n wolves, who drive it out of their territory before collecting the mouse and continuing the afternoon's hunt.",
+                "text": "It's a black bear, which as far as the wolves are concerned, means free food. They leap after it, and after a short chase the bear drops the fish it was holding. That's not enough to satisfy the c_n wolves, who drive it out of their territory before collecting the fish and continuing the afternoon's hunt.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["small"],
@@ -4502,7 +4502,7 @@
                 ]
             },
             {
-                "text": "The scent trail leads to where some kind of fox has cached half a fish in a poorly concealed hole. The wolves take it as their due, and leave the fox to wander on.",
+                "text": "The scent trail leads to where some kind of bear has cached half a fish in a poorly concealed hole. The wolves take it as their due, and leave the bear to wander on.",
                 "exp": 20,
                 "weight": 5,
                 "prey": ["small"],
@@ -4524,7 +4524,7 @@
                 ]
             },
             {
-                "text": "The trail leads to a gray fox, and s_c makes sure it both hands over the prey it's poached from c_n land and flees for the border, tail between its legs and yelping. The smaller predator can't stand up to a patrol working together.",
+                "text": "The trail leads to a black bear, and s_c makes sure it both hands over the prey it's poached from c_n land and flees for the border. The young bear can't stand up to a patrol working together.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1", "FIGHTER,2"],
@@ -4547,7 +4547,7 @@
                 ]
             },
             {
-                "text": "The wolves slowly follow the trail, with s_c urging caution. There's no reason to rush into things. Sure enough, they find a gray fox. It's digging at a rotten log, unearthing insects. The patrol uses the presence of the other predator as a distraction to bring down a plump bird, one that was too busy watching the fox to guard from them, and the fox is left unscathed to keep bug hunting.",
+                "text": "The wolves slowly follow the trail, with s_c urging caution. There's no reason to rush into things. Sure enough, they find a black bear. It's digging at a rotten log, unearthing insects. The patrol uses the presence of the other predator as a distraction to bring down a plump bird, one that was too busy watching the bear to guard from them, and the bear is left unscathed to keep bug hunting.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -4582,7 +4582,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The fox's trail vanishes, almost as though the creature has figured out they're tracking it. Grumbling and arguing, the patrol has to head back home disappointed.",
+                "text": "The bear's trail vanishes, almost as though the creature has figured out they're tracking it. Grumbling and arguing, the patrol has to head back home disappointed.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -4604,7 +4604,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "The patrol tracks down a gray fox trespassing on c_n land, but s_c runs at it without thinking, and instead of intimidating the fox into fleeing for the border, it makes the gray fox skitter up a cliff and start yelping. It takes all afternoon to wait the fox out and then drive it more gently from c_n's hunting grounds, and no one is happy with s_c.",
+                "text": "The patrol tracks down a black bear trespassing on c_n land, but s_c runs at it without thinking, and instead of intimidating the bear into fleeing for the border, it makes the black bear skitter up a tree. It takes all afternoon to wait the young bear out and then drive it more gently from c_n's hunting grounds, and no one is happy with s_c.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -4639,7 +4639,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "p_l leads the patrol to the end of the scent trail, where a gray fox sits grooming its fur in the sunshine. With careful signals, the wolves set up an ambush, but the small gray panics beyond anything any wolf expected, and as it flees, convinced its life is in danger, it bites at r_c.",
+                "text": "p_l leads the patrol to the end of the scent trail, where a black bear sits grooming its fur in the sunshine. With careful signals, the wolves set up an ambush, but the young bear panics beyond anything any wolf expected, and as it flees, convinced its life is in danger, it bites at r_c.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -4650,9 +4650,9 @@
                     }
                 ],
                 "history_text": { 
-                    "scar": "m_c carries a scar from a fight with a gray fox.",
-                    "reg_death": "m_c died from a gray fox bite.",
-                    "lead_death":"died from a gray fox bite"
+                    "scar": "m_c carries a scar from a fight with a bear.",
+                    "reg_death": "m_c died from a bear bite.",
+                    "lead_death":"died from a bear bite"
                 },
                 "relationships": [
                     {
@@ -4673,7 +4673,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "The patrol tracks down a gray fox trespassing on c_n land, but s_c runs at it without thinking, and instead of intimidating the fox into fleeing for the border, it makes the gray fox skitter up a cliff and start yelping. s_c tries to make up for the mistake by following the fox up into the branches, which goes even more poorly and leaves the patrol needing to help {PRONOUN/s_c/object} back to the medicine den.",
+                "text": "The patrol tracks down a black bear trespassing on c_n land, but s_c runs at it without thinking, and instead of intimidating the bear into fleeing for the border, it makes the black bear skitter up a tree. s_c tries to make up for the mistake by following the bear up into the branches, which goes even more poorly and leaves the patrol needing to help {PRONOUN/s_c/object} back to the medicine den.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -4693,13 +4693,13 @@
                     {
                         "cats": ["s_c"],
                         "injuries": ["small_bite_injury"],
-                        "scars": ["LEGBITE"]
+                        "scars": ["LEGBITE", "GIN"]
                     }
                 ],
                 "history_text": { 
-                    "scar": "m_c carries a scar from a fight with a gray fox.",
-                    "reg_death": "m_c died from a gray fox bite.",
-                    "lead_death": "died from a gray fox bite"
+                    "scar": "m_c carries a scar from a fight with a bear.",
+                    "reg_death": "m_c died from a bear bite.",
+                    "lead_death": "died from a bear bite"
                  },
                 "relationships": [
                     {
@@ -4732,12 +4732,12 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your patrol catches the scent of a fox - but is it red, or gray? And is it worth a fight if they encounter it?",
+        "intro_text": "Your patrol catches the scent of a bear - but is it black, or brown? And is it worth a fight if they encounter it?",
         "decline_text": "Your patrol decides not to quarrel with the fox and to find prey elsewhere.",
         "chance_of_success": 10,
         "success_outcomes": [
             {
-                "text": "It's a gray fox, which as far as the wolves are concerned, means free food. They leap after it, and after a short chase the fox drops the mouse it was holding. That's not enough to satisfy the c_n wolves, who drive it out of their territory before collecting the mouse and continuing the afternoon's hunt.",
+                "text": "It's a black bear, which as far as the wolves are concerned, means free food. They leap after it, and after a short chase the fox drops the young rabbit it was holding. That's not enough to satisfy the c_n wolves, who drive it out of their territory before collecting the rabbit and continuing the afternoon's hunt.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["small"],
@@ -4759,7 +4759,7 @@
                 ]
             },
             {
-                "text": "The scent trail leads to where some kind of fox has cached a wood rat in a poorly concealed hole. The wolves take it as their due, and leave the fox to wander on.",
+                "text": "The scent trail leads to where some kind of rabbit has cached a small fish in a poorly concealed hole. The wolves take it as their due, and leave the bear to wander on.",
                 "exp": 20,
                 "weight": 5,
                 "prey": ["small"],
@@ -4781,7 +4781,7 @@
                 ]
             },
             {
-                "text": "The trail leads to a gray fox, and s_c makes sure it both hands over the prey it's poached from c_n land and flees for the border, tail between its legs and yelping. The smaller predator can't stand up to a patrol working together.",
+                "text": "The trail leads to a black bear, and s_c makes sure it both hands over the prey it's poached from c_n land and flees for the border. The young bear can't stand up to a patrol working together.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1", "FIGHTER,2"],
@@ -4804,7 +4804,7 @@
                 ]
             },
             {
-                "text": "The wolves slowly follow the trail, with s_c urging caution. There's no reason to rush into things. Sure enough, they find a gray fox. It's digging at a rotten log, unearthing insects. The patrol uses the presence of the other predator as a distraction to bring down a plump bird, one that was too busy watching the fox to guard from them, and the fox is left unscathed to keep bug hunting.",
+                "text": "The wolves slowly follow the trail, with s_c urging caution. There's no reason to rush into things. Sure enough, they find a black bear. It's digging at a rotten log, unearthing insects. The patrol uses the presence of the other predator as a distraction to bring down a plump bird, one that was too busy watching the bear to guard from them, and the bear is left unscathed to keep bug hunting.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -4839,7 +4839,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The fox's trail vanishes, almost as though the creature has figured out they're tracking it. Grumbling and arguing, the patrol has to head back home disappointed.",
+                "text": "The bear's trail vanishes, almost as though the creature has figured out they're tracking it. Grumbling and arguing, the patrol has to head back home disappointed.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -4861,7 +4861,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "The patrol tracks down a gray fox trespassing on c_n land, but s_c runs at it without thinking, and instead of intimidating the fox into fleeing for the border, it makes the gray fox skitter up a cliff and start yelping. It takes all afternoon to wait the fox out and then drive it more gently from c_n's hunting grounds, and no one is happy with s_c.",
+                "text": "The patrol tracks down a black bear trespassing on c_n land, but s_c runs at it without thinking, and instead of intimidating the bear into fleeing for the border, it makes the bear skitter up a tree. It takes all afternoon to wait the young bear out and then drive it more gently from c_n's hunting grounds, and no one is happy with s_c.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -4896,7 +4896,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "p_l leads the patrol to the end of the scent trail, where a gray fox sits grooming its fur in the sunshine. With careful signals, the wolves set up an ambush, but the small gray panics beyond anything any wolf expected, and as it flees, convinced its life is in danger, it bites at r_c.",
+                "text": "p_l leads the patrol to the end of the scent trail, where a black bear sits grooming its fur in the sunshine. With careful signals, the wolves set up an ambush, but the young bear panics beyond anything any wolf expected, and as it flees, convinced its life is in danger, it bites at r_c.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -4907,9 +4907,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c carries a scar from a fight with a gray fox.",
-                    "reg_death": "m_c died from a gray fox bite.",
-                    "lead_death": "died from a gray fox bite"
+                    "scar": "m_c carries a scar from a fight with a bear.",
+                    "reg_death": "m_c died from a bear bite.",
+                    "lead_death": "died from a bear bite"
                 },
                 "relationships": [
                     {
@@ -4930,7 +4930,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "The patrol tracks down a gray fox trespassing on c_n land, but s_c runs at it without thinking, and instead of intimidating the fox into fleeing for the border, it makes the gray fox skitter up a cliff and start yelping. s_c tries to make up for the mistake by following the fox up into the branches, which goes even more poorly and leaves the patrol needing to help {PRONOUN/s_c/object} back to the medicine den.",
+                "text": "The patrol tracks down a black bear trespassing on c_n land, but s_c runs at it without thinking, and instead of intimidating the bear into fleeing for the border, it makes the bear skitter up a tree. s_c tries to make up for the mistake by following the bear up into the branches, which goes even more poorly and leaves the patrol needing to help {PRONOUN/s_c/object} back to the medicine den.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -4950,13 +4950,13 @@
                     {
                         "cats": ["s_c"],
                         "injuries": ["small_bite_injury"],
-                        "scars": ["LEGBITE"]
+                        "scars": ["LEGBITE", "GIN"]
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c carries a scar from a fight with a gray fox.",
-                    "reg_death": "m_c died from a gray fox bite.",
-                    "lead_death": "died from a gray fox bite"
+                    "scar": "m_c carries a scar from a fight with a bear.",
+                    "reg_death": "m_c died from a bear bite.",
+                    "lead_death": "died from a bear bite"
                 },
                 "relationships": [
                     {
@@ -4989,25 +4989,25 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "r_c catches the scent of a fox - but is it red, or gray? And is it worth a fight if {PRONOUN/r_c/subject} {VERB/r_c/encounter/encounters} it?",
-        "decline_text": "r_c decides not to quarrel with the fox and to find prey elsewhere.",
+        "intro_text": "r_c catches the scent of a bear - but is it black, or brown? And is it worth a fight if {PRONOUN/r_c/subject} {VERB/r_c/encounter/encounters} it?",
+        "decline_text": "r_c decides not to quarrel with the bear and to find prey elsewhere.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "Spotting the gray fox {PRONOUN/r_c/subject}{VERB/r_c/'ve/'s} tracked dipping into a sheltered cove, r_c hangs back, sneaking around until {PRONOUN/r_c/subject} {VERB/r_c/spot/spots} the fox caching a bird kill in an old log a storm washed in moons ago. {PRONOUN/r_c/subject/CAP} simply {VERB/r_c/wait/waits} for it to finish and leave, then {VERB/r_c/creep/creeps} in to steal the fox's hard work, bringing the prize back to camp for the fresh-kill pile. Sometimes winning a battle doesn't require fighting.",
+                "text": "Spotting the brown bear {PRONOUN/r_c/subject}{VERB/r_c/'ve/'s} tracked dipping into a sheltered cove, r_c hangs back, sneaking around until {PRONOUN/r_c/subject} {VERB/r_c/spot/spots} the fox caching a fish kill in an old log a storm washed in moons ago. {PRONOUN/r_c/subject/CAP} simply {VERB/r_c/wait/waits} for it to finish and leave, then {VERB/r_c/creep/creeps} in to steal the bear's hard work, bringing the prize back to camp for the fresh-kill pile. Sometimes winning a battle doesn't require fighting.",
                 "exp": 15,
                 "weight": 20,
                 "prey": ["small"]
             },
             {
-                "text": "s_c tracks down a gray fox, and carefully considers it as an opponent. Stocky, yes, but {PRONOUN/s_c/subject} finally {VERB/s_c/decide/decides} {PRONOUN/s_c/subject} can take it, and {VERB/s_c/burst/bursts} from cover, using surprise to get in a couple vicious swipes to the fox's face while its jaws are still full of prey. Yelping, the gray fox retreats from the wolf, unwilling to risk more split blood, and s_c picks up the rat it carried with a proud grin.",
+                "text": "s_c tracks down a brown bear, and carefully considers it as an opponent. Stocky, yes, but {PRONOUN/s_c/subject} finally {VERB/s_c/decide/decides} {PRONOUN/s_c/subject} can take it, and {VERB/s_c/burst/bursts} from cover, using surprise to get in a bite to the bear's face while its jaws are still full of prey. The bear retreats from the wolf, unwilling to risk more split blood, and s_c picks up the fish it carried with a proud grin.",
                 "exp": 15,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1", "FIGHTER,1"],
                 "prey": ["small"]
             },
             {
-                "text": "It's a situation that calls for careful, calm, not impulsive action. s_c tracks down a gray fox at the end of the scent trail, holding a little plump mouse, and waits carefully. Eventually, the fox tries to cache its fresh-kill in a little hole. s_c picks it up once the fox leaves, strolling back to camp having successfully outwitted the competing predator.",
+                "text": "It's a situation that calls for careful, calm, not impulsive action. s_c tracks down a brown bear at the end of the scent trail, holding a little plump rabbit, and waits carefully. Eventually, the bear tries to cache its fresh-kill in a little hole. s_c picks it up once the bear leaves, strolling back to camp having successfully outwitted the competing predator.",
                 "exp": 15,
                 "weight": 20,
                 "stat_trait": [
@@ -5024,7 +5024,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "It embarrasses {PRONOUN/r_c/object}, but r_c doesn't even manage to find the fox {PRONOUN/r_c/subject} {VERB/r_c/track/tracks}, let alone earn anything useful from the afternoon's attempts.",
+                "text": "It embarrasses {PRONOUN/r_c/object}, but r_c doesn't even manage to find the bear {PRONOUN/r_c/subject} {VERB/r_c/track/tracks}, let alone earn anything useful from the afternoon's attempts.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -5039,7 +5039,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "s_c hones in on the scent, and as soon as {PRONOUN/s_c/subject} {VERB/s_c/spot/spots} the gray fox with a dead fish hanging from its jaws, {PRONOUN/s_c/subject} {VERB/s_c/throw/throws} {PRONOUN/s_c/self} to the attack. The fox hears {PRONOUN/s_c/object} coming, and makes a hasty retreat before the fight can start, taking its dinner with it.",
+                "text": "s_c hones in on the scent, and as soon as {PRONOUN/s_c/subject} {VERB/s_c/spot/spots} the brown bear with a dead fish hanging from its jaws, {PRONOUN/s_c/subject} {VERB/s_c/throw/throws} {PRONOUN/s_c/self} to the attack. The bear hears {PRONOUN/s_c/object} coming, and makes a hasty retreat before the fight can start, taking its dinner with it.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -5067,7 +5067,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "Finding a gray fox holding a mouse that would make a nice addition to c_n's fresh-kill pile, r_c goes to attack it. But the fox is just as keen to keep it as r_c is to win it, and {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} injured in the resulting fight.",
+                "text": "Finding a brown bear holding a fish that would make a nice addition to c_n's fresh-kill pile, r_c goes to attack it. But the bear is just as keen to keep it as r_c is to win it, and {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} injured in the resulting fight.",
                 "exp": 0,
                 "weight": 10,
                 
@@ -5075,13 +5075,13 @@
                     {
                         "cats": ["r_c"],
                         "injuries": ["small_bite_injury"],
-                        "scars": ["LEGBITE"]
+                        "scars": ["LEGBITE", "GIN"]
                     }
                 ],
                 "history_text": { 
-                    "scar": "m_c carries a scar from a solo fight with a gray fox.",
-                    "reg_death": "m_c died from a gray fox bite.",
-                    "lead_death":"died from a gray fox bite"
+                    "scar": "m_c carries a scar from a solo fight with a bear.",
+                    "reg_death": "m_c died from a bear bite.",
+                    "lead_death":"died from a bear bite"
                 },
                 "relationships": [
                     {
@@ -5095,7 +5095,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "s_c hones in on the scent, and as soon as {PRONOUN/s_c/subject} {VERB/s_c/spot/spots} the gray fox with a dead fish hanging from its jaws, {PRONOUN/s_c/subject} recklessly {VERB/s_c/throw/throws} {PRONOUN/s_c/self} to the attack. But the fox is a little too desperate to keep itself from harm, and s_c has to retreat, bleeding.",
+                "text": "s_c hones in on the scent, and as soon as {PRONOUN/s_c/subject} {VERB/s_c/spot/spots} the brown bear with a dead fish hanging from its jaws, {PRONOUN/s_c/subject} recklessly {VERB/s_c/throw/throws} {PRONOUN/s_c/self} to the attack. But the bear is a little too desperate to keep itself from harm, and s_c has to retreat, bleeding.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -5115,13 +5115,13 @@
                     {
                         "cats": ["s_c"],
                         "injuries": ["small_bite_injury"],
-                        "scars": ["LEGBITE"]
+                        "scars": ["LEGBITE", "GIN"]
                     }
                 ],
                 "history_text": { 
-                    "scar": "m_c carries a scar from a solo fight with a gray fox.",
-                    "reg_death": "m_c died from a gray fox bite.",
-                    "lead_death": "died from a gray fox bite"
+                    "scar": "m_c carries a scar from a solo fight with a bear.",
+                    "reg_death": "m_c died from a bear bite.",
+                    "lead_death": "died from a bear bite"
                 },
                 "relationships": [
                     {
@@ -5241,7 +5241,7 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "It's Nessie! The patrol trots up, exchanging a nice mouse for a nice deep water fish, both creatures trading the respective delicacies that're hard for the other to obtain.",
+                "text": "It's Nessie! The patrol trots up, exchanging a nice rabbit for a nice deep water fish, both creatures trading the respective delicacies that're hard for the other to obtain.",
                 "exp": 0,
                 "weight": 20,
                 "prey": ["small"]

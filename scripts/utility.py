@@ -1235,7 +1235,7 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
     # don't look too closely at this i did it while half asleep ty
     scarchange = []
     posescars = ['BURNTAIL', 'FROSTTAIL', 'HALFTAIL', 'LEFTEAR', 'NOEAR', 'NOLEFTEAR', 'NORIGHTEAR', 'NOTAIL', 'RIGHTEAR']
-    if len(cat.pelt.scars) != 0:
+    if len(cat.pelt.scars) != 0 and not cat.not_working and age != 'newborn' and not cat.pelt.paralyzed:
         for scar in cat.pelt.scars:
             if scar in posescars:
                 scarchange.append(scar)

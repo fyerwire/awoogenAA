@@ -95,20 +95,20 @@
                 "text": "Your patrol catches the rat! More fresh-kill!",
                 "exp": 20,
                 "weight": 20,
-                "prey": ["medium"]
+                "prey": ["small"]
             },
             {
                 "text": "The rat rears up and hisses at r_c, but while it's distracted, p_l takes it out with a quick strike.",
                 "exp": 20,
                 "weight": 5,
-                "prey": ["medium"]
+                "prey": ["small"]
             },
             {
                 "text": "The rat is huge and quick, but s_c is quicker, bringing it down just before it scurries out of reach. Everyone gathers around {PRONOUN/s_c/object} in congratulations of the skillful kill.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["HUNTER,2"],
-                "prey": ["medium"]
+                "prey": ["small"]
             }
         ],
         "fail_outcomes": [
@@ -138,14 +138,14 @@
                 "text": "Your patrol catches the hare!",
                 "exp": 10,
                 "weight": 20,
-                "prey": ["large"]
+                "prey": ["medium"]
             },
             {
                 "text": "s_c runs the hare down in a huge display of athleticism and skill.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["HUNTER,3"],
-                "prey": ["large"]
+                "prey": ["medium"]
             }
         ],
         "fail_outcomes": [
@@ -176,13 +176,13 @@
                 "text": "Your patrol catches the pheasant before it flies away!",
                 "exp": 15,
                 "weight": 20,
-                "prey": ["small"]
+                "prey": ["medium"]
             },
             {
                 "text": "r_c creeps towards the pheasant, setting {PRONOUN/r_c/poss} paws down gently. The pheasant notices the wolf sneaking towards it and attempts to take off. r_c bounds forward and grabs it before it can flee. Outstanding!",
                 "exp": 15,
                 "weight": 5,
-                "prey": ["small"]
+                "prey": ["medium"]
             }
         ],
         "fail_outcomes": [
@@ -213,13 +213,13 @@
                 "text": "Stealthily, r_c stalks forward. The turkey has no idea what's coming as the wolf bites it and breaks its neck. r_c sends a silent thanks to StarPack for this prey.",
                 "exp": 10,
                 "weight": 20,
-                "prey": ["medium"]
+                "prey": ["large"]
             },
             {
                 "text": "r_c rapidly pads towards the turkey, {PRONOUN/r_c/poss} tail wagging in excitement. The turkey is alerted to their presence as it was in fact not alone, but r_c launches {PRONOUN/r_c/self} forward and cuts off its escape with a bite to the back of the head.",
                 "exp": 10,
                 "weight": 5,
-                "prey": ["medium"]
+                "prey": ["large"]
             }
         ],
         "fail_outcomes": [
@@ -382,7 +382,7 @@
                 "text": "The patrol rallies almost instantly, and manages to corner and catch the rabbit!",
                 "exp": 10,
                 "weight": 20,
-                "prey": ["large"],
+                "prey": ["medium"],
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
@@ -394,11 +394,11 @@
                 ]
             },
             {
-                "text": "s_c reacts quickly, tearing off after the rabbit and snaps at  its head to bring it down.",
+                "text": "s_c reacts quickly, tearing off after the rabbit and snaps at its head to bring it down.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["HUNTER,2"],
-                "prey": ["large"],
+                "prey": ["medium"],
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
@@ -463,14 +463,14 @@
                 "text": "r_c manages to corner and catch the rabbit!",
                 "exp": 10,
                 "weight": 20,
-                "prey": ["large"]
+                "prey": ["medium"]
             },
             {
                 "text": "s_c reacts quickly, tearing off after the rabbit and snaps at its head to bring it down.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["HUNTER,2"],
-                "prey": ["large"]
+                "prey": ["medium"]
             }
         ],
         "fail_outcomes": [

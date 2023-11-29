@@ -3,9 +3,9 @@
         "colours": {
             "dark_bg": "#00000000",
             "normal_text": "#EBE7F5",
-            "link_text": "#2E8B57",
-            "link_hover": "#556B2F",
-            "link_selected": "#556B2F"
+            "link_text": "#8271B1",
+            "link_hover": "#EBE7F5",
+            "link_selected": "#3A91A6"
         },
         "font": {
             "name": "notosans",

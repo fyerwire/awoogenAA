@@ -85,7 +85,7 @@
     },
     "relation": {
         "affair": [
-            "Allow wolves to breed with cats that aren't their mates.",
+            "Allow wolves to breed with wolves that aren't their mates.",
             "This will allow mated and unmated wolves to have pups with other wolves they are not mated with. This includes, but is not limited to, affairs/cheating.",
             false
         ],

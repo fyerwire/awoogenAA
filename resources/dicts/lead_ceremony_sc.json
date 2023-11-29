@@ -501,7 +501,7 @@
           "virtue": ["bravery", "certainty", "confidence", "courage", "strength"]
         },
         {
-          "text": "m_c can barely meet r_c's gaze as the starry cat approaches. {PRONOUN/m_c/poss/CAP} head snaps up as r_c whines at {PRONOUN/m_c/object} to take heart in the life {PRONOUN/r_c/subject} {VERB/r_c/are/is} about to give. As r_c touches {PRONOUN/m_c/poss} forehead, a life for [virtue] surges through {PRONOUN/m_c/object}, filling {PRONOUN/m_c/object} with a resolve {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} never felt before.",
+          "text": "m_c can barely meet r_c's gaze as the starry wolf approaches. {PRONOUN/m_c/poss/CAP} head snaps up as r_c whines at {PRONOUN/m_c/object} to take heart in the life {PRONOUN/r_c/subject} {VERB/r_c/are/is} about to give. As r_c touches {PRONOUN/m_c/poss} forehead, a life for [virtue] surges through {PRONOUN/m_c/object}, filling {PRONOUN/m_c/object} with a resolve {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} never felt before.",
           "virtue": ["bravery", "certainty", "confidence", "courage", "strength"]
         },
         {
@@ -987,7 +987,7 @@
       "tags": [],
       "lead_trait": [],
       "text": [
-            "r_c hails m_c by {PRONOUN/m_c/poss} new name, m_c_star, telling {PRONOUN/m_c/object} that {PRONOUN/m_c/poss} old life is no more. {PRONOUN/m_c/subject/CAP} {VERB/m_c/are/is} granted guardianship of c_n, and {VERB/m_c/are/is} told to use {PRONOUN/m_c/poss} new power wisely. The group of starry cats howls m_c_star's name in support. m_c_star wakes up feeling a new strength within {PRONOUN/m_c/poss} body and knows that {PRONOUN/m_c/subject} {VERB/m_c/are/is} now ready to lead the Pack."
+            "r_c hails m_c by {PRONOUN/m_c/poss} new name, m_c_star, telling {PRONOUN/m_c/object} that {PRONOUN/m_c/poss} old life is no more. {PRONOUN/m_c/subject/CAP} {VERB/m_c/are/is} granted guardianship of c_n, and {VERB/m_c/are/is} told to use {PRONOUN/m_c/poss} new power wisely. The group of starry wolves howls m_c_star's name in support. m_c_star wakes up feeling a new strength within {PRONOUN/m_c/poss} body and knows that {PRONOUN/m_c/subject} {VERB/m_c/are/is} now ready to lead the Pack."
       ]
     },
 
