@@ -1,0 +1,10 @@
+MOONLIGHT
+Layer: color
+Color: #5e5674
+e7e3f0
+
+SEASIDE
+Layer: Color then Screen at 50% (screen at 30% for hovered button)
+Color (Blue): #74DED5
+Color (Orange): #ECB86F
+Color (Yellow): #F4EBBE

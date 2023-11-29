@@ -7,7 +7,7 @@ from configparser import ConfigParser
 from platformdirs import user_data_dir
 logger = logging.getLogger(__name__)
 
-VERSION_NAME = "Moonlight 1.2"
+VERSION_NAME = "Pre-Seaside"
 # This is saved in the Pack save-file, and is used for save-file converstion.
 SAVE_VERSION_NUMBER = 2
 

@@ -352,6 +352,10 @@ class Game():
         except FileNotFoundError:
             return
 
+        # SEASIDE - auto update settings
+        if 'Seaside' not in settings_data:
+            settings_data['Seaside'] = False
+            
         for key, value in settings_data.items():
             if key in self.settings:
                 self.settings[key] = value

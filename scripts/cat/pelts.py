@@ -10,20 +10,6 @@ from scripts.game_structure.game_essentials import game
 class Pelt():
     
     sprites_names = {
-        "SingleColour": 'single',
-        'TwoColour': 'single',
-        'Tabby': 'tabby',
-        'Marbled': 'marbled',
-        'Rosette': 'rosette',
-        'Smoke': 'smoke',
-        'Ticked': 'ticked',
-        'Speckled': 'speckled',
-        'Bengal': 'bengal',
-        'Mackerel': 'mackerel',
-        'Classic': 'classic',
-        'Sokoke': 'sokoke',
-        'Agouti': 'agouti',
-        'Singlestripe': 'singlestripe',
         'Arctic': 'arctic',
         'Colorpoint': 'colorpoint',
         'Graywolf': 'graywolf',
@@ -53,24 +39,15 @@ class Pelt():
 		'ONYX', 'SUNSTONE', 'MOONSTONE', 'COCOA', 'SPRUCE', 'ISABELLA',
                         'SUNNY', 'LUNA'
     ]
-    pelt_c_no_white = [
-        'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'BLACK', 'CREAM', 'PALEGINGER',
-        'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA', 'LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN',
-        'CHOCOLATE'
-    ]
-    pelt_c_no_bw = [
-        'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'CREAM', 'PALEGINGER',
-        'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA', 'LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN',
-        'CHOCOLATE'
-    ]
-
+    #torties
     tortiepatterns = ['CAPE', 'DIPPED', 'HEARTBREAKER', 'INKSPILL', 'MINIMAL', 'PHANTOM',
 		'PUDDLES', 'REDTAIL', 'SHADOWSTEP', 'SPLIT', 'SPLOTCH', 'WATERFALL']
     tortiebases = ["Graywolf", "Ophelia", "Runic", "Timber", "Sable", "Shepherd", 
 		"Arctic", "Winter", "Husky", "Mexican", "Stormy", "Vibrant", "Colorpoint", "Smokey", 
 		"Points", "Semisolid", "Solid"]
-
+    # I want to get rid of this eventually
     pelt_length = ["short", "medium", "long"]
+    # eyes
     eye_colours = ['DAYLIGHT', 'ICE', 'NAVY', 'RAIN', 'SAPPHIRE', 'SEAFOAM', 'SKY', 'STORM', 'TEAL', 
 				'ALMOND', 'BEAR', 'CASHEW', 'HAZEL', 'LATTE', 'SPARROW', 'BLACK', 'GULL', 
 				'SILVER', 'SMOKE', 'WHITE', 'EMERALD', 'FERN', 'FOREST', 'LEAF', 'LIME', 
@@ -87,6 +64,7 @@ class Pelt():
     red_eyes = ['BUBBLEGUM', 'PINK', 'ROUGE', 'RUBY', 'SCARLET']
     # scars1 is scars from other cats, other animals - scars2 is missing parts - scars3 is "special" scars that could only happen in a special event
     # bite scars by @wood pank on discord
+    # none of this makes sense just put missing scars in 2 and scars you don't want randomly generating in 3
     scars1 = ["ONE", "TWO", "THREE", "TAILSCAR", "SNOUT", "CHEEK", "SIDE", "THROAT", "TAILBASE", "BELLY",
             "LEGBITE", "NECKBITE", "FACE", "MANLEG", "BRIGHTHEART", "MANTAIL", "BRIDGE", "RIGHTBLIND", "LEFTBLIND",
             "BOTHBLIND", "BEAKCHEEK", "BEAKLOWER", "CATBITE", "RATBITE", "QUILLCHUNK", "QUILLSCRATCH", "GIN"]
@@ -94,7 +72,7 @@ class Pelt():
     scars3 = ["SNAKE", "TOETRAP", "BURNPAWS", "BURNTAIL", "BURNBELLY", "BURNRUMP", "FROSTFACE", "FROSTTAIL", "FROSTMITT",
             "FROSTSOCK", "BLIND"]
     scars4 = []
-
+    # accessories, the bane of my existance
     # make sure to add plural and singular forms of new accs to acc_display.json so that they will display nicely
     plant_accessories = ["BLUEBELLS", "BLUE BERRIES", "CATMINT", "DRY HERBS", "FORGET ME NOTS", "HERBS", 
 		"HOLLY", "JUNIPER", "LAUREL", "LAVENDER", "MAPLE LEAF", "MAPLE SEED", "NETTLE", "OAK LEAVES", 
@@ -135,6 +113,7 @@ class Pelt():
 		"PLAIDBANDANARAINBOW", "PLAIDBANDANARED", "PLAIDBANDANASPIKES", "PLAIDBANDANAWHITE", "PLAIDBANDANAYELLOW"
 	]
     every_acc_list = [plant_accessories, wild_accessories, collars, radiocollars, harnesses, bandanas]
+    # pelts
     standardpelts = ["Graywolf", "Ophelia", "Runic", "Timber", "Sable", "Shepherd"]
     northpelts = ["Arctic", "Winter", "Husky"]
     southpelts = ["Mexican", "Stormy", "Vibrant"]
@@ -143,29 +122,57 @@ class Pelt():
     torties = ["Tortie", "Calico"]
     pelt_categories = [standardpelts, northpelts, southpelts, darkpelts, specialpelts, torties]
 
-    # SPRITE NAMES
-    single_colours = [
-        'WHITE', 'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'BLACK', 'CREAM', 'PALEGINGER',
-        'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA', 'LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN',
-        'CHOCOLATE'
-    ]
-    #ginger_colours = ['CREAM', 'PALEGINGER', 'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA']
-    #black_colours = ['GREY', 'DARKGREY', 'GHOST', 'BLACK']
-    #white_colours = ['WHITE', 'PALEGREY', 'SILVER']
-    #brown_colours = ['LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN', 'CHOCOLATE']
-    #colour_categories = [ginger_colours, black_colours, white_colours, brown_colours]
+    # colors and stuff
     yellow_colors = ['HONEY', 'FLAXEN', 'CREAM', 'PEARL', 'GOLD', 'BRASS', 'SUNSTONE', 'SUNNY']
     gray_colors = ['MIST', 'ASH', 'STEEL', 'SILVER', 'MOONSTONE']
     black_colors = ['BLACK', 'ONYX', 'LUNA']
     red_colors = ['SPICE', 'GINGER', 'COPPER']
     dilute_colors = ['CHOCOLATE', 'COCOA', 'BLUE', 'SPRUCE', 'LILAC', 'ISABELLA']
-    colour_categories = [yellow_colors, gray_colors, black_colors, red_colors, dilute_colors]
+    color_categories = [yellow_colors, gray_colors, black_colors, red_colors, dilute_colors]
+    # merles
+    merles = ['BRIGHTLEAF', 'SILVERCLAW', 'SEAFUR', 'DAPPLEPELT', 'WILLOWLEAF', 'DAYSKY', 'BRINDLECLOUD', 'SHADOWSNEAK', 'DARKDAPPLE', 'STORMSONG']
+    red_merle_colors = {
+        'HONEY': (181, 133, 77),
+        'FLAXEN': (180, 145, 111),
+        'CREAM': (211, 186, 143),
+        'PEARL': (229, 213, 183), 
+        'GOLD': (206, 148, 62),
+        'BRASS': (195, 169, 127),
+        'SUNSTONE': (204, 205, 208),
+        'SUNNY': (242, 229, 191),
+        'MIST': (199, 196, 187),
+        'ASH': (114, 112, 106),
+        'STEEL': (69, 66, 59),
+        'SILVER': (204, 205, 208),
+        'MOONSTONE': (217, 222, 220),
+        'BLACK': None,
+        'ONYX': None,
+        'LUNA': None,
+        'SPICE': (69, 38, 26),
+        'GINGER': (141, 75, 34),
+        'COPPER': (157, 83, 27),
+        'CHOCOLATE': (209, 174, 129),
+        'COCOA': (100, 62, 43),
+        'BLUE': (127, 187, 148),
+        'SPRUCE': (108, 93, 84),
+        'LILAC': (234, 220, 195),
+        'ISABELLA': (178, 165, 154)
+        }
+    # The pair is dark, light. Each is paired together to avoid weird color combos.
+    standard_merle_colors = [[(17, 22, 26), (69, 74, 77)], [(64, 62, 65), (131, 130, 136)], [(42, 41, 47), (187, 186, 194)], [(43, 41, 46), (226, 220, 224)]]
+    blue_merle_colors = [[(54, 54, 56), (161, 155, 165)], [(81, 85, 93), (207, 212, 221)], [(75, 76, 81), (145, 146, 151)], [(88, 87, 95), (213, 213, 214)]]
+    chocolate_merle_colors = [[(104, 63, 57), (186, 172, 167)], [(53, 37, 24), (164, 152, 140)], [(157, 122, 87), (217, 206, 181)], [(101, 78, 64), (207, 180, 153)], [(110, 71, 50), (171, 133, 96)]]
+    lilac_merle_colors = [[(127, 123, 128), (198, 188, 178)], [(147, 128, 111), (197, 176, 155)], [(115, 94, 77), (234, 232, 222)], [(171, 152, 146), (215, 209, 213)]]
+    # this list is to include the generation of the red merle parts depending on the pelt
+    include_red_merle = ["Graywolf", "Ophelia", "Runic", "Timber", "Sable", "Arctic", "Winter", "Husky", "Mexican", "Stormy", "Vibrant", "Colorpoint", "Smokey"]
+    # eyeballs
     eye_sprites = ['DAYLIGHT', 'ICE', 'NAVY', 'RAIN', 'SAPPHIRE', 'SEAFOAM', 'SKY', 'STORM', 'TEAL', 
 				'ALMOND', 'BEAR', 'CASHEW', 'HAZEL', 'LATTE', 'SPARROW', 'BLACK', 'GULL', 
 				'SILVER', 'SMOKE', 'WHITE', 'EMERALD', 'FERN', 'FOREST', 'LEAF', 'LIME', 
 				'MINT', 'HARVEST', 'PEACH', 'PUMPKIN', 'TANGELO', 'TWILIGHT', 'AMETHYST',
                                                 'DAWN', 'DUSK', 'LILAC', 'MIDNIGHT', 'VIOLET', 'BUBBLEGUM', 'PINK', 'ROUGE',
                                                 'RUBY', 'SCARLET', 'AMBER', 'LEMON', 'PALE', 'SUNBEAM', 'SUNLIGHT', 'WHEAT']
+    # white patches
     low_white = ['FLASH', 'HIGHLIGHTS', 'JACKAL', 'LOCKET', 'SNOWFLAKE', 'SOCKS', 'SPLIT', 
 				'STRIPE', 'TOES', 'TRIM', 'WOLFTICKING', 'BACKLEG', 'BEE',
                                                 'DAPPLES', 'POINTED', 'SPECKLES']
@@ -174,16 +181,57 @@ class Pelt():
                                                  'DIAMOND', 'HOUND', 'KING']
     high_white = ['BLUETICK', 'EXTREMEPIEBALD', 'LIGHTDALMATIAN', 'PIEBALD', 'TAIL', 'WHITE',
                                                   'HEAVYDALMATIAN', 'HEELER']
-					
-    mostly_white = ['VAN', 'ONEEAR', 'LIGHTSONG', 'TAIL', 'HEART', 'MOORISH', 'APRON', 'CAPSADDLE',
-                    'CHESTSPECK', 'BLACKSTAR', 'PETAL', 'HEARTTWO','PEBBLESHINE', 'BOOTS', 'COW', 'COWTWO', 'LOVEBUG',
-                    'SHOOTINGSTAR', 'EYESPOT', 'PEBBLE', 'TAILTWO', 'BUDDY', 'KROPKA']
-    point_markings = ['COLOURPOINT', 'RAGDOLL', 'SEPIAPOINT', 'MINKPOINT', 'SEALPOINT']
-    vit = ['VITILIGO', 'VITILIGOTWO', 'MOON', 'PHANTOM', 'KARPATI', 'POWDER', 'BLEACHED', 'SMOKEY']
     white_sprites = [low_white, mid_white, high_white]
+    # points
+    point_markings = ['SEPIA', 'MINK', 'POINT', 'CLEAR', 'HIMALAYAN', 'BEW', 'ALBINO']
+    point_genes = ['C', 'cb', 'cs', 'ch', 'cw', 'c']
+    # vitiligo is inactive currently
+    vit = ['VITILIGO', 'VITILIGOTWO', 'MOON', 'PHANTOM', 'KARPATI', 'POWDER', 'BLEACHED', 'SMOKEY']
+    # skins
     skin_sprites = ['BLACK', 'BLUE', 'BUTTERFLY', 'DUDLEY', 'DUDLEYBLUE', 'DUDLEYLIVER', 'GRAY', 'ISABELLA', 'LIVER', 'MOCHA', 'PINK', 'SNOWNOSE', 'SPECKLED']
-    skin_list = []
-    """Holds all appearence information for a cat. """
+    # sillies - you can add anything here!
+    fun_scents = ["pine", "lavender", "rosemary", "thyme", "wet dog", "rain", "grass", "roses", "charcoal", "ash", "maple syrup", "dry leaves", "fresh leaves", "lake",
+                  "pond", "fish", "wheat", "peach", "apricot", "apples", "blueberry", "raspberry", "strawberry", "blackberry", "frog", "seabreeze", "salt", "moor", "fern",
+                  "mint", "marshland", "seagull", "orchid", "pumpkin", "yam", "squash", "cranberry", "peppermint", "chocolate", "daisy", "marigold", "dandelion", "pet food",
+                  "eggs", "milk", "olive oil", "sunflower", "honey", "candy", "mud", "jasmine", "lily", "ginger", "takeout", "hyacinth", "banana", "orange", "grapefruit", "lemon",
+                  "lime", "pineapple", "papaya", "pomelo", "citrus", "clementine", "jam", "sap", "acorn", "pinecone", "bark", "walnut", "pistachio", "peanut", "licorice", "rice",
+                  "catmint", "holly", "juniper", "gardenia", "cat", "moose", "pie", "sakura", "ice cream", "metal", "denim", "peony", "lilac", "phlox", "crabapple", "seafood",
+                  "sushi", "oyster", "fox", "lynx", "extra wolfy", "wisteria", "spices", "paprika", "pepper", "basil", "tomato", "fresh dew", "bayberry", "spring", "summer", "autumn",
+                  "winter", "turkey", "hemlock", "cilantro", "garlic", "onion", "twoleg", "sage", "tansy", "wormwood", "spruce", "clover", "grasslands", "deep forest", "alpine flowers",
+                  "cherry", "kiwi", "fresh bread", "cookies", "peanut butter", "new leaves", "cool air", "warm air", "popcorn", "pizza", "bear", "soap", "beans", "honeydew", "cantalope",
+                  "watermelon", "chicken", "rabbit", "granola", "chili", "sulphur", "copper", "acrid", "starch", "brownies", "vanilla", "mango", "tumeric", "smoke", "marshmallow", "sanitizer",
+                  "alfredo", "coconut", "gelato", "eggnog", "tangy", "minerals", "sugar", "brown sugar", "gingerbread", "maple"]
+    fun_physical = ["tall", "short", "tiny", "large", "huge", "uneven", "thin", "lanky", "burly", "muscular", "slim", "sleek", "softcoat", "plushcoat", "roughcoat", "fox-like",
+                    "lynx-like", "cat-like", "dog-like", "dusty", "clean", "oily", "silkycoat", "wirecoat", "curlycoat", "woolycoat", "warm", "cold", "giant", "runt", "flimsy",
+                    "strong"]
+    fun_random = ["has a kinked tail", "terrified of spiders", "extremely loud", "loves the rain", "loves the snow" , "loves the sun", "has no dewclaws", "has a lot of whiskers",
+                  "loves the taste of pet food", "loves the taste of berries", "collects seashells", "collects feathers", "collects rocks", "collects gems", "collects flowers",
+                  "collects leaves", "has a silly smile", "has a crooked tooth", "has a snaggle tooth", "not scared of bears", "not scared of twolegs", "terrified of mice",
+                  "loves to sleep", "always sleepy", "always anxious", "over confident", "avid jogger", "frequent moonbather", "frequent sunbather", "watches cars", "watches birds",
+                  "cloudwatcher", "finds herbs delicious", "collects dog toys", "likes to sing", "howls a lot", "often cries wolf", "loves to swim", "very quiet", "yips a lot", "has raspy barks",
+                  "chatterbox", "collects fabric scraps", "takes long walks at night", "often steals", "pot-stirrer", "huge gossip", "very dramatic", "hates authority", "wants to live alone",
+                  "takes city walks", "harasses pets", "loves family", "extremely loyal", "takes frequent baths", "seems suspicious", "rolls in leaves", "storm chaser", "storm watcher",
+                  "finds beauty in all things", "always watches the sunset", "always watches the sunrise", "slow to wake up", "goes to bed early", "early bird", "night owl", "clumsy",
+                  "likes to have many friends", "likes to run", "has a favorite spot", "has a favorite color", "has a favorite snack", "always snacking", "likes to give gifts", "likes to get gifts",
+                  "collects shiny metal", "friends with ravens", "friends with crows", "friends with pigeons", "strong moral compass", "morally flexible", "sneezes a lot", "has seasonal allergies",
+                  "a little awkward", "very lovable", "likes to decorate", "lost in thought", "asks a lot of questions", "sits on hills", "relaxes on beaches", "howls like birds sing", "likes to make snow dens",
+                  "collects snake skins", "has a fast heartbeat", "has a slow heartbeat", "prefers nicknames", "steals twoleg food", "gets up to no good", "always plotting", "wants to overthrow power",
+                  "chases petals", "chases leaves", "chases cars", "would live on a boat", "hates summer", "hates winter", "thinks frogs are cool", "watchful eye", "doesn't like working",
+                  "loves their job", "likes their reflection", "collects bugs", "stargazer", "often annoying", "predicts the weather", "a bean", "often licks ice", "snow eater", "appreciates art",
+                  "often steals honey", "collects pine needles", "very cute", "very pretty", "very charming", "very fast", "loves the moon", "secretly a werewolf", "has cold toes",
+                  "often alone", "never alone", "knows tricks", "steals dog treats", "always bored", "speaks slowly", "speaks too quickly", "easily entertained", "loves a good conversation",
+                  "has a deep voice", "has a high-pitched voice", "has a large nose", "has a short tail", "has an extra toe", "has a piercing gaze", "has a soft gaze", "loves to make jokes",
+                  "doesn't understand jokes", "likes to bark", "rips up leaves", "hopeless romantic", "very optimistic", "very pessimistic", "has a lazy eye", "very emotional", "affectionate",
+                  "likes having personal space", "likes to wrestle", "jumps off docks", "listens to twoleg music", "supportive friend", "very silly", "very serious", "can't sit still", "energetic",
+                  "passionate", "opinionated", "sneezes at the sun", "likes to be alone", "likes large groups", "always comfy", "always a little uncomfortable", "walks silently", "often stomps around",
+                  "afraid of the dark", "collects antlers", "often covered in glitter", "map maker", "terrified of geese", "terrified of moose", "hates being bothered", "likes to spend time in silence",
+                  "hates silence", "drawn to others", "drawn to flowers", "likes to dig", "excellent nose", "falls a lot", "drawn to fire", "really mean", "really rude", "good vibes", "always positive",
+                  "always negative", "a little offputting", "tends to obsess", "hates getting dirty", "hides from rain", "hides from sun", "ignores problems", "thinks out loud", "largely disinterested",
+                  "way too invested", "always lucky", "complains a lot", "giver of compliments", "not very empathetic", "bleeding heart", "never angry", "frequently annoyed", "won't swim",
+                  "chirps at birds", "has a long tongue", "abrasive", "likes to chew", "collects sticks", "firestarter", "startles easily", "rarely phased", "always in a phase", "tracks the moon"]
+
+    # appearence information
+    # when adding to this, make sure it's done twice
     def __init__(self,
                  name:str="Solid",
                  species:str="Wolf",
@@ -197,14 +245,19 @@ class Pelt():
                  tortiecolour:str=None,
                  pattern:str=None,
                  tortiepattern:str=None,
+                 merle:bool=False,
+                 harlequin:bool=False,
+                 merle_pattern:list=[None, None, None, None],
                  vitiligo:str=None,
                  points:str=None,
+                 points_genes:list=["C", "C"],
                  accessory:str=None,
                  paralyzed:bool=False,
                  opacity:int=100,
                  scars:list=None,
                  tint:str="none",
                  skin:str="BLACK",
+                 fun_traits:list=["o", "o", "o"],
                  white_patches_tint:str="none",
                  kitten_sprite:int=None,
                  adol_sprite:int=None,
@@ -224,14 +277,19 @@ class Pelt():
         self.pattern = pattern
         self.tortiepattern = tortiepattern
         self.tortiecolour = tortiecolour
+        self.merle = merle
+        self.harlequin = harlequin
+        self.merle_pattern = merle_pattern
         self.vitiligo = vitiligo
         self.length=length
         self.points = points
+        self.points_genes = points_genes
         self.accessory = accessory
         self.paralyzed = paralyzed
         self.opacity = opacity
         self.scars = scars if isinstance(scars, list) else []
         self.tint = tint
+        self.fun_traits = fun_traits
         self.white_patches_tint = white_patches_tint
         self.cat_sprites =  {
             "kitten": kitten_sprite if kitten_sprite is not None else 0,
@@ -253,7 +311,6 @@ class Pelt():
     @staticmethod
     def generate_new_pelt(gender:str, parents:tuple=(), age:str="adult"):
         new_pelt = Pelt()
-        
         pelt_white = new_pelt.init_pattern_color(parents, gender)
         new_pelt.init_white_patches(pelt_white, parents)
         new_pelt.init_sprite()
@@ -262,6 +319,20 @@ class Pelt():
         new_pelt.init_eyes(parents)
         new_pelt.init_pattern()
         new_pelt.init_tint()
+
+        if new_pelt.merle:
+            print('MERLE! on: ' + new_pelt.name)
+            print('merle: ' + str(new_pelt.merle_pattern))
+        if new_pelt.harlequin:
+            print('HARLEQUIN! on: ' + new_pelt.name)
+        if new_pelt.points != None:
+            print('points: ' + str(new_pelt.points))
+            print('point genes: ' + str(new_pelt.points_genes))
+        # setting up some sillies
+        new_pelt.fun_traits = ["o", "o", "o"]
+        new_pelt.fun_traits[0] = random.choice(Pelt.fun_scents)
+        new_pelt.fun_traits[1] = random.choice(Pelt.fun_physical)
+        new_pelt.fun_traits[2] = random.choice(Pelt.fun_random)
         
         return new_pelt
     
@@ -269,51 +340,9 @@ class Pelt():
         """Checks for old-type properties for the apperence-related properties
         that are stored in Pelt, and converts them. To be run when loading a cat in. """
         
-        #First, convert from some old names that may be in white_patches. 
-        if self.white_patches == 'POINTMARK':
-            self.white_patches = "SEALPOINT"
-        elif self.white_patches == 'PANTS2':
-            self.white_patches = 'PANTSTWO'
-        elif self.white_patches == 'ANY2':
-            self.white_patches = 'ANYTWO'
-        elif self.white_patches == "VITILIGO2":
-            self.white_patches = "VITILIGOTWO"
-            
-        if self.vitiligo == "VITILIGO2":
-            self.vitiligo = "VITILIGOTWO"
-        
-        # Move white_patches that should be in vit or points. 
-        if self.white_patches in Pelt.vit:
-            self.vitiligo = self.white_patches
-            self.white_patches = None
-        elif self.white_patches in Pelt.point_markings:
-            self.points = self.white_patches
-            self.white_patches = None
-
-        
-        if self.tortiepattern and "tortie" in self.tortiepattern:
-            self.tortiepattern = sub("tortie", "", self.tortiepattern.lower())
-            if self.tortiepattern == "solid":
-                self.tortiepattern = "single"
-                
-        if self.white_patches in convert_dict["old_creamy_patches"]:
-            self.white_patches = convert_dict["old_creamy_patches"][self.white_patches]
-            self.white_patches_tint = "darkcream"
-        elif self.white_patches in ['SEPIAPOINT', 'MINKPOINT', 'SEALPOINT']:
-            self.white_patches_tint = "none"
-        
-        # Eye Color Convert Stuff
-        if self.eye_colour == "BLUE2":
-            self.eye_colour = "COBALT"
-        if self.eye_colour2 == "BLUE2":
-            self.eye_colour2 = "COBALT"
-            
-        if self.eye_colour in ["BLUEYELLOW", "BLUEGREEN"]:
-            if self.eye_colour == "BLUEYELLOW":
-                self.eye_colour2 = "YELLOW"
-            elif self.eye_colour == "BLUEGREEN":
-                self.eye_colour2 = "GREEN"
-            self.eye_colour = "BLUE"
+        # I deleted most of these but this section will likely be used for my own purposes later
+        # left one thing so it still runs and doesn't get confused
+        # please don't add anything here
         
         if self.cat_sprites['senior'] not in [12, 13, 14]:
             if self.cat_sprites['senior'] == 3:
@@ -323,33 +352,15 @@ class Pelt():
             elif self.cat_sprites['senior'] == 5:
                 self.cat_sprites['senior'] = 14
         
-        if self.pattern in convert_dict["old_tortie_patches"]:
-            old_pattern = self.pattern
-            self.pattern = convert_dict["old_tortie_patches"][old_pattern][1]
-            
-            # If the pattern is old, there is also a change the base color is stored in
-            # tortiecolour, and that may be different from the pelt color (main for torties
-            # generated before the "ginger-on-ginger" update. If it was generated after that update,
-            # tortiecolour and pelt_colour will be the same. Therefore, lets also re-set the pelt color
-            self.colour = self.tortiecolour
-            self.tortiecolour = convert_dict["old_tortie_patches"][old_pattern][0]
-            
-        if self.pattern == "MINIMAL1":
-            self.pattern = "MINIMALONE"
-        elif self.pattern == "MINIMAL2":
-            self.pattern = "MINIMALTWO"
-        elif self.pattern == "MINIMAL3":
-            self.pattern = "MINIMALTHREE"
-        elif self.pattern == "MINIMAL4":
-            self.pattern = "MINIMALFOUR"
-		
-       # FIX FOR PARALYZED - Kori
-	    # changed in utility!
-       # SCAR BASED POSE CHANGER - Kori
-                # figuring this out later
-        
     def init_eyes(self, parents):
         eye_groups = [Pelt.yellow_eyes, Pelt.orange_eyes, Pelt.green_eyes, Pelt.gray_eyes, Pelt.brown_eyes, Pelt.blue_eyes, Pelt.purple_eyes, Pelt.red_eyes]
+        if self.points == "BEW" or self.points == "ALBINO":
+            if self.points == "BEW":
+                self.eye_colour = "ICE"
+                return
+            if self.points == "ALBINO":
+                self.eye_colour = random.choice(Pelt.red_eyes)
+                return
         if not parents:
             self.eye_colour = random.choice(random.choices(eye_groups, weights=(90, 70, 50, 30, 20, 10, 5, 2), k=1)[0])
         else:
@@ -385,12 +396,16 @@ class Pelt():
         
         #White patches must be initalized before eye color. 
         num = game.config["cat_generation"]["base_heterochromia"]
-        if self.white_patches in [Pelt.high_white, Pelt.mostly_white, 'WHITE']:
-            num = num - 90
-        if self.white_patches == 'FULLWHITE' or self.colour == 'WHITE':
+        if self.white_patches in Pelt.high_white:
+            num -= 60
+        if self.white_patches == 'WHITE':
             num -= 10
-        for _par in parents:
-            if _par.pelt.eye_colour2:
+        if self.merle:
+            num -= 60
+        if self.points != None:
+            num -= 10
+        for p in parents:
+            if p.pelt.eye_colour2:
                 num -= 10
         
         if num < 0:
@@ -425,67 +440,75 @@ class Pelt():
     def pattern_color_inheritance(self, parents: tuple=(), gender="female"):
         # setting parent pelt categories
         #We are using a set, since we don't need this to be ordered, and sets deal with removing duplicates.
-        par_peltlength = set()
-        par_peltcolours = set()
-        par_peltnames = set()
-        par_pelts = []
-        par_white = []
-        par_species_mix = [[], []]
+        colorpoint_genes = Pelt.point_genes # this is here for easy access
+        parents_length = set()
+        parents_color = set()
+        parents_direct_inheritance = []
+        parents_pelt = []
+        parents_white = []
+        parents_species_mix = [[], []]
+        parents_merle = []
+        parents_harlequin = []
+        parents_points_genes = [[], []]
         temp_parent = [["W", "W", "W", "W", "W", "W"], ["C", "C", "C", "C", "C", "C"], ["D", "D", "D", "D", "D", "D"], ["W", "C", "W", "C", "W", "W"], ["W", "W", "W", "W", "W", "W"]]
         x = 0
-        for p in parents:
-            if p:
-                # Gather pelt color.
-                par_peltcolours.add(p.pelt.colour)
 
-                # Gather pelt length
-                par_peltlength.add(p.pelt.length)
-
-                # Gather pelt name
-                if p.pelt.name in Pelt.torties:
-                    par_peltnames.add(p.pelt.tortiebase.capitalize())
+        if len(parents) == 2:
+            x = 0
+            for p in parents:
+                parents_direct_inheritance.append(p.pelt)
+                parents_length.add(p.pelt.length)
+                parents_color.add(p.pelt.colour)
+                if p.pelt.name == 'Tortie' or p.pelt.name == 'Calico':
+                    parents_pelt.append(p.pelt.tortiebase.capitalize())
                 else:
-                    par_peltnames.add(p.pelt.name)
-
-                # Gather exact pelts, for direct inheritance.
-                par_pelts.append(p.pelt)
-
-                # Gather if they have white in their pelt.
-                par_white.append(p.pelt.white)
-                
-                # Species information
-                par_species_mix[x] = p.pelt.species_mix
+                    parents_pelt.append(p.pelt.name)
+                parents_white.append(p.pelt.white)
+                parents_merle.append(p.pelt.merle)
+                parents_harlequin.append(p.pelt.harlequin)
+                parents_points_genes[x] = p.pelt.points_genes
+                parents_species_mix[x] = p.pelt.species_mix
+                x += 1
+        else:
+            for p in parents:
+                parents_direct_inheritance.append(p.pelt)
+                parents_length.add(p.pelt.length)
+                parents_color.add(p.pelt.colour)
+                if p.pelt.name == 'Tortie' or p.pelt.name == 'Calico':
+                    parents_pelt.append(p.pelt.tortiebase.capitalize())
+                else:
+                    parents_pelt.append(p.pelt.name)
+                parents_white.append(p.pelt.white)
+                parents_merle.append(p.pelt.merle)
+                parents_harlequin.append(p.pelt.harlequin)
+                parents_points_genes.append(p.pelt.points_genes)
+                parents_points_genes[0] = p.pelt.points_genes
+                parents_species_mix[0] = p.pelt.species_mix
+            if random.randint(0, 100) <= 20:
+                parents_merle.append(True)
             else:
-                # If order for white patches to work correctly, we also want to randomly generate a "pelt_white"
-                # for each "None" parent (missing or unknown parent)
-                par_white.append(bool(random.getrandbits(1)))
-
-                # Append None
-                # Gather pelt color.
-                par_peltcolours.add(None)
-                par_peltlength.add(None)
-                par_peltnames.add(None)
-                par_species_mix[x] = random.choice(temp_parent)
-            x += 1
+                parents_merle.append(False)
+            if random.randint(0, 100) <= 8:
+                parents_harlequin.append(True)
+            else:
+                parents_harlequin.append(False)
+            parents_points_genes[1] = [None, None]
+            parents_points_genes[1][0] = random.choices(colorpoint_genes, weights=[115, 35, 20, 15, 10, 5], k=1)[0]
+            parents_points_genes[1][1] = random.choices(colorpoint_genes, weights=[115, 35, 20, 15, 10, 5], k=1)[0]
+            parents_species_mix[1] = random.choice(temp_parent)
+            parents_points_genes
+            
 		# HYBRIDIZATION - Kori
 		# Determines numbers for hybrids and sets the hybrid status. part of pelts
 		# just for simplicity, as I'm modifying this file a lot
 		# I am new to coding so lots of if/else statements sorry!
-        if len(par_species_mix[0]) != 6 or len(par_species_mix[1]) != 6:
-            if len(par_species_mix[0]) != 6 and len(par_species_mix[1]) != 6:
-                par_species_mix[0] = random.choice(temp_parent)
-                par_species_mix[1] = random.choice(temp_parent)
-            elif len(par_species_mix[0]) !=6:
-                par_species_mix[0] = random.choice(temp_parent)
-            elif len(par_species_mix[1]) != 6:
-                par_species_mix[1] = random.choice(temp_parent)
         chosen_species_mix = ["", "", "", "", "", ""]
         chosen_species = "Wolf"
         y = 0
         z = 1
         for i in range(0, 3):
-            p1 = [par_species_mix[0][y], par_species_mix[0][z]]
-            p2 = [par_species_mix[1][y], par_species_mix[1][z]]
+            p1 = [parents_species_mix[0][y], parents_species_mix[0][z]]
+            p2 = [parents_species_mix[1][y], parents_species_mix[1][z]]
             chosen_species_mix[y] = random.choice(p1)
             chosen_species_mix[z] = random.choice(p2)
             y += 2
@@ -512,19 +535,19 @@ class Pelt():
                 chosen_species = "Hybrid"
         self.species_mix = chosen_species_mix
         self.species = chosen_species
-        
-        # If this list is empty, something went wrong.
-        if not par_peltcolours:
-            print("Warning - no parents: pelt randomized")
-            return self.randomize_pattern_color(gender)
 
         # There is a 1/10 chance for kits to have the exact same pelt as one of their parents
         if not random.randint(0, game.config["cat_generation"]["direct_inheritance"]):  # 1/10 chance
-            selected = choice(par_pelts)
+            selected = choice(parents_direct_inheritance)
             self.name = selected.name
             self.length = selected.length
             self.colour = selected.colour
             self.tortiebase = selected.tortiebase
+            self.merle = selected.merle
+            self.harlequin = selected.harlequin
+            self.points_genes = selected.points_genes
+            self.points = selected.points
+            self.merle_pattern = selected.merle_pattern
             return selected.white
 
         # ------------------------------------------------------------------------------------------------------------#
@@ -534,55 +557,44 @@ class Pelt():
         # Determine pelt.
         weights = [0, 0, 0, 0, 0]  #Weights for each pelt group. It goes: (tabbies, spotted, plain, exotic)
         #standardpelts, northpelts, southpelts, darkpelts, specialpelts
-        for p_ in par_peltnames:
-            if p_ in Pelt.standardpelts:
+        for i in parents_pelt:
+            if i in Pelt.standardpelts:
                 add_weight = (50, 25, 10, 10, 5)
-            elif p_ in Pelt.northpelts:
+            elif i in Pelt.northpelts:
                 add_weight = (20, 50, 5, 5, 20)
-            elif p_ in Pelt.southpelts:
+            elif i in Pelt.southpelts:
                 add_weight = (10, 5, 50, 25, 10)
-            elif p_ in Pelt.darkpelts:
+            elif i in Pelt.darkpelts:
                 add_weight = (10, 5, 20, 50, 15)
-            elif p_ in Pelt.specialpelts:
+            elif i in Pelt.specialpelts:
                 add_weight = (10, 30, 5, 5, 50)
-            elif p_ is None:  # If there is at least one unknown parent, a None will be added to the set.
+            elif i is None:
                 add_weight = (35, 25, 20, 10, 10)
             else:
-                add_weight = (0, 0, 0, 0, 0)
+                add_weight = (35, 25, 20, 10, 10)
 
             for x in range(0, len(weights)):
                 weights[x] += add_weight[x]
 
-        #A quick check to make sure all the weights aren't 0
-        if all([x == 0 for x in weights]):
-            weights = [1, 1, 1, 1, 1]
-
         # Now, choose the pelt category and pelt. The extra 0 is for the tortie pelts,
         chosen_pelt = ""
-        temp_chosen_pelt = random.choices(Pelt.pelt_categories, weights=weights + [0], k = 1)
-        if "Graywolf" in temp_chosen_pelt[0]:
+        temp_chosen_pelt = random.choices(Pelt.pelt_categories, weights=weights + [0], k = 1)[0]
+        if "Graywolf" in temp_chosen_pelt:
             chosen_pelt = random.choices(Pelt.standardpelts, weights=(60, 40, 40, 40, 20, 20), k = 1)[0]
-        elif "Arctic" in temp_chosen_pelt[0]:
+        elif "Arctic" in temp_chosen_pelt:
             chosen_pelt = random.choices (Pelt.northpelts, weights=(65, 65, 20), k = 1)[0]
-        elif "Mexican" in temp_chosen_pelt[0]:
+        elif "Mexican" in temp_chosen_pelt:
             chosen_pelt = random.choices(Pelt.southpelts, weights=(50, 50, 50), k = 1)[0]
-        elif "Colorpoint" in temp_chosen_pelt[0]:
+        elif "Colorpoint" in temp_chosen_pelt:
             chosen_pelt = random.choices(Pelt.darkpelts, weights=(50, 70, 15), k = 1)[0]
-        elif "Semisolid" in temp_chosen_pelt[0]:
+        elif "Semisolid" in temp_chosen_pelt:
             chosen_pelt = random.choices(Pelt.specialpelts, weights=(70, 20, 10), k = 1)[0]
         else:
             print('Hi you borked the inheritance for pelts')
 
         # Tortie chance
-        tortie_chance_f = game.config["cat_generation"]["base_female_tortie"]  # There is a default chance for female tortie
+        tortie_chance_f = game.config["cat_generation"]["base_female_tortie"]
         tortie_chance_m = game.config["cat_generation"]["base_male_tortie"]
-        for p_ in par_pelts:
-            if p_.name in Pelt.torties:
-                tortie_chance_f = int(tortie_chance_f / 2)
-                tortie_chance_m = tortie_chance_m - 1
-                break
-
-        # Determine tortie:
         if gender == "female":
             torbie = random.getrandbits(tortie_chance_f) == 1
         else:
@@ -591,53 +603,46 @@ class Pelt():
         chosen_tortie_base = None
         if torbie:
             # If it is tortie, the chosen pelt above becomes the base pelt.
-            chosen_tortie_base = chosen_pelt
-            if chosen_tortie_base in ["Semisolid", "Solid"]:
-                chosen_tortie_base = "Solid"
-            chosen_tortie_base = chosen_tortie_base.lower()
+            chosen_tortie_base = str(chosen_pelt).lower()
             chosen_pelt = random.choice(Pelt.torties)
 
         # ------------------------------------------------------------------------------------------------------------#
         #   PELT COLOUR
         # ------------------------------------------------------------------------------------------------------------#
-        # Weights for each colour group. It goes: (ginger_colours, black_colours, white_colours, brown_colours)
+        # Weights for each colour group
         # yellow_colors, gray_colors, black_colors, red_colors, dilute_colors
         weights = [0, 0, 0, 0, 0]
-        for p_ in par_peltcolours:
-            if p_ in Pelt.yellow_colors:
+        for i in parents_color:
+            if i in Pelt.yellow_colors:
                 add_weight = (55, 10, 10, 20, 5)
-            elif p_ in Pelt.gray_colors:
+            elif i in Pelt.gray_colors:
                 add_weight = (10, 40, 25, 5, 20)
-            elif p_ in Pelt.black_colors:
+            elif i in Pelt.black_colors:
                 add_weight = (5, 30, 40, 5, 20)
-            elif p_ in Pelt.red_colors:
+            elif i in Pelt.red_colors:
                 add_weight = (30, 5, 5, 55, 5)
-            elif p_ in Pelt.dilute_colors:
+            elif i in Pelt.dilute_colors:
                 add_weight = (10, 25, 20, 10, 35)
-            elif p_ is None:
+            elif i is None:
                 add_weight = (35, 25, 20, 15, 5)
             else:
-                add_weight = (0, 0, 0, 0, 0)
+                add_weight = (35, 25, 20, 15, 5)
 
             for x in range(0, len(weights)):
                 weights[x] += add_weight[x]
-
-            # A quick check to make sure all the weights aren't 0
-            if all([x == 0 for x in weights]):
-                weights = [1, 1, 1, 1, 1]
-        
         chosen_pelt_color = ""
-        temp_chosen_pelt_color = random.choices(Pelt.colour_categories, weights=weights, k=1)
-        if "HONEY" in temp_chosen_pelt_color[0]:
-            chosen_pelt_color = random.choices(Pelt.yellow_colors, weights=(50, 50, 50, 50, 15, 15, 15, 25), k=1)[0]
-        elif "MIST" in temp_chosen_pelt_color[0]:
-            chosen_pelt_color = random.choices(Pelt.gray_colors, weights=(70, 70, 70, 20, 20), k=1)[0]
-        elif "BLACK" in temp_chosen_pelt_color[0]:
-            chosen_pelt_color = random.choices(Pelt.black_colors, weights=(90, 10, 20), k=1)[0]
-        elif "SPICE" in temp_chosen_pelt_color[0]:
-            chosen_pelt_color = random.choices(Pelt.red_colors, weights=(80, 80, 20), k=1)[0]
-        elif "CHOCOLATE" in temp_chosen_pelt_color[0]:
-            chosen_pelt_color = random.choices(Pelt.dilute_colors, weights=(70, 40, 70, 40, 20, 10), k=1)[0]
+        color_list = Pelt.color_categories
+        temp_chosen_pelt_color = random.choices(color_list, weights=weights, k=1)[0]
+        if "HONEY" in temp_chosen_pelt_color:
+            chosen_pelt_color = random.choices(color_list[0], weights=(50, 50, 50, 50, 15, 15, 15, 25), k=1)[0]
+        elif "MIST" in temp_chosen_pelt_color:
+            chosen_pelt_color = random.choices(color_list[1], weights=(70, 70, 70, 20, 20), k=1)[0]
+        elif "BLACK" in temp_chosen_pelt_color:
+            chosen_pelt_color = random.choices(color_list[2], weights=(90, 10, 20), k=1)[0]
+        elif "SPICE" in temp_chosen_pelt_color:
+            chosen_pelt_color = random.choices(color_list[3], weights=(80, 80, 20), k=1)[0]
+        elif "CHOCOLATE" in temp_chosen_pelt_color:
+            chosen_pelt_color = random.choices(color_list[4], weights=(70, 40, 70, 40, 20, 10), k=1)[0]
         else:
             print('color inheritance is borked')
         # ------------------------------------------------------------------------------------------------------------#
@@ -645,49 +650,129 @@ class Pelt():
         # ------------------------------------------------------------------------------------------------------------#
 
         weights = [0, 0, 0]  # Weights for each length. It goes (short, medium, long)
-        for p_ in par_peltlength:
-            if p_ == "short":
+        for i in parents_length:
+            if i == "short":
                 add_weight = (50, 10, 2)
-            elif p_ == "medium":
+            elif i == "medium":
                 add_weight = (25, 50, 25)
-            elif p_ == "long":
+            elif i == "long":
                 add_weight = (2, 10, 50)
-            elif p_ is None:
+            elif i is None:
                 add_weight = (10, 10, 10)
             else:
-                add_weight = (0, 0, 0)
+                add_weight = (10, 10, 10)
 
             for x in range(0, len(weights)):
                 weights[x] += add_weight[x]
 
-        # A quick check to make sure all the weights aren't 0
-        if all([x == 0 for x in weights]):
-            weights = [1, 1, 1]
-
         chosen_pelt_length = random.choices(Pelt.pelt_length, weights=weights, k=1)[0]
+        
+        # ------------------------------------------------------------------------------------------------------------#
+        #   MERLE AND HARLEQUIN
+        # ------------------------------------------------------------------------------------------------------------#
+        merle_bool = False
+        harlequin_bool = False
+        chosen_merle_pattern = ["", "", "", ""]
+        merle_colors = [Pelt.red_merle_colors, Pelt.standard_merle_colors, Pelt.blue_merle_colors,
+                        Pelt.chocolate_merle_colors, Pelt.lilac_merle_colors]
+                
+        #basically if either or both parents are merle the pup will have a 50/50 chance to be that as well
+        if parents_merle[0] or parents_merle[1]:
+            if random.randint(0, 1) == 0:
+                merle_bool = True
+            else:
+                merle_bool = False
+        if parents_harlequin[0] or parents_harlequin[1]:
+            if random.randint(0, 1) == 0:
+                harlequin_bool = True
+            else:
+                harlequin_bool = False
 
+        # only calculate merle info if merle
+        if merle_bool:
+            #decide on a pattern and color combo [0] = pattern, [1] = dark merle patch, [2] = red merle patch,
+            #[3] = dilute merle patch
+            chosen_merle_pattern[0] = random.choice(Pelt.merles)
+            chosen_merle_pattern[2] = merle_colors[0][chosen_pelt_color]
+
+            #change merle outcomes based on dilutes
+            if chosen_pelt_color in Pelt.dilute_colors:
+                if chosen_pelt_color == "BLUE" or chosen_pelt_color == "SPRUCE":
+                    quickchoice = random.choice(merle_colors[2])
+                elif chosen_pelt_color == "CHOCOLATE" or chosen_pelt_color == "COCOA":
+                    quickchoice = random.choice(merle_colors[3])
+                else:
+                    quickchoice = random.choice(merle_colors[4])
+            else:
+                quickchoice = random.choice(merle_colors[1])
+
+            # overwriting to None if the pelt doesn't need a red color. torties are handled in utility.py
+            # torties automatically given the value None to help the process later
+            if chosen_pelt not in Pelt.include_red_merle:
+                chosen_merle_pattern[2] = None
+
+            #set the final merle colors
+            chosen_merle_pattern[1] = quickchoice[0]
+            chosen_merle_pattern[3] = quickchoice[1]
+        
+        # ------------------------------------------------------------------------------------------------------------#
+        #   COLORPOINT (NEW)
+        # ------------------------------------------------------------------------------------------------------------#
+        chosen_points_genes = ["", ""]
+        points_outcome = ""
+        colorpoint_types = Pelt.point_markings
+        
+        temp_number = random.randint(0, 1)
+        chosen_points_genes[0] = parents_points_genes[0][temp_number]
+        temp_number = random.randint(0, 1)
+        chosen_points_genes[1] = parents_points_genes[1][temp_number]
+
+        if "C" in chosen_points_genes:
+            points_outcome = None
+        elif "cb" in chosen_points_genes:
+            if "cs" in chosen_points_genes or "ch" in chosen_points_genes:
+                points_outcome = colorpoint_types[1]
+            elif "cw" in chosen_points_genes or "c" in chosen_points_genes:
+                points_outcome = colorpoint_types[2]
+            else:
+                points_outcome = colorpoint_types[0]
+        elif "cs" in chosen_points_genes:
+            if "ch" in chosen_points_genes:
+                points_outcome = colorpoint_types[2]
+            elif "cw" in chosen_points_genes or "c" in chosen_points_genes:
+                points_outcome = colorpoint_types[3]
+            else:
+                points_outcome = colorpoint_types[2]
+        elif "ch" in chosen_points_genes:
+            points_outcome = colorpoint_types[4]
+        elif "cw" in chosen_points_genes:
+            points_outcome = colorpoint_types[5]
+        elif "c" in chosen_points_genes:
+            points_outcome = colorpoint_types[6]
+        else:
+            print('colorpoint messed up')
+        
         # ------------------------------------------------------------------------------------------------------------#
         #   PELT WHITE
         # ------------------------------------------------------------------------------------------------------------#
-
-        # There is 94 percentage points that can be added by
-        # parents having white. If we have more than two, this
-        # will keep that the same.
-        percentage_add_per_parent = int(94 / len(par_white))
-        chance = 3
-        for p_ in par_white:
-            if p_:
-                chance += percentage_add_per_parent
+        chance = 0
+        if len(parents) == 2:
+            for w in parents_white:
+                if w:
+                    chance += 35
+            if "D" in self.species_mix:
+                chance += 20
+        else:
+            for w in parents_white:
+                if w:
+                    chance += 35
+            if "D" in self.species_mix:
+                chance += 40
 
         chosen_white = random.randint(1, 100) <= chance
 
-        # Adjustments to pelt chosen based on if the pelt has white in it or not.
-        if chosen_pelt in ["TwoColour", "SingleColour"]:
-            if chosen_white:
-                chosen_pelt = "TwoColour"
-            else:
-                chosen_pelt = "SingleColour"
-        elif chosen_pelt == "Calico":
+        # Adjustments to pelt chosen based on if the pelt has white in it or not
+        if chosen_pelt == "Calico":
             if not chosen_white:
                 chosen_pelt = "Tortie"
 
@@ -696,6 +781,11 @@ class Pelt():
         self.colour = chosen_pelt_color
         self.length = chosen_pelt_length
         self.tortiebase = chosen_tortie_base   # This will be none if the cat isn't a tortie.
+        self.points_genes = chosen_points_genes
+        self.points = points_outcome
+        self.merle = merle_bool
+        self.harlequin = harlequin_bool
+        self.merle_pattern = chosen_merle_pattern
         return chosen_white
 
     def randomize_pattern_color(self, gender):
@@ -705,23 +795,23 @@ class Pelt():
 
         # Determine pelt.
         chosen_pelt = ""
-        temp_chosen_pelt = random.choices(Pelt.pelt_categories, weights=(35, 25, 20, 15, 5, 0), k = 1)
-        if "Graywolf" in temp_chosen_pelt[0]:
+        temp_chosen_pelt = random.choices(Pelt.pelt_categories, weights=(35, 25, 20, 15, 5, 0), k = 1)[0]
+        if "Graywolf" in temp_chosen_pelt:
             chosen_pelt = random.choices(Pelt.standardpelts, weights=(60, 40, 40, 40, 20, 20), k = 1)[0]
-        elif "Arctic" in temp_chosen_pelt[0]:
+        elif "Arctic" in temp_chosen_pelt:
             chosen_pelt = random.choices (Pelt.northpelts, weights=(70, 70, 20), k = 1)[0]
-        elif "Mexican" in temp_chosen_pelt[0]:
+        elif "Mexican" in temp_chosen_pelt:
             chosen_pelt = random.choices(Pelt.southpelts, weights=(50, 50, 50), k = 1)[0]
-        elif "Colorpoint" in temp_chosen_pelt[0]:
+        elif "Colorpoint" in temp_chosen_pelt:
             chosen_pelt = random.choices(Pelt.darkpelts, weights=(50, 70, 20), k = 1)[0]
-        elif "Semisolid" in temp_chosen_pelt[0]:
+        elif "Semisolid" in temp_chosen_pelt:
             chosen_pelt = random.choices(Pelt.specialpelts, weights=(70, 20, 10), k = 1)[0]
         else:
             print('Hi you borked the randomized pelts')
 
         # Tortie chance
         # There is a default chance for female tortie, slightly increased for completely random generation.
-        tortie_chance_f = game.config["cat_generation"]["base_female_tortie"] - 1
+        tortie_chance_f = game.config["cat_generation"]["base_female_tortie"]
         tortie_chance_m = game.config["cat_generation"]["base_male_tortie"]
         if gender == "female":
             torbie = random.getrandbits(tortie_chance_f) == 1
@@ -731,39 +821,35 @@ class Pelt():
         chosen_tortie_base = None
         if torbie:
             # If it is tortie, the chosen pelt above becomes the base pelt.
-            chosen_tortie_base = chosen_pelt
-            if chosen_tortie_base in ["TwoColour", "SingleColour"]:
-                chosen_tortie_base = "Single"
-            chosen_tortie_base = chosen_tortie_base.lower()
+            chosen_tortie_base = str(chosen_pelt).lower()
             chosen_pelt = random.choice(Pelt.torties)
 
         # ------------------------------------------------------------------------------------------------------------#
         #   PELT COLOUR
         # ------------------------------------------------------------------------------------------------------------#
-
         chosen_pelt_color = ""
-        temp_chosen_pelt_color = random.choices(Pelt.colour_categories, weights=(35, 25, 20, 15, 5), k=1)
-        if "HONEY" in temp_chosen_pelt_color[0]:
-            chosen_pelt_color = random.choices(Pelt.yellow_colors, weights=(50, 50, 50, 50, 10, 10, 10, 25), k=1)[0]
-        elif "MIST" in temp_chosen_pelt_color[0]:
-            chosen_pelt_color = random.choices(Pelt.gray_colors, weights=(70, 70, 70, 10, 10), k=1)[0]
-        elif "BLACK" in temp_chosen_pelt_color[0]:
-            chosen_pelt_color = random.choices(Pelt.black_colors, weights=(90, 10, 20), k=1)[0]
-        elif "SPICE" in temp_chosen_pelt_color[0]:
-            chosen_pelt_color = random.choices(Pelt.red_colors, weights=(80, 80, 20), k=1)[0]
-        elif "CHOCOLATE" in temp_chosen_pelt_color[0]:
-            chosen_pelt_color = random.choices(Pelt.dilute_colors, weights=(70, 40, 70, 40, 20, 10), k=1)[0]
+        color_list = Pelt.color_categories
+        temp_chosen_pelt_color = random.choices(color_list, weights=(35, 25, 20, 10, 5), k=1)[0]
+        if "HONEY" in temp_chosen_pelt_color:
+            chosen_pelt_color = random.choices(color_list[0], weights=(50, 50, 50, 50, 10, 10, 10, 25), k=1)[0]
+        elif "MIST" in temp_chosen_pelt_color:
+            chosen_pelt_color = random.choices(color_list[1], weights=(70, 70, 70, 10, 10), k=1)[0]
+        elif "BLACK" in temp_chosen_pelt_color:
+            chosen_pelt_color = random.choices(color_list[2], weights=(90, 10, 20), k=1)[0]
+        elif "SPICE" in temp_chosen_pelt_color:
+            chosen_pelt_color = random.choices(color_list[3], weights=(80, 80, 20), k=1)[0]
+        elif "CHOCOLATE" in temp_chosen_pelt_color:
+            chosen_pelt_color = random.choices(color_list[4], weights=(70, 40, 70, 40, 20, 10), k=1)[0]
         else:
             print('color randomization is borked')
 
         # ------------------------------------------------------------------------------------------------------------#
         #   PELT LENGTH
         # ------------------------------------------------------------------------------------------------------------#
-
-
         chosen_pelt_length = random.choice(Pelt.pelt_length)
-
-		# SPECIES
+        # ------------------------------------------------------------------------------------------------------------#
+        #   SPECIES
+        # ------------------------------------------------------------------------------------------------------------#
         chosen_species_mix = ["", "", "", "", "", ""]
         chosen_species = ""
         poss_genes = ["W", "C", "D"]
@@ -796,21 +882,98 @@ class Pelt():
                 chosen_species = "Coyote Hybrid"
             else:
                 chosen_species = "Hybrid"
-				
+                
+        # ------------------------------------------------------------------------------------------------------------#
+        #   MERLE AND HARLEQUIN
+        # ------------------------------------------------------------------------------------------------------------#
+        merle_bool = False
+        harlequin_bool = False
+        chosen_merle_pattern = ["", "", "", ""]
+        merle_colors = [Pelt.red_merle_colors, Pelt.standard_merle_colors, Pelt.blue_merle_colors,
+                        Pelt.chocolate_merle_colors, Pelt.lilac_merle_colors]
+
+        #find out if they're merle or harlequin at all
+        temp_chance = random.randint(0, 100)
+        if temp_chance <= 8:
+            merle_bool = True
+        temp_chance = random.randint(0, 100)
+        if temp_chance <= 2:
+            harlequin_bool = True
+
+        # only calculate merle info if merle
+        if merle_bool:
+            #decide on a pattern and color combo [0] = pattern, [1] = dark merle patch, [2] = red merle patch,
+            #[3] = dilute merle patch
+            chosen_merle_pattern[0] = random.choice(Pelt.merles)
+            chosen_merle_pattern[2] = merle_colors[0][chosen_pelt_color]
+
+            #change merle outcomes based on dilutes
+            if chosen_pelt_color in Pelt.dilute_colors:
+                if chosen_pelt_color == "BLUE" or chosen_pelt_color == "SPRUCE":
+                    quickchoice = random.choice(merle_colors[2])
+                elif chosen_pelt_color == "CHOCOLATE" or chosen_pelt_color == "COCOA":
+                    quickchoice = random.choice(merle_colors[3])
+                else:
+                    quickchoice = random.choice(merle_colors[4])
+            else:
+                quickchoice = random.choice(merle_colors[1])
+
+            # overwriting to None if the pelt doesn't need a red color. torties are handled in utility.py
+            # torties given value of None here
+            if chosen_pelt not in Pelt.include_red_merle:
+                chosen_merle_pattern[2] = None
+
+            #set the final merle colors
+            chosen_merle_pattern[1] = quickchoice[0]
+            chosen_merle_pattern[3] = quickchoice[1]
+
+        # ------------------------------------------------------------------------------------------------------------#
+        #   COLORPOINT (NEW)
+        # ------------------------------------------------------------------------------------------------------------#
+        chosen_points_genes = ["C", "C"]
+        points_outcome = None
+        colorpoint_types = Pelt.point_markings
+        colorpoint_genes = Pelt.point_genes
+
+        chosen_points_genes[0] = random.choices(colorpoint_genes, weights=[145, 25, 15, 10, 4, 2], k=1)[0]
+        chosen_points_genes[1] = random.choices(colorpoint_genes, weights=[145, 25, 15, 10, 4, 2], k=1)[0]
+
+        if "C" in chosen_points_genes:
+            points_outcome = None
+        elif "cb" in chosen_points_genes:
+            if "cs" in chosen_points_genes or "ch" in chosen_points_genes:
+                points_outcome = colorpoint_types[1]
+            elif "cw" in chosen_points_genes or "c" in chosen_points_genes:
+                points_outcome = colorpoint_types[2]
+            else:
+                points_outcome = colorpoint_types[0]
+        elif "cs" in chosen_points_genes:
+            if "ch" in chosen_points_genes:
+                points_outcome = colorpoint_types[2]
+            elif "cw" in chosen_points_genes or "c" in chosen_points_genes:
+                points_outcome = colorpoint_types[3]
+            else:
+                points_outcome = colorpoint_types[2]
+        elif "ch" in chosen_points_genes:
+            points_outcome = colorpoint_types[4]
+        elif "cw" in chosen_points_genes:
+            points_outcome = colorpoint_types[5]
+        elif "c" in chosen_points_genes:
+            points_outcome = colorpoint_types[6]
+        else:
+            print('colorpoint messed up')
+
         # ------------------------------------------------------------------------------------------------------------#
         #   PELT WHITE
         # ------------------------------------------------------------------------------------------------------------#
 
-
-        chosen_white = random.randint(1, 100) <= 40
+        if "D" in chosen_species_mix:
+            chosen_white = random.randint(1, 100) <= 55
+        else:
+            chosen_white = random.randint(1, 100) <= 35
 
         # Adjustments to pelt chosen based on if the pelt has white in it or not.
-        if chosen_pelt in ["TwoColour", "SingleColour"]:
-            if chosen_white:
-                chosen_pelt = "TwoColour"
-            else:
-                chosen_pelt = "SingleColour"
-        elif chosen_pelt == "Calico":
+        if chosen_pelt == "Calico":
             if not chosen_white:
                 chosen_pelt = "Tortie"
 
@@ -820,6 +983,11 @@ class Pelt():
         self.tortiebase = chosen_tortie_base   # This will be none if the cat isn't a tortie.
         self.species_mix = chosen_species_mix
         self.species = chosen_species
+        self.points_genes = chosen_points_genes
+        self.points = points_outcome
+        self.merle = merle_bool
+        self.harlequin = harlequin_bool
+        self.merle_pattern = chosen_merle_pattern
         return chosen_white
 
     def init_pattern_color(self, parents, gender) -> bool:
@@ -830,7 +998,6 @@ class Pelt():
             false is not. """
         
         if parents:
-            #If the cat has parents, use inheritance to decide pelt.
             chosen_white = self.pattern_color_inheritance(parents, gender)
         else:
             chosen_white = self.randomize_pattern_color(gender)
@@ -847,25 +1014,32 @@ class Pelt():
             'sick_adult': 18
         }
         self.reverse = choice([True, False])
+        self.cat_sprites['adult'] = random.randint(6, 11)
+        self.cat_sprites['para_adult'] = 15
+        self.cat_sprites['young adult'] = self.cat_sprites['adult']
+        self.cat_sprites['senior adult'] = self.cat_sprites['adult']
         # skin chances
         temp_dilute_list = ['CHOCOLATE', 'COCOA', 'BLUE', 'SPRUCE', 'LILAC', 'ISABELLA']
         skin_sprites = Pelt.skin_sprites.copy()
         low_white = Pelt.low_white.copy()
         mid_white = Pelt.mid_white.copy()
         high_white = Pelt.high_white.copy()
-        if self.white_patches == None and self.colour not in temp_dilute_list and self.tortiepattern == None:
+        temp_points = ['HIMALAYAN', 'BEW', 'ALBINO']
+        if self.white_patches == None and self.colour not in temp_dilute_list and self.tortiepattern == None and self.points not in temp_points and not self.merle:
             skin_list = [skin_sprites[0], skin_sprites[11]]
             self.skin = random.choices(skin_list, weights=(90, 10), k=1)[0]
+        elif self.points in temp_points:
+            self.skin = skin_sprites[10]
         elif self.colour in temp_dilute_list:
             if self.colour == "CHOCOLATE" or self.colour == 'COCOA':
-                if self.white_patches == None and self.tortiepattern == None:
+                if self.white_patches == None and self.tortiepattern == None and not self.merle:
                     skin_list = [skin_sprites[8], skin_sprites[9]]
                     self.skin = random.choices(skin_list, weights=(60, 40), k=1)[0]
                 else:
                     skin_list = [skin_sprites[8], skin_sprites[9], skin_sprites[5], skin_sprites[10]]
                     self.skin = random.choices(skin_list, weights=(10, 20, 40, 30), k=1)[0]
             elif self.colour == "BLUE" or self.colour == 'SPRUCE':
-                if self.white_patches == None and self.tortiepattern == None:
+                if self.white_patches == None and self.tortiepattern == None and not self.merle:
                     skin_list = [skin_sprites[1], skin_sprites[6]]
                     self.skin = random.choices(skin_list, weights=(60, 40), k=1)[0]
                 else:
@@ -873,13 +1047,13 @@ class Pelt():
                     skin_list = [skin_sprites[1], skin_sprites[6], skin_sprites[4], skin_sprites[10]]
                     self.skin = random.choices(skin_list, weights=(30, 20, 40, 10), k=1)[0]
             else:
-                if self.white_patches == None and self.tortiepattern == None:
+                if self.white_patches == None and self.tortiepattern == None and not self.merle:
                     skin_list = [skin_sprites[7], skin_sprites[10]]
                     self.skin = random.choices(skin_list, weights=(80, 20), k=1)[0]
                 else:
                     self.skin = skin_sprites[10]
         elif self.white_patches != None:
-            if self.tortiepattern != None:
+            if self.tortiepattern != None or self.merle:
                 if self.white_patches not in high_white:
                     skin_list = [skin_sprites[0], skin_sprites[2], skin_sprites[3], skin_sprites[11], skin_sprites[12]]
                     self.skin = random.choices(skin_list, weights=(10, 30, 15, 15, 30), k=1)[0]
@@ -891,20 +1065,12 @@ class Pelt():
             else:
                 skin_list = [skin_sprites[0], skin_sprites[3], skin_sprites[11]]
                 self.skin = random.choices(skin_list, weights=(60, 20, 20), k=1)[0]
-        elif self.tortiepattern != None:
+        elif self.tortiepattern != None or self.merle:
             skin_list = [skin_sprites[0], skin_sprites[2], skin_sprites[3], skin_sprites[11]]
             self.skin = random.choice(skin_list)
         else:
             self.skin = choice(Pelt.skin_sprites)
-                
-        if self.length != 'long':
-            self.cat_sprites['adult'] = random.randint(6, 11)
-            self.cat_sprites['para_adult'] = 16
-        else:
-            self.cat_sprites['adult'] = random.randint(6, 11)
-            self.cat_sprites['para_adult'] = 16
-        self.cat_sprites['young adult'] = self.cat_sprites['adult']
-        self.cat_sprites['senior adult'] = self.cat_sprites['adult']
+
 
     def init_scars(self, age):
         if age == "newborn":
@@ -944,12 +1110,12 @@ class Pelt():
             ])
         elif acc_display_choice in range(31, 45):
             self.accessory = choice(Pelt.radiocollars)
-        elif acc_display_choice in range(46, 53):
+        elif acc_display_choice in range(46, 62):
             self.accessory = choice([
                  choice(Pelt.collars),
             	 choice(Pelt.bandanas)
             ])
-        elif acc_display_choice in range(54, 60):
+        elif acc_display_choice in range(63, 71):
             self.accessory = choice(Pelt.harnesses)
         else:
             self.accessory = None
@@ -1002,9 +1168,9 @@ class Pelt():
                         if self.colour == "LILAC" or self.colour == "ISABELLA":
                             lilac_temp = ["LILAC", "ISABELLA"]
                             self.tortiecolour = choice(lilac_temp)
+                    
                     else:
                         self.tortiecolour = "HONEY"
-
             else:
                 self.tortiecolour = "HONEY"
         else:
@@ -1012,145 +1178,97 @@ class Pelt():
             self.tortiepattern = None
             self.tortiecolour = None
             self.pattern = None
+        # accounting for a weird thing
+        if self.tortiepattern == self.tortiebase and self.colour == self.tortiecolour:
+            poss_bases = Pelt.tortiebases
+            poss_bases.remove(str(self.tortiepattern))
+            self.tortiepattern = random.choice(poss_bases).lower()
 
     def white_patches_inheritance(self, parents: tuple):
+        parents_white = []
+        white_list = [Pelt.low_white, Pelt.mid_white, Pelt.high_white]
 
-        par_whitepatches = set()
-        par_points = []
-        for p in parents:
-            if p:
-                if p.pelt.white_patches:
-                    par_whitepatches.add(p.pelt.white_patches)
-                if p.pelt.points:
-                    par_points.append(p.pelt.points)
+        # collecting parent info (or making it up)
+        if len(parents) == 2:
+            for p in parents:
+                if p:
+                    if p.pelt.white_patches:
+                        parents_white.append(p.pelt.white_patches)
+        else:
+            for p in parents:
+                if p:
+                    if p.pelt.white_patches:
+                        parents_white.append(p.pelt.white_patches)
+                if random.randint(0, 10) <= 4:
+                    parents_white.append(random.choice(random.choices(white_list, weights=[65, 30, 5], k=1)[0]))
+            # the alternative is no white patches are added to the list
 
-        if not parents:
-            print("Error - no parents. Randomizing white patches.")
-            self.randomize_white_patches()
+        # direct inheritance
+        if len(parents_white) != 0 and not random.randint(0, game.config["cat_generation"]["direct_inheritance"]):
+            if self.name == 'Tortie':
+                for i in parents_white:
+                    if i in white_list[1] or i in white_list[2]:
+                        parents_white.remove(p)
+                if len(parents_white) != 0:
+                    self.white_patches = random.choice(parents_white)
+                else:
+                    self.white_patches = random.choice(random.choices(white_list, weights=[1, 0, 0], k=1)[0])
+            elif self.name == 'Calico':
+                for i in parents_white:
+                    if i in white_list[0]:
+                        parents_white.remove(p)
+                if len(parents_white) != 0:
+                    self.white_patches = random.choice(parents_white)
+                else:
+                    self.white_patches = random.choice(random.choices(white_list, weights=[0, 7, 3], k=1)[0])
+            else:
+                self.white_patches = random.choice(parents_white)
             return
 
-        # Direct inheritance. Will only work if at least one parent has white patches, otherwise continue on.
-        if par_whitepatches and not random.randint(0, game.config["cat_generation"]["direct_inheritance"]):
-            # This ensures Torties and Calicos won't get direct inheritance of incorrect white patch types
-            _temp = par_whitepatches.copy()
-            if self.name == "Tortie":
-                for p in _temp.copy():
-                    if p in Pelt.high_white + Pelt.mostly_white + ["FULLWHITE"]:
-                        _temp.remove(p)
-            elif self.name == "Calico":
-                for p in _temp.copy():
-                    if p in Pelt.low_white + Pelt.mid_white:
-                        _temp.remove(p)
+        # setting weights, starting with checking if there are parent white patches. if not, we'll make up some numbers
+        weights = [0, 0, 0]
+        if len(parents_white) != 0:
+            for i in parents_white:
+                if i in white_list[0]: # low white
+                    weights[0] += 60
+                    weights[1] += 30
+                    weights[2] += 10
+                elif i in white_list[1]: # mid white
+                    weights[0] += 40
+                    weights[1] += 50
+                    weights[2] += 10
+                elif i in white_list[2]: # high white
+                    weights[0] += 20
+                    weights[1] += 50
+                    weights[2] += 30
+        else: # if neither parent has white, make up some stuff
+            weights = [60, 30, 10]
 
-            # Only proceed with the direct inheritance if there are white patches that match the pelt.
-            if _temp:
-                self.white_patches = choice(list(_temp))
-
-                # Direct inheritance also effect the point marking.
-                if par_points and self.name != "Tortie":
-                    self.points = choice(par_points)
-                else:
-                    self.points = None
-
-                return
-
-        # dealing with points
-        if par_points:
-            chance = 10 - len(par_points)
-        else:
-            chance = 40
-
-        if self.name != "Tortie" and not (random.random() * chance):
-            self.points = choice(Pelt.point_markings)
-        else:
-            self.points = None
-
-
-        white_list = [Pelt.low_white, Pelt.mid_white, Pelt.high_white]
-
-        weights = [0, 0, 0]  # Same order as white_list
-        for p_ in par_whitepatches:
-            if p_ in Pelt.low_white:
-                add_weights = (45, 15, 5)
-            elif p_ in Pelt.mid_white:
-                add_weights = (20, 45, 15)
-            elif p_ in Pelt.high_white:
-                add_weights = (15, 45, 35)
+        if self.name == 'Tortie' or self.name == 'Calico': #adjusting for torties
+            if self.name == 'Tortie':
+                weights[1] == 0
+                weights[2] == 0
             else:
-                add_weights = (0, 0, 0)
+                weights[0] == 0
 
-            for x in range(0, len(weights)):
-                weights[x] += add_weights[x]
-
-
-        # If all the weights are still 0, that means none of the parents have white patches.
-        if not any(weights):
-            if not all(parents):  # If any of the parents are None (unknown), use the following distribution:
-                weights = [30, 10, 5]
-            else:
-                # Otherwise, all parents are known and don't have any white patches. Focus distribution on little_white.
-                weights = [35, 5, 0]
-
-        # Adjust weights for torties, since they can't have anything greater than mid_white:
-        if self.name == "Tortie":
-            weights = weights[:2] + [0, 0]
-            # Another check to make sure not all the values are zero. This should never happen, but better
-            # safe then sorry.
-            if not any(weights):
-                weights = [2, 1, 0]
-        elif self.name == "Calico":
-            weights = [0, 0] + weights[2:]
-            # Another check to make sure not all the values are zero. This should never happen, but better
-            # safe then sorry.
-            if not any(weights):
-                weights = [2, 1, 0]
-
-        #kori - fix for now, weights aren't adding up correctly for whatever reason
-        if len(weights) != 3:
-            weights = [35, 5, 0]
-
-        chosen_white_patches = choice(random.choices(white_list, weights=weights, k=1)[0])
-
+        chosen_white_patches = random.choices(white_list, weights=weights, k=1)[0]
+        chosen_white_patches = random.choice(chosen_white_patches)
         self.white_patches = chosen_white_patches
-        if self.points and self.white_patches in [Pelt.high_white, Pelt.mostly_white, 'FULLWHITE']:
-            self.points = None
 
     def randomize_white_patches(self):
-
-        # Points determination. Tortie can't be pointed
-        #if self.name != "Tortie" and not random.getrandbits(game.config["cat_generation"]["random_point_chance"]):
-			# Cat has colorpoint!
-        #    self.points = choice(Pelt.point_markings)
-        #else:
-        self.points = None
-
-        # Adjust weights for torties, since they can't have anything greater than mid_white:
         if self.name == "Tortie":
-            weights = (55, 0, 0)
+            weights = (1, 0, 0)
         elif self.name == "Calico":
-            weights = (15, 50, 25)
+            weights = (0, 50, 20)
         else:
-            weights = (30, 10, 5)
+            weights = (55, 35, 10)
 
         white_list = [Pelt.low_white, Pelt.mid_white, Pelt.high_white]
         chosen_white_patches = choice(random.choices(white_list, weights=weights, k=1)[0])
 
         self.white_patches = chosen_white_patches
-        if self.points and self.white_patches in [Pelt.high_white, Pelt.mostly_white, 'FULLWHITE']:
-            self.points = None
 
     def init_white_patches(self, pelt_white, parents:tuple):
-        # Vit can roll for anyone, not just cats who rolled to have white in their pelt. 
-        #par_vit = []
-        #for p in parents:
-        #    if p:
-        #        if p.pelt.vitiligo:
-        #            par_vit.append(p.pelt.vitiligo)
-        
-        #vit_chance = max(game.config["cat_generation"]["vit_chance"] - len(par_vit), 0)
-        #if not random.getrandbits(vit_chance):
-        #    self.vitiligo = choice(Pelt.vit)
-
         # If the cat was rolled previously to have white patches, then determine the patch they will have
         # these functions also handle points. 
         if pelt_white:
@@ -1160,10 +1278,9 @@ class Pelt():
                 self.randomize_white_patches()
         else:
             self.white_patches = None
-            self.points = None
 
     def init_tint(self):
-        """Sets tint for pelt and white patches"""
+        # edited this to stop the generation of blue/red combos bc they're ugly
 
         # PELT TINT
         # Basic tints as possible for all colors.
@@ -1181,8 +1298,12 @@ class Pelt():
 
         # WHITE PATCHES TINT
         if self.white_patches or self.points:
-            #Now for white patches
             base_tints = sprites.white_patches_tints["possible_tints"]["basic"]
+            if self.points == 'BEW' or self.points == 'ALBINO':
+                if self.points == 'BEW':
+                    self.white_patches_tint == 'yellowwhite'
+                else:
+                    self.white_patches_tint == 'none'
             if self.colour in sprites.cat_tints["colour_groups"]:
                 color_group = sprites.white_patches_tints["colour_groups"].get(self.colour, "white")
                 color_tints = sprites.white_patches_tints["possible_tints"][color_group]
@@ -1196,9 +1317,18 @@ class Pelt():
         else:
             self.white_patches_tint = "none"
 
+        # fixing
+        if self.white_patches_tint == "darkblue" or self.white_patches_tint == "deepblue":
+            if self.tint == "red" or self.tint == "orange" or self.tint == "pink":
+                self.white_patches_tint = "none"
+        elif self.white_patches_tint == "darkred" or self.white_patches_tint == "deepred":
+            if self.tint == "blue" or self.tint == "purple" or self.tint == "gray":
+                self.white_patches_tint == "none"
+            
+
     @property
     def white(self):
-        return self.white_patches or self.points
+        return self.white_patches
     
     @white.setter
     def white(self, val):
@@ -1208,7 +1338,8 @@ class Pelt():
     @staticmethod
     def describe_appearance(cat, short=False):
         
-        # Define look-up dictionaries
+        # first we start deciding how things should look when written out. later other pieces of the code
+        # will reference these and decide what it's displaying
         if short:
             renamed_colors = {
                 "honey": "honey",
@@ -1267,182 +1398,401 @@ class Pelt():
             }
 
         pattern_des = {
-            "Graywolf": "c_n agouti",
-            "Ophelia": "c_n agouti",
-            "Runic": "c_n agouti",
-            "Timber": "c_n agouti",
-            "Sable": "c_n sable",
-            "Shepherd": "c_n saddle",
-            "Arctic": "arctic c_n agouti",
-            "Winter": "c_n winter agouti",
-            "Husky": "c_n domino",
-            "Mexican": "flashy c_n agouti",
-            "Stormy": "dark c_n agouti",
-            "Vibrant": "vibrant c_n agouti",
-            "Colorpoint": "c_n colorpoint",
-            "Smokey": "smokey c_n agouti",
-            "Points": "c_n points",
-            "Semisolid": "solid c_n",
-            "Solid": "solid c_n"
+            "Graywolf": "agouti",
+            "Ophelia": "agouti",
+            "Runic": "agouti",
+            "Timber": "agouti",
+            "Sable": "sable",
+            "Shepherd": "saddle",
+            "Arctic": "arctic agouti",
+            "Winter": "winter agouti",
+            "Husky": "domino",
+            "Mexican": "flashy agouti",
+            "Stormy": "dark agouti",
+            "Vibrant": "vibrant agouti",
+            "Colorpoint": "colorpoint",
+            "Smokey": "smokey agouti",
+            "Points": "points",
+            "Semisolid": "solid",
+            "Solid": "solid",
+            'Brindle': 'brindle'
+        }
+        eye_des = {
+            "AMBER": "amber",
+            'LEMON' : "yellow",
+            'PALE': "pale yellow",
+            'SUNBEAM': "yellow",
+            'SUNLIGHT': "amber",
+            'WHEAT': "faded yellow",
+            'HARVEST': "deep orange",
+            'PEACH': "peach",
+            'PUMPKIN': "orange",
+            'TANGELO': "orange",
+            'TWILIGHT': "twilight orange",
+            'EMERALD': "emerald green",
+            'FERN': "fern green",
+            'FOREST': "light green",
+            'LEAF': "green",
+            'LIME': "lime green",
+            'MINT': "mint green",
+            'BLACK': "black",
+            'GULL': "gray",
+            'SILVER': "silver",
+            'SMOKE': "gray",
+            'WHITE': "white",
+            'ALMOND': "brown",
+            'BEAR': "brown",
+            'CASHEW': "pale brown",
+            'HAZEL': "hazel",
+            'LATTE': "light brown",
+            'SPARROW': "dark brown",
+            'DAYLIGHT': "daylight blue",
+            'ICE': "ice blue",
+            'NAVY': "navy blue",
+            'RAIN': "blue",
+            'SAPPHIRE': "sapphire blue",
+            'SEAFOAM': "seafoam",
+            'SKY': "bright blue",
+            'STORM': "blue-gray",
+            'TEAL': "teal",
+            'AMETHYST': "amethyst purple",
+            'DAWN': "dawn purple",
+            'DUSK': "dusk purple",
+            'LILAC': "lilac",
+            'MIDNIGHT': "midnight purple",
+            'VIOLET': "violet",
+            'BUBBLEGUM': "pink",
+            'PINK': "pink",
+            'ROUGE': "pale red",
+            'RUBY': "ruby red",
+            'SCARLET': "red"
         }
 
-        # Start with determining the base color name. 
-        color_name = str(cat.pelt.colour).lower()
-        if color_name in renamed_colors:
-            color_name = renamed_colors[color_name]
-        
-        # Replace "white" with "pale" if the cat is 
-        #if cat.pelt.name not in ["SingleColour", "TwoColour", "Tortie", "Calico"] and color_name == "white":
-        #    color_name = "pale"
+        # none white are markings that would be extremely blended into the natural pelts, to the point where
+        # I feel like people don't usually notice their wolf has white. so they're not even described
+        white_none = ['HIGHLIGHTS', 'WOLFTICKING']
+        white_minimal = ['LOCKET', 'SOCKS', 'TOES', 'TRIM', 'BACKLEG']
+        white_blaze = ["FLASH", 'STRIPE', 'SPECKLES', 'BLAZE']
+        white_irish = ['IRISH', 'MOONRISE', 'STAR', 'TICKING', 'DIAMOND']
+        white_piebald = ['BLOTCH', 'HEART', 'MUNSTERLANDER', 'HOUND', 'KING', 'BLUETICK', 'PIEBALD']
+        white_extreme_piebald = ['EXTREMEPIEBALD', 'TAIL', 'HEELER']
+        white_ticking = ['SPECKLES', 'MUNSTERLANDER', 'HEART', 'TICKING', 'BLUETICK']
+        white_special = {
+            "SNOWFLAKE": "snowflake spots",
+            'JACKAL': 'ticked white',
+            'SPLIT': "split faced white",
+            'BEE': "white stripes",
+            'DAPPLES': "dappled white",
+            'POINTED': "flashy white",
+            'HALF': "split face piebald",
+            'SPITZ': "spitz white",
+            'SUMMERFOX': "flashy white",
+            'URAJIRO': "urajiro",
+            'LIGHTDALMATIAN': "light dalmatian",
+            'HEAVYDALMATIAN': "heavy dalmatian",
+            "WHITE": "white"
+            }
 
-        # Time to descibe the pattern and any additional colors. 
-        if cat.pelt.name in pattern_des:
-            if cat.pelt.name != "Points":
-                color_name = pattern_des[cat.pelt.name].replace("c_n", color_name)
+        # setting up all the descriptors
+        # these will be used to construct sentences at the end
+        # descriptors given None will be used later as well to skip over them or modify how the sentence
+        # is built. For now, all of them get None
+        # some will always be given a string of some kind
+        # this includes: colorBASE, basePATTERN, speciesTYPE, and colorEYE
+
+        colorBASE = None
+        colorTORTIE = None
+        tortiePATTERN = None
+        caninePOINTS = None
+        specialPOINTS = None
+        basePATTERN = None
+        merlePATTERN = None
+        speciesTYPE = None
+        whitePATCH = None
+        colorEYE = None
+        colorEYETWO = None
+
+        # BASE COLOR
+        # this is simple - it takes the color name of the pelt and grabs the dictionary key for it above
+        colorBASE = renamed_colors[str(cat.pelt.colour).lower()]
+
+        # TORTIES
+        # torties are the same, but we check if torties are active or not. if not, it does nothing
+        # and we also specify what kind of tortie we have
+        # then we set patterns and decide which pattern is most 'interesting' for the description
+        if cat.pelt.name == 'Tortie' or cat.pelt.name == 'Calico':
+            temp_agoutis = ["Graywolf", "Ophelia", "Runic", "Timber", "Arctic", "Winter", "Mexican", "Stormy", "Vibrant", "Smokey"]
+            temp_tortie_type = cat.pelt.tortiebase
+            basePATTERN = cat.pelt.tortiepattern
+            colorTORTIE = renamed_colors[str(cat.pelt.tortiecolour).lower()]
+            # the name of the pelt should be either tortie or calico depending on a few other factors
+            tortiePATTERN = str(cat.pelt.name).lower()
+            # now we're going to break it down into its base parts
+            if temp_tortie_type in temp_agoutis:
+                temp_tortie_type = "agouti"
+            if basePATTERN in temp_agoutis:
+                basePATTERN = "agouti"
+            # and then pick the most interesting pattern to list on the description
+            if basePATTERN == temp_tortie_type:
+                basePATTERN = "agouti"
+            elif temp_tortie_type == "Points" or basePATTERN == "Points":
+                basePATTERN = "points"
+            elif temp_tortie_type in temp_agoutis:
+                basePATTERN = str(basePATTERN).lower()
+            elif basePATTERN in temp_agoutis:
+                basePATTERN = str(temp_tortie_type).lower()
             else:
-                temp_color_name = ''
-                if str(cat.pelt.colour).lower() == "cocoa" or str(cat.pelt.colour).lower() == "spice" or str(cat.pelt.colour).lower() == "ginger" or str(cat.pelt.colour).lower() == "copper":
-                    temp_color_name = "black and red"
-                elif str(cat.pelt.colour).lower() == "honey" or str(cat.pelt.colour).lower() == "flaxen":
-                    temp_color_name = "black and fawn"
-                elif str(cat.pelt.colour).lower() == "cream" or str(cat.pelt.colour).lower() == "pearl":
-                    temp_color_name = "black and cream"
-                elif str(cat.pelt.colour).lower() == "mist" or str(cat.pelt.colour).lower() == "ash" or str(cat.pelt.colour).lower() == "silver" or str(cat.pelt.colour).lower() == 'moonstone':
-                    temp_color_name = "gray and silver"
-                elif str(cat.pelt.colour).lower() == "steel" or str(cat.pelt.colour).lower() == "onyx":
-                    temp_color_name = "black and gray"
-                elif str(cat.pelt.colour).lower() == "black" or str(cat.pelt.colour).lower() == "luna":
-                    temp_color_name = "solid black"
-                elif str(cat.pelt.colour).lower() == "chocolate" or str(cat.pelt.colour).lower() == "blue" or str(cat.pelt.colour).lower() == "lilac":
-                    temp_color_name = str(renamed_colors[color_name]) + " and cream"
-                elif str(cat.pelt.colour).lower() == "spruce":
-                    temp_color_name = "blue and gray"
-                elif str(cat.pelt.colour).lower() == "isabella":
-                    temp_color_name = "isabella and silver"
-                elif str(cat.pelt.colour).lower() == "sunny":
-                    temp_color_name = "gold and cream"
-                elif str(cat.pelt.colour).lower() == "gold":
-                    temp_color_name = "black and gold"
-                elif str(cat.pelt.colour).lower() == "brass":
-                    temp_color_name = "brown and cream"
-                elif str(cat.pelt.colour).lower() == "sunstone":
-                    temp_color_name = "peach and cream"
+                basePATTERN = str(basePATTERN).lower()
+            # and adjusting two possible words to make it better
+            if basePATTERN == "husky":
+                basePATTERN = "domino"
+            if basePATTERN == "semisolid":
+                basePATTERN = "solid"
+            # and we're done. for sentence building only this will be referenced along with the 2 colors
+        # BASE PATTERN (NON TORTIE)
+        # this one is easy - grab the dictionary description for the pattern, then we do one fast check for brindle
+        # and then do nothing else
+        else:
+            basePATTERN = str(pattern_des[cat.pelt.name])
+            if basePATTERN == 'brindle' and colorBASE == 'black':
+                basePATTERN = 'solid'
 
-                if cat.pelt.colour.lower() != "black":
-                    color_name = pattern_des[cat.pelt.name].replace("c_n", temp_color_name)
+        # CANINE POINTS
+        # now we've got a difficult one - points. this will only run if the basepattern is points, otherwise
+        # it is skipped because it's very intensive. it is based off the appearence of the points in game
+        # all other color information is discarded at the end if points are present
+        temp_color_name = ''
+        if basePATTERN == 'points':
+            if str(cat.pelt.colour).lower() == "cocoa" or str(cat.pelt.colour).lower() == "spice" or str(cat.pelt.colour).lower() == "ginger" or str(cat.pelt.colour).lower() == "copper":
+                temp_color_name = "black and red"
+            elif str(cat.pelt.colour).lower() == "honey" or str(cat.pelt.colour).lower() == "flaxen":
+                temp_color_name = "black and fawn"
+            elif str(cat.pelt.colour).lower() == "cream" or str(cat.pelt.colour).lower() == "pearl":
+                temp_color_name = "black and cream"
+            elif str(cat.pelt.colour).lower() == "mist" or str(cat.pelt.colour).lower() == "ash" or str(cat.pelt.colour).lower() == "silver" or str(cat.pelt.colour).lower() == 'moonstone':
+                temp_color_name = "gray and silver"
+            elif str(cat.pelt.colour).lower() == "steel" or str(cat.pelt.colour).lower() == "onyx":
+                temp_color_name = "black and gray"
+            elif str(cat.pelt.colour).lower() == "black" or str(cat.pelt.colour).lower() == "luna":
+                temp_color_name = "black"
+            elif str(cat.pelt.colour).lower() == "chocolate" or str(cat.pelt.colour).lower() == "blue" or str(cat.pelt.colour).lower() == "lilac":
+                temp_color_name = str(renamed_colors[color_name]) + " and cream"
+            elif str(cat.pelt.colour).lower() == "spruce":
+                temp_color_name = "blue and gray"
+            elif str(cat.pelt.colour).lower() == "isabella":
+                temp_color_name = "isabella and silver"
+            elif str(cat.pelt.colour).lower() == "sunny":
+                temp_color_name = "gold and cream"
+            elif str(cat.pelt.colour).lower() == "gold":
+                temp_color_name = "black and gold"
+            elif str(cat.pelt.colour).lower() == "brass":
+                temp_color_name = "brown and cream"
+            elif str(cat.pelt.colour).lower() == "sunstone":
+                temp_color_name = "peach and cream"
+            # now we wrap up the point stuff
+            if colorTORTIE == None:
+                # we are going to change solid black points to match for later, to avoid more calculation
+                if temp_color_name == "black":
+                    basePATTERN = 'solid'
+                    colorBASE = 'black'
+                    caninePOINTS = None
+                # otherwise, just make the point statement the same as we already determined above
                 else:
-                    #makes sure the color name for now comes up as 'solid black' if the color is black
-                    color_name = temp_color_name
-        elif cat.pelt.name in Pelt.torties:
-            #had to revamp this entirely, sorry about the mess!
-            # Calicos and Torties need their own desciptions.
-            temp_agouti_list = ["graywolf", "ophelia", "runic", "timber", "arctic", "winter", "mexican", "stormy", "vibrant", "smokey"]
-            tc1 = renamed_colors[str(cat.pelt.colour).lower()]
-            tc2 = renamed_colors[str(cat.pelt.tortiecolour).lower()]
-            if short:
-                color_name = cat.pelt.name.lower()
+                    caninePOINTS = str(temp_color_name)
+            # torties complicate things yet again. we need to string the sentence together with the tortie color
             else:
-                #if both patterns on the tortie are the same
-                
-                if str(cat.pelt.tortiebase) == str(cat.pelt.tortiepattern):
-                    if cat.pelt.tortiebase == "solid" or cat.pelt.tortiebase == "semisolid":
-                        color_name = renamed_colors[str(cat.pelt.colour).lower()] + " and " + renamed_colors[str(cat.pelt.tortiecolour).lower()]
-                    elif cat.pelt.tortiebase in temp_agouti_list:
-                        color_name = tc1 + " and " + tc2  + " agouti " + cat.pelt.name.lower()
-                    elif cat.pelt.tortiebase == "sable":
-                        color_name = tc1 + " and " + tc2 + " sable " + cat.pelt.name.lower()
-                    elif cat.pelt.tortiebase == "shepherd":
-                        color_name = tc1 + " and " + tc2 + " saddle " + cat.pelt.name.lower()
-                    elif cat.pelt.tortiebase == "husky":
-                        color_name = tc1 + " and " + tc2 + " domino " + cat.pelt.name.lower()
-                    elif cat.pelt.tortiebase == "colorpoint":
-                        color_name = tc1 + " and " + tc2 + " colorpoint " + cat.pelt.name.lower()
-                    else:
-                        color_name = tc1 + " and " + tc2 + " pointed " + cat.pelt.name.lower()
-                #if both patterns are different
+                # but we need to account for this first
+                if temp_color_name == "black":
+                    basePATTERN = 'solid'
+                    colorBASE = 'black'
+                    caninePOINTS = None
                 else:
-                    if cat.pelt.tortiebase == "solid" or cat.pelt.tortiebase == "semisolid" or cat.pelt.tortiepattern == "solid" or cat.pelt.tortiepattern == "semisolid":
-                        if cat.pelt.tortiebase == "solid" or cat.pelt.tortiebase == "semisolid":
-                            if cat.pelt.tortiepattern in temp_agouti_list:
-                                color_name = tc1 + " agouti and " + tc2 + " " + cat.pelt.name.lower()
-                            elif cat.pelt.tortiepattern == "sable":
-                                color_name = tc1 + " sable and " + tc2 + " " + cat.pelt.name.lower()
-                            elif cat.pelt.tortiepattern == "shepherd":
-                                color_name = tc1 + " saddle and " + tc2 + " " + cat.pelt.name.lower()
-                            elif cat.pelt.tortiepattern == "husky":
-                                color_name = tc1 + " domino and " + tc2 + " " + cat.pelt.name.lower()
-                            elif cat.pelt.tortiepattern == "colorpoint":
-                                color_name = tc1 + " colorpoint and " + tc2 + " " + cat.pelt.name.lower()
-                            else:
-                                color_name = tc1 + " points and " + tc2 + " " + cat.pelt.name.lower()
-                        else:
-                            if cat.pelt.tortiebase in temp_agouti_list:
-                                color_name = tc2 + " agouti and " + tc1 + " " + cat.pelt.name.lower()
-                            elif cat.pelt.tortiebase == "sable":
-                                color_name = tc2 + " sable and " + tc1 + " " + cat.pelt.name.lower()
-                            elif cat.pelt.tortiebase == "shepherd":
-                                color_name = tc2 + " saddle and " + tc1 + " " + cat.pelt.name.lower()
-                            elif cat.pelt.tortiebase == "husky":
-                                color_name = tc2 + " domino and " + tc1 + " " + cat.pelt.name.lower()
-                            elif cat.pelt.tortiebase == "colorpoint":
-                                color_name = tc2 + " colorpoint and " + tc1 + " " + cat.pelt.name.lower()
-                            else:
-                                color_name = tc2 + " points and " + tc1 + " " + cat.pelt.name.lower()
-                    else:
-                        color_name = tc1 + " and " + tc2 + " dappled " + cat.pelt.name.lower()
-            #if short:
-                # If using short, don't add describe the colors of calicos and torties. Just call them calico, tortie, or mottled. 
-                # If using short, don't describe the colors of calicos and torties. Just call them calico, tortie, or mottled. 
-                #if cat.pelt.colour in Pelt.black_colours + Pelt.brown_colours + Pelt.white_colours and \
-                #    cat.pelt.tortiecolour in Pelt.black_colours + Pelt.brown_colours + Pelt.white_colours:
-                #    color_name = "mottled"
-                #else:
-                #    color_name = cat.pelt.name.lower()
-            #else:
-            #    base = cat.pelt.tortiebase.lower()
-            #    if base in Pelt.tabbies + ['bengal', 'rosette', 'speckled']:
-            #        base = 'tabby'
-            #    else:
-            #        base = ''
+                    caninePOINTS = colorTORTIE + ", " + temp_color_name
+                # and now we need to delete awkward wording. ugh torties
+                caninePOINTS.replace("black, black", "black").replace("blue, blue", "blue").replace("golden, gold", "gold").replace("gray, gray", "gray")
+                # there will likely be more awkward wording because of 'cream' but this is fine for now
 
-            #    patches_color = cat.pelt.tortiecolour.lower()
-            #    if patches_color in renamed_colors:
-            #        patches_color = renamed_colors[patches_color]
-            #    color_name = f"{color_name}/{patches_color}"
-                
-            #    if cat.pelt.colour in Pelt.black_colours + Pelt.brown_colours + Pelt.white_colours and \
-            #        cat.pelt.tortiecolour in Pelt.black_colours + Pelt.brown_colours + Pelt.white_colours:
-            #            color_name = f"{color_name} mottled"
-            #    else:
-            #        color_name = f"{color_name} {cat.pelt.name.lower()}"
+        # COLOR ADJUSTMENT (TORTIES)
+        if colorTORTIE != None and caninePOINTS == None:
+            colorBASE = str(colorBASE + ' and ' + colorTORTIE)
+            
+        # SPECIAL POINTS
+        # now we dive into true colorpoints. first we'll determine if there's any present at all, then get rid of the
+        # one that needs no further expansion
+        if cat.pelt.points == None:
+            specialPOINTS = None
+        else:
+            if cat.pelt.points == 'ALBINO':
+                basePATTERN = 'solid'
+                colorBASE = 'white'
+            elif cat.pelt.points == 'BEW':
+                colorBASE = 'ghost'
+            elif cat.pelt.points == "POINT":
+                specialPOINTS = 'pointed'
+            elif cat.pelt.points == "HIMALAYAN":
+                specialPOINTS = 'himalayan'
+            # all the points that are simple to describe
+            else:
+                specialPOINTS = str(cat.pelt.points).lower() + 'point'
 
-        if cat.pelt.white_patches:
-            if cat.pelt.white_patches == "WHITE":
-                # If the cat is fullwhite, discard all other information. They are just white. 
-                color_name = "white"
-            if cat.pelt.white_patches in Pelt.mostly_white and cat.pelt.name != "Calico":
-                color_name = f"white and {color_name}"
-            elif cat.pelt.name != "Calico":
-                color_name = f"{color_name} and white"
+        # MERLES AND HARLEQUINS
+        # oh boy oh fun
+        # remember that harlequin is only active if merle is, so we check for that first
+        # merles and harlequins are boolean values as well, so we don't need to add more to our statements
+        if cat.pelt.merle:
+            if cat.pelt.harlequin:
+                merlePATTERN = "harlequin"
+            else:
+                merlePATTERN = "merle"
+
+        # SPECIES
+        # this is required. it's pretty easy as well
+        speciesTYPE = str(cat.pelt.species).lower()
+
+        # WHITE PATCHES
+        # now we run into some issues here. we've got a few things going on - the extent and pattern of the white
+        # as well as if it's ticked or spotted. earlier we defined these. some have special definitions so we'll do those first
+        temp_white = cat.pelt.white_patches # this is done so it's not accessed a million times
+        if temp_white == None or temp_white in white_none:
+            whitePATCH = None
+        elif temp_white in white_special:
+            whitePATCH = str(white_special[temp_white])
+        elif temp_white in white_minimal:
+            if temp_white in white_ticking:
+                whitePATCH = "ticked minimal white"
+            else:
+                whitePATCH = "minimal white"
+        elif temp_white in white_blaze:
+            if temp_white in white_ticking:
+                whitePATCH = "ticked blaze"
+            else:
+                whitePATCH = "blaze"
+        elif temp_white in white_irish:
+            if temp_white in white_ticking:
+                whitePATCH = "ticked irish white"
+            else:
+                whitePATCH = "irish white"
+        elif temp_white in white_piebald:
+            if temp_white in white_ticking:
+                whitePATCH = "ticked piebald"
+            else:
+                whitePATCH = "piebald"
+        elif temp_white in white_extreme_piebald:
+            if temp_white in white_ticking:
+                whitePATCH = "ticked extreme piebald"
+            else:
+                whitePATCH = "extreme piebald"
+
+        # EYE COLORS
+        # okay last step before stringing things together is the eyes. we'll go ahead and have the eye colors defined
+        # and then we'll string these together (or not if there's only one eye color)
+        # we defined the changed eye colors earlier
+        # we're also sticking the term 'eyes' on the end to make sentence building faster
+        colorEYE = str(eye_des[cat.pelt.eye_colour])
+        if cat.pelt.eye_colour2 == None:
+            colorEYE = str(colorEYE + ' eyes')
+        elif colorBASE == 'ghost':
+            colorEYE = str("piercing ice-blue eyes")
+        else:
+            colorEYETWO = str(eye_des[cat.pelt.eye_colour2])
+            colorEYE = str(colorEYE + ' and ' + colorEYETWO + ' eyes')
+
+        # SENTENCE BUILDING
+        # we know from before which ones will always be not none, and which ones are variable. so let's build
+        # based on that
+        temp_sentence = ''
+
+        # first, get these overrides out of the way
+        # this will basically change all color and pattern info to white, so we check it first
+        if whitePATCH == 'white' or basePATTERN == 'solid' and colorBASE == 'white':
+            if cat.pelt.points == 'ALBINO':
+                temp_sentence = str("albino " + speciesTYPE)
+            elif cat.pelt.points == 'BEW':
+                temp_sentence = str("white " + speciesTYPE + " with piercing ice-blue eyes")
+            else:
+                temp_sentence = str("white " + speciesTYPE + " with " + colorEYE)
+        # now solids mean we ignore pattern info, so we'll do these next
+        elif basePATTERN == 'solid':
+            temp_sentence = str(colorBASE)
+            if merlePATTERN != None:
+                temp_sentence = str(temp_sentence + ' ' + merlePATTERN)
+            if specialPOINTS != None:
+                temp_sentence = str(temp_sentence + ' ' + specialPOINTS)
+            if tortiePATTERN != None:
+                temp_sentence = str(temp_sentence + ' ' + tortiePATTERN)
+            temp_sentence = str(temp_sentence + ' ' + speciesTYPE)
+            if whitePATCH != None:
+                temp_sentence = str(temp_sentence + ' with ' + whitePATCH)
+            if colorEYETWO != None:
+                if whitePATCH != None:
+                    temp_sentence = str(temp_sentence + "; " + colorEYE)
+                else:
+                    temp_sentence = str(temp_sentence + ' with ' + colorEYE)
+            else:
+                if whitePATCH == None:
+                    temp_sentence = str(temp_sentence + ' with ' + colorEYE)
+                else:
+                    temp_sentence = str(temp_sentence + ' and ' + colorEYE)
+        # then canine points, which change the structure of our sentences a bit
+        elif caninePOINTS != None:
+            temp_sentence = str(caninePOINTS)
+            # if there's special points we want those displayed instead
+            if specialPOINTS != None:
+                if merlePATTERN != None:
+                    temp_sentence = str(temp_sentence + ' ' + merlePATTERN + ' ' + specialPOINTS)
+                else:
+                    temp_sentence = str(temp_sentence + ' ' + specialPOINTS)
+            else:
+                if merlePATTERN != None:
+                    temp_sentence = str(temp_sentence + ' ' + merlePATTERN + ' point')
+                else:
+                    temp_sentence = str(temp_sentence + ' point')
+            if tortiePATTERN != None:
+                temp_sentence = str(temp_sentence + ' ' + tortiePATTERN)
+            temp_sentence = str(temp_sentence + ' ' + speciesTYPE)
+            if whitePATCH != None:
+                temp_sentence = str(temp_sentence + ' with ' + whitePATCH)
+            if colorEYETWO != None:
+                if whitePATCH != None:
+                    temp_sentence = str(temp_sentence + "; " + colorEYE)
+                else:
+                    temp_sentence = str(temp_sentence + ' with ' + colorEYE)
+            else:
+                if whitePATCH == None:
+                    temp_sentence = str(temp_sentence + ' with ' + colorEYE)
+                else:
+                    temp_sentence = str(temp_sentence + ' and ' + colorEYE)
+        # and finally, the most common stuff ends up here. thankfully we made the checks above fast so this should
+        # load relatively quickly
+        else:
+            temp_sentence = str(colorBASE)
+            if merlePATTERN != None:
+                temp_sentence = str(temp_sentence + ' ' + merlePATTERN)
+            if specialPOINTS != None:
+                temp_sentence = str(temp_sentence + ' ' + specialPOINTS)
+            else:
+                temp_sentence = str(temp_sentence + ' ' + str(basePATTERN))
+            if tortiePATTERN != None:
+                temp_sentence = str(temp_sentence + ' ' + tortiePATTERN)
+            temp_sentence = str(temp_sentence + ' ' + speciesTYPE)
+            if whitePATCH != None:
+                temp_sentence = str(temp_sentence + ' with ' + whitePATCH)
+            if colorEYETWO != None:
+                if whitePATCH != None:
+                    temp_sentence = str(temp_sentence + "; " + colorEYE)
+                else:
+                    temp_sentence = str(temp_sentence + ' with ' + colorEYE)
+            else:
+                if whitePATCH == None:
+                    temp_sentence = str(temp_sentence + ' with ' + colorEYE)
+                else:
+                    temp_sentence = str(temp_sentence + ' and ' + colorEYE)
+
+        # now it's complete, we'll throw it where it needs to be
+        color_name = temp_sentence
+        return color_name
         
-        #if cat.pelt.points:
-        #    color_name = f"{color_name} point"
-        #    if "ginger point" in color_name:
-        #        color_name.replace("ginger point", "flame point")
-
-        if "white and white" in color_name:
-            color_name = color_name.replace("white and white", "white")
-
-        # Now it's time for gender
-        #if cat.genderalign in ["female", "trans female"]:
-        #    color_name = f"{color_name} she-cat"
-        #elif cat.genderalign in ["male", "trans male"]:
-        #    color_name = f"{color_name} tom"
-        #else:
-        #    color_name = f"{color_name} cat"
-
-        #species instead
-        color_name = str(color_name + " " + str(cat.pelt.species).lower())
+        # some stuff I may add later below. for now it does nothing, since the name is returned above
 
         # Here is the place where we can add some additional details about the cat, for the full non-short one. 
         # These include notable missing limbs, vitiligo, long-furred-ness, and 3 or more scars. 
@@ -1472,8 +1822,6 @@ class Pelt():
         
             if len(cat.pelt.scars) >= 3:
                 color_name = f"scarred {color_name}"
-            #if cat.pelt.length == "long":
-            #    color_name = f"long-furred {color_name}"
 
         return color_name
     

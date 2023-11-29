@@ -110,10 +110,10 @@ class Sprites():
 
         for x in [
             'lineart',
-            'whitepatches', 'eyes', 'eyes2', 'skin', 'scars', 'missingscars',
+            'whitepatches', 'eyes', 'eyes2', 'skin', 'scars', 'missingscars', 'specialpoints', 
 			'arctic', 'colorpoint', 'graywolf', 'mexican', 'ophelia', 'runic',
 			'semisolid', 'smokey', 'stormy', 'timber', 'vibrant', 'winter',
-			'brindle', 'husky', 'points', 'sable', 'shepherd', 'solid',
+			'brindle', 'husky', 'points', 'sable', 'shepherd', 'solid', 'merle', 
             'collars', 'bellcollars', 'bowcollars', 'nyloncollars',
 			'nylonpastelcollars', 'harness', 'radio', 'bandana', 'bandanaplaid',
             'shadersnewwhite', 'lineartdead', 'tortiepatchesmasks', 
@@ -175,6 +175,25 @@ class Sprites():
         for a, i in enumerate(['BACKLEG', 'BEE', 'DAPPLES', 'POINTED', 'SPECKLES', 'DIAMOND', 'HOUND', 'KING', 'HEELER']):
             self.make_group('whitepatches', (a, 3), f'white{i}')
 
+        # colorpoints (special points)
+        for a, i in enumerate(['SEPIA', 'MINK', 'POINT', 'CLEAR']):
+            self.make_group('specialpoints', (a, 0), f'specialpoint{i}')
+        for a, i in enumerate(['HIMALAYAN', 'BEW', 'ALBINO']):
+            self.make_group('specialpoints', (a, 1), f'specialpoint{i}')
+
+        # merles
+        for a, i in enumerate(['SOLID', 'ARCTIC', 'BRINDLE', 'COLORPOINT', 'GRAYWOLF', 'HUSKY', 'MEXICAN', 'OPHELIA', 'POINTS', 'RUNIC']):
+            self.make_group('merle', (a, 0), f'darkmerle{i}')
+        for a, i in enumerate(['SABLE', 'SHEPHERD', 'SMOKEY', 'STORMY', 'TIMBER', 'VIBRANT', 'WINTER']):
+            self.make_group('merle', (a, 1), f'darkmerle{i}')
+        for a, i in enumerate(['HUSKY', 'MEXICAN', 'OPHELIA', 'RUNIC', 'SABLE', 'SMOKEY', 'STORMY', 'TIMBER', 'VIBRANT', 'WINTER']):
+            self.make_group('merle', (a, 2), f'redmerle{i}')
+        self.make_group('merle', (7, 1), 'redmerleARCTIC')
+        self.make_group('merle', (8, 1), 'redmerleCOLORPOINT')
+        self.make_group('merle', (9, 1), 'redmerleGRAYWOLF') # these 3 help the sheet fit, but they had to be put on darkmerle's row
+        for a, i in enumerate(['DARKDAPPLE', 'SHADOWSNEAK', 'STORMSONG', 'BRINDLECLOUD', 'DAPPLEPELT', 'DAYSKY', 'WILLOWLEAF', 'BRIGHTLEAF', 'SEAFUR', 'SILVERCLAW']):
+            self.make_group('merle', (a, 3), f'merle{i}')
+        
         # arctic
         for a, i in enumerate(['SPICE', 'GINGER', 'HONEY', 'FLAXEN', 'CREAM']):
             self.make_group('arctic', (a, 0), f'arctic{i}')
@@ -418,20 +437,7 @@ class Sprites():
                 ["NOEAR", "NOLEFTEAR", "NOPAW", "NORIGHTEAR", "NOTAIL", "RIGHTEAR"]):
             self.make_group('missingscars', (a, 1), f'scarsmissing{i}')
 
-            # Accessories
-        #for a, i in enumerate([
-        #    "MAPLE LEAF", "HOLLY", "BLUE BERRIES", "FORGET ME NOTS", "RYE STALK", "LAUREL"]):
-        #    self.make_group('medcatherbs', (a, 0), f'acc_herbs{i}')
-        #for a, i in enumerate([
-        #    "BLUEBELLS", "NETTLE", "POPPY", "LAVENDER", "HERBS", "PETALS"]):
-        #    self.make_group('medcatherbs', (a, 1), f'acc_herbs{i}')
-        #for a, i in enumerate([
-        #    "OAK LEAVES", "CATMINT", "MAPLE SEED", "JUNIPER"]):
-        #    self.make_group('medcatherbs', (a, 3), f'acc_herbs{i}')
-        #self.make_group('medcatherbs', (5, 2), 'acc_herbsDRY HERBS')
-        #for a, i in enumerate([
-        #    "RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "MOTH WINGS", "CICADA WINGS"]):
-        #    self.make_group('medcatherbs', (a, 2), f'acc_wild{i}')
+        #ACCESSORIES
         for a, i in enumerate([
 		"BLUE FEATHERS", "BLUEBELLS", "BLUE BERRIES", "CATMINT", "CICADA WINGS", "DRY HERBS", "FORGET ME NOTS", "HERBS", "HOLLY", "JAY FEATHERS", "JUNIPER"]):
             self.make_group('medcatherbs', (a, 0), f'natural{i}')

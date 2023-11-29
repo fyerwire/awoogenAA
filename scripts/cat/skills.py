@@ -198,7 +198,7 @@ class Skill():
         SkillPath.LORE: "lorekeeping",
         SkillPath.CAMP: "campkeeping",
         SkillPath.HEALER: "healing",
-        SkillPath.STAR: "StarClan",
+        SkillPath.STAR: "StarPack",
         SkillPath.OMEN: "omen",
         SkillPath.DREAM: "dreaming",
         SkillPath.CLAIRVOYANT: "predicting",
