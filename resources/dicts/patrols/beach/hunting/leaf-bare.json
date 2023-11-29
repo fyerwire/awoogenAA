@@ -69,7 +69,7 @@
                 "prey": ["medium"]
             },
             {
-                "text": "app1 walks in circles for a bit, and is about to give up and go home, when {PRONOUN/app1/subject} nearly {VERB/app1/trip/trips} over a poorly made warren. The sound of movement from within gets {PRONOUN/app1/object} excited, and {PRONOUN/app1/subject} {VERB/app1/dig/digs} into the entrance and evenetually (PRONOUN/app1/subject) {VERB/app1/yank/yanks} a rabbit out!",
+                "text": "app1 walks in circles for a bit, and is about to give up and go home, when {PRONOUN/app1/subject} nearly {VERB/app1/trip/trips} over a poorly made warren. The sound of movement from within gets {PRONOUN/app1/object} excited, and {PRONOUN/app1/subject} {VERB/app1/dig/digs} into the entrance and evenetually {PRONOUN/app1/subject} {VERB/app1/yank/yanks} a rabbit out!",
                 "exp": 30,
                 "weight": 5,
                 "prey": ["medium"]
