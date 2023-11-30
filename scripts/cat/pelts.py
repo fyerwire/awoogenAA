@@ -1180,10 +1180,11 @@ class Pelt():
             self.pattern = None
         # accounting for a weird thing
         if self.tortiepattern == self.tortiebase and self.colour == self.tortiecolour:
+            temp_tortie = self.tortiepattern.capitalize()
             poss_bases = Pelt.tortiebases
-            poss_bases.remove(str(self.tortiepattern.capitalize()))
+            poss_bases.remove(temp_tortie)
             self.tortiepattern = random.choice(poss_bases).lower()
-
+            
     def white_patches_inheritance(self, parents: tuple):
         parents_white = []
         white_list = [Pelt.low_white, Pelt.mid_white, Pelt.high_white]
