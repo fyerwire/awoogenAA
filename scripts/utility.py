@@ -1325,36 +1325,125 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
 
     # generating the sprite
     try:
+
+        # SPRITE GENERATION HAS CHANGED
+        # now it checks for merle and harlequin along with torties, so we can generate more complex sprites
+        # that being said, I have no idea how buggy this is. please report issues or things you feel could be
+        # made better or more efficient, thanks!!
+        # also still under a lot of reworking to make it less slow and clunky
+        base_name = None
         if cat.pelt.name not in ['Tortie', 'Calico']:
-            new_sprite.blit(sprites.sprites[cat.pelt.get_sprites_name() + cat.pelt.colour + cat_sprite], (0, 0))
+            base_name = str(cat.pelt.name).lower()
         else:
-            # Base Coat
-            new_sprite.blit(
-                sprites.sprites[cat.pelt.tortiebase + cat.pelt.colour + cat_sprite],
-                (0, 0))
-
-            # Create the patch image
-            if cat.pelt.tortiepattern == "Solid":
-                tortie_pattern = "Solid"
-            else:
-                tortie_pattern = cat.pelt.tortiepattern
-
-            patches = sprites.sprites[
-                tortie_pattern + cat.pelt.tortiecolour + cat_sprite].copy()
-            patches.blit(sprites.sprites["tortiemask" + cat.pelt.pattern + cat_sprite], (0, 0),
-                         special_flags=pygame.BLEND_RGBA_MULT)
-
-            # Add patches onto cat.
-            new_sprite.blit(patches, (0, 0))
-
-        # TINTS
+            base_name = str(cat.pelt.tortiebase).lower()
+        black_colors = Pelt.black_colors.copy()
+        base_tint = None
         if cat.pelt.tint != "none" and cat.pelt.tint in sprites.cat_tints["tint_colours"]:
-            # Multiply with alpha does not work as you would expect - it just lowers the alpha of the
-            # entire surface. To get around this, we first blit the tint onto a white background to dull it,
-            # then blit the surface onto the sprite with pygame.BLEND_RGB_MULT
-            tint = pygame.Surface((sprites.size, sprites.size)).convert_alpha()
-            tint.fill(tuple(sprites.cat_tints["tint_colours"][cat.pelt.tint]))
-            new_sprite.blit(tint, (0, 0), special_flags=pygame.BLEND_RGB_MULT)
+            base_tint = pygame.Surface((sprites.size, sprites.size)).convert_alpha()
+            base_tint.fill(tuple(sprites.cat_tints["tint_colours"][cat.pelt.tint]))
+        if cat.pelt.merle and cat.pelt.points != 'ALBINO': # if the pelt is merle
+            merle_list = cat.pelt.merle_pattern.copy() # put this here for easy access
+            solid_merle = False # change this to true if we should discard all pelt information
+            # set up all pygame pieces
+            dilute_tint = pygame.Surface((sprites.size, sprites.size)).convert_alpha()
+            dilute_tint.fill(merle_list[3])
+            dark_tint = pygame.Surface((sprites.size, sprites.size)).convert_alpha()
+            dark_tint.fill(merle_list[1])
+            red_tint = None
+            if merle_list[2] is not None:
+                red_tint = pygame.Surface((sprites.size, sprites.size)).convert_alpha()
+                red_tint.fill(merle_list[2])
+            # first we find out if the pelt should be a solid merle
+            if base_name == 'solid' or cat.pelt.name == 'semisolid' or cat.pelt.colour in black_colors:
+                solid_merle = True
+            if cat.pelt.harlequin: # if it is also harlequin
+                harlequin_base = sprites.sprites['whiteWHITE' + cat_sprite].copy().convert_alpha() # white base
+                if cat.pelt.white_patches_tint != 'none' and cat.pelt.white_patches_tint in sprites.white_patches_tints['tint_colours']:
+                    tint = pygame.Surface((sprites.size, sprites.size)).convert_alpha()
+                    tint.fill(tuple(sprites.white_patches_tints["tint_colours"][cat.pelt.white_patches_tint]))
+                    harlequin_base.blit(tint, (0, 0), special_flags=pygame.BLEND_RGB_MULT)
+                new_sprite.blit(harlequin_base, (0, 0)) # apply the harlequin base white, then continue
+                if solid_merle:
+                    harlequin_dark_patch = sprites.sprites['darkmerleSOLID' + cat_sprite].copy().convert_alpha()
+                    harlequin_dark_patch.blit(dark_tint, (0, 0), special_flags=pygame.BLEND_RGB_MULT)
+                    if base_tint != None:
+                        harlequin_dark_patch.blit(base_tint, (0, 0), special_flags=pygame.BLEND_RGB_MULT)
+                    harlequin_dark_patch.blit(sprites.sprites["merle" + merle_list[0] + cat_sprite], (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
+                    new_sprite.blit(harlequin_dark_patch, (0, 0))
+                else:   
+                    base_patch = sprites.sprites[base_name + cat.pelt.colour + cat_sprite].copy().convert_alpha()
+                    dark_patch = sprites.sprites['darkmerle' + base_name.upper() + cat_sprite].copy().convert_alpha()
+                    dark_patch.blit(dark_tint, (0, 0), special_flags=pygame.BLEND_RGB_MULT)
+                    dark_patch.blit(sprites.sprites["merle" + merle_list[0] + cat_sprite], (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
+                    if red_tint != None:
+                        red_patch = sprites.sprites["redmerle" + base_name.upper() + cat_sprite].copy().convert_alpha()
+                        red_patch.blit(red_tint, (0, 0), special_flags=pygame.BLEND_RGB_MULT)
+                        red_patch.blit(sprites.sprites["merle" + merle_list[0] + cat_sprite], (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
+                    base_patch.blit(sprites.sprites["merle" + merle_list[0] + cat_sprite], (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
+                    
+                    if red_tint != None:
+                        base_patch.blit(red_patch, (0, 0))
+                    base_patch.blit(dark_patch, (0, 0))
+                    if base_tint != None:
+                        base_patch.blit(base_tint, (0, 0), special_flags=pygame.BLEND_RGB_MULT)
+
+                    new_sprite.blit(base_patch, (0, 0))
+            else: # merle but not harlequin
+                if solid_merle: # if it is completely solid
+                    dilute_patch = sprites.sprites['darkmerleSOLID' + cat_sprite].copy().convert_alpha()
+                    dilute_patch.blit(dilute_tint, (0, 0), special_flags=pygame.BLEND_RGB_MULT)
+                    dark_patch = sprites.sprites["merle" + merle_list[0] + cat_sprite].copy().convert_alpha()
+                    dark_patch.blit(dark_tint, (0, 0), special_flags=pygame.BLEND_RGB_MULT)
+                    if base_tint != None:
+                        dilute_patch.blit(base_tint, (0, 0), special_flags=pygame.BLEND_RGB_MULT)
+                        dark_patch.blit(base_tint, (0, 0), special_flags=pygame.BLEND_RGB_MULT)
+                    new_sprite.blit(dilute_patch, (0, 0))
+                    new_sprite.blit(dark_patch, (0, 0))
+                else: # normal merle patterns
+                    base_patch = sprites.sprites[base_name + cat.pelt.colour + cat_sprite].copy().convert_alpha()
+                    dilute_patch = sprites.sprites['darkmerle' + base_name.upper() + cat_sprite].copy().convert_alpha()
+                    dilute_patch.blit(dilute_tint, (0, 0), special_flags=pygame.BLEND_RGB_MULT)
+                    dark_patch = sprites.sprites['darkmerle' + base_name.upper() + cat_sprite].copy().convert_alpha()
+                    dark_patch.blit(dark_tint, (0, 0), special_flags=pygame.BLEND_RGB_MULT)
+                    dark_patch.blit(sprites.sprites["merle" + merle_list[0] + cat_sprite], (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
+                    if red_tint != None:
+                        red_patch = sprites.sprites["redmerle" + base_name.upper() + cat_sprite].copy().convert_alpha()
+                        red_patch.blit(red_tint, (0, 0), special_flags=pygame.BLEND_RGB_MULT)
+                        red_patch.blit(sprites.sprites["merle" + merle_list[0] + cat_sprite], (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
+                        base_patch.blit(red_patch, (0, 0))
+                    base_patch.blit(dilute_patch, (0, 0))
+                    base_patch.blit(dark_patch, (0, 0))
+                    if base_tint != None:
+                        base_patch.blit(base_tint, (0, 0), special_flags=pygame.BLEND_RGB_MULT)
+                        
+                    new_sprite.blit(base_patch, (0, 0))
+        else: # if it's not merle or harlequin, render normally
+            new_sprite.blit(sprites.sprites[base_name + cat.pelt.colour + cat_sprite], (0, 0))
+            if base_tint != None:
+                new_sprite.blit(base_tint, (0, 0), special_flags=pygame.BLEND_RGB_MULT)
+                
+        if cat.pelt.name == 'Tortie' or cat.pelt.name == 'Calico': # TORTIES YO
+            if cat.pelt.merle: # if the pelt is merle
+                dark_tint = pygame.Surface((sprites.size, sprites.size)).convert_alpha()
+                dark_tint.fill(merle_list[1])
+                if cat.pelt.harlequin: # if it is also harlequin
+                    tortiepatches = sprites.sprites[cat.pelt.tortiepattern + cat.pelt.tortiecolour + cat_sprite].copy().convert_alpha()
+                    tortiepatches.blit(sprites.sprites["tortiemask" + cat.pelt.pattern + cat_sprite], (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
+                    tortiepatches.blit(sprites.sprites["merle" + merle_list[0] + cat_sprite], (0, 0), special_flags=pygame.BLEND_RGB_MULT)
+                else: # merle but not harlequin
+                    tortiepatches = sprites.sprites['darkmerleSOLID' + cat_sprite].copy().convert_alpha()
+                    tortiepatches.blit(dark_tint, (0, 0), special_flags=pygame.BLEND_RGB_MULT)
+                    tortiepatches.blit(sprites.sprites["tortiemask" + cat.pelt.pattern + cat_sprite], (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
+            else: # if it's not merle or harlequin, render normally
+                tortiepatches = sprites.sprites[cat.pelt.tortiepattern + cat.pelt.tortiecolour + cat_sprite].copy().convert_alpha()
+                tortiepatches.blit(sprites.sprites["tortiemask" + cat.pelt.pattern + cat_sprite], (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
+
+            # create our tortie sprite
+            if base_tint != None:
+                tortiepatches.blit(base_tint, (0, 0), special_flags=pygame.BLEND_RGB_MULT)
+            new_sprite.blit(tortiepatches, (0, 0))
+
+
 
         # draw white patches
         if cat.pelt.white_patches is not None:
@@ -1372,8 +1461,8 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
 
         # draw vit & points
 
-        if cat.pelt.points:
-            points = sprites.sprites['white' + cat.pelt.points + cat_sprite].copy()
+        if cat.pelt.points is not None:
+            points = sprites.sprites['specialpoint' + cat.pelt.points + cat_sprite].copy()
             if cat.pelt.white_patches_tint != "none" and cat.pelt.white_patches_tint in sprites.white_patches_tints[
                 "tint_colours"]:
                 tint = pygame.Surface((sprites.size, sprites.size)).convert_alpha()
@@ -1381,8 +1470,8 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
                 points.blit(tint, (0, 0), special_flags=pygame.BLEND_RGB_MULT)
             new_sprite.blit(points, (0, 0))
 
-        if cat.pelt.vitiligo:
-            new_sprite.blit(sprites.sprites['white' + cat.pelt.vitiligo + cat_sprite], (0, 0))
+        #if cat.pelt.vitiligo:
+            #new_sprite.blit(sprites.sprites['white' + cat.pelt.vitiligo + cat_sprite], (0, 0))
 
         # draw eyes & scars1
         eyes = sprites.sprites['eyes' + cat.pelt.eye_colour + cat_sprite].copy()

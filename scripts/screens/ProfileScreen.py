@@ -485,7 +485,7 @@ class ProfileScreen(Screens):
 
         self.profile_elements["cat_name"] = pygame_gui.elements.UITextBox(cat_name,
                                                                           scale(pygame.Rect(
-                                                                              (800 - name_text_size.width, 280),
+                                                                              (800 - name_text_size.width, 230),
                                                                               (name_text_size.width * 2, 80))),
                                                                           object_id=get_text_box_theme(
                                                                               "#text_box_40_horizcenter"),
@@ -493,19 +493,19 @@ class ProfileScreen(Screens):
 
         # Write cat thought
         self.profile_elements["cat_thought"] = pygame_gui.elements.UITextBox(self.the_cat.thought,
-                                                                             scale(pygame.Rect((200, 340), (1200, 80))),
+                                                                             scale(pygame.Rect((200, 290), (1200, 80))),
                                                                              wrap_to_height=True,
                                                                              object_id=get_text_box_theme(
                                                                                  "#text_box_30_horizcenter_spacing_95")
                                                                              , manager=MANAGER)
 
         self.profile_elements["cat_info_column1"] = UITextBoxTweaked(self.generate_column1(self.the_cat),
-                                                                     scale(pygame.Rect((600, 460), (360, 380))),
+                                                                     scale(pygame.Rect((600, 400), (360, 440))),
                                                                      object_id=get_text_box_theme(
                                                                          "#text_box_22_horizleft"),
                                                                      line_spacing=0.95, manager=MANAGER)
         self.profile_elements["cat_info_column2"] = UITextBoxTweaked(self.generate_column2(self.the_cat),
-                                                                     scale(pygame.Rect((980, 460), (500, 360))),
+                                                                     scale(pygame.Rect((980, 400), (500, 440))),
                                                                      object_id=get_text_box_theme(
                                                                          "#text_box_22_horizleft"),
                                                                      line_spacing=0.95, manager=MANAGER)
@@ -549,7 +549,7 @@ class ProfileScreen(Screens):
             x_pos = 740 - name_text_size.width
 
         self.profile_elements["favourite_button"] = UIImageButton(scale(pygame.Rect
-                                                                        ((x_pos, 287), (56, 56))),
+                                                                        ((x_pos, 237), (56, 56))),
                                                                   "",
                                                                   object_id="#fav_cat",
                                                                   manager=MANAGER,
@@ -557,7 +557,7 @@ class ProfileScreen(Screens):
                                                                   starting_height=2)
 
         self.profile_elements["not_favourite_button"] = UIImageButton(scale(pygame.Rect
-                                                                            ((x_pos, 287),
+                                                                            ((x_pos, 237),
                                                                              (56, 56))),
                                                                       "",
                                                                       object_id="#not_fav_cat",
@@ -591,14 +591,14 @@ class ProfileScreen(Screens):
 
         if self.the_cat.status == 'leader' and not self.the_cat.dead:
             self.profile_elements["leader_ceremony"] = UIImageButton(scale(pygame.Rect(
-                (766, 220), (68, 68))),
+                (766, 170), (68, 68))),
                 "",
                 object_id="#leader_ceremony_button",
                 tool_tip_text="Leader Ceremony", manager=MANAGER
             )
         elif self.the_cat.status in ["mediator", "mediator apprentice"]:
             self.profile_elements["mediation"] = UIImageButton(scale(pygame.Rect(
-                (766, 220), (68, 68))),
+                (766, 170), (68, 68))),
                 "",
                 object_id="#mediation_button", manager=MANAGER
             )
@@ -671,25 +671,54 @@ class ProfileScreen(Screens):
         # NEWLINE ----------
         output += "\n"
 
+        # PHYSICAL
+        output += 'physical: ' + the_cat.pelt.fun_traits[1]
+        output += "\n"
+        
         # EYE COLOR
         output += 'eyes: ' + str(the_cat.describe_eyes())
         # NEWLINE ----------
         output += "\n"
 
         # PELT TYPE
-        output += 'pelt: ' + the_cat.pelt.name.lower()
+        # there are some overrides, so we account for those first
+        point_name = None
+        merle_name = None
+        if the_cat.pelt.points is not None:
+            point_name = the_cat.pelt.points.lower()
+            if point_name == 'sepia' or point_name == 'mink' or point_name == 'clear':
+                point_name = point_name + 'point'
+        if the_cat.pelt.merle:
+            if the_cat.pelt.harlequin:
+                merle_name = 'harlequin'
+            else:
+                merle_name = 'merle'
+        if point_name == None and merle_name == None:
+            output += 'pelt: ' + the_cat.pelt.name.lower()
+        elif point_name == 'bew' or point_name == 'albino':
+            output += 'pelt: ' + point_name
+        elif merle_name != None:
+            if point_name != None:
+                output += 'pelt: ' + merle_name + ' ' + the_cat.pelt.name.lower() + ' ' + point_name
+            else:
+                output += 'pelt: ' + merle_name + ' ' + the_cat.pelt.name.lower()
+        else:
+            output += 'pelt: ' + the_cat.pelt.name.lower() + ' ' + point_name
         # NEWLINE ----------
         output += "\n"
 
         # PELT LENGTH
         output += 'fur length: ' + the_cat.pelt.length
         # NEWLINE ----------
+        output += "\n"
+
+        # SCENT
+        output += 'scent: ' + the_cat.pelt.fun_traits[0]
 
         # ACCESSORY
         if the_cat.pelt.accessory:
             output += "\n"
             output += 'accessory: ' + str(ACC_DISPLAY[the_cat.pelt.accessory]["default"])
-            # NEWLINE ----------
 
         # PARENTS
         all_parents = [Cat.fetch_cat(i) for i in the_cat.get_parents()]
@@ -705,28 +734,6 @@ class ProfileScreen(Screens):
                     output += "others"
             else:
                 output += "parents: " + ", ".join([str(i.name) for i in all_parents])
-
-        
-        # MOONS
-        output += "\n"
-        if the_cat.dead:
-            output += str(the_cat.moons)
-            if the_cat.moons == 1:
-                output += ' moon (in life)\n'
-            elif the_cat.moons != 1:
-                output += ' moons (in life)\n'
-
-            output += str(the_cat.dead_for)
-            if the_cat.dead_for == 1:
-                output += ' moon (in death)'
-            elif the_cat.dead_for != 1:
-                output += ' moons (in death)'
-        else:
-            output += str(the_cat.moons)
-            if the_cat.moons == 1:
-                output += ' moon'
-            elif the_cat.moons != 1:
-                output += ' moons'
 
         # MATE
         if len(the_cat.mate) > 0:
@@ -852,6 +859,10 @@ class ProfileScreen(Screens):
         # NEWLINE ----------
         output += "\n"
 
+        # FUN FACT
+        output += the_cat.pelt.fun_traits[2]
+        output += "\n"
+        
         # EXPERIENCE
         output += 'experience: ' + str(the_cat.experience_level)
 
@@ -877,6 +888,27 @@ class ProfileScreen(Screens):
         # NEWLINE ----------
         output += "\n"
 
+        # MOONS
+        if the_cat.dead:
+            output += str(the_cat.moons)
+            if the_cat.moons == 1:
+                output += ' moon (in life)\n'
+            elif the_cat.moons != 1:
+                output += ' moons (in life)\n'
+
+            output += str(the_cat.dead_for)
+            if the_cat.dead_for == 1:
+                output += ' moon (in death)'
+            elif the_cat.dead_for != 1:
+                output += ' moons (in death)'
+        else:
+            output += str(the_cat.moons)
+            if the_cat.moons == 1:
+                output += ' moon'
+            elif the_cat.moons != 1:
+                output += ' moons'
+
+        output += "\n"
         # NUTRITION INFO (if the game is in the correct mode)
         if game.clan.game_mode in ["expanded", "cruel season"] and the_cat.is_alive() and FRESHKILL_ACTIVE:
             nutr = None

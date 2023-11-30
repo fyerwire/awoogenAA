@@ -233,6 +233,8 @@ def loading_animation():
         if game.settings["dark mode"]:
             if game.settings["Moonlight"]:
                 screen.fill(game.config["themes"]["Moonlight_Darkbg"])
+            elif game.settings["Seaside"]:
+                screen.fill(game.config["themes"]["Seaside_Darkbg"])
             elif game.settings["ClassicClangen"]:
                 screen.fill(game.config["themes"]["ClassicClangen_Darkbg"])
             else:
@@ -240,6 +242,8 @@ def loading_animation():
         else:
             if game.settings["Moonlight"]:
                 screen.fill(game.config["themes"]["Moonlight_Lightbg"])
+            elif game.settings["Seaside"]:
+                screen.fill(game.config["themes"]["Seaside_Lightbg"])
             elif game.settings["ClassicClangen"]:
                 screen.fill(game.config["themes"]["ClassicClangen_Lightbg"])
             else:
@@ -299,6 +303,8 @@ if get_version_info().is_source_build or get_version_info().is_dev():
 
 if game.settings["Moonlight"]:
     cursor_img = pygame.image.load('resources/moonlight/images/cursor.png').convert_alpha()
+elif game.settings["Seaside"]:
+    cursor_img = pygame.image.load('resources/seaside/images/cursor.png').convert_alpha()
 elif game.settings["ClassicClangen"]:
     cursor_img = pygame.image.load('resources/clangenclassic/images/cursor.png').convert_alpha()
 else:
@@ -316,6 +322,8 @@ while True:
         if game.settings["dark mode"]:
             if game.settings["Moonlight"]:
                 screen.fill(game.config["themes"]["Moonlight_Darkbg"])
+            elif game.settings["Seaside"]:
+                screen.fill(game.config["themes"]["Seaside_Darkbg"])
             elif game.settings["ClassicClangen"]:
                 screen.fill(game.config["themes"]["ClassicClangen_Darkbg"])
             else:
@@ -323,6 +331,8 @@ while True:
         else:
             if game.settings["Moonlight"]:
                 screen.fill(game.config["themes"]["Moonlight_Lightbg"])
+            elif game.settings["Seaside"]:
+                screen.fill(game.config["themes"]["Seaside_Lightbg"])
             elif game.settings["ClassicClangen"]:
                 screen.fill(game.config["themes"]["ClassicClangen_Lightbg"])
             else:

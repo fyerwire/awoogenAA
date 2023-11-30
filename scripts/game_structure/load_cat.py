@@ -95,18 +95,33 @@ def json_load():
                 reverse=cat["reverse"],
                 vitiligo=cat["vitiligo"] if "vitiligo" in cat else None,
                 points=cat["points"] if "points" in cat else None,
+                points_genes=cat["points_genes"] if "points_genes" in cat else ["C", "C"],
                 white_patches_tint=cat["white_patches_tint"] if "white_patches_tint" in cat else "offwhite",
                 white_patches=cat["white_patches"],
                 tortiebase=cat["tortie_base"],
                 tortiecolour=cat["tortie_color"],
                 tortiepattern=cat["tortie_pattern"],
+                merle=cat["merle"] if "merle" in cat else False,
+                harlequin=cat["harlequin"] if "harlequin" in cat else False,
+                merle_pattern=cat["merle_pattern"] if "merle_pattern" in cat else ["", "", ""],
                 pattern=cat["pattern"],
                 skin=cat["skin"],
+                fun_traits=cat["fun_traits"] if "fun_traits" in cat else ["", "", ""],
                 tint=cat["tint"] if "tint" in cat else "none",
                 scars=cat["scars"] if "scars" in cat else [],
                 accessory=cat["accessory"],
                 opacity=cat["opacity"] if "opacity" in cat else 100
             )
+            # SEASIDE conversion
+            if "merle" not in cat:
+                print('Old save! giving generic values - you can add them yourself if you wish. Save your Pack first and edit after!')
+                new_cat.pelt.merle = False
+                new_cat.pelt.harlequin = False
+                new_cat.pelt.points = None
+                new_cat.pelt.points_genes = ["C", "C"]
+                new_cat.pelt.fun_traits[0] = random.choice(Pelt.fun_scents)
+                new_cat.pelt.fun_traits[1] = random.choice(Pelt.fun_physical)
+                new_cat.pelt.fun_traits[2] = random.choice(Pelt.fun_random)
             # Runs a bunch of apperence-related convertion of old stuff. 
             new_cat.pelt.check_and_convert(convert)
             
@@ -497,6 +512,9 @@ def version_convert(version_info):
                     moons_with = c.permanent_condition[con]["moons_with"]
                     c.permanent_condition[con].pop("moons_with")
                 c.permanent_condition[con]["moon_start"] = game.clan.age - moons_with
+
+    if version < 3:
+        pass
             
         
             

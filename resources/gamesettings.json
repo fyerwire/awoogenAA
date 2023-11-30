@@ -21,6 +21,11 @@
             "A blue-purple theme - default",
             true
         ],
+        "Seaside": [
+            "Seaside Theme",
+            "Blue and yellow tropical theme",
+            false
+        ],
         "ClassicClangen": [
             "Classic Theme",
             "Clangen's theme for Awoogen",
@@ -59,7 +64,7 @@
         "check_for_updates": [
             "Check for updates",
             "Automatically checks for updates on startup",
-            true
+            false
         ],
         "show_changelog": [
             "Display changelog on startup",

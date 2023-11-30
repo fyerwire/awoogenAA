@@ -165,7 +165,7 @@ class RoleScreen(Screens):
                                                                              short_name,
                                                                              object_id=get_text_box_theme())
 
-        text = f"<b>{self.the_cat.status}</b>\n{self.the_cat.personality.trait}\n"
+        text = str(f"<b>{self.the_cat.status}</b>\n{self.the_cat.personality.trait}\n").replace("cat", "wolf")
 
         text += f"{self.the_cat.moons} "
 

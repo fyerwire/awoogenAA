@@ -1,0 +1,155 @@
+{
+    "#image_button": {
+        "colours": {
+            "normal_bg": "#00000000",
+            "hovered_bg": "#00000000",
+            "disabled_bg": "#00000000",
+            "selected_bg": "#00000000",
+            "active_bg": "#00000000",
+            "normal_text": "#00000000",
+            "hovered_text": "#00000000",
+            "selected_text": "#00000000",
+            "disabled_text": "#00000000",
+            "link_text": "#00000000",
+            "link_hover": "#00000000",
+            "link_selected": "#00000000",
+            "text_shadow": "#00000000",
+            "normal_border": "#00000000",
+            "hovered_border": "#00000000",
+            "disabled_border": "#00000000",
+            "active_border": "#00000000",
+            "selected_border": "#00000000",
+            "normal_text_shadow": "#00000000"
+        },
+        "misc": {
+            "shadow_width": "0",
+            "tool_tip_delay": "0"
+        }
+    },
+    "#cat_button": {
+        "colours": {
+            "normal_bg": "#00000000",
+            "hovered_bg": "#00000000",
+            "disabled_bg": "#00000000",
+            "selected_bg": "#00000000",
+            "active_bg": "#00000000",
+            "normal_text": "#00000000",
+            "hovered_text": "#00000000",
+            "selected_text": "#00000000",
+            "disabled_text": "#00000000",
+            "link_text": "#00000000",
+            "link_hover": "#00000000",
+            "link_selected": "#00000000",
+            "text_shadow": "#00000000",
+            "normal_border": "#00000000",
+            "hovered_border": "#00000000",
+            "disabled_border": "#00000000",
+            "active_border": "#00000000",
+            "selected_border": "#00000000",
+            "normal_text_shadow": "#00000000"
+        },
+        "misc": {
+            "shadow_width": "0",
+            "tool_tip_delay": "0"
+        }
+    },
+    "#saved_clan": {
+        "colours": {
+            "normal_bg": "#565371",
+            "hovered_bg": "#201836",
+            "selected_bg": "#201836",
+            "active_bg": "#201836",
+            "normal_text": "#EBE7F5",
+            "hovered_text": "#EBE7F5",
+            "selected_text": "#EBE7F5",
+            "disabled_text": "#EBE7F5",
+            "text_shadow": "#00000000",
+            "normal_border": "#45B3AB",
+            "hovered_border": "#45B3AB",
+            "disabled_border": "#666272",
+            "selected_border": "#45B3AB",
+            "active_border": "#45B3AB"
+        },
+        "font": {
+            "name": "notosans",
+            "size": "30"
+        },
+        "misc": {
+            "border_width": "3",
+            "shadow_width": "0"
+        }
+    },
+    "#relation_bar": {
+        "colours": {
+            "normal_border": "#EBE7F5",
+            "filled_bar": "#565371",
+            "unfilled_bar": "#EBE7F5"
+        },
+        "misc": {
+            "shape": "rounded_rectangle",
+            "shape_corner_radius": "6",
+            "border_width": "4",
+            "shadow_width": "0"
+        }
+    },
+    "#relation_bar_neg": {
+        "prototype": "#relation_bar",
+        "colours": {
+            "filled_bar": "#E67161"
+        }
+    },
+    "#relation_bar_pos": {
+        "prototype": "#relation_bar",
+        "colours": {
+            "filled_bar": "#8CB250"
+        }
+    },
+    "#relation_bar_dark": {
+        "prototype": "#relation_bar",
+        "colours": {
+            "normal_border": "#201836",
+            "unfilled_bar": "#201836"
+        }
+    },
+    "#relation_bar_neg_dark": {
+        "prototype": "#relation_bar_dark",
+        "colours": {
+            "filled_bar": "#E67161"
+        }
+    },
+    "#relation_bar_pos_dark": {
+        "prototype": "#relation_bar_dark",
+        "colours": {
+            "filled_bar": "#8CB250"
+        }
+    },
+    "#events_cat_profile_button": {
+        "colours": {
+            "normal_bg": "#565371",
+            "hovered_bg": "#1A1230",
+            "selected_bg": "#1A1230",
+            "normal_text": "#EBE7F5",
+            "hovered_text": "#EBE7F5",
+            "text_shadow": "#00000000"
+        },
+        "font": {
+            "name": "notosans",
+            "size": "26"
+        },
+        "misc": {
+            "border_width": "0",
+            "shadow_width": "0"
+        },
+        "images": {
+            "normal_image": {
+                "path": "resources/seaside/images/buttons/cat_event_profile.png"
+            },
+            "hovered_image": {
+                "path": "resources/seaside/images/buttons/cat_event_profile_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/seaside/images/buttons/cat_event_profile.png"
+            }
+        }
+    }
+}
