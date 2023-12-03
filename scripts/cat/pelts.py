@@ -80,6 +80,9 @@ class Pelt():
 		"PURPLE PETALS", "ROSE", "SAKURA", "SUNFLOWER", "WHITE ROSE"]
     wild_accessories = ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "MOTH WINGS", "CICADA WINGS", 
 		"CROW FEATHERS", "DOVE FEATHERS"]
+    manmade_accessories = []
+    special_accessories = ["HIBISCUS", "RED HIBISCUS", "WHITE HIBISCUS", "BIG LEAVES", "STARFISH", "PINK STARFISH",
+                           "PURPLE STARFISH", "PEARLS", "SEASHELLS", "TOWEL", "SILK CLOAK"]
     collars = [
         "CRIMSON", "BLUE", "YELLOW", "CYAN", "RED", "LIME", "GREEN", "RAINBOW",
         "BLACK", "SPIKES", "WHITE", "PINK", "PURPLE", "MULTI", "INDIGO", "BELLBLACK", "BELLBLUE", 
@@ -138,7 +141,7 @@ class Pelt():
         'PEARL': (229, 213, 183), 
         'GOLD': (206, 148, 62),
         'BRASS': (195, 169, 127),
-        'SUNSTONE': (204, 205, 208),
+        'SUNSTONE': (216, 186, 155),
         'SUNNY': (242, 229, 191),
         'MIST': (199, 196, 187),
         'ASH': (114, 112, 106),
@@ -153,7 +156,7 @@ class Pelt():
         'COPPER': (157, 83, 27),
         'CHOCOLATE': (209, 174, 129),
         'COCOA': (100, 62, 43),
-        'BLUE': (127, 187, 148),
+        'BLUE': (196, 179, 166),
         'SPRUCE': (108, 93, 84),
         'LILAC': (234, 220, 195),
         'ISABELLA': (178, 165, 154)
@@ -203,10 +206,11 @@ class Pelt():
                   "alfredo", "coconut", "gelato", "eggnog", "tangy", "minerals", "sugar", "brown sugar", "gingerbread", "maple"]
     fun_physical = ["tall", "short", "tiny", "large", "huge", "uneven", "thin", "lanky", "burly", "muscular", "slim", "sleek", "softcoat", "plushcoat", "roughcoat", "fox-like",
                     "lynx-like", "cat-like", "dog-like", "dusty", "clean", "oily", "silkycoat", "wirecoat", "curlycoat", "woolycoat", "warm", "cold", "giant", "runt", "flimsy",
-                    "strong"]
-    fun_random = ["has a kinked tail", "terrified of spiders", "extremely loud", "loves the rain", "loves the snow" , "loves the sun", "has no dewclaws", "has a lot of whiskers",
+                    "strong", "kinked tail", "snaggle tooth", "crooked tooth", "no fangs", "no dewclaws", "many whiskers", "large nose", "short tail", "extra toe",
+                    "piercing gaze", "soft gaze", "sharp features", "soft features"]
+    fun_random = ["terrified of spiders", "extremely loud", "loves the rain", "loves the snow" , "loves the sun", 
                   "loves the taste of pet food", "loves the taste of berries", "collects seashells", "collects feathers", "collects rocks", "collects gems", "collects flowers",
-                  "collects leaves", "has a silly smile", "has a crooked tooth", "has a snaggle tooth", "not scared of bears", "not scared of twolegs", "terrified of mice",
+                  "collects leaves", "has a silly smile", "not scared of bears", "not scared of twolegs", "terrified of mice", "running from the past", "easily amused", 
                   "loves to sleep", "always sleepy", "always anxious", "over confident", "avid jogger", "frequent moonbather", "frequent sunbather", "watches cars", "watches birds",
                   "cloudwatcher", "finds herbs delicious", "collects dog toys", "likes to sing", "howls a lot", "often cries wolf", "loves to swim", "very quiet", "yips a lot", "has raspy barks",
                   "chatterbox", "collects fabric scraps", "takes long walks at night", "often steals", "pot-stirrer", "huge gossip", "very dramatic", "hates authority", "wants to live alone",
@@ -220,7 +224,7 @@ class Pelt():
                   "loves their job", "likes their reflection", "collects bugs", "stargazer", "often annoying", "predicts the weather", "a bean", "often licks ice", "snow eater", "appreciates art",
                   "often steals honey", "collects pine needles", "very cute", "very pretty", "very charming", "very fast", "loves the moon", "secretly a werewolf", "has cold toes",
                   "often alone", "never alone", "knows tricks", "steals dog treats", "always bored", "speaks slowly", "speaks too quickly", "easily entertained", "loves a good conversation",
-                  "has a deep voice", "has a high-pitched voice", "has a large nose", "has a short tail", "has an extra toe", "has a piercing gaze", "has a soft gaze", "loves to make jokes",
+                  "has a deep voice", "has a high-pitched voice", "loves to make jokes", "friend to bees", "loves to scent", "tracks the seasons", "makes comfy nests", "believes in luck", 
                   "doesn't understand jokes", "likes to bark", "rips up leaves", "hopeless romantic", "very optimistic", "very pessimistic", "has a lazy eye", "very emotional", "affectionate",
                   "likes having personal space", "likes to wrestle", "jumps off docks", "listens to twoleg music", "supportive friend", "very silly", "very serious", "can't sit still", "energetic",
                   "passionate", "opinionated", "sneezes at the sun", "likes to be alone", "likes large groups", "always comfy", "always a little uncomfortable", "walks silently", "often stomps around",

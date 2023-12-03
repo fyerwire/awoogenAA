@@ -179,9 +179,11 @@ class MiscEvents():
             acc_list.extend(Pelt.harnesses)
         if "BANDANA" in possible_accs:
             acc_list.extend(Pelt.bandanas)
+        if "MANMADE" in possible_accs:
+            acc_list.extend(Pelt.manmade_accessories)
 
         for acc in possible_accs:
-            if acc not in ["WILD", "PLANT", "COLLAR", "COLLARS", "RADIO", "HARNESS", "BANDANA", "RADIOCOLLARS", "RADIOCOLLAR", "HARNESSES", "BANDANAS"]:
+            if acc not in ["WILD", "PLANT", "COLLAR", "RADIO", "HARNESS", "BANDANA", "MANMADE"]:
                 acc_list.append(acc)
 
 

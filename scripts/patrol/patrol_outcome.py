@@ -238,7 +238,7 @@ class PatrolOutcome():
         """Sets the stat cat. Returns true if a stat cat was found, and False is a stat cat was not found """
         
         print("---")
-        print(f"Finding stat cat. Outcome Type: Success = {self.success}, Antag = {self.antagonize}")
+        print(f"Finding stat wolf. Outcome Type: Success = {self.success}, Antag = {self.antagonize}")
         print(f"Can Have Stat: {self.can_have_stat}")
         
         # Grab any specfic stat cat requirements: 
@@ -840,7 +840,7 @@ class PatrolOutcome():
                 elif cat.outside:
                     results.append(f"The patrol met {cat.name}.")
                 else:
-                    results.append(f"{cat.name} joined the clan.")
+                    results.append(f"{cat.name} joined the pack.")
             
         # Check to see if any young litters joined with alive parents.
         # If so, see if recovering from birth condition is needed

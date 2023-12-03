@@ -396,7 +396,7 @@
             "Leaf-bare",
             "other_clan"
         ],
-        "event_text": "m_c was loitering around o_c's border, looking for a specific cat."
+        "event_text": "m_c was loitering around o_c's border, looking for a specific wolf."
     },
     {
         "camp": "any",
@@ -442,7 +442,7 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "event_text": "m_c was seen talking calmly to a loner, before both cats went their separate ways."
+        "event_text": "m_c was seen talking calmly to a loner, before both wolves went their separate ways."
     },
     {
         "camp": "any",

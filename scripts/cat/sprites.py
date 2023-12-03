@@ -447,6 +447,11 @@ class Sprites():
         for a, i in enumerate([
 		"BLACK EYED SUSANS", "CROW FEATHERS", "DOVE FEATHERS", "GOLD HERBS", "IVY", "MARIGOLD", "PURPLE PETALS", "ROSE", "SAKURA", "SUNFLOWER", "WHITE ROSE"]):
             self.make_group('medcatherbs', (a, 2), f'natural{i}')
+        for a, i in enumerate([
+		"HIBISCUS", "RED HIBISCUS", "WHITE HIBISCUS", "STARFISH", "PINK STARFISH", "PURPLE STARFISH", "PEARLS", "SEASHELLS", "BIG LEAVES"]):
+            self.make_group('medcatherbs', (a, 3), f'natural{i}')
+        self.make_group('medcatherbs', (9, 3), f'junkTOWEL')
+        self.make_group('medcatherbs', (10, 3), f'cloakSILK CLOAK')
 		
         for a, i in enumerate(["BLACK", "BLUE", "CRIMSON", "CYAN", "GREEN"]):
             self.make_group('collars', (a, 0), f'collars{i}')
