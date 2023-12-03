@@ -1235,12 +1235,11 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
     # don't look too closely at this i did it while half asleep ty
     scarchange = []
     posescars = ['BURNTAIL', 'FROSTTAIL', 'HALFTAIL', 'LEFTEAR', 'NOEAR', 'NOLEFTEAR', 'NORIGHTEAR', 'NOTAIL', 'RIGHTEAR']
-    if len(cat.pelt.scars) != 0 and not cat.not_working and age != 'newborn' and not cat.pelt.paralyzed:
+    if len(cat.pelt.scars) != 0 and age != 'newborn' and not cat.pelt.paralyzed and not cat.not_working():
         for scar in cat.pelt.scars:
             if scar in posescars:
                 scarchange.append(scar)
         if len(scarchange) != 0 and age != 'newborn' and not cat.pelt.paralyzed:
-            print('pose changer is running')
             changetail = False
             changenoear = False
             changeleft = False
@@ -1354,7 +1353,7 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
                 red_tint = pygame.Surface((sprites.size, sprites.size)).convert_alpha()
                 red_tint.fill(merle_list[2])
             # first we find out if the pelt should be a solid merle
-            if base_name == 'solid' or cat.pelt.name == 'semisolid' or cat.pelt.colour in black_colors:
+            if base_name == 'solid' or base_name == 'semisolid' or cat.pelt.colour in black_colors:
                 solid_merle = True
             if cat.pelt.harlequin: # if it is also harlequin
                 harlequin_base = sprites.sprites['whiteWHITE' + cat_sprite].copy().convert_alpha() # white base
@@ -1505,21 +1504,6 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
                     new_sprite.blit(sprites.sprites['scarsmissing' + scar + cat_sprite], (0, 0), special_flags=blendmode)
                     new_sprite.blit(sprites.sprites['scars' + scar + cat_sprite], (0, 0))
 
-        # draw accessories
-        if not acc_hidden and not dead or cat.df and not scars_hidden:        
-            if cat.pelt.accessory in cat.pelt.plant_accessories:
-                new_sprite.blit(sprites.sprites['natural' + cat.pelt.accessory + cat_sprite], (0, 0))
-            elif cat.pelt.accessory in cat.pelt.wild_accessories:
-                new_sprite.blit(sprites.sprites['natural' + cat.pelt.accessory + cat_sprite], (0, 0))
-            elif cat.pelt.accessory in cat.pelt.collars:
-                new_sprite.blit(sprites.sprites['collars' + cat.pelt.accessory + cat_sprite], (0, 0))
-            elif cat.pelt.accessory in cat.pelt.radiocollars:
-                new_sprite.blit(sprites.sprites['collars' + cat.pelt.accessory + cat_sprite], (0, 0))
-            elif cat.pelt.accessory in cat.pelt.harnesses:
-                new_sprite.blit(sprites.sprites['collars' + cat.pelt.accessory + cat_sprite], (0, 0))
-            elif cat.pelt.accessory in cat.pelt.bandanas:
-                new_sprite.blit(sprites.sprites['collars' + cat.pelt.accessory + cat_sprite], (0, 0))
-
         # kori's fun glitter friends
         glitter = {
             'DAYLIGHT': (120, 215, 216),
@@ -1571,6 +1555,35 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
             'SUNLIGHT': (239, 232, 121), 
 	'WHEAT': (223, 225, 159)
             }
+        
+        # draw accessories
+        if not acc_hidden and not dead or cat.df and not scars_hidden:        
+            if cat.pelt.accessory in cat.pelt.plant_accessories:
+                new_sprite.blit(sprites.sprites['natural' + cat.pelt.accessory + cat_sprite], (0, 0))
+            elif cat.pelt.accessory in cat.pelt.wild_accessories:
+                new_sprite.blit(sprites.sprites['natural' + cat.pelt.accessory + cat_sprite], (0, 0))
+            elif cat.pelt.accessory in cat.pelt.collars:
+                new_sprite.blit(sprites.sprites['collars' + cat.pelt.accessory + cat_sprite], (0, 0))
+            elif cat.pelt.accessory in cat.pelt.radiocollars:
+                new_sprite.blit(sprites.sprites['collars' + cat.pelt.accessory + cat_sprite], (0, 0))
+            elif cat.pelt.accessory in cat.pelt.harnesses:
+                new_sprite.blit(sprites.sprites['collars' + cat.pelt.accessory + cat_sprite], (0, 0))
+            elif cat.pelt.accessory in cat.pelt.bandanas:
+                new_sprite.blit(sprites.sprites['collars' + cat.pelt.accessory + cat_sprite], (0, 0))
+            elif cat.pelt.accessory in cat.pelt.special_accessories:
+                if cat.pelt.accessory in ["HIBISCUS", "RED HIBISCUS", "WHITE HIBISCUS", "BIG LEAVES", "STARFISH", "PINK STARFISH", "PURPLE STARFISH", "PEARLS", "SEASHELLS"]:
+                    new_sprite.blit(sprites.sprites['natural' + cat.pelt.accessory + cat_sprite], (0, 0))
+                elif cat.pelt.accessory == "TOWEL":
+                    new_sprite.blit(sprites.sprites['junk' + cat.pelt.accessory + cat_sprite], (0, 0))
+                elif cat.pelt.accessory == "SILK CLOAK":
+                    cloak = sprites.sprites["cloakSILK CLOAK" + cat_sprite].copy()
+                    cloak_color = glitter[str(cat.pelt.eye_colour)]
+                    cloak_tint = pygame.Surface((sprites.size, sprites.size)).convert_alpha()
+                    cloak_tint.fill(cloak_color)
+                    cloak.blit(cloak_tint, (0, 0), special_flags=pygame.BLEND_RGB_MULT)
+                    new_sprite.blit(cloak, (0, 0))
+
+        
         if dead and not cat.df:
             new_sprite.blit(sprites.sprites['lines' + cat_sprite], (0, 0))
             if not scars_hidden:
@@ -1591,6 +1604,18 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
                     new_sprite.blit(sprites.sprites['collars' + cat.pelt.accessory + cat_sprite], (0, 0))
                 elif cat.pelt.accessory in cat.pelt.bandanas:
                     new_sprite.blit(sprites.sprites['collars' + cat.pelt.accessory + cat_sprite], (0, 0))
+                elif cat.pelt.accessory in cat.pelt.special_accessories:
+                    if cat.pelt.accessory in ["HIBISCUS", "RED HIBISCUS", "WHITE HIBISCUS", "BIG LEAVES", "STARFISH", "PINK STARFISH", "PURPLE STARFISH", "PEARLS", "SEASHELLS"]:
+                        new_sprite.blit(sprites.sprites['natural' + cat.pelt.accessory + cat_sprite], (0, 0))
+                    elif cat.pelt.accessory == "TOWEL":
+                        new_sprite.blit(sprites.sprites['junk' + cat.pelt.accessory + cat_sprite], (0, 0))
+                    elif cat.pelt.accessory == "SILK CLOAK":
+                        cloak = sprites.sprites["cloakSILK CLOAK" + cat_sprite].copy()
+                        cloak_color = glitter[str(cat.pelt.eye_colour)]
+                        cloak_tint = pygame.Surface((sprites.size, sprites.size)).convert_alpha()
+                        cloak_tint.fill(cloak_color)
+                        cloak.blit(cloak_tint, (0, 0), special_flags=pygame.BLEND_RGB_MULT)
+                        new_sprite.blit(cloak, (0, 0))
             deadglitter = sprites.sprites['lineartdead' + cat_sprite].copy()
             deadcolor = glitter[str(cat.pelt.eye_colour)]
             deadtint = pygame.Surface((sprites.size, sprites.size)).convert_alpha()

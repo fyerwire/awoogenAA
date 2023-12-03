@@ -101,7 +101,14 @@ class Relationship():
             all_interactions = INTERACTION_MASTER_DICT[rel_type][in_de_crease].copy()
             possible_interactions = self.get_relevant_interactions(all_interactions, intensity, biome, season, game_mode)
         else:
-            possible_interactions = all_interactions
+            intensity = None
+            possible_interactions = self.get_relevant_interactions(all_interactions, intensity, biome, season, game_mode)
+            # removing defaults, if there's more than one item in the list
+            if len(possible_interactions) >= 2:
+                default_interaction = "neutral_interaction1"
+                for x in possible_interactions:
+                    if x.id == default_interaction:
+                        possible_interactions.remove(x)
 
         if len(possible_interactions) <= 0:
             print("ERROR: No interaction with this conditions. ", rel_type, in_de_crease, intensity)
@@ -111,6 +118,7 @@ class Relationship():
                 ])
             ]
 
+        
         # check if the current interaction id is already used and us another if so
         chosen_interaction = choice(possible_interactions)
         while chosen_interaction.id in self.used_interaction_ids\
@@ -412,8 +420,8 @@ class Relationship():
             in_tags = list(filter(lambda season: season not in _season, interact.season))
             if len(in_tags) > 0:
                 continue
-
-            if interact.intensity != intensity:
+            
+            if intensity is not None and interact.intensity != intensity:
                 continue
 
             cats_fulfill_conditions = cats_fulfill_single_interaction_constraints(self.cat_from, self.cat_to, interact, game_mode)

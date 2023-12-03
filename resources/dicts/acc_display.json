@@ -144,6 +144,26 @@
     "plural": "juniper",
     "singular": "juniper"
   },
+  "HIBISCUS": {
+    "default": "hibiscus",
+    "plural": "hibiscus flowers",
+    "singular": "hibiscus flower"
+  },
+  "RED HIBISCUS": {
+    "default": "red hibiscus",
+    "plural": "red hibiscus flowers",
+    "singular": "red hibiscus flower"
+  },
+  "WHITE HIBISCUS": {
+    "default": "white hibiscus",
+    "plural": "white hibiscus flowers",
+    "singular": "white hibiscus flower"
+  },
+  "BIG LEAVES": {
+    "default": "big leaves",
+    "plural": "big leaves",
+    "singular": "big leaf"
+  },
   "RED FEATHERS": {
     "default": "cardinal feathers",
     "plural": "cardinal feathers",
@@ -178,6 +198,41 @@
     "default": "cicada wings",
     "plural": "cicada wings",
     "singular": "cicada wing"
+  },
+  "STARFISH": {
+    "default": "yellow and orange starfish",
+    "plural": "starfish",
+    "singular": "starfish"
+  },
+  "PINK STARFISH": {
+    "default": "blue and pink starfish",
+    "plural": "starfish",
+    "singular": "starfish"
+  },
+  "PURPLE STARFISH": {
+    "default": "purple and blue starfish",
+    "plural": "starfish",
+    "singular": "starfish"
+  },
+  "PEARLS": {
+    "default": "pearls",
+    "plural": "pearls",
+    "singular": "pearl"
+  },
+  "SEASHELLS": {
+    "default": "seashells",
+    "plural": "seashells",
+    "singular": "seashell"
+  },
+  "TOWEL": {
+    "default": "towel cape",
+    "plural": "towels",
+    "singular": "towel"
+  },
+  "SILK CLOAK": {
+    "default": "silk cloak",
+    "plural": "silk cloaks",
+    "singular": "silk cloak"
   },
   "CRIMSON": {
     "default": "red leather collar",
