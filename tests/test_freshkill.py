@@ -2,7 +2,7 @@ import unittest
 import ujson
 from scripts.cat.cats import Cat
 from scripts.cat.skills import Skill, SkillPath
-from scripts.clan import Clan
+from scripts.clan import Pack
 from scripts.clan_resources.freshkill import Freshkill_Pile
 from scripts.utility import get_alive_clan_queens
 
@@ -79,7 +79,7 @@ class FreshkillPile(unittest.TestCase):
 
     def test_feed_cats(self) -> None:
         # given
-        test_clan = Clan(name="Test",
+        test_clan = Pack(name="Test",
                          leader=None,
                          deputy=None,
                          medicine_cat=None,
