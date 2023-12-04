@@ -1436,7 +1436,7 @@
                 "history_text": {
                     "scar": "r_c carries a scar from fighting with a bobcat.",
                     "reg_death": "While scavenging alone, r_c was killed by a predator {PRONOUN/r_c/subject} didn't see.",
-                    "lead_death": "were killed by a predator"
+                    "lead_death": "{VERB/m_c/were/was} killed by a predator"
                 }
             },
             {
@@ -1453,7 +1453,7 @@
                 "history_text": {
                     "scar": "r_c carries a scar from fighting with a bobcat.",
                     "reg_death": "While scavenging alone, r_c was killed by a predator {PRONOUN/r_c/subject} didn't see.",
-                    "lead_death": "were killed by a predator"
+                    "lead_death": "{VERB/m_c/were/was} killed by a predator"
                 }
             },
             {
@@ -1478,7 +1478,7 @@
                 "history_text": {
                     "scar": "r_c carries a scar from fighting with a bobcat.",
                     "reg_death": "While scavenging alone, r_c was killed by a predator {PRONOUN/r_c/subject} didn't see.",
-                    "lead_death": "were killed by a predator"
+                    "lead_death": "{VERB/m_c/were/was} killed by a predator"
                 }
             }
         ]
