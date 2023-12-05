@@ -189,7 +189,7 @@
         "biome": ["wetlands"],
         "season": ["Any"],
         "types": ["hunting"],
-        "tags": ["large_prey3"],
+        "tags": [],
         "patrol_art": "hunt_general_intro",
         "min_cats": 1,
         "max_cats": 1,
@@ -203,7 +203,7 @@
                 "text": "They can't think of anything that would work, but their hunt goes well regardless.",
                 "exp": 20,
                 "weight": 20,
-                "prey": ["medium"]
+                "prey": ["small"]
             },
             {
                 "text": "s_c finds some rotting muddy grass - it's not clean, but it's extremely effective, and the hunt goes well.",
@@ -238,7 +238,7 @@
         "biome": ["wetlands"],
         "season": ["Any"],
         "types": ["hunting"],
-        "tags": ["large_prey3"],
+        "tags": [],
         "patrol_art": "hunt_general_intro",
         "min_cats": 1,
         "max_cats": 1,
@@ -835,7 +835,8 @@
             {
                 "text": "A friendly Twolegs makes a psspsspss noise, and pours kittypet food on the ground for r_c. They've always wondered what it might taste like... dry, is the answer. Very odd.",
                 "exp": 20,
-                "weight": 5
+                "weight": 5,
+                "prey": ["very_small"]
             },
             {
                 "text": "s_c gets distracted from hunting by strange Twoleg activity around one of their dens. They appear to be hauling all their many, many varieties of nest lining out and into a big monster. s_c take the opportunity to grab a little soft thing, something that's almost shaped like prey. It'll be good for the nursery.",
@@ -876,7 +877,8 @@
                     "responsible",
                     "thoughtful",
                     "wise"
-                ]
+                ],
+                "prey": ["small"]
             },
             {
                 "text": "Carelessly, r_c is seen by Twolegs, and taken from c_n.",
@@ -891,7 +893,7 @@
         "biome": ["wetlands"],
         "season": ["Any"],
         "types": ["hunting"],
-        "tags": ["large_prey3"],
+        "tags": [],
         "patrol_art": "hunt_general_intro",
         "min_cats": 1,
         "max_cats": 1,
@@ -912,7 +914,8 @@
             {
                 "text": "A friendly Twolegs makes a psspsspss noise, and pours kittypet food on the ground for app1. They've always wondered what it might taste like... dry, is the answer. It's strangely appealing.",
                 "exp": 20,
-                "weight": 5
+                "weight": 5,
+                "prey": ["very_small"]
             },
             {
                 "text": "Tail lashing excitedly, app1 hunts in the strange, forbidden land, ducking around corners and crawling over gardens with their belly low to the ground. A successful, sneaky hunt.",
@@ -927,7 +930,8 @@
                     "nervous",
                     "sneaky",
                     "strange"
-                ]
+                ],
+                "prey": ["large"]
             }
         ],
         "fail_outcomes": [
@@ -989,7 +993,7 @@
                 "text": "A friendly Twolegs makes a psspsspss noise, and pours kittypet food on the ground for r_c. They fetch p_l, and both cats investigate the food, loudly proclaiming how much better fresh-kill is, but both a little thrilled by the experience.",
                 "exp": 20,
                 "weight": 5,
-                "prey": ["small"],
+                "prey": ["very_small"],
                 "relationships": [
                     {
                         "cats_to": ["r_c"],
@@ -1081,7 +1085,8 @@
                         "values": ["romantic", "platonic"],
                         "amount": -5
                     }
-                ]
+                ],
+                "prey": ["small"]
             },
             {
                 "text": "Carelessly, r_c is seen by Twolegs, and taken from c_n.",
@@ -1136,7 +1141,7 @@
                 "text": "A friendly Twolegs makes a psspsspss noise, and pours kittypet food on the ground for app2. They fetch app1, and both apprentices loudly proclaim how much better fresh-kill is, but both are also wide eyed and thrilled by the experience.",
                 "exp": 20,
                 "weight": 5,
-                "prey": ["small"],
+                "prey": ["very_small"],
                 "relationships": [
                     {
                         "cats_to": ["r_c"],
@@ -1867,7 +1872,7 @@
         "biome": ["wetlands"],
         "season": ["leaf-bare"],
         "types": ["hunting"],
-        "tags": ["large_prey3"],
+        "tags": [],
         "patrol_art": "hunt_general_intro",
         "min_cats": 2,
         "max_cats": 6,
@@ -1943,11 +1948,106 @@
         ]
     },
     {
+        "patrol_id": "wtlnd_hunt_leafbaresnowstorm2",
+        "biome": ["wetlands"],
+        "season": ["leaf-bare"],
+        "types": ["hunting"],
+        "tags": [],
+        "patrol_art": "hunt_general_intro",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "It starts snowing soon after the patrol sets out, trying to bring back something nice for the fresh-kill pile.",
+        "decline_text": "They decide to turn back and wait until the snow dies down.",
+        "chance_of_success": 40,
+        "success_outcomes": [
+            {
+                "text": "Despite the snow, r_c manages to hunt successfully, finding the normal creatures still out fishing the swamps.",
+                "exp": 10,
+                "weight": 20,
+                "prey": ["medium"]
+            },
+            {
+                "text": "s_c really shows their talent, bringing a nice haul of small fish back to camp for the fresh-kill pile.",
+                "exp": 10,
+                "weight": 20,
+                "stat_skill": ["HUNTER,2"],
+                "prey": ["medium"]
+            }
+        ],
+        "fail_outcomes": []
+    },
+    {
+        "patrol_id": "wtlnd_hunt_leafbaresnowstorm3",
+        "biome": ["wetlands"],
+        "season": ["leaf-bare"],
+        "types": ["hunting"],
+        "tags": ["romantic"],
+        "patrol_art": "hunt_general_intro",
+        "min_cats": 2,
+        "max_cats": 6,
+        "min_max_status": {
+            "all apprentices": [-1, -1]
+        },
+        "weight": 20,
+        "intro_text": "It starts snowing soon after the patrol sets out, trying to bring back something nice for the fresh-kill pile.",
+        "decline_text": "They decide to turn back and wait until the snow dies down.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "A storm descends, sudden and violent, putting an end to any other thoughts but survival. The wolves retreat into a grove of trees and cuddle together, sharing what little warmth they have. Each wolf takes a turn on the most exposed side of the huddle, selflessly risking themselves.",
+                "exp": 10,
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["p_l"],
+                        "cats_from": ["r_c"],
+                        "mutual": true,
+                        "values": ["romantic", "comfort", "trust"],
+                        "amount": 5
+                    }
+                ]
+            },
+            {
+                "text": "A storm descends, sudden and violent, putting an end to any other thoughts but survival. s_c keeps everyone's spirits up as the patrol hides in an abandoned Twolegs water-monster where the wind can't get them, until everyone is talking, shaky and unhappy, but keeping each other's spirits up.",
+                "exp": 10,
+                "weight": 20,
+                "stat_skill": ["SPEAKER,2"],
+                "relationships": [
+                    {
+                        "cats_to": ["p_l"],
+                        "cats_from": ["r_c"],
+                        "mutual": true,
+                        "values": ["romantic", "comfort", "trust"],
+                        "amount": 5
+                    }
+                ]
+            },
+            {
+                "text": "A storm descends, sudden and violent, putting an end to any other thoughts but survival. As the wolves hide from the wind, s_c keeps an eye out for everyone. It's a long couple of hours, but with gentle understanding and compassion the wolves make it though safely, closer than ever afterwards.",
+                "exp": 10,
+                "weight": 20,
+                "stat_trait": ["altruistic", "compassionate", "empathetic", "faithful", "loving"],
+                "relationships": [
+                    {
+                        "cats_to": ["p_l"],
+                        "cats_from": ["r_c"],
+                        "mutual": true,
+                        "values": ["romantic", "comfort", "trust"],
+                        "amount": 5
+                    }
+                ]
+            }
+        ],
+        "fail_outcomes": []
+    },
+    {
         "patrol_id": "wtlnd_hunt_redfox_scavenge1",
         "biome": ["wetlands"],
         "season": ["Any"],
         "types": ["hunting"],
-        "tags": ["large_prey3"],
+        "tags": [],
         "patrol_art": "hunt_general_intro",
         "min_cats": 2,
         "max_cats": 3,
@@ -2037,7 +2137,7 @@
         "biome": ["wetlands"],
         "season": ["Any"],
         "types": ["hunting"],
-        "tags": ["large_prey3"],
+        "tags": [],
         "patrol_art": "hunt_general_intro",
         "min_cats": 4,
         "max_cats": 6,
@@ -2174,7 +2274,7 @@
         "biome": ["wetlands"],
         "season": ["Any"],
         "types": ["hunting"],
-        "tags": ["large_prey3"],
+        "tags": [],
         "patrol_art": "hunt_general_intro",
         "min_cats": 1,
         "max_cats": 1,

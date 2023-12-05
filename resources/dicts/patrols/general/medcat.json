@@ -870,7 +870,7 @@
                 ]
             },
             {
-                "text": "s_c had seen before how connected p_l was to StarPack, and began telling {PRONOUN/p_l/object} more than they would have told any other Pack wolf about their ancestors. p_l and s_c spend much of their patrol gathering herbs and discussing the hard-hitting questions on prophecies and StarPack's gifts.",
+                "text": "p_l had seen before how connected r_c was to StarPack, and began telling {PRONOUN/p_l/object} more than they would have told any other Pack wolf about their ancestors. p_l and s_c spend much of their patrol gathering herbs and discussing the hard-hitting questions on prophecies and StarPack's gifts.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["LORE,1", "STAR,1"],
