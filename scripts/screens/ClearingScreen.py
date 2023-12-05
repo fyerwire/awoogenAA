@@ -130,6 +130,7 @@ class ClearingScreen(Screens):
         self.feed_button.hide()
 
         if game.clan.game_mode != 'classic':
+            resourcepath = Screens.resourcepath
             self.help_button = UIImageButton(scale(pygame.Rect(
                 (1450, 50), (68, 68))),
                 "",
@@ -169,7 +170,7 @@ class ClearingScreen(Screens):
             self.cat_bg = pygame_gui.elements.UIImage(scale(pygame.Rect
                                                             ((280, 880), (1120, 400))),
                                                       pygame.image.load(
-                                                          "resources/images/sick_hurt_bg.png").convert_alpha()
+                                                          resourcepath + "images/sick_hurt_bg.png").convert_alpha()
                                                       , manager=MANAGER)
             self.cat_bg.disable()
             log_text = game.freshkill_event_list.copy()
@@ -231,22 +232,22 @@ class ClearingScreen(Screens):
 
         concern_text = "This should not appear."
         if current_prey_amount == 0:
-            concern_text = "The fresh-kill pile is empty, the Clan desperately needs prey!"
+            concern_text = "The fresh-kill pile is empty, the Pack desperately needs prey!"
             self.pile_size = "#freshkill_pile_empty"
         elif 0 < current_prey_amount <= needed_amount / 2:
-            concern_text = "The fresh-kill pile can't even feed half of the Clan. Hunting patrols should be organized immediately."
+            concern_text = "The fresh-kill pile can't even feed half of the Pack. Hunting patrols should be organized immediately."
             self.pile_size = "#freshkill_pile_verylow"
         elif needed_amount / 2 < current_prey_amount <= needed_amount:
-            concern_text = "Only half of the Clan can be fed currently. Hunting patrols should be organized."
+            concern_text = "Only half of the Pack can be fed currently. Hunting patrols should be organized."
             self.pile_size = "#freshkill_pile_low"
         elif needed_amount < current_prey_amount <= needed_amount * 1.5:
-            concern_text = "Every mouth of the Clan can be fed, but some more prey would not harm."
+            concern_text = "Every mouth of the Pack can be fed, but some more prey would not harm."
             self.pile_size = "#freshkill_pile_average"
         elif needed_amount * 1.5 < current_prey_amount <= needed_amount * 2.5:
-            concern_text = "The fresh-kill pile is overflowing and the Clan can feast!"
+            concern_text = "The fresh-kill pile is overflowing and the Pack can feast!"
             self.pile_size = "#freshkill_pile_good"
         elif needed_amount * 2.5 < current_prey_amount:
-            concern_text = "StarClan has blessed the Clan with plentiful prey and the leader sends their thanks to Silverpelt."
+            concern_text = "StarPack has blessed the Pack with plentiful prey and the leader sends their thanks to Silverpelt."
             self.pile_size = "#freshkill_pile_full"
 
         information_display.append(general_text)
@@ -352,9 +353,9 @@ class ClearingScreen(Screens):
         nutrition_info = game.clan.freshkill_pile.nutrition_info
         if self.focus_cat_object.ID in nutrition_info:
             info_list.append("nutrition: " + str(int(nutrition_info[self.focus_cat_object.ID].percentage)) + "%")
-        work_status = "This cat can work"
+        work_status = "This wolf can work"
         if self.focus_cat_object.not_working():
-            work_status = "This cat isn't able to work"
+            work_status = "This wolf isn't able to work"
         info_list.append(work_status)
 
         self.focus_info.set_text("<br>".join(info_list))
@@ -556,7 +557,7 @@ class ClearingScreen(Screens):
         for status in feeding_order:
             amount = prey_requirement[status]
             self.additional_text["condition_increase"] = pygame_gui.elements.UITextBox(
-                f"{n}. {status}: {amount} prey",
+                f"{n}. {status}: {amount} prey".replace("cat", "wolf").replace("cats", "wolves"),
                 scale(pygame.Rect((x_val, n * 45 + 55), (1000, 78))),
                 container=self.additional_text["container_general"],
                 object_id=get_text_box_theme("#text_box_30_horizleft_pad_0_8"),
