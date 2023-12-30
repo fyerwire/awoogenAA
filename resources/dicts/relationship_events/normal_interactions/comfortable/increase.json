@@ -25,7 +25,7 @@
 		"intensity": "low",
 		"interactions": [
 			"m_c is asking r_c to check {PRONOUN/m_c/object} for ticks.",
-			"m_c is happy to see r_c is the cat who is helping {PRONOUN/m_c/object} today."
+			"m_c is happy to see r_c is the wolf who is helping {PRONOUN/m_c/object} today."
 		],
 		"main_status_constraint": [
 			"elder"

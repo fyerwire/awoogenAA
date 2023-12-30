@@ -1,1 +1,1 @@
-start %LocalAppData%\Awoogen\Awoogen
+start %LocalAppData%\AwoogenBeta\Awoogen

@@ -122,7 +122,7 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "event_text": "m_c awakens with multiple objects stacked on {PRONOUN/m_c/object}, and the sound of giggling cats in the distance.",
+        "event_text": "m_c awakens with multiple objects stacked on {PRONOUN/m_c/object}, and the sound of giggling wolves in the distance.",
         "cat_trait": null,
         "cat_skill": null,
         "other_cat_trait": null,
