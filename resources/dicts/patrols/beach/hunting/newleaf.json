@@ -343,12 +343,12 @@
         "max_cats": 3,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your patrol catches the scent of a fox - but is it red, or gray?",
-        "decline_text": "Your patrol decides not to pursue the fox.",
+        "intro_text": "Your patrol catches the scent of a feline - but what kind?",
+        "decline_text": "Your patrol decides not to pursue the feline.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "The red vixen smells of milk, and hopefully by driving her out of the territory, her litter this newleaf won't be a threat to the Pack. If they don't starve, c_n will hunt them down - they do not share territory with foxes.",
+                "text": "The lynx smells of milk, and hopefully by driving her out of the territory, her litter this newleaf won't be a threat to the Pack. If they don't starve, c_n will hunt them down - they do not share territory with lynxes.",
                 "exp": 30,
                 "weight": 20,
                 "relationships": [
@@ -362,7 +362,7 @@
                 ]
             },
             {
-                "text": "Your patrol drives away the red fox, seeks out her den, and kills her young cubs. It's brutal, but these fluffy baby foxes would one day have grown to be pup-killers and thieves.",
+                "text": "Your patrol drives away the lynx, seeks out her den, and kills her young cubs. It's brutal, but these fluffy baby kittens would one day have grown to be pup-killers and thieves.",
                 "exp": 30,
                 "weight": 5,
                 "relationships": [
@@ -376,7 +376,7 @@
                 ]
             },
             {
-                "text": "s_c displays incredible skill, driving the mother vixen out of the territory almost by {PRONOUN/s_c/self}. Now neither the red fox nor her cubs pose a threat to the Pack. It truly proves s_c's place as one of c_n's most talented and skillful fighters.",
+                "text": "s_c displays incredible skill, driving the mother lynx out of the territory almost by {PRONOUN/s_c/self}. Now neither the lynx nor her cubs pose a threat to the Pack. It truly proves s_c's place as one of c_n's most talented and skillful fighters.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,3"],
@@ -391,7 +391,7 @@
                 ]
             },
             {
-                "text": "The patrol overcomes the red vixen and drives her off thanks to a brilliant battle move by s_c at a critical moment. {PRONOUN/s_c/poss/CAP} bravery ensures the patrol's success, and the wolves arrive back at camp singing {PRONOUN/s_c/poss} praises to make sure the Pack knows it.",
+                "text": "The patrol overcomes the lynx and drives her off thanks to a brilliant battle move by s_c at a critical moment. {PRONOUN/s_c/poss/CAP} bravery ensures the patrol's success, and the wolves arrive back at camp singing {PRONOUN/s_c/poss} praises to make sure the Pack knows it.",
                 "exp": 30,
                 "weight": 20,
                 "stat_trait": [
@@ -421,7 +421,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The mother red fox is vicious and determined, and the small patrol is beaten back. But this coast is c_n's and they haven't given up. They may have lost this battle, but c_n will win this war.",
+                "text": "The mother lynx is vicious and determined, and the small patrol is beaten back. But this coast is c_n's and they haven't given up. They may have lost this battle, but c_n will win this war.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -435,7 +435,7 @@
                 ]
             },
             {
-                "text": "s_c is determined to win, but {PRONOUN/s_c/poss} confidence is misplaced. {PRONOUN/s_c/subject/CAP}{VERB/s_c/'re/'s} a good fighter, but not a great one, and in a moment that embarrasses {PRONOUN/s_c/object} deeply, the rest of the patrol have to rescue {PRONOUN/s_c/object} from the red vixen.",
+                "text": "s_c is determined to win, but {PRONOUN/s_c/poss} confidence is misplaced. {PRONOUN/s_c/subject/CAP}{VERB/s_c/'re/'s} a good fighter, but not a great one, and in a moment that embarrasses {PRONOUN/s_c/object} deeply, the rest of the patrol have to rescue {PRONOUN/s_c/object} from the lynx.",
                 "exp": 0,
                 "weight": 10,
                 "stat_skill": ["FIGHTER, 1"],
@@ -447,9 +447,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c carries a scar from a solo fight with a vixen.",
-                    "reg_death": "m_c fell in a solo battle with a vixen.",
-                    "lead_death": "died in battle with a fox"
+                    "scar": "m_c carries a scar from a solo fight with a lynx.",
+                    "reg_death": "m_c fell in a solo battle with a lynx.",
+                    "lead_death": "died in battle with a lynx"
                 },
                 "relationships": [
                     {
@@ -462,14 +462,14 @@
                 ]
             },
             {
-                "text": "Never threaten a mother's young - the red vixen kills r_c in the skirmish.",
+                "text": "Never threaten a mother's young - the lynx kills r_c in the skirmish.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
                 "history_text": {
-                    "scar": "m_c carries a scar from a fight with a red vixen.",
-                    "reg_death": "m_c fell in battle with a red fox.",
-                    "lead_death": "died while fighting a red vixen"
+                    "scar": "m_c carries a scar from a fight with a lynx.",
+                    "reg_death": "m_c fell in battle with a lynx.",
+                    "lead_death": "died while fighting a lynx"
                 },
                 "relationships": [
                     {
@@ -482,7 +482,7 @@
                 ]
             },
             {
-                "text": "The mother red fox's snapping jaws leave r_c dripping blood on the sand, forcing the patrol to back off.",
+                "text": "The mother lynx's snapping jaws leave r_c dripping blood on the sand, forcing the patrol to back off.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -493,9 +493,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c carries a scar from a fight with a red vixen.",
-                    "reg_death": "m_c fell in battle with a red fox.",
-                    "lead_death": "died while fighting a red vixen"
+                    "scar": "m_c carries a scar from a fight with a lynx.",
+                    "reg_death": "m_c fell in battle with a lynx.",
+                    "lead_death": "died while fighting a lynx"
                 },
                 "relationships": [
                     {
@@ -520,12 +520,12 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your patrol catches the scent of a fox - but is it red, or gray?",
-        "decline_text": "Your patrol decides not to pursue the fox.",
+        "intro_text": "Your patrol catches the scent of a feline - but what kind?",
+        "decline_text": "Your patrol decides not to pursue the feline.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "Led by p_l, and with a heap of cooperation and teamwork, the patrol drives away the red fox, seeks out her den, and kills her young cubs. The coasts will be safe from both the threat the vixen posed this season, and the threat her cubs would've given c_n in the seasons to come.",
+                "text": "Led by p_l, and with a heap of cooperation and teamwork, the patrol drives away the lynx, seeks out her den, and kills her young cubs. The coasts will be safe from both the threat the lynx posed this season, and the threat her cubs would've given c_n in the seasons to come.",
                 "exp": 30,
                 "weight": 20,
                 "relationships": [
@@ -539,7 +539,7 @@
                 ]
             },
             {
-                "text": "With so many wolves working together in tight coordination, they manage to accomplish the near-impossible, killing the red mother vixen and ending the threat to the Pack that she and her cubs pose.",
+                "text": "With so many wolves working together in tight coordination, they manage to accomplish the near-impossible, killing the mother lynx and ending the threat to the Pack that she and her cubs pose.",
                 "exp": 30,
                 "weight": 5,
                 "relationships": [
@@ -553,7 +553,7 @@
                 ]
             },
             {
-                "text": "s_c displays incredible skill, driving the mother vixen out of the territory almost by {PRONOUN/s_c/self}. Now neither the red fox nor her dependent cubs pose a threat to the Pack. It truly proves s_c's place as one of c_n's most talented and skillful fighters.",
+                "text": "s_c displays incredible skill, driving the mother lynx out of the territory almost by {PRONOUN/s_c/self}. Now neither the lynx nor her dependent cubs pose a threat to the Pack. It truly proves s_c's place as one of c_n's most talented and skillful fighters.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,3"],
@@ -568,7 +568,7 @@
                 ]
             },
             {
-                "text": "The patrol overcomes the red vixen and drives her off thanks to a brilliant battle move by s_c at a critical moment. {PRONOUN/s_c/poss/CAP} bravery ensures the patrol's success, and the wolves arrive back at camp singing {PRONOUN/s_c/poss} praises to make sure the Pack knows it.",
+                "text": "The patrol overcomes the lynx and drives her off thanks to a brilliant battle move by s_c at a critical moment. {PRONOUN/s_c/poss/CAP} bravery ensures the patrol's success, and the wolves arrive back at camp singing {PRONOUN/s_c/poss} praises to make sure the Pack knows it.",
                 "exp": 30,
                 "weight": 20,
                 "stat_trait": [
@@ -598,7 +598,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The mother red fox is vicious and determined. Although they lose this battle, through teamwork the wolves manage to retreat without injury.",
+                "text": "The mother lynx is vicious and determined. Although they lose this battle, through teamwork the wolves manage to retreat without injury.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -612,7 +612,7 @@
                 ]
             },
             {
-                "text": "r_c is left wounded as the patrol and the red mother vixen fight to a stalemate. Hopefully they've given the fox mother a reason not to return to this part of the coast.",
+                "text": "r_c is left wounded as the patrol and the mother lynx fight to a stalemate. Hopefully they've given the lynx mother a reason not to return to this part of the coast.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -622,7 +622,7 @@
                         "scars": ["NECKBITE"]
                     }
                 ],
-                "history_text": { "scar": "m_c carries a scar from a fight with a red vixen." },
+                "history_text": { "scar": "m_c carries a scar from a fight with a lynx." },
                 "relationships": [
                     {
                         "cats_to": ["r_c", "patrol", "r_c"],
@@ -634,7 +634,7 @@
                 ]
             },
             {
-                "text": "s_c is determined to win, but {PRONOUN/s_c/poss} confidence is misplaced. {PRONOUN/s_c/subject/CAP}{VERB/s_c/'re/'s} a good fighter, but not a great one, and in a moment that embarrasses {PRONOUN/s_c/object} deeply, the rest of the patrol have to rescue {PRONOUN/s_c/object} from the red vixen.",
+                "text": "s_c is determined to win, but {PRONOUN/s_c/poss} confidence is misplaced. {PRONOUN/s_c/subject/CAP}{VERB/s_c/'re/'s} a good fighter, but not a great one, and in a moment that embarrasses {PRONOUN/s_c/object} deeply, the rest of the patrol have to rescue {PRONOUN/s_c/object} from the lynx.",
                 "exp": 0,
                 "weight": 10,
                 "stat_skill": ["FIGHTER, 1"],
@@ -646,9 +646,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c carries a scar from a solo fight with a vixen.",
-                    "reg_death": "m_c fell in a solo battle with a vixen.",
-                    "lead_death": "died in battle with a fox"
+                    "scar": "m_c carries a scar from a solo fight with a lynx.",
+                    "reg_death": "m_c fell in a solo battle with a lynx.",
+                    "lead_death": "died in battle with a lynx"
                 },
                 "relationships": [
                     {
@@ -673,12 +673,12 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your patrol catches the scent of a fox - but is it red, or gray?",
-        "decline_text": "Your patrol decides not to pursue the fox.",
+        "intro_text": "Your patrol catches the scent of a feline - but what kind?",
+        "decline_text": "Your patrol decides not to pursue the feline.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "The red vixen smells of milk, and hopefully by driving her out of the territory, her litter this newleaf won't be a threat to the Pack. If they don't starve, c_n will hunt them down - they do not share territory with foxes.",
+                "text": "The cougar smells of milk, and hopefully by driving her out of the territory, her litter this newleaf won't be a threat to the Pack. If they don't starve, c_n will hunt them down - they do not share territory with cougars.",
                 "exp": 50,
                 "weight": 20,
                 "relationships": [
@@ -692,7 +692,7 @@
                 ]
             },
             {
-                "text": "s_c displays incredible skill, driving the mother vixen and her brood off of the coast all by {PRONOUN/s_c/self}. Now neither the red fox nor her dependent cubs pose a threat to the Pack. {PRONOUN/s_c/subject/CAP} {VERB/s_c/swell/swells} with pride, feeling the confidence of knowing that {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} truly one of the best fighters c_n has ever produced.",
+                "text": "s_c displays incredible skill, driving the mother cougar and her brood off of the coast all by {PRONOUN/s_c/self}. Now neither the cougar nor her dependent cubs pose a threat to the Pack. {PRONOUN/s_c/subject/CAP} {VERB/s_c/swell/swells} with pride, feeling the confidence of knowing that {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} truly one of the best fighters c_n has ever produced.",
                 "exp": 50,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,3"],
@@ -707,7 +707,7 @@
                 ]
             },
             {
-                "text": "A brilliant battle move by s_c knocks the red vixen off balance, and s_c manages to drive her out of c_n territory, though it takes every spark of strength in {PRONOUN/s_c/poss} pelt to do it alone.",
+                "text": "A brilliant battle move by s_c knocks the cougar off balance, and s_c manages to drive her out of c_n territory, though it takes every spark of strength in {PRONOUN/s_c/poss} pelt to do it alone.",
                 "exp": 50,
                 "weight": 20,
                 "stat_trait": [
@@ -737,14 +737,14 @@
         ],
         "fail_outcomes": [
             {
-                "text": "Never threaten a mother's young - the red vixen kills r_c in the skirmish, and carries off the body to feed her litter.",
+                "text": "Never threaten a mother's young - the cougar kills r_c in the skirmish, and carries off the body to feed her litter.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
                 "history_text": {
-                    "scar": "m_c carries a scar from a solo fight with a red vixen.",
-                    "reg_death": "m_c fell in a solo battle with a vixen.",
-                    "lead_death": "died while fighting a red vixen"
+                    "scar": "m_c carries a scar from a solo fight with a cougar.",
+                    "reg_death": "m_c fell in a solo battle with a cougar.",
+                    "lead_death": "died while fighting a cougar"
                 },
                 "relationships": [
                     {
@@ -757,7 +757,7 @@
                 ]
             },
             {
-                "text": "The mother red fox's snapping jaws leave r_c dripping blood on the sand, and barely able to escape further injury.",
+                "text": "The mother cougar's snapping jaws leave r_c dripping blood on the sand, and barely able to escape further injury.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -768,9 +768,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c carries a scar from a solo fight with a red vixen.",
-                    "reg_death": "m_c fell in a solo battle with a vixen.",
-                    "lead_death": "died while fighting a red vixen"
+                    "scar": "m_c carries a scar from a solo fight with a cougar.",
+                    "reg_death": "m_c fell in a solo battle with a cougar.",
+                    "lead_death": "died while fighting a cougar"
                 },
                 "relationships": [
                     {
@@ -783,7 +783,7 @@
                 ]
             },
             {
-                "text": "s_c is determined to win, but the red vixen is determined to live, and that makes all the difference. s_c ends up pinned in a defensible hiding spot, bleeding and terrified, until the vixen judges {PRONOUN/s_c/object} no longer a threat and continues on her way.",
+                "text": "s_c is determined to win, but the cougar is determined to live, and that makes all the difference. s_c ends up pinned in a defensible hiding spot, bleeding and terrified, until the cougar judges {PRONOUN/s_c/object} no longer a threat and continues on her way.",
                 "exp": 0,
                 "weight": 10,
                 "stat_skill": ["FIGHTER, 1"],
@@ -795,9 +795,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c carries a scar from a solo fight with a red vixen.",
-                    "reg_death": "m_c fell in a solo battle with a vixen.",
-                    "lead_death": "died while fighting a red vixen"
+                    "scar": "m_c carries a scar from a solo fight with a cougar.",
+                    "reg_death": "m_c fell in a solo battle with a cougar.",
+                    "lead_death": "died while fighting a cougar"
                 },
                 "relationships": [
                     {
@@ -822,12 +822,12 @@
         "max_cats": 3,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your patrol catches the scent of a fox - but is it red, or gray?",
-        "decline_text": "Your patrol decides not to pursue the fox.",
+        "intro_text": "Your patrol catches the scent of a feline - but what kind?",
+        "decline_text": "Your patrol decides not to pursue the feline.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "The stocky gray vixen they track down smells of milk, and though she's nearly double the weight of any of the patrol and all of it muscle, they meet her eyes squarely, and leap to attack. c_n does not tolerate sharing their territory with foxes, and they work together to drive her off.",
+                "text": "The stocky bobcat they track down smells of milk, and though she's extremely muscular and much more agile than them, they meet her eyes squarely, and leap to attack. c_n does not tolerate sharing their territory with bobcats, and they work together to drive her off.",
                 "exp": 30,
                 "weight": 20,
                 "relationships": [
@@ -841,7 +841,7 @@
                 ]
             },
             {
-                "text": "Your patrol drives away the gray fox, seeks out her den, and kills her young cubs. It's brutal, but these fluffy baby foxes would one day have grown to be pup-killers and thieves. Better to deal with them now than when they're the height and nearly double the weight of a wolf, though a gray fox will always be easier than a big red one.",
+                "text": "Your patrol drives away the bobcat, seeks out her den, and kills her young cubs. It's brutal, but these fluffy baby kittens would one day have grown to be pup-killers and thieves. Better to deal with them now than when they're almost the height and nearly double the weight of a wolf, though a bobcat will always be easier than a much larger cougar.",
                 "exp": 30,
                 "weight": 5,
                 "relationships": [
@@ -855,7 +855,7 @@
                 ]
             },
             {
-                "text": "s_c displays incredible skill, driving the mother vixen out of the territory almost by {PRONOUN/s_c/self}. Now neither the gray fox nor her cubs pose a threat to the Pack. It places s_c as one of c_n's most talented and skillful fighters; a gray fox is a dangerous competitor.",
+                "text": "s_c displays incredible skill, driving the mother bobcat out of the territory almost by {PRONOUN/s_c/self}. Now neither the bobcat nor her cubs pose a threat to the Pack. It places s_c as one of c_n's most talented and skillful fighters; a bobcat is a dangerous competitor.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,3"],
@@ -870,7 +870,7 @@
                 ]
             },
             {
-                "text": "The patrol overcomes the gray vixen they find and drives her off thanks to a brilliant battle move by s_c. The wolves swirl around s_c afterwards, congratulating {PRONOUN/s_c/object} on {PRONOUN/s_c/poss} bravery and skill.",
+                "text": "The patrol overcomes the bobcat they find and drives her off thanks to a brilliant battle move by s_c. The wolves swirl around s_c afterwards, congratulating {PRONOUN/s_c/object} on {PRONOUN/s_c/poss} bravery and skill.",
                 "exp": 30,
                 "weight": 20,
                 "stat_trait": [
@@ -900,7 +900,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The patrol comes across a gray vixen at the end of the scent trail. She spots them too, measures herself up against them, then flees, scrambling up the cliffs of the headland in a move that completely surprises the wolves. This round goes to the gray fox.",
+                "text": "The patrol comes across a bobcat at the end of the scent trail. She spots them too, measures herself up against them, then flees, scrambling up the cliffs of the headland in a move that completely surprises the wolves. This round goes to the bobcat.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -914,7 +914,7 @@
                 ]
             },
             {
-                "text": "The patrol finds a stocky gray vixen wandering their coast, and drives her out in a scene that mostly involves yowling and screaming and yapping at each other until she gives in. r_c gets a little battered, but everyone is mostly fine.",
+                "text": "The patrol finds a stocky bobcat wandering their coast, and drives her out in a scene that mostly involves yowling and screaming and yapping at each other until she gives in. r_c gets a little battered, but everyone is mostly fine.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -924,7 +924,7 @@
                         "scars": ["LEGBITE"]
                     }
                 ],
-                "history_text": { "scar": "m_c carries a scar from a fight with a gray vixen." },
+                "history_text": { "scar": "m_c carries a scar from a fight with a bobcat." },
                 "relationships": [
                     {
                         "cats_to": ["r_c", "patrol"],
@@ -936,7 +936,7 @@
                 ]
             },
             {
-                "text": "s_c is determined to win, but {PRONOUN/s_c/poss} confidence is misplaced. {PRONOUN/s_c/subject/CAP}{VERB/s_c/'re/'s} a good fighter, but not a great one, and the stocky gray vixen is all muscle, barging past s_c and knocking {PRONOUN/s_c/object} rump over paws as she flees from the patrol.",
+                "text": "s_c is determined to win, but {PRONOUN/s_c/poss} confidence is misplaced. {PRONOUN/s_c/subject/CAP}{VERB/s_c/'re/'s} a good fighter, but not a great one, and the stocky bobcat is all muscle, barging past s_c and knocking {PRONOUN/s_c/object} rump over paws as she flees from the patrol.",
                 "exp": 0,
                 "weight": 10,
                 "stat_skill": ["FIGHTER, 1"],
@@ -947,7 +947,7 @@
                         "scars": ["LEGBITE"]
                     }
                 ],
-                "history_text": { "scar": "m_c carries a scar from a fight with a gray vixen." },
+                "history_text": { "scar": "m_c carries a scar from a fight with a bobcat." },
                 "relationships": [
                     {
                         "cats_to": ["s_c", "patrol"],
@@ -971,12 +971,12 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your patrol catches the scent of a fox - but is it red, or gray?",
-        "decline_text": "Your patrol decides not to pursue the fox.",
+        "intro_text": "Your patrol catches the scent of a feline - but what kind?",
+        "decline_text": "Your patrol decides not to pursue the feline.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "The stocky gray vixen they track down smells of milk, and though she's nearly double the weight of any of the patrol and all of it muscle, they meet her eyes squarely, and leap to attack. c_n does not tolerate sharing their territory with foxes, and they work together to drive her off.",
+                "text": "The stocky bobcat they track down smells of milk, and though she's extremely muscular and much more agile than them, they meet her eyes squarely, and leap to attack. c_n does not tolerate sharing their territory with bobcats, and they work together to drive her off.",
                 "exp": 30,
                 "weight": 20,
                 "relationships": [
@@ -990,7 +990,7 @@
                 ]
             },
             {
-                "text": "With so many wolves working together in tight coordination, they're able to keep the gray vixen they find pinned and distracted as they wear her down. The fox eventually flees for her den, and the patrol follows to take care of the cubs she's raising.",
+                "text": "With so many wolves working together in tight coordination, they're able to keep the bobcat they find pinned and distracted as they wear her down. The bobcat eventually flees for her den, and the patrol follows to take care of the cubs she's raising.",
                 "exp": 30,
                 "weight": 5,
                 "relationships": [
@@ -1004,7 +1004,7 @@
                 ]
             },
             {
-                "text": "s_c displays incredible skill, driving the mother vixen out of the territory almost by {PRONOUN/s_c/self}. Now neither the gray fox nor her cubs pose a threat to the Pack. It places s_c as one of c_n's most talented and skillful fighters; a gray fox is a dangerous competitor.",
+                "text": "s_c displays incredible skill, driving the mother bobcat out of the territory almost by {PRONOUN/s_c/self}. Now neither the bobcat nor her cubs pose a threat to the Pack. It places s_c as one of c_n's most talented and skillful fighters; a bobcat is a dangerous competitor.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,3"],
@@ -1019,7 +1019,7 @@
                 ]
             },
             {
-                "text": "Bravely, s_c charges the gray fox, yowling threats. The vixen spooks and skitters up a tree, growling and barking in a squeaky tone, and s_c follows her up into the branches. As the rest of the patrol backs {PRONOUN/s_c/object} up from the ground, s_c screams until the fox is cowering and afraid, then lets her flee.",
+                "text": "Bravely, s_c charges the bobcat, barking threats. The bobcat spooks and skitters up a tree, hissing and puffed up, and s_c follows her up into the branches. As the rest of the patrol backs {PRONOUN/s_c/object} up from the ground, s_c barks until the bobcat is cowering and afraid, then lets her flee.",
                 "exp": 30,
                 "weight": 20,
                 "stat_trait": [
@@ -1049,7 +1049,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The patrol comes across a gray vixen at the end of the scent trail. She spots them too, measures herself up against them, then flees, scrambling up the cliffs of the headland in a move that completely surprises the wolves. This round goes to the gray fox.",
+                "text": "The patrol comes across a bobcat at the end of the scent trail. She spots them too, measures herself up against them, then flees, scrambling up the cliffs of the headland in a move that completely surprises the wolves. This round goes to the bobcat.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -1063,7 +1063,7 @@
                 ]
             },
             {
-                "text": "The patrol finds a stocky gray vixen wandering their coast, and drives her out in a scene that mostly involves yowling and screaming and yapping at each other until she gives in. r_c gets a little battered, but everyone is mostly fine.",
+                "text": "The patrol finds a stocky bobcat wandering their coast, and drives her out in a scene that mostly involves yowling and screaming and yapping at each other until she gives in. r_c gets a little battered, but everyone is mostly fine.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -1073,7 +1073,7 @@
                         "scars": ["LEGBITE"]
                     }
                 ],
-                "history_text": { "scar": "m_c carries a scar from a fight with a gray vixen." },
+                "history_text": { "scar": "m_c carries a scar from a fight with a bobcat." },
                 "relationships": [
                     {
                         "cats_to": ["r_c", "patrol"],
@@ -1085,7 +1085,7 @@
                 ]
             },
             {
-                "text": "s_c is determined to win, but {PRONOUN/s_c/poss} confidence is misplaced. {PRONOUN/s_c/subject/CAP}{VERB/s_c/'re/'s} a good fighter, but not a great one, and the stocky gray vixen is all muscle, barging past s_c and knocking {PRONOUN/s_c/object} rump over paws as she flees from the patrol.",
+                "text": "s_c is determined to win, but {PRONOUN/s_c/poss} confidence is misplaced. {PRONOUN/s_c/subject/CAP}{VERB/s_c/'re/'s} a good fighter, but not a great one, and the stocky bobcat is all muscle, barging past s_c and knocking {PRONOUN/s_c/object} rump over paws as she flees from the patrol.",
                 "exp": 0,
                 "weight": 10,
                 "stat_skill": ["FIGHTER, 1"],
@@ -1096,7 +1096,7 @@
                         "scars": ["LEGBITE"]
                     }
                 ],
-                "history_text": { "scar": "m_c carries a scar from a fight with a gray vixen." },
+                "history_text": { "scar": "m_c carries a scar from a fight with a bobcat." },
                 "relationships": [
                     {
                         "cats_to": ["s_c", "patrol"],
@@ -1120,12 +1120,12 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your patrol catches the scent of a fox - but is it red, or gray?",
-        "decline_text": "Your patrol decides not to pursue the fox.",
+        "intro_text": "Your patrol catches the scent of a feline - but what kind?",
+        "decline_text": "Your patrol decides not to pursue the feline.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "The stocky gray vixen {PRONOUN/r_c/subject} {VERB/r_c/track/tracks} down smells of milk, and though she's near double r_c's weight and all of it muscle, {PRONOUN/r_c/subject} {VERB/r_c/meet/meets} her eyes squarely, and {VERB/r_c/leap/leaps} to attack. c_n does not tolerate sharing their territory with foxes.",
+                "text": "The stocky bobcat {PRONOUN/r_c/subject} {VERB/r_c/track/tracks} down smells of milk, and though she's muscular and very agile, {PRONOUN/r_c/subject} {VERB/r_c/meet/meets} her eyes squarely, and {VERB/r_c/leap/leaps} to attack. c_n does not tolerate sharing their territory with bobcats.",
                 "exp": 50,
                 "weight": 20,
                 "relationships": [
@@ -1139,7 +1139,7 @@
                 ]
             },
             {
-                "text": "s_c displays incredible skill, driving the mother vixen and her brood off of the coast all by {PRONOUN/s_c/self}. Now neither the gray fox nor her dependent cubs pose a threat to the Pack. {PRONOUN/s_c/subject/CAP} {VERB/s_c/swell/swells} with pride, returning to camp knowing there's one less competitor poaching c_n's prey.",
+                "text": "s_c displays incredible skill, driving the mother bobcat and her brood off of the coast all by {PRONOUN/s_c/self}. Now neither the bobcat nor her dependent cubs pose a threat to the Pack. {PRONOUN/s_c/subject/CAP} {VERB/s_c/swell/swells} with pride, returning to camp knowing there's one less competitor poaching c_n's prey.",
                 "exp": 50,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,3"],
@@ -1154,7 +1154,7 @@
                 ]
             },
             {
-                "text": "They're nearly of equal height, with s_c's bold aggression making up for the weight that the gray vixen has on {PRONOUN/s_c/object}, and the stand off is resolved when s_c charges the gray fox and she chooses flight over fight.",
+                "text": "They're nearly of equal height, with s_c's bold aggression making up for the weight that the bobcat has on {PRONOUN/s_c/object}, and the stand off is resolved when s_c charges the bobcat and she chooses flight over fight.",
                 "exp": 50,
                 "weight": 20,
                 "stat_trait": [
@@ -1184,7 +1184,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "r_c comes across a gray vixen at the end of the scent trail. She spots {PRONOUN/r_c/object} too, measures herself up against {PRONOUN/r_c/object}, then flees, scrambling up the cliffs of the headland in a move that completely surprises r_c. This round goes to the gray fox.",
+                "text": "r_c comes across a bobcat at the end of the scent trail. She spots {PRONOUN/r_c/object} too, measures herself up against {PRONOUN/r_c/object}, then flees, scrambling up the cliffs of the headland in a move that completely surprises r_c. This round goes to the bobcat.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -1198,7 +1198,7 @@
                 ]
             },
             {
-                "text": "r_c nearly manages to pin the gray vixen {PRONOUN/r_c/subject} {VERB/r_c/find/finds} on a cliff ledge, but snapping jaws leave r_c dripping blood on the sand. Today, this round goes to the gray fox.",
+                "text": "r_c nearly manages to pin the bobcat {PRONOUN/r_c/subject} {VERB/r_c/find/finds} on a cliff ledge, but snapping jaws leave r_c dripping blood on the sand. Today, this round goes to the bobcat.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -1208,7 +1208,7 @@
                         "scars": ["NECKBITE"]
                     }
                 ],
-                "history_text": { "scar": "m_c carries a scar from a solo fight with a gray vixen." },
+                "history_text": { "scar": "m_c carries a scar from a solo fight with a bobcat." },
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
@@ -1220,7 +1220,7 @@
                 ]
             },
             {
-                "text": "s_c is determined to win, but {PRONOUN/s_c/poss} confidence is misplaced. {PRONOUN/s_c/subject/CAP}{VERB/s_c/'re/'s} a good fighter, but not a great one, and the stocky gray vixen is cunning, sinking her teeth into s_c to distract {PRONOUN/s_c/object} as she flees.",
+                "text": "s_c is determined to win, but {PRONOUN/s_c/poss} confidence is misplaced. {PRONOUN/s_c/subject/CAP}{VERB/s_c/'re/'s} a good fighter, but not a great one, and the stocky bobcat is cunning, sinking her teeth into s_c to distract {PRONOUN/s_c/object} as she flees.",
                 "exp": 0,
                 "weight": 10,
                 "stat_skill": ["FIGHTER, 1"],
@@ -1231,7 +1231,7 @@
                         "scars": ["NECKBITE"]
                     }
                 ],
-                "history_text": { "scar": "m_c carries a scar from a solo fight with a gray vixen." },
+                "history_text": { "scar": "m_c carries a scar from a solo fight with a bobcat." },
                 "relationships": [
                     {
                         "cats_to": ["patrol"],

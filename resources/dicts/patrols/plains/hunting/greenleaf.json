@@ -568,7 +568,7 @@
                 ]
             },
             {
-                "text": "With so many wolves working together in tight coordination, they manage to accomplish the near-impossible, finding and killing a mother lynx and ending the threat to the Pack that she and her cubs pose.",
+                "text": "With so many wolves working together in tight coordination, they manage to accomplish the near-impossible, finding and killing the mother lynx and ending the threat to the Pack that she and her cubs pose.",
                 "exp": 30,
                 "weight": 5,
                 "relationships": [
@@ -582,7 +582,7 @@
                 ]
             },
             {
-                "text": "s_c displays incredible skill, driving the mother lynx {PRONOUN/s_c/subject} {VERB/s_c/track/tracks} down out of the territory almost by {PRONOUN/s_c/self}. Now neither the lynxnor her dependent cubs pose a threat to the Pack. It truly proves s_c's place as one of c_n's most talented and skillful fighters.",
+                "text": "s_c displays incredible skill, driving the mother lynx out of the territory almost by {PRONOUN/s_c/self}. Now neither the lynxnor her dependent cubs pose a threat to the Pack. It truly proves s_c's place as one of c_n's most talented and skillful fighters.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,3"],
@@ -903,7 +903,7 @@
                 ]
             },
             {
-                "text": "s_c displays incredible skill, driving the mother lynx {PRONOUN/s_c/subject} {VERB/s_c/track/tracks} down out of the territory almost by {PRONOUN/s_c/self}. Now neither the lynx nor her dependent cubs pose a threat to the Pack. It truly proves s_c's place as one of c_n's most talented and skillful fighters.",
+                "text": "s_c displays incredible skill, driving the mother lynx out of the territory almost by {PRONOUN/s_c/self}. Now neither the lynx nor her dependent cubs pose a threat to the Pack. It truly proves s_c's place as one of c_n's most talented and skillful fighters.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,3"],
