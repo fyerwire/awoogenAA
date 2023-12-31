@@ -12,7 +12,7 @@
 		"id": "admire_inc_low2",
 		"intensity": "low",
 		"interactions": [
-			"m_c mews congratulations to r_c for a job well done.",
+			"m_c barks congratulations to r_c for a job well done.",
 			"m_c thinks r_c is being thoughtful of others.",
 			"m_c approves of r_c's recent efforts."
 		],

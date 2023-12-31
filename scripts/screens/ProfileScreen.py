@@ -431,7 +431,7 @@ class ProfileScreen(Screens):
         self.profile_elements = {}
 
         if self.user_notes:
-            self.user_notes = 'Click the check mark to enter notes about your cat!'
+            self.user_notes = 'Click the check mark to enter notes about your wolf!'
 
         for box in self.checkboxes:
             self.checkboxes[box].kill()
@@ -693,6 +693,10 @@ class ProfileScreen(Screens):
             point_name = the_cat.pelt.points.lower()
             if point_name == 'sepia' or point_name == 'mink' or point_name == 'clear':
                 point_name = point_name + 'point'
+            elif point_name == 'point':
+                point_name = "graypoint"
+            elif point_name == 'bew':
+                point_name = "ghost"
         if the_cat.pelt.merle:
             if the_cat.pelt.harlequin:
                 merle_name = 'harlequin'

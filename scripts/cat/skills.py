@@ -101,10 +101,10 @@ class SkillPath(Enum):
         "fantastic healer"
     )
     STAR = (
-        "curious about StarClan",
-        "connection to Starclan",
-        "deep StarClan bond",
-        "unshakable StarClan link",
+        "curious about StarPack",
+        "connection to StarPack",
+        "deep StarPack bond",
+        "unshakable StarPack link",
     )
     DARK = (
         "interested in the Dark Forest",
