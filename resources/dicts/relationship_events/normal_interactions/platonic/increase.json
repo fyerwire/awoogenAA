@@ -95,7 +95,7 @@
 		"interactions": [
 			"r_c is making sure m_c knows that {PRONOUN/m_c/subject} {VERB/m_c/are/is} loved.",
 			"r_c is telling m_c how much {PRONOUN/r_c/subject} {VERB/r_c/cherish/cherishes} {PRONOUN/m_c/object}.",
-			"r_c is purring loudly to comfort m_c."
+			"r_c is talking calmy to comfort m_c."
 		],
 		"random_trait_constraint": [
 			"loving"

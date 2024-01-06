@@ -359,9 +359,9 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "death_text": "m_c lost a life defending the kits from o_c warriors.",
+        "death_text": "m_c lost a life defending the pups from o_c warriors.",
         "history_text": {
-            "lead_death": "defended the kits from o_c warriors"
+            "lead_death": "defended the pups from o_c warriors"
         },
         "cat_trait": [
             "altruistic",

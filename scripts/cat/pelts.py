@@ -324,14 +324,6 @@ class Pelt():
         new_pelt.init_pattern()
         new_pelt.init_tint()
 
-        if new_pelt.merle:
-            print('MERLE! on: ' + new_pelt.name)
-            print('merle: ' + str(new_pelt.merle_pattern))
-        if new_pelt.harlequin:
-            print('HARLEQUIN! on: ' + new_pelt.name)
-        if new_pelt.points != None:
-            print('points: ' + str(new_pelt.points))
-            print('point genes: ' + str(new_pelt.points_genes))
         # setting up some sillies
         new_pelt.fun_traits = ["o", "o", "o"]
         new_pelt.fun_traits[0] = random.choice(Pelt.fun_scents)
@@ -1183,7 +1175,7 @@ class Pelt():
             self.tortiecolour = None
             self.pattern = None
         # accounting for a weird thing
-        if self.tortiepattern == self.tortiebase and self.colour == self.tortiecolour:
+        if self.tortiepattern == self.tortiebase and self.colour == self.tortiecolour or self.colour == self.tortiecolour and self.tortiepattern in ["Semisolid", "Solid"] and self.tortiebase in ["Semisolid", "Solid"]:
             temp_tortie = self.tortiepattern.capitalize()
             poss_bases = Pelt.tortiebases
             poss_bases.remove(temp_tortie)
@@ -1213,7 +1205,7 @@ class Pelt():
             if self.name == 'Tortie':
                 for i in parents_white:
                     if i in white_list[1] or i in white_list[2]:
-                        parents_white.remove(p)
+                        parents_white.remove(i)
                 if len(parents_white) != 0:
                     self.white_patches = random.choice(parents_white)
                 else:
@@ -1221,7 +1213,7 @@ class Pelt():
             elif self.name == 'Calico':
                 for i in parents_white:
                     if i in white_list[0]:
-                        parents_white.remove(p)
+                        parents_white.remove(i)
                 if len(parents_white) != 0:
                     self.white_patches = random.choice(parents_white)
                 else:
@@ -1581,7 +1573,7 @@ class Pelt():
             elif str(cat.pelt.colour).lower() == "black" or str(cat.pelt.colour).lower() == "luna":
                 temp_color_name = "black"
             elif str(cat.pelt.colour).lower() == "chocolate" or str(cat.pelt.colour).lower() == "blue" or str(cat.pelt.colour).lower() == "lilac":
-                temp_color_name = str(renamed_colors[temp_color_name]) + " and cream"
+                temp_color_name = str(renamed_colors[cat.pelt.colour.lower()]) + " and cream"
             elif str(cat.pelt.colour).lower() == "spruce":
                 temp_color_name = "blue and gray"
             elif str(cat.pelt.colour).lower() == "isabella":

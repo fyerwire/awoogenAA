@@ -483,7 +483,7 @@
                 ]
             },
             {
-                "text": "s_c displays incredible skill, driving the mother lynx they track down out of the territory almost by themselves. It truly proves s_c's place as one of c_n's most talented and skillful fighters.",
+                "text": "s_c displays incredible skill, driving the mother lynx they track down out of the territory almost by {PRONOUN/s_c/self}. It truly proves s_c's place as one of c_n's most talented and skillful fighters.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,3"],

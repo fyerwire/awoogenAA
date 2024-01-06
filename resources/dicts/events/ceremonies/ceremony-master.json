@@ -1357,7 +1357,7 @@
       "general_backstory",
       "all_traits"
     ],
-    "(old_name) is given {PRONOUN/m_c/poss} full name of m_c and welcomed as a full medicine cat. "
+    "(old_name) is given {PRONOUN/m_c/poss} full name of m_c and welcomed as a full medicine wolf. "
   ],
   "med_0_a": [
   [
@@ -2505,7 +2505,7 @@
       "general_backstory",
       "responsible"
     ],
-    "(old_name) has shown more maturity than most cats {PRONOUN/m_c/poss} age, always offering to take on the worst apprentice jobs first, and counting the prey in the pile to know just how much to catch on patrol. l_n was tempted to make {PRONOUN/m_c/object} a warrior sooner, but now will have to do. {PRONOUN/l_n/subject/CAP} {VERB/l_n/name/names} {PRONOUN/m_c/object} m_c after {PRONOUN/m_c/poss} r_h."
+    "(old_name) has shown more maturity than most wolves {PRONOUN/m_c/poss} age, always offering to take on the worst apprentice jobs first, and counting the prey in the pile to know just how much to catch on patrol. l_n was tempted to make {PRONOUN/m_c/object} a warrior sooner, but now will have to do. {PRONOUN/l_n/subject/CAP} {VERB/l_n/name/names} {PRONOUN/m_c/object} m_c after {PRONOUN/m_c/poss} r_h."
   ],
   "warrior_38": [
     [

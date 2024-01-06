@@ -60,7 +60,7 @@
         ["a twig burning from both ends"],
         ["the grin of a fox"],
         ["a lost object finally returned", "a missing possession finally found"],
-        ["a figure with the voice of StarClan"],
+        ["a figure with the voice of StarPack"],
         ["a wolf not yet born"],
         ["a wolf nearly forgotten"],
         ["a wolf covered in blood"],
@@ -102,7 +102,7 @@
         ["the sound of a heartbeat"],
         ["a whispered message", "whispers of hope long past"],
         ["a dying promise"],
-        ["a cat's final words"]
+        ["a wolf's final words"]
 
       ],
       "forest": [
@@ -450,7 +450,7 @@
         ["a mentor's touch to an apprentice's forehead"],
         ["slipping on muddy earth despite the dry ground", "sinking into muddy earth"],
         ["paws damp with water", "paws damp with blood", "paws heavy with blood"],
-        ["another cat's violent shove"],
+        ["another wolf's violent shove"],
         ["sharpening one's fangs against bone"],
         ["wind whipping through fur"]
       ],
