@@ -432,7 +432,7 @@ class Cat():
                 game.clan.leader_lives = 0
                 self.thought = 'Is surprised to find themselves walking the stars of Silverpelt'
                 if game.clan.instructor.df is False:
-                    text = 'They\'ve lost their last life and have travelled to StarClan.'
+                    text = 'They\'ve lost their last life and have travelled to StarPack.'
                 else:
                     text = 'They\'ve lost their last life and have travelled to the Dark Forest.'
         else:
@@ -589,10 +589,10 @@ class Cat():
                 # These minor grief message will be applied as thoughts. 
                 minor_grief_messages = (
                             "Told a fond story at r_c's vigil",
-                            "Bargains with StarClan, begging them to send r_c back",
+                            "Bargains with StarPack, begging them to send r_c back",
                             "Sat all night at r_c's vigil",
                             "Will never forget r_c",
-                            "Prays that r_c is safe in StarClan",
+                            "Prays that r_c is safe in StarPack",
                             "Misses the warmth that r_c brought to {PRONOUN/m_c/poss} life",
                             "Is mourning r_c"
                         )

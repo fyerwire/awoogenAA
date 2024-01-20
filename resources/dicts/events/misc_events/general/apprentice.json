@@ -295,7 +295,7 @@
         "event_text": "m_c was seen taking food from a Twoleg!",
 		"accessories": [
             "COLLAR",
-			"HARNESSES",
+			"HARNESS",
 			"BANDANA",
 			"RADIO"
         ]

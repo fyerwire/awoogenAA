@@ -1177,7 +1177,7 @@ class Pelt():
         # accounting for a weird thing
         if self.tortiepattern == self.tortiebase and self.colour == self.tortiecolour or self.colour == self.tortiecolour and self.tortiepattern in ["Semisolid", "Solid"] and self.tortiebase in ["Semisolid", "Solid"]:
             temp_tortie = self.tortiepattern.capitalize()
-            poss_bases = Pelt.tortiebases
+            poss_bases = Pelt.tortiebases.copy()
             poss_bases.remove(temp_tortie)
             self.tortiepattern = random.choice(poss_bases).lower()
             
