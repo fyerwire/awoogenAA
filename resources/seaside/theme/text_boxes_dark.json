@@ -2,10 +2,10 @@
     "#default_dark": {
         "colours": {
             "dark_bg": "#00000000",
-            "normal_text": "#EBE7F5",
-            "link_text": "#8271B1",
-            "link_hover": "#EBE7F5",
-            "link_selected": "#3A91A6"
+            "normal_text": "#DCEFEE",
+            "link_text": "#7CDBD4",
+            "link_hover": "#b7fffa",
+            "link_selected": "#b7fffa"
         },
         "font": {
             "name": "notosans",

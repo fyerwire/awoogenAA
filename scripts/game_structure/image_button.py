@@ -285,9 +285,9 @@ class UIRelationStatusBar():
                  percent_full=0,
                  positive_trait=True,
                  dark_mode=False,
+                 resource_overlay="path",
                  manager=None,
                  style="bars"):
-        resourcepath = themegrabber()
         # Change the color of the bar depending on the value and if it's a negative or positive trait
         if percent_full > 49:
             if positive_trait:
@@ -306,7 +306,7 @@ class UIRelationStatusBar():
 
         # Now to make the overlay
         
-        overlay_path = str(resourcepath + "images/")
+        overlay_path = str(resource_overlay + "images/")
         if style == "bars":
             if dark_mode:
                 overlay_path += "relations_border_bars_dark.png"

@@ -427,8 +427,11 @@ class Sprites():
             self.make_group('scars', (a, 2), f'scars{i}')
         for a, i in enumerate(
                 ["SIDE", "SNAKE", "SNOUT", "TAILBASE", "TAILSCAR", "THREE", "THROAT", "TOETRAP", "TWO",
-                 "GIN"]):
+                 "GIN", "HINDLEG", "BACK"]):
             self.make_group('scars', (a, 3), f'scars{i}')
+        for a, i in enumerate(
+                ["QUILLSIDE", "SCRATCHSIDE", "TOE", "BEAKSIDE", "CATBITETWO", "SNAKETWO", "FOUR"]):
+            self.make_group('scars', (a, 4), f'scars{i}')
         # missing parts
         for a, i in enumerate(
                 ["BRIGHTHEART", "BURNBELLY", "BURNTAIL", "FROSTTAIL", "HALFTAIL", "LEFTEAR"]):

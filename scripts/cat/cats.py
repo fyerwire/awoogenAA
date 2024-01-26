@@ -360,7 +360,8 @@ class Cat():
                              self.pelt.tortiepattern,
                              biome=biome,
                              specsuffix_hidden=self.specsuffix_hidden,
-                             load_existing_name=loading_cat)
+                             load_existing_name=loading_cat,
+                             moons=self.moons)
         else:
             self.name = Name(status, prefix, suffix, eyes=self.pelt.eye_colour, specsuffix_hidden=self.specsuffix_hidden,
                              load_existing_name = loading_cat)
@@ -432,7 +433,7 @@ class Cat():
                 game.clan.leader_lives = 0
                 self.thought = 'Is surprised to find themselves walking the stars of Silverpelt'
                 if game.clan.instructor.df is False:
-                    text = 'They\'ve lost their last life and have travelled to StarClan.'
+                    text = 'They\'ve lost their last life and have travelled to StarPack.'
                 else:
                     text = 'They\'ve lost their last life and have travelled to the Dark Forest.'
         else:
@@ -589,10 +590,10 @@ class Cat():
                 # These minor grief message will be applied as thoughts. 
                 minor_grief_messages = (
                             "Told a fond story at r_c's vigil",
-                            "Bargains with StarClan, begging them to send r_c back",
+                            "Bargains with StarPack, begging them to send r_c back",
                             "Sat all night at r_c's vigil",
                             "Will never forget r_c",
-                            "Prays that r_c is safe in StarClan",
+                            "Prays that r_c is safe in StarPack",
                             "Misses the warmth that r_c brought to {PRONOUN/m_c/poss} life",
                             "Is mourning r_c"
                         )
@@ -1810,17 +1811,24 @@ class Cat():
 
     def not_working(self):
         """returns True if the cat cannot work, False if the cat can work"""
-        not_working = False
         for illness in self.illnesses:
             if self.illnesses[illness]['severity'] != 'minor':
-                not_working = True
-                break
+                return True
         for injury in self.injuries:
             if self.injuries[injury]['severity'] != 'minor':
-                not_working = True
-                break
-        return not_working
+                return True
+        return False
 
+    def not_work_because_hunger(self):
+        """returns True if the only condition, why the cat cannot work is because of starvation"""
+        non_minor_injuries = [injury for injury in self.injuries if self.injuries[injury]['severity'] != 'minor']
+        if len(non_minor_injuries) > 0:
+            return False
+        non_minor_illnesses = [illness for illness in self.illnesses if self.illnesses[illness]['severity'] != 'minor']
+        if "starving" in non_minor_illnesses and len(non_minor_illnesses) == 1:
+            return True
+        else:
+            return False
     
     def retire_cat(self):
         """This is only for cats that retire due to health condition"""
@@ -2103,7 +2111,7 @@ class Cat():
         if is_former_mentor and not game.clan.clan_settings['romantic with former mentor']:
             return False
 
-		#current mentor
+        #current mentor
         if other_cat.ID in self.apprentice or self.ID in other_cat.apprentice:
             return False
 
@@ -2687,9 +2695,13 @@ class Cat():
     def load_faded_cat(cat: str):
         """Loads a faded cat, returning the cat object. This object is saved nowhere else. """
         try:
-            with open(get_save_dir() + '/' + game.clan.name + '/faded_cats/' + cat + ".json", 'r') as read_file:
+            if game.clan == None: clan = game.switches['clan_list'][0]
+            if game.clan != None: clan = game.clan.name
+
+            with open(get_save_dir() + '/' + clan + '/faded_cats/' + cat + ".json", 'r') as read_file:
                 cat_info = ujson.loads(read_file.read())
-        except AttributeError:  # If loading cats is attempted before the Pack is loaded, we would need to use this.
+                                # If loading cats is attempted before the Clan is loaded, we would need to use this.
+        except AttributeError:  # NOPE, cats are always loaded before the Clan, so doesnt make sense to throw an error
             with open(get_save_dir() + '/' + game.switches['clan_list'][0] + '/faded_cats/' + cat + ".json",
                       'r') as read_file:
                 cat_info = ujson.loads(read_file.read())
@@ -2716,21 +2728,23 @@ class Cat():
     # ---------------------------------------------------------------------------- #
 
     @staticmethod
-    def sort_cats():
+    def sort_cats(given_list=[]):
+        if not given_list:
+            given_list = Cat.all_cats_list
         if game.sort_type == "age":
-            Cat.all_cats_list.sort(key=lambda x: Cat.get_adjusted_age(x))
+            given_list.sort(key=lambda x: Cat.get_adjusted_age(x))
         elif game.sort_type == "reverse_age":
-            Cat.all_cats_list.sort(key=lambda x: Cat.get_adjusted_age(x), reverse=True)
+            given_list.sort(key=lambda x: Cat.get_adjusted_age(x), reverse=True)
         elif game.sort_type == "id":
-            Cat.all_cats_list.sort(key=lambda x: int(x.ID))
+            given_list.sort(key=lambda x: int(x.ID))
         elif game.sort_type == "reverse_id":
-            Cat.all_cats_list.sort(key=lambda x: int(x.ID), reverse=True)
+            given_list.sort(key=lambda x: int(x.ID), reverse=True)
         elif game.sort_type == "rank":
-            Cat.all_cats_list.sort(key=lambda x: (Cat.rank_order(x), Cat.get_adjusted_age(x)), reverse=True)
+            given_list.sort(key=lambda x: (Cat.rank_order(x), Cat.get_adjusted_age(x)), reverse=True)
         elif game.sort_type == "exp":
-            Cat.all_cats_list.sort(key=lambda x: x.experience, reverse=True)
+            given_list.sort(key=lambda x: x.experience, reverse=True)
         elif game.sort_type == "death":
-            Cat.all_cats_list.sort(key=lambda x: -1 * int(x.dead_for))
+            given_list.sort(key=lambda x: -1 * int(x.dead_for))
 
         return
 

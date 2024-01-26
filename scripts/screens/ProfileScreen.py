@@ -556,7 +556,7 @@ class ProfileScreen(Screens):
         self.profile_elements["favourite_button"] = UIImageButton(scale(pygame.Rect
                                                                         ((x_pos, 237), (56, 56))),
                                                                   "",
-                                                                  object_id="#fav_cat",
+                                                                  object_id="#fav_star",
                                                                   manager=MANAGER,
                                                                   tool_tip_text='Remove favorite status',
                                                                   starting_height=2)
@@ -565,7 +565,7 @@ class ProfileScreen(Screens):
                                                                             ((x_pos, 237),
                                                                              (56, 56))),
                                                                       "",
-                                                                      object_id="#not_fav_cat",
+                                                                      object_id="#not_fav_star",
                                                                       manager=MANAGER,
                                                                       tool_tip_text='Mark as favorite',
                                                                       starting_height=2)
@@ -920,13 +920,18 @@ class ProfileScreen(Screens):
         output += "\n"
         # NUTRITION INFO (if the game is in the correct mode)
         if game.clan.game_mode in ["expanded", "cruel season"] and the_cat.is_alive() and FRESHKILL_ACTIVE:
-            nutr = None
-            if the_cat.ID in game.clan.freshkill_pile.nutrition_info:
-                nutr = game.clan.freshkill_pile.nutrition_info[the_cat.ID]
-            if nutr:
-                output += f"nutrition status: {round(nutr.percentage, 1)}%\n"
-            else:
-                output += f"nutrition status: 100%\n"
+            # Check to only show nutrition for clan cats
+            if str(the_cat.status) not in ["loner", "kittypet", "rogue", "former Clancat", "exiled"]:
+                nutr = None
+                if the_cat.ID in game.clan.freshkill_pile.nutrition_info:
+                    nutr = game.clan.freshkill_pile.nutrition_info[the_cat.ID]
+                if not nutr:
+                    game.clan.freshkill_pile.add_cat_to_nutrition(the_cat)
+                    nutr = game.clan.freshkill_pile.nutrition_info[the_cat.ID]
+                output += "nutrition: " + nutr.nutrition_text 
+                if game.clan.clan_settings['showxp']:
+                    output += ' (' + str(int(nutr.percentage)) + ')'
+                output += "\n"
 
         if the_cat.is_disabled():
             for condition in the_cat.permanent_condition:

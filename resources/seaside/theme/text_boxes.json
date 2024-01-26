@@ -1,11 +1,11 @@
 {
     "text_entry_line": {
         "colours": {
-            "dark_bg": "#EBE7F5",
-            "selected_bg": "#665E7C",
-            "normal_text": "#1A1230",
-            "selected_text": "#DCDCDC",
-            "text_cursor": "#1A1230"
+            "dark_bg": "#235d58",
+            "selected_bg": "#478782",
+            "normal_text": "#6A654E",
+            "selected_text": "#FFFFFF",
+            "text_cursor": "#6A654E"
         },
         "misc": {
             "shape": "rounded_rectangle",
@@ -21,7 +21,7 @@
     "#dev_watermark": {
         "colours": {
             "dark_bg": "#00000000",
-            "normal_text": "#EBE7F588",
+            "normal_text": "#6A654E88",
             "link_text": "#8271B1",
             "link_hover": "#EBE7F5",
             "link_selected": "#3A91A6"

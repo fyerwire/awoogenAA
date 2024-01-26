@@ -13,17 +13,9 @@ from scripts.game_structure.game_essentials import game, screen, screen_x, scree
 from scripts.game_structure.windows import RelationshipLog
 from scripts.game_structure.propagating_thread import PropagatingThread
 
-from scripts.themescript import themegrabber
 
-resourcepath = themegrabber()
-imagebigheart = resourcepath + "images/heart_big.png"
-imagefemalebig = resourcepath + "images/female_big.png"
-imagemalebig = resourcepath + "images/male_big.png"
-imagetfemalebig = resourcepath + "images/transfem_big.png"
-imagetmalebig = resourcepath + "images/transmasc_big.png"
-imagenbbig = resourcepath + "images/nonbi_big.png"
-imagedotbig = resourcepath + "images/dot_big.png"
 class RelationshipScreen(Screens):
+    resourcepath = Screens.resourcepath
     checkboxes = {}  # To hold the checkboxes.
     focus_cat_elements = {}
     relation_list_elements = {}
@@ -34,8 +26,7 @@ class RelationshipScreen(Screens):
     current_page = 1
 
     inspect_cat = None
-    
-    resourcepath = Screens.resourcepath
+
     search_bar = pygame.transform.scale(
         image_cache.load_image(resourcepath + "images/relationship_search.png").convert_alpha(),
         (456 / 1600 * screen_x, 78 / 1400 * screen_y)
@@ -356,7 +347,7 @@ class RelationshipScreen(Screens):
                 self.inspect_cat_elements["mate"] = pygame_gui.elements.UIImage(scale(pygame.Rect((90, 300), (44, 40))),
                                                                                 pygame.transform.scale(
                                                                                     image_cache.load_image(
-                                                                                        imagebigheart).convert_alpha(),
+                                                                                        resourcepath + "images/heart_big.png").convert_alpha(),
                                                                                     (44, 40)))
             else:
                 # Family Dot
@@ -371,16 +362,16 @@ class RelationshipScreen(Screens):
 
             # Gender
             if self.inspect_cat.genderalign == 'female':
-                gender_icon = image_cache.load_image(imagefemalebig).convert_alpha()
+                gender_icon = image_cache.load_image(resourcepath + "images/female_big.png").convert_alpha()
             elif self.inspect_cat.genderalign == 'male':
-                gender_icon = image_cache.load_image(imagemalebig).convert_alpha()
+                gender_icon = image_cache.load_image(resourcepath + "images/male_big.png").convert_alpha()
             elif self.inspect_cat.genderalign == 'trans female':
-                gender_icon = image_cache.load_image(imagetfemalebig).convert_alpha()
+                gender_icon = image_cache.load_image(resourcepath + "images/transfem_big.png").convert_alpha()
             elif self.inspect_cat.genderalign == 'trans male':
-                gender_icon = image_cache.load_image(imagetmalebig).convert_alpha()
+                gender_icon = image_cache.load_image(resourcepath + "images/transmasc_big.png").convert_alpha()
             else:
                 # Everyone else gets the nonbinary icon
-                gender_icon = image_cache.load_image(imagenbbig).convert_alpha()
+                gender_icon = image_cache.load_image(resourcepath + "images/nonbi_big.png").convert_alpha()
 
             self.inspect_cat_elements["gender"] = pygame_gui.elements.UIImage(scale(pygame.Rect((470, 290), (68, 68))),
                                                                               pygame.transform.scale(gender_icon,
@@ -486,6 +477,7 @@ class RelationshipScreen(Screens):
             self.filtered_cats = search_cats
 
     def update_cat_page(self):
+        resourcepath = Screens.resourcepath
         for ele in self.relation_list_elements:
             self.relation_list_elements[ele].kill()
         self.relation_list_elements = {}
@@ -536,6 +528,7 @@ class RelationshipScreen(Screens):
             self.next_page_button.enable()
 
     def generate_relation_block(self, pos, the_relationship, i):
+        # KORI - change this later. eventually we should pull from settings, instead
         resourcepath = Screens.resourcepath
         # Generates a relation_block starting at postion, from the relationship object "the_relation"
         # "position" should refer to the top left corner of the *main* relation box, not including the name.
@@ -557,16 +550,16 @@ class RelationshipScreen(Screens):
 
         # Gender alignment
         if the_relationship.cat_to.genderalign == 'female':
-            gender_icon = image_cache.load_image(imagefemalebig).convert_alpha()
+            gender_icon = image_cache.load_image(resourcepath + "images/female_big.png").convert_alpha()
         elif the_relationship.cat_to.genderalign == 'male':
-            gender_icon = image_cache.load_image(imagemalebig).convert_alpha()
+            gender_icon = image_cache.load_image(resourcepath + "images/male_big.png").convert_alpha()
         elif the_relationship.cat_to.genderalign == 'trans female':
-            gender_icon = image_cache.load_image(imagetfemalebig).convert_alpha()
+            gender_icon = image_cache.load_image(resourcepath + "images/transfem_big.png").convert_alpha()
         elif the_relationship.cat_to.genderalign == 'trans male':
-            gender_icon = image_cache.load_image(imagetmalebig).convert_alpha()
+            gender_icon = image_cache.load_image(resourcepath + "images/transmasc_big.png").convert_alpha()
         else:
             # Everyone else gets the nonbinary icon
-            gender_icon = image_cache.load_image(imagenbbig).convert_alpha()
+            gender_icon = image_cache.load_image(resourcepath + "images/nonbi_big.png").convert_alpha()
 
         self.relation_list_elements["gender" + str(i)] = pygame_gui.elements.UIImage(scale(pygame.Rect((pos_x + 160,
                                                                                                         pos_y + 10),
@@ -582,7 +575,7 @@ class RelationshipScreen(Screens):
                 scale(pygame.Rect((pos_x + 10, pos_y + 10),
                                   (22, 20))),
                 image_cache.load_image(
-                    imagebigheart).convert_alpha())
+                    resourcepath + "images/heart_big.png").convert_alpha())
         else:
             # FAMILY DOT
             # Only show family dot on cousins if first cousin mates are disabled.
@@ -604,7 +597,7 @@ class RelationshipScreen(Screens):
                                        pos_y + 10),
                                       (18, 18))),
                     image_cache.load_image(
-                        imagedotbig).convert_alpha())
+                        resourcepath + "images/dot_big.png").convert_alpha())
 
         # ------------------------------------------------------------------------------------------------------------ #
         # RELATION BARS
@@ -647,7 +640,8 @@ class RelationshipScreen(Screens):
                                                                                                 (188, 20))),
                                                                               display_romantic,
                                                                               positive_trait=True,
-                                                                              dark_mode=game.settings['dark mode']
+                                                                              dark_mode=game.settings['dark mode'],
+                                                                              resource_overlay=resourcepath
                                                                               )
         bar_count += 1
 
@@ -668,7 +662,8 @@ class RelationshipScreen(Screens):
                                                                                                 (188, 20))),
                                                                               the_relationship.platonic_like,
                                                                               positive_trait=True,
-                                                                              dark_mode=game.settings['dark mode'])
+                                                                              dark_mode=game.settings['dark mode'],
+                                                                              resource_overlay=resourcepath)
 
         bar_count += 1
 
@@ -689,7 +684,8 @@ class RelationshipScreen(Screens):
                                                                                                (188, 20))),
                                                                              the_relationship.dislike,
                                                                              positive_trait=False,
-                                                                             dark_mode=game.settings['dark mode'])
+                                                                             dark_mode=game.settings['dark mode'],
+                                                                             resource_overlay=resourcepath)
 
         bar_count += 1
 
@@ -712,7 +708,8 @@ class RelationshipScreen(Screens):
                                                                                                   (188, 20))),
                                                                                 the_relationship.admiration,
                                                                                 positive_trait=True,
-                                                                                dark_mode=game.settings['dark mode'])
+                                                                                dark_mode=game.settings['dark mode'],
+                                                                                resource_overlay=resourcepath)
 
         bar_count += 1
 
@@ -734,7 +731,8 @@ class RelationshipScreen(Screens):
                                                                                                    (188, 20))),
                                                                                  the_relationship.comfortable,
                                                                                  positive_trait=True,
-                                                                                 dark_mode=game.settings['dark mode'])
+                                                                                 dark_mode=game.settings['dark mode'],
+                                                                                 resource_overlay=resourcepath)
 
         bar_count += 1
 
@@ -755,7 +753,8 @@ class RelationshipScreen(Screens):
                                                                                                (188, 20))),
                                                                              the_relationship.jealousy,
                                                                              positive_trait=False,
-                                                                             dark_mode=game.settings['dark mode'])
+                                                                             dark_mode=game.settings['dark mode'],
+                                                                             resource_overlay=resourcepath)
 
         bar_count += 1
 
@@ -776,7 +775,8 @@ class RelationshipScreen(Screens):
                                                                                              (188, 20))),
                                                                            the_relationship.trust,
                                                                            positive_trait=True,
-                                                                           dark_mode=game.settings['dark mode'])
+                                                                           dark_mode=game.settings['dark mode'],
+                                                                           resource_overlay=resourcepath)
 
     def on_use(self):
 
@@ -794,3 +794,4 @@ class RelationshipScreen(Screens):
 
     def chunks(self, L, n):
         return [L[x: x + n] for x in range(0, len(L), n)]
+

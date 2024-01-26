@@ -55,20 +55,20 @@
     },
     "#saved_clan": {
         "colours": {
-            "normal_bg": "#565371",
-            "hovered_bg": "#201836",
-            "selected_bg": "#201836",
-            "active_bg": "#201836",
-            "normal_text": "#EBE7F5",
-            "hovered_text": "#EBE7F5",
-            "selected_text": "#EBE7F5",
-            "disabled_text": "#EBE7F5",
+            "normal_bg": "#45b3ab",
+            "hovered_bg": "#235e5a",
+            "selected_bg": "#235e5a",
+            "active_bg": "#235e5a",
+            "normal_text": "#FFFFFF",
+            "hovered_text": "#b7fffa",
+            "selected_text": "#b7fffa",
+            "disabled_text": "#f7f2d4",
             "text_shadow": "#00000000",
-            "normal_border": "#45B3AB",
-            "hovered_border": "#45B3AB",
-            "disabled_border": "#666272",
-            "selected_border": "#45B3AB",
-            "active_border": "#45B3AB"
+            "normal_border": "#3a908a",
+            "hovered_border": "#234f4b",
+            "disabled_border": "#a79f74",
+            "selected_border": "#234f4b",
+            "active_border": "#234f4b"
         },
         "font": {
             "name": "notosans",
@@ -81,9 +81,9 @@
     },
     "#relation_bar": {
         "colours": {
-            "normal_border": "#EBE7F5",
+            "normal_border": "#FFFFFF",
             "filled_bar": "#565371",
-            "unfilled_bar": "#EBE7F5"
+            "unfilled_bar": "#FFFFFF"
         },
         "misc": {
             "shape": "rounded_rectangle",

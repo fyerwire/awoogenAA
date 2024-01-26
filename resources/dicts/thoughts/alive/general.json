@@ -93,7 +93,7 @@
             "Saw a Twoleg pup playing with a cat",
             "Saw a Twoleg pup playing with a pet",
             "Saw a pet rolling around a Twoleg garden",
-            "Is thinking about a strange Twoleg object they saw recently",
+            "Is thinking about a strange Twoleg object {PRONOUN/m_c/subject} saw recently",
             "Is wondering what the inside of a Twoleg den looks like",
             "Is complaining about being sent on dawn patrol",
             "Is wondering if pet life is really so bad",
@@ -550,8 +550,8 @@
     {
         "id": "gen_otherclan",
         "thoughts": [
-            "Is wondering how their old Pack is doing",
-            "Is thinking about their old Packmates"
+            "Is wondering how {PRONOUN/m_c/poss} old Pack is doing",
+            "Is thinking about {PRONOUN/m_c/poss} old Packmates"
         ],
         "main_status_constraint": [
             "apprentice",
@@ -716,7 +716,7 @@
             "Tells r_c about twoleg behaviour",
             "Is asking r_c about certain pack customs",
             "Wonders if r_c thinks less of {PRONOUN/m_c/object} because of {PRONOUN/m_c/poss} past",
-            "Spends all day trying to outshine r_c and prove former pets are just as good as packborn apprentices",
+            "Spends all day trying to outshine r_c and prove former pets are just as good as Packborn apprentices",
             "Is jealous of how well r_c fits in, just because of {PRONOUN/r_c/poss} pack roots",
             "Patiently answers r_c's slightly rude questions about pet life"
         ],
