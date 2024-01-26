@@ -180,6 +180,7 @@ class ListScreen(Screens):
                 self.change_screen('patrol screen')
 
     def screen_switches(self):
+        resourcepath = Screens.resourcepath
         # Determine the starting list of cats.
         if game.last_list_forProfile:
             if game.last_list_forProfile == 'sc':
@@ -219,7 +220,7 @@ class ListScreen(Screens):
         # search bar
         self.search_bar_image = pygame_gui.elements.UIImage(scale(pygame.Rect((279, y_pos), (236, 68))),
                                                             pygame.image.load(
-                                                                "resources/images/search_bar.png").convert_alpha(),
+                                                                resourcepath + "images/search_bar.png").convert_alpha(),
                                                             manager=MANAGER)
 
         self.search_bar = pygame_gui.elements.UITextEntryLine(scale(pygame.Rect((299, 277), (230, 55))),
@@ -555,11 +556,11 @@ class ListScreen(Screens):
 
         # update title
         if self.current_group == 'clan':
-            self.update_heading_text(f'{game.clan.name}Clan')
+            self.update_heading_text(f'{game.clan.name}Pack')
         elif self.current_group == 'cotc':
-            self.update_heading_text(f'Cats Outside the Clan')
+            self.update_heading_text(f'Outsiders')
         elif self.current_group == 'sc':
-            self.update_heading_text(f'StarClan')
+            self.update_heading_text(f'StarPack')
         elif self.current_group == 'ur':
             self.update_heading_text(f'Unknown Residence')
         elif self.current_group == 'df':
