@@ -176,6 +176,7 @@ class ClearingScreen(Screens):
             self.tab_list = self.hungry_cats
 
     def screen_switches(self):
+        resourcepath = Screens.resourcepath
         self.hide_menu_buttons()
         self.back_button = UIImageButton(scale(pygame.Rect((50, 50), (210, 60))), "", object_id="#back_button"
                                          , manager=MANAGER)
@@ -228,7 +229,7 @@ class ClearingScreen(Screens):
         self.cat_bg = pygame_gui.elements.UIImage(scale(pygame.Rect
                                                         ((280, 880), (1120, 400))),
                                                   pygame.image.load(
-                                                      "resources/images/sick_hurt_bg.png").convert_alpha()
+                                                      resourcepath + "images/sick_hurt_bg.png").convert_alpha()
                                                   , manager=MANAGER)
         self.cat_bg.disable()
         log_text = game.freshkill_event_list.copy()
