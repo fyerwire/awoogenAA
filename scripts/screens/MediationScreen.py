@@ -509,7 +509,8 @@ class MediationScreen(Screens):
                                                                                                      (300, 18))),
                                                                                    display_romantic,
                                                                                    positive_trait=True,
-                                                                                   dark_mode=game.settings['dark mode']
+                                                                                   dark_mode=game.settings['dark mode'],
+                                                                                   resource_overlay=resourcepath
                                                                                    )
             bar_count += 1
 
@@ -528,7 +529,8 @@ class MediationScreen(Screens):
                                                                                                      (300, 18))),
                                                                                    the_relationship.platonic_like,
                                                                                    positive_trait=True,
-                                                                                   dark_mode=game.settings['dark mode'])
+                                                                                   dark_mode=game.settings['dark mode'],
+                                                                                   resource_overlay=resourcepath)
 
             bar_count += 1
 
@@ -547,7 +549,8 @@ class MediationScreen(Screens):
                                                                                                     (300, 18))),
                                                                                   the_relationship.dislike,
                                                                                   positive_trait=False,
-                                                                                  dark_mode=game.settings['dark mode'])
+                                                                                  dark_mode=game.settings['dark mode'],
+                                                                                  resource_overlay=resourcepath)
 
             bar_count += 1
 
@@ -567,7 +570,8 @@ class MediationScreen(Screens):
                                                                                      the_relationship.admiration,
                                                                                      positive_trait=True,
                                                                                      dark_mode=game.settings[
-                                                                                         'dark mode'])
+                                                                                         'dark mode'],
+                                                                                     resource_overlay=resourcepath)
 
             bar_count += 1
 
@@ -590,7 +594,8 @@ class MediationScreen(Screens):
                                                                                       the_relationship.comfortable,
                                                                                       positive_trait=True,
                                                                                       dark_mode=game.settings[
-                                                                                          'dark mode'])
+                                                                                          'dark mode'],
+                                                                                      resource_overlay=resourcepath)
 
             bar_count += 1
 
@@ -609,7 +614,8 @@ class MediationScreen(Screens):
                                                                                                     (300, 18))),
                                                                                   the_relationship.jealousy,
                                                                                   positive_trait=False,
-                                                                                  dark_mode=game.settings['dark mode'])
+                                                                                  dark_mode=game.settings['dark mode'],
+                                                                                  resource_overlay=resourcepath)
 
             bar_count += 1
 
@@ -628,7 +634,8 @@ class MediationScreen(Screens):
                                                                                                   (300, 18))),
                                                                                 the_relationship.trust,
                                                                                 positive_trait=True,
-                                                                                dark_mode=game.settings['dark mode'])
+                                                                                dark_mode=game.settings['dark mode'],
+                                                                                resource_overlay=resourcepath)
 
     def selected_cat_list(self):
         output = []
