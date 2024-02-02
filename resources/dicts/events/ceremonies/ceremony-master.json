@@ -880,7 +880,7 @@
       "general_backstory",
       "all_traits"
     ],
-    "Interested in herbs even in {PRONOUN/m_c/poss} kithood, m_c is eager to be apprenticed to (mentor)."
+    "Interested in herbs even in {PRONOUN/m_c/poss} puphood, m_c is eager to be apprenticed to (mentor)."
   ],
   "med_app_3": [
     [
@@ -1200,7 +1200,7 @@
       "general_backstory",
       "all_traits"
     ],
-    "m_c is fascinated by (mentor)'s ability to solve disputes without tooth or claw. {PRONOUN/m_c/subject/CAP} {VERB/m_c/are/is} eager to learn, and (mentor) takes {PRONOUN/m_c/object} under {PRONOUN/(mentor)/poss} wing."
+    "m_c is fascinated by (mentor)'s ability to solve disputes without snarls or fangs. {PRONOUN/m_c/subject/CAP} {VERB/m_c/are/is} eager to learn, and (mentor) takes {PRONOUN/m_c/object} under {PRONOUN/(mentor)/poss} wing."
   ],
   "mediator_app_3": [
     [
@@ -1257,7 +1257,7 @@
       "general_backstory",
       "all_traits"
     ],
-    "Despite the odd choice, m_c is firm that {PRONOUN/m_c/subject}'ll be (mentor)'s apprentice: {PRONOUN/m_c/subject} {VERB/m_c/want/wants} to help the Pack through words and influence, not through claw or fang."
+    "Despite the odd choice, m_c is firm that {PRONOUN/m_c/subject}'ll be (mentor)'s apprentice: {PRONOUN/m_c/subject} {VERB/m_c/want/wants} to help the Pack through words and influence, not through snarls or fangs."
   ],
   "mediator_app_8": [
     [
@@ -1465,7 +1465,7 @@
       "general_backstory",
       "all_traits"
     ],
-    "(previous_mentor) still remembers when (old_name) was just a pup, batting around in the medicine den, and asking endless questions about everything under the sun. (previous_mentor) chuckles with fondness as m_c asks why {PRONOUN/m_c/poss} new name was chosen with shining eyes and twitching tail."
+    "(previous_mentor) still remembers when (old_name) was just a pup, batting leaves around in the medicine den, and asking endless questions about everything under the sun. (previous_mentor) chuckles with fondness as m_c asks why {PRONOUN/m_c/poss} new name was chosen with shining eyes and twitching tail."
   ],
   "med_8": [
     [
@@ -2382,7 +2382,7 @@
       "general_backstory",
       "faithful"
     ],
-    "As l_n gives (old_name) the name m_c, {PRONOUN/l_n/subject} {VERB/l_n/swear/swears} that {PRONOUN/l_n/subject} {VERB/l_n/see/sees} some starry wolves yowling their support amongst {PRONOUN/l_n/poss} other Packmates."
+    "As l_n gives (old_name) the name m_c, {PRONOUN/l_n/subject} {VERB/l_n/swear/swears} that {PRONOUN/l_n/subject} {VERB/l_n/see/sees} some starry wolves howling their support amongst {PRONOUN/l_n/poss} other Packmates."
   ],
   "warrior_28": [
     [

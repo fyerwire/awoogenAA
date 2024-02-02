@@ -163,7 +163,7 @@
           "virtue": ["acceptance", "bravery", "certainty", "clear judgement", "confidence", "courage", "determination", "endurance", "sympathy", "farsightedness", "friendship", "instincts", "mercy", "strength", "unity"]
         },
         {
-          "text": "A new wolf approaches. r_c steps forward to give m_c a life for [virtue]. m_c yowls in pain as the life rushes into {PRONOUN/m_c/object}.",
+          "text": "A new wolf approaches. r_c steps forward to give m_c a life for [virtue]. m_c whimpers in pain as the life rushes into {PRONOUN/m_c/object}.",
           "virtue": ["acceptance", "bravery", "certainty", "clear judgement", "confidence", "courage", "determination", "endurance", "sympathy", "farsightedness", "friendship", "instincts", "mercy", "strength", "unity"]
         },
         {
