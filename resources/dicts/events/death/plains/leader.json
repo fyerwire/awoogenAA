@@ -123,9 +123,9 @@
             "trust",
             "secure"
         ],
-        "death_text": "m_c lost a life defending r_c from an cougar.",
+        "death_text": "m_c lost a life defending r_c from a cougar.",
         "history_text": {
-            "lead_death": "defended r_c from an cougar"
+            "lead_death": "defended r_c from a cougar"
         },
         "cat_trait": [
             "altruistic",

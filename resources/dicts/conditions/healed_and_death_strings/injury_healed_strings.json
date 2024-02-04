@@ -11,7 +11,7 @@
     ],
     "cat bite": [
         "m_c has healed from {PRONOUN/m_c/poss} bite.",
-        "m_c's cat bite has healed.",
+        "m_c's bite has healed.",
         "m_c has healed well from {PRONOUN/m_c/poss} bite."
     ],
     "beak bite": [

@@ -26,7 +26,7 @@
             "neg_platonic",
             "dislike"
         ],
-        "death_text": "m_c agreed to venture with r_c out onto a frozen pond. m_c went first while r_c hung back. m_c slid around playfully, taunting the other cat to chase {PRONOUN/m_c/object}. {PRONOUN/m_c/subject/CAP} {VERB/m_c/were/was} about to launch another teasing remark when the ice cracked below {PRONOUN/m_c/poss} paws. r_c lingered to make sure {PRONOUN/m_c/subject} didn't surface before running back to camp with a yowl.",
+        "death_text": "m_c agreed to venture with r_c out onto a frozen pond. m_c went first while r_c hung back. m_c slid around playfully, taunting the other wolf to chase {PRONOUN/m_c/object}. {PRONOUN/m_c/subject/CAP} {VERB/m_c/were/was} about to launch another teasing remark when the ice cracked below {PRONOUN/m_c/poss} paws. r_c lingered to make sure {PRONOUN/m_c/subject} didn't surface before running back to camp with a howl.",
         "history_text": {
             "reg_death": "m_c was lured onto thin ice by r_c, resulting in {PRONOUN/m_c/poss} death.",
             "reg_murder_unrevealed": "m_c fell through thin ice and never came up."
@@ -53,7 +53,7 @@
             "Leaf-bare",
             "multi_death"
         ],
-        "death_text": "m_c and r_c talked each other into walking onto the ice of the frozen pond that lay not far from camp. It was a dare at first, but when m_c didn't immediately fall in, r_c joined {PRONOUN/m_c/object}. The two cats playfully slipped around for a bit before the minute cracks reached their ears. By then, it was too late to move.",
+        "death_text": "m_c and r_c talked each other into walking onto the ice of the frozen pond that lay not far from camp. It was a dare at first, but when m_c didn't immediately fall in, r_c joined {PRONOUN/m_c/object}. The two wolves playfully slipped around for a bit before the minute cracks reached their ears. By then, it was too late to move.",
         "history_text": {
             "reg_death": "m_c and r_c went to play on the ice of a frozen pond, not knowing it was too thin."
         },
@@ -91,9 +91,9 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "death_text": "m_c was found dead underneath an oak tree with dog scent wreathing around them, after saying they were going to the dirtplace and not coming back.",
+        "death_text": "m_c was found dead underneath an oak tree with bear scent wreathing around them, after saying they were going to the dirtplace and not coming back.",
         "history_text": {
-            "reg_death": "m_c fell out of a tree while trying to escape from a dog."
+            "reg_death": "m_c fell out of a tree while trying to escape from a bear."
         },
         "cat_trait": [
             "nervous",

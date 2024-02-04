@@ -191,9 +191,9 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "death_text": "r_c, guarding camp, yowls a warning as they spot a circling shadow, right below m_c. r_c starts sprinting to m_c's position, but couldn't get there in time, not before m_c was carried high into the sky.",
+        "death_text": "r_c, guarding camp, barks a warning as they spot a circling shadow, right below m_c. r_c starts sprinting to m_c's position, but couldn't get there in time, not before m_c was carried high into the sky.",
         "history_text": {
-            "reg_death": "m_c was grabbed by a hawk, never to be seen again."
+            "reg_death": "m_c was grabbed by a massive hawk, never to be seen again."
         },
         "cat_trait": null,
         "cat_negate_skill": [

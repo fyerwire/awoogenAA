@@ -103,7 +103,7 @@
         ],
         "event_text": "m_c fell into a river, and inhaled a lot of water before managing to get out. {PRONOUN/m_c/subject/CAP}{VERB/m_c/'ve/'s} been hacking and sputtering ever since.",
         "history_text": {
-            "reg_death": "m_c died from water-inhalation after falling in the river."
+            "reg_death": "m_c died from water inhalation after falling in the river."
         },
         "cat_trait": null,
         "cat_skill": null,
@@ -281,7 +281,7 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "event_text": "Chasing a mouse through a dense area, m_c accidentally collides with a low-hanging branch, leaving them to return to camp empty-pawed and with splitting head pain.",
+        "event_text": "Chasing a rabbit through a dense area, m_c accidentally collides with a low-hanging branch, leaving them to return to camp empty-pawed and with splitting head pain.",
         "history_text": null,
         "cat_trait": [
             "ambitious",

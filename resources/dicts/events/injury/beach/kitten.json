@@ -69,7 +69,7 @@
         ],
         "event_text": "r_c dares m_c to try and swim out of camp and m_c can't possibly refuse the challenge. {PRONOUN/m_c/subject/CAP} {VERB/m_c/do/does}n't make it far, however, before {PRONOUN/m_c/poss} meager swimming skills fail {PRONOUN/m_c/object} and {PRONOUN/m_c/subject} nearly {VERB/m_c/drown/drowns} before an adult spots {PRONOUN/m_c/object} and comes to the rescue.",
         "history_text": {
-            "reg_death": "m_c died of water-inhalation, after trying to swim out of camp."
+            "reg_death": "m_c died of water inhalation, after trying to swim out of camp."
         },
         "cat_trait": [
             "daring",

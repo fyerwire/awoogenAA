@@ -882,7 +882,7 @@
             "rel_down",
             "war"
         ],
-        "event_text": "On a border patrol near the o_c border, m_c could no longer take o_c's jeers and smirks. {PRONOUN/m_c/subject/CAP} lashed out at the first jeering cat {PRONOUN/m_c/subject} saw, although the hotheaded move wasn't smart as m_c couldn't escape the skirmish without injury.",
+        "event_text": "On a border patrol near the o_c border, m_c could no longer take o_c's jeers and smirks. {PRONOUN/m_c/subject/CAP} lashed out at the first jeering wolf {PRONOUN/m_c/subject} saw, although the hotheaded move wasn't smart as m_c couldn't escape the skirmish without injury.",
         "cat_negate_trait": null,
         "cat_skill": null,
         "cat_trait": [

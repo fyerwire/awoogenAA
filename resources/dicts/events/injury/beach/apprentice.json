@@ -48,7 +48,7 @@
         ],
         "event_text": "m_c went out of camp alone to practice swimming in the ocean; unfortunately, {PRONOUN/m_c/poss} inexperience led to {PRONOUN/m_c/object} being swept up by a riptide. r_c heard {PRONOUN/m_c/poss} cries and saved {PRONOUN/m_c/object}, but m_c almost drowned.",
         "history_text": {
-            "reg_death": "m_c died from water-inhalation when {PRONOUN/m_c/subject} nearly drowned."
+            "reg_death": "m_c died from water inhalation when {PRONOUN/m_c/subject} nearly drowned."
         },
         "cat_trait": [
             "adventurous",

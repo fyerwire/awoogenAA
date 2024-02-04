@@ -8,7 +8,7 @@
         "phantom pain": [
             "m_c reports to r_c in the medicine den - {PRONOUN/m_c/subject} could swear {PRONOUN/m_c/poss} toes feel cramped and in spasm, but it's on the limb {PRONOUN/m_c/subject} {VERB/m_c/do/does}n't have anymore.",
             "Groaning, m_c lies in the sunshine as one of {PRONOUN/m_c/poss} friends massages the stump of {PRONOUN/m_c/poss} missing leg. {PRONOUN/m_c/subject/CAP} just don't understand how something that's not even there any more can hurt so much.",
-            "m_c sinks {PRONOUN/m_c/poss} claws into a branch, hoping that ripping something up will at least distract {PRONOUN/m_c/object} from the sparking pain coming from the leg {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} even have any more."
+            "m_c sinks {PRONOUN/m_c/poss} teeth into a branch, hoping that ripping something up will at least distract {PRONOUN/m_c/object} from the sparking pain coming from the leg {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} even have any more."
         ],
         "sore": [
             "While {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} adapted well to life with a missing limb, the strain of walking with only three legs has left m_c feeling sore all over. r_c devises a list of exercises that will ease the pain, not helping m_c's mood.",
@@ -94,7 +94,7 @@
         ],
         "redcough": [
             "r_c has quietly begun making m_c comfortable, or as comfortable as {PRONOUN/m_c/subject} can be while hacking blood.",
-            "m_c has been hacking up blood, {PRONOUN/m_c/poss} body growing weaker and weaker.  {PRONOUN/m_c/subject/CAP} may not last much longer."
+            "m_c has been hacking up blood, {PRONOUN/m_c/poss} body growing weaker and weaker. {PRONOUN/m_c/subject/CAP} may not last much longer."
         ]
     },
     "one bad eye": {
@@ -151,7 +151,7 @@
     "persistent headaches": {
         "headache": [
             "m_c's headaches have plagued {PRONOUN/m_c/object} particularly badly this moon, and r_c is running low on {PRONOUN/r_c/poss} pain-relieving mixture, having used so much up in keeping m_c feeling able.",
-            "m_c growls as another wave of head pain hits {PRONOUN/m_c/object}. It's on-and-off, and herbs have been helping, but StarClan help {PRONOUN/m_c/object}, having so many headaches gets annoying."
+            "m_c growls as another wave of head pain hits {PRONOUN/m_c/object}. It's on-and-off, and herbs have been helping, but StarPack help {PRONOUN/m_c/object}, having so many headaches gets annoying."
         ],
         "severe headache": [
             "r_c sees m_c headed towards the medicine wolf den, wincing with every step, and ducks inside to prepare a nest for {PRONOUN/m_c/object} in the darkest, quietest corner possible.",
