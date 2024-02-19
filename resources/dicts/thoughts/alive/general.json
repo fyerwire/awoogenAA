@@ -57,9 +57,9 @@
             "Woke up on the wrong side of the nest",
             "Can't wait to take a nap later",
             "Is batting at {PRONOUN/m_c/poss} tail",
-            "Daydreams about being a warrior in LionClan",
-            "Daydreams about being a warrior in TigerClan",
-            "Daydreams about being a warrior in LeopardClan",
+            "Daydreams about being a warrior in SunPack",
+            "Daydreams about being a warrior in MoonPack",
+            "Daydreams about being a warrior in EclipsePack",
             "Saw a yappy little dog today",
             "Got startled by a squirrel",
             "Spends time watching fish in the nearby river",
@@ -152,7 +152,7 @@
             "Is proud of r_c's growth",
             "Knows r_c will make a great Packmate someday",
             "Is playing mossball with r_c",
-            "Watches r_c pretend to hunt a mouse",
+            "Watches r_c pretend to hunt an elk",
             "Catches r_c climbing a bit too high"
         ],
         "main_status_constraint": [
