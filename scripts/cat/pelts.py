@@ -207,7 +207,7 @@ class Pelt():
                   "alfredo", "coconut", "gelato", "eggnog", "tangy", "minerals", "sugar", "brown sugar", "gingerbread", "maple"]
     fun_physical = ["uneven", "fox-like", "plumed tail", "long tail", "large fangs", "long claws", "large ears",
                     "lynx-like", "cat-like", "dog-like", "dusty", "clean", "oily", "warm", "cold", "large paws", "maned",
-                    "strong", "kinked tail", "snaggle tooth", "crooked tooth", "no fangs", "no dewclaws", "double-dew claws", "many whiskers", "large nose", "short tail", "extra toe",
+                    "strong", "kinked tail", "snaggle tooth", "crooked tooth", "no fangs", "no dewclaws", "many whiskers", "large nose", "short tail", "extra toe",
                     "piercing gaze", "soft gaze", "sharp features", "soft features"]
     fun_random = ["terrified of spiders", "extremely loud", "loves the rain", "loves the snow" , "loves the sun", 
                   "loves the taste of pet food", "loves the taste of berries", "collects seashells", "collects feathers", "collects rocks", "collects gems", "collects flowers",
@@ -235,8 +235,8 @@ class Pelt():
                   "way too invested", "always lucky", "complains a lot", "giver of compliments", "not very empathetic", "bleeding heart", "never angry", "frequently annoyed", "won't swim",
                   "chirps at birds", "has a long tongue", "abrasive", "likes to chew", "collects sticks", "firestarter", "startles easily", "rarely phased", "always in a phase", "tracks the moon"]
     fur_texture = ["softcoat", "curlycoat", "roughcoat", "silkycoat", "wirecoat", "plushcoat", "woolycoat", "sleek", "wavycoat"]  
-    build = ["stocky", "moderate", "medium", "athletic", "thin", "large", "muscular", "lanky", "delicate"]
-    height = ["tiny", "short", "average", "tall", "giant"]
+    build = ["stocky", "tiny", "short", "average", "tall", "giant", "moderate", "athletic", "thin", "hefty", "muscular", "lanky", "delicate"]
+    
 
 
     # appearence information
@@ -266,7 +266,7 @@ class Pelt():
                  scars:list=None,
                  tint:str="none",
                  skin:str="BLACK",
-                 fun_traits:list=["o", "o", "o", "o", "o", "o"],
+                 fun_traits:list=["o", "o", "o", "o", "o"],
                  white_patches_tint:str="none",
                  kitten_sprite:int=None,
                  adol_sprite:int=None,
@@ -276,7 +276,6 @@ class Pelt():
                  reverse:bool=False,
                  fur_texture:str=None,
                  build:str=None,
-                 height:str=None
                  ) -> None:
         self.name = name
         self.species = species
@@ -333,13 +332,13 @@ class Pelt():
         new_pelt.init_tint()
 
         # setting up some sillies
-        new_pelt.fun_traits = ["o", "o", "o", "o", "o", "o"]
+        new_pelt.fun_traits = ["o", "o", "o", "o", "o",]
         new_pelt.fun_traits[0] = random.choice(Pelt.fun_scents)
         new_pelt.fun_traits[1] = random.choice(Pelt.fun_physical)
         new_pelt.fun_traits[2] = random.choice(Pelt.fun_random)
         new_pelt.fun_traits[3] = random.choice(Pelt.fur_texture)
         new_pelt.fun_traits[4] = random.choice(Pelt.build)
-        new_pelt.fun_traits[5] = random.choice(Pelt.height)
+        
         
         return new_pelt
     
