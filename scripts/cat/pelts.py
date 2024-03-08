@@ -235,7 +235,7 @@ class Pelt():
                   "way too invested", "always lucky", "complains a lot", "giver of compliments", "not very empathetic", "bleeding heart", "never angry", "frequently annoyed", "won't swim",
                   "chirps at birds", "has a long tongue", "abrasive", "likes to chew", "collects sticks", "firestarter", "startles easily", "rarely phased", "always in a phase", "tracks the moon"]
     fur_texture = ["softcoat", "curlycoat", "roughcoat", "silkycoat", "wirecoat", "plushcoat", "woolycoat", "sleek", "wavycoat"]  
-    build = ["stocky", "tiny", "short", "average", "tall", "giant", "moderate", "athletic", "thin", "hefty", "muscular", "lanky", "delicate"]
+    build = ["stocky", "tiny", "short", "average", "tall", "giant", "moderate", "athletic", "thin", "large", "muscular", "lanky", "delicate"]
     
 
 
