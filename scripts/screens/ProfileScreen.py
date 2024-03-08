@@ -508,12 +508,12 @@ class ProfileScreen(Screens):
                                                                      scale(pygame.Rect((600, 400), (360, 440))),
                                                                      object_id=get_text_box_theme(
                                                                          "#text_box_22_horizleft"),
-                                                                     line_spacing=0.85, manager=MANAGER)
+                                                                     line_spacing=0.95, manager=MANAGER)
         self.profile_elements["cat_info_column2"] = UITextBoxTweaked(self.generate_column2(self.the_cat),
                                                                      scale(pygame.Rect((980, 400), (500, 440))),
                                                                      object_id=get_text_box_theme(
                                                                          "#text_box_22_horizleft"),
-                                                                     line_spacing=0.85, manager=MANAGER)
+                                                                     line_spacing=0.95, manager=MANAGER)
 
         # Kori - size change and adjustment from 110, 400 to 110, 450
 		# Set the cat backgrounds.
@@ -679,14 +679,10 @@ class ProfileScreen(Screens):
         # PHYSICAL
         output += 'physical: ' + the_cat.pelt.fun_traits[1]
         output += "\n"
-        
-        #BUILD
+        # BUILD
         output += 'build: ' + the_cat.pelt.fun_traits[4]
         output += "\n"
-        
-        #HEIGHT
-        output += 'height: ' + the_cat.pelt.fun_traits[5]
-        output += "\n"
+        # HEIGHT
         
         # EYE COLOR
         output += 'eyes: ' + str(the_cat.describe_eyes())
@@ -724,15 +720,14 @@ class ProfileScreen(Screens):
         # NEWLINE ----------
         output += "\n"
 
-	#FUR TEXTURE
-        output += 'fur texture: ' + the_cat.pelt.fun_traits[3]
-        output += "\n"
-                
         # PELT LENGTH
         output += 'fur length: ' + the_cat.pelt.length
         # NEWLINE ----------
         output += "\n"
-
+        #FUR TEXTURE
+        output += 'fur texture: ' + the_cat.pelt.fun_traits[3]
+        output += "\n"
+        
         # SCENT
         output += 'scent: ' + the_cat.pelt.fun_traits[0]
 
@@ -910,29 +905,24 @@ class ProfileScreen(Screens):
         output += "\n"
 
         # MOONS
-        output += "\n"
         if the_cat.dead:
             output += str(the_cat.moons)
-            years = round((the_cat.moons / 12.0), 1)
             if the_cat.moons == 1:
-                output += f" moon ({years} years in life)\n"
+                output += ' moon (in life)\n'
             elif the_cat.moons != 1:
-                output += f" moons ({years} years in life)\n"
+                output += ' moons (in life)\n'
 
             output += str(the_cat.dead_for)
-            years_dead = round((the_cat.dead_for / 12.0), 1)
             if the_cat.dead_for == 1:
-                output += f" moon ({years_dead} years in death)\n"
+                output += ' moon (in death)'
             elif the_cat.dead_for != 1:
-                output += f" moon ({years_dead} years in death)\n"
+                output += ' moons (in death)'
         else:
             output += str(the_cat.moons)
-            years = round((the_cat.moons / 12.0), 1)
             if the_cat.moons == 1:
-                output += f" moon ({years} years)"
+                output += ' moon'
             elif the_cat.moons != 1:
-                output += f" moons ({years} years)"
-
+                output += ' moons'
 
         output += "\n"
         # NUTRITION INFO (if the game is in the correct mode)
