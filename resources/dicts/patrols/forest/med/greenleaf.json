@@ -57,11 +57,11 @@
         },
         "weight": 20,
         "intro_text": "The sun is hot on r_c's pelt as {PRONOUN/r_c/subject} follow p_l to what's apparently a 'really good spot' for herbs. r_c doesn't know what makes one spot better than any other, but {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} just happy to have the chance to help p_l. As p_l dives into the greenery, as enthusiastic as any proud hunter, a brilliant yellow and black butterfly lands right on {PRONOUN/p_l/poss} raised butt.",
-        "decline_text": "It's not meant to be - a yowl interrupts their herbal hunt, the Clan needs p_l.",
+        "decline_text": "It's not meant to be - a howl interrupts their herbal hunt, the Pack needs p_l.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "Uh. Is that where p_l thinks it is? r_c stifles a laugh, choking it into a purr as {PRONOUN/r_c/subject} help p_l escape {PRONOUN/p_l/poss} inappropriately placed unwanted passenger, gently batting the butterfly off {PRONOUN/p_l/object}. p_l should take it as a compliment, {PRONOUN/r_c/subject} {VERB/r_c/suggest/suggests}. {PRONOUN/r_c/subject/CAP} can't blame the butterfly for mistaking p_l for a beautiful flower.",
+                "text": "Uh. Is that where p_l thinks it is? r_c stifles a laugh, choking it into a bark as {PRONOUN/r_c/subject} help p_l escape {PRONOUN/p_l/poss} inappropriately placed unwanted passenger, gently booping the butterfly off {PRONOUN/p_l/object}. p_l should take it as a compliment, {PRONOUN/r_c/subject} {VERB/r_c/suggest/suggests}. {PRONOUN/r_c/subject/CAP} can't blame the butterfly for mistaking p_l for a beautiful flower.",
                 "exp": 20,
                 "weight": 20,
                 "herbs": ["random_herbs"],
@@ -76,7 +76,7 @@
                 ]
             },
             {
-                "text": "Err... A little help? p_l asks, and r_c pads closer, helplessly aware that there's absolutely no dignified way to remove an insect from another cat's arse. If p_l could just- no, maybe if r_c moves around - whoops, no, and they both fall instead, butterfly fluttering smugly off as r_c tries not to die of embarrassment on {PRONOUN/r_c/poss} back in the flowers with p_l smiling so prettily.",
+                "text": "Err... A little help? p_l asks, and r_c pads closer, helplessly aware that there's absolutely no dignified way to remove an insect from another wolf's arse. If p_l could just- no, maybe if r_c moves around - whoops, no, and they both fall instead, butterfly fluttering smugly off as r_c tries not to die of embarrassment on {PRONOUN/r_c/poss} back in the flowers with p_l smiling so prettily.",
                 "exp": 20,
                 "weight": 5,
                 "herbs": ["random_herbs"],
@@ -93,7 +93,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "Try as {PRONOUN/r_c/subject} might, r_c is more of a hinderance than a help for herb hunting, and {PRONOUN/r_c/subject} {VERB/r_c/know/knows} it, apologizing profusely. p_l waves it off with a shrug, but it's not what either cat was hoping for from the afternoon.",
+                "text": "Try as {PRONOUN/r_c/subject} might, r_c is more of a hinderance than a help for herb hunting, and {PRONOUN/r_c/subject} {VERB/r_c/know/knows} it, apologizing profusely. p_l waves it off with a shrug, but it's not what either wolf was hoping for from the afternoon.",
                 "exp": 0,
                 "weight": 20
             }
@@ -125,7 +125,7 @@
                 "herbs": ["mullein"]
             },
             {
-                "text": "Not only is the mullein intact and growing nicely, but there's also a nice patch of plantain growing just nearby. p_l purrs in satisfaction - seems like they've caught two prey in one blow on this trip. They'll remember that plantain for later.",
+                "text": "Not only is the mullein intact and growing nicely, but there's also a nice patch of plantain growing just nearby. p_l wags in satisfaction - seems like they've caught two prey in one blow on this trip. They'll remember that plantain for later.",
                 "exp": 10,
                 "weight": 5,
                 "herbs": ["mullein"]
@@ -133,7 +133,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "p_l reaches the mullein plant that the Pack has used for many seasons, only to find out it's being torn to shreds by bugs. They hiss in exasperation, batting some of the leaf bugs off the plant. Maybe it'll grow back next newleaf.",
+                "text": "p_l reaches the mullein plant that the Pack has used for many seasons, only to find out it's being torn to shreds by bugs. {PRONOUN/p_l/subject/CAP} snarl in exasperation, batting some of the leaf bugs off the plant. Maybe it'll grow back next newleaf.",
                 "exp": 0,
                 "weight": 20
             }
@@ -205,7 +205,7 @@
                 ]
             },
             {
-                "text": "By the time they reach the burdock plants, p_l is about ready to claw s_c's ears off. Great StarPack! <i>How</i> can a wolf be so annoying? p_l hisses in exasperation, just as they notice that the burdock is all shriveled and dead - the roots won't be any good. It's just one thing after another today.",
+                "text": "By the time they reach the burdock plants, p_l is about ready to bite s_c's ears off. Great StarPack! <i>How</i> can a wolf be so annoying? p_l snarls in exasperation, just as they notice that the burdock is all shriveled and dead - the roots won't be any good. It's just one thing after another today.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": ["troublesome", "childish"],
@@ -705,7 +705,7 @@
                 "herbs": ["blackberry"]
             },
             {
-                "text": "Perfect - there's a good crop of blackberry leaves just waiting for them, and the bramble seems to be sending out new exploratory branches too, promising more growth in the future. As they set out the leaves out to dry before they're put away in the herb stores, p_l lets out a purr at the sight of their harvest.",
+                "text": "Perfect - there's a good crop of blackberry leaves just waiting for them, and the bramble seems to be sending out new exploratory branches too, promising more growth in the future. As they set out the leaves out to dry before they're put away in the herb stores, p_l smiles at the sight of their harvest.",
                 "exp": 10,
                 "weight": 5,
                 "herbs": ["many_herbs", "blackberry"]
@@ -976,7 +976,7 @@
                 "herbs": ["burdock"]
             },
             {
-                "text": "Luck is on p_l's side today - the burdock is both plentiful and easy to find. Laying the fat roots out in a towering but neat pile in the herb stores makes p_l's entire body thrum with a contented purr.",
+                "text": "Luck is on p_l's side today - the burdock is both plentiful and easy to find. Laying the fat roots out in a towering but neat pile in the herb stores makes p_l's entire body wiggle with an excited wag.",
                 "exp": 10,
                 "weight": 5,
                 "herbs": ["many_herbs", "burdock"]
@@ -1041,7 +1041,7 @@
                 ]
             },
             {
-                "text": "Luck is on p_l's side today - the burdock is both plentiful and easy to find. Laying the fat roots out in a towering but neat pile in the herb stores makes p_l's entire body thrum with a contented purr, as does seeing how hard app1 is working to learn herbcraft.",
+                "text": "Luck is on p_l's side today - the burdock is both plentiful and easy to find. Laying the fat roots out in a towering but neat pile in the herb stores makes p_l's entire body wiggle with an excited wag, as does seeing how hard app1 is working to learn herbcraft.",
                 "exp": 20,
                 "weight": 5,
                 "herbs": ["many_herbs", "burdock"],
@@ -1152,7 +1152,7 @@
                 ]
             },
             {
-                "text": "Luck is on p_l's side today - the burdock is both plentiful and easy to find. Laying the fat roots out in a towering but neat pile in the herb stores makes p_l's entire body thrum with a contented purr, and their Packmates smile, obligingly helping out their hard-working medicine wolf.",
+                "text": "Luck is on p_l's side today - the burdock is both plentiful and easy to find. Laying the fat roots out in a towering but neat pile in the herb stores makes p_l's entire body wiggle with an excited wag, and their Packmates smile, obligingly helping out their hard-working medicine wolf.",
                 "exp": 10,
                 "weight": 5,
                 "herbs": ["many_herbs", "burdock"],
@@ -1607,7 +1607,7 @@
                 ]
             },
             {
-                "text": "Daisies aren't hard to find in the warmer seasons, and s_c collects enough that they have trouble not dropping any on the way back to camp. At least with app1 here with them the load is shared, and they purr in appreciation of the apprentice.",
+                "text": "Daisies aren't hard to find in the warmer seasons, and s_c collects enough that they have trouble not dropping any on the way back to camp. At least with app1 here with them the load is shared, and they smile in appreciation of the apprentice.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["SENSE,2"],
@@ -2446,7 +2446,7 @@
         "chance_of_success": 70,
         "success_outcomes": [
             {
-                "text": "The many stems of goldenrod surround p_l as they work, snipping off stems and clumps of tiny yellow flowers to bring back to c_n's herb stores. app1 and p_l occasionally exchange quiet meows as they work, contact calls reassuring each other that they're both still there amidst the towering goldenrod.",
+                "text": "The many stems of goldenrod surround p_l as they work, snipping off stems and clumps of tiny yellow flowers to bring back to c_n's herb stores. app1 and p_l occasionally exchange quiet words as they work, contact calls reassuring each other that they're both still there amidst the towering goldenrod.",
                 "exp": 20,
                 "weight": 20,
                 "herbs": ["goldenrod"],
@@ -6124,7 +6124,7 @@
         "biome": ["forest"],
         "season": ["greenleaf"],
         "types": ["herb_gathering"],
-	"patrol_art": "med_general_intro",
+        "patrol_art": "med_general_intro",
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {

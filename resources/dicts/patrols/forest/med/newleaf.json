@@ -738,7 +738,7 @@
                 "herbs": ["burdock"]
             },
             {
-                "text": "Luck is on p_l's side today - the burdock is both plentiful and easy to find. Laying the fat roots out in a towering but neat pile in the herb stores makes p_l's entire body thrum with a contented purr.",
+                "text": "Luck is on p_l's side today - the burdock is both plentiful and easy to find. Laying the fat roots out in a towering but neat pile in the herb stores makes p_l's entire body wiggle with an excited wag.",
                 "exp": 10,
                 "weight": 5,
                 "herbs": ["many_herbs", "burdock"]
@@ -803,7 +803,7 @@
                 ]
             },
             {
-                "text": "Luck is on p_l's side today - the burdock is both plentiful and easy to find. Laying the fat roots out in a towering but neat pile in the herb stores makes p_l's entire body thrum with a contented purr, as does seeing how hard app1 is working to learn herbcraft.",
+                "text": "Luck is on p_l's side today - the burdock is both plentiful and easy to find. Laying the fat roots out in a towering but neat pile in the herb stores makes p_l's entire body wiggle with an excited wag, as does seeing how hard app1 is working to learn herbcraft.",
                 "exp": 20,
                 "weight": 5,
                 "herbs": ["many_herbs", "burdock"],
@@ -914,7 +914,7 @@
                 ]
             },
             {
-                "text": "Luck is on p_l's side today - the burdock is both plentiful and easy to find. Laying the fat roots out in a towering but neat pile in the herb stores makes p_l's entire body thrum with a contented purr, and their Packmates smile, obligingly helping out their hard-working medicine wolf.",
+                "text": "Luck is on p_l's side today - the burdock is both plentiful and easy to find. Laying the fat roots out in a towering but neat pile in the herb stores makes p_l's entire body wiggle with an excited wag, and their Packmates smile, obligingly helping out their hard-working medicine wolf.",
                 "exp": 10,
                 "weight": 5,
                 "herbs": ["many_herbs", "burdock"],
@@ -1368,7 +1368,7 @@
                 ]
             },
             {
-                "text": "Daisies aren't hard to find in the warmer seasons, and s_c collects enough that they have trouble not dropping any on the way back to camp. At least with app1 here with them the load is shared, and they purr in appreciation of the apprentice.",
+                "text": "Daisies aren't hard to find in the warmer seasons, and s_c collects enough that they have trouble not dropping any on the way back to camp. At least with app1 here with them the load is shared, and they smile in appreciation of the apprentice.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["SENSE,2"],
@@ -1922,7 +1922,7 @@
                 ]
             },
             {
-                "text": "s_c has managed to discover, with time and experience, that elder leaf picking is actually better handled by chewing off several low hanging, thin branches, and carting those back to camp instead. {PRONOUN/p_l/subject/CAP} {VERB/p_l/pass/passes} on the trick to app1, and once they're back at camp both medicine cats strip off the leaves and give them a quick wash.",
+                "text": "s_c has managed to discover, with time and experience, that elder leaf picking is actually better handled by chewing off several low hanging, thin branches, and carting those back to camp instead. {PRONOUN/p_l/subject/CAP} {VERB/p_l/pass/passes} on the trick to app1, and once they're back at camp both medicine wolves strip off the leaves and give them a quick wash.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["SENSE,2"],
@@ -2017,7 +2017,7 @@
         "chance_of_success": 20,
         "success_outcomes": [
             {
-                "text": "Elder leaves being used to <i>soothe</i> sprains, and elder leaves having to be gathered in a way that <i>risks</i> sprains, is truly one of StarPack's little ironies, p_l reflects. {PRONOUN/p_l/subject/CAP} {VERB/p_l/share/shares} the little joke with the patrol, and the cats murrp with amusement, but it does also remind everyone to be careful as they strip leaves from the tree.",
+                "text": "Elder leaves being used to <i>soothe</i> sprains, and elder leaves having to be gathered in a way that <i>risks</i> sprains, is truly one of StarPack's little ironies, p_l reflects. {PRONOUN/p_l/subject/CAP} {VERB/p_l/share/shares} the little joke with the patrol, and the wolves yip with amusement, but it does also remind everyone to be careful as they strip leaves from the tree.",
                 "exp": 10,
                 "weight": 20,
                 "herbs": ["elder_leaves"],
@@ -2206,7 +2206,7 @@
         "chance_of_success": 70,
         "success_outcomes": [
             {
-                "text": "The many stems of goldenrod surround p_l as they work, snipping off stems and clumps of tiny yellow flowers to bring back to c_n's herb stores. app1 and p_l occasionally exchange quiet meows as they work, contact calls reassuring each other that they're both still there amidst the towering goldenrod.",
+                "text": "The many stems of goldenrod surround p_l as they work, snipping off stems and clumps of tiny yellow flowers to bring back to c_n's herb stores. app1 and p_l occasionally exchange quiet words as they work, contact calls reassuring each other that they're both still there amidst the towering goldenrod.",
                 "exp": 20,
                 "weight": 20,
                 "herbs": ["goldenrod"],
@@ -2702,7 +2702,7 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "It takes them all day, but eventually, finally, p_l spots the speckled leaves {PRONOUN/p_l/subject}{VERB/p_l/'ve/'s} been looking for, so crucial to replenishing the Pack's stores after the long leaf-bare. For just a second, {PRONOUN/p_l/subject} {VERB/p_l/feel/feels} the weight of {PRONOUN/p_l/poss} responsibilities lift, and {PRONOUN/p_l/subject} {VERB/p_l/let/lets} out a yowl and {VERB/p_l/stop/stops} to play with app1.",
+                "text": "It takes them all day, but eventually, finally, p_l spots the speckled leaves {PRONOUN/p_l/subject}{VERB/p_l/'ve/'s} been looking for, so crucial to replenishing the Pack's stores after the long leaf-bare. For just a second, {PRONOUN/p_l/subject} {VERB/p_l/feel/feels} the weight of {PRONOUN/p_l/poss} responsibilities lift, and {PRONOUN/p_l/subject} {VERB/p_l/let/lets} out a yip and {VERB/p_l/stop/stops} to play with app1.",
                 "exp": 20,
                 "weight": 20,
                 "herbs": ["lungwort"],
@@ -5124,7 +5124,7 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "The sharp scent of tansy calls p_l in to harvest its newleaf shoots. There's enough of the common herb to let the warriors gather sprigs of it to freshen the dens, making the rest of the patrol purr with satisfaction.",
+                "text": "The sharp scent of tansy calls p_l in to harvest its newleaf shoots. There's enough of the common herb to let the warriors gather sprigs of it to freshen the dens, making the rest of the patrol wag with satisfaction.",
                 "exp": 10,
                 "weight": 20,
                 "herbs": ["tansy"],
