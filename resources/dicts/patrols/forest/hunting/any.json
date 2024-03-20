@@ -747,29 +747,29 @@
         },
         "weight": 20,
         "intro_text": "The patrol hears distant howling and wonders whether to investigate the noise.",
-        "decline_text": "The patrol decides not to investigate the source of the noise.  Whatever is making it will not be friendly to them.",
+        "decline_text": "The patrol decides not to investigate the source of the noise.  It sounds like an alarm howl.",
         "chance_of_success": 10,
         "success_outcomes": [
             {
-                "text": "The patrol tracks the noise and discovers a wolf eating from its kill. This is a predator they cannot fight and there may be more wolves nearby, so the patrol decides to return to camp and report the intruder to the leader. Perhaps they can return later to take what fresh-kill is left behind.",
+                "text": "The patrol tracks the noise and discovers a cougar eating from its kill. This is a predator they cannot fight without serious injury, so the patrol decides to return to camp and report the intruder to the leader. Perhaps they can return later to take what fresh-kill is left behind.",
                 "exp": 30,
                 "weight": 20
             },
             {
-                "text": "The patrol tracks the noise and finds a mostly stripped carcass covered in the scent of wolves. They quickly scavenge what little is left and leave before the predators can return.",
+                "text": "The patrol tracks the noise and finds a mostly stripped carcass covered in the scent of cougar. They quickly scavenge what little is left and leave before the predator can return.",
                 "exp": 30,
                 "weight": 5,
                 "prey": ["medium"]
             },
             {
-                "text": "The noise leads them to a wolf, eating from its kill. s_c instructs them to wait in the brush, downwind from the canine, until it leaves. Eventually the wolf eats its fill and disappears into the forest. When s_c deems it safe, the patrol takes their turn stripping the leftover meat from the bones.",
+                "text": "The noise leads them to a cougar, eating from its kill. s_c instructs them to wait in the brush, downwind from the feline, until it leaves. Eventually the cougar eats its fill and disappears into the forest. When s_c deems it safe, the patrol takes their turn stripping the leftover meat from the bones.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["CLEVER,2"],
                 "prey": ["large"]
             },
             {
-                "text": "The noise leads them to a wolf, eating from its kill. s_c instructs them to wait in the brush, downwind from the canine, until it leaves. Eventually the wolf eats its fill and disappears into the forest. When s_c deems it safe, the patrol takes their turn stripping the leftover meat from the bones.",
+                "text": "The noise leads them to a cougar, eating from its kill. s_c instructs them to wait in the brush, downwind from the feline, until it leaves. Eventually the cougar eats its fill and disappears into the forest. When s_c deems it safe, the patrol takes their turn stripping the leftover meat from the bones.",
                 "exp": 30,
                 "weight": 20,
                 "stat_trait": [
@@ -786,29 +786,29 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The noise leads them to a wolf that's busy stripping the last of the meat from a carcass. The patrol waits till the wolf leaves, hoping to pick up any leftovers, but unfortunately the bones have been thoroughly cleaned.",
+                "text": "The noise leads them to a cougar that's busy stripping the last of the meat from a carcass. The patrol waits till the cougar leaves, hoping to pick up any leftovers, but unfortunately the bones have been thoroughly cleaned.",
                 "exp": 0,
                 "weight": 20
             },
             {
-                "text": "They track the noise to a wolf. Before the patrol can investigate further, s_c whimpers in terror at the sight of the beast and dashes away. The patrol follows anxiously, not wanting to lose sight of their Packmate while a wolf is about.",
+                "text": "They track the noise to a cougar. Before the patrol can investigate further, s_c whimpers in terror at the sight of the beast and dashes away. The patrol follows anxiously, not wanting to lose sight of their Packmate while a cougar is about.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": ["nervous", "insecure"]
             },
             {
-                "text": "The patrol finds a wolf pack at the source of the noise. The wolves are tearing into a dead deer and upon seeing the wolves, prove to be fiercely protective of their meal. The patrol doesn't move fast enough and r_c is killed before {PRONOUN/r_c/subject} can run.",
+                "text": "The patrol finds a cougar at the source of the noise. The cougar is tearing into a dead deer and upon seeing the wolves, prove to be fiercely protective of their meal. The patrol doesn't move fast enough and r_c is killed before {PRONOUN/r_c/subject} can run.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
                 "history_text": {
-                    "scar": "m_c was scarred by a wolf protecting its scavenged meal.",
-                    "reg_death": "m_c was killed by a wolf pack protecting its meal.",
-                    "lead_death": "killed by a wolf pack"
+                    "scar": "m_c was scarred by a cougar protecting its scavenged meal.",
+                    "reg_death": "m_c was killed by a cougar protecting its meal.",
+                    "lead_death": "killed by a cougar"
                 }
             },
             {
-                "text": "The sound leads them to a wolf, scavenging from a carcass. The wolf notices them before they can hide and lunges, making it clear that this food has been claimed. r_c is momentarily caught in its jaws before the patrol retaliates and drives it off their Packmate.",
+                "text": "The sound leads them to a cougar, scavenging from a carcass. The cougar notices them before they can hide and lunges, making it clear that this food has been claimed. r_c is momentarily caught in its claws before the patrol retaliates and drives it off their Packmate.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -819,9 +819,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c was scarred by a wolf protecting its scavenged meal.",
-                    "reg_death": "m_c was killed by a wolf pack protecting its meal.",
-                    "lead_death": "killed by a wolf pack"
+                    "scar": "m_c was scarred by a cougar protecting its scavenged meal.",
+                    "reg_death": "m_c was killed by a cougar protecting its meal.",
+                    "lead_death": "killed by a cougar"
                 }
             }
         ]
@@ -840,29 +840,29 @@
         },
         "weight": 20,
         "intro_text": "The patrol hears distant howling and wonders whether to investigate the noise.",
-        "decline_text": "The patrol decides not to investigate the source of the noise. Whatever is making it will not be friendly to them.",
+        "decline_text": "The patrol decides not to investigate the source of the noise. It sounded like an alarm howl.",
         "chance_of_success": 20,
         "success_outcomes": [
             {
-                "text": "The patrol tracks the noise and discovers a wolf eating from its kill. This is a predator they cannot fight and there may be more wolves nearby. The patrol decides to return to camp and report the intruder to the leader. Perhaps they can return later to take what little fresh-kill is left behind.",
+                "text": "The patrol tracks the noise and discovers a cougar eating from its kill. This is a predator they cannot fight without serious injury. The patrol decides to return to camp and report the intruder to the leader. Perhaps they can return later to take what little fresh-kill is left behind.",
                 "exp": 30,
                 "weight": 20
             },
             {
-                "text": "The patrol tracks the noise and finds a mostly stripped carcass covered in the scent of wolves. They quickly scavenge what little is left and leave before the predators can return.",
+                "text": "The patrol tracks the noise and finds a mostly stripped carcass covered in the scent of cougar. They quickly scavenge what little is left and leave before the predators can return.",
                 "exp": 30,
                 "weight": 5,
                 "prey": ["medium"]
             },
             {
-                "text": "The noise leads them to a wolf, scavenging from a carcass. s_c instructs them to wait in the brush, downwind from the canine, until it leaves. Eventually the wolf eats its fill and disappears into the forest. When s_c deems it safe, the patrol takes their turn stripping the leftover meat from the bones.",
+                "text": "The noise leads them to a cougar, scavenging from a carcass. s_c instructs them to wait in the brush, downwind from the feline, until it leaves. Eventually the cougar eats its fill and disappears into the forest. When s_c deems it safe, the patrol takes their turn stripping the leftover meat from the bones.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["CLEVER,2"],
                 "prey": ["large"]
             },
             {
-                "text": "The noise leads them to a wolf, scavenging from a carcass. s_c instructs them to wait in the brush, downwind from the canine, until it leaves. Eventually the wolf eats its fill and disappears into the forest. When s_c deems it safe, the patrol takes their turn stripping the leftover meat from the bones.",
+                "text": "The noise leads them to a cougar, scavenging from a carcass. s_c instructs them to wait in the brush, downwind from the feline, until it leaves. Eventually the cougar eats its fill and disappears into the forest. When s_c deems it safe, the patrol takes their turn stripping the leftover meat from the bones.",
                 "exp": 30,
                 "weight": 20,
                 "stat_trait": [
@@ -879,24 +879,24 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The noise leads them to a wolf that's busy stripping the last of the meat from a carcass. The patrol waits till the wolf leaves, hoping to pick up any leftovers, but unfortunately the bones have been thoroughly cleaned.",
+                "text": "The noise leads them to a cougar that's busy stripping the last of the meat from a carcass. The patrol waits till the cougar leaves, hoping to pick up any leftovers, but unfortunately the bones have been thoroughly cleaned.",
                 "exp": 0,
                 "weight": 20
             },
             {
-                "text": "They track the noise to a wolf. Before the patrol can investigate further, s_c whimpers in terror at the sight of the beast and dashes away.  The patrol follows anxiously, not wanting to lose sight of their Packmate while a wolf is about.",
+                "text": "They track the noise to a cougar. Before the patrol can investigate further, s_c whimpers in terror at the sight of the beast and dashes away.  The patrol follows anxiously, not wanting to lose sight of their Packmate while a cougar is about.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": ["nervous", "insecure"]
             },
             {
-                "text": "The patrol finds a wolf pack at the source of the noise. The wolves are busy eating from the carcass of a deer, and upon seeing the wolves, prove to be fiercely protective of their meal.  The patrol doesn't move fast enough and r_c is killed before {PRONOUN/r_c/subject} can run.",
+                "text": "The patrol finds a cougar at the source of the noise. The cougar is busy eating from the carcass of a deer, and upon seeing the wolves, prove to be fiercely protective of their meal.  The patrol doesn't move fast enough and r_c is killed before {PRONOUN/r_c/subject} can run.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
                 "history_text": {
-                    "reg_death": "m_c was killed by a wolf protecting its meal.",
-                    "lead_death": "killed by a wolf"
+                    "reg_death": "m_c was killed by a cougar protecting its meal.",
+                    "lead_death": "killed by a cougar"
                 }
             }
         ]
@@ -915,29 +915,29 @@
         },
         "weight": 20,
         "intro_text": "r_c hears distant howling and wonders whether to investigate the noise.",
-        "decline_text": "r_c decides not to investigate the source of the noise.  Whatever is making it will not be friendly to {PRONOUN/r_c/object} and {PRONOUN/r_c/subject} {VERB/r_c/are/is} only one wolf.",
+        "decline_text": "r_c decides not to investigate the source of the noise.  It sounds like an alarm howl and {PRONOUN/r_c/subject} {VERB/r_c/are/is} only one wolf.",
         "chance_of_success": 10,
         "success_outcomes": [
             {
-                "text": "r_c tracks the noise and discovers a wolf eating from its kill. This is a predator {PRONOUN/r_c/subject} cannot fight. The patrol decides to return to camp and report the intruder to the leader instead. Perhaps a patrol can return later to take what the wolf leaves behind.",
+                "text": "r_c tracks the noise and discovers a cougar eating from its kill. This is a predator {PRONOUN/r_c/subject} cannot fight. The patrol decides to return to camp and report the intruder to the leader instead. Perhaps a patrol can return later to take what the wolf leaves behind.",
                 "exp": 40,
                 "weight": 20
             },
             {
-                "text": "r_c tracks the noise and finds a mostly stripped carcass covered in the scent of wolf. {PRONOUN/r_c/subject/CAP} quickly {VERB/r_c/scavenge/scavenges} what little is left and {VERB/r_c/leave/leaves} before the predator can return.",
+                "text": "r_c tracks the noise and finds a mostly stripped carcass covered in the scent of cougar. {PRONOUN/r_c/subject/CAP} quickly {VERB/r_c/scavenge/scavenges} what little is left and {VERB/r_c/leave/leaves} before the predator can return.",
                 "exp": 40,
                 "weight": 5,
                 "prey": ["medium"]
             },
             {
-                "text": "The noise leads {PRONOUN/s_c/object} to a wolf, tearing into the carcass of a deer. s_c decides to wait in the brush, downwind from the canine, until it leaves. Eventually the wolf eats its fill and disappears into the forest. s_c waits a while longer, ensuring the wolf has truly left, and takes {PRONOUN/s_c/poss} turn stripping the leftover meat from the bones.",
+                "text": "The noise leads {PRONOUN/s_c/object} to a cougar, tearing into the carcass of a deer. s_c decides to wait in the brush, downwind from the feline, until it leaves. Eventually the cougar eats its fill and disappears into the forest. s_c waits a while longer, ensuring the cougar has truly left, and takes {PRONOUN/s_c/poss} turn stripping the leftover meat from the bones.",
                 "exp": 40,
                 "weight": 20,
                 "stat_skill": ["CLEVER,2"],
                 "prey": ["large"]
             },
             {
-                "text": "The noise leads them to a wolf, tearing into the carcass of a deer. s_c decides to wait in the brush, downwind from the canine, until it leaves. Eventually the wolf eats its fill and disappears into the forest. s_c waits a while longer, ensuring the wolf has truly left, and takes {PRONOUN/s_c/poss} turn stripping the leftover meat from the bones.",
+                "text": "The noise leads {PRONOUN/s_c/object} to a cougar, tearing into the carcass of a deer. s_c decides to wait in the brush, downwind from the feline, until it leaves. Eventually the cougar eats its fill and disappears into the forest. s_c waits a while longer, ensuring the cougar has truly left, and takes {PRONOUN/s_c/poss} turn stripping the leftover meat from the bones.",
                 "exp": 40,
                 "weight": 20,
                 "stat_trait": [
@@ -954,24 +954,24 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The noise leads them to a wolf that's busy stripping the last of the meat from a carcass. {PRONOUN/s_c/subject/CAP} {VERB/s_c/wait/waits} till the wolf leaves, hoping to pick up any leftovers, but unfortunately the bones have been thoroughly cleaned.",
+                "text": "The noise leads {PRONOUN/s_c/object} to a cougar that's busy stripping the last of the meat from a carcass. {PRONOUN/s_c/subject/CAP} {VERB/s_c/wait/waits} till the cougar leaves, hoping to pick up any leftovers, but unfortunately the bones have been thoroughly cleaned.",
                 "exp": 0,
                 "weight": 20
             },
             {
-                "text": "{PRONOUN/s_c/subject/CAP} track the noise to a wolf. s_c whimpers in terror at the sight of the beast and dashes away, running straight back to camp...",
+                "text": "{PRONOUN/s_c/subject/CAP} track the noise to a cougar. s_c whimpers in terror at the sight of the beast and dashes away, running straight back to camp...",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": ["nervous", "insecure"]
             },
             {
-                "text": "r_c finds a wolf pack at the source of the noise. The pack is tearing into a deer carcass and upon seeing the wolf, prove to be fiercely protective of their meal. r_c doesn't move fast enough and with no Packmates to save {PRONOUN/r_c/object}, is quickly killed.",
+                "text": "r_c finds a large cougar at the source of the noise. The cougar is tearing into a deer carcass and upon seeing the wolf, prove to be fiercely protective of their meal. r_c doesn't move fast enough and with no Packmates to save {PRONOUN/r_c/object}, is quickly killed.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
                 "history_text": {
-                    "reg_death": "m_c was killed by a wolf protecting its meal.",
-                    "lead_death": "killed by a wolf"
+                    "reg_death": "m_c was killed by a cougar protecting its meal.",
+                    "lead_death": "killed by a cougar"
                 }
             }
         ]
