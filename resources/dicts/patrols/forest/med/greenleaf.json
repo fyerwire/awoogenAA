@@ -5238,7 +5238,10 @@
                         "injuries": ["poisoned"],
                         "scars": []
                     }
-                ]
+                ],
+                "history_text": {
+                    "reg_death": "m_c died from accidentally eating deathberries."
+                }
             }
         ]
     },

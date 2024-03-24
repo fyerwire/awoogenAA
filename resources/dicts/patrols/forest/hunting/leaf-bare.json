@@ -95,7 +95,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c caught a chill while hunting in leaf-bare."
+                    "scar": "m_c caught a chill while hunting in leaf-bare.",
+                    "reg_death": "m_c froze to death after hunting in a storm.",
+                    "lead_death": "froze to death"
                 },
                 "relationships": [
                     {
@@ -151,7 +153,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c caught a chill while hunting in leaf-bare."
+                    "scar": "m_c caught a chill while hunting in leaf-bare.",
+                    "reg_death": "m_c froze to death after hunting in a storm.",
+                    "lead_death": "froze to death"
                 }
             }
         ]
@@ -234,7 +238,6 @@
                 "weight": 10,
                 "dead_cats": ["r_c"],
                 "history_text": {
-                    "scar": "m_c caught a chill while hunting in leaf-bare.",
                     "reg_death": "m_c froze to death while hunting in a storm.",
                     "lead_death": "froze to death while hunting"
                 },
@@ -376,7 +379,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c carries a scar from a fox fight."
+                    "scar": "m_c carries a scar from a bear fight.",
+                    "reg_death": "m_c fell in a battle with a bear.",
+                    "lead_death": "died while fighting a bear"
                 },
                 "relationships": [
                     {
@@ -407,7 +412,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c carries a scar from a bear fight."
+                    "scar": "m_c carries a scar from a bear fight.",
+                    "reg_death": "m_c fell in a battle with a bear.",
+                    "lead_death": "died while fighting a bear"
                 },
                 "relationships": [
                     {
@@ -522,7 +529,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c carries a scar from a fox fight."
+                    "scar": "m_c carries a scar from a bear fight.",
+                    "reg_death": "m_c fell in a battle with a bear.",
+                    "lead_death": "died while fighting a bear"
                 },
                 "relationships": [
                     {
@@ -553,7 +562,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c carries a scar from a bear fight."
+                    "scar": "m_c carries a scar from a bear fight.",
+                    "reg_death": "m_c fell in a battle with a bear.",
+                    "lead_death": "died while fighting a bear"
                 },
                 "relationships": [
                     {
@@ -862,7 +873,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c carries a scar from a bear fight."
+                    "scar": "m_c carries a scar from a bear fight.",
+                    "reg_death": "m_c fell in a battle with a bear.",
+                    "lead_death": "died while fighting a bear"
                 },
                 "relationships": [
                     {
@@ -1643,7 +1656,8 @@
         "min_cats": 3,
         "max_cats": 6,
         "min_max_status": {
-            "deputy": [1, 6]
+            "deputy": [1, 6],
+            "leader": [-1, -1]
         },
         "weight": 20,
         "intro_text": "As the patrol walks through the forest, a loud chittering from above interrupts them. One wolf looks up just in time to get a shower of twigs and dead leaves to the face, while another exclaims aloud as they spot squirrels darting through the branches above.",
@@ -1724,6 +1738,10 @@
                         "scars": []
                     }
                 ],
+                "history_text": {
+                    "scar": "This wolf was scarred after falling from a tree.",
+                    "reg_death": "m_c died after falling from a tree while hunting."
+                },
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
@@ -1811,6 +1829,10 @@
                         "scars": []
                     }
                 ],
+                "history_text": {
+                    "reg_death": "This wolf froze to death.",
+                    "lead_death": "froze to death"
+                },
                 "relationships": [
                     {
                         "cats_to": ["r_c"],
@@ -1890,7 +1912,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c was scarred after disappearing on patrol and being discovered injured."
+                    "scar": "m_c caught a chill while hunting in leaf-bare.",
+                    "reg_death": "m_c froze to death after hunting in leaf-bare.",
+                    "lead_death": "froze to death while hunting"
                 },
                 "prey": ["very_small"]
             }
@@ -2070,7 +2094,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c carries a scar from fighting a swarm of rats."
+                    "scar": "m_c carries a scar from fighting a swarm of rats.",
+                    "reg_death": "m_c died after fighting a swarm of rats.",
+                    "lead_death": "fought a swarm of rats"
                 },
                 "relationships": [
                     {
@@ -2101,13 +2127,13 @@
         "chance_of_success": 20,
         "success_outcomes": [
             {
-                "text": "The rat king's lair is defended heavily by smaller rats. While the patrol doesn't find any sign of the rat king, they manage to defeat and being back a feast of small rats.",
+                "text": "The Rat King's lair is heavily defended by smaller rats. While the patrol doesn't find any sign of the rat king, they manage to defeat and bring back a feast of small rats.",
                 "exp": 30,
                 "weight": 20,
                 "prey": ["medium"]
             },
             {
-                "text": "The rats defending the rat king's lair are more numerous than they thought. The patrol catches whatever rats they can, but p_l swears that {PRONOUN/p_l/subject} saw it - multiple eyes glowing in the dark, watching them.",
+                "text": "The rats defending the Rat King's lair are more numerous than they thought. The patrol catches whatever rats they can, but p_l swears that {PRONOUN/p_l/subject} saw it - multiple eyes glowing in the dark, watching them.",
                 "exp": 30,
                 "weight": 5,
                 "prey": ["large"]
@@ -2139,7 +2165,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c carries a scar from fighting a rat king."
+                    "scar": "m_c carries a scar from fighting a rat king.",
+                    "reg_death": "m_c died from {PRONOUN/m_c/poss} wounds after battling a rat king.",
+                    "lead_death": "fought a rat king"
                 },
                 "prey": ["very_small"]
             },
@@ -2156,7 +2184,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c carries a scar from fighting a rat king."
+                    "scar": "m_c carries a scar from fighting a rat king.",
+                    "reg_death": "m_c died from {PRONOUN/m_c/poss} wounds after battling a rat king.",
+                    "lead_death": "fought a rat king"
                 },
                 "prey": ["very_small"]
             }
@@ -2178,13 +2208,13 @@
         "chance_of_success": 20,
         "success_outcomes": [
             {
-                "text": "The rat king's lair is defended heavily by smaller rats. While the patrol doesn't find any sign of the rat king, they manage to defeat and bring back a feast of small rats.",
+                "text": "The Rat King's lair is heavily defended by smaller rats. While the patrol doesn't find any sign of the Rat King, they manage to defeat and bring back a feast of small rats.",
                 "exp": 30,
                 "weight": 20,
                 "prey": ["medium"]
             },
             {
-                "text": "The rats defending the rat king's lair are more numerous than they thought. The patrol catches whatever rats they can, but p_l swears that {PRONOUN/p_l/subject} saw it - multiple eyes glowing in the dark, watching them.",
+                "text": "The rats defending the Rat King's lair are more numerous than they thought. The patrol catches whatever rats they can, but p_l swears that {PRONOUN/p_l/subject} saw it - multiple eyes glowing in the dark, watching {PRONOUN/p_l/object}.",
                 "exp": 30,
                 "weight": 5,
                 "prey": ["large"]
@@ -2204,12 +2234,13 @@
                 "weight": 20
             },
             {
-                "text": "The rat king's defenses are too powerful, and as wave upon wave of rats poured down onto the patrol, most of them manage to escape.. but not everyone makes it out.",
+                "text": "The Rat King's defenses are too powerful, and as wave upon wave of rats poured down onto the patrol, most of them manage to escape... but not everyone makes it out.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["multi", "some_lives"],
                 "history_text": {
-                    "reg_death": "m_c died from {PRONOUN/m_c/poss} wounds after battling the rat king."
+                    "reg_death": "m_c died from {PRONOUN/m_c/poss} wounds after battling a Rat King.",
+                    "lead_death": "fought a Rat King"
                 }
             },
             {
@@ -2219,7 +2250,8 @@
                 "stat_skill": ["HUNTER,2"],
                 "dead_cats": ["s_c"],
                 "history_text": {
-                    "reg_death": "m_c died from {PRONOUN/m_c/poss} wounds after battling the rat king."
+                    "reg_death": "m_c died from {PRONOUN/m_c/poss} wounds after battling a Rat King.",
+                    "lead_death": "fought a Rat King"
                 }
             }
         ]
@@ -2401,7 +2433,8 @@
                 "weight": 10,
                 "dead_cats": ["r_c"],
                 "history_text": {
-                    "reg_death": "m_c froze to death."
+                    "reg_death": "m_c froze to death.",
+                    "lead_death": "froze to death"
                 }
             },
             {
@@ -2416,7 +2449,9 @@
                     }
                 ],
                 "history_text": {
-                    "reg_death": "m_c froze to death."
+                    "scar": "m_c was scarred after a brush with frostbite, gotten while hunting in leaf-bare.",
+                    "reg_death": "m_c died of frostbite.",
+                    "lead_death": "died to frostbite"
                 }
             }
         ]
@@ -2544,7 +2579,7 @@
                 ]
             },
             {
-                "text": "s_c manages to figure it out - a hibernating lizard! If they hadn't all had their faces in the snow already, they'd never have found it, what with it giving off such little scent.",
+                "text": "s_c manages to figure it out - a brumating lizard! If they hadn't all had their faces in the snow already, they'd never have found it, what with it giving off such little scent.",
                 "exp": 15,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1"],
@@ -2640,7 +2675,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c was scarred after a brush with frostbite, gotten while hunting in leaf-bare."
+                    "scar": "m_c was scarred after a brush with frostbite, gotten while hunting in leaf-bare.",
+                    "reg_death": "m_c died of frostbite.",
+                    "lead_death": "died to frostbite"
                 }
             },
             {
@@ -2656,7 +2693,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c was scarred after a brush with frostbite, gotten while hunting in leaf-bare."
+                    "scar": "m_c was scarred after a brush with frostbite, gotten while hunting in leaf-bare.",
+                    "reg_death": "m_c died of frostbite.",
+                    "lead_death": "died to frostbite"
                 }
             }
         ]
@@ -2757,7 +2796,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c caught a chill while hunting in leaf-bare."
+                    "scar": "m_c caught a chill while hunting in leaf-bare.",
+                    "reg_death": "This wolf froze to death after hunting in a storm.",
+                    "lead_death": "froze to death"
                 },
                 "relationships": [
                     {
@@ -2815,7 +2856,6 @@
                 "weight": 10,
                 "dead_cats": ["r_c"],
                 "history_text": {
-                    "scar": "m_c was scarred after a brush with frostbite, gotten while hunting in leaf-bare as an apprentice.",
                     "reg_death": "m_c froze to death, caught in a snowstorm while hunting by themselves."
                 }
             },
@@ -2842,7 +2882,6 @@
                 "stat_trait": ["bold", "daring"],
                 "dead_cats": ["s_c"],
                 "history_text": {
-                    "scar": "m_c was scarred after a brush with frostbite, gotten while hunting in leaf-bare as an apprentice.",
                     "reg_death": "m_c froze to death, caught in a snowstorm while hunting by {PRONOUN/app1/self}."
                 }
             },
@@ -2943,7 +2982,6 @@
                 "weight": 10,
                 "dead_cats": ["r_c"],
                 "history_text": {
-                    "scar": "m_c caught a chill while hunting in leaf-bare.",
                     "reg_death": "m_c froze to death while hunting in a storm.",
                     "lead_death": "froze to death while hunting"
                 },
@@ -3085,7 +3123,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c carries a scar from a fox fight."
+                    "scar": "m_c carries a scar from a bear fight.",
+                    "reg_death": "m_c fell in a battle with a bear.",
+                    "lead_death": "died while fighting a bear"
                 },
                 "relationships": [
                     {
@@ -3116,7 +3156,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c carries a scar from a bear fight."
+                    "scar": "m_c carries a scar from a bear fight.",
+                    "reg_death": "m_c fell in a battle with a bear.",
+                    "lead_death": "died while fighting a bear"
                 },
                 "relationships": [
                     {
@@ -3231,7 +3273,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c carries a scar from a fox fight."
+                    "scar": "m_c carries a scar from a bear fight.",
+                    "reg_death": "m_c fell in a battle with a bear.",
+                    "lead_death": "died while fighting a bear"
                 },
                 "relationships": [
                     {
@@ -3262,7 +3306,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c carries a scar from a bear fight."
+                    "scar": "m_c carries a scar from a bear fight.",
+                    "reg_death": "m_c fell in a battle with a bear.",
+                    "lead_death": "died while fighting a bear"
                 },
                 "relationships": [
                     {
@@ -3573,7 +3619,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c carries a scar from a bear fight."
+                    "scar": "m_c carries a scar from a bear fight.",
+                    "reg_death": "m_c fell in a battle with a bear.",
+                    "lead_death": "died while fighting a bear"
                 },
                 "relationships": [
                     {
@@ -6555,7 +6603,7 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "r_c tore {PRONOUN/r_c/poss} ear while learning a harsh lesson about overestimating prey as an apprentice."
+                    "scar": "r_c tore {PRONOUN/r_c/poss} ear while learning a harsh lesson about underestimating prey as an apprentice."
                 },
                 "relationships": [
                     {

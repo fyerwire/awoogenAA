@@ -23,7 +23,7 @@
                 "prey": ["medium"]
             },
             {
-                "text": "Though it tries to escape, r_c is faster and smarter - {PRONOUN/r_c/subject} {VERB/m_c/slam/slams} a paw down on the squirrel's tail before it can go very far, and kills it with ease.",
+                "text": "Though it tries to escape, r_c is faster and smarter - {PRONOUN/r_c/subject} {VERB/r_c/slam/slams} a paw down on the squirrel's tail before it can go very far, and kills it with ease.",
                 "exp": 10,
                 "weight": 5,
                 "prey": ["medium"]
@@ -759,7 +759,7 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "The rat king's lair is defended heavily by smaller rats. While the patrol doesn't find any sign of the rat king, they manage to defeat and being back a feast of small rats.",
+                "text": "The Rat King's lair is heavily defended by smaller rats. While the patrol doesn't find any sign of the Rat King, they manage to defeat and bring back a feast of small rats.",
                 "exp": 30,
                 "weight": 20,
                 "prey": ["medium"],
@@ -774,7 +774,7 @@
                 ]
             },
             {
-                "text": "The rats defending the rat king's lair are more numerous than they thought. The patrol catches whatever rats they can, but p_l swears that they saw it - multiple eyes glowing in the dark, watching them.",
+                "text": "The rats defending the Rat King's lair are more numerous than they thought. The patrol catches whatever rats they can, but p_l swears that they saw it - multiple eyes glowing in the dark, watching them.",
                 "exp": 30,
                 "weight": 5,
                 "prey": ["large"],
@@ -890,7 +890,7 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "The rat king's lair is defended heavily by smaller rats. While the patrol doesn't find any sign of the rat king, they manage to defeat and being back a feast of small rats.",
+                "text": "The Rat King's lair is heavily defended by smaller rats. While the patrol doesn't find any sign of the Rat King, they manage to defeat and bring back a feast of small rats.",
                 "exp": 30,
                 "weight": 20,
                 "prey": ["medium"],
@@ -905,7 +905,7 @@
                 ]
             },
             {
-                "text": "The rats defending the rat king's lair are more numerous than they thought. The patrol catches whatever rats they can, but p_l swears that {PRONOUN/p_l/subject} saw it - multiple eyes glowing in the dark, watching them.",
+                "text": "The rats defending the Rat King's lair are more numerous than they thought. The patrol catches whatever rats they can, but p_l swears that {PRONOUN/p_l/subject} saw it - multiple eyes glowing in the dark, watching them.",
                 "exp": 30,
                 "weight": 5,
                 "prey": ["large"],
@@ -952,12 +952,13 @@
                 ]
             },
             {
-                "text": "The rat king's defenses are too powerful, and as wave upon wave of rats poured down onto the patrol, most of them manage to escape.. but not everyone makes it out.",
+                "text": "The Rat King's defenses are too powerful, and as wave upon wave of rats poured down onto the patrol, most of them manage to escape... but not everyone makes it out.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["multi", "some_lives"],
                 "history_text": {
-                    "reg_death": "m_c died from {PRONOUN/m_c/poss} wounds after battling the rat king."
+                    "reg_death": "m_c died from {PRONOUN/m_c/poss} wounds after battling a Rat King.",
+                    "lead_death": "fought a Rat King"
                 },
                 "relationships": [
                     {
@@ -976,7 +977,8 @@
                 "stat_skill": ["HUNTER,2"],
                 "dead_cats": ["s_c"],
                 "history_text": {
-                    "reg_death": "m_c died from {PRONOUN/m_c/poss} wounds after battling the rat king."
+                    "reg_death": "m_c died from {PRONOUN/m_c/poss} wounds after battling a Rat King.",
+                    "lead_death": "fought a Rat King"
                 },
                 "relationships": [
                     {
@@ -3821,7 +3823,7 @@
                 "history_text": {
                     "scar": "m_c will always carry the scars from falling from the treetops while nest raiding alone.",
                     "reg_death": "m_c died falling from the treetops, out on a solo nest raid.",
-                    "lead_death": "falling from the treetops"
+                    "lead_death": "fell from the treetops"
                 }
             },
             {
@@ -3906,7 +3908,7 @@
                 "history_text": {
                     "scar": "m_c will always carry the scars from falling from the treetops while nest raiding alone.",
                     "reg_death": "m_c died falling from the treetops, out on a solo nest raid.",
-                    "lead_death": "falling from the treetops"
+                    "lead_death": "fell from the treetops"
                 }
             },
             {
@@ -3941,7 +3943,7 @@
                 "history_text": {
                     "scar": "m_c will always carry the scars from falling from the treetops while nest raiding alone.",
                     "reg_death": "m_c died falling from the treetops, out on a solo nest raid.",
-                    "lead_death": "falling from the treetops"
+                    "lead_death": "fell from the treetops"
                 }
             },
             {
