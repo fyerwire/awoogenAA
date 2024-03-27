@@ -25,15 +25,25 @@
     "SPRUCE": "cool",
     "ISABELLA": "warm",
     "SUNNY": "warm",
-    "LUNA": "cool"
+    "LUNA": "cool",
+    "SNOW": "white",
+    "FROST": "warm",
+    "GOSLING": "brown",
+    "HAZELNUT": "basic",
+    "THISTLE": "warm",
+    "DAISY": "white",
+    "VOID": "monochrome",
+    "REDWOOD": "brown",
+    "PYRITE": "basic",
+    "PEACHY": "white"
   },
   "possible_tints": {
-    "basic": ["pink", "gray", "red", "orange", "none", "none"],
-    "warm": ["yellow", "purple"],
-    "cool": ["blue", "purple", "black"],
-    "white": ["yellow"],
-    "monochrome": ["blue", "black"],
-    "brown": ["yellow", "purple", "black"]
+    "basic": ["none", "gray", "yellow"],
+    "warm": ["pink", "purple", "orange", "red"],
+    "cool": ["blue", "purple", "black", "gray"],
+    "white": ["yellow", "none"],
+    "monochrome": ["blue", "black", "gray"],
+    "brown": ["yellow", "pink", "purple", "black"]
   },
   "tint_colours":
   {
