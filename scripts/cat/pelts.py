@@ -37,7 +37,8 @@ class Pelt():
         'SPICE', 'GINGER', 'HONEY', 'FLAXEN', 'CREAM', 'PEARL', 'MIST', 'ASH', 'STEEL',
 		'BLACK', 'CHOCOLATE', 'BLUE', 'LILAC', 'GOLD', 'COPPER', 'BRASS', 'SILVER',
 		'ONYX', 'SUNSTONE', 'MOONSTONE', 'COCOA', 'SPRUCE', 'ISABELLA',
-                        'SUNNY', 'LUNA'
+                        'SUNNY', 'LUNA', "SNOWY", "FROST", "GOSLING", "HAZELNUT", "THISTLE",
+                        "DAISY", "VOID", "REDWOOD", "PYRITE", "PEACHY"
     ]
     #torties
     tortiepatterns = ['CAPE', 'DIPPED', 'HEARTBREAKER', 'INKSPILL', 'MINIMAL', 'PHANTOM',
@@ -127,11 +128,11 @@ class Pelt():
     pelt_categories = [standardpelts, northpelts, southpelts, darkpelts, specialpelts, torties]
 
     # colors and stuff
-    yellow_colors = ['HONEY', 'FLAXEN', 'CREAM', 'PEARL', 'GOLD', 'BRASS', 'SUNSTONE', 'SUNNY']
-    gray_colors = ['MIST', 'ASH', 'STEEL', 'SILVER', 'MOONSTONE']
-    black_colors = ['BLACK', 'ONYX', 'LUNA']
-    red_colors = ['SPICE', 'GINGER', 'COPPER']
-    dilute_colors = ['CHOCOLATE', 'COCOA', 'BLUE', 'SPRUCE', 'LILAC', 'ISABELLA']
+    yellow_colors = ['HONEY', 'FLAXEN', 'CREAM', 'PEARL', 'GOLD', 'BRASS', 'SUNSTONE', 'SUNNY', "DAISY", "PEACHY"]
+    gray_colors = ['MIST', 'ASH', 'STEEL', 'SILVER', 'MOONSTONE', "SNOW", "GOSLING", "PYRITE"]
+    black_colors = ['BLACK', 'ONYX', 'LUNA', "THISTLE", "VOID"]
+    red_colors = ['SPICE', 'GINGER', 'COPPER', "REDWOOD"]
+    dilute_colors = ['CHOCOLATE', 'COCOA', "HAZELNUT", 'BLUE', 'SPRUCE', "FROST", 'LILAC', 'ISABELLA']
     color_categories = [yellow_colors, gray_colors, black_colors, red_colors, dilute_colors]
     # merles
     merles = ['BRIGHTLEAF', 'SILVERCLAW', 'SEAFUR', 'DAPPLEPELT', 'WILLOWLEAF', 'DAYSKY', 'BRINDLECLOUD', 'SHADOWSNEAK', 'DARKDAPPLE', 'STORMSONG']
@@ -144,21 +145,31 @@ class Pelt():
         'BRASS': (195, 169, 127),
         'SUNSTONE': (216, 186, 155),
         'SUNNY': (242, 229, 191),
+        "DAISY": "#FCF7E2",
+        "PEACHY": "#F6AF58",
         'MIST': (199, 196, 187),
         'ASH': (114, 112, 106),
         'STEEL': (69, 66, 59),
         'SILVER': (204, 205, 208),
         'MOONSTONE': (217, 222, 220),
+        "SNOW": "#F3F3F3",
+        "GOSLING": "#746B5C",
+        "PYRITE": "#BBB29F",
         'BLACK': None,
         'ONYX': None,
         'LUNA': None,
+        "THISTLE": None,
+        "VOID": None,
         'SPICE': (69, 38, 26),
         'GINGER': (141, 75, 34),
         'COPPER': (157, 83, 27),
+        "REDWOOD": "#442416",
         'CHOCOLATE': (209, 174, 129),
         'COCOA': (100, 62, 43),
+        "HAZELNUT": "#B87B3D",
         'BLUE': (196, 179, 166),
         'SPRUCE': (108, 93, 84),
+        "FROST": "#D1D2D2",
         'LILAC': (234, 220, 195),
         'ISABELLA': (178, 165, 154)
         }
@@ -330,7 +341,7 @@ class Pelt():
         new_pelt.init_eyes(parents)
         new_pelt.init_pattern()
         new_pelt.init_tint()
-
+            
         # setting up some sillies
         new_pelt.fun_traits = ["o", "o", "o", "o", "o",]
         new_pelt.fun_traits[0] = random.choice(Pelt.fun_scents)
@@ -368,7 +379,7 @@ class Pelt():
                 self.eye_colour = random.choice(Pelt.red_eyes)
                 return
         if not parents:
-            self.eye_colour = random.choice(random.choices(eye_groups, weights=(90, 70, 50, 30, 20, 10, 5, 2), k=1)[0])
+            self.eye_colour = random.choice(random.choices(eye_groups, weights=game.config["random_pelt_generation"]["eyes"], k=1)[0])
         else:
             par_eye_colors = []
             color_base_p = ''
@@ -382,22 +393,22 @@ class Pelt():
             else:
                 color_base_p = random.choice(par_eye_colors)
             if color_base_p in Pelt.yellow_eyes:
-                self.eye_colour = random.choice(random.choices(eye_groups, weights=(40, 25, 15, 2, 10, 2, 1, 5), k=1)[0])
+                self.eye_colour = random.choice(random.choices(eye_groups, weights=game.config["litter_pelt_generation"]["yelloweye_parent"], k=1)[0])
             elif color_base_p in Pelt.orange_eyes:
-                self.eye_colour = random.choice(random.choices(eye_groups, weights=(25, 40, 2, 1, 15, 1, 1, 15), k=1)[0])
+                self.eye_colour = random.choice(random.choices(eye_groups, weights=game.config["litter_pelt_generation"]["orangeeye_parent"], k=1)[0])
             elif color_base_p in Pelt.green_eyes:
-                self.eye_colour = random.choice(random.choices(eye_groups, weights=(10, 3, 40, 10, 25, 10, 1, 1), k=1)[0])
+                self.eye_colour = random.choice(random.choices(eye_groups, weights=game.config["litter_pelt_generation"]["greeneye_parent"], k=1)[0])
             elif color_base_p in Pelt.gray_eyes:
-                self.eye_colour = random.choice(random.choices(eye_groups, weights=(1, 1, 2, 40, 15, 30, 10, 1), k=1)[0])
+                self.eye_colour = random.choice(random.choices(eye_groups, weights=game.config["litter_pelt_generation"]["grayeye_parent"], k=1)[0])
             elif color_base_p in Pelt.brown_eyes:
-                self.eye_colour = random.choice(random.choices(eye_groups, weights=(10, 10, 30, 6, 40, 2, 1, 1), k=1)[0])
+                self.eye_colour = random.choice(random.choices(eye_groups, weights=game.config["litter_pelt_generation"]["browneye_parent"], k=1)[0])
             elif color_base_p in Pelt.blue_eyes:
-                self.eye_colour = random.choice(random.choices(eye_groups, weights=(4, 4, 10, 30, 1, 40, 10, 1), k=1)[0])
+                self.eye_colour = random.choice(random.choices(eye_groups, weights=game.config["litter_pelt_generation"]["blueeye_parent"], k=1)[0])
             elif color_base_p in Pelt.purple_eyes:
-                self.eye_colour = random.choice(random.choices(eye_groups, weights=(1, 1, 1, 20, 2, 30, 40, 5), k=1)[0])
+                self.eye_colour = random.choice(random.choices(eye_groups, weights=game.config["litter_pelt_generation"]["purpleeye_parent"], k=1)[0])
             else:
                 #red eyes
-                self.eye_colour = random.choice(random.choices(eye_groups, weights=(10, 20, 1, 5, 2, 2, 20, 40), k=1)[0])
+                self.eye_colour = random.choice(random.choices(eye_groups, weights=game.config["litter_pelt_generation"]["redeye_parent"], k=1)[0])
             
         
         #White patches must be initalized before eye color. 
@@ -504,10 +515,6 @@ class Pelt():
             parents_species_mix[1] = random.choice(temp_parent)
             parents_points_genes
             
-		# HYBRIDIZATION - Kori
-		# Determines numbers for hybrids and sets the hybrid status. part of pelts
-		# just for simplicity, as I'm modifying this file a lot
-		# I am new to coding so lots of if/else statements sorry!
         chosen_species_mix = ["", "", "", "", "", ""]
         chosen_species = "Wolf"
         y = 0
@@ -561,23 +568,25 @@ class Pelt():
         # ------------------------------------------------------------------------------------------------------------#
 
         # Determine pelt.
-        weights = [0, 0, 0, 0, 0]  #Weights for each pelt group. It goes: (tabbies, spotted, plain, exotic)
+        weights = [0, 0, 0, 0, 0]  #Weights for each pelt group. It goes:
         #standardpelts, northpelts, southpelts, darkpelts, specialpelts
         for i in parents_pelt:
             if i in Pelt.standardpelts:
-                add_weight = (50, 25, 10, 10, 5)
+                add_weight = game.config["litter_pelt_generation"]["standardpelt_parent"]
             elif i in Pelt.northpelts:
-                add_weight = (20, 50, 5, 5, 20)
+                add_weight = game.config["litter_pelt_generation"]["northpelt_parent"]
             elif i in Pelt.southpelts:
-                add_weight = (10, 5, 50, 25, 10)
+                add_weight = game.config["litter_pelt_generation"]["southpelt_parent"]
             elif i in Pelt.darkpelts:
-                add_weight = (10, 5, 20, 50, 15)
+                add_weight = game.config["litter_pelt_generation"]["darkpelt_parent"]
             elif i in Pelt.specialpelts:
-                add_weight = (10, 30, 5, 5, 50)
+                add_weight = game.config["litter_pelt_generation"]["specialpelt_parent"]
             elif i is None:
-                add_weight = (35, 25, 20, 10, 10)
+                add_weight = game.config["random_pelt_generation"]["pelt_categories"]
+                add_weight = add_weight[:-1]
             else:
-                add_weight = (35, 25, 20, 10, 10)
+                add_weight = game.config["random_pelt_generation"]["pelt_categories"]
+                add_weight = add_weight[:-1]
 
             for x in range(0, len(weights)):
                 weights[x] += add_weight[x]
@@ -586,15 +595,15 @@ class Pelt():
         chosen_pelt = ""
         temp_chosen_pelt = random.choices(Pelt.pelt_categories, weights=weights + [0], k = 1)[0]
         if "Graywolf" in temp_chosen_pelt:
-            chosen_pelt = random.choices(Pelt.standardpelts, weights=(60, 40, 40, 40, 20, 20), k = 1)[0]
+            chosen_pelt = random.choices(Pelt.standardpelts, weights=game.config["random_pelt_generation"]["standardpelts"], k = 1)[0]
         elif "Arctic" in temp_chosen_pelt:
-            chosen_pelt = random.choices (Pelt.northpelts, weights=(65, 65, 20), k = 1)[0]
+            chosen_pelt = random.choices (Pelt.northpelts, weights=game.config["random_pelt_generation"]["northpelts"], k = 1)[0]
         elif "Mexican" in temp_chosen_pelt:
-            chosen_pelt = random.choices(Pelt.southpelts, weights=(50, 50, 50), k = 1)[0]
+            chosen_pelt = random.choices(Pelt.southpelts, weights=game.config["random_pelt_generation"]["southpelts"], k = 1)[0]
         elif "Colorpoint" in temp_chosen_pelt:
-            chosen_pelt = random.choices(Pelt.darkpelts, weights=(50, 70, 15), k = 1)[0]
+            chosen_pelt = random.choices(Pelt.darkpelts, weights=game.config["random_pelt_generation"]["darkpelts"], k = 1)[0]
         elif "Semisolid" in temp_chosen_pelt:
-            chosen_pelt = random.choices(Pelt.specialpelts, weights=(70, 20, 10), k = 1)[0]
+            chosen_pelt = random.choices(Pelt.specialpelts, weights=game.config["random_pelt_generation"]["specialpelts"], k = 1)[0]
         else:
             print('Hi you borked the inheritance for pelts')
 
@@ -620,19 +629,19 @@ class Pelt():
         weights = [0, 0, 0, 0, 0]
         for i in parents_color:
             if i in Pelt.yellow_colors:
-                add_weight = (55, 10, 10, 20, 5)
+                add_weight = game.config["litter_pelt_generation"]["yellowcolor_parent"]
             elif i in Pelt.gray_colors:
-                add_weight = (10, 40, 25, 5, 20)
+                add_weight = game.config["litter_pelt_generation"]["graycolor_parent"]
             elif i in Pelt.black_colors:
-                add_weight = (5, 30, 40, 5, 20)
+                add_weight = game.config["litter_pelt_generation"]["blackcolor_parent"]
             elif i in Pelt.red_colors:
-                add_weight = (30, 5, 5, 55, 5)
+                add_weight = game.config["litter_pelt_generation"]["redcolor_parent"]
             elif i in Pelt.dilute_colors:
-                add_weight = (10, 25, 20, 10, 35)
+                add_weight = game.config["litter_pelt_generation"]["dilutecolor_parent"]
             elif i is None:
-                add_weight = (35, 25, 20, 15, 5)
+                add_weight = game.config["random_pelt_generation"]["color_categories"]
             else:
-                add_weight = (35, 25, 20, 15, 5)
+                add_weight = game.config["random_pelt_generation"]["color_categories"]
 
             for x in range(0, len(weights)):
                 weights[x] += add_weight[x]
@@ -640,15 +649,15 @@ class Pelt():
         color_list = Pelt.color_categories
         temp_chosen_pelt_color = random.choices(color_list, weights=weights, k=1)[0]
         if "HONEY" in temp_chosen_pelt_color:
-            chosen_pelt_color = random.choices(color_list[0], weights=(50, 50, 50, 50, 15, 15, 15, 25), k=1)[0]
+            chosen_pelt_color = random.choices(color_list[0], weights=game.config["random_pelt_generation"]["yellowcolors"], k=1)[0]
         elif "MIST" in temp_chosen_pelt_color:
-            chosen_pelt_color = random.choices(color_list[1], weights=(70, 70, 70, 20, 20), k=1)[0]
+            chosen_pelt_color = random.choices(color_list[1], weights=game.config["random_pelt_generation"]["graycolors"], k=1)[0]
         elif "BLACK" in temp_chosen_pelt_color:
-            chosen_pelt_color = random.choices(color_list[2], weights=(90, 10, 20), k=1)[0]
+            chosen_pelt_color = random.choices(color_list[2], weights=game.config["random_pelt_generation"]["blackcolors"], k=1)[0]
         elif "SPICE" in temp_chosen_pelt_color:
-            chosen_pelt_color = random.choices(color_list[3], weights=(80, 80, 20), k=1)[0]
+            chosen_pelt_color = random.choices(color_list[3], weights=game.config["random_pelt_generation"]["redcolors"], k=1)[0]
         elif "CHOCOLATE" in temp_chosen_pelt_color:
-            chosen_pelt_color = random.choices(color_list[4], weights=(70, 40, 70, 40, 20, 10), k=1)[0]
+            chosen_pelt_color = random.choices(color_list[4], weights=game.config["random_pelt_generation"]["dilutecolors"], k=1)[0]
         else:
             print('color inheritance is borked')
         # ------------------------------------------------------------------------------------------------------------#
@@ -801,17 +810,17 @@ class Pelt():
 
         # Determine pelt.
         chosen_pelt = ""
-        temp_chosen_pelt = random.choices(Pelt.pelt_categories, weights=(35, 25, 20, 15, 5, 0), k = 1)[0]
+        temp_chosen_pelt = random.choices(Pelt.pelt_categories, weights=game.config["random_pelt_generation"]["pelt_categories"], k = 1)[0]
         if "Graywolf" in temp_chosen_pelt:
-            chosen_pelt = random.choices(Pelt.standardpelts, weights=(60, 40, 40, 40, 20, 20), k = 1)[0]
+            chosen_pelt = random.choices(Pelt.standardpelts, weights=game.config["random_pelt_generation"]["standardpelts"], k = 1)[0]
         elif "Arctic" in temp_chosen_pelt:
-            chosen_pelt = random.choices (Pelt.northpelts, weights=(70, 70, 20), k = 1)[0]
+            chosen_pelt = random.choices (Pelt.northpelts, weights=game.config["random_pelt_generation"]["northpelts"], k = 1)[0]
         elif "Mexican" in temp_chosen_pelt:
-            chosen_pelt = random.choices(Pelt.southpelts, weights=(50, 50, 50), k = 1)[0]
+            chosen_pelt = random.choices(Pelt.southpelts, weights=game.config["random_pelt_generation"]["southpelts"], k = 1)[0]
         elif "Colorpoint" in temp_chosen_pelt:
-            chosen_pelt = random.choices(Pelt.darkpelts, weights=(50, 70, 20), k = 1)[0]
+            chosen_pelt = random.choices(Pelt.darkpelts, weights=game.config["random_pelt_generation"]["darkpelts"], k = 1)[0]
         elif "Semisolid" in temp_chosen_pelt:
-            chosen_pelt = random.choices(Pelt.specialpelts, weights=(70, 20, 10), k = 1)[0]
+            chosen_pelt = random.choices(Pelt.specialpelts, weights=game.config["random_pelt_generation"]["specialpelts"], k = 1)[0]
         else:
             print('Hi you borked the randomized pelts')
 
@@ -835,17 +844,17 @@ class Pelt():
         # ------------------------------------------------------------------------------------------------------------#
         chosen_pelt_color = ""
         color_list = Pelt.color_categories
-        temp_chosen_pelt_color = random.choices(color_list, weights=(35, 25, 20, 10, 5), k=1)[0]
+        temp_chosen_pelt_color = random.choices(color_list, weights=game.config["random_pelt_generation"]["color_categories"], k=1)[0]
         if "HONEY" in temp_chosen_pelt_color:
-            chosen_pelt_color = random.choices(color_list[0], weights=(50, 50, 50, 50, 10, 10, 10, 25), k=1)[0]
+            chosen_pelt_color = random.choices(color_list[0], weights=game.config["random_pelt_generation"]["yellowcolors"], k=1)[0]
         elif "MIST" in temp_chosen_pelt_color:
-            chosen_pelt_color = random.choices(color_list[1], weights=(70, 70, 70, 10, 10), k=1)[0]
+            chosen_pelt_color = random.choices(color_list[1], weights=game.config["random_pelt_generation"]["graycolors"], k=1)[0]
         elif "BLACK" in temp_chosen_pelt_color:
-            chosen_pelt_color = random.choices(color_list[2], weights=(90, 10, 20), k=1)[0]
+            chosen_pelt_color = random.choices(color_list[2], weights=game.config["random_pelt_generation"]["blackcolors"], k=1)[0]
         elif "SPICE" in temp_chosen_pelt_color:
-            chosen_pelt_color = random.choices(color_list[3], weights=(80, 80, 20), k=1)[0]
+            chosen_pelt_color = random.choices(color_list[3], weights=game.config["random_pelt_generation"]["redcolors"], k=1)[0]
         elif "CHOCOLATE" in temp_chosen_pelt_color:
-            chosen_pelt_color = random.choices(color_list[4], weights=(70, 40, 70, 40, 20, 10), k=1)[0]
+            chosen_pelt_color = random.choices(color_list[4], weights=game.config["random_pelt_generation"]["dilutecolors"], k=1)[0]
         else:
             print('color randomization is borked')
 
@@ -900,10 +909,10 @@ class Pelt():
 
         #find out if they're merle or harlequin at all
         temp_chance = random.randint(0, 100)
-        if temp_chance <= 8:
+        if temp_chance <= game.config["random_pelt_generation"]["merle"]:
             merle_bool = True
         temp_chance = random.randint(0, 100)
-        if temp_chance <= 2:
+        if temp_chance <= game.config["random_pelt_generation"]["harlequin"]:
             harlequin_bool = True
 
         # only calculate merle info if merle
@@ -915,9 +924,9 @@ class Pelt():
 
             #change merle outcomes based on dilutes
             if chosen_pelt_color in Pelt.dilute_colors:
-                if chosen_pelt_color == "BLUE" or chosen_pelt_color == "SPRUCE":
+                if chosen_pelt_color in ["BLUE", "SPRUCE", "FROST"]:
                     quickchoice = random.choice(merle_colors[2])
-                elif chosen_pelt_color == "CHOCOLATE" or chosen_pelt_color == "COCOA":
+                elif chosen_pelt_color in ["CHOCOLATE", "COCOA", "HAZELNUT"]:
                     quickchoice = random.choice(merle_colors[3])
                 else:
                     quickchoice = random.choice(merle_colors[4])
@@ -941,8 +950,8 @@ class Pelt():
         colorpoint_types = Pelt.point_markings
         colorpoint_genes = Pelt.point_genes
 
-        chosen_points_genes[0] = random.choices(colorpoint_genes, weights=[145, 25, 15, 10, 4, 2], k=1)[0]
-        chosen_points_genes[1] = random.choices(colorpoint_genes, weights=[145, 25, 15, 10, 4, 2], k=1)[0]
+        chosen_points_genes[0] = random.choices(colorpoint_genes, weights=game.config["random_pelt_generation"]["colorpoint_genes"], k=1)[0]
+        chosen_points_genes[1] = random.choices(colorpoint_genes, weights=game.config["random_pelt_generation"]["colorpoint_genes"], k=1)[0]
 
         if "C" in chosen_points_genes:
             points_outcome = None
@@ -1037,19 +1046,18 @@ class Pelt():
         elif self.points in temp_points:
             self.skin = skin_sprites[10]
         elif self.colour in temp_dilute_list:
-            if self.colour == "CHOCOLATE" or self.colour == 'COCOA':
+            if self.colour in ["CHOCOLATE", "COCOA", "HAZELNUT"]:
                 if self.white_patches == None and self.tortiepattern == None and not self.merle:
                     skin_list = [skin_sprites[8], skin_sprites[9]]
                     self.skin = random.choices(skin_list, weights=(60, 40), k=1)[0]
                 else:
                     skin_list = [skin_sprites[8], skin_sprites[9], skin_sprites[5], skin_sprites[10]]
                     self.skin = random.choices(skin_list, weights=(10, 20, 40, 30), k=1)[0]
-            elif self.colour == "BLUE" or self.colour == 'SPRUCE':
+            elif self.colour in ["BLUE", "SPRUCE", "FROST"]:
                 if self.white_patches == None and self.tortiepattern == None and not self.merle:
                     skin_list = [skin_sprites[1], skin_sprites[6]]
                     self.skin = random.choices(skin_list, weights=(60, 40), k=1)[0]
                 else:
-                    #Lilac and Isabella
                     skin_list = [skin_sprites[1], skin_sprites[6], skin_sprites[4], skin_sprites[10]]
                     self.skin = random.choices(skin_list, weights=(30, 20, 40, 10), k=1)[0]
             else:
@@ -1131,7 +1139,14 @@ class Pelt():
             if not self.tortiebase:
                 self.tortiebase = choice(Pelt.tortiebases)
             if not self.pattern:
-                self.pattern = choice(Pelt.tortiepatterns)
+                if random.randint(0, 100) < 10:
+                    temp_merle_list = Pelt.merles.copy()
+                    if self.merle:
+                        print(temp_merle_list)
+                        temp_merle_list.remove(str(self.merle[0]))
+                    self.pattern = choice(temp_merle_list)
+                else:
+                    self.pattern = choice(Pelt.tortiepatterns)
 
             wildcard_chance = game.config["cat_generation"]["wildcard_tortie"]
             if self.colour:
@@ -1165,11 +1180,11 @@ class Pelt():
                     elif self.colour in Pelt.red_colors:
                         self.tortiecolour = choice(Pelt.yellow_colors + (Pelt.black_colors * 2))
                     elif self.colour in Pelt.dilute_colors:
-                        if self.colour == "CHOCOLATE" or self.colour == "COCOA":
-                            choc_temp = ["CHOCOLATE", "COCOA"]
+                        if self.colour in ["CHOCOLATE", "COCOA", "HAZELNUT"]:
+                            choc_temp = ["CHOCOLATE", "COCOA", "HAZELNUT"]
                             self.tortiecolour = choice(choc_temp)
-                        if self.colour == "BLUE" or self.colour == "SPRUCE":
-                            blue_temp = ["BLUE", "SPRUCE"]
+                        if self.colour in ["BLUE", "SPRUCE", "FROST"]:
+                            blue_temp = ["BLUE", "SPRUCE", "FROST"]
                             self.tortiecolour = choice(blue_temp)
                         if self.colour == "LILAC" or self.colour == "ISABELLA":
                             lilac_temp = ["LILAC", "ISABELLA"]
@@ -1291,36 +1306,45 @@ class Pelt():
 
         # PELT TINT
         # Basic tints as possible for all colors.
-        base_tints = sprites.cat_tints["possible_tints"]["basic"]
-        if self.colour in sprites.cat_tints["colour_groups"]:
-            color_group = sprites.cat_tints["colour_groups"].get(self.colour, "warm")
-            color_tints = sprites.cat_tints["possible_tints"][color_group]
-        else:
-            color_tints = []
+        if random.randint(0, 1) == 0:
+            base_tints = sprites.cat_tints["possible_tints"]["basic"]
+            if self.colour in sprites.cat_tints["colour_groups"]:
+                color_group = sprites.cat_tints["colour_groups"].get(self.colour, "warm")
+                color_tints = sprites.cat_tints["possible_tints"][color_group]
+            else:
+                color_tints = []
         
-        if base_tints or color_tints:
-            self.tint = choice(base_tints + color_tints)
+            if base_tints or color_tints:
+                self.tint = choice(base_tints + color_tints)
+            else:
+                self.tint = "none"
         else:
+            self.tint = "none"
+
+        if self.colour in ["BLACK", "ONYX", "LUNA", "THISTLE", "VOID", "STEEL", "SPICE", "REDWOOD"] and random.randint(0, 4) < 3:
             self.tint = "none"
 
         # WHITE PATCHES TINT
         if self.white_patches or self.points:
-            base_tints = sprites.white_patches_tints["possible_tints"]["basic"]
-            if self.points == 'BEW' or self.points == 'ALBINO':
-                if self.points == 'BEW':
-                    self.white_patches_tint == 'yellowwhite'
+            if random.randint(0, 1) == 0:
+                base_tints = sprites.white_patches_tints["possible_tints"]["basic"]
+                if self.points == 'BEW' or self.points == 'ALBINO':
+                    if self.points == 'BEW':
+                        self.white_patches_tint == 'yellowwhite'
+                    else:
+                        self.white_patches_tint == 'none'
+                if self.colour in sprites.cat_tints["colour_groups"]:
+                    color_group = sprites.white_patches_tints["colour_groups"].get(self.colour, "white")
+                    color_tints = sprites.white_patches_tints["possible_tints"][color_group]
                 else:
-                    self.white_patches_tint == 'none'
-            if self.colour in sprites.cat_tints["colour_groups"]:
-                color_group = sprites.white_patches_tints["colour_groups"].get(self.colour, "white")
-                color_tints = sprites.white_patches_tints["possible_tints"][color_group]
-            else:
-                color_tints = []
+                    color_tints = []
             
-            if base_tints or color_tints:
-                self.white_patches_tint = choice(base_tints + color_tints)
+                if base_tints or color_tints:
+                    self.white_patches_tint = choice(base_tints + color_tints)
+                else:
+                    self.white_patches_tint = "none"
             else:
-                self.white_patches_tint = "none"    
+                self.white_patches_tint = "none"
         else:
             self.white_patches_tint = "none"
 
@@ -1373,7 +1397,17 @@ class Pelt():
                 "spruce": "blue",
                 "isabella": "isabella",
                 "sunny": "gold",
-                "luna": "black"
+                "luna": "black",
+                "snow": "white",
+                "frost": "frost",
+                "gosling": "gray",
+                "hazelnut": "ochre",
+                "thistle": "black",
+                "daisy": "white",
+                "void": "black",
+                "redwood": "red",
+                "pyrite": "gray",
+                "peachy": "peach"
             }
         else:
             renamed_colors = {
@@ -1401,7 +1435,17 @@ class Pelt():
                 "spruce": "dark blue",
                 "isabella": "isabella",
                 "sunny": "bright gold",
-                "luna": "silvery black"
+                "luna": "silvery black",
+                "snow": "snow white",
+                "frost": "frosty blue",
+                "gosling": "rich gray",
+                "hazelnut": "ochre",
+                "thistle": "straw black",
+                "daisy": "sunlit white",
+                "void": "pitch black",
+                "redwood": "deep red",
+                "pyrite": "firey gray",
+                "peachy": "peach"
             }
 
         pattern_des = {
@@ -1570,32 +1614,43 @@ class Pelt():
         # all other color information is discarded at the end if points are present
         temp_color_name = ''
         if basePATTERN == 'points':
-            if str(cat.pelt.colour).lower() == "cocoa" or str(cat.pelt.colour).lower() == "spice" or str(cat.pelt.colour).lower() == "ginger" or str(cat.pelt.colour).lower() == "copper":
-                temp_color_name = "black and red"
-            elif str(cat.pelt.colour).lower() == "honey" or str(cat.pelt.colour).lower() == "flaxen":
-                temp_color_name = "black and fawn"
-            elif str(cat.pelt.colour).lower() == "cream" or str(cat.pelt.colour).lower() == "pearl":
-                temp_color_name = "black and cream"
-            elif str(cat.pelt.colour).lower() == "mist" or str(cat.pelt.colour).lower() == "ash" or str(cat.pelt.colour).lower() == "silver" or str(cat.pelt.colour).lower() == 'moonstone':
-                temp_color_name = "gray and silver"
-            elif str(cat.pelt.colour).lower() == "steel" or str(cat.pelt.colour).lower() == "onyx":
-                temp_color_name = "black and gray"
-            elif str(cat.pelt.colour).lower() == "black" or str(cat.pelt.colour).lower() == "luna":
+            point_name = str(cat.pelt.color).lower()
+            if point_name in ["black", "thistle", "luna", "void"]:
                 temp_color_name = "black"
-            elif str(cat.pelt.colour).lower() == "chocolate" or str(cat.pelt.colour).lower() == "blue" or str(cat.pelt.colour).lower() == "lilac":
-                temp_color_name = str(renamed_colors[cat.pelt.colour.lower()]) + " and cream"
-            elif str(cat.pelt.colour).lower() == "spruce":
+            elif point_name == "spice" or point_name == "ginger" or point_name == "copper" or point_name == "redwood":
+                temp_color_name = "black and red"
+            elif point_name == "honey" or point_name == "flaxen":
+                temp_color_name = "black and fawn"
+            elif point_name == "cream" or point_name == "pearl":
+                temp_color_name = "black and cream"
+            elif point_name == "mist" or point_name == "ash" or point_name == "silver" or point_name == 'moonstone' or point_name == "pyrite":
+                temp_color_name = "gray and silver"
+            elif point_name == "steel" or point_name == "onyx" or point_name == "gosling":
+                temp_color_name = "black and gray"
+            elif point_name == "chocolate" or point_name == "blue" or point_name == "lilac":
+                temp_color_name = str(renamed_colors[point_name]) + " and cream"
+            elif point_name == "cocoa" or point_name == "hazelnut":
+                temp_color_name = "chocolate and fawn"
+            elif point_name == "frost":
+                temp_color_name = "blue and white"
+            elif point_name == "spruce":
                 temp_color_name = "blue and gray"
-            elif str(cat.pelt.colour).lower() == "isabella":
+            elif point_name == "isabella":
                 temp_color_name = "isabella and silver"
-            elif str(cat.pelt.colour).lower() == "sunny":
+            elif point_name == "sunny":
                 temp_color_name = "gold and cream"
-            elif str(cat.pelt.colour).lower() == "gold":
+            elif point_name == "gold":
                 temp_color_name = "black and gold"
-            elif str(cat.pelt.colour).lower() == "brass":
-                temp_color_name = "brown and cream"
-            elif str(cat.pelt.colour).lower() == "sunstone":
+            elif point_name == "brass":
+                temp_color_name = "brown and tan"
+            elif point_name == "sunstone":
                 temp_color_name = "peach and cream"
+            elif point_name == "daisy":
+                temp_color_name = "cream and white"
+            elif point_name == "peachy":
+                temp_color_name = "red and peach"
+            elif point_name == "snow":
+                temp_color_name = "silver and white"
             # now we wrap up the point stuff
             if colorTORTIE == None:
                 # we are going to change solid black points to match for later, to avoid more calculation

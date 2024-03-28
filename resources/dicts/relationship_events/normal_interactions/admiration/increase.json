@@ -70,7 +70,7 @@
 			"m_c caught a glimpse of r_c caring for a wounded warrior with confidence and grace.",
 			"m_c spent some time hanging out with r_c in the medicine den.",
 			"m_c hopes r_c knows how grateful {PRONOUN/m_c/subject} {VERB/m_c/are/is} to have {PRONOUN/r_c/object} as a medicine wolf.",
-			"m_c went to r_c for advice about a dream {PRONOUN/m_c/poss} had."
+			"m_c went to r_c for advice about a dream {PRONOUN/m_c/subject} had."
 		],
 		"random_status_constraint": [
 			"medicine cat",

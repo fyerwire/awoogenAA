@@ -25,10 +25,21 @@
     "SPRUCE": "blue",
     "ISABELLA": "lilac",
     "SUNNY": "yellow",
-    "LUNA": "blackbright"
+    "LUNA": "blackbright",
+    "SNOW": "white",
+    "FROST": "white",
+    "GOSLING": "gray",
+    "HAZELNUT": "yellow",
+    "THISTLE": "basic",
+    "DAISY": "white",
+    "VOID": "black",
+    "REDWOOD": "red",
+    "PYRITE": "basic",
+    "PEACHY": "basic"
   },
   "possible_tints": {
-    "basic": ["none", "yellowwhite", "none", "redwhite", "bluewhite"],
+    "white": ["none", "none"],
+    "basic": ["yellowwhite", "redwhite", "bluewhite"],
     "black": ["deepred", "deepyellow", "darkred", "darkyellow"],
 	"blackblue": ["deepblue", "darkblue"],
     "blackbright": ["bluewhite", "midblue"],

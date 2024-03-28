@@ -227,7 +227,8 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare."
+                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare.",
+                    "reg_death": "m_c died of frostbite from searching for herbs in leaf-bare."
                 }
             }
         ]
@@ -356,7 +357,8 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare."
+                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare.",
+                    "reg_death": "m_c died of frostbite from searching for herbs in leaf-bare."
                 },
                 "relationships": [
                     {
@@ -497,7 +499,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare."
+                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare.",
+                    "reg_death": "m_c died of frostbite from searching for herbs in leaf-bare.",
+                    "lead_death": "froze to death after helping search for herbs"
                 },
                 "relationships": [
                     {
@@ -575,7 +579,8 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare."
+                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare.",
+                    "reg_death": "m_c died of frostbite from searching for herbs in leaf-bare."
                 }
             }
         ]
@@ -624,7 +629,7 @@
                 ]
             },
             {
-                "text": "It's very difficult, especially with the plant's leafy top-half gone until newleaf, but p_l somehow manages to find a burdock plant and bring its roots home. Laying the thin roots out in a neat pile in the herb stores makes p_l's entire body thrum with a contented purr, as does seeing how hard app1 is working to learn herbcraft.",
+                "text": "It's very difficult, especially with the plant's leafy top-half gone until newleaf, but p_l somehow manages to find a burdock plant and bring its roots home. Laying the thin roots out in a neat pile in the herb stores makes p_l's entire body wiggle with an excited wag, as does seeing how hard app1 is working to learn herbcraft.",
                 "exp": 30,
                 "weight": 5,
                 "herbs": ["burdock"],
@@ -704,7 +709,8 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare."
+                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare.",
+                    "reg_death": "m_c died of frostbite from searching for herbs in leaf-bare."
                 },
                 "relationships": [
                     {
@@ -744,7 +750,7 @@
         "chance_of_success": 20,
         "success_outcomes": [
             {
-                "text": "p_l's pawpads are nearly frozen, trying to dig up burdock in the cold, but somehow they manage it, and it's worth all the effort and misery to know how crucial these fresh herbs could be for the Pack. Their Packmates purr at the sight of the dirty roots.",
+                "text": "p_l's pawpads are nearly frozen, trying to dig up burdock in the cold, but somehow they manage it, and it's worth all the effort and misery to know how crucial these fresh herbs could be for the Pack. {PRONOUN/p_l/poss} Packmates wag at the sight of the dirty roots.",
                 "exp": 10,
                 "weight": 20,
                 "herbs": ["burdock"],
@@ -766,7 +772,7 @@
                 ]
             },
             {
-                "text": "It's very difficult, especially with the plant's leafy top-half gone until newleaf, but p_l somehow manages to find a burdock plant and bring its roots home. Laying the thin roots out in a neat pile in the herb stores makes p_l's entire body thrum with a contented purr, and their Packmates smile, appreciating their hard-working medicine wolf.",
+                "text": "It's very difficult, especially with the plant's leafy top-half gone until newleaf, but p_l somehow manages to find a burdock plant and bring its roots home. Laying the thin roots out in a neat pile in the herb stores makes p_l's entire body wiggle with an excited wag, and their Packmates smile, appreciating their hard-working medicine wolf.",
                 "exp": 10,
                 "weight": 5,
                 "herbs": ["burdock"],
@@ -845,7 +851,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare."
+                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare.",
+                    "reg_death": "m_c died of frostbite from searching for herbs in leaf-bare.",
+                    "lead_death": "froze to death after helping search for herbs"
                 },
                 "relationships": [
                     {
@@ -923,7 +931,8 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare."
+                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare.",
+                    "reg_death": "m_c died of frostbite from searching for herbs in leaf-bare."
                 }
             }
         ]
@@ -1052,7 +1061,8 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare."
+                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare.",
+                    "reg_death": "m_c died of frostbite from searching for herbs in leaf-bare."
                 },
                 "relationships": [
                     {
@@ -1092,7 +1102,7 @@
         "chance_of_success": 10,
         "success_outcomes": [
             {
-                "text": "It's miserable work, scraping away snowy pawful by awful, cold pawful. However, p_l manages to find a patch of wilted, soggy, but still green daisies to harvest leaves from Their Packmates purr at the sight of the mushy green leaves, having spent just as much energy digging for them as p_l.",
+                "text": "It's miserable work, scraping away snowy pawful by awful, cold pawful. However, p_l manages to find a patch of wilted, soggy, but still green daisies to harvest leaves from Their Packmates wag at the sight of the mushy green leaves, having spent just as much energy digging for them as p_l.",
                 "exp": 10,
                 "weight": 20,
                 "herbs": ["daisy"],
@@ -1193,7 +1203,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare."
+                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare.",
+                    "reg_death": "m_c died of frostbite from searching for herbs in leaf-bare.",
+                    "lead_death": "froze to death after helping search for herbs"
                 },
                 "relationships": [
                     {
@@ -1271,7 +1283,8 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare."
+                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare.",
+                    "reg_death": "m_c died of frostbite from searching for herbs in leaf-bare."
                 }
             }
         ]
@@ -1400,7 +1413,8 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare."
+                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare.",
+                    "reg_death": "m_c died of frostbite from searching for herbs in leaf-bare."
                 },
                 "relationships": [
                     {
@@ -1542,7 +1556,8 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare."
+                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare.",
+                    "reg_death": "m_c died of frostbite from searching for herbs in leaf-bare."
                 },
                 "relationships": [
                     {
@@ -1620,7 +1635,8 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c was scarred from falling from a juniper tree, trying to harvest its leaves in the cold snow of leaf-bare."
+                    "scar": "m_c was scarred from falling from a juniper tree, trying to harvest its leaves in the cold snow of leaf-bare.",
+                    "reg_death": "m_c died from injuries sustained after falling from a juniper tree, trying to harvest its leaves in the cold snow of leaf-bare."
                 }
             }
         ]
@@ -1749,7 +1765,8 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c was scarred from falling from a juniper tree, trying to harvest its leaves in the cold snow of leaf-bare."
+                    "scar": "m_c was scarred from falling from a juniper tree, trying to harvest its leaves in the cold snow of leaf-bare.",
+                    "reg_death": "m_c died from injuries sustained after falling from a juniper tree, trying to harvest its leaves in the cold snow of leaf-bare."
                 },
                 "relationships": [
                     {
@@ -1891,7 +1908,8 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c was scarred from falling from a juniper tree, trying to harvest its leaves in the cold snow of leaf-bare."
+                    "scar": "m_c was scarred from falling from a juniper tree, trying to harvest its leaves in the cold snow of leaf-bare.",
+                    "reg_death": "m_c died from injuries sustained after falling from a juniper tree, trying to harvest its leaves in the cold snow of leaf-bare."
                 },
                 "relationships": [
                     {
@@ -1970,7 +1988,8 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare."
+                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare.",
+                    "reg_death": "m_c died of frostbite from searching for herbs in leaf-bare."
                 }
             }
         ]
@@ -2099,7 +2118,8 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare."
+                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare.",
+                    "reg_death": "m_c died of frostbite from searching for herbs in leaf-bare."
                 },
                 "relationships": [
                     {
@@ -2241,7 +2261,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare."
+                    "scar": "m_c was scarred by frostbite from searching for herbs in leaf-bare.",
+                    "reg_death": "m_c died of frostbite from searching for herbs in leaf-bare.",
+                    "lead_death": "froze to death after helping search for herbs"
                 },
                 "relationships": [
                     {
