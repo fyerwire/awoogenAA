@@ -59,7 +59,9 @@
                         "scars": ["TOETRAP"]
                     }
                 ],
-                "history_text": { "scar": "m_c got scarred training in the forest as an apprentice." }
+                "history_text": {
+                    "scar": "m_c got scarred training in the forest as an apprentice."
+                }
             }
         ]
     },
@@ -74,12 +76,12 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "r_c wanders past an old badger sett in the roots of a hazelnut tree, only to freeze. There's new scent here, acrid and sour.",
+        "intro_text": "r_c wanders past an old cougar den in the roots of a hazelnut tree, only to freeze. There's new scent here, acrid and sour.",
         "decline_text": "Surely it must be nothing... uneasily, r_c continues on.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "Feeling ever so alone on their solo patrol, r_c carefully sniffs around the mouth of the burrow, but the scent change is unmistakable - a new badger occupant has moved in. Creeping forward, belly flat in the dirt, they manage just enough of a glimpse to confirm the badger's presence. Heart pounding, r_c sprints back to camp to warn everyone.",
+                "text": "Feeling ever so alone on their solo patrol, r_c carefully sniffs around the mouth of the burrow, but the scent change is unmistakable - a new cougar occupant has moved in. Creeping forward, belly flat in the dirt, {PRONOUN/r_c/subject} manage just enough of a glimpse to confirm the cougar's presence. Heart pounding, r_c sprints back to camp to warn everyone.",
                 "exp": 40,
                 "weight": 20,
                 "relationships": [
@@ -93,7 +95,7 @@
                 ]
             },
             {
-                "text": "Feeling ever so alone on their solo patrol, r_c carefully sniffs around the mouth of the burrow, but after a few moments, realizes that the scent is relatively weak. A badger was here, no doubt about it, but it doesn't seem to have taken up residence. This will be important information to report back at camp.",
+                "text": "Feeling ever so alone on their solo patrol, r_c carefully sniffs around the mouth of the den, but after a few moments, realizes that the scent is relatively weak. A cougar was here, no doubt about it, but it doesn't seem to have taken up residence. This will be important information to report back at camp.",
                 "exp": 40,
                 "weight": 5,
                 "relationships": [
@@ -107,7 +109,7 @@
                 ]
             },
             {
-                "text": "s_c decides there has to be a smarter way of figuring out if a badger has moved in, one that doesn't involve sticking their head in front of a predator. They search the clearing around the sett thoroughly until they come upon some fresh badger scat - stinky, horrible, and perfect proof of the new occupant of the sett.",
+                "text": "s_c decides there has to be a smarter way of figuring out if a cougar has moved in, one that doesn't involve sticking {PRONOUN/s_c/poss} head in front of a predator. {PRONOUN/s_c/subject/CAP} search the clearing around the den thoroughly until they come upon some fresh cougar scat - stinky, horrible, and perfect proof of the new occupant of the den.",
                 "exp": 40,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1"],
@@ -122,7 +124,7 @@
                 ]
             },
             {
-                "text": "Carefully considering their options, r_c decides to set up a stakeout. When the badger pokes its head above ground at dusk, they're prepared, and dart off back to camp to warn everyone before the predator has blinked the sleep out of its eyes.",
+                "text": "Carefully considering {PRONOUN/r_c/poss} options, r_c decides to set up a stakeout. When the cougar pokes its head above ground at dusk, {PRONOUN/r_c/subject}'re prepared, and dart off back to camp to warn everyone before the predator has blinked the sleep out of its eyes.",
                 "exp": 40,
                 "weight": 20,
                 "stat_trait": [
@@ -149,7 +151,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "Well, the only way to know is to check! s_c scrambles into the den for a look and comes nose to nose with its occupant. It's only by the grace of StarPack that they're able to redirect that speed to twist around just as fast, shedding fur in clumps as the badger's furious snarling and fizzing follows them up the burrow tunnel.",
+                "text": "Well, the only way to know is to check! s_c scrambles into the den for a look and comes nose to nose with its occupant. It's only by the grace of StarPack that {PRONOUN/s_c/subject}'re able to redirect that speed to twist around just as fast, shedding fur in clumps as the cougar's furious hissing and spitting follows {PRONOUN/s_c/object} up the burrow tunnel.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -177,14 +179,14 @@
                 ]
             },
             {
-                "text": "r_c carefully approaches the burrow, trying to figure out if there's anything new inside. It's so dark, and it all smells the same... They try to creep just a little closer - but the ground drops away steeply beneath their paws and they lose their footing, skidding right into the disturbed badger's lethal jaws.",
+                "text": "r_c carefully approaches the burrow, trying to figure out if there's anything new inside. It's so dark, and it all smells the same... {PRONOUN/r_c/subject/CAP} try to creep just a little closer - but the ground drops away steeply beneath {PRONOUN/r_c/poss} paws and {PRONOUN/r_c/subject} lose {PRONOUN/r_c/poss} footing, skidding right into the disturbed cougar's lethal jaws.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
                 "history_text": {
-                    "scar": "m_c was scarred by a badger.",
-                    "reg_death": "m_c lost their life to a badger.",
-                    "lead_death": "{VERB/m_c/were/was} killed by a badger"
+                    "scar": "m_c was scarred by a cougar",
+                    "reg_death": "m_c lost {PRONOUN/m_c/poss} life to a cougar.",
+                    "lead_death": "{VERB/m_c/were/was} killed by a cougar"
                 },
                 "relationships": [
                     {
@@ -197,7 +199,7 @@
                 ]
             },
             {
-                "text": "While r_c is carefully sniffing at the burrow entrance, there's a rustle from the woods behind them. It's difficult to say who's more surprised - r_c or the badger. It charges for the sett and r_c leaps out of the way, but its claws catch their pelt, and it's a bloodied wolf that limps back into camp to report the whole sorry adventure.",
+                "text": "While r_c is carefully sniffing at the burrow entrance, there's a rustle from the woods behind {PRONOUN/r_c/object}. It's difficult to say who's more surprised - r_c or the cougar. It charges for the den and r_c leaps out of the way, but its claws catch {PRONOUN/r_c/poss} pelt, and it's a bloodied wolf that limps back into camp to report the whole sorry adventure.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -208,9 +210,9 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c was scarred by a badger.",
-                    "reg_death": "m_c lost their life to a badger.",
-                    "lead_death": "{VERB/m_c/were/was} killed by a badger"
+                    "scar": "m_c was scarred by a cougar",
+                    "reg_death": "m_c lost {PRONOUN/m_c/poss} life to a cougar.",
+                    "lead_death": "{VERB/m_c/were/was} killed by a cougar"
                 },
                 "relationships": [
                     {
@@ -235,12 +237,12 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "p_l wanders past an old badger sett in the roots of a hazelnut tree, only to freeze. There's new scent here, acrid and sour.",
+        "intro_text": "p_l wanders past an old lynx den in the roots of a hazelnut tree, only to freeze. There's new scent here, acrid and sour.",
         "decline_text": "Surely it must be nothing... uneasily, the patrol continues on.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "Calling the rest of the patrol over, the wolves discuss their next move. If a badger has moved in, they need to confirm it, but how? Eventually p_l comes up with a plan - stuffing bushes into the mouth of the sett. The wolves will be able to come back tomorrow to see if anything has shoved them out of the way.",
+                "text": "Calling the rest of the patrol over, the wolves discuss their next move. If a lynx has moved in, they need to confirm it, but how? Eventually p_l comes up with a plan - stuffing bushes into the mouth of the den. The wolves will be able to come back tomorrow to see if anything has shoved them out of the way.",
                 "exp": 40,
                 "weight": 20,
                 "relationships": [
@@ -254,7 +256,7 @@
                 ]
             },
             {
-                "text": "p_l organizes the patrol, and together they lift a long skinny branch from the forest floor, shoving the end into the sett. With half the branch's length to go there's an outraged explosion of fizzing from the depths of the burrow, and the patrol retreats to report back to camp. With any luck, it's been injured, but no one wants to check.",
+                "text": "p_l organizes the patrol, and together they lift a long skinny branch from the forest floor, shoving the end into the den. With half the branch's length to go there's an outraged explosion of hissing from the depths of the burrow, and the patrol retreats to report back to camp. With any luck, it's been injured, but no one wants to check.",
                 "exp": 40,
                 "weight": 5,
                 "relationships": [
@@ -268,7 +270,7 @@
                 ]
             },
             {
-                "text": "s_c decides there has to be a smarter way of figuring out if a badger has moved in, one that doesn't involve sticking their head in front of a predator. They lead the patrol on a search of the clearing around the sett until they come upon some fresh badger scat - stinky, horrible, and perfect proof of the new occupant of the sett.",
+                "text": "s_c decides there has to be a smarter way of figuring out if a lynx has moved in, one that doesn't involve sticking {PRONOUN/s_c/poss} head in front of a predator. {PRONOUN/s_c/subject/CAP} lead the patrol on a search of the clearing around the den until they come upon some fresh lynx scat - stinky, horrible, and perfect proof of the new occupant of the den.",
                 "exp": 40,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1"],
@@ -283,7 +285,7 @@
                 ]
             },
             {
-                "text": "Carefully considering their options, s_c decides to set up a stakeout with the patrol. When the badger pokes its head above the ground at dusk, they're prepared, and in unison everyone turns for home. The wolves fade into the underbrush before the predator has even blinked the sleep out of its eyes.",
+                "text": "Carefully considering their options, s_c decides to set up a stakeout with the patrol. When the lynx pokes its head above the ground at dusk, they're prepared, and in unison everyone turns for home. The wolves fade into the underbrush before the predator has even blinked the sleep out of its eyes.",
                 "exp": 40,
                 "weight": 20,
                 "stat_trait": [
@@ -310,7 +312,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The wolves try to find enough bits of undergrowth in the nearby forest to block the opening to the sett, but the area is pretty bare. Before they know it they're tired, thirsty, and returning home with nothing to show for it.",
+                "text": "The wolves try to find enough bits of undergrowth in the nearby forest to block the opening to the den, but the area is pretty bare. Before they know it they're tired, thirsty, and returning home with nothing to show for it.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -324,7 +326,7 @@
                 ]
             },
             {
-                "text": "Well, the only way to know is to check! s_c scrambles into the den for a look and comes nose to nose with its occupant. It's only by the grace of StarPack that they're able to redirect that speed to twist around just as fast, shedding fur in clumps as the badger's furious snarling and fizzing follows them up the burrow tunnel.",
+                "text": "Well, the only way to know is to check! s_c scrambles into the den for a look and comes nose to nose with its occupant. It's only by the grace of StarPack that {PRONOUN/s_c/subject}'re able to redirect that speed to twist around just as fast, shedding fur in clumps as the lynx's furious hissing and spitting follows {PRONOUN/s_c/object} up the burrow tunnel.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -352,7 +354,7 @@
                 ]
             },
             {
-                "text": "As the patrol is sniffing around the burrow entrance there's a rustle from the woods. It's difficult to say who's more surprised - wolves or badger. There's a confused rush of paws and flying fur as the patrol scatters and the beast charges for the sett. r_c is battered in the process but everyone gets home safe in the end... including the badger.",
+                "text": "As the patrol is sniffing around the burrow entrance there's a rustle from the woods. It's difficult to say who's more surprised - wolves or lynx. There's a confused rush of paws and flying fur as the patrol scatters and the beast charges for the den. r_c is battered in the process but everyone gets home safe in the end... including the lynx.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -362,7 +364,9 @@
                         "scars": ["THROAT"]
                     }
                 ],
-                "history_text": { "scar": "This wolf was scarred by a badger." },
+                "history_text": {
+                    "scar": "This wolf was scarred by a lynx"
+                },
                 "relationships": [
                     {
                         "cats_to": ["r_c", "p_l"],
@@ -391,7 +395,7 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "Their Packmates come running at their yowls, and r_c is soon freed, shaken but unharmed. The patrol settles down as everyone comforts each other.",
+                "text": "{PRONOUN/r_c/poss/CAP} Packmates come running at their howls, and r_c is soon freed, shaken but unharmed. The patrol settles down as everyone comforts each other.",
                 "exp": 20,
                 "weight": 20,
                 "relationships": [
@@ -434,7 +438,7 @@
                 ]
             },
             {
-                "text": "Creeping in as close as possible, s_c purrs to r_c, keeping {PRONOUN/r_c/object} calm as the patrol carefully works to remove the branches pinning {PRONOUN/r_c/object} down. r_c blinks up at {PRONOUN/s_c/object}, holding on to {PRONOUN/s_c/poss} presence in the scary situation.",
+                "text": "Creeping in as close as possible, s_c speaks softly to r_c, keeping {PRONOUN/r_c/object} calm as the patrol carefully works to remove the branches pinning {PRONOUN/r_c/object} down. r_c blinks up at {PRONOUN/s_c/object}, holding on to {PRONOUN/s_c/poss} presence in the scary situation.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -628,7 +632,7 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "Their Packmate comes running at their yowls, and r_c is soon freed, shaken but unharmed. The wolves settle down as they comfort each other.",
+                "text": "{PRONOUN/r_c/poss/CAP} Packmates come running at their howls, and r_c is soon freed, shaken but unharmed. The patrol settles down as everyone comforts each other.",
                 "exp": 20,
                 "weight": 20,
                 "relationships": [
@@ -671,7 +675,7 @@
                 ]
             },
             {
-                "text": "Creeping in as close as possible, s_c purrs to r_c, keeping them calm as they carefully dig down to them. r_c blinks up at them, holding on to their presence in the scary situation.",
+                "text": "Creeping in as close as possible, s_c speaks softly to r_c, keeping {PRONOUN/r_c/object} calm as {PRONOUN/s_c/subject} carefully dig down to {PRONOUN/r_c/object}. r_c blinks up at {PRONOUN/s_c/object}, holding on to {PRONOUN/s_c/poss} presence in the scary situation.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -801,7 +805,7 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "p_l comes running at their yowls, and r_c is soon freed, shaken but unharmed. r_c has never noticed how strong p_l is before.",
+                "text": "p_l comes running at {PRONOUN/r_c/poss} howls, and r_c is soon freed, shaken but unharmed. r_c has never noticed how strong p_l is before.",
                 "exp": 20,
                 "weight": 20,
                 "relationships": [
@@ -844,7 +848,7 @@
                 ]
             },
             {
-                "text": "Creeping in as close as possible, s_c purrs to r_c, keeping them calm as they carefully dig down to them. r_c blinks up at them, holding on to their presence in the scary situation.",
+                "text": "Creeping in as close as possible, s_c speaks softly to r_c, keeping {PRONOUN/r_c/object} calm as the patrol carefully works to remove the branches pinning {PRONOUN/r_c/object} down. r_c blinks up at {PRONOUN/s_c/object}, holding on to {PRONOUN/s_c/poss} presence in the scary situation.",
                 "exp": 20,
                 "weight": 20,
                 "stat_trait": [
@@ -987,7 +991,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "Pinned under the branches, r_c yowls until their voice is hoarse and their throat is sore, and thankfully, a patrol passes by after a few hours and frees their hapless Packmate.",
+                "text": "Pinned under the branches, r_c howls until {PRONOUN/r_c/poss} voice is hoarse and {PRONOUN/r_c/poss} throat is sore, and thankfully, a patrol passes by after a few hours and frees their hapless Packmate.",
                 "exp": 0,
                 "weight": 20
             },
@@ -1089,7 +1093,9 @@
                         "scars": ["LEFTEAR"]
                     }
                 ],
-                "history_text": { "scar": "m_c got injured as an apprentice, exploring alone." }
+                "history_text": {
+                    "scar": "m_c got injured as an apprentice, exploring alone."
+                }
             }
         ]
     },
@@ -1106,7 +1112,7 @@
             "normal adult": [1, 6]
         },
         "weight": 20,
-        "intro_text": "r_c heads out into the forest alone, wanting to explore and have some time to themselves.",
+        "intro_text": "r_c heads out into the forest alone, wanting to explore and have some time to themself.",
         "decline_text": "r_c turns back to camp, deciding that their duties have to come first.",
         "chance_of_success": 60,
         "success_outcomes": [
@@ -1121,7 +1127,7 @@
                 "weight": 5
             },
             {
-                "text": "s_c rounds a corner and stumbles across a tiny, perfect waterfall! Further investigation shows that it emerges from an equally tiny spring, and s_c purrs. This reliable water source could be important during times of drought.",
+                "text": "s_c rounds a corner and stumbles across a tiny, perfect waterfall! Further investigation shows that it emerges from an equally tiny spring, and s_c smiles. This reliable water source could be important during times of drought.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1"]
@@ -1169,7 +1175,7 @@
             "deputy": [1, 6]
         },
         "weight": 20,
-        "intro_text": "r_c heads out into the forest alone, wanting to explore and have some time to themselves.",
+        "intro_text": "r_c heads out into the forest alone, wanting to explore and have some time to themself.",
         "decline_text": "r_c turns back to camp, deciding that their duties have to come first.",
         "chance_of_success": 60,
         "success_outcomes": [
@@ -1179,12 +1185,12 @@
                 "weight": 20
             },
             {
-                "text": "r_c rounds a corner and stumbles across a tiny, perfect waterfall! Purring, they take the opportunity for a small moment of peace, relaxing and enjoying the view.",
+                "text": "r_c rounds a corner and stumbles across a tiny, perfect waterfall! Smiling, {PRONOUN/r_c/subject} take the opportunity for a small moment of peace, relaxing and enjoying the view.",
                 "exp": 20,
                 "weight": 5
             },
             {
-                "text": "s_c rounds a corner and stumbles across a tiny, perfect waterfall! Further investigation shows that it emerges from an equally tiny spring, and s_c purrs. This reliable water source could be important during times of drought, and its discovery helps to ease one of the many worries on the deputy's mind.",
+                "text": "s_c rounds a corner and stumbles across a tiny, perfect waterfall! Further investigation shows that it emerges from an equally tiny spring, and s_c smiles. This reliable water source could be important during times of drought, and its discovery helps to ease one of the many worries on the deputy's mind.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1"]
@@ -1232,7 +1238,7 @@
             "leader": [1, 6]
         },
         "weight": 20,
-        "intro_text": "r_c heads out into the forest alone, wanting to explore and have some time to themselves.",
+        "intro_text": "r_c heads out into the forest alone, wanting to explore and have some time to themself.",
         "decline_text": "r_c turns back to camp, deciding that their duties have to come first.",
         "chance_of_success": 60,
         "success_outcomes": [
@@ -1242,12 +1248,12 @@
                 "weight": 20
             },
             {
-                "text": "r_c rounds a corner and stumbles across a tiny, perfect waterfall! Purring, they take the opportunity for a small moment of peace, relaxing and enjoying the view.",
+                "text": "r_c rounds a corner and stumbles across a tiny, perfect waterfall! Smiling, {PRONOUN/r_c/subject} take the opportunity for a small moment of peace, relaxing and enjoying the view.",
                 "exp": 20,
                 "weight": 5
             },
             {
-                "text": "s_c rounds a corner and stumbles across a tiny, perfect waterfall! Further investigation shows that it emerges from an equally tiny spring, and s_c purrs. This reliable water source could be important during times of drought, and its discovery helps to ease one of the many worries on the leader's mind.",
+                "text": "s_c rounds a corner and stumbles across a tiny, perfect waterfall! Further investigation shows that it emerges from an equally tiny spring, and s_c smiles. This reliable water source could be important during times of drought, and its discovery helps to ease one of the many worries on the leader's mind.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1"]
@@ -1735,7 +1741,7 @@
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "app1 bursts out from cover, pouncing on app2 with claws sheathed and giggling. app2 rolls with the blow and kicks app1 off, bounding after them with promises of getting them back! On and on the chase goes, neither interested in winning it as they play under the dappled light of the canopy.",
+                "text": "app1 bursts out from cover, pouncing on app2 and giggling. app2 rolls with the blow and kicks app1 off, bounding after {PRONOUN/app1/object} with promises of getting {PRONOUN/app1/object} back! On and on the chase goes, neither interested in winning it as they play under the dappled light of the canopy.",
                 "exp": 10,
                 "weight": 20,
                 "relationships": [
@@ -1749,7 +1755,7 @@
                 ]
             },
             {
-                "text": "app2 emerges into the hidden soft light under the willow tree. Seeing app1, they trot up, asking why app1 wanted to meet there. app1 looks away with a purr, making up some nonsense about fight training that makes no sense. Instead, both apprentices hang out there all afternoon, awkward and thrilled.",
+                "text": "app2 emerges into the hidden soft light under the willow tree. Seeing app1, they trot up, asking why app1 wanted to meet there. app1 looks away with a shy smile, making up some nonsense about fight training that makes no sense. Instead, both apprentices hang out there all afternoon, awkward and thrilled.",
                 "exp": 10,
                 "weight": 5,
                 "relationships": [
@@ -1763,7 +1769,7 @@
                 ]
             },
             {
-                "text": "app2 emerges into the hidden soft light under the willow tree. Seeing s_c, they trot up, asking why s_c wanted to meet there. Stuttering but determined, s_c explains that they wondered if, possibly, maybe, app2 would like to go on a... date? app2 looks away with a purr and murmurs a soft yes to the willow roots, suddenly unable to make eye contact.",
+                "text": "app2 emerges into the hidden soft light under the willow tree. Seeing s_c, they trot up, asking why s_c wanted to meet there. Stuttering but determined, s_c explains that they wondered if, possibly, maybe, app2 would like to go on a... date? app2 looks away with a smile and murmurs a soft yes to the willow roots, suddenly unable to make eye contact.",
                 "exp": 10,
                 "weight": 20,
                 "stat_trait": [
@@ -1790,7 +1796,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "app1 bursts out from cover, pouncing on app2 with claws sheathed and giggling. app2 rolls with the blow and kicks app1 off, but they scramble to their feet looking hurt, and storm off in a huff.",
+                "text": "app1 bursts out from cover, pouncing on app2 and giggling. app2 rolls with the blow and kicks app1 off, but {PRONOUN/app2/subject} scramble to {PRONOUN/app2/poss} feet looking hurt, and storm off in a huff.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -1950,7 +1956,7 @@
             "all apprentices": [-1, -1]
         },
         "weight": 20,
-        "intro_text": "As p_l pads through the woods near camp, looking for a good tree to sharpen {PRONOUN/p_l/poss} claws on before {PRONOUN/p_l/subject} begin {PRONOUN/p_l/poss} training, {PRONOUN/p_l/subject} round a corner and find r_c doing the same thing. p_l allows {PRONOUN/p_l/self} a sigh before {PRONOUN/p_l/subject} {VERB/p_l/join/joins} {PRONOUN/r_c/object}. While Clanmates will do better training together, r_c just rubs {PRONOUN/p_l/subject} the wrong way.",
+        "intro_text": "As p_l pads through the woods near camp, looking for a good place to stretch {PRONOUN/p_l/poss} muscles before {PRONOUN/p_l/subject} begin {PRONOUN/p_l/poss} training, {PRONOUN/p_l/subject} round a corner and find r_c doing the same thing. p_l allows {PRONOUN/p_l/self} a sigh before {PRONOUN/p_l/subject} {VERB/p_l/join/joins} {PRONOUN/r_c/object}. While Packmates will do better training together, r_c just rubs {PRONOUN/p_l/subject} the wrong way.",
         "decline_text": "...It's fine to train somewhere else, p_l decides. {PRONOUN/p_l/subject/CAP} {VERB/p_l/don't/doesn't} really want to interact with r_c.",
         "chance_of_success": 60,
         "relationship_constraint": ["dislike_10", "not_mates"],
@@ -1970,7 +1976,7 @@
                 ]
             },
             {
-                "text": "r_c shows off how far {PRONOUN/r_c/subject} can pounce, which means p_l shows off how fast {PRONOUN/p_l/subject} can run, which means r_c shows off how sharp {PRONOUN/r_c/poss} claws are, which means p_l shows off how shiny {PRONOUN/p_l/poss} pelt is, which means r_c shows off how long {PRONOUN/r_c/poss} legs are, which means p_l shows off how cool {PRONOUN/p_l/poss} scars are - this goes on all afternoon.",
+                "text": "r_c shows off how far {PRONOUN/r_c/subject} can leap, which means p_l shows off how fast {PRONOUN/p_l/subject} can run, which means r_c shows off how sharp {PRONOUN/r_c/poss} fangs are, which means p_l shows off how shiny {PRONOUN/p_l/poss} pelt is, which means r_c shows off how long {PRONOUN/r_c/poss} legs are, which means p_l shows off how cool {PRONOUN/p_l/poss} scars are - this goes on all afternoon.",
                 "exp": 15,
                 "weight": 5,
                 "relationships": [
@@ -2239,5 +2245,4 @@
             }
         ]
     }
-    
 ]
