@@ -21,7 +21,7 @@
                 "prey": ["small", "medium"]
             },
             {
-                "text": "The patrol seeks out an abandoned cougar den to wait out the heat of the day, one that c_n often uses to train apprentices. While they wait, r_c spots a hawk flying oddly. It lands a short distance away, dehydrated and panting, and the patrol silently closes in on it through the grass.",
+                "text": "The patrol seeks out an abandoned bear den to wait out the heat of the day, one that c_n often uses to train apprentices. While they wait, r_c spots a hawk flying oddly. It lands a short distance away, dehydrated and panting, and the patrol silently closes in on it through the grass.",
                 "exp": 15,
                 "weight": 5,
                 "prey": ["small", "medium"]
@@ -383,7 +383,7 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "r_c catches the scent of a grizzly bear. Tracking it, {PRONOUN/r_c/subject} {VERB/r_c/find/finds} the animal feeding on a pronghorn fawn carcass. The bear looks rather large.",
+        "intro_text": "r_c catches the scent of a grizzly bear. Tracking it, {PRONOUN/r_c/subject} {VERB/r_c/find/finds} the animal feeding on a pronghorn carcass. The bear looks rather large.",
         "decline_text": "r_c decides not to quarrel with the bear and to find prey elsewhere.",
         "chance_of_success": 30,
         "success_outcomes": [
@@ -403,7 +403,7 @@
                 ]
             },
             {
-                "text": "s_c uses every trick in their talented fighting skillset to attack the bear with no one to watch their flank, until the perfect opportunity opens up. They pounce onto the bear's back, digging in their claws and teeth. It's a wild ride through the plains until the bear bucks them off, but it wins them the fawn carcass.",
+                "text": "s_c uses every trick in their talented fighting skillset to attack the bear with no one to watch their flank, until the perfect opportunity opens up. They pounce onto the bear's back, digging in their claws and teeth. It's a wild ride through the plains until the bear bucks them off, but it wins them the carcass.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,2"],
@@ -461,7 +461,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "Fiercely, r_c throws {PRONOUN/r_c/self} at the bear, determined to win the fawn prize. But the bear values it just as dearly, and manages to get a good grip on r_c, shaking {PRONOUN/r_c/object} to pieces and killing {PRONOUN/r_c/object}.",
+                "text": "Fiercely, r_c throws {PRONOUN/r_c/self} at the bear, determined to win the tasty prize. But the bear values it just as dearly, and manages to get a good grip on r_c, shaking {PRONOUN/r_c/object} to pieces and killing {PRONOUN/r_c/object}.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
@@ -482,7 +482,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "r_c launches into battle, but is bitten and hit, and retreats to limp back home. The bear doesn't follow, happy enough to eat the fawn instead of the foolish wolf.",
+                "text": "r_c launches into battle, but is bitten and hit, and retreats to limp back home. The bear doesn't follow, happy enough to eat the pronghorn instead of the foolish wolf.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -1496,24 +1496,24 @@
             "all apprentices": [-1, -1]
         },
         "weight": 20,
-        "intro_text": "p_l walks low to the ground, paws soft and light so as not to make a sound. Their jaws hang open to taste at the air, and a tingle of satisfaction shoots through them as they scent a rabbit.",
-        "decline_text": "Though they're pleased to know the rabbits are repopulating, they don't pursue this one. It smells weak; better to let it recover and get larger before bringing it home.",
+        "intro_text": "p_l walks low to the ground, paws soft and light so as not to make a sound. Their jaws hang open to taste at the air, and a tingle of satisfaction shoots through them as they scent a pronghorn.",
+        "decline_text": "Though they're pleased to know the pronghorns are repopulating, they don't pursue this one. It smells weak; better to let it recover and get larger before bringing it home.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "The wind shifts, but before the rabbit can react p_l acts fast and leaps, stopping it from fleeing with a quick nip to the back of the neck.",
+                "text": "The wind shifts, but before the pronghorn can react p_l acts fast and leaps, stopping it from fleeing with a quick nip to the back of the neck.",
                 "exp": 10,
                 "weight": 20,
                 "prey": ["medium"]
             },
             {
-                "text": "The rabbit, thankfully still bleary-eyed from sleep, doesn't notice p_l stalking up to them.. that is, until {PRONOUN/p_l/subject}{VERB/p_l/'ve/'s} already struck and {VERB/p_l/have/has} it between {PRONOUN/p_l/poss} jaws. It's a little late to do anything about it at that point, though.",
+                "text": "The pronghorn, thankfully still bleary-eyed from sleep, doesn't notice p_l stalking up to them.. that is, until {PRONOUN/p_l/subject}{VERB/p_l/'ve/'s} already struck and {VERB/p_l/have/has} it between {PRONOUN/p_l/poss} jaws. It's a little late to do anything about it at that point, though.",
                 "exp": 10,
                 "weight": 5,
                 "prey": ["medium"]
             },
             {
-                "text": "The rabbit blissfully snuffles around in the grass, completely unaware of the looming danger it's in. s_c stalks, as quiet as the wind, and doesn't even need to strike; they just walk right up behind it and take the kill.",
+                "text": "The pronghorn blissfully grazes the grass, completely unaware of the looming danger it's in. s_c stalks, as quiet as the wind, and doesn't even need to strike; they just walk right up behind it and take the kill.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1"],
@@ -1522,7 +1522,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The wind shifts, and the rabbit stiffens, scrambles away, and vanishes back into its burrow. Oh well.",
+                "text": "The wind shifts, and the pronghorn stiffens, scrambles away, and vanishes back into the brush. Oh well.",
                 "exp": 0,
                 "weight": 20,
                 "prey": ["very_small"]
@@ -1542,7 +1542,7 @@
             "apprentice": [1, 6]
         },
         "weight": 20,
-        "intro_text": "app1 has snuck out of camp alone, hoping {PRONOUN/app1/subject}'ll find a rabbit grown lazy in the heat of greenleaf. Running through everything {PRONOUN/app1/subject}'ve been taught in {PRONOUN/app1/poss} head, {PRONOUN/app1/subject} carefully {VERB/app1/scent/scents} the air and {VERB/app1/strain/strains} {PRONOUN/app1/poss} ears, hoping for any hint of the burrowing critters.",
+        "intro_text": "app1 has snuck out of camp alone, hoping {PRONOUN/app1/subject}'ll find a pronghorn grown lazy in the heat of greenleaf. Running through everything {PRONOUN/app1/subject}'ve been taught in {PRONOUN/app1/poss} head, {PRONOUN/app1/subject} carefully {VERB/app1/scent/scents} the air and {VERB/app1/strain/strains} {PRONOUN/app1/poss} ears, hoping for any hint of the burrowing critters.",
         "decline_text": "They're focusing so hard, they don't notice a Packmate is standing silently behind them, waiting for them to notice that they've been caught red-pawed. Oops!",
         "chance_of_success": 60,
         "success_outcomes": [
@@ -1553,7 +1553,7 @@
                 "prey": ["medium"]
             },
             {
-                "text": "app1 hears a quiet shuffling nearby, and slides into the grass. Stalking forward, {PRONOUN/app1/subject} {VERB/app1/find/finds} the source is a rabbit, foraging for food! {PRONOUN/app1/subject/CAP} {VERB/app1/stalk/stalks} carefully and {VERB/app1/catch/catches} it while it's distracted, heading home with {PRONOUN/app1/poss} head held high.",
+                "text": "app1 hears a quiet shuffling nearby, and slides into the grass. Stalking forward, {PRONOUN/app1/subject} {VERB/app1/find/finds} the source is a pronghorn, foraging for food! {PRONOUN/app1/subject/CAP} {VERB/app1/stalk/stalks} carefully and {VERB/app1/catch/catches} it while it's distracted, heading home with {PRONOUN/app1/poss} head held high.",
                 "exp": 20,
                 "weight": 5,
                 "prey": ["medium"]
@@ -1737,15 +1737,15 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "p_l's patrol strolls leisurely through the plains, enjoying the warmth of greenleaf. One wolf raises their tail, signaling the others to be still; they've scented rabbits nearby.",
-        "decline_text": "p_l quietly shakes {PRONOUN/p_l/poss} head and leads the patrol elsewhere. Better not to disturb the rabbits, who are very fast.",
+        "intro_text": "p_l's patrol strolls leisurely through the plains, enjoying the warmth of greenleaf. One wolf raises their tail, signaling the others to be still; they've scented deer nearby.",
+        "decline_text": "p_l quietly shakes {PRONOUN/p_l/poss} head and leads the patrol elsewhere. Better not to disturb the deer, who are very fast.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "The patrol makes short work of locating the rabbits, spreading out into a loose formation to encircle their prey. Slowly, they move in, the circle getting tighter and tighter, until they're finally seen. The rabbits scramble and scatter in different directions, but the circle cuts off their escape, and by the end of it they're fresh-kill.",
+                "text": "The patrol makes short work of locating the deer, spreading out into a loose formation to encircle their prey. Slowly, they move in, the circle getting tighter and tighter, until they're finally seen. The deer scrambles and scatter in different directions, but the circle cuts off their escape, and by the end of it they're fresh-kill.",
                 "exp": 20,
                 "weight": 20,
-                "prey": ["medium"],
+                "prey": ["large"],
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
@@ -1757,10 +1757,10 @@
                 ]
             },
             {
-                "text": "First order of business is blocking their access to any nearby burrows, which r_c takes care of. After that, it's a matter of finding and catching the rabbits, which proves to be simple, especially with their access to safety denied. One really couldn't ask for a better hunt.",
+                "text": "First order of business is blocking their access to any nearby escape routes, which r_c takes care of. After that, it's a matter of finding and catching the deer, which proves to be simple, especially with their access to safety denied. One really couldn't ask for a better hunt.",
                 "exp": 20,
                 "weight": 5,
-                "prey": ["medium"],
+                "prey": ["large"],
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
@@ -1772,7 +1772,7 @@
                 ]
             },
             {
-                "text": "s_c murmurs instructions to {PRONOUN/s_c/poss} Packmates, who nod silently and move into position. One wolf feints at a rabbit, who raises the alarm and turns to run; another wolf blocks off the nearby burrow's entrance, forcing the rabbits to run towards s_c; and s_c lunges in for the kill. A flawless hunt, not a single rabbit left behind.",
+                "text": "s_c murmurs instructions to {PRONOUN/s_c/poss} Packmates, who nod silently and move into position. One wolf feints at a deer, who raises the alarm and turns to run; another wolf blocks off escape, forcing the deer to run towards s_c; and s_c lunges in for the kill. A flawless hunt.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1"],
