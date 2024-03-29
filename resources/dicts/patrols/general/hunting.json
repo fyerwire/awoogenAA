@@ -87,33 +87,33 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your patrol comes across a large rat.",
+        "intro_text": "Your patrol comes across a large boar.",
         "decline_text": "Your patrol ignores the rat.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "Your patrol catches the rat! More fresh-kill!",
+                "text": "Your patrol pins the boar! More fresh-kill!",
                 "exp": 20,
                 "weight": 20,
-                "prey": ["small"]
+                "prey": ["large"]
             },
             {
-                "text": "The rat rears up and hisses at r_c, but while it's distracted, p_l takes it out with a quick strike.",
+                "text": "The boar rears up and bleats at r_c, but while it's distracted, p_l takes it out with a quick strike.",
                 "exp": 20,
                 "weight": 5,
-                "prey": ["small"]
+                "prey": ["large"]
             },
             {
-                "text": "The rat is huge and quick, but s_c is quicker, bringing it down just before it scurries out of reach. Everyone gathers around {PRONOUN/s_c/object} in congratulations of the skillful kill.",
+                "text": "The boar is huge and quick, but s_c is quicker, bringing it down just before it flees. Everyone gathers around {PRONOUN/s_c/object} in congratulations of the skillful kill.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["HUNTER,2"],
-                "prey": ["small"]
+                "prey": ["large"]
             }
         ],
         "fail_outcomes": [
             {
-                "text": "Your patrol misses the rat, and their confidence is shaken.",
+                "text": "Your patrol misses the boar, and their confidence is shaken.",
                 "exp": 0,
                 "weight": 20
             }
@@ -1091,35 +1091,35 @@
     "max_cats": 6,
     "min_max_status": {},
     "weight": 10,
-    "intro_text": "The patrol comes across a large rat. It's too busy digging around in a frozen pile of foul Twoleg crowfood to notice the approaching patrol.",
-    "decline_text": "p_l decides to look for other prey, leaving the patrol as desperate for food as the rat.",
+    "intro_text": "The patrol comes across a large boar. It's too busy digging around in a frozen pile of foul Twoleg crowfood to notice the approaching patrol.",
+    "decline_text": "p_l decides to look for other prey, leaving the patrol as desperate for food as the boar.",
     "chance_of_success": 40,
     "success_outcomes": [
       {
-        "text": "The patrol easily catches the distracted rat. p_l meows triumphantly, this is a great catch during leaf-bare.",
+        "text": "The patrol easily catches the distracted boar. p_l meows triumphantly, this is a great catch during leaf-bare.",
         "exp": 30,
         "weight": 20,
         "prey": ["medium"]
       },
       {
-        "text": "r_c silently moves closer to make a clean kill. Strangely, the rat turns to r_c and makes a series of pained squeaks. p_l orders a retreat after r_c smells the disgusting scent of crowfood from the rat's breath.",
+        "text": "r_c silently moves closer to make a clean kill. Strangely, the boar turns to r_c and makes a series of pained squeals. p_l orders a retreat after r_c smells the disgusting scent of crowfood from the boar's breath.",
         "exp": 30,
         "weight": 10
       },
       {
-        "text": "s_c slowly creeps closer. {PRONOUN/s_c/subject/CAP} suddenly {VERB/s_c/hiss/hisses} loudly, scaring the rat away and startling {PRONOUN/s_c/poss} Packmates. s_c explains crossly that the rat was carrying a foul, sickly-sweet scent on its breath. It would have poisoned any wolf that bit it.",
+        "text": "s_c slowly creeps closer. {PRONOUN/s_c/subject/CAP} suddenly {VERB/s_c/hiss/hisses} loudly, scaring the boar away and startling {PRONOUN/s_c/poss} Packmates. s_c explains crossly that the boar was carrying a foul, sickly-sweet scent on its breath. It would have poisoned any wolf that bit it.",
         "exp": 30,
         "weight": 20,
         "stat_skill": ["CLEVER,3", "HUNTER,2", "SENSE,1"]
       },
       {
-        "text": "Before any wolf makes a move, s_c stops the patrol. {PRONOUN/s_c/subject/CAP} {VERB/s_c/explain/explains} that rogues and loners are taught at a young age to stay away from rats that touch Twoleg crowfood to avoid the deadly sickness they carry.",
+        "text": "Before any wolf makes a move, s_c stops the patrol. {PRONOUN/s_c/subject/CAP} {VERB/s_c/explain/explains} that rogues and loners are taught at a young age to stay away from boars that touch Twoleg crowfood to avoid the deadly sickness they carry.",
         "exp": 30,
         "weight": 20,
         "stat_skill": ["ROGUE,0", "LONER,0"]
       },
       {
-        "text": "Before any wolf makes a move, s_c stops the patrol. {PRONOUN/s_c/subject/CAP} {VERB/s_c/explain/explains} that rats found in Twoleg crowfood often carry a deadly disease found in carrion. It's not worth the risk of catching, no matter how hungry the Pack is this leaf-bare.",
+        "text": "Before any wolf makes a move, s_c stops the patrol. {PRONOUN/s_c/subject/CAP} {VERB/s_c/explain/explains} that boars found in Twoleg crowfood often carry a deadly disease found in carrion. It's not worth the risk of catching, no matter how hungry the Pack is this leaf-bare.",
         "exp": 30,
         "weight": 20,
         "stat_trait": ["wise", "thoughtful", "careful"]
@@ -1127,28 +1127,28 @@
     ],
     "fail_outcomes": [
       {
-        "text": "Just as r_c is about to strike, the rat scurries away with an angry squeak. Both the patrol and the rat go home with empty paws.",
+        "text": "Just as r_c is about to strike, the boar scurries away with an angry squeak. Both the patrol and the boar go home with empty paws.",
         "exp": 30,
         "weight": 20
       },
       {
-        "text": "Without thinking, s_c snaps at the rat. The patrol watches completely stunned as s_c misses the rat by several tail lengths and scares it off. The disgruntled patrol heads home and s_c has to explain why {PRONOUN/s_c/subject} missed an easy catch in the middle of leaf-bare.",
+        "text": "Without thinking, s_c snaps at the boar. The patrol watches completely stunned as s_c misses the boar by several tail lengths and scares it off. The disgruntled patrol heads home and s_c has to explain why {PRONOUN/s_c/subject} missed an easy catch in the middle of leaf-bare.",
         "exp": 30,
         "weight": 20,
         "stat_trait": ["oblivious", "arrogant", "confident", "shameless"]
       },
       {
-        "text": "r_c easily catches the distracted rat. p_l meows triumphantly, this is a great catch during leaf-bare. Unfortunately, while carrying the fresh-kill home, r_c's mouth begins to sour. {PRONOUN/r_c/subject/CAP} {VERB/r_c/bury/buries} the sickly rat away from camp, but it's too late. Over the next few days r_c falls violently ill and never recovers.",
+        "text": "r_c easily catches the distracted boar. p_l meows triumphantly, this is a great catch during leaf-bare. Unfortunately, while carrying the fresh-kill home, r_c's mouth begins to sour. {PRONOUN/r_c/subject/CAP} {VERB/r_c/bury/buries} the sickly boar away from camp, but it's too late. Over the next few days r_c falls violently ill and never recovers.",
         "exp": 30,
         "weight": 5,
         "dead_cats": ["r_c"],
         "history_text": {
-          "reg_death": "m_c died after tasting a tainted rat.",
-          "lead_death": "died after tasting a tainted rat"
+          "reg_death": "m_c died after tasting a tainted boar.",
+          "lead_death": "died after tasting a tainted boar"
         }
       },
       {
-        "text": "r_c easily catches the distracted rat. p_l meows triumphantly, this is a great catch during leaf-bare. Unfortunately, while carrying the fresh-kill home, r_c's mouth begins to sour. {PRONOUN/r_c/subject/CAP} {VERB/r_c/bury/buries} the sickly rat away from camp, but it's too late. Over the next few days r_c falls violently ill.",
+        "text": "r_c easily catches the distracted boar. p_l meows triumphantly, this is a great catch during leaf-bare. Unfortunately, while carrying the fresh-kill home, r_c's mouth begins to sour. {PRONOUN/r_c/subject/CAP} {VERB/r_c/bury/buries} the sickly rat away from camp, but it's too late. Over the next few days r_c falls violently ill.",
         "exp": 30,
         "weight": 10,
         "injury": [
@@ -1158,23 +1158,23 @@
           }
         ],
         "history_text": {
-          "reg_death": "m_c died after tasting a tainted rat.",
-          "lead_death": "died after tasting a tainted rat"
+          "reg_death": "m_c died after tasting a tainted boar.",
+          "lead_death": "died after tasting a tainted boar"
         }
       },
       {
-        "text": "Without thinking, s_c recklessly snaps at the rat. The patrol watches completely stunned as s_c actually catches the rat. While s_c is smugly carrying the fresh-kill home, s_c's mouth begins to sour. {PRONOUN/s_c/subject/CAP} {VERB/s_c/bury/buries} the sickly rat away from camp, but it's too late. Over the next few days s_c falls violently ill and never recovers.",
+        "text": "Without thinking, s_c recklessly snaps at the boar. The patrol watches completely stunned as s_c actually catches the boar. While s_c is smugly carrying the fresh-kill home, s_c's mouth begins to sour. {PRONOUN/s_c/subject/CAP} {VERB/s_c/bury/buries} the sickly boar away from camp, but it's too late. Over the next few days s_c falls violently ill and never recovers.",
         "exp": 30,
         "weight": 20,
         "stat_trait": ["oblivious", "arrogant", "confident", "shameless"],
         "dead_cats": ["s_c"],
         "history_text": {
-          "reg_death": "m_c died after tasting a tainted rat.",
-          "lead_death": "died after tasting a tainted rat"
+          "reg_death": "m_c died after tasting a tainted boar.",
+          "lead_death": "died after tasting a tainted boar"
         }
       },
       {
-        "text": "Without thinking, s_c recklessly snaps at the rat. The patrol watches completely stunned as s_c actually catches the rat. While s_c is smugly carrying the fresh-kill home, s_c's mouth begins to sour. {PRONOUN/s_c/subject/CAP} {VERB/s_c/bury/buries} the sickly rat away from camp, but it's too late. Over the next few days s_c falls violently ill.",
+        "text": "Without thinking, s_c recklessly snaps at the boar. The patrol watches completely stunned as s_c actually catches the boar. While s_c is smugly carrying the fresh-kill home, s_c's mouth begins to sour. {PRONOUN/s_c/subject/CAP} {VERB/s_c/bury/buries} the sickly boar away from camp, but it's too late. Over the next few days s_c falls violently ill.",
         "exp": 30,
         "weight": 20,
         "stat_trait": ["oblivious", "arrogant", "confident", "shameless"],
@@ -1185,8 +1185,8 @@
           }
         ],
         "history_text": {
-          "reg_death": "m_c died after tasting a tainted rat.",
-          "lead_death": "died after tasting a tainted rat"
+          "reg_death": "m_c died after tasting a tainted boar.",
+          "lead_death": "died after tasting a tainted boar"
         }
       }
     ]
@@ -1747,7 +1747,7 @@
             "prey": ["medium"]
         },
         {
-            "text": "Sure, {PRONOUN/app1/subject} might not be the greatest fighter or the Clan's cleverest cat, but hunting? Hunting is a <i>breeze</i> for app1, and {PRONOUN/app1/subject} {VERB/app1/come/comes} back to camp with the proof of that.",
+            "text": "Sure, {PRONOUN/app1/subject} might not be the greatest fighter or the Clan's cleverest wolf, but hunting? Hunting is a <i>breeze</i> for app1, and {PRONOUN/app1/subject} {VERB/app1/come/comes} back to camp with the proof of that.",
             "exp": 20,
             "weight": 20,
             "stat_skill": ["HUNTER,0"],
@@ -1941,7 +1941,7 @@
     },
     "weight": 1,
     "intro_text": "As they head out into c_n's territory, p_l suggests a high cover hunting ground, perfect for ambushing.",
-    "decline_text": "The cats encounter a border patrol that needs more paws, and volunteer their time for that instead.",
+    "decline_text": "The wolves encounter a border patrol that needs more paws, and volunteer their time for that instead.",
     "chance_of_success": 50,
     "success_outcomes": [
         {
@@ -1976,12 +1976,12 @@
     ],
     "fail_outcomes": [
         {
-            "text": "In setting up an overly complicated ambush strategy, all the cats do is drive away the prey from the local area. And also fall over each other a bit.",
+            "text": "In setting up an overly complicated ambush strategy, all the wolves do is drive away the prey from the local area. And also fall over each other a bit.",
             "exp": 0,
             "weight": 20
         },
         {
-            "text": "The cats lose track of each other under the thick cover, and end up ruining the hunt in the name of reforming the patrol.",
+            "text": "The wolves lose track of each other under the thick cover, and end up ruining the hunt in the name of reforming the patrol.",
             "exp": 0,
             "weight": 20
         },
@@ -2021,7 +2021,7 @@
     },
     "weight": 1,
     "intro_text": "The small hunting patrol heads out together.",
-    "decline_text": "The cats encounter a border patrol that needs more paws, and volunteer their time for that instead.",
+    "decline_text": "The wolves encounter a border patrol that needs more paws, and volunteer their time for that instead.",
     "chance_of_success": 50,
     "success_outcomes": [
         {
@@ -2040,13 +2040,13 @@
             "prey": ["small"]
         },
         {
-            "text": "They don't quite have enough cats to set up an inescapable net, and several times, prey slips away from them. Still, they're not empty pawed.",
+            "text": "They don't quite have enough wolves to set up an inescapable net, and several times, prey slips away from them. Still, they're not empty pawed.",
             "exp": 10,
             "weight": 10,
             "prey": ["small"]
         },
         {
-            "text": "s_c catches every single bit of prey the patrol brings home. The other cats aren't happy with how this is going to look, comparing themselves to s_c.",
+            "text": "s_c catches every single bit of prey the patrol brings home. The other wolves aren't happy with how this is going to look, comparing themselves to s_c.",
             "exp": 20,
             "weight": 20,
             "stat_skill": ["HUNTER,0"],
@@ -2095,7 +2095,7 @@
             ]
         },
         {
-            "text": "Sometimes, hunts just go bad. It's no one's fault, but today is one of those times. The cats commiserate with each other as they walk home.",
+            "text": "Sometimes, hunts just go bad. It's no one's fault, but today is one of those times. The wolves commiserate with each other as they walk home.",
             "exp": 0,
             "weight": 20,
             "relationships": [
@@ -2144,7 +2144,7 @@
     },
     "weight": 1,
     "intro_text": "This hunting patrol might be small, but p_l thinks {PRONOUN/p_l/subject} {VERB/p_l/know/knows} the perfect spot to take advantage of that.",
-    "decline_text": "The cats encounter a border patrol that needs more paws, and volunteer their time for that instead.",
+    "decline_text": "The wolves encounter a border patrol that needs more paws, and volunteer their time for that instead.",
     "chance_of_success": 50,
     "success_outcomes": [
         {
@@ -2227,7 +2227,7 @@
             ]
         },
         {
-            "text": "Sometimes, hunts just go bad. It's no one's fault, but today is one of those times. The cats commiserate with each other as they walk home.",
+            "text": "Sometimes, hunts just go bad. It's no one's fault, but today is one of those times. The wolves commiserate with each other as they walk home.",
             "exp": 0,
             "weight": 20,
             "relationships": [
@@ -2275,12 +2275,12 @@
         "normal adult": [1, 6]
     },
     "weight": 1,
-    "intro_text": "With a smaller hunting party, the cats are going to need to coordinate together well to succeed.",
-    "decline_text": "The cats encounter a border patrol that needs more paws, and volunteer their time for that instead.",
+    "intro_text": "With a smaller hunting party, the wolves are going to need to coordinate together well to succeed.",
+    "decline_text": "The wolves encounter a border patrol that needs more paws, and volunteer their time for that instead.",
     "chance_of_success": 50,
     "success_outcomes": [
         {
-            "text": "Everyone turns to p_l to lead, and p_l rises to the occasion, giving a clear plan of attack that the patrol pulls off flawlessly. Each cat can be proud of the work they put in today.",
+            "text": "Everyone turns to p_l to lead, and p_l rises to the occasion, giving a clear plan of attack that the patrol pulls off flawlessly. Each wolf can be proud of the work they put in today.",
             "exp": 30,
             "weight": 10,
             "relationships": [
@@ -2317,7 +2317,7 @@
             "prey": ["large"]
         },
         {
-            "text": "The cats defer to s_c as the expert, and s_c nods, laying out {PRONOUN/s_c/poss} thoughts and consulting with everyone to make sure each cat is comfortable with the part they'll play. It's a good use of {PRONOUN/s_c/poss} skills, one that rewards the cats handsomely.",
+            "text": "The wolves defer to s_c as the expert, and s_c nods, laying out {PRONOUN/s_c/poss} thoughts and consulting with everyone to make sure each eolf is comfortable with the part they'll play. It's a good use of {PRONOUN/s_c/poss} skills, one that rewards the cats handsomely.",
             "exp": 30,
             "weight": 20,
             "stat_skill": ["HUNTER,0"],
@@ -2373,7 +2373,7 @@
             ]
         },
         {
-            "text": "Sometimes, hunts just go bad. It's no one's fault, but today is one of those times. The cats commiserate with each other as they walk home.",
+            "text": "Sometimes, hunts just go bad. It's no one's fault, but today is one of those times. The wolves commiserate with each other as they walk home.",
             "exp": 0,
             "weight": 20,
             "relationships": [
@@ -2426,7 +2426,7 @@
     "chance_of_success": 50,
     "success_outcomes": [
         {
-            "text": "It's the perfect time of day, the cats melting in and out of their territory's shadowy cover as their successes begin to pile up, at first only a couple pieces of prey, then more, and more, more until finally p_l calls off the patrol not because the prey has escaped them, but because they're going to have trouble carrying it all home.",
+            "text": "It's the perfect time of day, the wolves melting in and out of their territory's shadowy cover as their successes begin to pile up, at first only a couple pieces of prey, then more, and more, more until finally p_l calls off the patrol not because the prey has escaped them, but because they're going to have trouble carrying it all home.",
             "exp": 30,
             "weight": 10,
             "relationships": [
@@ -2512,7 +2512,7 @@
             ]
         },
         {
-            "text": "Sometimes, hunts just go bad. It's no one's fault, but today is one of those times. The cats console one another as they walk home.",
+            "text": "Sometimes, hunts just go bad. It's no one's fault, but today is one of those times. The wolves console one another as they walk home.",
             "exp": 0,
             "weight": 20,
             "relationships": [
@@ -2577,7 +2577,7 @@
             "prey": ["very_small"]
         },
         {
-            "text": "With so many hunters out together, you'd think they'd manage to find more. But no cat can control the luck of the hunt, not even a skilled hunter like s_c.",
+            "text": "With so many hunters out together, you'd think they'd manage to find more. But no wolf can control the luck of the hunt, not even a skilled hunter like s_c.",
             "exp": 30,
             "weight": 20,
             "stat_skill": ["HUNTER,0"],
@@ -2592,12 +2592,12 @@
             "weight": 20
         },
         {
-            "text": "Even in the worst conditions, there's normally <i>something</i> to hunt. But none of the cats manages even a single kill, and tails are tucked sadly when the patrol pads back into camp.",
+            "text": "Even in the worst conditions, there's normally <i>something</i> to hunt. But none of the wolves manages even a single kill, and tails are tucked sadly when the patrol pads back into camp.",
             "exp": 0,
             "weight": 20
         },
         {
-            "text": "p_l choose a completely stupid hunting spot to lead them all to, and by the time the patrol gives up and heads back to camp, more than one cat is throwing surly glares in {PRONOUN/p_l/poss} direction.",
+            "text": "p_l choose a completely stupid hunting spot to lead them all to, and by the time the patrol gives up and heads back to camp, more than one wolf is throwing surly glares in {PRONOUN/p_l/poss} direction.",
             "exp": 0,
             "weight": 20,
               "relationships": [
@@ -2632,7 +2632,7 @@
         "normal adult": [1, 6]
     },
     "weight": 1,
-    "intro_text": "Honestly, it looks like a scat day to try to hunt, so the cats team up into a bigger hunting patrol, hoping that will help.",
+    "intro_text": "Honestly, it looks like a scat day to try to hunt, so the wolves team up into a bigger hunting patrol, hoping that will help.",
     "decline_text": "The patrol can't agree on a hunting ground, and breaks up into smaller groups instead.",
     "chance_of_success": 50,
     "success_outcomes": [
@@ -2652,7 +2652,7 @@
             "prey": ["small"]
         },
         {
-            "text": "It feels like their teamwork didn't do much, with each cat not bringing home much prey. But collectively, the patrol still had some success, and if it could've been better, well, it could've also been much worse.",
+            "text": "It feels like their teamwork didn't do much, with each wolf not bringing home much prey. But collectively, the patrol still had some success, and if it could've been better, well, it could've also been much worse.",
             "exp": 30,
             "weight": 10,
             "prey": ["small"]
@@ -2682,12 +2682,12 @@
             "weight": 20
         },
         {
-            "text": "Even in the worst conditions, there's normally <i>something</i> to hunt. But none of the cats manages even a single kill, and tails are tucked sadly when the patrol pads back into camp.",
+            "text": "Even in the worst conditions, there's normally <i>something</i> to hunt. But none of the wolves manages even a single kill, and tails are tucked sadly when the patrol pads back into camp.",
             "exp": 0,
             "weight": 20
         },
         {
-            "text": "p_l choose a completely stupid hunting spot to lead them all to, and by the time the patrol gives up and heads back to camp, more than one cat is throwing surly glares in {PRONOUN/p_l/poss} direction.",
+            "text": "p_l choose a completely stupid hunting spot to lead them all to, and by the time the patrol gives up and heads back to camp, more than one wolf is throwing surly glares in {PRONOUN/p_l/poss} direction.",
             "exp": 0,
             "weight": 20,
               "relationships": [
@@ -2722,7 +2722,7 @@
         "normal adult": [1, 6]
     },
     "weight": 1,
-    "intro_text": "The cats chat as they head out to hunt.",
+    "intro_text": "The wolves chat as they head out to hunt.",
     "decline_text": "The patrol can't agree on a hunting ground, and breaks up into smaller groups instead.",
     "chance_of_success": 50,
     "success_outcomes": [
@@ -2777,7 +2777,7 @@
             "weight": 20
         },
         {
-            "text": "p_l choose a completely stupid hunting spot to lead them all to, and by the time the patrol gives up and heads back to camp, more than one cat is throwing surly glares in {PRONOUN/p_l/poss} direction.",
+            "text": "p_l choose a completely stupid hunting spot to lead them all to, and by the time the patrol gives up and heads back to camp, more than one wolf is throwing surly glares in {PRONOUN/p_l/poss} direction.",
             "exp": 0,
             "weight": 20,
               "relationships": [
@@ -2838,7 +2838,7 @@
             "prey": ["large"]
         },
         {
-            "text": "s_c has a good idea that takes advantage of the number of cats in the patrol, one that nets them all a very successful haul of prey.",
+            "text": "s_c has a good idea that takes advantage of the number of wolves in the patrol, one that nets them all a very successful haul of prey.",
             "exp": 30,
             "weight": 20,
             "stat_skill": ["HUNTER,0"],
@@ -2867,7 +2867,7 @@
             "weight": 20
         },
         {
-            "text": "p_l choose a completely stupid hunting spot to lead them all to, and by the time the patrol gives up and heads back to camp, more than one cat is throwing surly glares in {PRONOUN/p_l/poss} direction.",
+            "text": "p_l choose a completely stupid hunting spot to lead them all to, and by the time the patrol gives up and heads back to camp, more than one wolf is throwing surly glares in {PRONOUN/p_l/poss} direction.",
             "exp": 0,
             "weight": 20,
               "relationships": [
@@ -2902,7 +2902,7 @@
         "normal adult": [1, 6]
     },
     "weight": 1,
-    "intro_text": "There's a spring in their steps as the cats head out - today looks like a good day for hunting.",
+    "intro_text": "There's a spring in their steps as the wolves head out - today looks like a good day for hunting.",
     "decline_text": "The patrol can't agree on a hunting ground, and breaks up into smaller groups instead.",
     "chance_of_success": 50,
     "success_outcomes": [
@@ -2922,7 +2922,7 @@
             "prey": ["huge"]
         },
         {
-            "text": "The conditions don't disappoint - it's going to be tough carrying all their fresh-kill home, but that's the kind of problem the cats are happy to have.",
+            "text": "The conditions don't disappoint - it's going to be tough carrying all their fresh-kill home, but that's the kind of problem the wolves are happy to have.",
             "exp": 30,
             "weight": 10,
             "prey": ["huge"]
@@ -2964,7 +2964,7 @@
             "weight": 20
         },
         {
-            "text": "p_l choose a completely stupid hunting spot to lead them all to, and by the time the patrol gives up and heads back to camp, more than one cat is throwing surly glares in {PRONOUN/p_l/poss} direction.",
+            "text": "p_l choose a completely stupid hunting spot to lead them all to, and by the time the patrol gives up and heads back to camp, more than one wolf is throwing surly glares in {PRONOUN/p_l/poss} direction.",
             "exp": 0,
             "weight": 20,
               "relationships": [
