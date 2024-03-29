@@ -52,15 +52,15 @@
                 "prey": ["medium"]
             },
             {
-                "text": "The patrol finds some astonishingly fat chickens running around the Twoleg nest, and helps themselves to a few.",
+                "text": "The patrol finds some astonishingly fat sheep running around the Twoleg nest, and helps themselves to a few.",
                 "exp": 10,
                 "weight": 5,
-                "prey": ["medium"]
+                "prey": ["large"]
             }
         ],
         "fail_outcomes": [
             {
-                "text": "Twoleg pups scare the patrol away.",
+                "text": "Twolegs scare the patrol away.",
                 "exp": 0,
                 "weight": 20,
                 "prey": ["very_small"]
@@ -68,14 +68,14 @@
         ],
         "antag_fail_outcomes": [
             {
-                "text": "The Twoleg pups wandering around are unimpressed by the patrol and chase the wolves for fun.",
+                "text": "The Twolegs wandering around are unimpressed by the patrol and chase the wolves away.",
                 "exp": 0,
                 "weight": 20
             }
         ],
         "antag_success_outcomes": [
             {
-                "text": "A Twoleg pup approaches the patrol, and they send it away squawking with its blood on their fangs.",
+                "text": "A Twoleg approaches the patrol, and they send it away squawking with its blood on their fangs.",
                 "exp": 10,
                 "weight": 20
             }
@@ -103,7 +103,7 @@
                 "prey": ["medium"]
             },
             {
-                "text": "The patrol finds some astonishingly fat chickens running around the Twoleg nest, and helps themselves to as many as they can carry.",
+                "text": "The patrol finds some astonishingly fat sheep running around the Twoleg nest, and helps themselves to as many as they can carry.",
                 "exp": 10,
                 "weight": 5,
                 "prey": ["large"]
@@ -111,7 +111,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "Twoleg pups stomp through the long grass, scaring away prey and ruining the hunt.",
+                "text": "Twolegs stomp through the long grass, scaring away prey and ruining the hunt.",
                 "exp": 0,
                 "weight": 20,
                 "prey": ["very_small"]
@@ -119,14 +119,14 @@
         ],
         "antag_fail_outcomes": [
             {
-                "text": "The Twoleg pups wandering around are unimpressed by the patrol and chase the wolves for fun.",
+                "text": "The Twolegs wandering around are unimpressed by the patrol and chase the wolves away.",
                 "exp": 0,
                 "weight": 20
             }
         ],
         "antag_success_outcomes": [
             {
-                "text": "Finding a Twoleg pup wandering alone, the wolves harass it until it flees squawking, its blood on their fangs.",
+                "text": "Finding a Twolegs wandering alone, the wolves harass it until it flees squawking, its blood on their fangs.",
                 "exp": 10,
                 "weight": 20
             }
@@ -725,7 +725,7 @@
                 "prey": ["medium"]
             },
             {
-                "text": "p_l pads towards the grass to check on the noise when a rabbit suddenly bursts out! s_c is quick to react and manages to snag the rabbit before it can disappear.",
+                "text": "p_l pads towards the grass to check on the noise when a deer suddenly bursts out! s_c is quick to react and manages to snag the deer before it can disappear.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1"],
@@ -740,7 +740,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "s_c doesn't even hesitate before splitting from the patrol to check on the source of the noise. {PRONOUN/s_c/subject/CAP} quickly regret {PRONOUN/s_c/poss} impulsivity, however, when an angry weasel bursts from the grass, chattering loudly! s_c gets quite the scare, but thankfully the weasel only wanted to get away from {PRONOUN/s_c/object} and quickly runs off back into the grass.",
+                "text": "s_c doesn't even hesitate before splitting from the patrol to check on the source of the noise. {PRONOUN/s_c/subject/CAP} quickly regret {PRONOUN/s_c/poss} impulsivity, however, when an angry wolverine bursts from the grass, chattering loudly! s_c gets quite the scare, but thankfully the wolverine only wanted to get away from {PRONOUN/s_c/object} and quickly runs off back into the grass.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": ["daring", "bold", "ambitious"],
@@ -2082,7 +2082,7 @@
                 "prey": ["small"]
             },
             {
-                "text": "s_c wanders up to the fox, swagger in {PRONOUN/s_c/poss} step as {PRONOUN/s_c/subject} {VERB/s_c/take/takes} the opportunity to be the bigger predator for once in {PRONOUN/s_c/poss} life. The fox takes one look at the patrol backing s_c up and decides it's time to be elsewhere as fast as its legs can take it, leaving the single skinny mouse it stole behind.",
+                "text": "s_c wanders up to the fox, swagger in {PRONOUN/s_c/poss} step as {PRONOUN/s_c/subject} {VERB/s_c/take/takes} the opportunity to be the bigger predator. The fox takes one look at the patrol backing s_c up and decides it's time to be elsewhere as fast as its legs can take it, leaving the single skinny mouse it stole behind.",
                 "exp": 10,
                 "weight": 20,
                 "stat_trait": [
@@ -2207,12 +2207,12 @@
             "normal adult": [1, 6]
         },
         "weight": 20,
-        "intro_text": "As r_c jumps up onto a rock to survey the plains, {PRONOUN/r_c/subject} {VERB/r_c/spot/spots} the blood red pelt of a truly massive red fox.",
+        "intro_text": "As r_c jumps up onto a rock to survey the plains, {PRONOUN/r_c/subject} {VERB/r_c/spot/spots} the brown pelt of a truly massive grizzly.",
         "decline_text": "Not today, thank you - they'll go back to camp.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "Swallowing {PRONOUN/r_c/poss} instinctive terror, r_c instead crouches to the rock and takes the time to assess the situation. Massive body, huge ruff of fur, legs towering daintily above the grass - this is too big to be a red fox, but ironically is less dangerous then it's smaller fox counterpart.",
+                "text": "Swallowing {PRONOUN/r_c/poss} instinctive terror, r_c instead crouches to the rock and takes the time to assess the situation. Massive body, huge ruff of fur, legs towering daintily above the grass - this is too big to be a bear, but ironically is less dangerous then it's smaller ursid counterpart.",
                 "exp": 20,
                 "weight": 20
             },
