@@ -29,7 +29,7 @@
                 ]
             },
             {
-                "text": "s_c sets up an ambush for the wandering cougar, bloodying its snout and leading it on a wild chasing dance across the border and out of c_n territory.",
+                "text": "s_c sets up an ambush for the wandering cougar, bloodying it's pelt and leading it on a wild chasing dance across the border and out of c_n territory.",
                 "exp": 40,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,3"],
@@ -324,10 +324,10 @@
                 ]
             },
             {
-                "text": "s_c has just enough time to yell out a plan, leading the whole large patrol in a skillful battle plan against the cougar that protects the wolves from the chance of injury. The cougar turns, and runs for more friendly lands.",
+                "text": "s_c has just enough time to yell out a plan, leading the whole large patrol in a skillful battle plan against the cougar that protects the wolves from the chance of injury. The cougar, now dead, will no longer be a threat. The wolves howl in triumpt.",
                 "exp": 20,
                 "weight": 20,
-                "stat_skill": ["FIGHTER,3"],
+                "stat_skill": ["FIGHTER,3","FIGHTER,2"],
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
@@ -479,7 +479,7 @@
                 "text": "s_c unleashes all {PRONOUN/r_c/poss} battle experience, darting this way and that, ripping chunks of dog fur out as {PRONOUN/r_c/subject} {VERB/r_c/drive/drives} it into the distance.",
                 "exp": 10,
                 "weight": 20,
-                "stat_skill": ["FIGHTER,1"]
+                "stat_skill": ["FIGHTER,1,FIGHTER,2,FIGHTER,3"]
             }
         ],
         "fail_outcomes": [
@@ -500,7 +500,7 @@
                 }
             },
             {
-                "text": "Small, yappy, but... still a dog. r_c peers down from the tree where the animal has pinned {PRONOUN/r_c/object}, wincing in pain. {PRONOUN/r_c/subject/CAP} won't underestimate these ugly creatures again.",
+                "text": "Small, yappy, but... still a dog. r_c peers down from the tree where the animal has nipped {PRONOUN/r_c/object}, wincing in pain. {PRONOUN/r_c/subject/CAP} won't underestimate these ugly creatures again.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -579,7 +579,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "All r_c's attempts to drive the small dog off only send it into greater and greater fits of excitement, until the only thing to do is wait exasperatedly in a safe spot until the beast calms down.",
+                "text": "All r_c's attempts to drive the small dog off only send it into greater and greater fits of excitement, until the only thing to do is wait exasperatedly until the beast calms down.",
                 "exp": 0,
                 "weight": 20
             },
@@ -616,7 +616,7 @@
         "chance_of_success": 10,
         "success_outcomes": [
             {
-                "text": "The patrol paces towards the small dog, fangs bared, fur up, backed up with the courage of their Packmates. The dog breaks into a barking fit, but that's their opportunity to attack, covering each other as they push the creature away from their lands.",
+                "text": "The patrol paces towards the small dog, fangs bared, fur up, backed up with the courage of their Packmates. The dog breaks into a barking fit, but that's their opportunity to attack, pushing the small creature away from their lands.",
                 "exp": 10,
                 "weight": 20,
                 "relationships": [
@@ -661,7 +661,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "All r_c's attempts to drive the small dog off only send it into greater and greater fits of excitement, until the only thing to do is wait exasperatedly in a safe spot until the beast calms down.",
+                "text": "All r_c's attempts to drive the small dog off only send it into greater and greater fits of excitement, until the only thing to do is wait exasperatedly until the beast calms down.",
                 "exp": 0,
                 "weight": 20
             },
