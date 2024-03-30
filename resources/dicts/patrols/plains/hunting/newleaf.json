@@ -10,7 +10,7 @@
         "max_cats": 3,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your patrol catches the scent of a grizzly bear. Tracking it, they find the animal feeding on a pronghorn fawn carcass.",
+        "intro_text": "Your patrol catches the scent of a grizzly bear. Tracking it, they find the animal feeding on a elk carcass.",
         "decline_text": "Your patrol decides not to quarrel with the bear and to find prey elsewhere.",
         "chance_of_success": 40,
         "success_outcomes": [
@@ -147,7 +147,7 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your patrol catches the scent of a grizzly bear. Tracking it, they find the animal feeding on a pronghorn fawn carcass.",
+        "intro_text": "Your patrol catches the scent of a grizzly bear. Tracking it, they find the animal feeding on a elk carcass.",
         "decline_text": "Your patrol decides not to quarrel with the bear and to find prey elsewhere.",
         "chance_of_success": 20,
         "success_outcomes": [
@@ -284,7 +284,7 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "r_c catches the scent of a grizzly bear. Tracking it, {PRONOUN/r_c/subject} {VERB/r_c/find/finds} the animal feeding on a pronghorn fawn carcass. The bear looks rather large, despite having just left hiberation.",
+        "intro_text": "r_c catches the scent of a grizzly bear. Tracking it, {PRONOUN/r_c/subject} {VERB/r_c/find/finds} the animal feeding on a elk carcass. The bear looks rather large, despite having just left hiberation.",
         "decline_text": "r_c decides not to quarrel with the bear and to find prey elsewhere.",
         "chance_of_success": 30,
         "success_outcomes": [
@@ -304,7 +304,7 @@
                 ]
             },
             {
-                "text": "s_c uses every trick in their talented fighting skillset to attack the bear with no one to watch their flank, until the perfect opportunity opens up. They pounce onto the bear's back, digging in their claws and teeth. It's a wild ride through the plains until the bear bucks them off, but it wins them the fawn carcass.",
+                "text": "s_c uses every trick in their talented fighting skillset to attack the bear with no one to watch their flank, until the perfect opportunity opens up. They pounce onto the bear's back, digging in their claws and teeth. It's a wild ride through the plains until the bear bucks them off, but it wins them the elk carcass.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,2"],
@@ -320,7 +320,7 @@
                 ]
             },
             {
-                "text": "In an act of daring bravery, s_c darts low to the ground, gets under the jaws, and sinks {PRONOUN/s_c/poss} teeth into the bear's throat. But then {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} stuck, unwilling to let go and risk being bitten or maimed. {PRONOUN/s_c/subject/CAP}{VERB/s_c/'re/'s} dragged through the plains, over rocks and through bushes, until the bear finally collapses and the battered s_c goes back to proudly claim the fawn.",
+                "text": "In an act of daring bravery, s_c darts low to the ground, gets under the jaws, and sinks {PRONOUN/s_c/poss} teeth into the bear's throat. But then {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} stuck, unwilling to let go and risk being bitten or maimed. {PRONOUN/s_c/subject/CAP}{VERB/s_c/'re/'s} dragged through the plains, over rocks and through bushes, until the bear finally collapses and the battered s_c goes back to proudly claim the elk.",
                 "exp": 30,
                 "weight": 20,
                 "stat_trait": [
@@ -362,7 +362,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "Fiercely, r_c throws {PRONOUN/r_c/self} at the bear, determined to win the fawn prize. But the bear values it just as dearly, and manages to get a good grip on r_c, shaking {PRONOUN/r_c/object} to pieces and killing {PRONOUN/r_c/object}.",
+                "text": "Fiercely, r_c throws {PRONOUN/r_c/self} at the bear, determined to win the elk prize. But the bear values it just as dearly, and manages to get a good grip on r_c, shaking {PRONOUN/r_c/object} to pieces and killing {PRONOUN/r_c/object}.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
@@ -383,7 +383,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "r_c launches into battle, but is bitten and hit, and retreats to limp back home. The bear doesn't follow, happy enough to eat the fawn instead of the foolish wolf.",
+                "text": "r_c launches into battle, but is bitten and hit, and retreats to limp back home. The bear doesn't follow, happy enough to eat the elk instead of the foolish wolf.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -1337,33 +1337,33 @@
             "all apprentices": [-1, -1]
         },
         "weight": 20,
-        "intro_text": "p_l walks low to the ground, paws soft and light so as not to make a sound. Their jaws hang open to taste at the air, and a tingle of satisfaction shoots through them as they scent a rabbit.",
-        "decline_text": "Though they're pleased to know the rabbits are repopulating, they don't pursue this one. It smells weak; better to let it recover and get larger before bringing it home.",
+        "intro_text": "p_l walks low to the ground, paws soft and light so as not to make a sound. Their jaws hang open to taste at the air, and a tingle of satisfaction shoots through them as they scent a deer.",
+        "decline_text": "Though they're pleased to know the deers are repopulating, they don't pursue this one. It smells weak; better to let it recover and get larger before bringing it home.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "The wind shifts, but before the rabbit can react p_l acts fast and leaps, stopping it from fleeing with a quick nip to the back of the neck.",
+                "text": "The wind shifts, but before the deer can react p_l acts fast and leaps, stopping it from fleeing with a snap to the jugular.",
                 "exp": 10,
                 "weight": 20,
-                "prey": ["medium"]
+                "prey": ["large"]
             },
             {
-                "text": "The rabbit, thankfully still bleary-eyed from sleep, doesn't notice p_l stalking up to them.. that is, until they've already struck and have it between their jaws. It's a little late to do anything about it at that point, though.",
+                "text": "The deer, thankfully still bleary-eyed from sleep, doesn't notice p_l stalking up to them.. that is, until they've already struck and have it between their jaws. It's a little late to do anything about it at that point, though.",
                 "exp": 10,
                 "weight": 5,
-                "prey": ["medium"]
+                "prey": ["large"]
             },
             {
-                "text": "The rabbit blissfully snuffles around in the grass, completely unaware of the looming danger it's in. s_c stalks, as quiet as the wind, and doesn't even need to strike; they just walk right up behind it and take the kill.",
+                "text": "The deer blissfully grazes the grass, completely unaware of the looming danger it's in. s_c stalks, as quiet as the wind, and doesn't even need to strike; they just walk right up behind it and take the kill.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1"],
-                "prey": ["medium"]
+                "prey": ["large"]
             }
         ],
         "fail_outcomes": [
             {
-                "text": "The wind shifts, and the rabbit stiffens, scrambles away, and vanishes back into its burrow. Oh well.",
+                "text": "The wind shifts, and the deer stiffens, scrambles away, and vanishes back into the brush. Oh well.",
                 "exp": 0,
                 "weight": 20,
                 "prey": ["very_small"]
@@ -1660,33 +1660,33 @@
             "all apprentices": [-1, -1]
         },
         "weight": 20,
-        "intro_text": "r_c catches scent of a rabbit nearby. With the snow of leaf-bare melting away into sad puddles of leftover dirty white, escape tunnels set up in leaf-bare will have collpased. r_c can take advantage of that.",
-        "decline_text": "Your patrol ignores the rabbit.",
+        "intro_text": "r_c catches scent of a pronghorn nearby. With the snow of leaf-bare melting away into sad puddles of leftover dirty white, escape tunnels set up in leaf-bare will have collpased. r_c can take advantage of that.",
+        "decline_text": "Your patrol ignores the pronghorn.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "r_c locates the rabbit and begins to stalk. The rabbit nibbles on a blade of grass, unaware of the hunting wolf. r_c tenses, then leaps, snapping the rabbit's neck.",
+                "text": "r_c locates the pronghorn and begins to stalk. The pronghorn grazes, unaware of the hunting wolf. r_c tenses, then leaps, snapping the pronghorn's neck.",
                 "exp": 10,
                 "weight": 20,
-                "prey": ["medium"]
+                "prey": ["large"]
             },
             {
-                "text": "r_c pinpoints the location of the prey and begins creeping forward. They're almost within pouncing distance when the rabbit suddenly bolts. With a quick turn, r_c leaps after the rabbit, barely snagging it before it reaches a burrow. They wagg their tail as prey-blood hits their tongue.",
+                "text": "r_c pinpoints the location of the prey and begins creeping forward. They're almost within pouncing distance when the pronghorn suddenly bolts. With a quick turn, r_c leaps after the pronghorn, barely snagging it before it reaches a burrow. They wagg their tail as prey-blood hits their tongue.",
                 "exp": 10,
                 "weight": 5,
-                "prey": ["medium"]
+                "prey": ["large"]
             },
             {
-                "text": "s_c immediately drops into a practised stalk, moving without sound along the ground and taking the perfectly plump rabbit completely by surprise.",
+                "text": "s_c immediately drops into a practised stalk, moving without sound along the ground and taking the perfectly plump pronghorn completely by surprise.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1"],
-                "prey": ["medium"]
+                "prey": ["large"]
             }
         ],
         "fail_outcomes": [
             {
-                "text": "r_c narrowly misses the rabbit.",
+                "text": "r_c narrowly misses the pronghorn.",
                 "exp": 0,
                 "weight": 20,
                 "prey": ["very_small"]
@@ -1818,10 +1818,10 @@
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "While p_l was right - app1 definitely cares more about how they look to app2 than hunting - it turns out fine. The patrol picks up a good haul of rabbits that were out foraging in the newleaf grass, and p_l indulgently makes sure to tell app1 their reaction speed was very good in front of app2.",
+                "text": "While p_l was right - app1 definitely cares more about how they look to app2 than hunting - it turns out fine. The patrol picks up a good haul of a bison that was out foraging in the newleaf grass, and p_l indulgently makes sure to tell app1 their reaction speed was very good in front of app2.",
                 "exp": 20,
                 "weight": 20,
-                "prey": ["medium"],
+                "prey": ["large"],
                 "relationships": [
                     {
                         "cats_to": ["app1"],
@@ -1907,10 +1907,10 @@
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "As they arrive, the patrol startles two rabbits, and r_c manages to react quick enough to kill one with an inelegant strike. It's a good omen for the rest of the morning's work, which proves to be a productive and satisfying hunt.",
+                "text": "As they arrive, the patrol startles a sheep, and r_c manages to react quick enough to kill it with an inelegant strike. It's a good omen for the rest of the morning's work, which proves to be a productive and satisfying hunt.",
                 "exp": 20,
                 "weight": 20,
-                "prey": ["medium"],
+                "prey": ["large"],
                 "relationships": [
                     {
                         "cats_to": ["r_c"],
@@ -1922,7 +1922,7 @@
                 ]
             },
             {
-                "text": "Your wolves sneak into the hunting grounds, ears rotating as different spots catch their interest. r_c's suggestion proves to be a fruitful hunting ground, one that c_n hasn't used for a while and whose creatures (as predicted, nearly all rabbits) have lost their edge of wariness. It's a good hunt.",
+                "text": "Your wolves sneak into the hunting grounds, ears rotating as different spots catch their interest. r_c's suggestion proves to be a fruitful hunting ground, one that c_n hasn't used for a while and whose creatures have lost their edge of wariness. It's a good hunt.",
                 "exp": 20,
                 "weight": 5,
                 "prey": ["large"],
