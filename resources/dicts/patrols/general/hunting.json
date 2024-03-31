@@ -130,7 +130,7 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your patrol comes across a large elk.",
+        "intro_text": "Your patrol comes across an elk.",
         "decline_text": "Your patrol ignores the elk.",
         "chance_of_success": 20,
         "success_outcomes": [
@@ -138,7 +138,7 @@
                 "text": "Your patrol pins the elk,!",
                 "exp": 10,
                 "weight": 20,
-                "prey": ["large"]
+                "prey": ["huge"]
             },
             {
                 "text": "s_c runs the elk down in a huge display of athleticism and skill.",
