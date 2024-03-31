@@ -719,10 +719,10 @@
         "chance_of_success": 20,
         "success_outcomes": [
             {
-                "text": "r_c drops down into the grass, certain that a rabbit must be the source of the noise. {PRONOUN/r_c/subject/CAP} {VERB/r_c/find/finds} {PRONOUN/r_c/self} to be correct when {PRONOUN/r_c/subject} {VERB/r_c/pounce/pounces} into the grass and return to the patrol with the tasty morsel dangling from {PRONOUN/r_c/poss} mouth.",
+                "text": "r_c drops down into the grass, certain that a deer must be the source of the noise. {PRONOUN/r_c/subject/CAP} {VERB/r_c/find/finds} {PRONOUN/r_c/self} to be correct when {PRONOUN/r_c/subject} {VERB/r_c/pounce/pounces} into the grass and return to the patrol with the tasty prey's throat in {PRONOUN/r_c/poss} mouth.",
                 "exp": 10,
                 "weight": 20,
-                "prey": ["medium"]
+                "prey": ["large"]
             },
             {
                 "text": "p_l pads towards the grass to check on the noise when a deer suddenly bursts out! s_c is quick to react and manages to snag the deer before it can disappear.",
@@ -784,11 +784,11 @@
                 "prey": ["medium"]
             },
             {
-                "text": "p_l pads towards the grass to check on the noise when a rabbit suddenly bursts out! s_c is quick to react and manages to snag the rabbit before it can disappear.",
+                "text": "p_l pads towards the grass to check on the noise when a deer suddenly bursts out! s_c is quick to react and manages to snag the deer before it can flee.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1"],
-                "prey": ["medium"]
+                "prey": ["large"]
             }
         ],
         "fail_outcomes": [
@@ -798,7 +798,7 @@
                 "weight": 20
             },
             {
-                "text": "s_c doesn't even hesitate before splitting from the patrol to check on the source of the noise. {PRONOUN/s_c/subject/CAP} quickly regret {PRONOUN/s_c/poss} impulsivity, however, when an angry weasel bursts out of the grass, chattering loudly! s_c gets quite the scare, but thankfully the weasel only wanted to get away from {PRONOUN/s_c/object} and quickly runs off back into the grass.",
+                "text": "s_c doesn't even hesitate before splitting from the patrol to check on the source of the noise. {PRONOUN/s_c/subject/CAP} quickly regret {PRONOUN/s_c/poss} impulsivity, however, when an angry wolverine bursts out of the grass, chattering loudly! s_c gets quite the scare, but thankfully the weasel only wanted to get away from {PRONOUN/s_c/object} and quickly runs off back into the grass.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": ["daring", "bold", "ambitious"],
@@ -1813,7 +1813,7 @@
                 "prey": ["medium"]
             },
             {
-                "text": "Your patrol stops on the edge of the Thunderpath, and s_c organizes a thorough search that finds a flattened badger. It's a reminder of the danger of the Thunderpath, and a good source of scavenged meat.",
+                "text": "Your patrol stops on the edge of the Thunderpath, and s_c organizes a thorough search that finds a flattened deer. It's a reminder of the danger of the Thunderpath, and a good source of scavenged meat.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1"],
@@ -1986,7 +1986,7 @@
                 "prey": ["large"]
             },
             {
-                "text": "Your patrol stops on the edge of the Thunderpath, and s_c organizes a thorough search that finds a flattened badger. It's a reminder of the danger of the Thunderpath, and a good source of scavenged meat.",
+                "text": "Your patrol stops on the edge of the Thunderpath, and s_c organizes a thorough search that finds a flattened deer. It's a reminder of the danger of the Thunderpath, and a good source of scavenged meat.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1"],
@@ -2178,7 +2178,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "With a massive snarl, r_c charges the fox. It bares its teeth, unwilling to give up its hard won prey without a fight, and one wrong step puts r_c's pelt in range of those little jaws, as the small fox tries to live up to the reputation of its bigger and stronger relatives.",
+                "text": "With a massive snarl, r_c charges the fox. It bares its teeth, unwilling to give up its hard won prey without a fight, and one wrong step puts r_c's pelt in range of those little jaws, as the small fox tries to defend itself.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -2207,12 +2207,12 @@
             "normal adult": [1, 6]
         },
         "weight": 20,
-        "intro_text": "As r_c jumps up onto a rock to survey the plains, {PRONOUN/r_c/subject} {VERB/r_c/spot/spots} the brown pelt of a truly massive grizzly.",
+        "intro_text": "As r_c jumps up onto a rock to survey the plains, {PRONOUN/r_c/subject} {VERB/r_c/spot/spots} the brown pelt of a truly massive fox.",
         "decline_text": "Not today, thank you - they'll go back to camp.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "Swallowing {PRONOUN/r_c/poss} instinctive terror, r_c instead crouches to the rock and takes the time to assess the situation. Massive body, huge ruff of fur, legs towering daintily above the grass - this is too big to be a bear, but ironically is less dangerous then it's smaller ursid counterpart.",
+                "text": "Swallowing {PRONOUN/r_c/poss} instinctive terror, r_c instead crouches to the rock and takes the time to assess the situation. Massive body, huge ruff of fur, legs towering daintily above the grass - this is too big to be a rox, but ironically is less dangerous then it's smaller canid counterpart.",
                 "exp": 20,
                 "weight": 20
             },
@@ -2222,7 +2222,7 @@
                 "weight": 5
             },
             {
-                "text": "With a huff, r_c accepts that this hunt has failed - the massive maned wolf, despite every appearance, hunts nearly identical prey to c_n. Still, {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} not one to give up on an opportunity to learn, and sit and watch the wolf pounce for mice in case there might be tips to pick up.",
+                "text": "With a huff, r_c accepts that this hunt has failed - the massive fox, despite every appearance, hunts nearly identical prey to c_n. Still, {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} not one to give up on an opportunity to learn, and sit and watch the wolf pounce for mice in case there might be tips to pick up.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["CLEVER,1", "TEACHER,1"]
@@ -2230,7 +2230,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "{PRONOUN/r_c/poss/CAP} jolt of fear gives them strength, and r_c is most of the way home before it occurs to {PRONOUN/r_c/object} that the huge maned creature might have been too big to be a red fox.",
+                "text": "{PRONOUN/r_c/poss/CAP} jolt of fear gives them strength, and r_c is most of the way home before it occurs to {PRONOUN/r_c/object} that the huge grizzled creature might have been too big to be abear.",
                 "exp": 0,
                 "weight": 20
             },
