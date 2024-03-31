@@ -268,7 +268,7 @@
         "max_cats": 3,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your patrol catches the scent of a grizzly bear. Tracking it, they find the animal feeding on a pronghorn fawn carcass. It is odd to see a bear outside during hiberation.",
+        "intro_text": "Your patrol catches the scent of a grizzly bear. Tracking it, they find the animal feeding on a caribou carcass. It is odd to see a bear outside during hiberation.",
         "decline_text": "Your patrol decides not to quarrel with the bear and to find prey elsewhere.",
         "chance_of_success": 40,
         "success_outcomes": [
@@ -405,7 +405,7 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Your patrol catches the scent of a grizzly bear. Tracking it, they find the animal feeding on a pronghorn fawn carcass. It is odd to see a bear outside during hiberation.",
+        "intro_text": "Your patrol catches the scent of a grizzly bear. Tracking it, they find the animal feeding on a caribou carcass. It is odd to see a bear outside during hiberation.",
         "decline_text": "Your patrol decides not to quarrel with the bear and to find prey elsewhere.",
         "chance_of_success": 20,
         "success_outcomes": [
@@ -542,7 +542,7 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "r_c catches the scent of a grizzly bear. Tracking it, {PRONOUN/r_c/subject} {VERB/r_c/find/finds} the animal feeding on a pronghorn fawn carcass. It is odd to see a bear outside during hiberation.",
+        "intro_text": "r_c catches the scent of a grizzly bear. Tracking it, {PRONOUN/r_c/subject} {VERB/r_c/find/finds} the animal feeding on a caribou carcass. It is odd to see a bear outside during hiberation.",
         "decline_text": "r_c decides not to quarrel with the bear and to find prey elsewhere.",
         "chance_of_success": 30,
         "success_outcomes": [
@@ -562,7 +562,7 @@
                 ]
             },
             {
-                "text": "s_c uses every trick in their talented fighting skillset to attack the bear with no one to watch their flank, until the perfect opportunity opens up. They pounce onto the bear's back, digging in their claws and teeth. It's a wild ride through the plains until the bear bucks them off, but it wins them the fawn carcass.",
+                "text": "s_c uses every trick in their talented fighting skillset to attack the bear with no one to watch their flank, until the perfect opportunity opens up. They pounce onto the bear's back, digging in their claws and teeth. It's a wild ride through the plains until the bear bucks them off, but it wins them the caribou carcass.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,2"],
@@ -578,7 +578,7 @@
                 ]
             },
             {
-                "text": "In an act of daring bravery, s_c darts low to the ground, gets under the jaws, and sinks {PRONOUN/s_c/poss} teeth into the bear's throat. But then {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} stuck, unwilling to let go and risk being bitten or maimed. {PRONOUN/s_c/subject/CAP}{VERB/s_c/'re/'s} dragged through the plains, over rocks and through bushes, until the bear finally collapses and the battered s_c goes back to proudly claim the fawn.",
+                "text": "In an act of daring bravery, s_c darts low to the ground, gets under the jaws, and sinks {PRONOUN/s_c/poss} teeth into the bear's throat. But then {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} stuck, unwilling to let go and risk being bitten or maimed. {PRONOUN/s_c/subject/CAP}{VERB/s_c/'re/'s} dragged through the plains, over rocks and through bushes, until the bear finally collapses and the battered s_c goes back to proudly claim the caribou.",
                 "exp": 30,
                 "weight": 20,
                 "stat_trait": [
@@ -620,7 +620,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "Fiercely, r_c throws {PRONOUN/r_c/self} at the bear, determined to win the fawn prize. But the bear values it just as dearly, and manages to get a good grip on r_c, shaking {PRONOUN/r_c/object} to pieces and killing {PRONOUN/r_c/object}.",
+                "text": "Fiercely, r_c throws {PRONOUN/r_c/self} at the bear, determined to win the caribou prize. But the bear values it just as dearly, and manages to get a good grip on r_c, shaking {PRONOUN/r_c/object} to pieces and killing {PRONOUN/r_c/object}.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
@@ -641,7 +641,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "r_c launches into battle, but is bitten and hit, and retreats to limp back home. The bear doesn't follow, happy enough to eat the fawn instead of the foolish wolf.",
+                "text": "r_c launches into battle, but is bitten and hit, and retreats to limp back home. The bear doesn't follow, happy enough to eat the caribou instead of the foolish wolf.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
