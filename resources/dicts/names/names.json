@@ -126,17 +126,17 @@
 	"Fig", "Hazel", "Log", "Mouse", "Mud", "Murk", "Oak", "Otter", "Owl", "Pepper", "Plum", "Rat", 
 	"Red", "Robin", "Root", "Rose", "Russet", "Scarlet", "Scorch", "Stag", "Stoat", "Thrush", "Tree", 
 	"Twig", "Twilight", "Warm", "Auburn", "Berry", "Chanterelle", "Hawthorn", "Hickory", "Mistle", "Morel", 
-	"Rowan", "Saffron", "Spindle", "Thrasher", "Velvet", "Warbler", "Spice"
+	"Rowan", "Saffron", "Spindle", "Thrasher", "Velvet", "Warbler", "Spice", "Maple"
     ],
     "GINGER": [
     "Blaze", "Burn", "Copper", "Ember", "Fire", "Flame", "Flare", "Fox", "Ginger", "Marigold", "Orange", 
 	"Pepper", "Pumpkin", "Robin", "Russet", "Rust", "Scarlet", "Scorch", "Warm", "Ochre", "Rowan", "Saffron", 
-	"Snapdragon", "Tawny", "Thrasher"
+	"Snapdragon", "Tawny", "Thrasher", "Maple"
     ],
     "COPPER": [
     "Amber", "Blaze", "Burn", "Copper", "Ember", "Fire", "Flame", "Flare", "Fox", "Ginger", "Glint", 
 	"Honey", "Marigold", "Orange", "Pepper", "Pumpkin", "Robin", "Rust", "Scarlet", "Scorch", "Warm", "Ochre", 
-	"Rowan", "Saffron", "Snapdragon", "Tawny"
+	"Rowan", "Saffron", "Snapdragon", "Tawny", "Maple"
     ],
     "HONEY": [
     "Amber", "Bright", "Buttercup", "Canary", "Day", "Deer", "Doe", "Fawn", "Gold", "Golden", "Honey", 
@@ -203,13 +203,13 @@
     "Bat", "Black", "Brown", "Burnt", "Char", "Charred", "Coal", "Crow", "Ebony", "Evening", "Hazel", 
 	"Ink", "Inky", "Midnight", "Mouse", "Murk", "Night", "Pepper", "Plum", "Puma", "Rat", "Raven", 
 	"Shade", "Shaded", "Shadow", "Storm", "Twilight", "Umber", "Berry", "Holly", "Ibis", "Magpie", "Mistle", 
-	"Mulberry", "Pitch", "Velvet"
+	"Mulberry", "Pitch", "Velvet", "Holly", "Yew"
     ],
     "ONYX": [
     "Ash", "Ashen", "Bat", "Black", "Blue", "Char", "Charred", "Coal", "Crow", "Dark", "Ebony", "Ink", 
 	"Inky", "Midnight", "Night", "Pepper", "Plum", "Puma", "Raven", "Shade", "Shaded", "Shadow", "Storm", 
 	"Twilight", "Umber", "Violet", "Grackle", "Holly", "Ibis", "Magpie", "Mistle", "Mulberry", "Pitch", 
-	"Velvet", "Onyx"
+	"Velvet", "Onyx", "Mamba", "Holly", "Tempest"
     ],
     "CHOCOLATE": [
     "Bark", "Branch", "Bright", "Brown", "Burn", "Burnt", "Cinnamon", "Cream", "Dark", "Deer", "Doe", 
@@ -253,10 +253,10 @@
     "Ash", "Ashen", "Bat", "Black", "Blue", "Char", "Charred", "Coal", "Crow", "Dark", "Ebony", "Ink", 
 	"Inky", "Midnight", "Moon", "Night", "Pepper", "Plum", "Puma", "Raven", "Shade", "Shaded", "Shadow", "Storm", 
 	"Twilight", "Umber", "Violet", "Grackle", "Holly", "Ibis", "Magpie", "Mistle", "Mulberry", "Pitch", 
-	"Velvet"
+	"Velvet", "Holly", "Tempest", "Starling"
     ],
     "SNOW": [
-    "Snow", "Cotton", "Bone", "Air", "Breeze", "Cloud", "Cloudy", "Egg", "Flurry", "Hail", "Blizzard", "Light", "Pale", "Plume", "Sky", "White", "Polar", "Winter", "Wisp", "Ermine", "Ibis", "Lily", "Veil", "Bleak", "Ice", "Frost", "Frozen", "Icicle", "Icy", "Freeze", "Pearl", "Dove", "Snowy", "Wind", "Tundra", "Salt", "Crane", "Pelican", "Gust", "Shell", "Silk", "Web"
+    "Snow", "Cotton", "Bone", "Air", "Breeze", "Cloud", "Cloudy", "Egg", "Flurry", "Hail", "Blizzard", "Light", "Pale", "Plume", "Sky", "White", "Polar", "Winter", "Wisp", "Ermine", "Ibis", "Lily", "Veil", "Bleak", "Ice", "Frost", "Frozen", "Icicle", "Icy", "Freeze", "Pearl", "Dove", "Snowy", "Wind", "Tundra", "Salt", "Crane", "Pelican", "Gust", "Shell", "Silk", "Web", "Sheep", "Swan"
     ],
     "FROST": [
     "Flurry", "Sky", "Hail", "White", "Ibis", "Orchid", "Lily", "Blue", "Bright", "Day", "Freeze", "Frost", "Frozen", "Heather", "Tundra", "Taiga", "Moon", "Lilac", "Rain", "River", "Berry", "Azalea", "Crocus", "Sea", "Ocean", "Fish", "Fin", "Dolphin", "Shark", "Alpine", "Echo", "Frigid", "Lake", "Splash", "Aster", "Jay", "Breeze", "Bubble", "Drizzle", "Pool", "Stream"
@@ -265,25 +265,25 @@
     "Ash", "Ashen", "Blue", "Char", "Charred", "Cinder", "Dark", "Dust", "Dusty", "Evening", "Faded", "Fog", "Gray",  "Pebble", "Rain", "Rat", "Rock", "Smoke", "Smokey", "Smoky", "Stone", "Granite", "Steel", "Echo", "Haze", "Hazy", "Juniper", "Echo", "Goose", "Gosling"
     ],
     "HAZELNUT": [
-    "Hazel", "Fawn"
+    "Hazel", "Fawn", "Owl", "Robin", "Fire", "Flame", "Ember", "Warm", "Sand", "Dune". "Root", "Hickory", "Leaf", "Maple", "Rowan", "Reed", "Chanterelle", "Tawny", "Ginger", "Fox", "Vixen", "Copper", "Flare", "Marigold", "Orange", "Blaze", "Pepper", "Pumpkin", "Robin", "Rust", "Ochre", "Snapdragon", "Acorn", "Cedar", "Sap", "Squirrel", "Horse", "Marsh", "Canyon", "Desert", "Fallow", "Willow", "Almond"
     ],
     "THISTLE": [
-    "Black", "Thistle"
+    "Black", "Thistle", "Ink", "Inky", "Midnight", "Rat", "Murk", "Night", "Pepper", "Rat", "Shade", "Shaded", "Shadow", "Umber", "Berry", "Mulberry", "Pitch", "Spider", "Dark", "Fig", "Mouse", "Badger", "Boar", "Grouse", "Mushroom", "Tarantula", "Thicket", "Civet", "Bog", "Mire", "Bramble", "Snake", "Bass", "Ant", "Badger", "Beetle", "Hemlock", "Howl", "Ferret", "Locust", "Moth", "Python", "Wolverine", "Yew", "Bat"
     ],
     "DAISY": [
-    "Daisy", "Snow"
+    "Daisy", "Snow", "Air", "Mist", "Misty", "Sky", "Snow", "Ermine", "Pearl", "Salt", "Shell", "Beach", "Shimmer", "Antler", "Birch", "Flurry", "White", "Breeze", "Wind", "Wing", "Dove", "Gust", "Clear", "Crane", "Lily", "Petunia", "Pale", "Snowdrop", "Scabiosa", "Wisteria", "Tulip", "Hibiscus", "Jasmine", "Camellia", "Anemone", "Amaryllis", "Peony", "Swan"
     ],
     "VOID": [
-    "Void", "Space"
+    "Void", "Space", "Mamba", "Holly", "Obsidian", "Bat", "Crow", "Raven", "Black", "Char", "Charred", "Coal", "Dark", "Ebony", "Ink", "Inky", "Midnight", "Night", "Puma", "Shade", "Shaded", "Shadow", "Pitch", "Silent", "Spider", "Starling", "Yew"
     ],
     "REDWOOD": [
-    "Redwood", "Red"
+    "Redwood", "Red", "Russet", "Spice", "Dark", "Evening", "Fig", "Mud", "Murk", "Owl", "Pepper", "Rat", "Red", "Scarlet", "Scorch", "Auburn", "Chocolate", "Saffron", "Brown", "Acorn", "Moose", "Sparrow", "Reed", "Beaver", "Bison", "Buffalo", "Chestnut", "Walnut", "Poppy", "Maple"
     ],
     "PYRITE": [
-    "Pyrite", "Sterling"
+    "Pyrite", "Sterling", "Silver", "Gray", "Ember", "Flame", "Flash", "Blaze", "Flame", "Flicker", "Flint", "Glint", "Metal", "Quarry", "Stone", "Bluff", "Cliff", "Cave", "Cavern", "Fish", "Flight", "Luck", "Shine", "Morning", "Quail", "Rook"
     ],
     "PEACHY": [
-    "Peach", "Orange"
+    "Peach", "Orange", "Apricot", "Fire", "Flame", "Blaze", "Chanterelle", "Marigold", "Tansy", "Ginger", "Copper", "Saffron", "Fox", "Pumpkin", "Orange", "Flare", "Amber", "Papaya", "Mango", "Lantana", "Snapdragon", "Maple", "Leaf", "Sun"
     ]
   },
 
