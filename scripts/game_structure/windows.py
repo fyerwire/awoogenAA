@@ -33,7 +33,7 @@ from scripts.themescript import themegrabber
 
 class SaveCheck(UIWindow):
     def __init__(self, last_screen, isMainMenu, mm_btn):
-        resourcepath = themegrabber()
+        resourcepath = themegrabber(game.settings)
         game.switches['window_open'] = True
         if game.is_close_menu_open:
             return
@@ -1263,7 +1263,7 @@ class EventLoading(UIWindow):
 
     @staticmethod
     def load_images():
-        resourcepath = themegrabber()
+        resourcepath = themegrabber(game.settings)
         frames = []
         for i in range(0, 16):
             frames.append(pygame.image.load(
