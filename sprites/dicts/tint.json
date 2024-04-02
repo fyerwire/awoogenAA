@@ -41,7 +41,7 @@
     "basic": ["none", "gray", "yellow"],
     "warm": ["pink", "purple", "orange", "red"],
     "cool": ["blue", "purple", "black", "gray"],
-    "coollight": ["blue", "purple", "gray", "none"]
+    "coollight": ["blue", "purple", "gray", "none"],
     "white": ["yellow", "none"],
     "monochrome": ["blue", "black", "gray"],
     "brown": ["yellow", "pink", "purple", "black"]
