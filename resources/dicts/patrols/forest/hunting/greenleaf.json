@@ -12,33 +12,33 @@
             "all apprentices": [-1, -1]
         },
         "weight": 20,
-        "intro_text": "r_c tastes the air and perks up - there's a rabbit nearby, nibbling the lush plant growth near the base of a tree!",
+        "intro_text": "r_c tastes the air and perks up - there's a deer nearby, nibbling the lush plant growth near the base of a tree!",
         "decline_text": "After a moment's deliberation, r_c decides to move on.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "The wind suddenly shifts, and the rabbit jerks its head up in alarm. r_c thinks fast, bolting to cut off its escape before delivering the killing blow.",
+                "text": "The wind suddenly shifts, and the deer jerks its head up in alarm. r_c thinks fast, bolting to cut off its escape before delivering the killing blow.",
                 "exp": 10,
                 "weight": 20,
-                "prey": ["medium"]
+                "prey": ["large"]
             },
             {
-                "text": "Though it tries to escape, r_c is faster and smarter - {PRONOUN/r_c/subject} {VERB/r_c/slam/slams} a paw down on the squirrel's back before it can go very far, and {VERB/r_c/kill/kills} it with ease.",
+                "text": "Though it tries to escape, r_c is faster and smarter - {PRONOUN/r_c/subject} {VERB/r_c/slam/slams} thier jaws down on the deer's back before it can go very far, and {VERB/r_c/kill/kills} it with ease.",
                 "exp": 10,
                 "weight": 5,
-                "prey": ["medium"]
+                "prey": ["large"]
             },
             {
-                "text": "s_c silently slinks through the underbrush, going undetected until {PRONOUN/s_c/subject}{VERB/r_c/'ve/'s} struck - and by then it's far too late for the rabbit to do anything about it.",
+                "text": "s_c silently slinks through the underbrush, going undetected until {PRONOUN/s_c/subject}{VERB/r_c/'ve/'s} struck - and by then it's far too late for the deer to do anything about it.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1"],
-                "prey": ["medium"]
+                "prey": ["large"]
             }
         ],
         "fail_outcomes": [
             {
-                "text": "r_c breaks a twig as {PRONOUN/r_c/subject} {VERB/r_c/ready/readies} {PRONOUN/r_c/self} to strike, and the resulting crack alerts the rabbit. It doesn't even spare {PRONOUN/r_c/object} a glance as it bolts through the undergrowth and out of sight.",
+                "text": "r_c breaks a twig as {PRONOUN/r_c/subject} {VERB/r_c/ready/readies} {PRONOUN/r_c/self} to strike, and the resulting crack alerts the deer. It doesn't even spare {PRONOUN/r_c/object} a glance as it bolts through the undergrowth and out of sight.",
                 "exp": 0,
                 "weight": 20,
                 "prey": ["very_small"]
@@ -164,12 +164,12 @@
             "deputy": [1, 6]
         },
         "weight": 20,
-        "intro_text": "As the patrol walks through the forest, a loud chittering from above interrupts them. One wolf looks up just in time to get a shower of twigs and leaves to the face, while another exclaims aloud as they spot squirrels darting through the branches above.",
+        "intro_text": "As the patrol walks through the forest, a loud chittering from above interrupts them. One wolf looks up just in time to get a shower of twigs and leaves to the face, while another exclaims aloud as they spot raccoons darting through the branches above.",
         "decline_text": "Though they snort in amusement, the patrol decides to move on to easier prey, rather than waste their energy amongst the trees.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "Before anyone can even speak, there's a loud crack from above. The wolves scatter as a branch crashes down, bringing both squirrels and a shower of oak leaves with it! The patrol thinks fast, and snap up the squirrels before they can escape. They head home with their bounty, each wolf feeling quite pleased with themself.",
+                "text": "Before anyone can even speak, there's a loud crack from above. The wolves scatter as a branch crashes down, bringing both raccoons and a shower of oak leaves with it! The patrol thinks fast, and snap up the squirrels before they can escape. They head home with their bounty, each wolf feeling quite pleased with themself.",
                 "exp": 40,
                 "weight": 20,
                 "herbs": ["oak_leaves"],
@@ -185,7 +185,7 @@
                 ]
             },
             {
-                "text": "A mischievous look in their eye, the deputy challenges their Packmates - whoever catches one of the squirrels gets to skip dawn patrol for a whole moon. They're all eager to shimmy up the trees at that, and before long someone calls out in triumph. Not only do they have a few squirrels, but they have a pawful of oak leaves for the medicine wolf too!",
+                "text": "A mischievous look in their eye, the deputy challenges their Packmates - whoever catches one of the raccoons gets to skip dawn patrol for a whole moon. They're all eager to shimmy up the trees at that, and before long someone calls out in triumph. Not only do they have a few raccoons, but they have a pawful of oak leaves for the medicine wolf too!",
                 "exp": 40,
                 "weight": 5,
                 "herbs": ["oak_leaves"],
@@ -201,7 +201,7 @@
                 ]
             },
             {
-                "text": "With a glint in {PRONOUN/s_c/poss} eye, s_c is up in the trees before anyone can say anything. There's rustling, a short pause, then squirrel carcasses begin falling to the ground, one by one. s_c descends when {PRONOUN/s_c/subject}{VERB/s_c/'ve/'s} finished with a mouthful of oak leaves, curling {PRONOUN/s_c/poss} tail in pride at the looks on {PRONOUN/s_c/poss} Packmates faces.",
+                "text": "With a glint in {PRONOUN/s_c/poss} eye, s_c is up in the trees before anyone can say anything. There's rustling, a short pause, then raccoon carcasses begin falling to the ground, one by one. s_c descends when {PRONOUN/s_c/subject}{VERB/s_c/'ve/'s} finished with a mouthful of oak leaves, curling {PRONOUN/s_c/poss} tail in pride at the looks on {PRONOUN/s_c/poss} Packmates faces.",
                 "exp": 40,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1"],
@@ -220,7 +220,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "Though they try to climb the trees in pursuit, the squirrels are much more suited to running along the branches, and they easily leave the patrol floundering as they disappear into the distance.",
+                "text": "Though they try to climb the trees in pursuit, the raccoons are much more suited to running along the branches, and they easily leave the patrol floundering as they disappear into the distance.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -269,12 +269,12 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "As the patrol walks through the woods, r_c explains an idea {PRONOUN/r_c/subject} had for squirrel hunting. It sounds a little strange, but perhaps it could work?",
+        "intro_text": "As the patrol walks through the woods, r_c explains an idea {PRONOUN/r_c/subject} had for raccoon hunting. It sounds a little strange, but perhaps it could work?",
         "decline_text": "The patrol decides they'd rather not spend time on something that might not work when they could be doing something they know <i>does</i>.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "r_c suggests baiting the squirrels with food and picking them off when they come out to eat. It's pretty tedious, and they end up having to move a few times, but it does work, and the patrol heads home with a decent amount of prey.",
+                "text": "r_c suggests baiting the raccoons with food and picking them off when they come out to eat. It's pretty tedious, and they end up having to move a few times, but it does work, and the patrol heads home with a decent amount of prey.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["medium"],
@@ -289,7 +289,7 @@
                 ]
             },
             {
-                "text": "r_c suggests baiting the squirrels with food and picking them off when they come out to eat. Waiting is the most difficult part; the squirrels don't seem to expect the trap, and they come home laden with prey.",
+                "text": "r_c suggests baiting the raccoons with food and picking them off when they come out to eat. Waiting is the most difficult part; the raccoons don't seem to expect the trap, and they come home laden with prey.",
                 "exp": 20,
                 "weight": 5,
                 "prey": ["large"],
@@ -304,7 +304,7 @@
                 ]
             },
             {
-                "text": "r_c suggests baiting the squirrels with food and picking them off when they come out to eat. All the patrol has to do is set the trap - with s_c on the patrol, they rarely have to lift a paw, and each wolf carries multiple squirrels home.",
+                "text": "r_c suggests baiting the raccoons with food and picking them off when they come out to eat. All the patrol has to do is set the trap - with s_c on the patrol, they rarely have to lift a paw, and each wolf carries multiple raccoons home.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1"],
@@ -322,7 +322,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "r_c suggests finding squirrels sheltered in trees, climbing above them, and shaking the branches to scare them down. Unfortunately for {PRONOUN/r_c/object}, the idea is a little too far out there, and while the wolves do manage a few small catches, the day is mostly wasted with little to show for it.",
+                "text": "r_c suggests finding raccoons sheltered in trees, climbing above them, and shaking the branches to scare them down. Unfortunately for {PRONOUN/r_c/object}, the idea is a little too far out there, and while the wolves do manage a few small catches, the day is mostly wasted with little to show for it.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -435,7 +435,7 @@
         },
         "weight": 20,
         "intro_text": "While on patrol, p_l catches the scent of a feathery fiend and flicks {PRONOUN/p_l/poss} tail to signal 'stop'. This is a perfect opportunity for app1 to practice hunting some harder prey.",
-        "decline_text": "app1 complains that {PRONOUN/app1/subject}{VERB/app1/'re/'s} too tired to hunt something difficult, and wants to look for a rabbit or squirrel instead. p_l sighs, but relents. It's getting late in the day, anyway.",
+        "decline_text": "app1 complains that {PRONOUN/app1/subject}{VERB/app1/'re/'s} too tired to hunt something difficult, and wants to look for a rabbit or raccoon instead. p_l sighs, but relents. It's getting late in the day, anyway.",
         "chance_of_success": 75,
         "success_outcomes": [
             {
