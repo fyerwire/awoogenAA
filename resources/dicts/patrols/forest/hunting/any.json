@@ -172,12 +172,12 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "While hunting, r_c comes across a rabbit burrow.",
-        "decline_text": "r_c decides to ignore the burrow.",
+        "intro_text": "While hunting, r_c comes across a deer, stood frozen at the sight of the wolf.",
+        "decline_text": "r_c decides to ignore the deer.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "r_c catches the rabbit hiding in its burrow.",
+                "text": "r_c pins the deer before it has a chance to flee.",
                 "exp": 10,
                 "weight": 20,
                 "prey": ["large"]
@@ -185,7 +185,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The burrow is abandoned, with no prey to be found in there.",
+                "text": "The the deer leaps away before r_c can catch it.",
                 "exp": 0,
                 "weight": 20
             }
@@ -213,15 +213,15 @@
                 "prey": ["medium"]
             },
             {
-                "text": "The patrol finds some astonishingly fat chickens running around the Twoleg nest, and helps themselves to one.",
+                "text": "The patrol finds some astonishingly fat sheep running around the Twoleg nest, and helps themselves to one.",
                 "exp": 10,
                 "weight": 5,
-                "prey": ["large"]
+                "prey": ["huge"]
             }
         ],
         "fail_outcomes": [
             {
-                "text": "Twoleg pups scare the patrol away.",
+                "text": "Twolegs scare the patrol away.",
                 "exp": 0,
                 "weight": 20,
                 "prey": ["very_small"]
@@ -229,14 +229,14 @@
         ],
         "antag_fail_outcomes": [
             {
-                "text": "The Twoleg pups wandering around are unimpressed by the patrol and chase the wolves for fun.",
+                "text": "The Twolegs wandering around are unimpressed by the patrol and chase the wolves away.",
                 "exp": 0,
                 "weight": 20
             }
         ],
         "antag_success_outcomes": [
             {
-                "text": "A Twoleg pup approaches the patrol, and they send it away squawking with its blood on their fangs.",
+                "text": "A Twolegs approaches the patrol, and they send it away squawking with its blood on their fangs.",
                 "exp": 10,
                 "weight": 20
             }
@@ -264,7 +264,7 @@
                 "prey": ["medium"]
             },
             {
-                "text": "The patrol finds some astonishingly fat chickens running around the Twoleg nest, and helps themselves to as many as they can carry.",
+                "text": "The patrol finds some astonishingly fat sheep running around the Twoleg nest, and helps themselves to as many as they can carry.",
                 "exp": 10,
                 "weight": 5,
                 "prey": ["large"]
@@ -272,7 +272,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "Twoleg pups stomp through the woods, scaring away prey and ruining the hunt.",
+                "text": "Twolegs stomp through the woods, scaring away prey and ruining the hunt.",
                 "exp": 0,
                 "weight": 20,
                 "prey": ["very_small"]
@@ -280,14 +280,14 @@
         ],
         "antag_fail_outcomes": [
             {
-                "text": "The Twoleg pups wandering around are unimpressed by the patrol and chase the wolves for fun.",
+                "text": "The Twolegs wandering around are unimpressed by the patrol and chase the wolves away.",
                 "exp": 0,
                 "weight": 20
             }
         ],
         "antag_success_outcomes": [
             {
-                "text": "Finding a Twoleg pup wandering alone, the wolves harass it until it flees squawking, its blood on their fangs.",
+                "text": "Finding a Twolegs wandering alone, the wolves harass it until it flees squawking, its blood on their fangs.",
                 "exp": 10,
                 "weight": 20
             }
@@ -354,7 +354,7 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "m_c gained a scar after trying to chase some squirrels up a tree."
+                    "scar": "m_c gained a scar after trying to chase some beavers."
                 },
                 "prey": ["very_small"]
             }
@@ -485,7 +485,7 @@
             "leader": [-1, -1]
         },
         "weight": 20,
-        "intro_text": "The patrol hears distant howling and wonders whether to investigate the noise.",
+        "intro_text": "The patrol hears distant growling and wonders whether to investigate the noise.",
         "decline_text": "The patrol decides not to investigate the source of the noise.  Whatever is making it will not be friendly to them.",
         "chance_of_success": 10,
         "success_outcomes": [
@@ -578,7 +578,7 @@
             "leader": [-1, -1]
         },
         "weight": 20,
-        "intro_text": "The patrol hears distant howling and wonders whether to investigate the noise.",
+        "intro_text": "The patrol hears distant growling and wonders whether to investigate the noise.",
         "decline_text": "The patrol decides not to investigate the source of the noise. Whatever is making it will not be friendly to them.",
         "chance_of_success": 30,
         "success_outcomes": [
@@ -671,7 +671,7 @@
             "leader": [-1, -1]
         },
         "weight": 20,
-        "intro_text": "r_c hears distant howling and wonders whether to investigate the noise.",
+        "intro_text": "r_c hears distant growling and wonders whether to investigate the noise.",
         "decline_text": "r_c decides not to investigate the source of the noise. Whatever is making it will not be friendly to {PRONOUN/r_c/object} and {PRONOUN/r_c/subject} {VERB/r_c/are/is} only one wolf.",
         "chance_of_success": 10,
         "success_outcomes": [
@@ -746,7 +746,7 @@
             "leader": [-1, -1]
         },
         "weight": 20,
-        "intro_text": "The patrol hears distant howling and wonders whether to investigate the noise.",
+        "intro_text": "The patrol hears distant screeching and wonders whether to investigate the noise.",
         "decline_text": "The patrol decides not to investigate the source of the noise.  It sounds like an alarm howl.",
         "chance_of_success": 10,
         "success_outcomes": [
@@ -839,7 +839,7 @@
             "leader": [-1, -1]
         },
         "weight": 20,
-        "intro_text": "The patrol hears distant howling and wonders whether to investigate the noise.",
+        "intro_text": "The patrol hears distant screeching and wonders whether to investigate the noise.",
         "decline_text": "The patrol decides not to investigate the source of the noise. It sounded like an alarm howl.",
         "chance_of_success": 20,
         "success_outcomes": [
@@ -1417,7 +1417,7 @@
                 "prey": ["medium"]
             },
             {
-                "text": "p_l pads towards the bush to check on the noise when a rabbit suddenly bursts out! s_c is quick to react and manages to snag the rabbit before it can disappear.",
+                "text": "p_l pads towards the bush to check on the noise when a boar suddenly bursts out! s_c is quick to react and manages to snag the boar before it can disappear.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1"],
@@ -1478,7 +1478,7 @@
                 "prey": ["small"]
             },
             {
-                "text": "p_l pads towards the bush to check on the noise when a rabbit suddenly bursts out! s_c is quick to react and manages to snag the rabbit before it can disappear.",
+                "text": "p_l pads towards the bush to check on the noise when a boar suddenly bursts out! s_c is quick to react and manages to snag the rabbit before it can disappear.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1"],
@@ -2692,7 +2692,7 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "With a huge leap, {PRONOUN/r_c/subject} {VERB/r_c/dart/darts} sideways and {VERB/r_c/pull/pulls} a blackbird out of the air. What a great catch!",
+                "text": "With a huge leap, {PRONOUN/r_c/subject} {VERB/r_c/dart/darts} sideways and {VERB/r_c/pull/pulls} a turkey out from the thicket. What a great catch!",
                 "exp": 10,
                 "weight": 20,
                 "prey": ["medium"]
@@ -2738,7 +2738,7 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "With a huge leap, {PRONOUN/app1/subject} {VERB/app1/dart/darts} sideways and {VERB/app1/pull/pulls} the tail feathers off a blackbird taking flight. A missed catch, but new nest lining?",
+                "text": "With a huge leap, {PRONOUN/app1/subject} {VERB/app1/dart/darts} sideways and {VERB/app1/pull/pulls} the tail feathers off a duck taking flight. A missed catch, but new nest lining?",
                 "exp": 10,
                 "weight": 20,
                 "prey": ["medium"]
@@ -2792,10 +2792,10 @@
                 ]
             },
             {
-                "text": "Laughing, {PRONOUN/r_c/subject} {VERB/r_c/bounce/bounces} gleefully off a tree trunk, redirecting {PRONOUN/r_c/poss} momentum to slam into a very surprised rabbit. p_l skids to a halt, gasping over {PRONOUN/r_c/poss} beautiful catch with {PRONOUN/p_l/poss} eyes shining.",
+                "text": "Laughing, {PRONOUN/r_c/subject} {VERB/r_c/bounce/bounces} gleefully off a tree trunk, redirecting {PRONOUN/r_c/poss} momentum to slam into a very surprised deer. p_l skids to a halt, gasping over {PRONOUN/r_c/poss} beautiful catch with {PRONOUN/p_l/poss} eyes shining.",
                 "exp": 10,
                 "weight": 5,
-                "prey": ["medium"],
+                "prey": ["large"],
                 "relationships": [
                     {
                         "cats_to": ["p_l"],
@@ -2861,7 +2861,7 @@
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "With a huge leap, app1 darts sideways and pulls the tail feathers off a blackbird taking flight. A missed catch, but new nest lining? {PRONOUN/app1/subject/CAP} {VERB/app1/toss/tosses} some of the feathers at app2, and the two apprentices end up scuffling like pups.",
+                "text": "With a huge leap, app1 darts sideways and pulls the tail feathers off a duck taking flight. A missed catch, but new nest lining? {PRONOUN/app1/subject/CAP} {VERB/app1/toss/tosses} some of the feathers at app2, and the two apprentices end up scuffling like pups.",
                 "exp": 10,
                 "weight": 20,
                 "prey": ["medium"],
@@ -2876,10 +2876,10 @@
                 ]
             },
             {
-                "text": "Laughing, app1 bounces gleefully off a tree trunk. It redirects {PRONOUN/app1/poss} momentum far better than {PRONOUN/app1/subject} {VERB/app1/were/was} expecting, and it's difficult to say who's more surprised - the rabbit, or the apprentice slamming into it! Not a very clean catch, but the look on app2's face, so shocked and impressed, makes {PRONOUN/app1/object} blush.",
+                "text": "Laughing, app1 bounces gleefully off a tree trunk. It redirects {PRONOUN/app1/poss} momentum far better than {PRONOUN/app1/subject} {VERB/app1/were/was} expecting, and it's difficult to say who's more surprised - the deer, or the apprentice slamming into it! Not a very clean catch, but the look on app2's face, so shocked and impressed, makes {PRONOUN/app1/object} blush.",
                 "exp": 10,
                 "weight": 5,
-                "prey": ["medium"],
+                "prey": ["large"],
                 "relationships": [
                     {
                         "cats_to": ["p_l"],
@@ -3082,24 +3082,24 @@
         "max_cats": 3,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "The patrol comes across a vole nibbling at a seed.",
+        "intro_text": "The patrol comes across a groundhog nibbling at a seed.",
         "decline_text": "The patrol decides to look for other prey.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "r_c drops into a crouch and lightly stalks towards the vole. {PRONOUN/r_c/subject/CAP} {VERB/r_c/pause/pauses}, waggling {PRONOUN/r_c/poss} haunches before pouncing. {PRONOUN/r_c/subject/CAP} {VERB/r_c/catch/catches} the vole easily and {VERB/r_c/deliver/delivers} a killing bite to the back of its head.",
+                "text": "r_c drops into a crouch and lightly stalks towards the groundhog. {PRONOUN/r_c/subject/CAP} {VERB/r_c/pause/pauses}, waggling {PRONOUN/r_c/poss} haunches before pouncing. {PRONOUN/r_c/subject/CAP} {VERB/r_c/catch/catches} the groundhog easily and {VERB/r_c/deliver/delivers} a killing bite to the back of its head.",
                 "exp": 10,
                 "weight": 20,
                 "prey": ["medium"]
             },
             {
-                "text": "r_c drops into a crouch and begins stalking forward. When {PRONOUN/r_c/subject} {VERB/r_c/get/gets} close, the vole suddenly stops chewing and r_c takes the opportunity to pounce. {PRONOUN/r_c/subject/CAP} {VERB/r_c/kill/kills} the prey quickly and {VERB/r_c/lick/licks} the blood from {PRONOUN/r_c/poss} lips with satisfaction.",
+                "text": "r_c drops into a crouch and begins stalking forward. When {PRONOUN/r_c/subject} {VERB/r_c/get/gets} close, the groundhog suddenly stops chewing and r_c takes the opportunity to pounce. {PRONOUN/r_c/subject/CAP} {VERB/r_c/kill/kills} the prey quickly and {VERB/r_c/lick/licks} the blood from {PRONOUN/r_c/poss} lips with satisfaction.",
                 "exp": 10,
                 "weight": 5,
                 "prey": ["medium"]
             },
             {
-                "text": "s_c drops into a crouch and has to consciously stop {PRONOUN/s_c/poss} tail from swaying in excitement as {PRONOUN/s_c/subject} {VERB/s_c/stalk/stalks} the prey. Once {PRONOUN/s_c/subject} {VERB/s_c/think/thinks} {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} close enough, {PRONOUN/s_c/subject} {VERB/s_c/give/gives} {PRONOUN/s_c/poss} haunches a little wiggle and {VERB/s_c/leap/leaps}. {PRONOUN/s_c/subject/CAP} {VERB/s_c/catch/catches} the vole squarely between {PRONOUN/s_c/poss} paws and {VERB/s_c/kill/kills} it quickly.",
+                "text": "s_c drops into a crouch and has to consciously stop {PRONOUN/s_c/poss} tail from swaying in excitement as {PRONOUN/s_c/subject} {VERB/s_c/stalk/stalks} the prey. Once {PRONOUN/s_c/subject} {VERB/s_c/think/thinks} {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} close enough, {PRONOUN/s_c/subject} {VERB/s_c/give/gives} {PRONOUN/s_c/poss} haunches a little wiggle and {VERB/s_c/leap/leaps}. {PRONOUN/s_c/subject/CAP} {VERB/s_c/catch/catches} the groundhog squarely between {PRONOUN/s_c/poss} paws and {VERB/s_c/kill/kills} it quickly.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": ["HUNTER,2"],
@@ -3108,7 +3108,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "r_c drops into a crouch and begins to stalk forward. {PRONOUN/s_c/subject/CAP}{VERB/s_c/'re/'s} preparing to pounce when {PRONOUN/s_c/poss} paw lightly brushes a twig and the vole immediately takes off. {PRONOUN/s_c/subject/CAP} {VERB/s_c/give/gives} chase, but the critter disappears into a burrow. Mouse-dung!",
+                "text": "r_c drops into a crouch and begins to stalk forward. {PRONOUN/s_c/subject/CAP}{VERB/s_c/'re/'s} preparing to pounce when {PRONOUN/s_c/poss} paw lightly brushes a twig and the groundhog immediately takes off. {PRONOUN/s_c/subject/CAP} {VERB/s_c/give/gives} chase, but the critter disappears into a burrow. Fox-dung!",
                 "exp": 0,
                 "weight": 20,
                 "prey": ["very_small"]
