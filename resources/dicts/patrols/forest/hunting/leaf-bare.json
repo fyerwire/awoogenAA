@@ -290,7 +290,7 @@
         "max_cats": 3,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "The patrol catches the scent of a bear - but is it brown, or black? Tracking it, they find a brown bear feeding on a deer carcass, either a small doe or one of last newleaf's fawns.",
+        "intro_text": "The patrol catches the scent of a bear - but is it brown, or black? Tracking it, they find a brown bear feeding on a moose carcass, either a doe or one of last newleaf's elks.",
         "decline_text": "The patrol decides not to quarrel with the bear and to find prey elsewhere.",
         "chance_of_success": 30,
         "success_outcomes": [
@@ -298,7 +298,7 @@
                 "text": "The wolves are smaller but they outnumber the bear, if only by a little, and it's a prize they're willing to fight for. With a prayer to StarPack they throw themselves into battle, and the bear, already half full of venison and unwilling to lose blood over it, is driven off from the kill.",
                 "exp": 20,
                 "weight": 20,
-                "prey": ["large"],
+                "prey": ["huge"],
                 "relationships": [
                     {
                         "cats_to": ["patrol", "patrol"],
@@ -314,7 +314,7 @@
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,1"],
-                "prey": ["large"],
+                "prey": ["huge"],
                 "relationships": [
                     {
                         "cats_to": ["patrol", "patrol"],
@@ -339,7 +339,7 @@
                     "responsible",
                     "righteous"
                 ],
-                "prey": ["large"],
+                "prey": ["huge"],
                 "relationships": [
                     {
                         "cats_to": ["patrol", "patrol"],
@@ -440,7 +440,7 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "The patrol catches the scent of a bear - but is it brown, or black? Tracking it, they find a brown bear feeding on a deer carcass, either a small doe or one of last newleaf's fawns.",
+        "intro_text": "The patrol catches the scent of a bear - but is it brown, or black? Tracking it, they find a brown bear feeding on a moose carcass, either a doe or one of last newleaf's elks.",
         "decline_text": "The patrol decides not to quarrel with the bear and to find prey elsewhere.",
         "chance_of_success": 60,
         "success_outcomes": [
@@ -448,7 +448,7 @@
                 "text": "The wolves are smaller but heavily outnumber the bear, and it's a prize they're willing to fight for. With a prayer to StarPack they throw themselves into battle, and the bear, already half full of venison and unwilling to lose blood over it, is driven off from the kill.",
                 "exp": 20,
                 "weight": 20,
-                "prey": ["large"],
+                "prey": ["huge"],
                 "relationships": [
                     {
                         "cats_to": ["patrol", "patrol"],
@@ -464,7 +464,7 @@
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,1"],
-                "prey": ["large"],
+                "prey": ["huge"],
                 "relationships": [
                     {
                         "cats_to": ["patrol", "patrol"],
@@ -489,7 +489,7 @@
                     "responsible",
                     "righteous"
                 ],
-                "prey": ["large"],
+                "prey": ["huge"],
                 "relationships": [
                     {
                         "cats_to": ["patrol", "patrol"],
@@ -590,7 +590,7 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "r_c catches the scent of a bear - but is it brown, or black? Tracking it, {PRONOUN/r_c/subject} find a brown bear feeding on a deer carcass, either a small doe or one of last newleaf's fawns.",
+        "intro_text": "r_c catches the scent of a bear - but is it brown, or black? Tracking it, {PRONOUN/r_c/subject} find a brown bear feeding on a moose carcass, either a doe or one of last newleaf's elks.",
         "decline_text": "r_c decides not to quarrel with the bear and to find prey elsewhere.",
         "chance_of_success": 10,
         "success_outcomes": [
@@ -598,7 +598,7 @@
                 "text": "r_c may be smaller, alone, and half its weight, but the bear has a prize {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} willing to fight for. With a prayer to StarPack, {PRONOUN/r_c/subject} {VERB/r_c/throw/throws} {PRONOUN/r_c/self} into battle. The bear, already stuffed full of venison and unwilling to lose blood over it, leaves the kill with a grumble.",
                 "exp": 30,
                 "weight": 20,
-                "prey": ["large"],
+                "prey": ["huge"],
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
@@ -610,11 +610,11 @@
                 ]
             },
             {
-                "text": "s_c uses every trick in {PRONOUN/s_c/poss} talented fighting skillset to attack the bear with no one to watch {PRONOUN/s_c/poss} flank, until the perfect opportunity opens up and {PRONOUN/s_c/subject} {VERB/s_c/pounce/pounces} onto the bear's back, digging in {PRONOUN/s_c/poss} fangs. It's a wild ride through the forest until the bear bucks {PRONOUN/s_c/object} off, but it wins {PRONOUN/s_c/object} the fawn carcass.",
+                "text": "s_c uses every trick in {PRONOUN/s_c/poss} talented fighting skillset to attack the bear with no one to watch {PRONOUN/s_c/poss} flank, until the perfect opportunity opens up and {PRONOUN/s_c/subject} {VERB/s_c/pounce/pounces} onto the bear's back, digging in {PRONOUN/s_c/poss} fangs. It's a wild ride through the forest until the bear bucks {PRONOUN/s_c/object} off, but it wins {PRONOUN/s_c/object} the moose carcass.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,2"],
-                "prey": ["large"],
+                "prey": ["huge"],
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
@@ -626,7 +626,7 @@
                 ]
             },
             {
-                "text": "In an act of daring bravery, s_c darts low to the ground, gets under the jaws, and sinks {PRONOUN/s_c/poss} teeth into the bear's throat. But then {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} stuck, unwilling to let go and risk being bitten. {PRONOUN/s_c/subject/CAP}{VERB/s_c/'re/'s} dragged through the forest, over rocks and through bushes, until the bear finally collapses and the battered s_c goes back to proudly claim the fawn.",
+                "text": "In an act of daring bravery, s_c darts low to the ground, gets under the jaws, and sinks {PRONOUN/s_c/poss} teeth into the bear's throat. But then {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} stuck, unwilling to let go and risk being bitten. {PRONOUN/s_c/subject/CAP}{VERB/s_c/'re/'s} dragged through the forest, over rocks and through bushes, until the bear finally collapses and the battered s_c goes back to proudly claim the moose.",
                 "exp": 30,
                 "weight": 20,
                 "stat_trait": [
@@ -639,7 +639,7 @@
                     "responsible",
                     "righteous"
                 ],
-                "prey": ["large"],
+                "prey": ["huge"],
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
@@ -667,7 +667,7 @@
                 ]
             },
             {
-                "text": "Fiercely, r_c throws {PRONOUN/r_c/self} at the bear, determined to win the fawn prize. But the bear values it just as dearly, and manages to get a good grip on r_c, clawing {PRONOUN/r_c/object} to pieces and killing {PRONOUN/r_c/object}.",
+                "text": "Fiercely, r_c throws {PRONOUN/r_c/self} at the bear, determined to win the elk prize. But the bear values it just as dearly, and manages to get a good grip on r_c, clawing {PRONOUN/r_c/object} to pieces and killing {PRONOUN/r_c/object}.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["r_c"],
@@ -687,7 +687,7 @@
                 ]
             },
             {
-                "text": "r_c launches into battle, but is caught with a nasty bite, and retreats to limp back home. The bear doesn't follow, happy enough to eat the fawn instead of the foolish wolf.",
+                "text": "r_c launches into battle, but is caught with a nasty bite, and retreats to limp back home. The bear doesn't follow, happy enough to eat the elk instead of the foolish wolf.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -757,7 +757,7 @@
         "max_cats": 3,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "The patrol catches the scent of a bear - but is it brown, or black? Tracking it, they find a black bear feeding on a deer carcass, either a small doe or one of last newleaf's fawns. A black bear is unlikely to have taken this down on its own, it must have found the carcass, and now c_n has too.",
+        "intro_text": "The patrol catches the scent of a bear - but is it brown, or black? Tracking it, they find a black bear feeding on a deer carcass, either a doe or one of last newleaf's elks. A black bear is unlikely to have taken this down on its own, it must have found the carcass, and now c_n has too.",
         "decline_text": "The patrol decides not to quarrel with the bear and to find prey elsewhere.",
         "chance_of_success": 50,
         "success_outcomes": [
@@ -765,7 +765,7 @@
                 "text": "The wolves are only just smaller and outnumber the bear, if only by a little, and it's a prize they're willing to fight for. With a prayer to StarPack they throw themselves into battle, and the bear, already half full of venison and unwilling to lose blood over it, is driven off from the kill.",
                 "exp": 20,
                 "weight": 20,
-                "prey": ["large"],
+                "prey": ["huge"],
                 "relationships": [
                     {
                         "cats_to": ["patrol", "patrol"],
@@ -781,7 +781,7 @@
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,1"],
-                "prey": ["large"],
+                "prey": ["huge"],
                 "relationships": [
                     {
                         "cats_to": ["patrol", "patrol"],
@@ -806,7 +806,7 @@
                     "responsible",
                     "righteous"
                 ],
-                "prey": ["large"],
+                "prey": ["huge"],
                 "relationships": [
                     {
                         "cats_to": ["patrol", "patrol"],
@@ -901,7 +901,7 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "The patrol catches the scent of a bear - but is it brown, or black? Tracking it, they find a black bear feeding on a deer carcass, either a small doe or one of last newleaf's fawns. A black bear is unlikely to have taken this down on its own, it must have found the carcass, and now c_n has too.",
+        "intro_text": "The patrol catches the scent of a bear - but is it brown, or black? Tracking it, they find a black bear feeding on a deer carcass, either a doe or one of last newleaf's elks. A black bear is unlikely to have taken this down on its own, it must have found the carcass, and now c_n has too.",
         "decline_text": "The patrol decides not to quarrel with the bear and to find prey elsewhere.",
         "chance_of_success": 70,
         "success_outcomes": [
@@ -909,7 +909,7 @@
                 "text": "The wolves are only just smaller and heavily outnumber the bear, and it's a prize they're willing to fight for. With a prayer to StarPack they throw themselves into battle, and the bear, already half full of venison and unwilling to lose blood over it, is driven off from the kill.",
                 "exp": 20,
                 "weight": 20,
-                "prey": ["large"],
+                "prey": ["huge"],
                 "relationships": [
                     {
                         "cats_to": ["patrol", "patrol"],
@@ -925,7 +925,7 @@
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,1"],
-                "prey": ["large"],
+                "prey": ["huge"],
                 "relationships": [
                     {
                         "cats_to": ["patrol", "patrol"],
@@ -950,7 +950,7 @@
                     "responsible",
                     "righteous"
                 ],
-                "prey": ["large"],
+                "prey": ["huge"],
                 "relationships": [
                     {
                         "cats_to": ["patrol", "patrol"],
@@ -1012,7 +1012,7 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "The patrol catches the scent of a bear - but is it brown, or black? Tracking it, {PRONOUN/r_c/subject} find a black bear feeding on a deer carcass, either a small doe or one of last newleaf's fawns. A black bear is unlikely to have taken this down on its own, it must have found the carcass, and now c_n has too.",
+        "intro_text": "The patrol catches the scent of a bear - but is it brown, or black? Tracking it, {PRONOUN/r_c/subject} find a black bear feeding on a deer carcass, either a doe or one of last newleaf's elks. A black bear is unlikely to have taken this down on its own, it must have found the carcass, and now c_n has too.",
         "decline_text": "r_c decides not to quarrel with the bear and to find prey elsewhere.",
         "chance_of_success": 30,
         "success_outcomes": [
@@ -1020,7 +1020,7 @@
                 "text": "r_c may be smaller, alone, and half its weight, but the bear has a prize {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} willing to fight for. With a prayer to StarPack, {PRONOUN/r_c/subject} {VERB/r_c/throw/throws} {PRONOUN/r_c/self} into battle. The bear, already stuffed full of venison and unwilling to lose blood over it, leaves the kill with a grumble.",
                 "exp": 30,
                 "weight": 20,
-                "prey": ["large"],
+                "prey": ["huge"],
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
@@ -1032,11 +1032,11 @@
                 ]
             },
             {
-                "text": "s_c uses every trick in {PRONOUN/s_c/poss} talented fighting skillset to attack the bear with no one to watch {PRONOUN/s_c/poss} flank, until the perfect opportunity opens up and {PRONOUN/s_c/subject} {VERB/s_c/pounce/pounces} onto the bear's back, digging in {PRONOUN/s_c/poss} fangs. It's a wild ride through the forest until the bear bucks {PRONOUN/s_c/object} off, but it wins {PRONOUN/s_c/object} the fawn carcass.",
+                "text": "s_c uses every trick in {PRONOUN/s_c/poss} talented fighting skillset to attack the bear with no one to watch {PRONOUN/s_c/poss} flank, until the perfect opportunity opens up and {PRONOUN/s_c/subject} {VERB/s_c/pounce/pounces} onto the bear's back, digging in {PRONOUN/s_c/poss} fangs. It's a wild ride through the forest until the bear bucks {PRONOUN/s_c/object} off, but it wins {PRONOUN/s_c/object} the elk carcass.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,2"],
-                "prey": ["large"],
+                "prey": ["huge"],
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
@@ -1048,7 +1048,7 @@
                 ]
             },
             {
-                "text": "In an act of daring bravery, s_c darts low to the ground, gets under the jaws, and sinks {PRONOUN/s_c/poss} teeth into the bear's throat. But then {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} stuck, unwilling to let go and risk being bitten. {PRONOUN/s_c/subject/CAP}{VERB/s_c/'re/'s} dragged through the forest, over rocks and through bushes, until the bear finally collapses and the battered s_c goes back to proudly claim the fawn.",
+                "text": "In an act of daring bravery, s_c darts low to the ground, gets under the jaws, and sinks {PRONOUN/s_c/poss} teeth into the bear's throat. But then {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} stuck, unwilling to let go and risk being bitten. {PRONOUN/s_c/subject/CAP}{VERB/s_c/'re/'s} dragged through the forest, over rocks and through bushes, until the bear finally collapses and the battered s_c goes back to proudly claim the elk.",
                 "exp": 30,
                 "weight": 20,
                 "stat_trait": [
@@ -1061,7 +1061,7 @@
                     "responsible",
                     "righteous"
                 ],
-                "prey": ["large"],
+                "prey": ["huge"],
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
@@ -1111,7 +1111,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "r_c launches into battle, but is caught with a nasty bite, and retreats to limp back home. The bear doesn't follow, happy enough to eat the fawn instead of the foolish wolf.",
+                "text": "r_c launches into battle, but is caught with a nasty bite, and retreats to limp back home. The bear doesn't follow, happy enough to eat the elk instead of the foolish wolf.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
@@ -1445,10 +1445,10 @@
                 ]
             },
             {
-                "text": "The wolves sneak into the hunting grounds, ears rotating as different spots catch their interest. r_c's suggestion proves to be a fruitful hunting ground, one that c_n hasn't used for a while and whose creatures (as predicted, nearly all rabbits) have lost their edge of wariness. It's a good hunt.",
+                "text": "The wolves sneak into the hunting grounds, ears rotating as different spots catch their interest. r_c's suggestion proves to be a fruitful hunting ground, one that c_n hasn't used for a while and whose creatures have lost their edge of wariness. It's a good hunt.",
                 "exp": 20,
                 "weight": 5,
-                "prey": ["large"],
+                "prey": ["huge"],
                 "relationships": [
                     {
                         "cats_to": ["r_c"],
@@ -1464,7 +1464,7 @@
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["HUNTER,1"],
-                "prey": ["large"],
+                "prey": ["huge"],
                 "relationships": [
                     {
                         "cats_to": ["s_c"],
@@ -3503,7 +3503,7 @@
         "max_cats": 3,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "The patrol catches the scent of a bear - but is it brown, or black? Tracking it, they find a black bear feeding on a deer carcass, either a small doe or one of last newleaf's fawns. A black bear is unlikely to have killed this on its own, it must have found the carcass, and now c_n has too.",
+        "intro_text": "The patrol catches the scent of a bear - but is it brown, or black? Tracking it, they find a black bear feeding on a deer carcass, either a doe or one of last newleaf's elks. A black bear is unlikely to have killed this on its own, it must have found the carcass, and now c_n has too.",
         "decline_text": "The patrol decides not to quarrel with the bear and to find prey elsewhere.",
         "chance_of_success": 30,
         "success_outcomes": [
@@ -3647,7 +3647,7 @@
         "max_cats": 6,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "The patrol catches the scent of a bear - but is it brown, or black? Tracking it, they find a black bear feeding on a deer carcass, either a small doe or one of last newleaf's fawns. A black bear is unlikely to have killed this on its own, it must have found the carcass, and now c_n has too.",
+        "intro_text": "The patrol catches the scent of a bear - but is it brown, or black? Tracking it, they find a black bear feeding on a deer carcass, either a doe or one of last newleaf's elks. A black bear is unlikely to have killed this on its own, it must have found the carcass, and now c_n has too.",
         "decline_text": "The patrol decides not to quarrel with the bear and to find prey elsewhere.",
         "chance_of_success": 10,
         "success_outcomes": [
@@ -3758,7 +3758,7 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "r_c catches the scent of a bear - but is it brown, or black? Tracking it, {PRONOUN/r_c/subject} find a black bear feeding on a deer carcass, either a small doe or one of last newleaf's fawns. A black bear is unlikely to have killed this on its own, it must have found the carcass, and now c_n has too.",
+        "intro_text": "r_c catches the scent of a bear - but is it brown, or black? Tracking it, {PRONOUN/r_c/subject} find a black bear feeding on a deer carcass, either a doe or one of last newleaf's elks. A black bear is unlikely to have killed this on its own, it must have found the carcass, and now c_n has too.",
         "decline_text": "r_c decides not to quarrel with the bear and to find prey elsewhere.",
         "chance_of_success": 30,
         "success_outcomes": [
@@ -3778,7 +3778,7 @@
                 ]
             },
             {
-                "text": "s_c uses every trick in {PRONOUN/s_c/poss} talented fighting skillset to attack the bear with no one to watch {PRONOUN/s_c/poss} flank, until the perfect opportunity opens up and {PRONOUN/s_c/subject} {VERB/s_c/pounce/pounces} onto the bear's back, digging in {PRONOUN/s_c/poss} fangs. It's a wild ride through the forest until the bear bucks {PRONOUN/s_c/object} off, but it wins {PRONOUN/s_c/object} the fawn carcass.",
+                "text": "s_c uses every trick in {PRONOUN/s_c/poss} talented fighting skillset to attack the bear with no one to watch {PRONOUN/s_c/poss} flank, until the perfect opportunity opens up and {PRONOUN/s_c/subject} {VERB/s_c/pounce/pounces} onto the bear's back, digging in {PRONOUN/s_c/poss} fangs. It's a wild ride through the forest until the bear bucks {PRONOUN/s_c/object} off, but it wins {PRONOUN/s_c/object} the moose carcass.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,2"],
@@ -3794,7 +3794,7 @@
                 ]
             },
             {
-                "text": "In an act of daring bravery, s_c darts low to the ground, gets under the jaws, and sinks {PRONOUN/s_c/poss} teeth into the bear's throat. But then {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} stuck, unwilling to let go and risk being bitten. {PRONOUN/s_c/subject/CAP}{VERB/s_c/'re/'s} dragged through the forest, over rocks and through bushes, until the bear finally collapses and the battered s_c goes back to proudly claim the fawn.",
+                "text": "In an act of daring bravery, s_c darts low to the ground, gets under the jaws, and sinks {PRONOUN/s_c/poss} teeth into the bear's throat. But then {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} stuck, unwilling to let go and risk being bitten. {PRONOUN/s_c/subject/CAP}{VERB/s_c/'re/'s} dragged through the forest, over rocks and through bushes, until the bear finally collapses and the battered s_c goes back to proudly claim the moose.",
                 "exp": 30,
                 "weight": 20,
                 "stat_trait": [
@@ -3857,7 +3857,7 @@
                 "prey": ["very_small"]
             },
             {
-                "text": "r_c launches into battle, but is caught with a nasty bite, and retreats to limp back home. The bear doesn't follow, happy enough to eat the fawn instead of the foolish wolf.",
+                "text": "r_c launches into battle, but is caught with a nasty bite, and retreats to limp back home. The bear doesn't follow, happy enough to eat the moose instead of the foolish wolf.",
                 "exp": 0,
                 "weight": 10,
                 "injury": [
