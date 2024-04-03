@@ -3,7 +3,7 @@
         "colours": {
             "dark_bg": "#235d58",
             "selected_bg": "#478782",
-            "normal_text": "#6A654E",
+            "normal_text": "#E8E4D0",
             "selected_text": "#FFFFFF",
             "text_cursor": "#6A654E"
         },
@@ -43,7 +43,7 @@
             "dark_bg": "#00000000",
             "selected_bg": "#00000000",
             "normal_text": "#000000",
-            "selected_text": "#FFFFFF"
+            "selected_text": "#E8E4D0"
         },
         "misc": {
             "shape": "rectangle",
@@ -59,7 +59,7 @@
     "#text_box": {
         "colours": {
             "dark_bg": "#FFFF0000",
-            "normal_text": "#1A1230",
+            "normal_text": "#163B38",
             "selected_bg": "#201836",
             "selected_text": "#EBE7F5",
             "link_text": "#8271B1",

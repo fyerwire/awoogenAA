@@ -2,7 +2,7 @@
     "#default_dark": {
         "colours": {
             "dark_bg": "#00000000",
-            "normal_text": "#DCEFEE",
+            "normal_text": "#F1EFE4",
             "link_text": "#7CDBD4",
             "link_hover": "#b7fffa",
             "link_selected": "#b7fffa"
