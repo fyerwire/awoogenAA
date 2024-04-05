@@ -32,12 +32,12 @@
         ],
         "showxp": [
             "Show exact XP and nutrition status",
-            "Will turn 'experience: proficient' into 'experience: proficient (151)'; and 'nutrition: full' into 'nutrition: full (70)'",
+            "Will turn 'experience: proficient' into 'experience: proficient (151)'; and 'nutrition: full' into 'nutrition: full (70)'.",
             false
         ],
         "random med cat": [
             "Allow medicine wolves to be randomly selected on patrol",
-            "Medicine wolves can be selected with the patrol buttons +1, +3,+6",
+            "Medicine wolves can be selected with the patrol buttons +1, +3, +6",
             true
         ],
         "fading": [
@@ -85,13 +85,13 @@
     },
     "relation": {
         "affair": [
-            "Allow wolves to breed with wolves that aren't their mates.",
+            "Allow wolves to breed with wolves that aren't their mates",
             "This will allow mated and unmated wolves to have pups with other wolves they are not mated with. This includes, but is not limited to, affairs/cheating.",
             false
         ],
         "same sex birth": [
             "Pregnancy ignores biology",
-            "Allow all wolves to get pregnant despise their gender and all couples to birth puppies despite same-sex status.",
+            "Allow all wolves to get pregnant despite their gender and all couples to birth puppies despite same-sex status.",
             false
         ],
         "same sex adoption": [
