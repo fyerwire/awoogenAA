@@ -224,7 +224,7 @@
             "scar",
             "SNAKE"
         ],
-        "event_text": "m_c found a hole in the rocks and, curious as all kits are, stuck {PRONOUN/m_c/poss} paw inside. The whole camp comes running when {PRONOUN/m_c/subject} {VERB/m_c/screech/screeches} in pain. It seems a snake was living in that hole.",
+        "event_text": "m_c found a hole in the rocks and, curious as all pups are, stuck {PRONOUN/m_c/poss} paw inside. The whole camp comes running when {PRONOUN/m_c/subject} {VERB/m_c/screech/screeches} in pain. It seems a snake was living in that hole.",
         "history_text": {
             "scar": "m_c was scarred as a pup, when a snake bit {PRONOUN/m_c/object}.",
             "reg_death": "m_c died from {PRONOUN/m_c/poss} wounds after a snake bit {PRONOUN/m_c/object}."

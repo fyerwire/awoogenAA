@@ -272,7 +272,7 @@ start_screen.screen_switches()
 
 if game.settings['fullscreen']:
     version_number = pygame_gui.elements.UILabel(
-        pygame.Rect((1500, 1350), (-1, -1)), get_version_info().version_number[0:8],
+        pygame.Rect((1500, 1350), (-1, -1)), VERSION_NAME,
         object_id=get_text_box_theme())
     # Adjust position
     version_number.set_position(
@@ -280,19 +280,20 @@ if game.settings['fullscreen']:
          1400 - version_number.get_relative_rect()[3]))
 else:
     version_number = pygame_gui.elements.UILabel(
-        pygame.Rect((700, 650), (-1, -1)), get_version_info().version_number[0:8],
+        pygame.Rect((700, 650), (-1, -1)), VERSION_NAME,
         object_id=get_text_box_theme())
     # Adjust position
     version_number.set_position(
         (800 - version_number.get_relative_rect()[2] - 8,
         700 - version_number.get_relative_rect()[3]))
 
-if get_version_info().is_source_build or get_version_info().is_dev():
-    dev_watermark = pygame_gui.elements.UILabel(
-        scale(pygame.Rect((1050, 1321), (600, 100))),
-        "Dev Build:",
-        object_id="#dev_watermark"
-    )
+# KORI - fix later
+#if get_version_info().is_source_build or get_version_info().is_dev():
+    #dev_watermark = pygame_gui.elements.UILabel(
+        #scale(pygame.Rect((1050, 1321), (600, 100))),
+        #"Dev Build:",
+        #object_id="#dev_watermark"
+    #)
 
 if game.settings["Moonlight"]:
     cursor_img = pygame.image.load('resources/moonlight/images/cursor.png').convert_alpha()

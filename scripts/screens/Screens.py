@@ -19,7 +19,7 @@ class Screens():
     last_screen = ''
 
     # menu buttons are used very often, so they are generated here.
-    resourcepath = themegrabber()
+    resourcepath = themegrabber(game.settings)
     menu_buttons = {
         "events_screen": UIImageButton(
             scale(pygame.Rect((492, 120), (164, 60))),
