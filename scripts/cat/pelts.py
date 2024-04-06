@@ -1144,7 +1144,7 @@ class Pelt():
                     temp_merle_list = Pelt.merles.copy()
                     if self.merle:
                         print(temp_merle_list)
-                        temp_merle_list.remove(str(self.merle[0]))
+                        temp_merle_list.remove(str(self.merle_pattern[0]))
                     self.pattern = choice(temp_merle_list)
                 else:
                     self.pattern = choice(Pelt.tortiepatterns)
@@ -1615,7 +1615,7 @@ class Pelt():
         # all other color information is discarded at the end if points are present
         temp_color_name = ''
         if basePATTERN == 'points':
-            point_name = str(cat.pelt.color).lower()
+            point_name = str(cat.pelt.colour).lower()
             if point_name in ["black", "thistle", "luna", "void"]:
                 temp_color_name = "black"
             elif point_name == "spice" or point_name == "ginger" or point_name == "copper" or point_name == "redwood":

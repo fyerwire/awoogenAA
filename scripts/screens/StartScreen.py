@@ -293,7 +293,7 @@ class StartScreen(Screens):
         self.warning_label = pygame_gui.elements.UITextBox(
             "Warning: this game includes some mild descriptions of gore, violence, and animal abuse",
             scale(pygame.Rect((100, 1244), (1400, 60))),
-            object_id="#default_dark",
+            object_id="#warning_text",
             manager=MANAGER)
 
         if game.clan is not None and game.switches['error_message'] == '':

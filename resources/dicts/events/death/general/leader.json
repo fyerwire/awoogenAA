@@ -694,9 +694,9 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "death_text": "m_c was mauled by dogs, and lost all of {PRONOUN/m_c/poss} lives.",
+        "death_text": "m_c was mauled by a huge bear, and lost all of {PRONOUN/m_c/poss} lives.",
         "history_text": {
-            "lead_death": "{VERB/m_c/were/was} mauled by dogs"
+            "lead_death": "{VERB/m_c/were/was} mauled by a huge bear"
         },
         "cat_negate_skill": [
             "FIGHTER,2"
@@ -1080,10 +1080,10 @@
             "neg_trust",
             "dislike"
         ],
-        "death_text": "m_c and r_c were on a walk together when a pack of dogs caught them off guard. m_c prepared to fight, but when {PRONOUN/m_c/subject} looked to r_c for backup, the other cat was nowhere to be found. r_c watched quietly as the dogs took life after life from m_c.",
+        "death_text": "m_c and r_c were on a walk together when a huge bear caught them off guard. m_c prepared to fight, but when {PRONOUN/m_c/subject} looked to r_c for backup, the other cat was nowhere to be found. r_c watched quietly as the bear took life after life from m_c.",
         "history_text": {
-            "lead_death": "{VERB/m_c/were/was} indirectly murdered by r_c in a fatal dog attack",
-            "lead_murder_unrevealed": "{VERB/m_c/were/was} killed in a suspicious dog attack"
+            "lead_death": "{VERB/m_c/were/was} indirectly murdered by r_c in a fatal bear attack",
+            "lead_murder_unrevealed": "{VERB/m_c/were/was} killed in a suspicious bear attack"
         },
         "cat_negate_skill": [
             "FIGHTER,3"
