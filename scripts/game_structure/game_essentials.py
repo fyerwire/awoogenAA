@@ -598,7 +598,7 @@ else:
 
 def load_manager(res: tuple):
     # initialize pygame_gui manager, and load themes
-    resourcepath = themegrabber()
+    resourcepath = themegrabber(game.settings)
     manager = pygame_gui.ui_manager.UIManager(
         res, resourcepath + 'theme/defaults.json', enable_live_theme_updates=False)
     manager.add_font_paths(

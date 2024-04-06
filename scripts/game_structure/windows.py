@@ -33,7 +33,7 @@ from scripts.themescript import themegrabber
 
 class SaveCheck(UIWindow):
     def __init__(self, last_screen, isMainMenu, mm_btn):
-        resourcepath = themegrabber()
+        resourcepath = themegrabber(game.settings)
         game.switches['window_open'] = True
         if game.is_close_menu_open:
             return
@@ -927,7 +927,7 @@ class ChangelogPopup(UIWindow):
                 ["git", "log", r"--pretty=format:%H|||%cd|||%b|||%s", "-15", "--no-decorate", "--merges", "--grep=Merge pull request", "--date=short"]).decode("utf-8")
             dynamic_changelog = True
         else:
-            with open("changelog.txt", "r") as read_file:
+            with open("changelog.txt", "r", encoding='utf-8') as read_file:
                 file_cont = read_file.read()
         
         #if get_version_info().is_dev() and not get_version_info().is_source_build:
@@ -1263,7 +1263,7 @@ class EventLoading(UIWindow):
 
     @staticmethod
     def load_images():
-        resourcepath = themegrabber()
+        resourcepath = themegrabber(game.settings)
         frames = []
         for i in range(0, 16):
             frames.append(pygame.image.load(
