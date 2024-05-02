@@ -189,21 +189,26 @@ class Sprites():
         # red highlights
         for a, i in enumerate(['RUNIC', 'OPHELIA', 'MEXICAN', 'GRAYWOLF', 'TIMBER', 'VIBRANT', 'STORMY']):
             self.make_group('red', (a, 0), f'red{i}')
+        for a, i in enumerate(['ASPEN', 'CALI', 'FOXY']):
+            self.make_group('red', (a, 1), f'red{i}')
 
         # highlights
         for a, i in enumerate(['RUNIC', 'RUNICBRIGHT', 'OPHELIA', 'MEXICAN', 'GRAYWOLF', 'TIMBER', 'VIBRANT']):
             self.make_group('highlights', (a, 0), f'highlight{i}')
         for a, i in enumerate(['STORMY', 'SMOKEY', 'WINTER', 'HUSKY', 'SHEPHERD', 'SABLE', 'ARCTIC']):
             self.make_group('highlights', (a, 1), f'highlight{i}')
-        self.make_group('highlights', (0, 2), 'highlightSEMISOLID')
+        for a, i in enumerate(['SEMISOLID', 'AGOUTI', 'ASPEN', 'CALI', 'FOXY', 'GRIZZLE', 'SVALBARD']):
+            self.make_group('highlights', (a, 2), f'highlight{i}')
 
         # dark colors
         for a, i in enumerate(['BLACK', 'RUNIC', 'OPHELIA', 'MEXICAN', 'GRAYWOLF', 'TIMBER', 'VIBRANT']):
             self.make_group('dark', (a, 0), f'dark{i}')
         for a, i in enumerate(['STORMY', 'SMOKEY', 'WINTER', 'HUSKY', 'SHEPHERD', 'SABLE', 'ARCTIC']):
             self.make_group('dark', (a, 1), f'dark{i}')
-        for a, i in enumerate(['COLORPOINT', 'BRINDLE', 'POINTS', 'SEMISOLID', 'SOLID']):
+        for a, i in enumerate(['COLORPOINT', 'BRINDLE', 'POINTS', 'SEMISOLID', 'SOLID', 'AGOUTI', 'ASPEN']):
             self.make_group('dark', (a, 2), f'dark{i}')
+        for a, i in enumerate(['CALI', 'FOXY', 'GRIZZLE', 'SVALBARD']):
+            self.make_group('dark', (a, 3), f'dark{i}')
             
         # torties
         for a, i in enumerate(['CAPE', 'DIPPED', 'HEARTBREAKER', 'INKSPILL', 'MINIMAL', 'PHANTOM']):
