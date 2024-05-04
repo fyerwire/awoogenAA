@@ -234,9 +234,9 @@ class Pregnancy_Events():
                 kits = Pregnancy_Events.get_kits(amount, cat, None, clan)
                 insert = 'this should not display'
                 if amount == 1:
-                    insert = 'a single kitten'
+                    insert = 'a single puppy'
                 if amount > 1:
-                    insert = f'a litter of {amount} kits'
+                    insert = f'a litter of {amount} pups'
                 print_event = f"{cat.name} brought {insert} back to camp, but refused to talk about their origin."
                 cats_involved = [cat.ID]
                 for kit in kits:

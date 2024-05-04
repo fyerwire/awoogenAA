@@ -106,17 +106,17 @@ class WarriorDenScreen(Screens):
             object_id="#help_button", manager=MANAGER,
             tool_tip_text="This screen allows you to manage your warriors more effectively! You can give them a "
                           "specific focus, which will provide some benefits (and possibly some negatives) to your "
-                          "Clan.  Some focuses are not available in classic mode.  Click on each focus to see a "
-                          "description of what they will do.  Focuses that target other Clans will allow you to "
-                          "choose which Clans you target.  Your focus can only be changed every 3 moons, "
+                          "Pack.  Some focuses are not available in classic mode.  Click on each focus to see a "
+                          "description of what they will do.  Focuses that target other Packs will allow you to "
+                          "choose which Packs you target.  Your focus can only be changed every 3 moons, "
                           "so choose carefully.",
 
         )
-
+        resourcepath = Screens.resourcepath
         self.focus_frame = pygame_gui.elements.UIImage(scale(pygame.Rect
                                                              ((100, 380), (1400, 920))),
                                                        pygame.image.load(
-                                                           "resources/images/warrior_den_frame.png").convert_alpha(),
+                                                           resourcepath + "images/warrior_den_frame.png").convert_alpha(),
                                                        manager=MANAGER)
         self.focus_frame.disable()
 
@@ -135,7 +135,8 @@ class WarriorDenScreen(Screens):
         """
         handles the creation and updates of the speech bubble visual
         """
-
+        resourcepath = Screens.resourcepath
+        
         if self.base_image:
             self.base_image.kill()
 
@@ -147,7 +148,7 @@ class WarriorDenScreen(Screens):
         self.base_image = pygame_gui.elements.UIImage(scale(pygame.Rect
                                                             ((885, 169), (528, 696))),
                                                       pygame.image.load(
-                                                          f"resources/images/warrior_den/{image}.png").convert_alpha(),
+                                                          resourcepath + f"images/warrior_den/{image}.png").convert_alpha(),
                                                       manager=MANAGER)
 
         # check for a focus visual already onscreen and kill it so we can update the visual. if it isn't onscreen,
@@ -159,7 +160,7 @@ class WarriorDenScreen(Screens):
             self.focus_information["focus_visual"] = pygame_gui.elements.UIImage(scale(pygame.Rect
                                                                                        ((885, 169), (528, 696))),
                                                                                  pygame.image.load(
-                                                                                     f"resources/images/warrior_den/{path}.png").convert_alpha(),
+                                                                                     resourcepath + f"images/warrior_den/{path}.png").convert_alpha(),
                                                                                  manager=MANAGER)
 
         else:
@@ -167,7 +168,7 @@ class WarriorDenScreen(Screens):
             self.focus_information["focus_visual"] = pygame_gui.elements.UIImage(scale(pygame.Rect
                                                                                        ((885, 169), (528, 696))),
                                                                                  pygame.image.load(
-                                                                                     f"resources/images/warrior_den/{path}.png").convert_alpha(),
+                                                                                     resourcepath + f"images/warrior_den/{path}.png").convert_alpha(),
                                                                                  manager=MANAGER)
 
     def exit_screen(self):
@@ -255,14 +256,14 @@ class WarriorDenScreen(Screens):
         desc = " "
         name = settings_dict["clan_focus"][self.original_focus_code][0]
         if self.original_focus_code in self.other_clan_settings:
-            desc = "<br><b>Involved Clans:</b> "
+            desc = "<br><b>Involved Packs:</b> "
             if len(game.clan.clans_in_focus) == 1:
-                desc += f"{game.clan.clans_in_focus[0]}clan"
+                desc += f"{game.clan.clans_in_focus[0]}Pack"
             if len(game.clan.clans_in_focus) == 2:
-                desc += f"{game.clan.clans_in_focus[0]}clan and {game.clan.clans_in_focus[1]}clan"
+                desc += f"{game.clan.clans_in_focus[0]}Pack and {game.clan.clans_in_focus[1]}Pack"
             elif len(game.clan.clans_in_focus) > 2:
-                desc += "clan, ".join(game.clan.clans_in_focus[:-1])
-                desc += f"clan and {game.clan.clans_in_focus[-1]}clan"
+                desc += "Pack, ".join(game.clan.clans_in_focus[:-1])
+                desc += f"Pack and {game.clan.clans_in_focus[-1]}Pack"
 
         last_change_text = "unknown"
         next_change = "0 moons"

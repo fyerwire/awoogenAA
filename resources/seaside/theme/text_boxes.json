@@ -241,7 +241,7 @@
     "#text_box_30_horizcenter_light": {
         "prototype": "#text_box_30_horizcenter",
         "colours": {
-            "normal_text": "#EBE7F5"
+            "normal_text": "#FFF"
         }
     },
     "#text_box_30_horizcenter_spacing_95": {
@@ -257,6 +257,12 @@
             "text_vert_alignment": "center"
         }
     },
+    "#text_box_30_horizcenter_vertcenter_spacing_95": {
+        "prototype": "#text_box_30_horizcenter_spacing_95",
+        "misc": {
+            "text_vert_alignment": "center"
+        }
+    },
     "#text_box_30_horizleft": {
         "prototype": "#text_box_30",
         "misc": {
@@ -266,7 +272,7 @@
     "#text_box_30_horizleft_light": {
         "prototype": "#text_box_30_horizleft",
         "colours": {
-            "normal_text": "#EBE7F5"
+            "normal_text": "#FFF"
         }
     },
     "#text_box_30_horizleft_pad_10_10": {
@@ -309,7 +315,7 @@
     "#text_box_34_horizcenter_light": {
         "prototype": "#text_box_34_horizcenter",
         "colours": {
-            "normal_text": "#EBE7F5"
+            "normal_text": "#FFF"
         }
     },
     "#text_box_34_horizleft": {
