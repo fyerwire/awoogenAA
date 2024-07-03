@@ -45,7 +45,7 @@ class Pelt():
 		'PUDDLES', 'REDTAIL', 'SHADOWSTEP', 'SPLIT', 'SPLOTCH', 'WATERFALL']
     tortiebases = ["Graywolf", "Ophelia", "Runic", "Timber", "Sable", "Shepherd", 
 		"Arctic", "Winter", "Husky", "Mexican", "Stormy", "Vibrant", "Colorpoint", "Smokey", 
-		"Points", "Semisolid", "Solid"]
+		"Points", "Semisolid", "Solid", "Agouti", "Aspen", "Cali", "Grizzle", "Foxy", "Svalbard"]
     # I want to get rid of this eventually
     pelt_length = ["short", "medium", "long"]
     # eyes
@@ -119,10 +119,10 @@ class Pelt():
 	]
     every_acc_list = [plant_accessories, wild_accessories, collars, radiocollars, harnesses, bandanas]
     # pelts
-    standardpelts = ["Graywolf", "Ophelia", "Runic", "Timber", "Sable", "Shepherd"]
-    northpelts = ["Arctic", "Winter", "Husky"]
-    southpelts = ["Mexican", "Stormy", "Vibrant"]
-    darkpelts = ["Colorpoint", "Smokey", "Points"]
+    standardpelts = ["Graywolf", "Ophelia", "Runic", "Timber", "Sable", "Shepherd", "Aspen"]
+    northpelts = ["Arctic", "Winter", "Husky", "Svalbard"]
+    southpelts = ["Mexican", "Stormy", "Vibrant", "Cali", "Foxy"]
+    darkpelts = ["Colorpoint", "Smokey", "Points", "Agouti", "Grizzle"]
     specialpelts = ["Semisolid", "Solid", "Brindle"]
     torties = ["Tortie", "Calico"]
     pelt_categories = [standardpelts, northpelts, southpelts, darkpelts, specialpelts, torties]
@@ -179,7 +179,7 @@ class Pelt():
     chocolate_merle_colors = [[(104, 63, 57), (186, 172, 167)], [(53, 37, 24), (164, 152, 140)], [(157, 122, 87), (217, 206, 181)], [(101, 78, 64), (207, 180, 153)], [(110, 71, 50), (171, 133, 96)]]
     lilac_merle_colors = [[(127, 123, 128), (198, 188, 178)], [(147, 128, 111), (197, 176, 155)], [(115, 94, 77), (234, 232, 222)], [(171, 152, 146), (215, 209, 213)]]
     # this list is to include the generation of the red merle parts depending on the pelt
-    include_red_merle = ["Graywolf", "Ophelia", "Runic", "Timber", "Sable", "Arctic", "Winter", "Husky", "Mexican", "Stormy", "Vibrant", "Colorpoint", "Smokey"]
+    include_red_merle = ["Graywolf", "Ophelia", "Runic", "Timber", "Sable", "Arctic", "Winter", "Husky", "Mexican", "Stormy", "Vibrant", "Colorpoint", "Smokey", "Aspen", "Cali", "Svalbard"]
     # eyeballs
     eye_sprites = ['DAYLIGHT', 'ICE', 'NAVY', 'RAIN', 'SAPPHIRE', 'SEAFOAM', 'SKY', 'STORM', 'TEAL', 
 				'ALMOND', 'BEAR', 'CASHEW', 'HAZEL', 'LATTE', 'SPARROW', 'BLACK', 'GULL', 
@@ -1466,7 +1466,13 @@ class Pelt():
             "Points": "points",
             "Semisolid": "solid",
             "Solid": "solid",
-            'Brindle': 'brindle'
+            'Brindle': 'brindle',
+            "Agouti": "shaded agouti",
+            "Aspen": "agouti",
+            "Cali": "peppered agouti",
+            "Grizzle": "grizzle",
+            "Foxy": "fox",
+            "Svalbard": "patchy saddle"
         }
         eye_des = {
             "AMBER": "amber",
@@ -1572,7 +1578,7 @@ class Pelt():
         # and we also specify what kind of tortie we have
         # then we set patterns and decide which pattern is most 'interesting' for the description
         if cat.pelt.name == 'Tortie' or cat.pelt.name == 'Calico':
-            temp_agoutis = ["Graywolf", "Ophelia", "Runic", "Timber", "Arctic", "Winter", "Mexican", "Stormy", "Vibrant", "Smokey"]
+            temp_agoutis = ["Graywolf", "Ophelia", "Runic", "Timber", "Arctic", "Winter", "Mexican", "Stormy", "Vibrant", "Smokey", "Agouti", "Aspen", "Cali"]
             temp_tortie_type = cat.pelt.tortiebase
             basePATTERN = cat.pelt.tortiepattern
             colorTORTIE = renamed_colors[str(cat.pelt.tortiecolour).lower()]

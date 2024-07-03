@@ -1367,8 +1367,8 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
             "ISABELLA": ["#bbada2", "#d6c3aa", "#ded3c6", "#a99689", "#ded3c6", "#aa988b", "#aa988b", "#bbada2"]
             }
         # set up expectations for markings
-        all_markings = ["OPHELIA", "MEXICAN", "GRAYWOLF", "TIMBER", "VIBRANT", "STORMY"] # red, dark + highlights
-        both_markings = ["ARCTIC", "SMOKEY", "WINTER", "SHEPHERD", "SABLE"] # dark + highlights
+        all_markings = ["OPHELIA", "MEXICAN", "GRAYWOLF", "TIMBER", "VIBRANT", "STORMY", "ASPEN", "CALI", "FOXY"] # red, dark + highlights
+        both_markings = ["ARCTIC", "SMOKEY", "WINTER", "SHEPHERD", "SABLE", "AGOUTI", "GRIZZLE", "SVALBARD"] # dark + highlights
         dark_markings = ["COLORPOINT", "BRINDLE", "POINTS"] # only dark
         special_markings = ["RUNIC", "SEMISOLID", "SOLID", "HUSKY"] # special kinds of markings
         # SPRITE GENERATION
@@ -1607,10 +1607,10 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
                 pelt.blit(dark_patch, (0, 0))  
             else:
                 pelt.blit(base_pelt, (0, 0))
-                if base_name == "ARCTIC":
+                if base_name in ["ARCTIC", "GRIZZLE", "SVALBARD"]:
                     pelt.blit(highlight_pelt, (0, 0))
                     pelt.blit(dark_pelt, (0, 0))
-                elif base_name in ["OPHELIA", "MEXICAN", "RUNIC"]:
+                elif base_name in ["OPHELIA", "MEXICAN", "RUNIC", "ASPEN", "CALI", "FOXY"]:
                     pelt.blit(red_pelt, (0, 0))
                     pelt.blit(highlight_pelt, (0, 0))
                     pelt.blit(dark_pelt, (0, 0))
@@ -1624,16 +1624,16 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
                     pelt.blit(highlight_pelt, (0, 0))
                 else:
                     pelt.blit(dark_pelt, (0, 0))
-                    if base_name in ["SMOKEY", "WINTER", "HUSKY", "SHEPHERD", "SABLE"]:
+                    if base_name in ["SMOKEY", "WINTER", "HUSKY", "SHEPHERD", "SABLE", "AGOUTI"]:
                         pelt.blit(highlight_pelt, (0, 0))
         
             if tortie_base:
                 tortie_pelt = sprites.sprites["baseSOLID" + cat_sprite].copy().convert_alpha()
                 tortie_pelt.blit(tortie_base_pelt, (0, 0))
-                if tortie_base == "ARCTIC":
+                if tortie_base in ["ARCTIC", "GRIZZLE", "SVALBARD"]:
                     tortie_pelt.blit(tortie_highlight_pelt, (0, 0))
                     tortie_pelt.blit(tortie_dark_pelt, (0, 0))
-                elif tortie_base in ["OPHELIA", "MEXICAN", "RUNIC"]:
+                elif tortie_base in ["OPHELIA", "MEXICAN", "RUNIC", "ASPEN", "CALI", "FOXY"]:
                     tortie_pelt.blit(tortie_red_pelt, (0, 0))
                     tortie_pelt.blit(tortie_highlight_pelt, (0, 0))
                     tortie_pelt.blit(tortie_dark_pelt, (0, 0))
@@ -1647,7 +1647,7 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
                     tortie_pelt.blit(tortie_highlight_pelt, (0, 0))
                 else:
                     tortie_pelt.blit(tortie_dark_pelt, (0, 0))
-                    if tortie_base in ["SMOKEY", "WINTER", "HUSKY", "SHEPHERD", "SABLE"]:
+                    if tortie_base in ["SMOKEY", "WINTER", "HUSKY", "SHEPHERD", "SABLE", "AGOUTI"]:
                         tortie_pelt.blit(tortie_highlight_pelt, (0, 0))
                 tortie_pelt.blit(sprites.sprites["patch" + cat.pelt.pattern + cat_sprite], (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
                 pelt.blit(tortie_pelt, (0, 0))
