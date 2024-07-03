@@ -78,6 +78,8 @@ class ClanScreen(Screens):
                 self.change_screen('clearing screen')
             else:
                 self.menu_button_pressed(event)
+            if event.ui_element == self.warrior_den_label:
+                self.change_screen('warrior den screen')
         
         elif event.type == pygame.KEYDOWN and game.settings['keybinds']:
             if event.key == pygame.K_RIGHT:
@@ -135,12 +137,13 @@ class ClanScreen(Screens):
                     print(f"ERROR: placing {Cat.all_cats[x].name}\'s sprite on Pack page")
                     
         # Den Labels
-        # Redo the locations, so that it uses layout on the Pack page
-        self.warrior_den_label = pygame_gui.elements.UIImage(
-            scale(pygame.Rect(self.layout["warrior den"], (242, 56))),
-            pygame.transform.scale(
-                image_cache.load_image(resourcepath + 'images/warrior_den.png'),
-                (242, 56)))
+        # Redo the locations, so that it uses layout on the Clan page
+        self.warrior_den_label = UIImageButton(scale(pygame.Rect(
+            self.layout["warrior den"], (242, 56))),
+            "",
+            object_id="#warrior_den_button",
+            starting_height=2
+        )
         self.leader_den_label = pygame_gui.elements.UIImage(
             scale(pygame.Rect(self.layout["leader den"], (224, 56))),
             pygame.transform.scale(

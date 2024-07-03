@@ -33,7 +33,7 @@
                         "cats_to": ["p_l"],
                         "cats_from": ["r_c"],
                         "mutual": true,
-                        "values": ["dislike", "jealousy"],
+                        "values": ["dislike", "jealous"],
                         "amount": -5
                     }
                 ]
@@ -54,7 +54,7 @@
                         "cats_to": ["p_l"],
                         "cats_from": ["r_c"],
                         "mutual": true,
-                        "values": ["dislike", "jealousy"],
+                        "values": ["dislike", "jealous"],
                         "amount": -5
                     }
                 ]
@@ -76,7 +76,7 @@
                         "cats_to": ["p_l"],
                         "cats_from": ["r_c"],
                         "mutual": true,
-                        "values": ["dislike", "jealousy"],
+                        "values": ["dislike", "jealous"],
                         "amount": -5
                     }
                 ]
@@ -99,7 +99,7 @@
                         "cats_to": ["p_l"],
                         "cats_from": ["r_c"],
                         "mutual": true,
-                        "values": ["dislike", "jealousy"],
+                        "values": ["dislike", "jealous"],
                         "amount": 5
                     }
                 ]
@@ -274,48 +274,185 @@
         "max_cats": 6,
         "min_max_status": {
             "apprentice": [2, 2],
-            "normal adult": [2, 4]
+            "normal adult": [2,4]
+    },
+    "weight": 20,
+    "intro_text": "The leaves drift high in sunset piles beneath the shedding trees, and as the patrol wanders familiar forest paths, app1 gets swallowed up.",
+    "decline_text": "app1 reappears soon enough, a bright red leaf plastered to {PRONOUN/app1/poss} forehead.",
+    "chance_of_success": 60,
+    "success_outcomes": [
+        {
+            "text": "app1 leaps out of the leaf drift, sending p_l falling into r_c as {PRONOUN/app1/subject} {VERB/app1/leap/leaps} onwards to bowl app2 into yet more leaves. The two apprentices descend into furious mock combat, yowling with excitement, as p_l gazes up at r_c in bewilderment.",
+            "exp": 10,
+            "weight": 20,
+            "relationships": [
+                {
+                    "cats_to": ["patrol"],
+                    "cats_from": ["patrol"],
+                    "mutual": false,
+                    "values": ["platonic", "trust"],
+                    "amount": 10
+                },
+                {
+                    "cats_to": ["patrol"],
+                    "cats_from": ["patrol"],
+                    "mutual": false,
+                    "values": ["dislike"],
+                    "amount": -5
+                },
+                {
+                    "cats_to": ["p_l"],
+                    "cats_from": ["r_c"],
+                    "mutual": true,
+                    "values": ["romantic"],
+                    "amount": 10
+                }
+            ]
+        }
+    ],
+    "fail_outcomes": [
+        {
+            "text": "app1? app1?! It takes a good while to recover the apprentice from the far-deeper-than-expected leaf drift. No one is hurt, but it certainly derails the training they were intending on doing.",
+            "exp": 0,
+            "weight": 20
+        }
+    ]
+},
+{
+    "patrol_id": "fst_train_playinginleaves3",
+    "biome": ["forest"],
+    "season": ["leaf-fall"],
+    "types": ["training"],
+    "tags": ["romantic", "rom_two_apps"],
+    "patrol_art": "train_general_intro",
+    "min_cats": 4,
+    "max_cats": 6,
+    "min_max_status": {
+        "apprentice": [2, 2],
+        "normal adult": [2,4]
+    },
+    "weight": 20,
+    "intro_text": "The leaves drift high in sunset piles beneath the shedding trees, and as the patrol wanders familiar forest paths, app1 gets swallowed up.",
+    "decline_text": "app1 reappears soon enough, a bright red leaf plastered to {PRONOUN/app1/poss} forehead.",
+    "chance_of_success": 60,
+    "success_outcomes": [
+        {
+            "text": "app1 leaps out of the leaf drift, bowling app2 head over paws and batting at {PRONOUN/app2/subject} furiously. p_l and r_c share a long, exasperated look, rolling their eyes as the apprentices flicker between yelling insults and flirting while they spar. p_l's sure the apprentices think they're <i>very</i> subtle.",
+            "exp": 10,
+            "weight": 20,
+            "relationships": [
+                {
+                    "cats_to": ["patrol"],
+                    "cats_from": ["patrol"],
+                    "mutual": false,
+                    "values": ["platonic", "trust"],
+                    "amount": 10
+                },
+                {
+                    "cats_to": ["patrol"],
+                    "cats_from": ["patrol"],
+                    "mutual": false,
+                    "values": ["dislike"],
+                    "amount": -5
+                },
+                {
+                    "cats_to": ["app1"],
+                    "cats_from": ["app2"],
+                    "mutual": true,
+                    "values": ["romantic"],
+                    "amount": 10
+                }
+            ]
+        }
+    ],
+    "fail_outcomes": [
+        {
+            "text": "app1? app1?! It takes a good while to recover the apprentice from the far-deeper-than-expected leaf drift. No one is hurt, but it certainly derails the training they were intending on doing.",
+            "exp": 0,
+            "weight": 20
+        }
+    ]
+},
+{
+    "patrol_id": "fst_train_leaffall_eclipsemyth_storylocked1",
+    "biome": ["forest"],
+    "season": ["leaf-fall"],
+    "types": ["training"],
+    "tags": [],
+    "patrol_art": "gen_train_ghost",
+    "min_cats": 4,
+    "max_cats": 6,
+    "min_max_status": {
+       "normal adult": [1, 6]
         },
-        "weight": 20,
-        "intro_text": "The leaves drift high in sunset piles beneath the shedding trees, and as the patrol wanders familiar forest paths, app1 gets swallowed up.",
-        "decline_text": "app1 reappears soon enough, a bright red leaf plastered to {PRONOUN/app1/poss} forehead.",
-        "chance_of_success": 60,
-        "success_outcomes": [
-            {
-                "text": "app1 leaps out of the leaf drift, bowling app2 head over paws and batting at {PRONOUN/app2/subject} furiously. p_l and r_c share a long, exasperated look, rolling their eyes as the apprentices flicker between yelling insults and flirting while they spar. p_l's sure the apprentices think they're <i>very</i> subtle.",
-                "exp": 10,
+    "weight": 40,
+    "chance_of_success": 60,
+    "pl_skill_constraint": ["STORY,1"],
+    "intro_text": "Gather round, gather round. p_l sits in the centre of the group, in the most prominent place, and drops {PRONOUN/p_l/poss} voice down low as a hush falls - today, {PRONOUN/p_l/subject}'ll tell the story of StarPack's Great Anger.",
+    "decline_text": "A leaf-fall rainshower chooses that moment to break - thematic, perhaps, but wet. The wolves decide to pick up the story some other time.",
+    "success_outcomes": [
+        {
+                "text": "At first, few but the medicine wolves noticed the leaf-fall, its harshness, the snows early, the prey scarce. All noticed on the day StarPack snarled - the great sun itself blinking dark under their anger. All paid heed to the omens then, and the Packs turned back to the Stars, begging for life and sun to return. They learned a lesson not soon forgotten.",
+                "exp": 40,
                 "weight": 20,
                 "relationships": [
                     {
-                        "cats_to": ["patrol"],
+                        "cats_to": ["p_l"],
                         "cats_from": ["patrol"],
                         "mutual": false,
-                        "values": ["platonic", "trust"],
-                        "amount": 10
-                    },
-                    {
-                        "cats_to": ["patrol"],
-                        "cats_from": ["patrol"],
-                        "mutual": false,
-                        "values": ["dislike"],
-                        "amount": -5
-                    },
-                    {
-                        "cats_to": ["app1"],
-                        "cats_from": ["app2"],
-                        "mutual": true,
-                        "values": ["romantic"],
+                        "values": ["respect", "trust"],
                         "amount": 10
                     }
-                ]
+                    ]
             }
         ],
         "fail_outcomes": [
             {
-                "text": "app1? app1?! It takes a good while to recover the apprentice from the far-deeper-than-expected leaf drift. No one is hurt, but it certainly derails the training they were intending on doing.",
+                "text": "r_c refuses to believe their ancestors ever blotted out the sun - not that they couldn't, but that they wouldn't ever hurt the Packs, their own beloved descendants.",
                 "exp": 0,
-                "weight": 20
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["p_l"],
+                        "mutual": false,
+                        "values": ["respect", "platonic"],
+                        "amount": 5
+                    }
+                ]
+            },
+            {
+                "text": "If StarPack snarled at them, they should've snarled back, s_c argues. Their ancestors are nothing without them!",
+                "exp": 0,
+                "weight": 20,
+                "can_have_stat": ["r_c"],
+                "stat_trait": [
+                    "rebellious"
+                ],
+                "relationships": [
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["p_l"],
+                        "mutual": false,
+                        "values": ["respect", "trust", "platonic"],
+                        "amount": -5
+                    },
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["p_l"],
+                        "mutual": false,
+                        "values": ["dislike"],
+                        "amount": 5
+                    },
+                    {
+                        "cats_to": ["r_c"],
+                        "cats_from": ["patrol"],
+                        "mutual": false,
+                        "values": ["respect", "trust"],
+                        "amount": -5
+                    }
+                ]
             }
         ]
-    }
+}
 ]
